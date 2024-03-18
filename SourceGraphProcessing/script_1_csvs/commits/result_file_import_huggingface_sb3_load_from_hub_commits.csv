@@ -1,0 +1,1746 @@
+repo_url,filepath,commit_date,message
+github.com/HumanCompatibleAI/imitation,src/imitation/policies/serialize.py,2023-04-27T02:37:00Z,"Add support for HuggingFace Datasets (#677)
+
+* Make the imitation.types.safe/load functions store/retrieve from HuggingFace Datasets.
+
+* Add datasets dependency.
+
+* Add our own transform to numpy arrays to work around https://github.com/huggingface/datasets/issues/5517
+
+* Move serialization related code from imitation.data.types to imitation.data.serialize and encode infos using jsonpickle to support arbitrary infos structure.
+
+* Move numpy conversion logic into huggingface_datasets_conversion.py
+
+* Improve warnings and comments.
+
+* Fix convert_trajs.py script and its tests.
+
+* Add no cover pragma to convert_trajs main.
+
+* Add no cover pragma to the case of loading an unknown trajectory format.
+
+* Fix inconsistent imports.
+
+* Rename huggingface_datasets_conversion.py to huggingface_utils.py and fix the documentation of imitation.types.serialize.save.
+
+* Normalize imitation.data.serialize imports across the repo, move parse_path to the utils and load_rollouts_from_huggingface to data.serialize.
+
+* Remove now unneeded pytype error suppression.
+
+* Fix formatting in convert_trajs"
+github.com/HumanCompatibleAI/imitation,src/imitation/policies/serialize.py,2022-12-28T19:42:21Z,"Add support to download rollouts from huggingface (#629)
+
+* Add support to download rollouts from huggingface
+
+* Add check for rollout_path
+
+* Fix type error
+
+* Add test cases
+
+* Incorporate reviewer's suggestions
+
+* Change pkl to npz
+
+* Add input validation for rollout_type
+
+* Fix error
+
+* Update src/imitation/scripts/common/demonstrations.py
+
+Co-authored-by: Adam Gleave <adam@gleave.me>
+
+Co-authored-by: Adam Gleave <adam@gleave.me>"
+github.com/HumanCompatibleAI/imitation,src/imitation/policies/serialize.py,2022-10-11T13:06:40Z,"Migrate to pathlib (#537)
+
+* Initial mypy configuration
+
+* Initial change to get the PR up
+
+* Initial review at replacing os.path
+
+* Bug fixes from tests
+
+* Fix types: test_envs.py
+
+* Fix types: conftest.py
+
+* Fix types: tests/util
+
+* Fix types: tests/scripts
+
+* Fix types: tests/rewards
+
+* Fix types: tests/policies
+
+* Incorrect decorator in update_stats method form networks.py::BaseNorm
+
+* Fix types: tests/algorithms (adersarial and bc)
+
+* Fix types: tests/algorithms (dagger and pc)
+
+* Fix types: tests/data
+
+* Linting
+
+* Linting
+
+* Fix types: algorithms/preference_comparisons.py
+
+* Fix types: algorithms/mce_irl.py
+
+* Formatting, fixed minor bug
+
+* Clarify why types are ignored
+
+* Started fixing types on algorithms/density.py
+
+* Linting
+
+* Linting (add back type ignore after reformatting)
+
+* Fixed types: imitation/data/types.py
+
+* Fixed types (started): imitation/data/
+
+* Fixed types: imitation/data/buffer.py
+
+* Fixed bug in buffer.py
+
+* Fixed types: imitation/data/rollout.py
+
+* Fixed types: imitation/data/wrappers.py
+
+* Improve makefile to support automatic cache cleaning
+
+* Fixed types: imitation/testing/
+
+* Linting, fixed wrong return type in rewards.predict_processed_all
+
+* Fixed types: imitation/policies/
+
+* Formatting
+
+* Fixed types: imitation/rewards/
+
+* Fixed types: imitation/rewards/
+
+* Fixed types: imitation/scripts/
+
+* Fixed types: imitation/util/ and formatting
+
+* Linting and formatting
+
+* Bug fixes for test errors
+
+* Linting and typing
+
+* Improve typing in algorithms
+
+* Formatting
+
+* Bug fix
+
+* Formatting
+
+* Fixes suggested by Adam.
+
+* Fix mypy version.
+
+* Fix bugs
+
+* Remove unused imports
+
+* Formatting
+
+* Added parse_path func and refactored code to use it
+
+* Fix typing, linting
+
+* Update TabularPolicy.predict to match base class
+
+* Fix not checking for dones
+
+* Change for loop to dict comprehension
+
+* Remove is_ensemble to clear up type checking errors
+
+* Reduce code duplication and general cleanup
+
+* Fix type annotation of step_dict
+
+* Change List to Sequence
+
+* Fix density.py::DensityAlgorithm._set_demo_from_batch
+
+* Fixed n_steps (OnPolicyAlgorithm)
+
+* Fix errors in tests
+
+* Include some suggestions into rollout.py and preference_comparisons.py
+
+* Formatting
+
+* Fix setter error as per https://github.com/python/mypy/issues/5936
+
+* add reason for assertion.
+
+* Fix style guide violation: https://google.github.io/styleguide/pyguide.html#22-imports
+
+* Update src/imitation/scripts/parallel.py
+
+Co-authored-by: Adam Gleave <adam@gleave.me>
+
+* Move kwargs to the end.
+
+* Swap order of expert_policy_type and expert_policy_path validation check
+
+* Update src/imitation/util/util.py
+
+Co-authored-by: Adam Gleave <adam@gleave.me>
+
+* Update tests/rewards/test_reward_fn.py
+
+Co-authored-by: Adam Gleave <adam@gleave.me>
+
+* Explicit random state setting and fix corresponding tests (except notebooks, sacred config, scripts)
+
+* Fix notebooks; add script to clean notebooks
+
+* Fix all tests.
+
+* Formattting.
+
+* Additional fixes
+
+* Linting
+
+* Remove automatically generated `_api` docs files too on `make clean`
+
+* Fix docstrings.
+
+* Fix issue with next(iter(iterable))
+
+* Formatting
+
+* Remove whitespace
+
+* Add TODO message to remove type ignore later
+
+* Remove unnecessary assertion.
+
+* Fixed types in density.py set_demonstrations
+
+* Added type ignore to pytype bug
+
+* Fix_get_first_iter_element and add tests
+
+* Bugfix in BC and tests -- masked as previously iterator ran out too early!
+
+* Remove makefile for now
+
+* Added link to SB3 issue for future reference.
+
+* Fix types of train_imitation
+Only return ""expert_stats"" if all trajectories have reward.
+
+* Modify assert in test_bc to reflect correct type
+
+* Add ci/clean_notebooks.py to CI checks
+
+* Improve clean_notebooks.py by allowing checking only mode.
+
+* Add ipynb notebook checks to CI
+
+* Add support for explicit files for notebook cleaning
+
+* Clean notebooks
+
+* Small improvements in util.py
+
+* Replace TransitionKind with TransitionsMinimal
+
+* Delete unused statement in test
+
+* Update src/imitation/util/util.py
+
+Co-authored-by: Adam Gleave <adam@gleave.me>
+
+* Update src/imitation/util/util.py
+
+Co-authored-by: Adam Gleave <adam@gleave.me>
+
+* Make type ignore specific to pytype
+
+* Linting
+
+* Migrate from RandomState (deprecated) to Generator
+
+* Add backticks to error message
+
+* Create ""AnyNorm"" alias
+
+* Small fix
+
+* Add additional checks to shapes in _set_demo_from_batch
+
+* Fix RolloutStatsComputer type
+
+* Improved logging/messages in clean_notebooks.py
+
+* Fix issues resulting from merge
+
+* Bug fix
+
+* Bug fix (wasn't really fixed before)
+
+* Fixed docs example of BC
+
+* Fix bugs resulting from merge
+
+* Fix docs (dagger.rst) caught by sphinx CI
+
+* Add mypy to CI
+
+* Continue fixing miscellaneous type errors
+
+* Linting
+
+* Fix issue with normalize_input_layer type
+
+* Add support for checking presence of generic type ignores
+
+* Allow subdirectories in notebook clean
+
+* Add full typing support for TransitionsMinimal as a sequence
+
+* Fix types for density.py
+
+* Misc fixes
+
+* Add support for prefix context manager in logger (from #529)
+
+* Added back accidentally removed code
+
+* Replaced preference comparisons prefix with ctx manager
+
+* Fixed errors
+
+* Bug fixes
+
+* Docstring fixes
+
+* Fix bug in serialize.py
+
+* Fixed codecheck by pointing notebook checks to docs
+
+* Add rng to mce_irl.rst (doctest)
+
+* Add rng to density.rst (doctest)
+
+* Fix remaining rst files
+
+* Increase sample size to reduce flakiness
+
+* Ignore files not passing mypy for now
+
+* Comment in wrong line
+
+* Comment in wrong line
+
+* Move excluded files to argument
+
+* Add quotes to mypy arg call
+
+* Fix CI mypy call
+
+* Fix CI yaml
+
+* Break ignored files up into one line each
+
+* Address PR comments
+
+* Point SB3 to master to include bug fix
+
+* Small bug fixes
+
+* Small bug fixes
+
+* Sort import
+
+* Linting
+
+* Do not follow imports for ignored files
+
+* Fix tests for context managers
+
+* Format / fix tests for context manager
+
+* Switch to sb3 1.6.1
+
+* Formatting
+
+* Upgrade Python version in Windows CI
+
+* Remove unused import
+
+* Remove unused fixture
+
+* Add coveragerc file
+
+* Add utils test
+
+* Add tests and asserts
+
+* Add test to synthetic gatherer
+
+* Add trajectory unwrap tests
+
+* Formatting
+
+* Remove bracket typo
+
+* Fix .coveragerc instruction
+
+* Improve density algo coverage and bug fixes
+
+* Fix bug in test
+
+* Add pragma no cover updates
+
+* Minor coverage tweaks
+
+* Fix iterator test
+
+* Add test for parse_path
+
+* Updates on sacred util
+
+* Mark type ignore rule
+
+* Mark type ignore rule
+
+* Miscellaneous bug fixes and improvements
+
+* Reformat hanging line
+
+* Ignore parse path checks for windows
+
+* Add trailing comma
+
+* Minor changes
+
+* No newline end of file
+
+* Update src/imitation/data/types.py
+
+Co-authored-by: Adam Gleave <adam@gleave.me>
+
+* Update src/imitation/data/types.py
+
+Co-authored-by: Adam Gleave <adam@gleave.me>
+
+* Include suggestions from Adam
+
+Co-authored-by: Adam Gleave <adam@gleave.me>"
+github.com/HumanCompatibleAI/imitation,src/imitation/policies/serialize.py,2022-10-10T19:36:43Z,"Fix policy format error (#577)
+
+* Revert ""Add support for prefix context manager in logger (from #529) (#570)""
+
+This reverts commit a7389559fc48370d6361a6b42bb4b050aff2f11a.
+
+* Revert ""Revert ""Add support for prefix context manager in logger (from #529) (#570)""""
+
+This reverts commit 849f7e7a9630c07fe7e99c2e308ab43eb881c7ea.
+
+* Fix format of error string
+
+* Put the f in the right place"
+github.com/HumanCompatibleAI/imitation,src/imitation/policies/serialize.py,2022-10-08T17:30:53Z,"Improve typing: better type hints, increased type safety, mypy support (#534)
+
+* Initial mypy configuration
+
+* Fix types: test_envs.py
+
+* Fix types: conftest.py
+
+* Fix types: tests/util
+
+* Fix types: tests/scripts
+
+* Fix types: tests/rewards
+
+* Fix types: tests/policies
+
+* Incorrect decorator in update_stats method form networks.py::BaseNorm
+
+* Fix types: tests/algorithms (adersarial and bc)
+
+* Fix types: tests/algorithms (dagger and pc)
+
+* Fix types: tests/data
+
+* Linting
+
+* Linting
+
+* Fix types: algorithms/preference_comparisons.py
+
+* Fix types: algorithms/mce_irl.py
+
+* Formatting, fixed minor bug
+
+* Clarify why types are ignored
+
+* Started fixing types on algorithms/density.py
+
+* Linting
+
+* Linting (add back type ignore after reformatting)
+
+* Fixed types: imitation/data/types.py
+
+* Fixed types (started): imitation/data/
+
+* Fixed types: imitation/data/buffer.py
+
+* Fixed bug in buffer.py
+
+* Fixed types: imitation/data/rollout.py
+
+* Fixed types: imitation/data/wrappers.py
+
+* Improve makefile to support automatic cache cleaning
+
+* Fixed types: imitation/testing/
+
+* Linting, fixed wrong return type in rewards.predict_processed_all
+
+* Fixed types: imitation/policies/
+
+* Formatting
+
+* Fixed types: imitation/rewards/
+
+* Fixed types: imitation/rewards/
+
+* Fixed types: imitation/scripts/
+
+* Fixed types: imitation/util/ and formatting
+
+* Linting and formatting
+
+* Bug fixes for test errors
+
+* Linting and typing
+
+* Improve typing in algorithms
+
+* Formatting
+
+* Bug fix
+
+* Formatting
+
+* Fixes suggested by Adam.
+
+* Fix mypy version.
+
+* Update TabularPolicy.predict to match base class
+
+* Fix not checking for dones
+
+* Change for loop to dict comprehension
+
+* Remove is_ensemble to clear up type checking errors
+
+* Reduce code duplication and general cleanup
+
+* Fix type annotation of step_dict
+
+* Change List to Sequence
+
+* Fix density.py::DensityAlgorithm._set_demo_from_batch
+
+* Fixed n_steps (OnPolicyAlgorithm)
+
+* Fix errors in tests
+
+* Include some suggestions into rollout.py and preference_comparisons.py
+
+* Formatting
+
+* Fix setter error as per https://github.com/python/mypy/issues/5936
+
+* add reason for assertion.
+
+* Fix style guide violation: https://google.github.io/styleguide/pyguide.html#22-imports
+
+* Update src/imitation/scripts/parallel.py
+
+Co-authored-by: Adam Gleave <adam@gleave.me>
+
+* Move kwargs to the end.
+
+* Swap order of expert_policy_type and expert_policy_path validation check
+
+* Update src/imitation/util/util.py
+
+Co-authored-by: Adam Gleave <adam@gleave.me>
+
+* Update tests/rewards/test_reward_fn.py
+
+Co-authored-by: Adam Gleave <adam@gleave.me>
+
+* Explicit random state setting and fix corresponding tests (except notebooks, sacred config, scripts)
+
+* Fix notebooks; add script to clean notebooks
+
+* Fix all tests.
+
+* Formattting.
+
+* Additional fixes
+
+* Linting
+
+* Remove automatically generated `_api` docs files too on `make clean`
+
+* Fix docstrings.
+
+* Fix issue with next(iter(iterable))
+
+* Formatting
+
+* Remove whitespace
+
+* Add TODO message to remove type ignore later
+
+* Remove unnecessary assertion.
+
+* Fixed types in density.py set_demonstrations
+
+* Added type ignore to pytype bug
+
+* Fix_get_first_iter_element and add tests
+
+* Bugfix in BC and tests -- masked as previously iterator ran out too early!
+
+* Remove makefile for now
+
+* Added link to SB3 issue for future reference.
+
+* Fix types of train_imitation
+Only return ""expert_stats"" if all trajectories have reward.
+
+* Modify assert in test_bc to reflect correct type
+
+* Add ci/clean_notebooks.py to CI checks
+
+* Improve clean_notebooks.py by allowing checking only mode.
+
+* Add ipynb notebook checks to CI
+
+* Add support for explicit files for notebook cleaning
+
+* Clean notebooks
+
+* Small improvements in util.py
+
+* Replace TransitionKind with TransitionsMinimal
+
+* Delete unused statement in test
+
+* Update src/imitation/util/util.py
+
+Co-authored-by: Adam Gleave <adam@gleave.me>
+
+* Update src/imitation/util/util.py
+
+Co-authored-by: Adam Gleave <adam@gleave.me>
+
+* Make type ignore specific to pytype
+
+* Linting
+
+* Migrate from RandomState (deprecated) to Generator
+
+* Add backticks to error message
+
+* Create ""AnyNorm"" alias
+
+* Small fix
+
+* Add additional checks to shapes in _set_demo_from_batch
+
+* Fix RolloutStatsComputer type
+
+* Improved logging/messages in clean_notebooks.py
+
+* Fix issues resulting from merge
+
+* Bug fix
+
+* Bug fix (wasn't really fixed before)
+
+* Fixed docs example of BC
+
+* Fix bugs resulting from merge
+
+* Fix docs (dagger.rst) caught by sphinx CI
+
+* Add mypy to CI
+
+* Continue fixing miscellaneous type errors
+
+* Linting
+
+* Fix issue with normalize_input_layer type
+
+* Add support for checking presence of generic type ignores
+
+* Allow subdirectories in notebook clean
+
+* Add full typing support for TransitionsMinimal as a sequence
+
+* Fix types for density.py
+
+* Misc fixes
+
+* Add support for prefix context manager in logger (from #529)
+
+* Added back accidentally removed code
+
+* Replaced preference comparisons prefix with ctx manager
+
+* Fixed errors
+
+* Bug fixes
+
+* Docstring fixes
+
+* Fix bug in serialize.py
+
+* Fixed codecheck by pointing notebook checks to docs
+
+* Add rng to mce_irl.rst (doctest)
+
+* Add rng to density.rst (doctest)
+
+* Fix remaining rst files
+
+* Increase sample size to reduce flakiness
+
+* Ignore files not passing mypy for now
+
+* Comment in wrong line
+
+* Comment in wrong line
+
+* Move excluded files to argument
+
+* Add quotes to mypy arg call
+
+* Fix CI mypy call
+
+* Fix CI yaml
+
+* Break ignored files up into one line each
+
+* Address PR comments
+
+* Point SB3 to master to include bug fix
+
+* Do not follow imports for ignored files
+
+* Format / fix tests for context manager
+
+* Switch to sb3 1.6.1
+
+* Formatting
+
+* Remove unused import
+
+* Remove unused fixture
+
+* Add coveragerc file
+
+* Add utils test
+
+* Add tests and asserts
+
+* Add test to synthetic gatherer
+
+* Add trajectory unwrap tests
+
+* Formatting
+
+* Remove bracket typo
+
+* Fix .coveragerc instruction
+
+* Improve density algo coverage and bug fixes
+
+* Fix bug in test
+
+* Add pragma no cover updates
+
+* Minor coverage tweaks
+
+* Fix iterator test
+
+* Update ci/check_typeignore.py
+
+Co-authored-by: Adam Gleave <adam@gleave.me>
+
+* DRY clean_notebooks.py
+
+* Minor tweak in check_typeignore.py
+
+* Added all checks to CI
+
+* Move imports to top-level
+
+* Move main to main() function in script
+
+* Minor fixes
+
+* Remove tweak after new SB3 release
+
+* Split main() into helper functions.
+
+* Fix edge case of n=0 in seed generator
+
+* Update src/imitation/scripts/common/rl.py
+
+Co-authored-by: Adam Gleave <adam@gleave.me>
+
+* Fix general type ignore in src
+
+* Fix type ignore errors
+
+* Formatting
+
+* Update src/imitation/util/util.py
+
+Co-authored-by: Adam Gleave <adam@gleave.me>
+
+* Update src/imitation/scripts/common/rl.py
+
+Co-authored-by: Adam Gleave <adam@gleave.me>
+
+* Update src/imitation/util/util.py
+
+Co-authored-by: Adam Gleave <adam@gleave.me>
+
+* Replace todo with todo+issue link
+
+* Add explicit type ignore arg
+
+* Add excluded files to code_checks.sh
+
+* Unbreak line
+
+* Misc fixes
+
+* Add training to the density algorithm
+
+* Fix no attribute error
+
+* Type ignore to `with raises` test
+
+* Remove unused import
+
+* Check typeignore for all SRC files
+
+* Clean notebooks
+
+* Remove unused import
+
+* Ignore the file itself from typeignore check
+
+* Add exception to docstring
+
+* Fix bad naming for clean_notebooks
+
+Co-authored-by: Adam Gleave <adam@gleave.me>"
+github.com/HumanCompatibleAI/imitation,src/imitation/policies/serialize.py,2022-09-29T19:37:48Z,"Add experts documentation (#568)
+
+* Add documentation on how to load experts
+
+* Improve documentation of sacred config (expert and demonstrations).
+
+* Add config hook to expert ingredient to make the loader_kwargs explorable.
+
+* Add more context, detail and examples to loading-experts.rst
+
+* Add documentation on how to add a custom policy type.
+
+Co-authored-by: Adam Gleave <adam@gleave.me>"
+github.com/HumanCompatibleAI/imitation,src/imitation/policies/serialize.py,2022-09-12T23:04:06Z,"Load expert models for testing from huggingface hub  (#445)
+
+* Remove expert models.
+
+This shall break a lot and uncover where we still rely on the committed experts.
+
+* Load expert models for testing from huggingface hub instead of training them.
+
+* Generate expert trajectories from huggingface expert in the train density example.
+
+* Switch to seals variants of environments in experiments, scripts and tests.
+
+* Introduce expert ingredient to sacred scripts and adapt demonstrations ingredient such that it generates demonstrations on-demand.
+
+* Remove data directory specification from experiment scripts.
+
+* Remove policy path from eval_policy.py
+
+* Remove explicit setting of data_dir in parallel.py
+
+* Switch to seals variants of environments in the experiment configurations.
+
+* Remove unused code in test_experiments.py
+
+* Remove failing check for results in imit_benchmark.sh
+
+* Fix path to cartpole expert fixture.
+
+* Switch to the official HumanCompatibleAI hugginface orga.
+
+* Move hugginface_sb3 from test requirements to install requirements.
+
+* Using naming scheme helpers when constructing model repo id and model name in the experts ingredient.
+
+* Fix bug in model name construction.
+
+* Fix formatting issues.
+
+* Fix documentation issues.
+
+* Fix formatting.
+
+* Fix formatting.
+
+* Fix formatting.
+
+* Restrict sphinx version to below 5.
+
+* Re-enable test_train_adversarial_algorithm_value_error and remove section that tests with very large number of expert trajectories.
+
+* Fix flake8 issues.
+
+* Add more variants of BC main test for coverage.
+
+* Don't allow n_expert_demos to be None if no rollout_path is defined.
+
+* Ensure that training with no demonstrations raises ValueError
+
+* Remove unused variable.
+
+* Use CARTPOLE_TEST_POLICY_PATH variable.
+
+* Add raises clause to generate_expert_trajs.
+
+* Fix typo in huggingface orga.
+
+* Parameterize the expert configuration in test_train_bc_main
+
+* Re-enable dagger warm-start test.
+
+* Re-enable dtest_preference_comparisons_transfer_learning test.
+
+* Fix import style guide violations.
+
+* Remove unneeded seals import.
+
+* Make `load_stable_baselines_model` take a filename instead of a folder name.
+
+* Add separate named config for seals half cheetah.
+
+* Fix formatting
+
+* Add back printing of results to imit_benchmark.sh
+
+* Fix imports in demonstrations.py
+
+* Add back demonstrations to some of the script tests.
+
+* Add loading from huggingface to serialize.py, make the policy loading callback more generic and simplify the expert ingredient.
+
+* Fix formatting.
+
+* Assume ""model.zip"" filename when path to load stable baselines model from is a directory.
+
+* Be less strict about the file not found error message when testing loading a sb3 model from a non-existing directory.
+
+* Fix typing issue in registry.py
+
+* Add mujoco to test dependencies.
+
+* Fix formatting.
+
+* Make clear why we need to pass the env name to the huggingface loader.
+
+* Create the venv before entering the try-finally block to avoid catching errors during the creation of the environment.
+
+* Improve documentation on expert loading and policy loading in general.
+
+* Do not run MuJoCo with --fast flag
+
+* Fix typo.
+
+Co-authored-by: Adam Gleave <adam@gleave.me>
+
+* Fix typo.
+
+Co-authored-by: Adam Gleave <adam@gleave.me>
+
+* Remove now unused loader kwargs.
+
+* Fix documentation placement.
+
+* Make the optional parameters to `make_sample_until` actually optional.
+
+* Remove now unneeded magic number.
+
+* Improve docstrings in serialize.py
+
+* Introduce shared configuration for half_cheetah and seals_half_cheetah.
+
+* Replace confusing and useless error checking code by more sensible one.
+
+* Improve docstring of `load_stable_baselines_model()`.
+
+* Switch to `common.make_venv()` for the env to generate expert trajectories in.
+
+* Formatting fixes.
+
+* Fix tests for `load_policy()` exceptions.
+
+* Add missing RolloutInfoWrapper to the rollout env.
+
+* Increase number of expert demos for the fast configuration to ensure there are enough transitions to fill a batch of size 32.
+
+* Fill bug in BatchIteratorWithEpochEndCallback and simplify the detection of an empty dataloader.
+
+* Update src/imitation/algorithms/bc.py
+
+* Update src/imitation/policies/serialize.py
+
+Co-authored-by: Adam Gleave <adam@gleave.me>"
+github.com/HumanCompatibleAI/imitation,src/imitation/policies/serialize.py,2022-06-15T02:58:44Z,"Add Soft Actor Critic to imitation experiments (#444)
+
+* Include sac training configs into common.rl, common.train, scripts.train_rl
+
+* upgrade halfcheetah from v2 to v3
+
+* sac rl configs
+
+* slight workaround on repository mount
+
+* Refactor PPO and SAC hyperparameters and policy kwargs
+
+* set inner batch_size to None for sac
+
+* change mount path
+
+* Avoid inner-level batch_size
+
+* minor fixes
+
+* code format fix
+
+* build test cases for sac
+
+* type fix
+
+* remove unused environment
+
+* add coverage for train_preference_comparisons
+
+* code format
+
+* revise SAC support
+
+* expand test cases of SAC to airl
+
+* incorporate SACPolicy for AIRL
+
+* remove IMIT_MJKEY_MNT
+
+* fix reference before definition of variables
+
+* code format for testint serialize
+
+* add coverage for config.train_preference_comparisons
+
+* add coverage for dagger exception
+
+* simplify code and address comments
+
+* small fixes
+
+* removing log_prob cutoff and implement squashing functions
+
+* remove redundant ppo named_configs
+
+* add coverage for train.normalize_running and reward.normalize_input_running
+
+* address comments
+
+Co-authored-by: kmdanielduan <35738259+kmdanielduan@users.noreply.github.com>"
+github.com/HumanCompatibleAI/imitation,src/imitation/policies/serialize.py,2022-02-28T19:23:17Z,"Bits and pieces (#409)
+
+* Fix type annotation in BC.
+
+* Fix typo in comment in train_adversarial.
+
+* Add note, that the train_cartpole_expert only works with CartPole-v1.
+
+* Rename get_trajectory_collector of DAgger to create_trajectory_collector since this is clearly not a getter.
+
+* Download the free and public mujoco key instead our own key.
+
+* Bake public mujoco key into docker image.
+
+* Use default patchelf instead of custom from amazonaws.
+
+* Explicitely link the documentaiton in the readme so it can be found with str+f ""docoumentation"".
+
+* Fix formatting of docstring.
+
+* Remove outdated comment about mujoco key from Dockerfile.
+
+* Remove unneeded mujoco check from install dependencies step.
+
+* Remove unneeded mujoco context from workflow.
+
+* Fix typos.
+
+* Ensure instance attributes are defined in __init__.
+
+* Use dictionary literals where appropriate.
+
+* Fix some type issues.
+
+* Fix some PEP8 whitespace issues.
+
+* Add missing scipy and pandas dependencies.
+
+* Rename build_venv.sh to build_and_activate_venv.sh
+
+* Switched to ActorCriticPolicy in BC.
+
+* initialize the _demo_data_loader attribute before calling the super constructor in BC.
+
+* Bumping pytest cache version.
+
+* More formatting fixes.
+
+* Fix docstring of train_cartpole_expert.
+
+* Add freshly trained cartpole expert and expert rollouts.
+
+* Fix bug in expert training.
+
+* Bump pytest cache version to retrain experts.
+
+* Pin gym to 0.21 and bump pytest cache to retrain experts.
+
+* Add comment explaining why gym is fixed.
+
+* Fix type annotations.
+
+* Remove unused import"
+github.com/HumanCompatibleAI/imitation,src/imitation/policies/serialize.py,2022-01-29T22:17:56Z,"Normalize observations with model architecture rather than `VecNormalize` (#393)
+
+* Prototype for BatchNorm support for policies
+
+* Add option for normalizing observations of policies via feature extractor
+
+* Add normalization support for reward models
+
+* Unpeg SB3 now bug is fixed
+
+* Move RunningNorm tests to networks now it ahs been factored out
+
+* eval() as context manager in predict
+
+* Remove observation normalization logic from train_rl and serialize; also some other backward compatibility code in serialize
+
+* Fix silly type errors
+
+* Fix unit tests
+
+* Fix more unit tests
+
+* Update Pendulum-v0 to Pendulum-v1 in configs
+
+* Switch seals to PyPi release
+
+* train_rl: default to normalized observations
+
+* Improve Pendulum hyperparameters
+
+* Update testdata with new model format plus Pendulum hyperparameters
+
+* Fix flaky dagger test
+
+* Remove VecNormalize from GAIL/AIRL
+
+* Remove VecNormalize from DRLHP
+
+* Fix unit test and lint
+
+* Add check for old vec_normalize files
+
+* Enable normalization of reward inputs by default
+
+* Add script test for disabling observation normalization
+
+* Test bugfix: check imitation algorithm class not RL algorithm
+
+* Improve test coverage
+
+* Self review
+
+* Use context manager to toggle training mode
+
+* Fix type
+
+* Remove default reward network logic
+
+* Address Erik & Sam review
+
+* Revert one change that broke tests
+
+* Fix one script test case"
+github.com/HumanCompatibleAI/imitation,src/imitation/policies/serialize.py,2021-09-17T23:05:26Z,"Check docstrings with Darglint and fix high-priority errors (#352)
+
+* Introduce DemonstrationAlgorithm base class, start fitting things into that interface
+
+* Make MCE IRL a DemonstrationAlgorithm; add support for discounting; general tidying
+
+* Add back support for non-stationary density baseline
+
+* Make Adversarial and BC work again
+
+* Add test cases for make_data_loader and add further input validation
+
+* Move type checking earlier (fails more often in my experience)
+
+* train_adversarial bugfix: s/expert_data/demonstrations
+
+* Configure darglint. Lots of doc errors caught.
+
+* Density reward algorithm: merge DensityReward and DensityTrainer into DensityAlgorithm; fix up docstrings
+
+* Bugfix: train reward model before policy
+
+* Fix algorithm docstrings (darglint now passes)
+
+* Fix quickstart guide
+
+* Trailing commas
+
+* make_data_loader: check batch size for each batch
+
+* Add fixed horizon check to density baseline policy training
+
+* MCE IRL bugfix: normalize demo_state_om
+
+* base: check batch size for each iteration
+
+* Self-review
+
+* Bugfixes
+
+* Fix train_bc
+
+* Disable darglint from flake8, still run on pre-commit/CircleCI
+
+* Use flake8 rather than darglint directly
+
+* Fix most darglint errors
+
+* Add docstrings in util and data
+
+* Make algorithms kwargs-only
+
+* Incorporate code review suggestions
+
+* Minor bugfixes
+
+* Fix test
+
+* Remove stray trailing comma
+
+* Increase darglint strictness
+
+* Add some missing docstrings
+
+* Add missing typing import
+
+* Fix all pydocstyle errors
+
+* Fix all darglint comments
+
+* Fix black format
+
+* Fix indentation breaking Sphinx build
+
+* Fix Gym related bug
+
+* Try Gym pin another way
+
+* Fix test_scripts ValueError->FileNotFoundError
+
+* Make module docstring for tests consistent
+
+* Apply suggestions from code review"
+github.com/HumanCompatibleAI/imitation,src/imitation/policies/serialize.py,2021-09-14T16:50:47Z,Lint for commas (#351)
+github.com/HumanCompatibleAI/imitation,src/imitation/policies/serialize.py,2021-08-13T18:11:11Z,"policies.serialize: For SB3 load/save use .zip (#308)
+
+* policies.serialize: For SB3 load/save use .zip
+
+We previously saved to a 'model.pkl' path instead of 'model.zip'
+because this is what SB2 did. Since SB3, models have been saved
+as ZIP files, not pickles, and we get confusing error messages
+like ""can't find 'model.pkl.zip'"" if incorrectly we ask SB3 to load
+from nonexistent 'model.pkl'.
+
+* tests/data: Rename model.pkl to model.zip
+
+* Update src/imitation/data/types.py"
+github.com/HumanCompatibleAI/imitation,src/imitation/policies/serialize.py,2020-12-19T11:47:11Z,"Migrate to new SB callback API (#257)
+
+* Allow downloading models without AWS credentials
+
+* Migrate to new callback API
+
+* Move policy callback to serialize
+
+* Move init_rl later for simplicity
+
+* Simplify logging and fix adversarial callback
+
+* Remove deleted rollout_save_interval
+
+* Fix dtypes in Tabular to match observation matrix"
+github.com/HumanCompatibleAI/imitation,src/imitation/policies/serialize.py,2020-12-05T13:13:44Z,"Remove device= kwarg from policies, update SB3 (#255)
+
+* Remove device= from BC pols, update SB3
+
+* Remove device= from serialize.py
+
+* Empty commit to trigger CI (??)
+
+* CircleCI plz
+
+* Remove comment again :(
+
+* Correct pip install options
+
+Co-authored-by: Adam Gleave <adam@gleave.me>"
+github.com/HumanCompatibleAI/imitation,src/imitation/policies/serialize.py,2020-10-15T19:08:07Z,"BC+Adversarial: Use torch-style DataLoader (#236)
+
+* WIP
+
+* BC/Dagger use torch dataloader
+
+* test_bc: Add ducktype test
+
+* test_data: Check and allow zero-length Transitions
+
+* setup.py: Bump Stable-Baselines version
+
+(cherry picked from commit f215e177c6ae7efb5d4b5804ec12e26724701f72)
+
+* test_data: Add slicing/indexing check
+
+* lint
+
+* dagger: Shuffle batches
+
+* bc: Rename dataloader type alias
+
+* Address comments and add custom collate_fn
+
+* WIP
+
+* GAIL/AIRL: Use Torch Dataloader interface
+
+* coverage effort that is not likely to be overturned by design changes
+
+* Convert DataLoader Tensors into array
+
+* test_adversarial: Remove testing mark
+
+* bc: Accept ndarray or Tensor DataLoader
+
+For consistency with
+
+* types.DataLoaderInterface: Less strict
+
+* n_disc_mini_batch=>n_disc_updates_per_turn
+
+* minor cleanup
+
+* More cleaning
+
+* Apply suggestions from code review
+
+Co-authored-by: Adam Gleave <adam@gleave.me>
+
+* Address minor review comments
+
+* BC: DataLoader argument option/naming consistency
+
+* config.train_adversarial: Simplify batch_sizes
+
+* util: Simplify endless iter
+
+* adversarial: Delete TODO for small Transitions compat
+
+* AdversarialTrainer: Convert assertion to error
+
+* minor cleanup
+
+* coverage
+
+* adversarial: Use OnPolicyAlgorithm type
+
+* BaseAlgorithm => OnPolicyAlgorithm
+
+* Update src/imitation/algorithms/adversarial.py
+
+Co-authored-by: Sam Toyer <qxcv@users.noreply.github.com>
+
+* Address Sam comments
+
+* self-review
+
+* self-review
+
+* Detach DataLoader tensors
+
+Co-authored-by: Adam Gleave <adam@gleave.me>
+Co-authored-by: Sam Toyer <qxcv@users.noreply.github.com>"
+github.com/HumanCompatibleAI/imitation,src/imitation/policies/serialize.py,2020-08-28T21:29:04Z,"Fix broken CI (#225)
+
+* CircleCI lint: Print lint version
+
+* run lint
+
+* Bump isort to 5.0 to reflect pyflake-isort install
+
+* Use PyPI SB3 release rather than master
+
+* parallel: Remove outdated includewebui argument
+
+No longer exists on the Ray version installed on CI
+
+* setup.py: Remove alpha version tag from sb3"
+github.com/HumanCompatibleAI/imitation,src/imitation/policies/serialize.py,2020-08-03T02:10:29Z,"Port imitation to Stable Baselines3 and PyTorch (#208)
+
+* Replace tf.logging
+
+* Port behavioral cloning to Stable Baselines3
+
+* imitation.policies -> Torch/SB3
+
+* Port DAgger to Stable Baselines3
+
+* Fix dep
+
+* Merge abstractions
+
+* passing dagger tests with expert from rl baselines3 zoo
+
+* call BaseAlgorithm methods to handle learning rate
+
+* refactor bc optimizer
+
+* removing repeated docstring
+
+* minor changes after code review
+
+* Port GAIL/AIRL to Py🔥 (#207)
+
+* Torchify reward net
+
+* Reward networks -> Torch
+
+* Fix expert_demos.py, some test failures
+
+* test_adversarial passes
+
+* Fix GAIL/AIRL test failures
+
+* More test fixes, update fixtures
+
+* Fix more test failures
+
+* Update SB logger, fix more tests
+
+* More small test fixes
+
+* Add TB dep
+
+* More test fixes
+
+* More logger-related test fixes
+
+* Address some PR pre-review comments
+
+* Fix comments that don't need functional changes
+
+* Pass in constructed reward/discrim nets directly
+
+* Update some TODOs
+
+* Speed up test_bc and test_scripts
+
+* Speed up test_dagger, fix test_experiments
+
+* Speed up test_density_baselines
+
+* Update src/imitation/algorithms/adversarial.py
+
+Co-authored-by: Adam Gleave <adam@gleave.me>
+
+* Update src/imitation/rewards/reward_net.py
+
+Co-authored-by: Adam Gleave <adam@gleave.me>
+
+* Review comments
+
+* Disable Ray webui by default
+
+* Use fixed version of SB3
+
+* Remove dead code and add pragma for exception block
+
+Co-authored-by: Adam Gleave <adam@gleave.me>
+
+* policies.serialize: Remove MPI try-except
+
+* Bug fix for HardCodedPolicy action selection
+
+Each action should only be chosen based on a single observation (not an entire batch of observations)
+
+* Update setup.py
+
+Co-authored-by: Steven H. Wang <wang.steven.h@gmail.com>
+
+* Update src/imitation/algorithms/bc.py
+
+Co-authored-by: Steven H. Wang <wang.steven.h@gmail.com>
+
+* Apply suggestions from code review
+
+Co-authored-by: Steven H. Wang <wang.steven.h@gmail.com>
+
+* More CR requests
+
+* Fix type errors
+
+* Simplify statistics code
+
+* Hopefully fix CI failures
+
+* Fix stats -- discriminator step and float loss
+
+* dagger: whitespace / updates to docs
+
+* test_dagger: Use nondeterministic policy rollout
+
+Before this change, would fail about 8% of the time because the
+starting randomized policy would be too good in combination with
+deterministic action choices. (Sometimes even expert at CartPole)
+
+* Device & shape fixes
+
+* Hopefully shut up codecov
+
+* Oops, BC hack didn't work
+
+* Appease black
+
+* Add coverage, fix use_dones flattening
+
+* test_bc: ValueError, not TypeError
+
+* Add coverage
+
+Co-authored-by: Sam Toyer <sam@qxcv.net>
+Co-authored-by: Adam Gleave <adam@gleave.me>
+Co-authored-by: Sam Toyer <qxcv@users.noreply.github.com>
+Co-authored-by: Steven H. Wang <wang.steven.h@gmail.com>"
+github.com/HumanCompatibleAI/imitation,src/imitation/policies/serialize.py,2020-05-01T03:51:48Z,"Use black for code formatting (#181)
+
+* Add black to CI checks and configure tools to interoperate
+
+* Reformat codebase
+
+* add black as dependency
+
+* Docstring fixes
+
+Co-authored-by: Steven H. Wang <wang.steven.h@gmail.com>"
+github.com/HumanCompatibleAI/imitation,src/imitation/policies/serialize.py,2019-12-20T00:52:15Z,"Fix errors due to SB change (#143)
+
+* Fix errors due to SB change
+
+hill-a/stable-baselines#609
+
+* normalize_{observation=>obs}
+
+* setup.py: Bump update note"
+github.com/HumanCompatibleAI/imitation,src/imitation/policies/serialize.py,2019-11-07T21:19:52Z,"Remove deprecated policies (#113)
+
+* Remove deprecated policy format
+
+* Don't commit new rollout pkls
+
+* Oops, missing vec_normalize.pkl
+
+* lint
+
+* Fix broken rollouts_from_policies test path"
+github.com/HumanCompatibleAI/imitation,src/imitation/policies/serialize.py,2019-11-05T02:58:45Z,"Support custom arguments to VecNormalize (#111)
+
+* Support custom arguments to VecNormalize
+
+* Fix lint
+
+* Clean up PointMazeEnv
+
+* Bugfix: normalize policy for new-style stats
+
+* Update src/imitation/scripts/config/expert_demos.py
+
+Co-Authored-By: Steven H. Wang <wang.steven.h@gmail.com>
+
+* Update comment in setup.py for SB release
+
+* Remove duplicate doc"
+github.com/HumanCompatibleAI/imitation,src/imitation/policies/serialize.py,2019-08-21T08:44:45Z,Hotfix: check for null model
+github.com/HumanCompatibleAI/imitation,src/imitation/policies/serialize.py,2019-08-21T08:41:01Z,"Use context managers for deserialized policies and rewards (#85)
+
+* Create registry for rewards, add support in expert_demos for overriding environment with loaded reward
+
+* Fix tests
+
+* Add tests for reward serialization; bugfixes
+
+* Speed up doc build by multi-processing
+
+* Test coverage
+
+* More thorough testing of hardcoded rewards
+
+* Address review comments
+
+* Bugfix due to steps
+
+* Bugfix: apply reward wrapping before normalizing observations
+
+* Add logging to RewardVecEnvWrapper; support reward wrapping in eval_policy
+
+* Bugfix: sleep for less the higher FPS is
+
+* Address review comments
+
+* Improve test coverage
+
+* Make policies.serialize return context manager closing session
+
+* Convert reward serialize to context manager
+
+* Update eval_policy to use new load_reward interface
+
+* Fix types
+
+* Add sess_context helper method
+
+* Make decorators preserve function signature
+
+* Fix up more decorators
+
+* Bugfix: appropriate attribute name"
+github.com/HumanCompatibleAI/imitation,src/imitation/policies/serialize.py,2019-08-20T09:34:02Z,"Transfer learning: RL training using loaded reward model (#81)
+
+* Create registry for rewards, add support in expert_demos for overriding environment with loaded reward
+
+* Fix tests
+
+* Add tests for reward serialization; bugfixes
+
+* Speed up doc build by multi-processing
+
+* Test coverage
+
+* More thorough testing of hardcoded rewards
+
+* Address review comments
+
+* Bugfix due to steps
+
+* Bugfix: apply reward wrapping before normalizing observations"
+github.com/HumanCompatibleAI/imitation,src/imitation/policies/serialize.py,2019-08-15T20:09:39Z,"HardCodedPolicy: return NumPy arrays (#82)
+
+* HardCodedPolicy: return NumPy arrays
+
+* Fix types
+
+* Fix another type
+
+* Linting & indent error"
+github.com/HumanCompatibleAI/imitation,src/imitation/policies/serialize.py,2019-08-15T17:41:16Z,"Train experts for AIRL environments (#68)
+
+* scripts.config: Organize named configs
+
+* scripts.config: Add custom env named configs
+
+* mujoco_experts.sh: Train custom env experts
+
+* Rename mujoco_experts.sh => train_experts.sh
+
+* Fix lint/Travis/imports
+
+* train_experts: save to train_experts/
+
+* setup.py: Install stable_baselines from master
+
+Includes MPI hang fix
+
+* Accommodate PPO1 import fail
+
+* address comments
+
+* Address comments
+
+* Fix configs
+
+* lint
+
+* Fix bad merge: add back in fast"
+github.com/HumanCompatibleAI/imitation,src/imitation/policies/serialize.py,2019-08-15T09:47:44Z,"Create a registry for policies (#75)
+
+* Create policy registry
+
+* Add extra test for input validation
+
+* Use VecEnv for policy deserialization
+
+* Make test_seed less flaky
+
+* Address review comments"
+github.com/HumanCompatibleAI/imitation,src/imitation/policies/serialize.py,2019-08-06T15:09:52Z,Fix static typing errors
+github.com/HumanCompatibleAI/imitation,src/imitation/policies/serialize.py,2019-07-29T10:46:33Z,Pass-through n_batch (#61)
+github.com/HumanCompatibleAI/imitation,src/imitation/policies/serialize.py,2019-07-25T19:23:44Z,Add more comments
+github.com/HumanCompatibleAI/imitation,src/imitation/policies/serialize.py,2019-07-25T10:42:33Z,Address Steven comments
+github.com/HumanCompatibleAI/imitation,src/imitation/policies/serialize.py,2019-07-24T14:37:06Z,Work around Stable Baselines bug
+github.com/HumanCompatibleAI/imitation,src/imitation/policies/serialize.py,2019-07-24T14:24:01Z,Linting
+github.com/HumanCompatibleAI/imitation,src/imitation/policies/serialize.py,2019-07-24T14:04:44Z,Consistent interface for loading/saving policies

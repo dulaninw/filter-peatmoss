@@ -1,0 +1,5265 @@
+repo_url,filepath,commit_date,message
+github.com/PaddlePaddle/PaddleHub,paddlehub/module/nlp_module.py,2022-07-11T12:26:12Z,"fix a bug, embedding result is a tensor, unpacking error (#1910)
+
+* fix a bug, embedding result is a tensor, unpacking error
+
+* fix a bug, embedding result is a tensor, unpacking error.
+
+* doc format
+
+* fix chinese_electra_small README.md
+
+* fix electra model version case
+
+Co-authored-by: wuzewu <wuzewu@baidu.com>"
+github.com/PaddlePaddle/PaddleHub,paddlehub/module/nlp_module.py,2021-07-01T08:07:28Z,Cache tokenizer in TransformerModule (#1491)
+github.com/PaddlePaddle/PaddleHub,paddlehub/module/nlp_module.py,2021-06-15T11:38:06Z,Add return_prob in text classification module
+github.com/PaddlePaddle/PaddleHub,paddlehub/module/nlp_module.py,2021-04-07T08:36:03Z,Improve the model export interface.
+github.com/PaddlePaddle/PaddleHub,paddlehub/module/nlp_module.py,2021-03-11T01:57:25Z,"Add dataset, module task, and demo of text-matching (#1281)
+
+* Add dataset, module task, and demo of text-matching"
+github.com/PaddlePaddle/PaddleHub,paddlehub/module/nlp_module.py,2021-03-02T06:28:58Z,Fix the compatibility error caused by the upgrade of PretrainedTokenizer
+github.com/PaddlePaddle/PaddleHub,paddlehub/module/nlp_module.py,2021-02-26T06:56:08Z,Add compatible code for paddlehub.module.nlp_module.DataFormatError
+github.com/PaddlePaddle/PaddleHub,paddlehub/module/nlp_module.py,2021-01-27T02:17:42Z,"Add embedding finetune demo (#1204)
+
+* Add embedding seq-cls finetune demo and update api
+
+* Update docs of pad_sequence and trunc_sequence"
+github.com/PaddlePaddle/PaddleHub,paddlehub/module/nlp_module.py,2021-01-20T03:28:37Z,"Add text processing of token-cls task in predict method (#1199)
+
+* Reset metric value at training and validation step
+
+* Add text processing of token-cls task in predict method"
+github.com/PaddlePaddle/PaddleHub,paddlehub/module/nlp_module.py,2021-01-05T13:04:08Z,"Remove arg ""max_seq_len"" in get_embedding method (#1168)
+
+* update get_embedding"
+github.com/PaddlePaddle/PaddleHub,paddlehub/module/nlp_module.py,2021-01-05T12:28:07Z,"Remove arg ""batch_size"" in get_embedding method (#1167)
+
+* update get_embedding"
+github.com/PaddlePaddle/PaddleHub,paddlehub/module/nlp_module.py,2020-12-30T15:57:48Z,"Update transformer modules (#1147)
+
+* Add token-cls task for transformer modules
+
+* Fix numpy dtype mismatch in windows
+
+* Update README.md
+
+* Update token-cls task for ernie_tiny
+
+* Update token-cls task for ernie_tiny
+
+* Update token-cls task for other Transformer modules
+
+* Update README.md of modules and token-cls demo
+
+* Add chunk_scheme arg check in SeqLabelingDataset
+
+* Update ChunkEvaluator and paddlenlp requirement
+
+* Update README.md
+
+* Update token-cls demo"
+github.com/PaddlePaddle/PaddleHub,paddlehub/module/nlp_module.py,2020-12-28T03:20:44Z,Add predict_method for predict serving
+github.com/PaddlePaddle/PaddleHub,paddlehub/module/nlp_module.py,2020-12-22T03:16:34Z,"Add token-cls task and sequence labeling demo (#1121)
+
+* Add MSRA dataset
+
+* Add ernie_tiny seq-cls task case
+
+* Update README.md"
+github.com/PaddlePaddle/PaddleHub,paddlehub/module/nlp_module.py,2020-11-30T11:20:47Z,add sequence classification with ernie/bert/roberta finetuned in dygraph
+github.com/PaddlePaddle/PaddleHub,paddlehub/module/nlp_module.py,2020-11-05T06:45:11Z,Fix the compatibility problem of text generation module
+github.com/PaddlePaddle/PaddleHub,paddlehub/module/nlp_module.py,2020-11-02T08:00:46Z,Add comments
+github.com/PaddlePaddle/PaddleHub,paddlehub/module/nlp_module.py,2020-08-21T09:33:09Z,update code
+github.com/PaddlePaddle/PaddleHub,paddlehub/module/nlp_module.py,2020-08-21T07:28:58Z,modify check_input_data (#837)
+github.com/PaddlePaddle/PaddleHub,paddlehub/module/nlp_module.py,2020-07-15T09:58:07Z,Add Parakeet tts (#711)
+github.com/PaddlePaddle/PaddleHub,paddlehub/module/nlp_module.py,2020-07-14T12:07:37Z,Add text matching task (#735)
+github.com/PaddlePaddle/PaddleHub,paddlehub/module/nlp_module.py,2020-05-29T07:39:50Z,add ernie-skep (chnsenticorp) (#627)
+github.com/PaddlePaddle/PaddleHub,paddlehub/module/nlp_module.py,2020-05-15T15:40:38Z,update get embedding api for tranformer module (#601)
+github.com/PaddlePaddle/PaddleHub,paddlehub/module/nlp_module.py,2020-05-13T15:51:23Z,fix version issue
+github.com/PaddlePaddle/PaddleHub,paddlehub/module/nlp_module.py,2020-05-12T09:12:06Z,fix bugs
+github.com/PaddlePaddle/PaddleHub,paddlehub/module/nlp_module.py,2020-05-07T18:19:55Z,Update dygraph code
+github.com/PaddlePaddle/PaddleHub,paddlehub/module/nlp_module.py,2020-04-27T09:56:26Z,update text classifer demo
+github.com/PaddlePaddle/PaddleHub,paddlehub/module/nlp_module.py,2020-04-23T12:39:15Z,update nlp_module
+github.com/PaddlePaddle/PaddleHub,paddlehub/module/nlp_module.py,2020-03-16T08:38:16Z,"Fix typo (#447)
+
+* fix-typo"
+github.com/PaddlePaddle/PaddleHub,paddlehub/module/nlp_module.py,2020-03-12T09:12:22Z,"surport ernie module v2 (#442)
+
+* surport ernie module v2"
+github.com/PaddlePaddle/PaddleHub,paddlehub/module/nlp_module.py,2020-03-12T06:46:24Z,"fix load module in py2 (#441)
+
+* fix load module in py2"
+github.com/PaddlePaddle/PaddleHub,paddlehub/module/nlp_module.py,2020-03-12T06:29:35Z,"Add nlp module (#433)
+
+* add nlpmodule base class"
+github.com/PaddlePaddle/PaddleHub,paddlehub/module/nlp_module.py,2020-03-10T03:09:47Z,"add BERTEmbeddingTask and BERTModule  (#424)
+
+* add bertmodule"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2024-03-04T02:36:02Z,"Fix _cache_founf_inf (#7997)
+
+* Fix
+
+* Fix
+
+* Fix"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2024-02-29T03:02:24Z,"[Unified Checkpoint] Support peft model (#7691)
+
+* fix qwen merge tp concat
+
+* support peft unified checkpoint
+
+* add prefix numpy save
+
+* add single node peft
+
+* fix peft distributed load
+
+* add single node optimizer load
+
+* support peft tensor parallel for unified checkpoint
+
+* add prefix from_pretrained from safetensors
+
+* add lora and prefix safetensor name
+
+* fix typo
+
+* fix params that is not enough to save per worker
+
+* fix lora pp tp split
+
+* add peft uc tests
+
+* fix master_weight is None
+
+* add ptuning uc tests
+
+* fix tensor copy blocking
+
+* unify lora and ptuning
+
+* fix load_best_model
+
+* fix index json name
+
+* remove ptuning unittest"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2024-02-22T03:36:59Z,"[Trainer] ignore_save_lr_and_optim (#7978)
+
+* ignore_save_lr_and_optim
+
+* 只对finetune的测试开启ignore_save_lr_and_optim"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2024-01-31T10:51:57Z,"[Auto Parallel] Support semi-auto trainer and fit Llama2 training (#7885)
+
+* support semi-auto trainer and fit Llama2 training
+
+* support shard_dataloader in dynamic semi-auto
+
+* rewrite traning loop
+
+* refactor traning loop
+
+* refine args of auto trainer
+
+* broadcast loss
+
+* add auto ci cases"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2024-01-29T14:16:02Z,"RuntimeTimer for the toolkit (#7913)
+
+* RuntimeTimer for the toolekit
+
+* RuntimeTimer for the toolekit
+
+* reformat
+
+* fix timer and load checkpoints
+
+* remove reset"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2024-01-29T12:44:32Z,"[Improvement] fix logger level (#7903)
+
+* fix logger level
+
+* fix training args logger level"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2024-01-29T06:35:41Z,trainer refactor (#7909)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2024-01-26T07:34:00Z,[CustomDevice] fix loading rng state on custom device (#7894)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2024-01-25T02:59:22Z,"[Bug Fix] fix allreduce tensor dtype (#7876)
+
+* [Bug Fix] fix allreduce tensor dtype
+
+Reason: some CCL not support bool dtype
+
+* update int8 to int32"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2024-01-17T09:16:05Z,"[unified checkpoint] Fix last checkpoint save (#7854)
+
+* fix(unified checkpoint): fix last ckpt save
+
+* fix(unified checkpoint): unified config format"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2024-01-04T14:16:41Z,fix dist dataloader eval (#7777)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2024-01-04T11:42:05Z,"Fix unified_checkpoint bug (#7770)
+
+* fix use_unified_checkpoint defined
+
+* add n1c2 test into ci_case.sh
+
+* move test_unified_checkpoint to tests
+
+* add tests/trainer into testpaths
+
+* remove unifiedcheckpoint case from ci_case.sh"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2024-01-02T08:15:41Z,"[llm]support lora merge (#7733)
+
+* support lora merge
+
+* add finetune
+
+* support bf16 and lora merge
+
+* update
+
+* add lora merge
+
+* version adatpt
+
+* update
+
+* fix
+
+---------
+
+Co-authored-by: root <root@bddwd-inf-k8s-a100-a12ni6-0399.bddwd.baidu.com>"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-12-28T12:29:47Z,"Add mp delay_scale_loss function (#7713)
+
+* add mp delay_scale_loss function
+
+* remove useless codes"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-12-28T05:06:37Z,"[unified checkpoint] Update unified checkpoint (#7730)
+
+* replace with unwrap_optimizer
+
+* remove dist.barrier(group=tp_group) for distributed_gather
+
+* add warning when loading model weights as master weights
+
+* update paddle.cast
+
+* Revert ""replace with unwrap_optimizer""
+
+This reverts commit 3fd6a589545671dea94ad1876860f1fa0c745866.
+
+* add unwrap_optimizer
+
+* convert is_unified_checkpoint to is_unified_checkpoint
+
+* update"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-12-26T11:44:39Z,[Unified Checkpoint] Add unified checkpoint config (#7574)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-12-26T08:14:21Z,"[Trainer] Support release gradients for develop branch (#7594)
+
+* support release gradients for develop branch"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-12-22T03:56:31Z,"[LLM PDC] merge some llm pdc code into develop (#7694)
+
+* 自定义cuda kernel支持更多arch
+
+* llm gradio添加subtile
+
+* 更新trainer_callback
+
+* 确保模型文件顺利保存,使用checkpoint_done进行判断
+
+* 添加FLAG_LLM_PDC环境变量,兼容task_name_or_path和intokens参数
+
+* 修改finetune pretrain文件
+
+* update
+
+* update
+
+* update"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-12-21T02:24:12Z,"Pp reshard develop (#7629)
+
+* polish
+
+* tested
+
+* polish
+
+* polish
+
+* polish
+
+* follow_comment
+
+---------
+
+Co-authored-by: liuzhenhai93 <liuzhenhai@baidu.com>"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-12-19T12:02:32Z,"Support sep (#6994)
+
+* run 4096
+
+* support sequence segment parallel
+
+* polish
+
+* format
+
+* format
+
+* format
+
+* inplace reshape
+
+* format
+
+* run llama with sep
+
+* llama sep
+
+* run sh
+
+* llama converge
+
+* llama align first loss between dp and sep
+
+* support non fuse_qkv and non flash attn to use sep, all align first loss with dp
+
+* support rope emb
+
+* align the first loss of dp and sep for modelzoo gpt3
+
+* sep support local_seed for dropout
+
+* support tp(with sequence parallel) and sep hybrid parallel
+
+* run seq_len scalable test
+
+* do not build attention mask in advance when use flash attention
+
+* polish run
+
+* run benchmark
+
+* test gpt1.3B performance
+
+* clean codes
+
+* run gpt and llama
+
+* code style
+
+* add unittest
+
+* enable test when gpu_num>1
+
+* code style
+
+* fix sep test
+
+* fix test
+
+* code style
+
+* polish
+
+* fix
+
+* polish test
+
+* check tp and sp
+
+* run script
+
+* check compatible
+
+* rename
+
+* fix test
+
+* polish
+
+* fix bug
+
+* rename
+
+---------
+
+Co-authored-by: pangengzheng <pangengzheng.baidu.com>"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-12-18T11:18:22Z,"【Hackathon 5th No.64】PaddleNLP套件模型接入动转静训练功能 (#7576)
+
+* fix
+
+* add to_static for Trainer
+
+* fix
+
+* codestyle"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-12-12T11:42:45Z,[Trainer] Remove args in set_seed function (#7592)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-12-12T02:33:23Z,"[Unified Checkpoint] Add dynamic load unified checkpoint (#7487)
+
+* initial commit
+
+* add merge tp for optimizer
+
+* add sharded index for unified optimizer
+
+* rename optimizer state dict key
+
+* change param name
+
+* optimize merge optimzer tp speed
+
+* optimize save speed
+
+* nested copy state dict
+
+* fix bug
+
+* fix filename
+
+* add ckpt check, add dispatch table creationg
+
+* fix sharding group index json
+
+* remove dist_gather, use paddle.distributed's gather instead
+
+* add dynamic load
+
+* support dynamic load, not feasible currently
+
+* add check_unified_optimizer
+
+* add dynamic load optimizer
+
+* fix loading optimizer with sharding group
+
+* add unittest for n1c8 dynamic
+
+* add unittest for n2c4 dynamic
+
+* refine unittest, add dynamic convert test
+
+* fix distributed_send_recv bug
+
+* fix optimizer params"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-12-08T06:13:03Z,"[Trainer] Add memory info in log (#7587) (#7607)
+
+* add memory info"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-12-08T03:46:57Z,[Trainer] Remove dp group with group_sharded_parallel checks. (#7507)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-12-04T13:11:17Z,"[Dist Dataloader] Fix dist dataloader sampler (#7579)
+
+* fix distdataloader sampler"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-11-24T11:05:00Z,"[Unified checkpoint] Add unified optimizer loader (#7441)
+
+Add unified optimizer loader
+
+---------
+
+Co-authored-by: DesmonDay <908660116@qq.com>
+Co-authored-by: Zhong Hui <zhonghui.net@gmail.com>"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-11-22T11:03:08Z,[Trainer] Fix pp config usage. (#7443)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-11-22T02:50:56Z,[Trainer] Support sharding stage 3 for main grad (#7319)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-11-22T02:49:58Z,[Trainer] Support dp for main_grad (#7293)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-11-21T10:26:16Z,[BugFix] Update trainer.py (#7492)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-11-21T07:23:06Z,"[Unified checkpoint] Add unified optimizer (#7373)
+
+* initial commit
+
+* temp commit
+
+* add merge tp for optimizer
+
+* add sharded index for unified optimizer
+
+* rename optimizer state dict key
+
+* change param name
+
+* optimize merge optimzer tp speed
+
+* optimize save speed
+
+* nested copy state dict
+
+* simplify code
+
+* polish code
+
+* fix bug
+
+* fix filename"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-11-21T06:33:10Z,"[Unified Ckpt] Add unittest for unified checkpoint. (#7392)
+
+* init test for save/load
+
+* fix warmup_steps.
+
+* add unittest for unified checkpoint.
+
+* reset script back.
+
+* fix pp with sharding.
+
+* remove some code."
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-11-09T02:01:20Z,"Develop sharding reshard (#7399)
+
+* format
+
+* tested
+
+* format"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-11-01T15:01:05Z,fix peft load_best_model_at_end & resume from checkpoint (#7360)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-10-31T13:15:28Z,"[Trainer] Support broadcast optimizer in dp group and fix unified checkpoints (#7256)
+
+* add sharded save
+
+* fix unified ckpt with dp.
+
+* fix with load dp.
+
+* fix bugs for pure pp. add miss keys check.
+
+---------
+
+Co-authored-by: DesmonDay <908660116@qq.com>"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-10-31T04:03:16Z,"[CI] Add qwen pretrain test (#7330)
+
+* add qwen pretrain test
+
+* rm model_type"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-10-20T03:12:18Z,"[Trainer] Polish the setting of dist_strategy. (#7214)
+
+* Polish the setting of distributed strategy.
+
+* Avoid redundant cast.
+
+* Optimize benchmark command for better overlap."
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-10-18T10:40:23Z,[Trainer] Add  unified checkpoint for hybrid parallel. (#7238)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-10-12T11:52:27Z,[Trainer] Support iterable dataset with dist dataloader (#7208)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-10-12T06:40:49Z,fix_shard_size (#7202)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-10-11T09:47:28Z,"[PEFT]support pp + lora (#7198)
+
+* support pp lora
+
+* update"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-10-09T03:11:31Z,"[llm]support lora for quantizationlinear (#7138)
+
+* support quantizationloralinear
+
+* Version compatible
+
+* add comment
+
+* add mp quantization lora
+
+* fix
+
+* fix
+
+* fix"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-09-25T07:10:59Z,Update trainer.py (#7123)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-09-22T09:22:56Z,"[NVIDIA] Add stage2 NCCL kernel overlap (#7092)
+
+* add stage2 comm overlap
+
+* Make stage2 overlap optional"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-09-22T02:49:15Z,[Trainer] Support master grad for sharding stage 2. (#7075)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-09-19T08:53:49Z,[LLM] Fix synchronized memcpy in GPT (#7008)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-09-15T09:55:38Z,"[Trainer] Support show paddlenlp commit id (#7047)
+
+* support install with git commit
+* support trainer for paddlenlp commit id."
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-09-11T14:50:43Z,[BugFix] Fix  load shard state_dict log (#6991)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-09-08T07:53:12Z,[Trainer] Fix save model for sharding stage3. (#6966)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-09-08T06:49:42Z,[Trainer]  Support master grad for sharding stage1 (#6916)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-09-07T03:38:32Z,change .numpy to cpu().numpy() (#6940)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-08-31T02:57:17Z,fix code (#6880)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-08-29T08:07:54Z,"[Trainer] Fix load opt, since load opt to cpu tensor many leak mem. (#6850)"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-08-29T04:57:51Z,"[PreTrain] Add distributed dataloader (#6775)
+
+* add dist data looader
+
+* remove iterable dataset use dist_dataloader
+
+* fix dist dataloader
+
+* change args and add barrier
+
+* fix dataset load
+
+* add dist dataloader for eval
+
+* fix bug
+
+* fix eval bug
+
+* simplify code
+
+* bugfix
+
+* broadcast data keys"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-08-28T08:44:05Z,[Trainer] Fix timer _git_commit__ (#6833)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-08-24T11:51:22Z,replace int64 size with float for xpu (#6819)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-08-23T06:37:39Z,[Trainer] Support load sharded ckpt (#6787)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-08-22T03:38:25Z,"[LLM]fix peft in trainer & llm readme (#6785)
+
+* fix
+
+* update image
+
+* merge lora & pt code
+
+* update readmeA
+
+* fix intokens"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-08-11T17:47:45Z,fix loop (#6698)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-08-11T13:01:55Z,[Trainer] Support reshard save/load for sharding stage1 (#6633)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-08-11T12:29:07Z,[Trainer] Fix try import (#6691)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-08-11T09:38:34Z,[Trainer] Update trainer for more timer info
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-08-11T06:34:26Z,"[Trainer] Fix for compatibility (#6687)
+
+* fix
+
+* fix"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-08-11T06:28:15Z,support load_best_model_at_end (#6688)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-08-11T03:50:02Z,"[Cherry-Pick](#6509) (#6504)  (#6684)
+
+* support pp delay_scale_loss and dp_comm_overlap
+
+* [Distributed]Add dp/sharding overlap for pipeline (#6504)
+
+* [Distributed]Support pipelineparallel in accumulation_steps (#6509)
+
+* fix trainer
+
+---------
+
+Co-authored-by: haohongxiang <haohongxiang@baidu.com>"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-08-10T06:06:12Z,"merge peft params (#6678)
+
+Co-authored-by: DesmonDay <908660116@qq.com>"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-08-08T11:32:53Z,"Remove most of fluid usage (#6636)
+
+* Remove fluid usage.
+
+* Fix paddle.nn.Layer doc URL"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-08-08T04:52:05Z,"[Trainer] Support pp sharding stage 1 overlap (#6643)
+
+* support pp sharding stage 1 overlap
+
+* remove hack prepare_training"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-08-03T11:35:55Z,"[TRAINER] Update trainer.py (#6606)
+
+delete c_embedding"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-07-31T11:44:00Z,"Add ernie-3.5-se (#6556)
+
+* add ernie-3.5-se
+
+* polish readme and code
+
+* fix
+
+* fix optimizer warm start"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-07-28T08:29:40Z,[BugFix] Update trainer.py (#6526)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-07-24T08:11:17Z,"Add llm gpt3 (#6455)
+
+* add support the gpt-3
+
+* romove the gpt-3 directory
+
+* addd the readme document for llm gpt
+
+* update the infer script
+
+* update the code for the trainer
+
+* update the predict script"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-07-20T07:28:38Z,[LLM] Upgrade sharding stage1 for new develop paddle (#6360)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-07-19T08:23:01Z,support more argument settings for scheduler (#6435)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-07-17T02:40:54Z,fix log (#6410)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-07-10T04:07:44Z,[Trainer] Fix rng_state for custom_device (#6332)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-06-27T12:36:13Z,"[LLM] Upgrade from_pretrained/save_pretrained and support shared checkpoint for LLM (#6181)
+
+* tmp
+
+* tmp, should revert.
+
+* tmp fix
+
+* fix import
+
+* init version for save/load shard ckpt.
+
+* fix
+
+* fix tmp.
+
+* add bos_community.
+
+* add tests.
+
+* fix ci
+
+* unify some names
+
+* fix some ci
+
+* fix load bug.
+
+* fix
+
+* fix same bugs.
+
+* support pre split for tensor parallel
+
+* tmp
+
+* fix
+
+* fix tp save
+
+* fix for hybrid parallel model checkpoint.
+
+* add use_safetensors.
+
+* optimize convert dtype.
+
+* fix warnings filter.
+
+* fix load error messages.
+
+* fix as comments.
+
+* fix 0-d 1-d
+
+* support  keep_in_fp32_modules
+
+* fix low cpu mem useage."
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-06-21T09:36:02Z,"[Trainer] Add custom_black/white_list (#6032)
+
+* add custom_black/white_list
+
+* update docstring
+
+* add docs
+
+* update max_evaluate_steps
+
+* rm recompute_granularity
+
+* add amp_white/black list
+
+* update"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-06-20T12:34:46Z,[Trainer] Support chatglm for npu (#6176)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-06-15T08:50:14Z,"[Trainer] Add optimizer-step and read data hooks (#6179)
+
+* add `on-optimizer-step` & `on-read-data` hooks
+
+Co-authored-by: Zhong Hui <zhonghui.net@gmail.com>"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-06-13T08:20:07Z,"[Trainer] Update trainer.py (#6153)
+
+* [Trainer] Update trainer.py
+
+* add trainer doc
+
+* fix stage3"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-06-08T07:21:27Z,fix llama pretrain init. (#6116)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-05-31T03:45:16Z,"Consolidate LoRA and Prefix into `Peft` package (#6051)
+
+* [chatglm] ignore warning for inv_freq and lm_head (#6046)
+
+* [Bug fix] fix LoRA unsync parameters issue (#6048)
+
+* fix styles
+
+* remove extra print
+
+* fix styles
+
+* remove old lora
+
+* fix imports
+
+---------
+
+Co-authored-by: Noel <25607475+LemonNoel@users.noreply.github.com>"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-05-29T03:29:41Z,"[LLM]  llama fix  pad, support pp with attn_mask. (#6030)"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-05-25T09:18:08Z,"[Trainer] pipline remove extra accumulate (#6017)
+
+* remove extra pp stage + main-grad
+
+* use main grad to amp_master_grad.
+
+* optimize some pipeline parallel useage.
+
+---------
+
+Co-authored-by: chenxuyi <chenxuyi@baidu.com>"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-05-18T11:25:29Z,distributed_scaler/distributed_model/distributed_optimizer for MP/TP (#5956)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-05-17T13:05:12Z,support lora prefix tuning for load_best_model_at_end and resume (#5943)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-05-17T09:02:29Z,"[Trainer] fix stage3 (#5937)
+
+* fix distributed training
+
+* fix"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-05-15T06:19:57Z,[Trainer] Fix amp usage for lookup_table. (#5907)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-05-08T06:23:25Z,"[LLM] Fix 0d concat, fix pp config, add _from_config. (#5858)
+
+* add _from_config
+
+* fix trainer pp bugs
+
+* fix 0d concat."
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-05-04T03:32:08Z,add load save prefix (#5797)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-04-28T08:01:35Z,"[LLM] Support pipeline parallel for llama model. (#5755)
+
+* init for llama  pipeline.
+
+Co-authored-by: chenxuyi <chenxuyi@baidu.com>"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-04-23T09:59:36Z,[bug-fix] trainer inf detection (#5758)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-04-21T08:05:06Z,[BugFix] fix resume rng-state file check (#5741)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-04-21T06:03:36Z,"[Function optimization] fix bloom bf16 supporting ops (#5606)
+
+* fix bloom bf16 supporting
+
+* fix tensor-degree merge
+
+* add c_embedding op to black-list
+
+* disable c_embedding in bf16
+
+* support topk bf16
+
+* fix finetune amp
+
+* update generation for bf16
+
+* update sampling for bfloat and topk=1
+
+* fix lint
+
+* fix dtype checking"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-04-10T07:20:56Z,"[LLM] Fix GLM amp useage. (#5556)
+
+* check glm
+
+* fix bugs.
+
+* fix bugs
+
+* support merge_tensor_parallel for predict_generation.py
+
+* fix loading with dtype."
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-04-03T13:54:00Z,"Add merge tp trainer (#5491)
+
+* add merge tp optional in trainer.
+
+* fix bugs.
+
+* add warning.
+
+* Add set hyrbid parallel seed.
+
+* tmp
+
+* fix the default value for the bloom
+
+* fix the prompt trainer save
+
+---------
+
+Co-authored-by: Zhong Hui <zhonghui.net@gmail.com>"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-03-30T09:53:05Z,unit test passes (#5475)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/trainer/trainer.py,2023-03-27T11:14:41Z,trainer support eval_accumulation_steps. (#5426)
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-3.0/run_qa.py,2023-02-16T13:23:36Z,"Support npu for ernie-3.0 run_qa (#4831)
+
+* support qa
+
+* verify fix"
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-3.0/run_qa.py,2023-01-17T03:36:43Z,Add tokenizer save (#4499)
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-3.0/run_qa.py,2022-12-22T04:15:22Z,"add the ernie pretrain config (#3962)
+
+* add the model zoo for the ernie 3.0
+
+* temp add
+
+* add the qa prediction
+
+* add the config for the ernie
+
+* add the predictor for the paddlenlp
+
+* add the server for the token、seq
+
+* add the qa handler
+
+* add the qa server
+
+* update the readme for the ernie 3.0
+
+* update the code for the paddlenlp
+
+* update the code for qa server
+
+* update the code for the trition serving
+
+* add the function for the compress
+
+* update the code for the paddlenlp
+
+* update the code for the token
+
+* update the code for token cls
+
+* update the code for ernie model"
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-3.0/run_qa.py,2022-12-05T11:13:15Z,black format all (#4014)
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-3.0/run_qa.py,2022-10-11T08:30:01Z,"support mlu training (#3431)
+
+* support mlu training
+
+* [mlu] add mlu config in rnn and ernie-1.0 README."
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-3.0/run_qa.py,2022-08-16T00:05:12Z,"run_qa.py add xpu chioce of device,*test=kunlun (#3046)
+
+* run_qa.py add xpu chioce of device,*test=kunlun
+
+* run_qa.py add xpu chioce of device,*test=kunlun"
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-3.0/run_qa.py,2022-06-15T07:42:20Z,"Add UER-py and HFL Chinese RoBERTa models (#2437)
+
+* Fix clue grid search bug
+
+* fix
+
+* fix cmrc2018 filename
+
+* Update run_mrc.sh
+
+* add uer-roberta
+
+* update model name for roberta models
+
+* update uer
+
+* update ernie 3.0 run_qa.py
+
+* remove useless symbols
+
+* make tinybert support faster_tokenizer, add rbt4, UER-py/RoBERTa-6L768H
+
+* add rbt6
+
+* add org name
+
+* fix table format
+
+* Add org name for rbt"
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-3.0/run_qa.py,2022-06-13T12:04:14Z,update yapf (#2464)
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-3.0/run_qa.py,2022-05-23T12:58:35Z,"Make CLUE benchmark  run automatically (#2229)
+
+* make clue class auto run
+
+* make mrc task run automatically
+
+* fix code styke
+
+* optimize running time
+
+* add extract script
+
+* add clue auto run
+
+* add grid search readme
+
+* fix grid search bug
+
+* add ppminilm qa and multiple choice class
+
+* fix cmrc launch bug
+
+* delete useless file
+
+* rename file  name
+
+* fix print error
+
+* delete useless script
+
+* fix extract result
+
+* update readme
+
+* update dataset process
+
+* fix cache argmument"
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-3.0/run_qa.py,2022-05-12T16:10:30Z,move selected model to model zoo
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-3.0/run_seq_cls.py,2023-01-19T08:02:53Z,"add npu support for ernie-3.0 (#4362)
+
+* add npu support for ernie3.0
+
+* enable max_length with padding
+
+* enable max_length with padding
+
+* fix typo
+
+* update field
+
+* implement dynamic max length
+
+* implement dynamic max length
+
+* fix styles
+
+* fix styles
+
+* working
+
+* fix dynamic max length logic; enable lazy processing
+
+* fix styles
+
+* update
+
+* update
+
+* updates
+
+* update ci case
+
+* Update default.yml
+
+* Update default.yml
+
+* Update ci_case.sh
+
+* Update ci_case.sh
+
+* Update default.yml
+
+* Update ci_case.sh
+
+* Update default.yml
+
+Co-authored-by: wj-Mcat <1435130236@qq.com>
+Co-authored-by: Sijun He <sijun.he@hotmail.com>"
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-3.0/run_seq_cls.py,2023-01-17T03:36:43Z,Add tokenizer save (#4499)
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-3.0/run_seq_cls.py,2022-12-22T04:15:22Z,"add the ernie pretrain config (#3962)
+
+* add the model zoo for the ernie 3.0
+
+* temp add
+
+* add the qa prediction
+
+* add the config for the ernie
+
+* add the predictor for the paddlenlp
+
+* add the server for the token、seq
+
+* add the qa handler
+
+* add the qa server
+
+* update the readme for the ernie 3.0
+
+* update the code for the paddlenlp
+
+* update the code for qa server
+
+* update the code for the trition serving
+
+* add the function for the compress
+
+* update the code for the paddlenlp
+
+* update the code for the token
+
+* update the code for token cls
+
+* update the code for ernie model"
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-3.0/run_seq_cls.py,2022-12-05T11:13:15Z,black format all (#4014)
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-3.0/run_seq_cls.py,2022-10-20T12:58:44Z,add xpu to choices (#3527)
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-3.0/run_seq_cls.py,2022-10-11T08:30:01Z,"support mlu training (#3431)
+
+* support mlu training
+
+* [mlu] add mlu config in rnn and ernie-1.0 README."
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-3.0/run_seq_cls.py,2022-06-13T12:04:14Z,update yapf (#2464)
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-3.0/run_seq_cls.py,2022-05-12T16:10:30Z,move selected model to model zoo
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-m/run_classifier.py,2023-02-20T12:51:50Z,[ERNIE-M] Fix layerwise decay ratio to model_zoo/ernie-m (#4892)
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-m/run_classifier.py,2023-02-20T08:05:37Z,"[ModelZoo] Refactor ERNIE-M usage in Model Zoo (#4324)
+
+* update model_zoo/ernie-m
+
+* add logging eval infomations
+
+* delete unused testing code
+
+* add tests samples for xnli
+
+* fewer tests samples for xnli
+
+* add predict and export
+
+* add predictor and serving
+
+* fix export error when training with data parallelism
+
+* fix mkdir error in distributed training and use ERNIEMHandler
+
+* adjust predictor
+
+* modify ci accroding to #4398 and adjust predictor
+
+* enable load tiny dataset for ci
+
+* support testing infer with precision_mode fp16
+
+* modify ci script
+
+* Update ci_case.sh
+
+* enable to test inputs_embeds for enire-m
+
+* fix ci script
+
+* fix using fast tokenizer
+
+* using set_optimizer_grouped_parameters instead
+
+* consturct optimizer with layerwise_lr_decay out of Trainer"
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-m/run_classifier.py,2023-02-15T11:52:38Z,"Deprecate Distutils (#4518)
+
+* styles
+
+* fix lint"
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-m/run_classifier.py,2022-12-05T11:13:15Z,black format all (#4014)
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-m/run_classifier.py,2022-08-01T05:03:03Z,add hf ds and upgrade example (#2925)
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-m/run_classifier.py,2022-06-21T11:58:36Z,"Use AdamW with lr_ratio setting instead of AdamWDL (#2576)
+
+* Use AdamW with lr_ratio setting instead of AdamWDL
+
+* remove AdamWDL
+
+* remove AdamWDL docs
+
+* Add AdamWDL
+
+* restore adamwdl docs
+
+* Fix adamwdl bug
+
+* Remove fluid"
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-m/run_classifier.py,2022-06-13T12:04:14Z,update yapf (#2464)
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-m/run_classifier.py,2022-05-12T16:10:30Z,move selected model to model zoo
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-3.0/run_token_cls.py,2023-01-19T08:02:53Z,"add npu support for ernie-3.0 (#4362)
+
+* add npu support for ernie3.0
+
+* enable max_length with padding
+
+* enable max_length with padding
+
+* fix typo
+
+* update field
+
+* implement dynamic max length
+
+* implement dynamic max length
+
+* fix styles
+
+* fix styles
+
+* working
+
+* fix dynamic max length logic; enable lazy processing
+
+* fix styles
+
+* update
+
+* update
+
+* updates
+
+* update ci case
+
+* Update default.yml
+
+* Update default.yml
+
+* Update ci_case.sh
+
+* Update ci_case.sh
+
+* Update default.yml
+
+* Update ci_case.sh
+
+* Update default.yml
+
+Co-authored-by: wj-Mcat <1435130236@qq.com>
+Co-authored-by: Sijun He <sijun.he@hotmail.com>"
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-3.0/run_token_cls.py,2023-01-17T03:36:43Z,Add tokenizer save (#4499)
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-3.0/run_token_cls.py,2023-01-06T06:21:19Z,change the token cls (#4365)
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-3.0/run_token_cls.py,2022-12-22T04:15:22Z,"add the ernie pretrain config (#3962)
+
+* add the model zoo for the ernie 3.0
+
+* temp add
+
+* add the qa prediction
+
+* add the config for the ernie
+
+* add the predictor for the paddlenlp
+
+* add the server for the token、seq
+
+* add the qa handler
+
+* add the qa server
+
+* update the readme for the ernie 3.0
+
+* update the code for the paddlenlp
+
+* update the code for qa server
+
+* update the code for the trition serving
+
+* add the function for the compress
+
+* update the code for the paddlenlp
+
+* update the code for the token
+
+* update the code for token cls
+
+* update the code for ernie model"
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-3.0/run_token_cls.py,2022-12-05T11:13:15Z,black format all (#4014)
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-3.0/run_token_cls.py,2022-06-13T12:04:14Z,update yapf (#2464)
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-3.0/run_token_cls.py,2022-05-12T16:10:30Z,move selected model to model zoo
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2024-01-29T12:44:32Z,"[Improvement] fix logger level (#7903)
+
+* fix logger level
+
+* fix training args logger level"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2024-01-11T03:06:22Z,fix lora (#7824)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2024-01-10T03:48:17Z,"[llm]support qlora pp (#7801)
+
+* supprt qlora pp
+
+* fix scale dtype"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2024-01-08T07:59:12Z,"Fix shared weights sync for PipelineLayer  (#7772)
+
+* fix shared weights sync
+
+* fix typo"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2024-01-04T12:00:22Z,"[DONE]  aistudio, hf hub, bos  update download (#7608)
+
+* try fix
+
+* fix hf download bug ...
+
+* update config download bug
+
+* fix
+
+* add subfolder
+
+* update
+
+* 优先级,先本地,再builtin,再aistudio,再hf hub,再bos
+
+* 更新chattemplate文件检索路径
+
+* update
+
+* fix subfolder && add tests
+
+* fix
+
+* update
+
+* fix tokenizer_config_file_dir_list
+
+* subfolder test
+
+* fix from_pretrained() load hf sharded model
+
+* 更新逻辑
+
+* update use_safetensors
+
+* update
+
+* fix resolve_weight_file_from_hf_hub
+
+* 更新bos旧的下载方式
+
+* update download from hf hubgit add .
+
+* update logging
+
+* update
+
+* 关闭代理
+
+* update
+
+* update
+
+* fix image process
+
+---------
+
+Co-authored-by: CrazyBoyM <ai-lab@foxmail.com>
+Co-authored-by: Ke Bai <35400185+CrazyBoyM@users.noreply.github.com>"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2024-01-02T08:15:41Z,"[llm]support lora merge (#7733)
+
+* support lora merge
+
+* add finetune
+
+* support bf16 and lora merge
+
+* update
+
+* add lora merge
+
+* version adatpt
+
+* update
+
+* fix
+
+---------
+
+Co-authored-by: root <root@bddwd-inf-k8s-a100-a12ni6-0399.bddwd.baidu.com>"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-12-28T05:06:37Z,"[unified checkpoint] Update unified checkpoint (#7730)
+
+* replace with unwrap_optimizer
+
+* remove dist.barrier(group=tp_group) for distributed_gather
+
+* add warning when loading model weights as master weights
+
+* update paddle.cast
+
+* Revert ""replace with unwrap_optimizer""
+
+This reverts commit 3fd6a589545671dea94ad1876860f1fa0c745866.
+
+* add unwrap_optimizer
+
+* convert is_unified_checkpoint to is_unified_checkpoint
+
+* update"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-12-12T12:52:11Z,[GPT] Support SharedLayer with different prefixes for pipeline parallel (#7598)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-12-01T07:11:51Z,"[PEFT]add qlora (#7416)
+
+* add qlora(wip)
+
+* add state convert
+
+* add qlora
+
+* update
+
+* fix
+
+* fix
+
+* update
+
+* update
+
+* fix"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-11-17T08:37:56Z,"Add load multi torch bin slices logic (#7445)
+
+* test
+
+* add load multi torch bin slices logit
+
+* add safetensor/bin multi splices load
+
+* add safetensors/bin multi slice files load"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-11-08T09:24:33Z,"support torch safe tensor convert (#7383)
+
+* support torch safe tensor convert
+
+* code refinement
+
+* if statement adjust
+
+* skip clip & bart unitest
+
+* skip clip & bart unitest
+
+* close bart serialization save
+
+* gradio-fix"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-11-03T08:22:09Z,add peft save_to_aistudio (#7364)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-10-31T06:38:59Z,"[aistudio] add save to aistudio hub (#7338)
+
+* add save to aistudiohub
+
+* fix according to comments"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-10-27T10:06:24Z,"[quant] add QuantizationConfig (#7314)
+
+* add
+
+* add quantization config
+
+* update
+
+* fix
+
+* fix
+
+* add quantization_config"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-10-24T13:40:59Z,"Support qwen pretrain. (#7275)
+
+* Support qwen pretrain.
+
+* add missing files.
+
+* fix
+
+* Support fuse rms norm
+
+* add new config.
+
+* refine
+
+* fix
+
+* auto model support from config."
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-10-23T11:46:54Z,"[llm]fix weight only quantization (#7252)
+
+* fix quantization
+
+* fix
+
+* fix
+
+* json"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-10-18T10:40:23Z,[Trainer] Add  unified checkpoint for hybrid parallel. (#7238)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-10-13T10:43:23Z,"Fix subfolder default argument in model download (#7220)
+
+* styles
+
+* remove print"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-10-12T06:40:49Z,fix_shard_size (#7202)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-10-11T12:48:58Z,"Add max_shard_size arg (#6835)
+
+* add max_shard_size arg
+
+* rm max_shard_size
+
+* move to 1024
+
+---------
+
+Co-authored-by: daisiming <daisiming@baidu.com>"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-10-09T13:05:49Z,"Support AI Studio download (#7146)
+
+* styles
+
+* fix subfolder
+
+* remove print"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-09-27T06:11:38Z,"[llm]add quantization  tensor parallelism (#7099)
+
+* add quantization mp
+
+* update
+
+* follow comments
+
+* fix
+
+* fix shape
+
+* update"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-09-26T05:11:52Z,"[BugFix] Fix tp load and gpt pp model (#7129)
+
+* fix gpt pp model
+* fix tp load"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-09-22T09:58:19Z,"[LLM] Unify pipeline model with PretrainModelPipe (#7095)
+
+* unify pipeline model with PretrainModelPipe."
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-09-20T02:41:48Z,"[llm]add quantize (#7027)
+
+* add quantize
+
+* fix bug
+
+* bug fix
+
+* fix saving
+
+* bug fix
+
+* fix and add unitest
+
+* update paddle version
+
+* update following comments
+
+* support prefix
+
+* Update paddlenlp/transformers/model_utils.py
+
+* update
+
+* fix
+
+---------
+
+Co-authored-by: DesmonDay <908660116@qq.com>
+Co-authored-by: Sijun He <sijun.he@hotmail.com>"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-09-14T02:41:19Z,[TensorParallel] Support naive split for lazy safetensors (#7018)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-09-12T11:19:44Z,"[GPT-3]fix fluid for stride_check (#6999)
+
+* fix fluid for gpt
+
+* fix
+
+* update FG CMakeLists.txt
+
+* fix
+
+* update FasterTransformer link"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-09-11T14:50:43Z,[BugFix] Fix  load shard state_dict log (#6991)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-09-07T03:38:32Z,change .numpy to cpu().numpy() (#6940)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-09-05T13:05:12Z,"pretrainedModel add gconfig (#6915)
+
+* pretrainedModel add gconfig
+
+* max/min_new_token, bug fix
+
+* deprecate generation_utils
+
+* code refinement
+
+* code refinement"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-08-24T13:19:31Z,remove (#6821)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-08-23T06:37:39Z,[Trainer] Support load sharded ckpt (#6787)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-08-11T13:01:55Z,[Trainer] Support reshard save/load for sharding stage1 (#6633)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-08-08T11:32:53Z,"Remove most of fluid usage (#6636)
+
+* Remove fluid usage.
+
+* Fix paddle.nn.Layer doc URL"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-07-31T03:55:19Z,Update model_utils.py (#6551)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-07-21T07:11:51Z,"Consolidate Recompute usage (#6403)
+
+* fix recompute
+
+* fix examples
+
+* changes
+
+* changes
+
+* commit
+
+* changes
+
+* changes
+
+* address comments"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-07-17T08:02:54Z,"[LLM] Fix miss matched size for tie weights. (#6394)
+
+* fix miss matched size for tie weights.
+
+* fix tp
+
+* hack load cpu for zero copy.
+
+* fix paddlenlp load cpu hack
+
+* fix"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-07-17T02:40:54Z,fix log (#6410)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-07-04T14:47:33Z,[LLM] fix low cpu mem device. (#6300)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-06-27T12:36:13Z,"[LLM] Upgrade from_pretrained/save_pretrained and support shared checkpoint for LLM (#6181)
+
+* tmp
+
+* tmp, should revert.
+
+* tmp fix
+
+* fix import
+
+* init version for save/load shard ckpt.
+
+* fix
+
+* fix tmp.
+
+* add bos_community.
+
+* add tests.
+
+* fix ci
+
+* unify some names
+
+* fix some ci
+
+* fix load bug.
+
+* fix
+
+* fix same bugs.
+
+* support pre split for tensor parallel
+
+* tmp
+
+* fix
+
+* fix tp save
+
+* fix for hybrid parallel model checkpoint.
+
+* add use_safetensors.
+
+* optimize convert dtype.
+
+* fix warnings filter.
+
+* fix load error messages.
+
+* fix as comments.
+
+* fix 0-d 1-d
+
+* support  keep_in_fp32_modules
+
+* fix low cpu mem useage."
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-06-25T07:52:48Z,fix bfloat16 weight loading (#6242)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-06-19T12:12:45Z,"[BUG Fix] Fix resize embeddings (#6196)
+
+* fix
+
+* update
+
+* feature_extract and image processing support subfolder from bos
+
+* update t5
+
+* update"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-06-13T13:25:14Z,"[New Features] sync model_utils & generation_utils (#6150)
+
+* sync model_utils & generation_utils
+
+* update generation_utils
+
+* update get_scale by dtype
+
+* update beam_score
+
+* update beam_score
+
+* update beam_search params
+
+* fix client
+
+* fix conflict"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-06-02T09:48:40Z,"[Bug fixes] Fix dtype convert bugs. (#6082)
+
+* Fix dtype convert bugs.
+
+* fix load"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-06-02T05:54:39Z,changes (#6077)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-05-29T03:29:41Z,"[LLM]  llama fix  pad, support pp with attn_mask. (#6030)"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-05-12T02:55:47Z,"[lora prefix tuning]unify dtype (#5894)
+
+* unify dtype
+
+* fix dtype"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-05-10T03:52:18Z,"Fix HF-related subfolder download issues (#5871)
+
+* fix subfolder
+
+* changes"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-05-08T06:23:25Z,"[LLM] Fix 0d concat, fix pp config, add _from_config. (#5858)
+
+* add _from_config
+
+* fix trainer pp bugs
+
+* fix 0d concat."
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-04-28T08:01:35Z,"[LLM] Support pipeline parallel for llama model. (#5755)
+
+* init for llama  pipeline.
+
+Co-authored-by: chenxuyi <chenxuyi@baidu.com>"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-04-21T06:03:36Z,"[Function optimization] fix bloom bf16 supporting ops (#5606)
+
+* fix bloom bf16 supporting
+
+* fix tensor-degree merge
+
+* add c_embedding op to black-list
+
+* disable c_embedding in bf16
+
+* support topk bf16
+
+* fix finetune amp
+
+* update generation for bf16
+
+* update sampling for bfloat and topk=1
+
+* fix lint
+
+* fix dtype checking"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-04-21T03:16:05Z,fix (#5734)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-04-19T06:11:04Z,"[New features] enable bf16 dtype in paddlenlp (#5708)
+
+* enable bf16 dtype in paddlenlp
+
+* trigger license/cla"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-04-19T04:00:27Z,"[Bug fixes] update inherited function checking (#5664)
+
+* update function checking
+
+* reconstruct all init_weights
+
+* update init_weights -> _init_weights
+
+* update tie_weights
+
+* fix tie-weights
+
+* fix lint"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-04-13T11:44:49Z,"Use our own Linear layer for easier tie_weights; Fix resize_token_embeddings API (#5623)
+
+* linear linear
+
+* add linear
+
+* styles
+
+* changes
+
+* things
+
+* changes
+
+* bias
+
+* changes
+
+* fix artist and ctrl
+
+* codegen
+
+* changes
+
+* address comments
+
+* fix dtye"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-04-13T10:50:04Z,"Transformers upgrade: deprecate legacy from_pretrained and save_pretrained (#5307)
+
+* changes
+
+* update"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-04-13T09:32:11Z,"[Bug fixes] update dtype variable init (#5646)
+
+* update dtype variable init
+
+* update dtype checking
+
+* update dtype
+
+* remove low_cpu_mem_usage
+
+* update dtype guard"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-04-11T11:16:24Z,"[New Features] disable init-weights when lazy-init float16&bfloat16 (#5545)
+
+* disable init-weights
+
+* update modeling init_weights
+
+* fix model utils
+
+* run under the base model"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-04-11T01:55:21Z,fix loading numpy ndarray (#5593)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-04-10T07:20:56Z,"[LLM] Fix GLM amp useage. (#5556)
+
+* check glm
+
+* fix bugs.
+
+* fix bugs
+
+* support merge_tensor_parallel for predict_generation.py
+
+* fix loading with dtype."
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-04-10T06:50:59Z,"Fix prompt head shape due to tie weights (#5571)
+
+* changes
+
+* working
+
+* ernie tie_weights works
+
+* remove prints
+
+* working
+
+* bert
+
+* changes
+
+* changes"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-04-06T09:33:43Z,"[Generation] Remove __get_attr__ shortcut that gets attribute from config (#5527)
+
+* changes
+
+* fix transformers __get_attr__
+
+* fix
+
+* fix transformers"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-04-06T07:58:04Z,"【PaddlePaddle Hackathon 4】[103] 新增tie_weights能力 代码和单元测试 (#5193)
+
+* [103] 新增tie_weights能力 提交rfc文档
+
+* [103] 新增tie_weights能力 提交rfc文档 v2
+
+* [103] 新增tie_weights 能力 提交rfc文档 v3
+
+* [code] 添加tie weight 函数以及单侧 初版
+
+* [code] 完稿
+
+* [103] 添加上了 只检查以CausalLM或者MaskedLM结尾的模型的逻辑,可以稍微改变一下模型代码来满足tie_weights的要求
+
+* [103] 将包含 MaskedLM: CausalLM 两种结构的模型 进行tie_weight的实现检查
+
+* [103] 优化代码风格 clint
+
+* [103] 尝试解决black 问题
+
+* [103] 撤回对reformer模型修改
+
+* [103] 针对绑定和不绑定的两种情况的适配
+
+* [103] test black
+
+* [103] 修改bug
+
+* [103] 测试
+
+* [103]  修改promot的单侧"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-03-27T02:14:55Z,"Add blip2 models (#5025)
+
+* Add blip2 models
+
+* Update generation_utils.py
+
+* Add blip2 unitest
+
+* Add blip2 unitest
+
+* Update generation_utils.py
+
+* Add blip2-flan-t5-xl-coco
+
+* Add HF copyright
+
+* remove unused comments
+
+* Add blip2 opt support
+
+* remove blanks
+
+* Update blip2 for float16 inference
+
+* Fix input_ids NoneType bug
+
+* Update unitests for blip2
+
+* Fix KeyError: 'cache'
+
+* revert opt causal_mask
+
+* adjust initial weights, adjust tie weights
+
+* remove post init
+
+* delete ModuleUtilsMixin
+
+* remove return dict
+
+* Fix some comments"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-03-26T06:39:51Z,"[LLM] Support tensor parallelism  for save and load (#5397)
+
+* tmp
+
+* debug
+
+* fix
+
+* fix
+
+* add tensor parallel merge.
+
+* support save/load for tp
+
+* fix
+
+* remove unused files.
+
+* fix tests
+
+* fix gather group.
+
+* fix
+
+* add missing file
+
+* fix import
+
+* tmp
+
+* fix load"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-03-23T03:09:36Z,[LLM] low_cpu_mem_usage enable dtype guard (#5344)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-03-20T08:10:34Z,"[LLM] Support GLM  for Tensor Parallel (#5198)
+
+* init version
+
+* support mp for glm.
+
+* support mp for trainer."
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-03-17T03:23:21Z,[LLM] Support Lazy init from pre-trained model (#5270)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-02-28T04:54:04Z,"Fix cache dir issue for Model, Config and Tokenizer (#5013)
+
+* changes
+
+* remove prints
+
+* address comments"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-02-15T06:30:18Z,"Fix cache_dir logic (#4794)
+
+* fix
+
+* wip
+
+* tests
+
+* changes
+
+* update v2
+
+* fix v2 logic
+
+* fix v2
+
+* fix config utils"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-02-14T08:51:15Z,"Fix community url by removing os.path.join (#4758)
+
+* input embeddings
+
+* remove os path
+
+* image process file
+
+* remove roberta change"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-02-07T02:49:08Z,"[PPDiffusers] implement `save_to_hf_hub` for pipelines, models, and Preprocessor (#4640)
+
+* save_to_hf_hub
+
+* commit message
+
+* changes"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-02-06T11:57:32Z,add download_check (#4660)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-02-03T10:00:16Z,"[PPDiffusers] add from_hf_hub to from_pretrained   (#4625)
+
+* from_pretrained works
+
+* fix small things
+
+* Update pipeline_utils.py
+
+* fix cache_dir
+
+* move cache_dir
+
+* address cache_dir"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-01-18T06:24:54Z,"fix download error multi gpu or multi node (#4491)
+
+* fix download error multi gpu or multi node
+
+* update"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-01-10T04:02:04Z,"[BugFixes] update converter command & unittest (#4367)
+
+* fix importing issue
+
+* improve converter
+
+* remove unused import
+
+* fix typo
+
+* update desc & bool env
+
+* update from_hf_hub
+
+* update test
+
+* add logger info for conversion"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-01-05T12:15:53Z,"[New Features] Refactor converter (#4314)
+
+* update converter
+
+* complete bert-converter
+
+* update lint
+
+* update lint
+
+* enable test requirements
+
+* Update tests/transformers/bert/test_converter.py
+
+Co-authored-by: Sijun He <sijun.he@hotmail.com>
+
+* refactor converter
+
+* complete bert-converter
+
+* add Converter for compatibility
+
+* complete bert converter
+
+* update model-utils
+
+* fix by comment
+
+* update makefile
+
+* update url-fetching
+
+* fix test_converter
+
+* complete bert convert
+
+* add compatibility for converter
+
+* update bert compatibility testing
+
+* enable torch checkpoint
+
+* update config
+
+* add blank line to requirements.txt
+
+Co-authored-by: Sijun He <sijun.he@hotmail.com>"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2023-01-01T03:14:09Z,"Alter faster to fast in FG (#4213)
+
+* fix fast got
+
+* fix pretrained config used in fg"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2022-12-29T07:59:59Z,warn only once (#4284)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2022-12-29T02:26:28Z,update config save (#4272)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2022-12-29T01:41:07Z,"[PretrainedConfig] Bring back deprecation warning and fix redundant warnings (#4264)
+
+* commits
+
+* wip
+
+* remove all hasattr
+
+* codegen
+
+* turn on test
+
+* add standard config map
+
+* standard config map
+
+* Update paddlenlp/transformers/bert/configuration.py
+
+Co-authored-by: 骑马小猫 <1435130236@qq.com>
+
+Co-authored-by: 骑马小猫 <1435130236@qq.com>"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2022-12-27T05:40:53Z,disable warning (#4248)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2022-12-26T08:55:32Z,"[Bug fixes] fix config attributes backward compatibility (#4237)
+
+* fix config comp
+
+* update comp
+
+* complete fix config comp
+
+* add deprecated warning
+
+* add common testing
+
+* add turn-on keys
+
+* update modeling
+
+* fix typo"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2022-12-26T06:59:21Z,"[NEW Model] Add BIT DPT Model (#4202)
+
+* add bit dpt
+
+* update autobackbone example
+
+* paddle.to_tensor
+
+* typo
+
+* update dpt tests image file
+
+* update docs
+
+* test_training_gradient_checkpointing"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2022-12-16T12:59:51Z,"pr (#4140)
+
+Co-authored-by: 骑马小猫 <1435130236@qq.com>"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2022-12-15T10:05:00Z,"Ernie Pretrained Config (#4118)
+
+* ernie config
+
+* remove comments
+
+* style
+
+* fix ernie gram
+
+* fix prompt model
+
+* fix pretraining
+
+* Update run_pretrain.py
+
+Co-authored-by: 骑马小猫 <1435130236@qq.com>"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2022-12-09T06:00:24Z,"Add config testing (#4041)
+
+* complete config testing
+
+* add bert-testing
+
+* update modeling comon
+
+* fix testing issue
+
+* update testing
+
+* upate hf-config testing
+
+* update test bert common
+
+* Update test_modeling_common.py
+
+* Update test_modeling_common.py
+
+Co-authored-by: Sijun He <sijun.he@hotmail.com>"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2022-12-07T08:58:07Z,"[NewFeature] add hf config solution (#4035)
+
+* add hf config solution
+
+* add configuration_utils test
+
+* add hf config solution
+
+* add configuration_utils test
+
+* update config
+
+* fix by comment
+
+* fix for merged
+
+* use env name
+
+* use config name
+
+* move config_name to env.py file
+
+Co-authored-by: Sijun He <sijun.he@hotmail.com>"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2022-12-06T04:38:17Z,"[HF] Implement save_to_hf_hub for Model and Tokenizer (#3982)
+
+* fix import
+
+* switch from lfs to http
+
+* Apply suggestions from code review
+
+Co-authored-by: Lucain <lucainp@gmail.com>
+
+* add readme logic
+
+Co-authored-by: Lucain <lucainp@gmail.com>
+Co-authored-by: 骑马小猫 <1435130236@qq.com>"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2022-12-02T01:30:23Z,"[BugFix]fix tokenizer multi-download (#3965)
+
+* fix tokenizer multi-download
+
+* use paddlenlp get_path_from_url
+
+* update model utils"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2022-11-28T03:48:49Z,"Support HUGGINGFACE_HUB_CACHE in HF hub download through os env (#3911)
+
+* support hf hub cache
+
+* merge conflict
+
+Co-authored-by: 骑马小猫 <1435130236@qq.com>"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2022-11-25T09:29:09Z,"Add library name and version to hf_hub_download for better analytics (#3881)
+
+* add lib name and version for hf hub download
+
+* add hf hub version"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2022-11-25T07:37:58Z,"fix load_fp16 model (#3902)
+
+Co-authored-by: 骑马小猫 <1435130236@qq.com>"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2022-11-24T14:59:45Z,"[Function optimization] use file-lock to enable multi-process downloading (#3788)
+
+* add file_lock unittest
+
+* enable multi-processing downloading
+
+* use small weight file & more process to download
+
+* use global lock file
+
+* fix testing
+
+* modify the docstring
+
+* use self.assertGreater
+
+* change the file name & variable name
+
+* add docstring for testing method
+
+* update internal testing bert url
+
+* update multiprocess testing code
+
+* remove unused importing
+
+* add Optional import
+
+* use the origin method name
+
+* format tokenize_utils_base"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2022-11-24T14:41:12Z,"[Bugfix]: add file checking before os.remove (#3843)
+
+* bugfix: add file checking before removing it
+
+* fix typo
+
+* fix typo
+
+* use shutil.move
+
+Co-authored-by: Sijun He <sijun.he@hotmail.com>"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2022-11-20T06:40:06Z,"Enable Model and Tokenizer to directly load paddlepaddle models from huggingface hub (#3786)
+
+* wip
+
+* wip
+
+* AutoModel and AutoTokenizer works
+
+* eady for review
+
+* isort and yapf
+
+* fix style
+
+* unit test pass
+
+* fix styles
+
+* add todo
+
+* integration tests
+
+Co-authored-by: 骑马小猫 <1435130236@qq.com>"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2022-11-15T02:56:57Z,"[Trainer] support sharding for trainer. (#3352)
+
+* supprt sharding for trainer.
+
+* support sharding for t5.
+
+* add t5-3b
+
+* add bf16 support.
+
+* fix sharding stage2
+
+* support iterable dataset.
+
+* fix save strategy."
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2022-11-11T09:15:21Z,"[BugFix] fix value cast in model-utils (#3733)
+
+* fix value cast
+
+* update tensor type
+
+* fix the format"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2022-11-08T10:58:28Z,"[BugFix] fix astype error when dynamic-to-static mode (#3701)
+
+* fix astype warning
+
+* update model_utils for dynamic-to-static
+
+* add comment & imporve Makefile"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/model_utils.py,2022-11-02T12:27:12Z,"[BugFix] fix typo (#3651)
+
+* fix typo
+
+* revert scripts
+
+* remove torch description"
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-1.0/finetune/run_qa.py,2023-02-15T11:52:38Z,"Deprecate Distutils (#4518)
+
+* styles
+
+* fix lint"
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-1.0/finetune/run_qa.py,2022-12-05T11:13:15Z,black format all (#4014)
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-1.0/finetune/run_qa.py,2022-06-13T12:04:14Z,update yapf (#2464)
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-1.0/finetune/run_qa.py,2022-05-12T16:10:30Z,move selected model to model zoo
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-1.0/finetune/run_ner.py,2023-02-15T11:52:38Z,"Deprecate Distutils (#4518)
+
+* styles
+
+* fix lint"
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-1.0/finetune/run_ner.py,2022-12-05T11:13:15Z,black format all (#4014)
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-1.0/finetune/run_ner.py,2022-06-13T12:04:14Z,update yapf (#2464)
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-1.0/finetune/run_ner.py,2022-05-12T16:10:30Z,move selected model to model zoo
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/processing_utils.py,2023-01-06T14:17:32Z,"Refactor CLIP&ErnieViL model and Add ChineseCLIP Model (#4270)
+
+* refactor clip model
+
+* update test tokenizer
+
+* update test tokenizer
+
+* refactor ernie vil
+
+* update config from_pretrained
+
+* set return_dict True
+
+* add chineseclip model
+
+* update"
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/processing_utils.py,2022-12-05T06:03:56Z,black format (#4013)
+github.com/PaddlePaddle/PaddleNLP,paddlenlp/transformers/processing_utils.py,2022-10-13T11:33:31Z,"[NEW Features] feature_extraction and processor support from_pretrained (#3453)
+
+* update
+
+* add import"
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-1.0/finetune/run_seq_cls.py,2023-03-06T02:45:19Z,"[FastDeploy] Add ernie 1.0 fd (#5004)
+
+* Add ernie 1.0 fd
+
+* update readme of ernie 1.0
+
+* update option
+
+* update doc
+
+* remove predict_chnsenticorp.py
+
+* update doc
+
+* update demo output
+
+* update doc"
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-1.0/finetune/run_seq_cls.py,2022-12-28T07:10:29Z,"[Trainer] Add Memory Tracer (#4181)
+
+* Add memory tracer"
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-1.0/finetune/run_seq_cls.py,2022-12-05T11:13:15Z,black format all (#4014)
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-1.0/finetune/run_seq_cls.py,2022-06-13T12:04:14Z,update yapf (#2464)
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-1.0/finetune/run_seq_cls.py,2022-05-12T16:10:30Z,move selected model to model zoo
+github.com/PaddlePaddle/PaddleNLP,llm/llama/auto_parallel/run_pretrain_auto.py,2024-03-01T02:42:33Z,init model using float32 (#8033)
+github.com/PaddlePaddle/PaddleNLP,llm/llama/auto_parallel/run_pretrain_auto.py,2024-02-01T05:10:41Z,"rename files and add readme for llama auto_parallel (#7944)
+
+* rename files and add readme for llama auto_parallel
+
+* rename files and add readme for llama auto_parallel
+
+* fix ci"
+github.com/PaddlePaddle/PaddleNLP,llm/llama/auto_parallel/run_pretrain_auto.py,2024-01-31T10:51:57Z,"[Auto Parallel] Support semi-auto trainer and fit Llama2 training (#7885)
+
+* support semi-auto trainer and fit Llama2 training
+
+* support shard_dataloader in dynamic semi-auto
+
+* rewrite traning loop
+
+* refactor traning loop
+
+* refine args of auto trainer
+
+* broadcast loss
+
+* add auto ci cases"
+github.com/PaddlePaddle/PaddleNLP,llm/llama/auto_parallel/run_pretrain_auto.py,2024-01-24T12:37:31Z,support bf16 loss in static (#7874)
+github.com/PaddlePaddle/PaddleNLP,llm/llama/auto_parallel/run_pretrain_auto.py,2023-12-25T11:06:33Z,remove chunkid annotation (#7703)
+github.com/PaddlePaddle/PaddleNLP,llm/llama/auto_parallel/run_pretrain_auto.py,2023-12-22T02:41:28Z,mv refined recompute to run_pretrain_auto (#7701)
+github.com/PaddlePaddle/PaddleNLP,llm/llama/auto_parallel/run_pretrain_auto.py,2023-12-19T03:42:13Z,"[Llama2] Fix setting seeds of distributed training for Llama model with Auto Parallel (#7643)
+
+* fix seeds of auto llama
+
+* update loss of ci cases"
+github.com/PaddlePaddle/PaddleNLP,llm/llama/auto_parallel/run_pretrain_auto.py,2023-12-15T05:53:16Z,"[AutoParallel] add pipeline.auto_parallel_profiler to auto_config (#7343)
+
+* update
+
+* update
+
+* Fix init weight for llama modeling auto
+
+* update
+
+* add support for Llama2
+
+* recover codes
+
+* remove training_args
+
+* fix
+
+* remove test config
+
+* use guard
+
+* change var name
+
+* add import
+
+* fix import error
+
+* fix import error in run_pretrain_auto.py
+
+---------
+
+Co-authored-by: chenruibiao <chenruibiao@baidu.com>"
+github.com/PaddlePaddle/PaddleNLP,llm/llama/auto_parallel/run_pretrain_auto.py,2023-12-13T09:09:33Z,"[AutoParallel] add resume_from_checkpoint and vpp for llama (#7601)
+
+* [AutoParallel] add resume_from_checkpoint and vpp for llama
+
+* add clip
+
+* polish modeling_auto.py
+
+* polish code
+
+* tiny fix
+
+* add vpp ci for llama
+
+* fix ci script
+
+* update loss_base"
+github.com/PaddlePaddle/PaddleNLP,llm/llama/auto_parallel/run_pretrain_auto.py,2023-12-12T02:53:15Z,fix grads acc in llama auto (#7625)
+github.com/PaddlePaddle/PaddleNLP,llm/llama/auto_parallel/run_pretrain_auto.py,2023-12-08T09:43:51Z,"[Llama2] Add uts for llama in semi-auto mode (#7588)
+
+* Add uts for llama in semi-auto mode
+
+* update uts
+
+* update uts
+
+* fix target paths
+
+* update"
+github.com/PaddlePaddle/PaddleNLP,llm/llama/auto_parallel/run_pretrain_hand.py,2024-02-01T05:10:41Z,"rename files and add readme for llama auto_parallel (#7944)
+
+* rename files and add readme for llama auto_parallel
+
+* rename files and add readme for llama auto_parallel
+
+* fix ci"
+github.com/PaddlePaddle/PaddleNLP,examples/text_matching/diffcse/run_diffcse.py,2023-03-24T03:21:25Z,"[CodeStyles] fix all of `examples` (#5394)
+
+* ernie-gen
+
+* ernie-layout
+
+* ie
+
+* qa
+
+* tipc
+
+* trans
+
+* question generation
+
+* word embedding
+
+* semantic indexing
+
+* text correction
+
+* text to knowledge
+
+* examples
+
+* text graph
+
+* text matching
+
+* fix utils"
+github.com/PaddlePaddle/PaddleNLP,examples/text_matching/diffcse/run_diffcse.py,2023-02-20T04:11:17Z,"Fix some words (#4562)
+
+Co-authored-by: Sijun He <sijun.he@hotmail.com>"
+github.com/PaddlePaddle/PaddleNLP,examples/text_matching/diffcse/run_diffcse.py,2022-12-05T11:13:15Z,black format all (#4014)
+github.com/PaddlePaddle/PaddleNLP,examples/text_matching/diffcse/run_diffcse.py,2022-08-01T03:26:43Z,"add DiffCSE model (#2643)
+
+* initial commit
+
+* refine readme
+
+* refine codestyle
+
+* refine readme
+
+* refine readme
+
+* fix model saving bug
+
+* initial commit
+
+* initial commit
+
+* initial commit
+
+* use common metric instead of eval_metrics.py and remove unuseful code
+
+Co-authored-by: tianxin <tianxin04@baidu.com>"
+github.com/PaddlePaddle/PaddleNLP,examples/semantic_indexing/train_gradient_cache.py,2023-03-24T03:21:25Z,"[CodeStyles] fix all of `examples` (#5394)
+
+* ernie-gen
+
+* ernie-layout
+
+* ie
+
+* qa
+
+* tipc
+
+* trans
+
+* question generation
+
+* word embedding
+
+* semantic indexing
+
+* text correction
+
+* text to knowledge
+
+* examples
+
+* text graph
+
+* text matching
+
+* fix utils"
+github.com/PaddlePaddle/PaddleNLP,examples/semantic_indexing/train_gradient_cache.py,2023-02-20T04:11:17Z,"Fix some words (#4562)
+
+Co-authored-by: Sijun He <sijun.he@hotmail.com>"
+github.com/PaddlePaddle/PaddleNLP,examples/semantic_indexing/train_gradient_cache.py,2022-12-05T11:13:15Z,black format all (#4014)
+github.com/PaddlePaddle/PaddleNLP,examples/semantic_indexing/train_gradient_cache.py,2022-09-29T03:46:46Z,"【Hackathon + GradientCache】 (#1799)
+
+* gradient_cache
+
+* gradient_cache
+
+* gradient_cache
+
+* gradient_cache
+
+* data
+
+* train_for_gradient_cache
+
+* add
+
+* add
+
+* add
+
+* 修改
+
+* 修改
+
+* update
+
+* update
+
+* update
+
+* update
+
+* Update README_gradient_cache.md
+
+* Update README_gradient_cache.md
+
+* Update README_gradient_cache.md
+
+* feat: modified the code
+
+* fix: delete useless code
+
+* feat: added requirements.txt
+
+* feat: modify readme
+
+* feat: modify some code
+
+* feat: code style
+
+* feat: add function
+
+* feat: add licence
+
+* feat: add comments
+
+* Update README_gradient_cache.md
+
+* feat: modify readme
+
+* feat: modify readme
+
+* fix: copyright
+
+* fix: yapf
+
+* feat: modify readme
+
+* feat: modify readme
+
+* feat: delete useless code
+
+* feat: add new explain
+
+Co-authored-by: 吴高升 <wugaosheng@mails.ccnu.edu.cn>
+Co-authored-by: 吴高升 <w5688414@gmail.com>"
+github.com/PaddlePaddle/PaddleNLP,llm/llama/auto_parallel/run_pretrain_auto_static.py,2024-02-01T05:10:41Z,"rename files and add readme for llama auto_parallel (#7944)
+
+* rename files and add readme for llama auto_parallel
+
+* rename files and add readme for llama auto_parallel
+
+* fix ci"
+github.com/PaddlePaddle/PaddleNLP,model_zoo/gpt-3/ppfleetx/data/dataset/gpt_dataset.py,2023-03-22T11:53:51Z,"[CodeStyles] fix gpt3 fleetx (#5358)
+
+* fix ppfleetx styles
+
+* address comments
+
+* address comment"
+github.com/PaddlePaddle/PaddleNLP,model_zoo/gpt-3/ppfleetx/data/dataset/gpt_dataset.py,2023-03-21T05:00:08Z,"[GPT3] Migrate gpt3 from fleetx into paddlenlp (#5292)
+
+* migrate fleetx gpt3
+
+* migrate fleetx gpt3
+
+* update"
+github.com/PaddlePaddle/PaddleNLP,model_zoo/gpt-3/ppfleetx/data/tokenizers/gpt_tokenizer.py,2023-03-22T11:53:51Z,"[CodeStyles] fix gpt3 fleetx (#5358)
+
+* fix ppfleetx styles
+
+* address comments
+
+* address comment"
+github.com/PaddlePaddle/PaddleNLP,model_zoo/gpt-3/ppfleetx/data/tokenizers/gpt_tokenizer.py,2023-03-21T05:00:08Z,"[GPT3] Migrate gpt3 from fleetx into paddlenlp (#5292)
+
+* migrate fleetx gpt3
+
+* migrate fleetx gpt3
+
+* update"
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-1.0/preprocess/create_pretraining_data.py,2024-02-29T04:42:12Z,"[DATA] Remove repeated chars during preprocessing (#7739)
+
+* add remove_repeated_chars
+
+* update max_repeated_len"
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-1.0/preprocess/create_pretraining_data.py,2023-09-11T11:04:44Z,"Support megatron dataset for ernie-1.0 (#6653)
+
+* fix modeling_pp error
+
+* enable recompute for GPTDecoderLayerPipe
+
+* add data impl for ernie-1.0
+
+* support load megatron dataset for ernie
+
+* fix doc_idx
+
+* update
+
+* format code
+
+* fix
+
+* formated
+
+* fix
+
+* update README.md
+
+* update README.md and train bash
+
+* add import in paddlenlp/data
+
+* update
+
+* update README.md
+
+* update
+
+* update readme
+
+* update
+
+* update
+
+* update data download links"
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-1.0/preprocess/create_pretraining_data.py,2023-08-04T04:01:53Z,"[Megatron dataset] Support creating megatron dataset (#6512)
+
+* create_megatron
+
+* fix & add file
+
+* fix README
+
+* fix docs
+
+* fix README
+
+* fix README
+
+* fix README
+
+* fix --chinese in README
+
+* Abandon paddle.to_tensor"
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-1.0/preprocess/create_pretraining_data.py,2023-06-02T05:04:20Z,"[LLM] support trainer for gpt and llama pre-training. (#6053)
+
+* support trainer for gpt and llama pretrain.
+
+* update
+
+* fix
+
+* fix use flash.
+
+* support llama pre-train and post-train
+
+* fix
+
+* support use virtual pp degree."
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-1.0/preprocess/create_pretraining_data.py,2023-04-18T02:31:55Z,[LLM] Add t5 Pre-training and support tensor parallel (#5378)
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-1.0/preprocess/create_pretraining_data.py,2022-12-05T11:13:15Z,black format all (#4014)
+github.com/PaddlePaddle/PaddleNLP,model_zoo/ernie-1.0/preprocess/create_pretraining_data.py,2022-09-09T07:33:26Z,"[Pre-Training]  ERNIE-CW pre-training tasks docs. (#3111)
+
+* add ernie-large config
+
+* update
+
+* update clue finetune.
+
+* unused delete.
+
+* update
+
+* support no nsp for enrie.
+
+* fix evaluation
+
+* fix amp o2 save_dtype bugs.
+
+* extand ernie.
+
+* fix ernie pretrain with ## vocab.
+
+* extend vocab
+
+* support custom tokenizer.
+
+* add some comments.
+
+* fix bugs.
+
+* add comments.
+
+* fix bug.
+
+* fix run_pretrain_static logging.
+
+* fix all gather.
+
+* fix a100
+
+* fix
+
+* fix bugs
+
+* fix save
+
+* tmp commit for pre-process.
+
+* Update README.md
+
+* Update README.md
+
+* add amp o1 support
+
+* ernie cw readme.
+
+* fix
+
+* throw error when dataset is invalid.
+
+* update document.
+
+* refine readme.
+
+* fix
+
+* refactor
+
+* refator2
+
+* Add pre-training introduction.
+
+* update  image width.
+
+* refine doc
+
+* fit table width.
+
+* fix c++ style
+
+* fix table
+
+* refine docs
+
+* refine model_zoo/ernie-1.0/README.md
+
+* readfine readme.
+
+* fix link
+
+* fix bug
+
+* fix documents.
+
+* add weight.
+
+* fix config"
+github.com/zilliztech/gptcache,gptcache/embedding/paddlenlp.py,2023-05-22T22:39:01Z,"Review the paddlenlp code
+
+Signed-off-by: SimFG <bang.fu@zilliz.com>"
+github.com/zilliztech/gptcache,gptcache/embedding/paddlenlp.py,2023-05-22T22:39:01Z,"Support paddlenlp embedding
+
+Signed-off-by: vax521 <13263397018@163.com>
+Signed-off-by: feimeng <13263397018@163.com>"
+github.com/PaddlePaddle/PaddleNLP,model_zoo/gpt-3/ppfleetx/models/language_model/language_module.py,2023-12-19T12:02:32Z,"Support sep (#6994)
+
+* run 4096
+
+* support sequence segment parallel
+
+* polish
+
+* format
+
+* format
+
+* format
+
+* inplace reshape
+
+* format
+
+* run llama with sep
+
+* llama sep
+
+* run sh
+
+* llama converge
+
+* llama align first loss between dp and sep
+
+* support non fuse_qkv and non flash attn to use sep, all align first loss with dp
+
+* support rope emb
+
+* align the first loss of dp and sep for modelzoo gpt3
+
+* sep support local_seed for dropout
+
+* support tp(with sequence parallel) and sep hybrid parallel
+
+* run seq_len scalable test
+
+* do not build attention mask in advance when use flash attention
+
+* polish run
+
+* run benchmark
+
+* test gpt1.3B performance
+
+* clean codes
+
+* run gpt and llama
+
+* code style
+
+* add unittest
+
+* enable test when gpu_num>1
+
+* code style
+
+* fix sep test
+
+* fix test
+
+* code style
+
+* polish
+
+* fix
+
+* polish test
+
+* check tp and sp
+
+* run script
+
+* check compatible
+
+* rename
+
+* fix test
+
+* polish
+
+* fix bug
+
+* rename
+
+---------
+
+Co-authored-by: pangengzheng <pangengzheng.baidu.com>"
+github.com/PaddlePaddle/PaddleNLP,model_zoo/gpt-3/ppfleetx/models/language_model/language_module.py,2023-09-20T02:50:57Z,"align config between dy/st and add memory profiler for dy (#6982)
+
+* align config between dy and st
+
+* add memory profiler for dy
+
+* comment tiny fix
+
+* delete config 'vocab_size_divisible_unit' when get_model"
+github.com/PaddlePaddle/PaddleNLP,model_zoo/gpt-3/ppfleetx/models/language_model/language_module.py,2023-06-15T08:18:20Z,[LLM] Fix gpt3 finetune (#6188)
+github.com/PaddlePaddle/PaddleNLP,model_zoo/gpt-3/ppfleetx/models/language_model/language_module.py,2023-03-22T11:53:51Z,"[CodeStyles] fix gpt3 fleetx (#5358)
+
+* fix ppfleetx styles
+
+* address comments
+
+* address comment"
+github.com/PaddlePaddle/PaddleNLP,model_zoo/gpt-3/ppfleetx/models/language_model/language_module.py,2023-03-21T05:00:08Z,"[GPT3] Migrate gpt3 from fleetx into paddlenlp (#5292)
+
+* migrate fleetx gpt3
+
+* migrate fleetx gpt3
+
+* update"
+github.com/PaddlePaddle/awesome-DeepLearning,transformer_courses/reading_comprehension_based_on_ernie/train.py,2021-07-14T05:43:23Z,add transform courses
+github.com/PaddlePaddle/awesome-DeepLearning,transformer_courses/reading_comprehension_based_on_ernie/evaluate.py,2021-07-14T05:43:23Z,add transform courses
+github.com/PaddlePaddle/awesome-DeepLearning,Paddle_Industry_Practice_Sample_Library/Semantic_Matching/code/train.py,2021-12-02T02:56:16Z,update readme
+github.com/PaddlePaddle/awesome-DeepLearning,Paddle_Industry_Practice_Sample_Library/Semantic_Matching/code/predict.py,2021-12-02T02:56:16Z,update readme
+github.com/PaddlePaddle/awesome-DeepLearning,Paddle_Industry_Practice_Sample_Library/Waybill_Information_Extraction/run_ernie.py,2021-12-02T02:56:16Z,update readme
+github.com/PaddlePaddle/awesome-DeepLearning,transformer_courses/BERT_distillation/PaddleSlim-develop/demo/ofa/bert/run_glue_ofa.py,2021-07-12T03:55:09Z,add bert distillation course
+github.com/PaddlePaddle/awesome-DeepLearning,Paddle_Industry_Practice_Sample_Library/Waybill_Information_Extraction/run_erniegram.py,2021-12-02T02:56:16Z,update readme
+github.com/PaddlePaddle/PaddleNLP,applications/neural_search/ranking/ernie_matching/deploy/cpp/rpc_client.py,2023-03-17T08:38:30Z,flake8 neural search (#5290)
+github.com/PaddlePaddle/PaddleNLP,applications/neural_search/ranking/ernie_matching/deploy/cpp/rpc_client.py,2022-12-05T11:13:15Z,black format all (#4014)
+github.com/PaddlePaddle/PaddleNLP,applications/neural_search/ranking/ernie_matching/deploy/cpp/rpc_client.py,2022-07-06T05:54:05Z,"Add c++ and pipeline Paddle Serving Support of ranking model for neural search (#2721)
+
+* Add c++ and pipeline Paddle Serving Support for neural search
+
+* Add serving code structure for ranking
+
+* slightly small fix of ranking readme and bash files
+
+* Add recall and rank system pipeline
+
+Co-authored-by: tianxin <tianxin04@baidu.com>"
+github.com/PaddlePaddle/PaddleNLP,applications/neural_search/ranking/ernie_matching/deploy/cpp/http_client.py,2023-03-17T08:38:30Z,flake8 neural search (#5290)
+github.com/PaddlePaddle/PaddleNLP,applications/neural_search/ranking/ernie_matching/deploy/cpp/http_client.py,2022-12-05T11:13:15Z,black format all (#4014)
+github.com/PaddlePaddle/PaddleNLP,applications/neural_search/ranking/ernie_matching/deploy/cpp/http_client.py,2022-07-06T05:54:05Z,"Add c++ and pipeline Paddle Serving Support of ranking model for neural search (#2721)
+
+* Add c++ and pipeline Paddle Serving Support for neural search
+
+* Add serving code structure for ranking
+
+* slightly small fix of ranking readme and bash files
+
+* Add recall and rank system pipeline
+
+Co-authored-by: tianxin <tianxin04@baidu.com>"
+github.com/PaddlePaddle/PaddleNLP,applications/text_classification/multi_class/retrieval_based/utils/feature_extract.py,2023-04-24T08:18:12Z,"Fix some typos. (#5709)
+
+* Fix typos for applications/
+
+Signed-off-by: Yulv-git <yulvchi@qq.com>
+
+* Fix typos for doc/ and pipelines/
+
+Signed-off-by: Yulv-git <yulvchi@qq.com>
+
+* Fix typos for examples/ and ppdiffusers/
+
+Signed-off-by: Yulv-git <yulvchi@qq.com>
+
+* Fix typos for model_zoo/ and paddlenlp/
+
+Signed-off-by: Yulv-git <yulvchi@qq.com>
+
+* Update for copyright_checker.
+
+* Fix error with *.md toc.
+
+---------
+
+Signed-off-by: Yulv-git <yulvchi@qq.com>"
+github.com/PaddlePaddle/PaddleNLP,applications/text_classification/multi_class/retrieval_based/utils/feature_extract.py,2023-03-22T07:08:22Z,"[CodeStyle] fix `applications/text_classification` (#5356)
+
+* changes
+
+* text classfication applications"
+github.com/PaddlePaddle/PaddleNLP,applications/text_classification/multi_class/retrieval_based/utils/feature_extract.py,2023-02-24T17:08:51Z,Fix typos (#4994)
+github.com/PaddlePaddle/PaddleNLP,applications/text_classification/multi_class/retrieval_based/utils/feature_extract.py,2022-12-05T11:13:15Z,black format all (#4014)
+github.com/PaddlePaddle/PaddleNLP,applications/text_classification/multi_class/retrieval_based/utils/feature_extract.py,2022-09-05T07:54:45Z,"Add Retrieval based multi class classification (#3180)
+
+* Add Retrieval based multi class classification
+
+* Update README.md and dtype
+
+* Update README.md"
+github.com/PaddlePaddle/PaddleNLP,applications/text_classification/multi_label/retrieval_based/utils/feature_extract.py,2023-04-24T08:18:12Z,"Fix some typos. (#5709)
+
+* Fix typos for applications/
+
+Signed-off-by: Yulv-git <yulvchi@qq.com>
+
+* Fix typos for doc/ and pipelines/
+
+Signed-off-by: Yulv-git <yulvchi@qq.com>
+
+* Fix typos for examples/ and ppdiffusers/
+
+Signed-off-by: Yulv-git <yulvchi@qq.com>
+
+* Fix typos for model_zoo/ and paddlenlp/
+
+Signed-off-by: Yulv-git <yulvchi@qq.com>
+
+* Update for copyright_checker.
+
+* Fix error with *.md toc.
+
+---------
+
+Signed-off-by: Yulv-git <yulvchi@qq.com>"
+github.com/PaddlePaddle/PaddleNLP,applications/text_classification/multi_label/retrieval_based/utils/feature_extract.py,2023-03-22T07:08:22Z,"[CodeStyle] fix `applications/text_classification` (#5356)
+
+* changes
+
+* text classfication applications"
+github.com/PaddlePaddle/PaddleNLP,applications/text_classification/multi_label/retrieval_based/utils/feature_extract.py,2023-02-24T17:08:51Z,Fix typos (#4994)
+github.com/PaddlePaddle/PaddleNLP,applications/text_classification/multi_label/retrieval_based/utils/feature_extract.py,2022-12-05T11:13:15Z,black format all (#4014)
+github.com/PaddlePaddle/PaddleNLP,applications/text_classification/multi_label/retrieval_based/utils/feature_extract.py,2022-11-16T09:57:37Z,"Add Retrieval based multi label classification (#3656)
+
+* Add Retrieval base multi label classification
+
+* Update README& Add Macro fl metric
+
+* Remove unused functions
+
+* Update retrieval based classification README.md
+
+* format the import args
+
+* Update import args format
+
+* format"
+github.com/PaddlePaddle/PaddleNLP,applications/text_classification/hierarchical/retrieval_based/utils/feature_extract.py,2023-04-24T08:18:12Z,"Fix some typos. (#5709)
+
+* Fix typos for applications/
+
+Signed-off-by: Yulv-git <yulvchi@qq.com>
+
+* Fix typos for doc/ and pipelines/
+
+Signed-off-by: Yulv-git <yulvchi@qq.com>
+
+* Fix typos for examples/ and ppdiffusers/
+
+Signed-off-by: Yulv-git <yulvchi@qq.com>
+
+* Fix typos for model_zoo/ and paddlenlp/
+
+Signed-off-by: Yulv-git <yulvchi@qq.com>
+
+* Update for copyright_checker.
+
+* Fix error with *.md toc.
+
+---------
+
+Signed-off-by: Yulv-git <yulvchi@qq.com>"
+github.com/PaddlePaddle/PaddleNLP,applications/text_classification/hierarchical/retrieval_based/utils/feature_extract.py,2023-03-22T07:08:22Z,"[CodeStyle] fix `applications/text_classification` (#5356)
+
+* changes
+
+* text classfication applications"
+github.com/PaddlePaddle/PaddleNLP,applications/text_classification/hierarchical/retrieval_based/utils/feature_extract.py,2023-02-24T17:08:51Z,Fix typos (#4994)
+github.com/PaddlePaddle/PaddleNLP,applications/text_classification/hierarchical/retrieval_based/utils/feature_extract.py,2022-12-05T11:13:15Z,black format all (#4014)
+github.com/PaddlePaddle/PaddleNLP,applications/text_classification/hierarchical/retrieval_based/utils/feature_extract.py,2022-08-05T02:08:41Z,"Add retrieval based classification (#2836)
+
+* Add retrievalbase classification
+
+* Add requirements and update readme
+
+* Update readme
+
+* refine the dataset structure
+
+* Update readme
+
+* Update text data format"
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/gpt/test_modeling.py,2023-09-28T02:37:52Z,"[GPT] Fix bugs (#7141)
+
+* fix gpt-3
+
+* refine
+
+* remove gpt-3.
+
+* fix ci
+
+* fix
+
+* fix ci"
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/gpt/test_modeling.py,2023-06-27T12:36:13Z,"[LLM] Upgrade from_pretrained/save_pretrained and support shared checkpoint for LLM (#6181)
+
+* tmp
+
+* tmp, should revert.
+
+* tmp fix
+
+* fix import
+
+* init version for save/load shard ckpt.
+
+* fix
+
+* fix tmp.
+
+* add bos_community.
+
+* add tests.
+
+* fix ci
+
+* unify some names
+
+* fix some ci
+
+* fix load bug.
+
+* fix
+
+* fix same bugs.
+
+* support pre split for tensor parallel
+
+* tmp
+
+* fix
+
+* fix tp save
+
+* fix for hybrid parallel model checkpoint.
+
+* add use_safetensors.
+
+* optimize convert dtype.
+
+* fix warnings filter.
+
+* fix load error messages.
+
+* fix as comments.
+
+* fix 0-d 1-d
+
+* support  keep_in_fp32_modules
+
+* fix low cpu mem useage."
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/gpt/test_modeling.py,2023-04-21T13:06:36Z,changes (#5747)
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/gpt/test_modeling.py,2023-04-21T06:57:23Z,"[Bug fix]fix breaking tests due to loss item change (#5740)
+
+* fix breaking tests due to loss item change
+
+* changes"
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/gpt/test_modeling.py,2023-02-01T07:05:46Z,"Fix tqdm in downloader (#4603)
+
+* fix tqdm
+
+* rtol -> atol"
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/gpt/test_modeling.py,2023-01-30T11:34:21Z,"[Bug fixes] fix logit compare in autoconverter models (#4568)
+
+* update model logit comparer
+
+* reduce rtol to make test pass"
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/gpt/test_modeling.py,2023-01-30T02:57:08Z,"[Function optimization] Add test for autoconverter of Bert/GPT models (#4537)
+
+* complete bert test for auto-converter
+
+* complete gpt test for converter"
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/gpt/test_modeling.py,2023-01-11T13:07:58Z,"[New features] add roberta & gpt conversion (#4407)
+
+* add roberta & gpt conversion
+
+* update gpt model
+
+* revert roberta related files
+
+* update gpt loading
+
+* update requirements
+
+* fix input_ids"
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/gpt/test_modeling.py,2023-01-06T08:40:18Z,"[ModelZoo] Refactor GPT usage in Model Zoo (#3917)
+
+* update model-zoo gpt
+
+* update gpt test case
+
+* add configs for gpt
+
+* update gpt
+
+* refactor msra-ner
+
+* update msra
+
+* complete gpt trainer
+
+* complete msra_er refactor
+
+* remove corpurs data
+
+* update json to yaml file
+
+* remove tmp dir
+
+* complete run-glue
+
+* update run-pretrain
+
+* update gpt-code
+
+* update model_zoo
+
+* complete gpt
+
+* fix lint
+
+* complete modelzoo gpt
+
+* change testing entry
+
+* remove comment
+
+* enable corpus downloading
+
+* update config
+
+* fix max_predict_len param
+
+* update model-zoo gpt device config
+
+* update gpt readme
+
+* update test config
+
+* remove get_device
+
+* update config
+
+* update small typo
+
+* update model-zoo gpt
+
+* update transformers
+
+* use small model to run ci-case"
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/gpt/test_modeling.py,2022-12-26T08:03:01Z,fix gpt inputs embeds (#4179)
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/gpt/test_modeling.py,2022-12-06T08:46:18Z,Gpt output loss (#3396)
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/gpt/test_modeling.py,2022-12-05T06:03:56Z,black format (#4013)
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/gpt/test_modeling.py,2022-10-12T14:13:40Z,refine gpt (#3447)
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/gpt/test_modeling.py,2022-10-08T12:56:19Z,fix gpt ut (#3407)
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/gpt/test_modeling.py,2022-09-14T02:33:19Z,Add unit tests for T5 (#3115)
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/gpt/test_modeling.py,2022-08-29T02:24:19Z,Add GPT ut (#3133)
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/gpt/test_modeling.py,2022-06-13T12:04:14Z,update yapf (#2464)
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/gpt/test_modeling.py,2021-11-13T04:00:02Z,Fix import issues in gpt/test_modeling (#1306)
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/gpt/test_modeling.py,2021-11-09T07:52:13Z,"PaddlePaddle Hackathon 56 提交 (#1088)
+
+* update
+
+* update
+
+* remove community/junnyu
+
+* Update test_modeling.py
+
+* suggestion from ZHUI
+
+* add community/junnyu
+
+* rm gpt link
+
+* update
+
+* update readme
+
+* add large medium
+
+* 更新权重个数
+
+* update gpt compare
+
+* update docs
+
+* add msra ner example
+
+Co-authored-by: yingyibiao <yyb0576@163.com>
+Co-authored-by: Zeyu Chen <chenzeyu01@baidu.com>"
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/opt/test_modeling.py,2023-09-04T04:28:05Z,"GenerationConfig, logits_process unittests, streamer(unittests) (#6855)
+
+* GenerationConfig, logits_process unittests
+
+* lisence, comment
+
+* use stopping_criteria in generate
+
+* docstring, hint, code adjustment
+
+* group bs bug fix
+
+* d2s unittest close, bug fix
+
+* cpu dtype matching fix
+
+* disable warning temporary"
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/opt/test_modeling.py,2023-08-18T08:06:12Z,"[Bug fixes] fix llama/bloom/opt/chatglm/chatglmv2 d2s (#6696)
+
+* fix llama d2s
+
+* update llm export
+
+* open llama to_static test
+
+* update path checking
+
+* disable gpu
+
+* complete model d2s
+
+* update arguemnt for predictor & update readme
+
+* update tokenizer attribute
+
+* prevent max_length overflow
+
+* update predictor
+
+* update predictor
+
+* update predictor
+
+* update llm d2s
+
+* update boos-token-id
+
+* update bos_token_id config
+
+* disable chatglm d2s testing"
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/opt/test_modeling.py,2023-04-28T04:03:51Z,"[New features] Add opt examples (#5444)
+
+* update opt examples
+
+* update opt examples
+
+* add opt finetune & export & infer & export
+
+* update opt readme & data
+
+* add auto-converter and parallel layer
+
+* complete opt mp logit
+
+* update opt examples
+
+* update opt testing
+
+* update lor config
+
+* update opt exampls
+
+* update opt unit testing
+
+* update opt test-modeling
+
+* update md5sum"
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/opt/test_modeling.py,2023-04-21T06:57:23Z,"[Bug fix]fix breaking tests due to loss item change (#5740)
+
+* fix breaking tests due to loss item change
+
+* changes"
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/opt/test_modeling.py,2023-03-15T07:26:51Z,"[OPT P2] add inputs_embeds and cache (#5232)
+
+* [OPT P1] support labels, return_dict, output_hidden_states, output_attentions in opt
+
+* [OPT P1] add annotations for opt
+
+* [OPT P1] remove unuseful print.
+
+* [OPT P1] refine codestyle
+
+* [OPT P2] add test_for_model_cache in tests
+
+* [OPT P2] remove some comments
+
+* [OPT P2] add annotation for attention_mask"
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/opt/test_modeling.py,2023-03-14T08:41:36Z,"[OPT P1] add return_dict, labels and so on. (#5222)
+
+* [OPT P1] support labels, return_dict, output_hidden_states, output_attentions in opt
+
+* [OPT P1] add annotations for opt
+
+* [OPT P1] remove unuseful print.
+
+* [OPT P1] refine codestyle"
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/opt/test_modeling.py,2023-03-14T03:35:54Z,"[OPT P0] update OPT with pretrianedConfig and tests (#5206)
+
+* initial commit
+
+* refine readme
+
+* refine codestyle
+
+* refine readme
+
+* refine readme
+
+* fix model saving bug
+
+* initial commit
+
+* initial commit
+
+* initial commit
+
+* use common metric instead of eval_metrics.py and remove unuseful code
+
+* mv stage project to ASO_analysis
+
+* add unified sentiment analysis
+
+* refine readme
+
+* refine readme
+
+* refnie readme
+
+* add unified sentiment analysis
+
+* refine readme
+
+* initial commit
+
+* initial commit
+
+* refine readme
+
+* add taskflow for sentiment analysis with UIE
+
+* refine Readme
+
+* refine readme.md
+
+* support sentiment analysis (UIE) with inputing by file format
+
+* refine readme
+
+* delete predict scripts
+
+* refine readme
+
+* delete unuseful files
+
+* add pipeline for sentiment_analysis
+
+* merging with the newest code
+
+* fix to convert data without synonyms
+
+* add senta pipeline
+
+* refine readme
+
+* drop functions: inputting file and saving results
+
+* add UIE-seta-[base, medium, mini, micro, nano]
+
+* modify .gitignore to trace deploy code
+
+* add deploy with SimpleServer
+
+* add debug mode
+
+* fix debug mode
+
+* update the loading  method of UIE
+
+* refine readme
+
+* fix bug caused by version updating
+
+* fix hard coding for model name.
+
+* refine codestyle
+
+* modify readme according the way of 'step by step'
+
+* refine codestyl
+
+* change saving txt to json files
+
+* download font automatically when not input font_path
+
+* change readme in the way 'step by step'
+
+* add model prediction by batch
+
+* add uie-senta-x to support_schema_list
+
+* update sentiment analysis in taskflow
+
+* add prediction with saved offline model
+
+* change the exception exposure way
+
+* add description for visual schema
+
+* delete comments
+
+* remove comments
+
+* remove unused code and comments
+
+* convert uie-senta-x model params to fit ernie/uie
+
+* refine readme for sentiment analysis
+
+* add running time
+
+* refine readme for senta pipeline
+
+* change uie-base to uie-senta-base
+
+* load uie-senta-x with auto module
+
+* add deploy with SimpleServer
+
+* refine codestyle
+
+* refine readme
+
+* add uie-senta-x to support_schema_list
+
+* fix hard coding for mdoel anme
+
+* refine codestyle
+
+* refine codestyl
+
+* refine codestyle
+
+* refine codestyle
+
+* refine codestyle
+
+* refine codestyle
+
+* refine codestyle
+
+* refine codestyle
+
+* refine codestyle
+
+* fix senta response
+
+* refine codestyle
+
+* remove lambda expressions
+
+* add link of senta pipeline
+
+* refine codestyle
+
+* remove local path
+
+* fix typos
+
+* refine readme
+
+* load uie-senta-x with automodel
+
+* remove commented code
+
+* restore auto
+
+* add link of hotel dataset to readme.
+
+* add link for downloading test_hotel.txt
+
+* fix url problem for server and client
+
+* refine readme
+
+* fix for senta_examples.py
+
+* update visualization function
+
+* update visualization function
+
+* refine readme and update visualization description
+
+* update visualization function
+
+* refine readme and update visualization function
+
+* change logger in PaddleNLP to log information
+
+* fix running time for skep and uie
+
+* fix bug to solve tokenizer updating problem
+
+* refine label-studio readme
+
+* refine label-studio readme
+
+* refine label-studio readme
+
+* optimize example construction for a, o, as, ao extraction task
+
+* add the labeling method for ext task: a,  as, ao and so on.
+
+* add note for visual_analysis.py
+
+* change link for downloading data and refine log output
+
+* refine log output
+
+* refine readme
+
+* expose options interface
+
+* refine readme
+
+* modify typos
+
+* expose options for customing sentiment analysis
+
+* README.md
+
+* fix bug for param is_shuffle in label_studio.py
+
+* [BugFix] Fix the param is_shuffle problem
+
+* [BugFix] Fix the bool param is_shuffle problem
+
+* [BugFix] Fix the bool param is_shuffle problem
+
+* [Model Update] add configuration for skep model.
+
+* [Reproduce] inital nystromformer
+
+* [Add Model] add nystromformer model
+
+* [Add Model] add __init__.py
+
+* [Add Model] add nystromformer model.
+
+* Delete configuration.py
+
+* [Add Model] support auto module for nystromformer and refine some descriptions
+
+* [Add Model] add tests for nystromformer
+
+* [Add Model] remove some imports from nystromformer/__init__.py
+
+* [Nystromformer] add fast tokenizer for nystromformer
+
+* add fast_tokenizer file for nystromformer
+
+* [OPT P0] update with pretrainedConfig and tests
+
+* [OPT P0] add tests for OPT
+
+* [OPT P0] add modeling for opt
+
+* [OPT P0] update TransformerDecoderLayer with config for OPT
+
+* [OPT P0] modify normalize_before in gpt
+
+* [OPT P0] refine codestyle for unittest
+
+---------
+
+Co-authored-by: tianxin <tianxin04@baidu.com>"
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/glm/test_modeling.py,2023-04-28T06:15:56Z,[LLM] GLM fix 0-dim tensor (#5808)
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/glm/test_modeling.py,2023-04-19T04:54:06Z,"[glm] support skip_special_tokens in decode (#5703)
+
+* [glm] support skip_special_tokens in decode
+
+* [glm] fix slow test_modeling
+
+* [glm] remove duplicate special tokens"
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/glm/test_modeling.py,2023-03-20T08:10:34Z,"[LLM] Support GLM  for Tensor Parallel (#5198)
+
+* init version
+
+* support mp for glm.
+
+* support mp for trainer."
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/glm/test_modeling.py,2023-03-14T06:12:45Z,[GLM] update default model name (#5185)
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/glm/test_modeling.py,2023-03-09T15:20:26Z,"[GLM] Add fine-tuning for small-scale GLM (#5061)
+
+* [glm] add draft code
+
+* [glm-dev] add draft code
+
+* [glm] enable converting to static model
+
+* [glm] update implementation
+
+* [glm-dev] abort when optimier.step()
+
+* [glm-dev] update implementation
+
+* [glm] update configuration
+
+* [glm] forward version
+
+* [glm-dev] backward version
+
+* [glm-dev] generation
+
+* [glm] unittest
+
+* [glm] add large, 10b and chinese
+
+* [glm] update implementation
+
+* [glm] split generate function
+
+* [glm] update added_tokens
+
+* [glm] update unittest
+
+* [glm] update unittest"
+github.com/PaddlePaddle/FastDeploy,benchmark/python/benchmark_ernie_seq_cls.py,2023-03-20T10:08:28Z,"[Benchmark]Add trt cache option (#1653)
+
+* add GPL lisence
+
+* add GPL-3.0 lisence
+
+* add GPL-3.0 lisence
+
+* add GPL-3.0 lisence
+
+* support yolov8
+
+* add pybind for yolov8
+
+* add yolov8 readme
+
+* add cpp benchmark
+
+* add cpu and gpu mem
+
+* public part split
+
+* add runtime mode
+
+* fixed bugs
+
+* add cpu_thread_nums
+
+* deal with comments
+
+* deal with comments
+
+* deal with comments
+
+* rm useless code
+
+* add FASTDEPLOY_DECL
+
+* add FASTDEPLOY_DECL
+
+* fixed for windows
+
+* mv rss to pss
+
+* mv rss to pss
+
+* Update utils.cc
+
+* use thread to collect mem
+
+* Add ResourceUsageMonitor
+
+* rm useless code
+
+* fixed bug
+
+* fixed typo
+
+* update ResourceUsageMonitor
+
+* fixed bug
+
+* fixed bug
+
+* add note for ResourceUsageMonitor
+
+* deal with comments
+
+* add macros
+
+* deal with comments
+
+* deal with comments
+
+* deal with comments
+
+* re-lint
+
+* rm pmap and use mem api
+
+* rm pmap and use mem api
+
+* add mem api
+
+* Add PrintBenchmarkInfo func
+
+* Add PrintBenchmarkInfo func
+
+* Add PrintBenchmarkInfo func
+
+* deal with comments
+
+* fixed enable_paddle_to_trt
+
+* add log for paddle_trt
+
+* support ppcls benchmark
+
+* use new trt option api
+
+* update benchmark info
+
+* simplify benchmark.cc
+
+* simplify benchmark.cc
+
+* deal with comments
+
+* Add ppseg && ppocr benchmark
+
+* add OCR rec img
+
+* add ocr benchmark
+
+* fixed trt shape
+
+* add trt shape
+
+* resolve conflict
+
+* add ENABLE_BENCHMARK define
+
+* Add ClassifyDiff
+
+* Add Resize for ClassifyResult
+
+* deal with comments
+
+* add convert info script
+
+* resolve conflict
+
+* Add SaveBenchmarkResult func
+
+* fixed bug
+
+* fixed bug
+
+* fixed bug
+
+* add config.txt for option
+
+* fixed bug
+
+* fixed bug
+
+* fixed bug
+
+* add benchmark.sh
+
+* mv thread_nums from 8 to 1
+
+* deal with comments
+
+* deal with comments
+
+* fixed readme
+
+* deal with comments
+
+* add all platform shell
+
+* Update config.arm.txt
+
+* Update config.gpu.txt
+
+* Update config.x86.txt
+
+* fixed printinfo bug
+
+* rm proxy
+
+* add more model support
+
+* all backend config.txt
+
+* deal with comments
+
+* Add MattingDiff compare
+
+* fixed predict bug
+
+* adjust warmup/repeat times
+
+* add e2e/mem configs
+
+* fixed typo
+
+* open collect_mem
+
+* fixed typo
+
+* add trt cache option
+
+* fixed bug
+
+* fixed repeat times
+
+---------
+
+Co-authored-by: DefTruth <31974251+DefTruth@users.noreply.github.com>"
+github.com/PaddlePaddle/FastDeploy,benchmark/python/benchmark_ernie_seq_cls.py,2023-02-08T07:49:28Z,"[Benchmark] Benchmark cpp for YOLOv5 (#1260)
+
+* add GPL lisence
+
+* add GPL-3.0 lisence
+
+* add GPL-3.0 lisence
+
+* add GPL-3.0 lisence
+
+* support yolov8
+
+* add pybind for yolov8
+
+* add yolov8 readme
+
+* add cpp benchmark
+
+* add cpu and gpu mem
+
+* public part split
+
+* add runtime mode
+
+* fixed bugs
+
+* add cpu_thread_nums
+
+* deal with comments
+
+* deal with comments
+
+* deal with comments
+
+* rm useless code
+
+* add FASTDEPLOY_DECL
+
+* add FASTDEPLOY_DECL
+
+* fixed for windows
+
+* mv rss to pss
+
+* mv rss to pss
+
+* Update utils.cc
+
+---------
+
+Co-authored-by: DefTruth <31974251+DefTruth@users.noreply.github.com>"
+github.com/PaddlePaddle/FastDeploy,benchmark/python/benchmark_ernie_seq_cls.py,2023-02-07T14:14:48Z,"Revert ""[Benchmark]Benchmark cpp for YOLOv5"" (#1250)
+
+Revert ""[Benchmark]Benchmark cpp for YOLOv5 (#1224)""
+
+This reverts commit c487359e33716cbfb926a46fcdcd9474d149702e."
+github.com/PaddlePaddle/FastDeploy,benchmark/python/benchmark_ernie_seq_cls.py,2023-02-07T13:26:04Z,"[Benchmark]Benchmark cpp for YOLOv5 (#1224)
+
+* add GPL lisence
+
+* add GPL-3.0 lisence
+
+* add GPL-3.0 lisence
+
+* add GPL-3.0 lisence
+
+* support yolov8
+
+* add pybind for yolov8
+
+* add yolov8 readme
+
+* add cpp benchmark
+
+* add cpu and gpu mem
+
+* public part split
+
+* add runtime mode
+
+* fixed bugs
+
+* add cpu_thread_nums
+
+* deal with comments
+
+* deal with comments
+
+* deal with comments
+
+* rm useless code
+
+* add FASTDEPLOY_DECL
+
+* add FASTDEPLOY_DECL"
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/mbart/test_modeling.py,2022-12-21T06:09:49Z,"Add PretrainedConfig to Bart/MBart/CodeGen/UNIMO/UnifiedTransformer (#3998)
+
+* add config to bart and mbart
+
+* add CodeGenConfig
+
+* check code style
+
+* check code style
+
+* add UNIMOConfig
+
+* add UnifiedTransformerConfig
+
+* check code style and fix bugs
+
+* fix conflict introduced by #4035
+
+* using standard_config_map instead of attribute_map while rewrite get_config function
+
+* add attribute num_choices to ErnieMConfig
+
+* check all the attributes between loaded_config and config
+
+* add CONFIG_NAME and CODEGEN_*
+
+* fix pyproject
+
+* use config.attr instead
+
+* delete unnecessary arguments
+
+* delete unnecessary arguments
+
+* add type hints for forward and support embed_scale for bart/mbart
+
+* fix typo of codegen
+
+Co-authored-by: liu zhengxi <380185688@qq.com>
+Co-authored-by: 骑马小猫 <1435130236@qq.com>
+Co-authored-by: Sijun He <sijun.he@hotmail.com>"
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/mbart/test_modeling.py,2022-12-16T07:15:21Z,add inputs_embeds to Bart/MBart/Unified_Transformer/Unimo/CodeGen (#3769)
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/mbart/test_modeling.py,2022-12-05T06:03:56Z,black format (#4013)
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/mbart/test_modeling.py,2022-11-11T07:16:53Z,"add Bart more output & loss (#3436)
+
+* move function convert_encoder_output to file model_outputs.py
+
+* add more output and loss to bart
+
+* add more test case
+
+* fix judgement condition of single Tensor
+
+* fix judgement condition of single Tensor for T5 model
+
+* adjust transformers_decoder_layer function
+
+* add more output & loss to mbart
+
+* move gc.collect() to testing_utils.PaddleNLPModelTest and replace unittest.TestCase to PaddleNLPModelTest
+
+* commit bart"
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/mbart/test_modeling.py,2022-10-27T08:20:56Z,Fix some unit tests' issue (#3553)
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/mbart/test_modeling.py,2022-10-17T05:45:12Z,Add MBart unit tests (#3323)
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/bloom/test_modeling.py,2023-09-04T04:28:05Z,"GenerationConfig, logits_process unittests, streamer(unittests) (#6855)
+
+* GenerationConfig, logits_process unittests
+
+* lisence, comment
+
+* use stopping_criteria in generate
+
+* docstring, hint, code adjustment
+
+* group bs bug fix
+
+* d2s unittest close, bug fix
+
+* cpu dtype matching fix
+
+* disable warning temporary"
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/bloom/test_modeling.py,2023-08-18T08:06:12Z,"[Bug fixes] fix llama/bloom/opt/chatglm/chatglmv2 d2s (#6696)
+
+* fix llama d2s
+
+* update llm export
+
+* open llama to_static test
+
+* update path checking
+
+* disable gpu
+
+* complete model d2s
+
+* update arguemnt for predictor & update readme
+
+* update tokenizer attribute
+
+* prevent max_length overflow
+
+* update predictor
+
+* update predictor
+
+* update predictor
+
+* update llm d2s
+
+* update boos-token-id
+
+* update bos_token_id config
+
+* disable chatglm d2s testing"
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/bloom/test_modeling.py,2023-08-07T10:49:58Z,"Bloom generative test (#6630)
+
+* bloom add generative test
+
+* fix cache shape bug
+
+* fix dtype unmatch bug"
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/bloom/test_modeling.py,2023-08-03T11:35:35Z,"Standardize Bloom attention mask (#6579)
+
+* Standardize Bloom attention mask
+
+* where call optimize
+
+* reshape code optimize
+
+* func name _expand_mask ==> _expand_2d_mask"
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/bloom/test_modeling.py,2023-06-27T12:36:13Z,"[LLM] Upgrade from_pretrained/save_pretrained and support shared checkpoint for LLM (#6181)
+
+* tmp
+
+* tmp, should revert.
+
+* tmp fix
+
+* fix import
+
+* init version for save/load shard ckpt.
+
+* fix
+
+* fix tmp.
+
+* add bos_community.
+
+* add tests.
+
+* fix ci
+
+* unify some names
+
+* fix some ci
+
+* fix load bug.
+
+* fix
+
+* fix same bugs.
+
+* support pre split for tensor parallel
+
+* tmp
+
+* fix
+
+* fix tp save
+
+* fix for hybrid parallel model checkpoint.
+
+* add use_safetensors.
+
+* optimize convert dtype.
+
+* fix warnings filter.
+
+* fix load error messages.
+
+* fix as comments.
+
+* fix 0-d 1-d
+
+* support  keep_in_fp32_modules
+
+* fix low cpu mem useage."
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/bloom/test_modeling.py,2023-04-21T13:06:36Z,changes (#5747)
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/bloom/test_modeling.py,2023-04-06T12:58:37Z,"update trainer for bloom (#5518)
+
+* add the trainer for blooom
+
+* update the code"
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/bloom/test_modeling.py,2023-04-04T06:45:56Z,"[UnitTest]add bloom testing (#5483)
+
+* add bloom testing
+
+* complete bloom test-modeling
+
+* fix variable assigment
+
+* update paralle_matmul method"
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/auto/test_tokenizer.py,2023-10-09T13:05:49Z,"Support AI Studio download (#7146)
+
+* styles
+
+* fix subfolder
+
+* remove print"
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/auto/test_tokenizer.py,2023-02-28T04:54:04Z,"Fix cache dir issue for Model, Config and Tokenizer (#5013)
+
+* changes
+
+* remove prints
+
+* address comments"
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/auto/test_tokenizer.py,2023-02-15T06:30:18Z,"Fix cache_dir logic (#4794)
+
+* fix
+
+* wip
+
+* tests
+
+* changes
+
+* update v2
+
+* fix v2 logic
+
+* fix v2
+
+* fix config utils"
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/auto/test_tokenizer.py,2023-01-30T16:15:14Z,"[Tokenizer] Fix error when loading tokenizer from hf hub (#4570)
+
+* Fix load tokenizer from hf hub
+
+* remove slow test"
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/auto/test_tokenizer.py,2023-01-05T11:23:55Z,"[FastTokenizer] Add unittest for fast_tokenizer (#4339)
+
+* with_added_tokens->with_added_vocabulary
+
+* faster->fast
+
+* Add fast_tokenizer to test and ci requirements
+
+* Add unittest for BertTokenizerFast
+
+* faster->fast
+
+* Add ernie tokenizer fast unittest
+
+* fast_tokenizer->fast_tokenizer_python
+
+* Add fast_tokenizer_python
+
+* Add TinyBertFastTokenizer unittest
+
+* Add ernie-m tokenizer unittest
+
+* Add \n for tests/requirements.txt
+
+* Add test_sequence_builders for ErnieMFastTokenizer
+
+* Add full tokenizer test for fast_tokenizer
+
+* Add use_faster args test
+
+* Add test_fast_and_python_full_tokenizer"
+github.com/PaddlePaddle/PaddleNLP,tests/transformers/auto/test_tokenizer.py,2022-12-20T03:40:38Z,"[FastTokenizer] Fix fast_tokenizer import (#4126)
+
+* Fix fast_tokenizer import
+
+* use import_module instead of importlib.import_module
+
+* Add auto tokenizer unittest
+
+* update to __internal_testing__
+
+* Add test"
+github.com/PaddlePaddle/PaddleNLP,examples/language_model/t5/tests/test_t5_mp.py,2023-04-18T02:31:55Z,[LLM] Add t5 Pre-training and support tensor parallel (#5378)
+github.com/thunlp/OpenPrompt,tutorial/7_ernie_paddlepaddle/basic.py,2022-08-05T06:23:21Z,update ERNIE folder
+github.com/PaddlePaddle/FastDeploy,examples/multimodal/stable_diffusion/export_model.py,2022-11-10T06:59:07Z,"[Model] Add stable diffusion model based on fastdeploy (#297)
+
+* Add stable diffusion model base on fastdeploy
+
+* Add sd infer
+
+* pipelines->multimodal
+
+* add create_ort_runtime
+
+* use fp16 input
+
+* fix pil
+
+* Add optimize unet model
+
+* add hf license
+
+* Add workspace args
+
+* Add profile func
+
+* Add schedulers
+
+* usrelace torch.Tenosr  byp.ndarray
+
+* Add readme
+
+* Add trt shape setting
+
+* add dynamic shape
+
+* Add dynamic shape for stable diffusion
+
+* fix max shape setting
+
+* rename tensorrt file suffix
+
+* update dynamic shape setting
+
+* Add scheduler output
+
+* Add inference_steps and benchmark steps
+
+* add diffuser benchmark
+
+* Add paddle infer script
+
+* Rename 1
+
+* Rename infer.py to torch_onnx_infer.py
+
+* Add export torch to onnx model
+
+* renmove export model
+
+* Add paddle export model for diffusion
+
+* Fix export model
+
+* mv torch onnx infer to infer
+
+* Fix export model
+
+* Fix infer
+
+* modif create_trt_runtime create_ort_runtime
+
+* update export torch
+
+* update requirements
+
+* add paddle inference backend
+
+* Fix unet pp run
+
+* remove print
+
+* Add paddle model export and infer
+
+* Add device id
+
+* remove profile to utils
+
+* Add -1 device id
+
+* Add safety checker args
+
+* remove safety checker temporarily
+
+* Add export model description
+
+* Add predict description
+
+* Fix readme
+
+* Fix device_id description
+
+* add timestep shape
+
+* add use fp16 precision
+
+* move use gpu
+
+* Add EulerAncestralDiscreteScheduler
+
+* Use EulerAncestralDiscreteScheduler with v1-5 model
+
+* Add export model readme
+
+* Add link of exported model
+
+* Update scheduler on README
+
+* Addd stable-diffusion-v1-5"
+github.com/baidu/DuReader,DuQM/train.py,2021-09-21T06:46:29Z,Add files via upload
+github.com/tata1661/FSL-Mate,PaddleFSL/paddlefsl/model_zoo/pet.py,2022-04-02T10:34:01Z,"PaddleFSL updates to v1.1.0 (add support for bioinformatics and FewNLU tasks, change License to Apache 2.0 etc.); Update ICLR papers; Announce three cash prize challenges for PaddleFSL."
+github.com/baidu/DuReader,DuQM/predict.py,2021-09-21T06:46:29Z,Add files via upload
+github.com/PaddlePaddle/PaddleSlim,demo/quant/BiBERT/task_distill.py,2022-05-18T01:38:12Z,add implementation of BiBERT (#1102)
+github.com/tata1661/FSL-Mate,PaddleFSL/paddlefsl/model_zoo/ptuning.py,2022-04-02T10:34:01Z,"PaddleFSL updates to v1.1.0 (add support for bioinformatics and FewNLU tasks, change License to Apache 2.0 etc.); Update ICLR papers; Announce three cash prize challenges for PaddleFSL."
+github.com/PaddlePaddle/Quantum,paddle_quantum/qml/bert_qtc.py,2023-04-24T13:28:09Z,update to v2.4.0
+github.com/PaddlePaddle/PaddleSlim,demo/dygraph/dist/bert/task_distill.py,2021-12-06T03:48:17Z,[distill] support wrap functional with class (#897)
+github.com/PaddlePaddle/PaddleSlim,demo/dygraph/dist/bert/task_distill.py,2021-09-17T08:07:22Z,"update distill (#892)
+
+* polish distill"
+github.com/ZJU-OpenKS/OpenKS,openks/models/paddle/ner.py,2021-10-20T07:58:02Z,"[HIT]:commit from SCIR-zwx,add ner model."
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/data/dataset/gpt_dataset.py,2023-03-01T11:31:44Z,[GPT-3] Fix bugs of GPTDataset and Modeling in GPT model (#1051)
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/data/dataset/gpt_dataset.py,2023-02-22T10:53:32Z,add MoE codes on a single card (experimental version for dy2sta) (#1024)
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/data/dataset/gpt_dataset.py,2022-11-01T08:36:27Z,[ppfleetx] Update hcg settings by supporting get_hcg and set_hcg (#848)
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/data/dataset/gpt_dataset.py,2022-10-24T13:02:26Z,[MoE] Support moe layer in ppfleetx (#840)
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/data/dataset/gpt_dataset.py,2022-10-09T12:04:27Z,"[GPT] Fix bugs of PR-814 for auto parallel training in GPT model (#821)
+
+* fix bugs of PR-814
+
+* update"
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/data/dataset/gpt_dataset.py,2022-10-05T03:18:19Z,[GPT] Support gpt-cn training (#814)
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/data/dataset/gpt_dataset.py,2022-09-20T05:19:12Z,autoparallel for ppfleetx
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/data/dataset/gpt_dataset.py,2022-09-19T11:18:56Z,"[bug fix]fix logger for fleetx (#753)
+
+* fix logger for fleetx
+
+* add logger
+
+* fix bug of infer"
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/data/dataset/gpt_dataset.py,2022-09-15T14:05:35Z,"[GPT] Fix docs of GPT (#726)
+
+* fix docs
+
+* update"
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/data/dataset/gpt_dataset.py,2022-09-15T08:42:47Z,"[GPT] Add generation, eval and inference of GPT into ppfleetx (#710)
+
+* add generation
+
+* update
+
+* update
+
+* update
+
+* add inference
+
+* update"
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/data/dataset/gpt_dataset.py,2022-09-15T08:30:54Z,"move auto_parallel to ppfleetx (#715)
+
+* mv auto
+
+* fix bug of auto"
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/data/dataset/gpt_dataset.py,2022-09-14T15:06:21Z,"fix bug of gpt logger (#714)
+
+* fix bug of gpt
+
+* fix bug of gpt"
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/data/dataset/gpt_dataset.py,2022-09-14T13:37:07Z,"add ernie (#713)
+
+* add ernie
+
+* fix bug
+
+* fix bug"
+github.com/CLUEbenchmark/modelfun,modelfun/algorithm/paddle_backend/paddlener/eval.py,2022-08-25T04:21:49Z,init
+github.com/CLUEbenchmark/modelfun,modelfun/algorithm/paddle_backend/paddlener/train.py,2022-08-25T04:21:49Z,init
+github.com/CLUEbenchmark/modelfun,modelfun/algorithm/paddle_backend/paddlener/predict.py,2022-08-25T04:21:49Z,init
+github.com/CLUEbenchmark/modelfun,modelfun/algorithm/paddle_backend/paddlecls/ptunning_cls.py,2022-08-25T04:21:49Z,init
+github.com/CLUEbenchmark/modelfun,modelfun/algorithm/paddle_backend/paddlecls/ptunning/predict.py,2022-08-25T04:21:49Z,init
+github.com/CLUEbenchmark/modelfun,modelfun/algorithm/paddle_backend/paddlecls/ptunning/ptunning.py,2022-08-25T04:21:49Z,init
+github.com/PaddlePaddle/PaddleMIX,paddlemix/processors/base_processing.py,2024-02-23T08:02:03Z,"Fix defalut, infernece, etc. (#427)
+
+Fix defalut, infernece, etc.
+
+Co-authored-by: LokeZhou <aishenghuoaiqq@163.com>
+Co-authored-by: wangguanzhong <jerrywgz@126.com>"
+github.com/PaddlePaddle/PaddleMIX,paddlemix/processors/base_processing.py,2023-08-14T14:27:48Z,refine pre-commit
+github.com/PaddlePaddle/PaddleMIX,paddlemix/processors/base_processing.py,2023-08-14T11:03:40Z,update pre-commit
+github.com/PaddlePaddle/PaddleMIX,paddlemix/processors/base_processing.py,2023-08-14T07:43:10Z,mv paddlevlp to paddlemix
+github.com/ZJU-OpenKS/OpenKS,openks/models/paddle/hypernym_discovery.py,2021-10-14T06:38:48Z,HIT commit: add hypernym discovery model
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/data/tokenizers/gpt_tokenizer.py,2022-12-13T15:41:46Z,[FleetX examples] Add GPT pretrain examples for transformer models (#989)
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/data/tokenizers/gpt_tokenizer.py,2022-11-01T12:47:23Z,[ppfleetx] Fix log bug of engine and update logging format (#862)
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/data/tokenizers/gpt_tokenizer.py,2022-09-21T05:10:12Z,"add MNLI, CoLA dataset gpt finetune"
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/data/tokenizers/gpt_tokenizer.py,2022-09-19T10:04:34Z,Merge remote-tracking branch 'upstream/develop' into gpt_finetune_sst2
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/data/tokenizers/gpt_tokenizer.py,2022-09-19T10:04:09Z,add gpt glue finetune code
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/data/tokenizers/gpt_tokenizer.py,2022-09-16T09:46:06Z,fix inference and docs
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/data/tokenizers/gpt_tokenizer.py,2022-09-12T14:11:18Z,"[GPT] Reconstruct dataset of ppfleetx (#697)
+
+* reconstruct dataset
+
+* reconstruct dataset and engine
+
+* update"
+github.com/WithHades/banfoStyle,train.py,2021-10-22T12:58:07Z,fix some problems
+github.com/WithHades/banfoStyle,train.py,2021-10-22T12:50:40Z,add the function of generation of writing
+github.com/FlagOpen/FlagPerf,training/benchmarks/gpt3_6.7B/paddle/run_pretraining.py,2023-10-13T02:03:04Z,"[paddle] add gpt3 benchmark (#233)
+
+* add new feature
+
+* fix
+
+* update
+
+* update
+
+* update
+
+* update
+
+* update
+
+* update
+
+* update
+
+* update
+
+* update
+
+* add continue_training
+
+* update
+
+* rename config name with soft link
+
+* update config
+
+* replace nvidia-docker with docker
+
+* update config
+
+* add README.md
+
+* set converged state
+
+* update
+
+* update target ppl metric
+
+* update GPT-3 case config
+
+* update base config
+
+* add use_fused_rms_norm config
+
+* update config
+
+* update paddle dockerfile
+
+* update config
+
+* update GPT-3 config
+
+* update config
+
+* update configs
+
+* update GPT-3 config
+
+* update config
+
+* rename GPT-3 folders
+
+* update start_paddle_task
+
+* update config
+
+* update run_pretrain.py
+
+* update
+
+* update and add gpt3 configs
+
+* add gpt3-13b benchmarks
+
+* remove try and catch
+
+* update dataloader
+
+* update filename
+
+* update
+
+* update configs
+
+* update config
+
+* add gpt3 metrics
+
+* update test_config
+
+* update README.md"
+github.com/PaddlePaddle/PaddleMIX,ppdiffusers/ppdiffusers/patches/ppnlp_patch_utils.py,2023-11-30T06:21:14Z,"[PPDiffusers] Fix ppdiffusers ce tests (#332)
+
+修复ppdiffusers的部分ce单测。
+
+- 修复 0D tensor问题
+- windows下memory efficient attention无法使用，因此默认会关闭ppxformers。
+- 修复ci，ce单测。
+```text
+fast单测：
+# python -m pytest -v tests -n 8 -s               2262 passed, 257 skipped, 2035 warnings in 350.63s (0:05:50)
+slow单测：
+# python -m pytest -v tests/models -n 2 -s           298 passed, 72 skipped, 4 warnings in 134.93s (0:02:14)
+# python -m pytest -v tests/schedulers -n 4 -s     698 passed, 61 warnings in 29.75s 
+# python -m pytest -v tests/others -n 1 -s             35 passed, 3 skipped, 6 warnings in 14.28s
+# python -m pytest -v tests/pipelines -n 1 -s        1402 passed, 11 skipped, 607 warnings in 4587.90s (1:16:27)
+```
+
+---------
+
+Co-authored-by: CrazyBoyM <ai-lab@foxmail.com>"
+github.com/PaddlePaddle/PaddleMIX,ppdiffusers/ppdiffusers/patches/ppnlp_patch_utils.py,2023-11-07T03:49:19Z,update from_pretrained
+github.com/PaddlePaddle/PaddleMIX,ppdiffusers/ppdiffusers/patches/ppnlp_patch_utils.py,2023-09-26T07:37:51Z,"upgrade ppdiffusers0193 (#35)
+
+Co-authored-by: yujun <573009727@qq.com>
+Co-authored-by: LokeZhou <aishenghuoaiqq@163.com>
+Co-authored-by: CrazyBoyM <ai-lab@foxmail.com>
+Co-authored-by: Ke Bai <35400185+CrazyBoyM@users.noreply.github.com>
+Co-authored-by: nemonameless@qq.com@github.com <nemonameless@qq.com>"
+github.com/PaddlePaddle/PaddleMIX,ppdiffusers/ppdiffusers/patches/ppnlp_patch_utils.py,2023-08-22T02:11:56Z,"enhance set_state_dict when load_state_dict_pre_hooks is none (#96)
+
+Co-authored-by: yujun <50394665+JunnYu@users.noreply.github.com>"
+github.com/PaddlePaddle/PaddleMIX,ppdiffusers/ppdiffusers/patches/ppnlp_patch_utils.py,2023-08-14T14:27:48Z,refine pre-commit
+github.com/PaddlePaddle/PaddleMIX,ppdiffusers/ppdiffusers/patches/ppnlp_patch_utils.py,2023-08-14T11:03:40Z,update pre-commit
+github.com/PaddlePaddle/PaddleMIX,ppdiffusers/ppdiffusers/patches/ppnlp_patch_utils.py,2023-08-09T03:03:21Z,v0.16.3
+github.com/PaddlePaddle/PaddleMIX,ppdiffusers/ppdiffusers/patches/ppnlp_patch_utils.py,2023-08-08T05:35:18Z,update sd use flash attn2
+github.com/PaddlePaddle/PaddleMIX,ppdiffusers/ppdiffusers/patches/ppnlp_patch_utils.py,2023-07-17T03:29:43Z,add ppdiffusers
+github.com/hchhtc123/News-Text-Classification,train2_skep.py,2021-10-08T16:10:18Z,Add files via upload
+github.com/hchhtc123/News-Text-Classification,train3_skep.py,2021-10-08T16:10:18Z,Add files via upload
+github.com/hchhtc123/News-Text-Classification,train4_skep.py,2021-10-08T16:10:18Z,Add files via upload
+github.com/hchhtc123/News-Text-Classification,train1_skep.py,2021-10-08T16:10:18Z,Add files via upload
+github.com/hchhtc123/News-Text-Classification,train2_nezha.py,2021-10-08T16:10:18Z,Add files via upload
+github.com/hchhtc123/News-Text-Classification,train3_nezha.py,2021-10-08T16:10:18Z,Add files via upload
+github.com/hchhtc123/News-Text-Classification,train4_nezha.py,2021-10-08T16:10:18Z,Add files via upload
+github.com/hchhtc123/News-Text-Classification,train1_nezha.py,2021-10-08T16:10:18Z,Add files via upload
+github.com/hchhtc123/News-Text-Classification,train2_robert.py,2021-10-08T16:10:18Z,Add files via upload
+github.com/hchhtc123/News-Text-Classification,train3_robert.py,2021-10-08T16:10:18Z,Add files via upload
+github.com/hchhtc123/News-Text-Classification,train4_robert.py,2021-10-08T16:10:18Z,Add files via upload
+github.com/hchhtc123/News-Text-Classification,train1_robert.py,2021-10-08T16:10:18Z,Add files via upload
+github.com/PaddlePaddle/Research,KG/DuKEVU_Baseline/paddle-video-semantic-tag/train_semantic_tag.py,2021-06-10T12:19:27Z,Add DuKEVU_Baseline
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/models/language_model/language_module.py,2023-03-16T08:29:58Z,[GPT-3] Support Grad Merge with FP32 main grad for BF16 training of GPT-3 model (#1053)
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/models/language_model/language_module.py,2023-03-01T11:31:44Z,[GPT-3] Fix bugs of GPTDataset and Modeling in GPT model (#1051)
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/models/language_model/language_module.py,2023-02-27T08:37:07Z,"[GPT3] Add the yaml files of distributed pretrain for GPT3 13B model (#1049)
+
+* add gpt3 13B pretrain yaml
+
+* update
+
+* update"
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/models/language_model/language_module.py,2023-02-22T10:53:32Z,add MoE codes on a single card (experimental version for dy2sta) (#1024)
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/models/language_model/language_module.py,2022-12-02T09:59:01Z,Support structured pruning on FC layers and demo in GPT (#829)
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/models/language_model/language_module.py,2022-11-30T11:09:12Z,Add Skip Quant in GPT Model (#979)
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/models/language_model/language_module.py,2022-11-29T06:00:10Z,Move QAT to Engine & Add More Docs (#952)
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/models/language_model/language_module.py,2022-11-08T11:27:30Z,Add QAT for GTP&VIT (#874)
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/models/language_model/language_module.py,2022-11-01T08:36:27Z,[ppfleetx] Update hcg settings by supporting get_hcg and set_hcg (#848)
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/models/language_model/language_module.py,2022-11-01T07:53:00Z,Polish sequence parallel to improve performance (#861)
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/models/language_model/language_module.py,2022-11-01T03:12:02Z,Fix bug when combining sequence parallel and gradient merge (#854)
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/models/language_model/language_module.py,2022-10-24T13:02:26Z,[MoE] Support moe layer in ppfleetx (#840)
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/models/language_model/language_module.py,2022-10-11T03:26:08Z,solve import issue (#822)
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/models/language_model/language_module.py,2022-10-05T03:18:19Z,[GPT] Support gpt-cn training (#814)
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/models/language_model/language_module.py,2022-10-04T03:02:10Z,bugfix of gpt finetune for fuse_attn_qkv (#813)
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/models/language_model/language_module.py,2022-09-22T11:08:59Z,Merge remote-tracking branch 'upstream/develop' into gpt_finetune_sst2
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/models/language_model/language_module.py,2022-09-22T07:19:29Z,add metrics
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/models/language_model/language_module.py,2022-09-21T05:10:12Z,"add MNLI, CoLA dataset gpt finetune"
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/models/language_model/language_module.py,2022-09-19T13:11:25Z,add gpt glue benchmark finetune code
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/models/language_model/language_module.py,2022-09-19T11:18:56Z,"[bug fix]fix logger for fleetx (#753)
+
+* fix logger for fleetx
+
+* add logger
+
+* fix bug of infer"
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/models/language_model/language_module.py,2022-09-19T10:04:34Z,Merge remote-tracking branch 'upstream/develop' into gpt_finetune_sst2
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/models/language_model/language_module.py,2022-09-19T10:04:09Z,add gpt glue finetune code
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/models/language_model/language_module.py,2022-09-19T03:20:06Z,fix bugs
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/models/language_model/language_module.py,2022-09-16T14:14:30Z,"Add sequence parallel strategy support. (#734)
+
+* Add sequence parallel strategy support.
+1. Add sequence parallel strategy for GPTModelHybrid
+2. Output has been checked layer by layer both in forward
+   and backward progress, and its loss curve of the beginning
+   5000 steps fits the peer
+3. Performance is improved for about 10% with sequence_parallel
+   strategy compared with pretrain_gpt_1.3B_mp8
+
+* Add sequence_parallel_utils.py file"
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/models/language_model/language_module.py,2022-09-16T04:04:34Z,"[GPT] Fix bugs of config and log (#731)
+
+* fix quantization
+
+* fix bugs of config"
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/models/language_model/language_module.py,2022-09-15T14:53:41Z,"[GPT] Fix quantization of GPT mp (#728)
+
+* fix quantization
+
+* update"
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/models/language_model/language_module.py,2022-09-15T14:05:35Z,"[GPT] Fix docs of GPT (#726)
+
+* fix docs
+
+* update"
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/models/language_model/language_module.py,2022-09-15T08:42:47Z,"[GPT] Add generation, eval and inference of GPT into ppfleetx (#710)
+
+* add generation
+
+* update
+
+* update
+
+* update
+
+* add inference
+
+* update"
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/models/language_model/language_module.py,2022-09-15T07:53:37Z,"add vit for paddlefleetx (#708)
+
+* add vit for paddlefleetx
+
+* add validation_epoch_end for basic_module
+
+* change fleetx to ppfleetx
+
+* fix memory leak
+
+* fix adamw weight decay"
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/models/language_model/language_module.py,2022-09-13T11:29:39Z,"[GPT] Fix bugs in ppfleetx (#703)
+
+* update
+
+* update
+
+* update
+
+* commit
+
+* update
+
+* fix bugs"
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/models/language_model/language_module.py,2022-09-12T16:06:12Z,"[GPT] Support epoch engine and fix bugs of optim (#702)
+
+* add epoch
+
+* update
+
+* add epoch
+
+* update
+
+Co-authored-by: ForFishes <2282912238@qq.com>"
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/models/language_model/language_module.py,2022-09-12T14:11:18Z,"[GPT] Reconstruct dataset of ppfleetx (#697)
+
+* reconstruct dataset
+
+* reconstruct dataset and engine
+
+* update"
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/models/language_model/language_module.py,2022-09-12T12:16:59Z,"add checker (#698)
+
+Co-authored-by: ForFishes <2282912238@qq.com>"
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/models/language_model/language_module.py,2022-09-12T08:27:02Z,reconstruct (#695)
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/models/language_model/language_module.py,2022-09-12T06:39:00Z,get model size (#694)
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/models/language_model/language_module.py,2022-09-09T09:47:11Z,"Add module for fleetx (#693)
+
+* add module
+
+* add module
+
+* add module
+
+* add model
+
+* add model"
+github.com/PaddlePaddle/Research,KG/DuKEVU_Baseline/paddle-video-semantic-tag/predict_semantic_tag.py,2021-06-10T12:19:27Z,Add DuKEVU_Baseline
+github.com/lvmoney/lvmoney-frame-parent,lvmoney-frame-ai/lvmoney-frame-ai-python/src/main/resources/paddleStudy/Paddle8_2_2.py,2022-12-06T02:42:06Z,feat(python):同步最新的paddlepaddle学习代码
+github.com/rayvzn/MGTV_PIR,ped.py,2022-04-11T08:29:31Z,add file
+github.com/rayvzn/MGTV_PIR,train.py,2022-04-11T08:29:31Z,add file
+github.com/rayvzn/MGTV_PIR,predict.py,2022-04-11T08:29:31Z,add file
+github.com/PaddlePaddle/trustAI,tutorials/data_map/train_pointwise.py,2022-12-27T04:10:09Z,"Data map (#50)
+
+data map commit with image and README update
+
+Co-authored-by: wanglijie <wanglijie@baidu.com>"
+github.com/PaddlePaddle/PaddleMIX,ppdiffusers/ppdiffusers/pipelines/shap_e/pipeline_shap_e.py,2023-09-26T07:37:51Z,"upgrade ppdiffusers0193 (#35)
+
+Co-authored-by: yujun <573009727@qq.com>
+Co-authored-by: LokeZhou <aishenghuoaiqq@163.com>
+Co-authored-by: CrazyBoyM <ai-lab@foxmail.com>
+Co-authored-by: Ke Bai <35400185+CrazyBoyM@users.noreply.github.com>
+Co-authored-by: nemonameless@qq.com@github.com <nemonameless@qq.com>"
+github.com/PaddlePaddle/Serving,examples/Pipeline/PaddleNLP/semantic_indexing/export_model.py,2022-05-23T03:19:12Z,"Merge pull request #1773 from w5688414/ernie
+
+Add Ernie Indexing Example"
+github.com/nghuyong/ERNIE-Pytorch,test.py,2022-09-10T09:40:46Z,change to Ernie Model
+github.com/nghuyong/ERNIE-Pytorch,test.py,2022-08-19T02:53:52Z,fix test
+github.com/nghuyong/ERNIE-Pytorch,test.py,2022-08-18T08:18:28Z,refactor
+github.com/shangfr/Chinese-Synonyms,research/using_emb/useing_emb.py,2021-07-09T03:52:20Z,add anns
+github.com/PaddlePaddle/PaddleMIX,ppdiffusers/ppdiffusers/pipelines/controlnet/pipeline_controlnet.py,2023-09-26T07:37:51Z,"upgrade ppdiffusers0193 (#35)
+
+Co-authored-by: yujun <573009727@qq.com>
+Co-authored-by: LokeZhou <aishenghuoaiqq@163.com>
+Co-authored-by: CrazyBoyM <ai-lab@foxmail.com>
+Co-authored-by: Ke Bai <35400185+CrazyBoyM@users.noreply.github.com>
+Co-authored-by: nemonameless@qq.com@github.com <nemonameless@qq.com>"
+github.com/PaddlePaddle/PaddleMIX,ppdiffusers/ppdiffusers/pipelines/shap_e/pipeline_shap_e_img2img.py,2023-09-26T07:37:51Z,"upgrade ppdiffusers0193 (#35)
+
+Co-authored-by: yujun <573009727@qq.com>
+Co-authored-by: LokeZhou <aishenghuoaiqq@163.com>
+Co-authored-by: CrazyBoyM <ai-lab@foxmail.com>
+Co-authored-by: Ke Bai <35400185+CrazyBoyM@users.noreply.github.com>
+Co-authored-by: nemonameless@qq.com@github.com <nemonameless@qq.com>"
+github.com/WithHades/banfoStyle,preprocess.py,2021-10-22T12:50:40Z,add the function of generation of writing
+github.com/PaddlePaddle/continuous_integration,test/tools/tool-test-inference/test_case/text_preprocess.py,2022-10-18T03:45:30Z,Add tools
+github.com/PaddlePaddle/continuous_integration,test/tools/tool-test-dl-algorithm-correctness/test_case/text_preprocess.py,2022-10-18T03:45:30Z,Add tools
+github.com/kevinng77/blenderbot_paddle,paddlenlp/transformers/gpt/modeling.py,2021-09-15T06:00:29Z,update paddlenlp
+github.com/kevinng77/blenderbot_paddle,paddlenlp/transformers/gpt/modeling.py,2021-08-09T09:10:30Z,file formatting
+github.com/kevinng77/blenderbot_paddle,paddlenlp/taskflow/models/dependency_parsing_model.py,2021-09-15T06:00:29Z,update paddlenlp
+github.com/PaddlePaddle/InterpretDL,tests/interpreter/test_nlp.py,2022-09-27T10:29:40Z,uncomment nlp unit tests
+github.com/PaddlePaddle/InterpretDL,tests/interpreter/test_nlp.py,2022-09-26T12:54:04Z,big change for nlp interpreters
+github.com/PaddlePaddle/InterpretDL,tests/interpreter/test_nlp.py,2022-06-09T09:09:26Z,nlp for 2.3.3 and later: changed to ernie-2.0-base-en
+github.com/PaddlePaddle/InterpretDL,tests/interpreter/test_nlp.py,2022-03-28T03:23:42Z,normlime improved: issue #27
+github.com/PaddlePaddle/InterpretDL,tests/interpreter/test_nlp.py,2022-03-28T03:21:55Z,normlime improved: issue #27
+github.com/PaddlePaddle/InterpretDL,tests/interpreter/test_nlp.py,2022-01-08T14:01:57Z,add tests for ci
+github.com/PaddlePaddle/Serving,examples/Pipeline/PaddleNLP/semantic_indexing/deploy/python/predict.py,2022-05-23T03:19:12Z,"Merge pull request #1773 from w5688414/ernie
+
+Add Ernie Indexing Example"
+github.com/PaddlePaddle/Serving,examples/Pipeline/PaddleNLP/semantic_indexing/deploy/C++/rpc_client.py,2022-05-23T03:19:12Z,"Merge pull request #1773 from w5688414/ernie
+
+Add Ernie Indexing Example"
+github.com/PaddlePaddle/Serving,examples/Pipeline/PaddleNLP/semantic_indexing/deploy/C++/http_client.py,2022-05-23T03:19:12Z,"Merge pull request #1773 from w5688414/ernie
+
+Add Ernie Indexing Example"
+github.com/PaddlePaddle/Serving,examples/Pipeline/PaddleNLP/semantic_indexing/deploy/python/web_service.py,2022-05-23T03:19:12Z,"Merge pull request #1773 from w5688414/ernie
+
+Add Ernie Indexing Example"
+github.com/WithHades/banfoStyle,generation.py,2021-10-24T07:21:55Z,update some exception
+github.com/WithHades/banfoStyle,generation.py,2021-10-22T12:50:40Z,add the function of generation of writing
+github.com/PaddlePaddle/PaddleMIX,ppdiffusers/ppdiffusers/pipelines/kandinsky/pipeline_kandinsky_combined.py,2023-09-26T07:37:51Z,"upgrade ppdiffusers0193 (#35)
+
+Co-authored-by: yujun <573009727@qq.com>
+Co-authored-by: LokeZhou <aishenghuoaiqq@163.com>
+Co-authored-by: CrazyBoyM <ai-lab@foxmail.com>
+Co-authored-by: Ke Bai <35400185+CrazyBoyM@users.noreply.github.com>
+Co-authored-by: nemonameless@qq.com@github.com <nemonameless@qq.com>"
+github.com/PaddlePaddle/PaddleMIX,ppdiffusers/ppdiffusers/pipelines/controlnet/pipeline_controlnet_inpaint.py,2023-09-26T07:37:51Z,"upgrade ppdiffusers0193 (#35)
+
+Co-authored-by: yujun <573009727@qq.com>
+Co-authored-by: LokeZhou <aishenghuoaiqq@163.com>
+Co-authored-by: CrazyBoyM <ai-lab@foxmail.com>
+Co-authored-by: Ke Bai <35400185+CrazyBoyM@users.noreply.github.com>
+Co-authored-by: nemonameless@qq.com@github.com <nemonameless@qq.com>"
+github.com/PaddlePaddle/PaddleMIX,ppdiffusers/ppdiffusers/pipelines/controlnet/pipeline_controlnet_img2img.py,2023-09-26T07:37:51Z,"upgrade ppdiffusers0193 (#35)
+
+Co-authored-by: yujun <573009727@qq.com>
+Co-authored-by: LokeZhou <aishenghuoaiqq@163.com>
+Co-authored-by: CrazyBoyM <ai-lab@foxmail.com>
+Co-authored-by: Ke Bai <35400185+CrazyBoyM@users.noreply.github.com>
+Co-authored-by: nemonameless@qq.com@github.com <nemonameless@qq.com>"
+github.com/PaddlePaddle/InterpretDL,tests/interpreter/test_bt_ga_nlp.py,2022-09-26T12:54:04Z,big change for nlp interpreters
+github.com/PaddlePaddle/InterpretDL,tests/interpreter/test_bt_ga_nlp.py,2022-07-07T05:55:20Z,update test files for ga and bt
+github.com/PaddlePaddle/InterpretDL,tests/interpreter/test_bt_ga_nlp.py,2022-07-06T08:29:59Z,little modif to test file
+github.com/PaddlePaddle/InterpretDL,tests/interpreter/test_bt_ga_nlp.py,2022-07-05T12:29:08Z,add nlp test for ga and bt
+github.com/PaddlePaddle/PaddleFleetX,ppfleetx/data/data_tools/ernie/preprocess/create_pretraining_data.py,2022-11-02T02:52:18Z,"add ernie docs/ci (#864)
+
+* add ernie docs/ci
+
+* add ernie doc"
+github.com/PaddlePaddle/PaddleMIX,ppdiffusers/ppdiffusers/pipelines/kandinsky2_2/pipeline_kandinsky2_2_prior.py,2023-09-26T07:37:51Z,"upgrade ppdiffusers0193 (#35)
+
+Co-authored-by: yujun <573009727@qq.com>
+Co-authored-by: LokeZhou <aishenghuoaiqq@163.com>
+Co-authored-by: CrazyBoyM <ai-lab@foxmail.com>
+Co-authored-by: Ke Bai <35400185+CrazyBoyM@users.noreply.github.com>
+Co-authored-by: nemonameless@qq.com@github.com <nemonameless@qq.com>"
+github.com/PaddlePaddle/PaddleMIX,ppdiffusers/ppdiffusers/pipelines/kandinsky2_2/pipeline_kandinsky2_2_combined.py,2023-09-26T07:37:51Z,"upgrade ppdiffusers0193 (#35)
+
+Co-authored-by: yujun <573009727@qq.com>
+Co-authored-by: LokeZhou <aishenghuoaiqq@163.com>
+Co-authored-by: CrazyBoyM <ai-lab@foxmail.com>
+Co-authored-by: Ke Bai <35400185+CrazyBoyM@users.noreply.github.com>
+Co-authored-by: nemonameless@qq.com@github.com <nemonameless@qq.com>"
+github.com/PaddlePaddle/PaddleMIX,ppdiffusers/ppdiffusers/pipelines/stable_diffusion_xl/pipeline_stable_diffusion_xl.py,2023-12-19T06:11:18Z,"Revert ""【Hackathon 5th No.83】PaddleMIX ppdiffusers models模块功能升级同步HF"" (#354)
+
+Reverts PaddlePaddle/PaddleMIX#322
+回滚该PR，等之后修复后再合入，下面是对应的问题。
+1. fastdeploy的sd和sdxl 推理造成了错误。无法顺利加载vae的decoder模型，可能当前升级有部分修改，导致这个发生错误。
+2.
+sd的预训练和lora微调存在性能下降10%，可能怀疑是recompute粒度发生了修改，部分模块之前没有加recompute现在加上了recompute导致的。"
+github.com/PaddlePaddle/PaddleMIX,ppdiffusers/ppdiffusers/pipelines/stable_diffusion_xl/pipeline_stable_diffusion_xl.py,2023-12-14T01:38:41Z,"【Hackathon 5th No.83】PaddleMIX ppdiffusers models模块功能升级同步HF (#322)
+
+PaddleMIX ppdiffusers models模块功能升级同步HF
+
+
+https://github.com/PaddlePaddle/community/blob/master/hackathon/hackathon_5th/%E3%80%90PaddlePaddle%20Hackathon%205th%E3%80%91%E5%BC%80%E6%BA%90%E8%B4%A1%E7%8C%AE%E4%B8%AA%E4%BA%BA%E6%8C%91%E6%88%98%E8%B5%9B%E5%A5%97%E4%BB%B6%E5%BC%80%E5%8F%91%E4%BB%BB%E5%8A%A1%E5%90%88%E9%9B%86.md#no83paddlemix-ppdiffusers-models%E6%A8%A1%E5%9D%97%E5%8A%9F%E8%83%BD%E5%8D%87%E7%BA%A7%E5%90%8C%E6%AD%A5hf
+
+https://github.com/PaddlePaddle/PaddleMIX/issues/259
+https://github.com/PaddlePaddle/PaddleMIX/issues/260
+https://github.com/PaddlePaddle/PaddleMIX/issues/262
+https://github.com/PaddlePaddle/PaddleMIX/issues/264
+https://github.com/PaddlePaddle/PaddleMIX/issues/265
+
+升级 models
+增加scale
+增加get_processor
+diffusers上LoRA类逐渐取消，改为使用lora_layer
+部分测试误差增加，测试修改前代码同样有误差
+增加tests/lora目录
+flax模型paddle没有使用，没有迁移
+
+test_attention_processor.py
+
+![image](https://github.com/PaddlePaddle/PaddleMIX/assets/4617245/3a7cdfcf-6313-42f7-8bb3-9fd7d46b36cf)
+
+test_models_unet_2d.py
+
+![image](https://github.com/PaddlePaddle/PaddleMIX/assets/4617245/51f9ec37-e0f2-4010-b621-966d596bf451)
+
+test_lora_layers.py
+
+![image](https://github.com/PaddlePaddle/PaddleMIX/assets/4617245/d4761fde-1eda-4329-8f94-79d4ed6535b3)
+
+test_models_unet_motion.py
+
+![image](https://github.com/PaddlePaddle/PaddleMIX/assets/4617245/f3ff8f8c-89f2-46e2-a733-4b6c442e36b5)"
+github.com/PaddlePaddle/PaddleMIX,ppdiffusers/ppdiffusers/pipelines/stable_diffusion_xl/pipeline_stable_diffusion_xl.py,2023-12-12T06:03:11Z,"feat: add sdxl fastdeploy support (#338)
+
+add sdxl for fastdeploy."
+github.com/PaddlePaddle/PaddleMIX,ppdiffusers/ppdiffusers/pipelines/stable_diffusion_xl/pipeline_stable_diffusion_xl.py,2023-09-26T07:37:51Z,"upgrade ppdiffusers0193 (#35)
+
+Co-authored-by: yujun <573009727@qq.com>
+Co-authored-by: LokeZhou <aishenghuoaiqq@163.com>
+Co-authored-by: CrazyBoyM <ai-lab@foxmail.com>
+Co-authored-by: Ke Bai <35400185+CrazyBoyM@users.noreply.github.com>
+Co-authored-by: nemonameless@qq.com@github.com <nemonameless@qq.com>"
+github.com/PaddlePaddle/PaddleMIX,ppdiffusers/ppdiffusers/pipelines/stable_diffusion/pipeline_stable_diffusion_ldm3d.py,2023-09-26T07:37:51Z,"upgrade ppdiffusers0193 (#35)
+
+Co-authored-by: yujun <573009727@qq.com>
+Co-authored-by: LokeZhou <aishenghuoaiqq@163.com>
+Co-authored-by: CrazyBoyM <ai-lab@foxmail.com>
+Co-authored-by: Ke Bai <35400185+CrazyBoyM@users.noreply.github.com>
+Co-authored-by: nemonameless@qq.com@github.com <nemonameless@qq.com>"
+github.com/PaddlePaddle/PaddleMIX,ppdiffusers/ppdiffusers/pipelines/kandinsky2_2/pipeline_kandinsky2_2_prior_emb2emb.py,2023-09-26T07:37:51Z,"upgrade ppdiffusers0193 (#35)
+
+Co-authored-by: yujun <573009727@qq.com>
+Co-authored-by: LokeZhou <aishenghuoaiqq@163.com>
+Co-authored-by: CrazyBoyM <ai-lab@foxmail.com>
+Co-authored-by: Ke Bai <35400185+CrazyBoyM@users.noreply.github.com>
+Co-authored-by: nemonameless@qq.com@github.com <nemonameless@qq.com>"
+github.com/JunnYu/ConvBERT-Prod,paddlenlp/ops/infer.py,2022-01-06T07:30:01Z,first
+github.com/JunnYu/ConvBERT-Prod,paddlenlp/taskflow/models/dependency_parsing_model.py,2022-01-06T07:30:01Z,first
+github.com/JunnYu/paddle_t5,paddlenlp/examples/few_shot/pet/pet.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/examples/few_shot/efl/train.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/examples/few_shot/pet/predict.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/examples/few_shot/efl/predict.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/examples/semantic_indexing/recall.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/examples/few_shot/p-tuning/predict.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/examples/semantic_indexing/predict.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/examples/few_shot/efl/export_model.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/examples/few_shot/p-tuning/ptuning.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/examples/semantic_indexing/train_ance.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/examples/text_matching/simbert/predict.py,2021-08-23T09:04:29Z,update
+github.com/PaddlePaddle/PaddleMIX,ppdiffusers/ppdiffusers/pipelines/stable_diffusion/pipeline_stable_diffusion_diffedit.py,2023-11-30T06:21:14Z,"[PPDiffusers] Fix ppdiffusers ce tests (#332)
+
+修复ppdiffusers的部分ce单测。
+
+- 修复 0D tensor问题
+- windows下memory efficient attention无法使用，因此默认会关闭ppxformers。
+- 修复ci，ce单测。
+```text
+fast单测：
+# python -m pytest -v tests -n 8 -s               2262 passed, 257 skipped, 2035 warnings in 350.63s (0:05:50)
+slow单测：
+# python -m pytest -v tests/models -n 2 -s           298 passed, 72 skipped, 4 warnings in 134.93s (0:02:14)
+# python -m pytest -v tests/schedulers -n 4 -s     698 passed, 61 warnings in 29.75s 
+# python -m pytest -v tests/others -n 1 -s             35 passed, 3 skipped, 6 warnings in 14.28s
+# python -m pytest -v tests/pipelines -n 1 -s        1402 passed, 11 skipped, 607 warnings in 4587.90s (1:16:27)
+```
+
+---------
+
+Co-authored-by: CrazyBoyM <ai-lab@foxmail.com>"
+github.com/PaddlePaddle/PaddleMIX,ppdiffusers/ppdiffusers/pipelines/stable_diffusion/pipeline_stable_diffusion_diffedit.py,2023-09-26T07:37:51Z,"upgrade ppdiffusers0193 (#35)
+
+Co-authored-by: yujun <573009727@qq.com>
+Co-authored-by: LokeZhou <aishenghuoaiqq@163.com>
+Co-authored-by: CrazyBoyM <ai-lab@foxmail.com>
+Co-authored-by: Ke Bai <35400185+CrazyBoyM@users.noreply.github.com>
+Co-authored-by: nemonameless@qq.com@github.com <nemonameless@qq.com>"
+github.com/JunnYu/paddle_t5,paddlenlp/examples/semantic_indexing/train_batch_neg.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/examples/few_shot/efl/deploy/python/predict.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/examples/semantic_indexing/run_ann_data_gen.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/examples/semantic_indexing/train_hardest_neg.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/examples/information_extraction/msra_ner/eval.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/examples/text_classification/multi_label/train.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/examples/text_matching/question_matching/train.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/examples/information_extraction/msra_ner/train.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/examples/information_extraction/DuEE/classifier.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/examples/language_model/gpt/run_pretrain_static.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/examples/text_classification/multi_label/predict.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/examples/text_matching/question_matching/predict.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/examples/information_extraction/msra_ner/predict.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/examples/text_matching/ernie_matching/export_model.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/examples/text_matching/sentence_transformers/train.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/examples/text_matching/sentence_transformers/predict.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/examples/text_classification/pretrained_models/train.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/examples/text_matching/ernie_matching/train_pairwise.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/examples/text_classification/multi_label/export_model.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/examples/text_matching/ernie_matching/train_pointwise.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/examples/text_matching/ernie_matching/predict_pairwise.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/examples/text_classification/pretrained_models/predict.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/examples/sentiment_analysis/skep/deploy/python/predict.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/examples/machine_reading_comprehension/SQuAD/run_squad.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/examples/text_matching/ernie_matching/predict_pointwise.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/examples/information_extraction/waybill_ie/export_model.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/examples/language_model/gpt-3/static/run_pretrain_static.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/examples/text_matching/ernie_matching/deploy/python/predict.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/examples/text_classification/pretrained_models/export_model.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/examples/machine_reading_comprehension/DuReader-robust/run_du.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/examples/information_extraction/waybill_ie/deploy/python/predict.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/examples/text_classification/pretrained_models/deploy/python/predict.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/tests/ernie_text_cls/train.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/tests/ernie_text_cls/predict.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/tests/ernie_text_matching/predict.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/tests/ernie_text_cls/export_model.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/tests/ernie_text_matching/export_model.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/tests/ernie_text_matching/train_pointwise.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/tests/ernie_information_extraction/predict.py,2021-08-23T09:04:29Z,update
+github.com/JunnYu/paddle_t5,paddlenlp/tests/ernie_information_extraction/export_model.py,2021-08-23T09:04:29Z,update
+github.com/PaddlePaddle/PaddleMIX,ppdiffusers/ppdiffusers/pipelines/stable_diffusion/pipeline_stable_diffusion_paradigms.py,2023-09-26T07:37:51Z,"upgrade ppdiffusers0193 (#35)
+
+Co-authored-by: yujun <573009727@qq.com>
+Co-authored-by: LokeZhou <aishenghuoaiqq@163.com>
+Co-authored-by: CrazyBoyM <ai-lab@foxmail.com>
+Co-authored-by: Ke Bai <35400185+CrazyBoyM@users.noreply.github.com>
+Co-authored-by: nemonameless@qq.com@github.com <nemonameless@qq.com>"
+github.com/PaddlePaddle/PaddleMIX,ppdiffusers/ppdiffusers/pipelines/stable_diffusion_xl/pipeline_stable_diffusion_xl_inpaint.py,2023-11-30T06:21:14Z,"[PPDiffusers] Fix ppdiffusers ce tests (#332)
+
+修复ppdiffusers的部分ce单测。
+
+- 修复 0D tensor问题
+- windows下memory efficient attention无法使用，因此默认会关闭ppxformers。
+- 修复ci，ce单测。
+```text
+fast单测：
+# python -m pytest -v tests -n 8 -s               2262 passed, 257 skipped, 2035 warnings in 350.63s (0:05:50)
+slow单测：
+# python -m pytest -v tests/models -n 2 -s           298 passed, 72 skipped, 4 warnings in 134.93s (0:02:14)
+# python -m pytest -v tests/schedulers -n 4 -s     698 passed, 61 warnings in 29.75s 
+# python -m pytest -v tests/others -n 1 -s             35 passed, 3 skipped, 6 warnings in 14.28s
+# python -m pytest -v tests/pipelines -n 1 -s        1402 passed, 11 skipped, 607 warnings in 4587.90s (1:16:27)
+```
+
+---------
+
+Co-authored-by: CrazyBoyM <ai-lab@foxmail.com>"
+github.com/PaddlePaddle/PaddleMIX,ppdiffusers/ppdiffusers/pipelines/stable_diffusion_xl/pipeline_stable_diffusion_xl_inpaint.py,2023-09-26T07:37:51Z,"upgrade ppdiffusers0193 (#35)
+
+Co-authored-by: yujun <573009727@qq.com>
+Co-authored-by: LokeZhou <aishenghuoaiqq@163.com>
+Co-authored-by: CrazyBoyM <ai-lab@foxmail.com>
+Co-authored-by: Ke Bai <35400185+CrazyBoyM@users.noreply.github.com>
+Co-authored-by: nemonameless@qq.com@github.com <nemonameless@qq.com>"
+github.com/PaddlePaddle/PaddleMIX,ppdiffusers/ppdiffusers/pipelines/stable_diffusion_xl/pipeline_stable_diffusion_xl_img2img.py,2023-09-26T07:37:51Z,"upgrade ppdiffusers0193 (#35)
+
+Co-authored-by: yujun <573009727@qq.com>
+Co-authored-by: LokeZhou <aishenghuoaiqq@163.com>
+Co-authored-by: CrazyBoyM <ai-lab@foxmail.com>
+Co-authored-by: Ke Bai <35400185+CrazyBoyM@users.noreply.github.com>
+Co-authored-by: nemonameless@qq.com@github.com <nemonameless@qq.com>"
+github.com/dong03/ERNIEVIL2-pytorch,test.py,2023-01-06T08:05:45Z,first init
+github.com/PaddlePaddle/PaddleMIX,ppdiffusers/ppdiffusers/pipelines/stable_diffusion_xl/pipeline_fastdeploy_stable_diffusion_xl.py,2023-12-12T06:03:11Z,"feat: add sdxl fastdeploy support (#338)
+
+add sdxl for fastdeploy."
+github.com/PaddlePaddle/PaddleMIX,ppdiffusers/ppdiffusers/pipelines/text_to_video_synthesis/pipeline_text_to_video_synth_img2img.py,2023-09-26T07:37:51Z,"upgrade ppdiffusers0193 (#35)
+
+Co-authored-by: yujun <573009727@qq.com>
+Co-authored-by: LokeZhou <aishenghuoaiqq@163.com>
+Co-authored-by: CrazyBoyM <ai-lab@foxmail.com>
+Co-authored-by: Ke Bai <35400185+CrazyBoyM@users.noreply.github.com>
+Co-authored-by: nemonameless@qq.com@github.com <nemonameless@qq.com>"
+github.com/PaddlePaddle/PaddleMIX,ppdiffusers/ppdiffusers/pipelines/stable_diffusion_xl/pipeline_fastdeploy_stable_diffusion_xl_inpaint.py,2023-12-12T06:03:11Z,"feat: add sdxl fastdeploy support (#338)
+
+add sdxl for fastdeploy."
+github.com/PaddlePaddle/PaddleMIX,ppdiffusers/ppdiffusers/pipelines/stable_diffusion_xl/pipeline_fastdeploy_stable_diffusion_xl_img2img.py,2023-12-12T06:03:11Z,"feat: add sdxl fastdeploy support (#338)
+
+add sdxl for fastdeploy."
+github.com/JunnYu/paddle_convbert,paddlenlp/examples/few_shot/pet/pet.py,2021-08-04T11:34:16Z,update
+github.com/JunnYu/paddle_convbert,paddlenlp/examples/few_shot/efl/train.py,2021-08-04T11:34:16Z,update
+github.com/JunnYu/paddle_convbert,paddlenlp/examples/few_shot/pet/predict.py,2021-08-04T11:34:16Z,update
+github.com/JunnYu/paddle_convbert,paddlenlp/examples/few_shot/efl/predict.py,2021-08-04T11:34:16Z,update
+github.com/JunnYu/paddle_convbert,paddlenlp/examples/semantic_indexing/recall.py,2021-08-04T11:34:16Z,update
+github.com/JunnYu/paddle_convbert,paddlenlp/examples/few_shot/p-tuning/predict.py,2021-08-04T11:34:16Z,update
+github.com/JunnYu/paddle_convbert,paddlenlp/examples/semantic_indexing/predict.py,2021-08-04T11:34:16Z,update
+github.com/JunnYu/paddle_convbert,paddlenlp/examples/few_shot/p-tuning/ptuning.py,2021-08-04T11:34:16Z,update
+github.com/JunnYu/paddle_convbert,paddlenlp/examples/semantic_indexing/train_ance.py,2021-08-04T11:34:16Z,update
+github.com/JunnYu/paddle_convbert,paddlenlp/examples/text_matching/simbert/predict.py,2021-08-04T11:34:16Z,update
+github.com/JunnYu/paddle_convbert,paddlenlp/examples/semantic_indexing/train_batch_neg.py,2021-08-04T11:34:16Z,update
+github.com/JunnYu/paddle_convbert,paddlenlp/examples/semantic_indexing/run_ann_data_gen.py,2021-08-04T11:34:16Z,update
+github.com/JunnYu/paddle_convbert,paddlenlp/examples/semantic_indexing/train_hardest_neg.py,2021-08-04T11:34:16Z,update
+github.com/JunnYu/paddle_convbert,paddlenlp/examples/information_extraction/msra_ner/eval.py,2021-08-04T11:34:16Z,update
+github.com/JunnYu/paddle_convbert,paddlenlp/examples/text_classification/multi_label/train.py,2021-08-04T11:34:16Z,update
+github.com/JunnYu/paddle_convbert,paddlenlp/examples/information_extraction/msra_ner/train.py,2021-08-04T11:34:16Z,update
+github.com/JunnYu/paddle_convbert,paddlenlp/examples/information_extraction/DuEE/classifier.py,2021-08-04T11:34:16Z,update
+github.com/JunnYu/paddle_convbert,paddlenlp/examples/language_model/gpt/run_pretrain_static.py,2021-08-04T11:34:16Z,update
+github.com/JunnYu/paddle_convbert,paddlenlp/examples/text_classification/multi_label/predict.py,2021-08-04T11:34:16Z,update
+github.com/JunnYu/paddle_convbert,paddlenlp/examples/information_extraction/msra_ner/predict.py,2021-08-04T11:34:16Z,update
+github.com/JunnYu/paddle_convbert,paddlenlp/examples/text_matching/ernie_matching/export_model.py,2021-08-04T11:34:16Z,update
+github.com/JunnYu/paddle_convbert,paddlenlp/examples/text_matching/sentence_transformers/train.py,2021-08-04T11:34:16Z,update
+github.com/JunnYu/paddle_convbert,paddlenlp/examples/text_matching/sentence_transformers/predict.py,2021-08-04T11:34:16Z,update
+github.com/JunnYu/paddle_convbert,paddlenlp/examples/text_classification/pretrained_models/train.py,2021-08-04T11:34:16Z,update
+github.com/JunnYu/paddle_convbert,paddlenlp/examples/text_matching/ernie_matching/train_pairwise.py,2021-08-04T11:34:16Z,update
+github.com/JunnYu/paddle_convbert,paddlenlp/examples/text_classification/multi_label/export_model.py,2021-08-04T11:34:16Z,update
+github.com/JunnYu/paddle_convbert,paddlenlp/examples/text_matching/ernie_matching/train_pointwise.py,2021-08-04T11:34:16Z,update
+github.com/JunnYu/paddle_convbert,paddlenlp/examples/text_matching/ernie_matching/predict_pairwise.py,2021-08-04T11:34:16Z,update
+github.com/JunnYu/paddle_convbert,paddlenlp/examples/text_classification/pretrained_models/predict.py,2021-08-04T11:34:16Z,update
+github.com/JunnYu/paddle_convbert,paddlenlp/examples/sentiment_analysis/skep/deploy/python/predict.py,2021-08-04T11:34:16Z,update
+github.com/JunnYu/paddle_convbert,paddlenlp/examples/machine_reading_comprehension/SQuAD/run_squad.py,2021-08-04T11:34:16Z,update
+github.com/JunnYu/paddle_convbert,paddlenlp/examples/text_matching/ernie_matching/predict_pointwise.py,2021-08-04T11:34:16Z,update
+github.com/JunnYu/paddle_convbert,paddlenlp/examples/information_extraction/waybill_ie/export_model.py,2021-08-04T11:34:16Z,update
+github.com/JunnYu/paddle_convbert,paddlenlp/examples/language_model/gpt-3/static/run_pretrain_static.py,2021-08-04T11:34:16Z,update
+github.com/JunnYu/paddle_convbert,paddlenlp/examples/text_matching/ernie_matching/deploy/python/predict.py,2021-08-04T11:34:16Z,update
+github.com/JunnYu/paddle_convbert,paddlenlp/examples/text_classification/pretrained_models/export_model.py,2021-08-04T11:34:16Z,update
+github.com/JunnYu/paddle_convbert,paddlenlp/examples/machine_reading_comprehension/DuReader-robust/run_du.py,2021-08-04T11:34:16Z,update
+github.com/JunnYu/paddle_convbert,paddlenlp/examples/information_extraction/waybill_ie/deploy/python/predict.py,2021-08-04T11:34:16Z,update
+github.com/JunnYu/paddle_convbert,paddlenlp/examples/text_classification/pretrained_models/deploy/python/predict.py,2021-08-04T11:34:16Z,update
+github.com/JunnYu/paddle_convbert,paddlenlp/tests/ernie_text_cls/train.py,2021-08-04T11:34:16Z,update
+github.com/JunnYu/paddle_convbert,paddlenlp/tests/ernie_text_cls/predict.py,2021-08-04T11:34:16Z,update
+github.com/JunnYu/paddle_convbert,paddlenlp/tests/ernie_text_cls/export_model.py,2021-08-04T11:34:16Z,update
+github.com/27182812/ChineseBERT_paddle,paddlenlp/transformers/gpt/modeling.py,2021-09-22T02:21:48Z,update paddlenlp
+github.com/27182812/ChineseBERT_paddle,paddlenlp/transformers/gpt/modeling.py,2021-08-22T11:23:00Z,8.22.19.21
+github.com/27182812/ChineseBERT_paddle,paddlenlp/taskflow/models/dependency_parsing_model.py,2021-09-22T02:21:48Z,update paddlenlp
+github.com/Eric3911/OpenAGI,OpenPrompt-main/tutorial/7_ernie_paddlepaddle/basic.py,2023-04-27T01:56:41Z,"更新模型
+
+update"
+github.com/QiuSYang/deep-learning-study,ai_deep_learning_course_study/baidu_aistudio_dl/natural_language_processing/src/THUNews_Ernie.py,2021-09-21T03:01:50Z,Directory structure adjustment
+github.com/isLinXu/PaddleNavigation,PaddleNLP/model_zoo/bert/run_glue.py,2022-08-17T06:57:25Z,1.add PaddleNLP-2.3.5
+github.com/isLinXu/PaddleNavigation,PaddleNLP/examples/few_shot/pet/pet.py,2022-08-17T06:57:25Z,1.add PaddleNLP-2.3.5
+github.com/isLinXu/PaddleNavigation,PaddleNLP/faster_tokenizer/perf/perf.py,2022-08-17T06:57:25Z,1.add PaddleNLP-2.3.5
+github.com/isLinXu/PaddleNavigation,PaddleNLP/examples/few_shot/efl/train.py,2022-08-17T06:57:25Z,1.add PaddleNLP-2.3.5
+github.com/isLinXu/PaddleNavigation,PaddleNLP/model_zoo/ernie-3.0/compress_qa.py,2022-08-17T06:57:25Z,1.add PaddleNLP-2.3.5
+github.com/isLinXu/PaddleNavigation,PaddleNLP/model_zoo/gpt/run_pretrain_static.py,2022-08-17T06:57:25Z,1.add PaddleNLP-2.3.5
+github.com/isLinXu/PaddleNavigation,PaddleNLP/paddlenlp/transformers/model_utils.py,2022-08-17T06:57:25Z,1.add PaddleNLP-2.3.5
+github.com/isLinXu/PaddleNavigation,PaddleNLP/examples/few_shot/p-tuning/ptuning.py,2022-08-17T06:57:25Z,1.add PaddleNLP-2.3.5
+github.com/isLinXu/PaddleNavigation,PaddleNLP/model_zoo/ernie-1.0/finetune/run_qa.py,2022-08-17T06:57:25Z,1.add PaddleNLP-2.3.5
+github.com/isLinXu/PaddleNavigation,PaddleNLP/model_zoo/ernie-1.0/finetune/run_ner.py,2022-08-17T06:57:25Z,1.add PaddleNLP-2.3.5
+github.com/isLinXu/PaddleNavigation,PaddleNLP/examples/language_model/bert/run_glue.py,2022-08-17T06:57:25Z,1.add PaddleNLP-2.3.5
+github.com/isLinXu/PaddleNavigation,PaddleNLP/model_zoo/ernie-3.0/compress_token_cls.py,2022-08-17T06:57:25Z,1.add PaddleNLP-2.3.5
+github.com/isLinXu/PaddleNavigation,PaddleNLP/model_zoo/ernie-1.0/run_pretrain_static.py,2022-08-17T06:57:25Z,1.add PaddleNLP-2.3.5
+github.com/isLinXu/PaddleNavigation,PaddleNLP/examples/text_correction/ernie-csc/train.py,2022-08-17T06:57:25Z,1.add PaddleNLP-2.3.5
+github.com/isLinXu/PaddleNavigation,PaddleNLP/model_zoo/ernie-1.0/finetune/run_seq_cls.py,2022-08-17T06:57:25Z,1.add PaddleNLP-2.3.5
+github.com/isLinXu/PaddleNavigation,PaddleNLP/examples/text_matching/diffcse/run_diffcse.py,2022-08-17T06:57:25Z,1.add PaddleNLP-2.3.5
+github.com/isLinXu/PaddleNavigation,PaddleNLP/examples/language_model/gpt/run_pretrain_static.py,2022-08-17T06:57:25Z,1.add PaddleNLP-2.3.5
+github.com/isLinXu/PaddleNavigation,PaddleNLP/model_zoo/gpt/data_tools/create_pretraining_data.py,2022-08-17T06:57:25Z,1.add PaddleNLP-2.3.5
+github.com/isLinXu/PaddleNavigation,PaddleNLP/examples/text_correction/ernie-csc/predict_sighan.py,2022-08-17T06:57:25Z,1.add PaddleNLP-2.3.5
+github.com/isLinXu/PaddleNavigation,PaddleNLP/examples/language_model/gpt-3/static/run_generation.py,2022-08-17T06:57:25Z,1.add PaddleNLP-2.3.5
+github.com/isLinXu/PaddleNavigation,PaddleNLP/model_zoo/ernie-1.0/data_tools/create_pretraining_data.py,2022-08-17T06:57:25Z,1.add PaddleNLP-2.3.5
+github.com/isLinXu/PaddleNavigation,PaddleNLP/examples/language_model/gpt-3/static/run_pretrain_static.py,2022-08-17T06:57:25Z,1.add PaddleNLP-2.3.5
+github.com/isLinXu/PaddleNavigation,PaddleNLP/examples/language_model/gpt/data_tools/create_pretraining_data.py,2022-08-17T06:57:25Z,1.add PaddleNLP-2.3.5
+github.com/isLinXu/PaddleNavigation,PaddleNLP/examples/language_model/moe/data_tools/create_pretraining_data.py,2022-08-17T06:57:25Z,1.add PaddleNLP-2.3.5
+github.com/isLinXu/PaddleNavigation,PaddleServing/examples/Pipeline/PaddleNLP/semantic_indexing/export_model.py,2022-08-17T07:03:53Z,1.add PaddleServing-0.9.0
+github.com/isLinXu/PaddleNavigation,PaddleNLP/examples/language_model/gpt-3/data_tools/create_pretraining_data.py,2022-08-17T06:57:25Z,1.add PaddleNLP-2.3.5
+github.com/RicardoL1u/ChineseNLPDataAugmentation4Paddle,test/test_align.py,2022-03-19T15:39:11Z,refactor: the structure
+github.com/isLinXu/PaddleNavigation,PaddleNLP/applications/neural_search/ranking/ernie_matching/deploy/cpp/rpc_client.py,2022-08-17T06:57:25Z,1.add PaddleNLP-2.3.5
+github.com/isLinXu/PaddleNavigation,PaddleServing/examples/Pipeline/PaddleNLP/semantic_indexing/deploy/python/predict.py,2022-08-17T07:03:53Z,1.add PaddleServing-0.9.0
+github.com/isLinXu/PaddleNavigation,PaddleServing/examples/Pipeline/PaddleNLP/semantic_indexing/deploy/C++/rpc_client.py,2022-08-17T07:03:53Z,1.add PaddleServing-0.9.0
+github.com/isLinXu/PaddleNavigation,PaddleNLP/applications/neural_search/ranking/ernie_matching/deploy/cpp/http_client.py,2022-08-17T06:57:25Z,1.add PaddleNLP-2.3.5
+github.com/isLinXu/PaddleNavigation,PaddleServing/examples/Pipeline/PaddleNLP/semantic_indexing/deploy/C++/http_client.py,2022-08-17T07:03:53Z,1.add PaddleServing-0.9.0
+github.com/isLinXu/PaddleNavigation,PaddleServing/examples/Pipeline/PaddleNLP/semantic_indexing/deploy/python/web_service.py,2022-08-17T07:03:53Z,1.add PaddleServing-0.9.0

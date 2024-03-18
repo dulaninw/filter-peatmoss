@@ -1,0 +1,758 @@
+✱ 189 results for "context:global select:file visibility:public count:all lang:Python content:'import flair' AND load\(" in 25.579s
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/flairNLP/flair/-/blob/flair/data.py)
+github.com/flairNLP/flair › data.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/flairNLP/flair/-/blob/flair/nn/model.py)
+github.com/flairNLP/flair › model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/flairNLP/flair/-/blob/flair/file_utils.py)
+github.com/flairNLP/flair › file_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/flairNLP/flair/-/blob/flair/datasets/ocr.py)
+github.com/flairNLP/flair › ocr.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/flairNLP/flair/-/blob/flair/inference_utils.py)
+github.com/flairNLP/flair › inference_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/flairNLP/flair/-/blob/flair/embeddings/token.py)
+github.com/flairNLP/flair › token.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/flairNLP/flair/-/blob/flair/embeddings/image.py)
+github.com/flairNLP/flair › image.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/flairNLP/flair/-/blob/flair/trainers/trainer.py)
+github.com/flairNLP/flair › trainer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/flairNLP/flair/-/blob/flair/models/tars_model.py)
+github.com/flairNLP/flair › tars_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/flairNLP/flair/-/blob/flair/datasets/biomedical.py)
+github.com/flairNLP/flair › biomedical.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/flairNLP/flair/-/blob/flair/models/language_model.py)
+github.com/flairNLP/flair › language_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/flairNLP/flair/-/blob/flair/embeddings/transformer.py)
+github.com/flairNLP/flair › transformer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/flairNLP/flair/-/blob/flair/models/prefixed_tagger.py)
+github.com/flairNLP/flair › prefixed_tagger.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/flairNLP/flair/-/blob/flair/models/multitask_model.py)
+github.com/flairNLP/flair › multitask_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/flairNLP/flair/-/blob/flair/datasets/entity_linking.py)
+github.com/flairNLP/flair › entity_linking.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/flairNLP/flair/-/blob/flair/models/lemmatizer_model.py)
+github.com/flairNLP/flair › lemmatizer_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/flairNLP/flair/-/blob/flair/models/word_tagger_model.py)
+github.com/flairNLP/flair › word_tagger_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/flairNLP/flair/-/blob/flair/datasets/sequence_labeling.py)
+github.com/flairNLP/flair › sequence_labeling.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/flairNLP/flair/-/blob/flair/models/entity_linker_model.py)
+github.com/flairNLP/flair › entity_linker_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/flairNLP/flair/-/blob/flair/models/sequence_tagger_model.py)
+github.com/flairNLP/flair › sequence_tagger_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/flairNLP/flair/-/blob/flair/datasets/relation_extraction.py)
+github.com/flairNLP/flair › relation_extraction.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/flairNLP/flair/-/blob/flair/models/text_regression_model.py)
+github.com/flairNLP/flair › text_regression_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/flairNLP/flair/-/blob/flair/models/entity_mention_linking.py)
+github.com/flairNLP/flair › entity_mention_linking.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/flairNLP/flair/-/blob/flair/models/relation_extractor_model.py)
+github.com/flairNLP/flair › relation_extractor_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/flairNLP/flair/-/blob/flair/models/relation_classifier_model.py)
+github.com/flairNLP/flair › relation_classifier_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/flairNLP/flair/-/blob/flair/models/text_classification_model.py)
+github.com/flairNLP/flair › text_classification_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/hankcs/HanLP/-/blob/plugins/hanlp_demo/hanlp_demo/zh/tf/train/train_conll03_ner_flair.py)
+github.com/hankcs/HanLP › train_conll03_ner_flair.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/flairNLP/flair/-/blob/tests/test_trainer.py)
+github.com/flairNLP/flair › test_trainer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/flairNLP/flair/-/blob/tests/test_datasets.py)
+github.com/flairNLP/flair › test_datasets.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/flairNLP/flair/-/blob/tests/test_multitask.py)
+github.com/flairNLP/flair › test_multitask.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/flairNLP/flair/-/blob/tests/model_test_utils.py)
+github.com/flairNLP/flair › model_test_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/flairNLP/flair/-/blob/tests/test_language_model.py)
+github.com/flairNLP/flair › test_language_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/flairNLP/flair/-/blob/tests/test_corpus_dictionary.py)
+github.com/flairNLP/flair › test_corpus_dictionary.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/flairNLP/flair/-/blob/tests/models/test_sequence_tagger.py)
+github.com/flairNLP/flair › test_sequence_tagger.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/flairNLP/flair/-/blob/tests/models/test_text_classifier.py)
+github.com/flairNLP/flair › test_text_classifier.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/QData/TextAttack/-/blob/textattack/shared/utils/strings.py)
+github.com/QData/TextAttack › strings.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/microsoft/presidio/-/blob/docs/samples/python/streamlit/presidio_nlp_engine_config.py)
+github.com/microsoft/presidio › presidio_nlp_engine_config.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/explosion/projects/-/blob/benchmarks/speed/scripts/run_nlp.py)
+github.com/explosion/projects › run_nlp.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/QData/TextAttack/-/blob/textattack/constraints/grammaticality/part_of_speech.py)
+github.com/QData/TextAttack › part_of_speech.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Alibaba-NLP/MultilangStructureKD/-/blob/flair/nn.py)
+github.com/Alibaba-NLP/MultilangStructureKD › nn.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Alibaba-NLP/MultilangStructureKD/-/blob/flair/embeddings.py)
+github.com/Alibaba-NLP/MultilangStructureKD › embeddings.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Alibaba-NLP/MultilangStructureKD/-/blob/train_with_teacher.py)
+github.com/Alibaba-NLP/MultilangStructureKD › train_with_teacher.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Alibaba-NLP/MultilangStructureKD/-/blob/flair/trainers/trainer.py)
+github.com/Alibaba-NLP/MultilangStructureKD › trainer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Alibaba-NLP/MultilangStructureKD/-/blob/flair/models/language_model.py)
+github.com/Alibaba-NLP/MultilangStructureKD › language_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/uhh-lt/bert-sense/-/blob/Flair_Model.py)
+github.com/uhh-lt/bert-sense › Flair_Model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/pratikpv/google_news_scraper_and_sentiment_analyzer/-/blob/google_news_sentiment_analysis.py)
+github.com/pratikpv/google_news_scraper_and_sentiment_analyzer › google_news_sentiment_analysis.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/raotnameh/End-to-end-E2E-Named-Entity-Recognition-from-English-Speech/-/blob/ner/flair_test_and_dev_evaluation.py)
+github.com/raotnameh/End-to-end-E2E-Named-Entity-Recognition-from-English-Speech › flair_test_and_dev_evaluation.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/INK-USC/AlpacaTag/-/blob/alpaca_server/alpaca_model/pytorchAPI/utils.py)
+github.com/INK-USC/AlpacaTag › utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/alexandrainst/danlp/-/blob/danlp/models/embeddings.py)
+github.com/alexandrainst/danlp › embeddings.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/QData/TextAttack/-/blob/tests/test_transformations.py)
+github.com/QData/TextAttack › test_transformations.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/amir-zeldes/xrenner/-/blob/xrenner/modules/xrenner_sequence.py)
+github.com/amir-zeldes/xrenner › xrenner_sequence.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/informagi/REL/-/blob/scripts/code_tutorials/batch_EL.py)
+github.com/informagi/REL › batch_EL.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/renke999/PerturbScore/-/blob/TextAttack/textattack/shared/utils/strings.py)
+github.com/renke999/PerturbScore › strings.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/renke999/PerturbScore/-/blob/TextAttack/textattack/constraints/grammaticality/part_of_speech.py)
+github.com/renke999/PerturbScore › part_of_speech.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/renke999/PerturbScore/-/blob/TextAttack/tests/test_transformations.py)
+github.com/renke999/PerturbScore › test_transformations.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/redewiedergabe/tagger/-/blob/rwtagger/tagger.py)
+github.com/redewiedergabe/tagger › tagger.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/informagi/REL/-/blob/scripts/efficiency_test.py)
+github.com/informagi/REL › efficiency_test.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stefan-it/flair-pos-tagging/-/blob/predict.py)
+github.com/stefan-it/flair-pos-tagging › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stefan-it/flair-pos-tagging/-/blob/utils_experiment.py)
+github.com/stefan-it/flair-pos-tagging › utils_experiment.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/andrew-impell/financial-data-analysis/-/blob/sentiment_news.py)
+github.com/andrew-impell/financial-data-analysis › sentiment_news.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/andrew-impell/financial-data-analysis/-/blob/process_sentiment.py)
+github.com/andrew-impell/financial-data-analysis › process_sentiment.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/amir-zeldes/HebPipe/-/blob/hebpipe/lib/xrenner/modules/xrenner_sequence.py)
+github.com/amir-zeldes/HebPipe › xrenner_sequence.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/geblanco/corona-gle/-/blob/database_core/methods.py)
+github.com/geblanco/corona-gle › methods.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/geblanco/corona-gle/-/blob/training/section_detector/train_classifier.py)
+github.com/geblanco/corona-gle › train_classifier.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/geblanco/corona-gle/-/blob/training/related_sentence_detector/create_dataset.py)
+github.com/geblanco/corona-gle › create_dataset.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/geblanco/corona-gle/-/blob/training/related_sentence_detector/train_classifier.py)
+github.com/geblanco/corona-gle › train_classifier.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/copenlu/tx-ray/-/blob/Objectives/collect_data.py)
+github.com/copenlu/tx-ray › collect_data.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/c3sr/split-ner/-/blob/splitner/model.py)
+github.com/c3sr/split-ner › model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/maelfabien/DataScienceApp/-/blob/NLP_flair.py)
+github.com/maelfabien/DataScienceApp › NLP_flair.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Betahj/PairABSA/-/blob/gens/gen_bert.py)
+github.com/Betahj/PairABSA › gen_bert.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Betahj/PairABSA/-/blob/gens/gen_roberta.py)
+github.com/Betahj/PairABSA › gen_roberta.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Betahj/PairABSA/-/blob/layers/encodings/lm_embeddings.py)
+github.com/Betahj/PairABSA › lm_embeddings.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/ytyz1307zzh/KOALA/-/blob/preprocess.py)
+github.com/ytyz1307zzh/KOALA › preprocess.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/derlem/kanarya/-/blob/flair_training/bak/train_flair.py)
+github.com/derlem/kanarya › train_flair.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/derlem/kanarya/-/blob/flair_training/bak/train_flair_gpu.py)
+github.com/derlem/kanarya › train_flair_gpu.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Petroles/Petrovec/-/blob/Intrinsic%20and%20Extrinsic%20Tests/Selective%20NER%20Test/ner_flair.py)
+github.com/Petroles/Petrovec › ner_flair.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/spillai/pybot/-/blob/pybot/vision/recognition_utils.py)
+github.com/spillai/pybot › recognition_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Sreyan88/BioAug/-/blob/script/flair_train.py)
+github.com/Sreyan88/BioAug › flair_train.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Sreyan88/BioAug/-/blob/script/flair_eval_equal.py)
+github.com/Sreyan88/BioAug › flair_eval_equal.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/grant-TraDA/NLP-2023W/-/blob/12.%20Soccer%20commentary%20mining/src/SoccerNetExplorer/explorer.py)
+github.com/grant-TraDA/NLP-2023W › explorer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/CopticScriptorium/coptic-nlp/-/blob/coptic_nlp.py)
+github.com/CopticScriptorium/coptic-nlp › coptic_nlp.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/dheeraj7596/ConWea/-/blob/contextualize.py)
+github.com/dheeraj7596/ConWea › contextualize.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/tsujuifu/tensorflow_relation-extraction/-/blob/main_data-processing.py)
+github.com/tsujuifu/tensorflow_relation-extraction › main_data-processing.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/endrikacupaj/PRALINE/-/blob/scripts/embed_paths.py)
+github.com/endrikacupaj/PRALINE › embed_paths.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/endrikacupaj/PRALINE/-/blob/scripts/embed_domains.py)
+github.com/endrikacupaj/PRALINE › embed_domains.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/endrikacupaj/PRALINE/-/blob/scripts/embed_questions.py)
+github.com/endrikacupaj/PRALINE › embed_questions.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Roychowdhury-group/FENESTRA-Fake-News-Structure-and-Threat-Assessment/-/blob/entity_extraction/entity_extractor.py)
+github.com/Roychowdhury-group/FENESTRA-Fake-News-Structure-and-Threat-Assessment › entity_extractor.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Roychowdhury-group/FENESTRA-Fake-News-Structure-and-Threat-Assessment/-/blob/code/entity_extraction/entity_extractor.py)
+github.com/Roychowdhury-group/FENESTRA-Fake-News-Structure-and-Threat-Assessment › entity_extractor.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/whyNLP/Probabilistic-Transformer/-/blob/src/draw.py)
+github.com/whyNLP/Probabilistic-Transformer › draw.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/whyNLP/Probabilistic-Transformer/-/blob/src/predict.py)
+github.com/whyNLP/Probabilistic-Transformer › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/whyNLP/Probabilistic-Transformer/-/blob/src/evaluate.py)
+github.com/whyNLP/Probabilistic-Transformer › evaluate.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/whyNLP/Probabilistic-Transformer/-/blob/src/train_cont.py)
+github.com/whyNLP/Probabilistic-Transformer › train_cont.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/whyNLP/Probabilistic-Transformer/-/blob/src/trainers/trainer.py)
+github.com/whyNLP/Probabilistic-Transformer › trainer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/whyNLP/Probabilistic-Transformer/-/blob/src/trainers/bucket_trainer.py)
+github.com/whyNLP/Probabilistic-Transformer › bucket_trainer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/whyNLP/Probabilistic-Transformer/-/blob/src/trainers/masked_language_model_trainer.py)
+github.com/whyNLP/Probabilistic-Transformer › masked_language_model_trainer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/whyNLP/Probabilistic-Transformer/-/blob/src/trainers/lazy_masked_language_model_trainer.py)
+github.com/whyNLP/Probabilistic-Transformer › lazy_masked_language_model_trainer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/manishiitg/recruitai/-/blob/microservice/resume/app/ner/start.py)
+github.com/manishiitg/recruitai › start.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/tech-sketch/SeqAL/-/blob/examples/active_learning_cycle_research_mode_non_spaced_language.py)
+github.com/tech-sketch/SeqAL › active_learning_cycle_research_mode_non_spaced_language.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/TiloMichel/textgen-for-chatbot-training-german/-/blob/4_inference/question_generator.py)
+github.com/TiloMichel/textgen-for-chatbot-training-german › question_generator.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/vanh17/MedTextSimplifier/-/blob/pos_tagger.py)
+github.com/vanh17/MedTextSimplifier › pos_tagger.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/ShiningLab/POS-Tagger-for-Punctuation-Restoration/-/blob/main/train.py)
+github.com/ShiningLab/POS-Tagger-for-Punctuation-Restoration › train.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/bitextor/biroamer/-/blob/biner.py)
+github.com/bitextor/biroamer › biner.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/faizanahemad/facebook-hateful-memes/-/blob/facebook_hateful_memes_detector/models/text_models/LangFeatures.py)
+github.com/faizanahemad/facebook-hateful-memes › LangFeatures.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Jaseci-Labs/jaseci/-/blob/jaseci_ai_kit/_inactive/zs_classifier/zs_classifier.py)
+github.com/Jaseci-Labs/jaseci › zs_classifier.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/pratikpv/reddit_scraper_and_sentiment_analyzer/-/blob/reddit_post_sentiment_analysis.py)
+github.com/pratikpv/reddit_scraper_and_sentiment_analyzer › reddit_post_sentiment_analysis.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/shreyashub/BioFLAIR/-/blob/pre_train.py)
+github.com/shreyashub/BioFLAIR › pre_train.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/SinghalHarsh/WhatsApp-Chat-Analysis/-/blob/text_preprocessing.py)
+github.com/SinghalHarsh/WhatsApp-Chat-Analysis › text_preprocessing.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mnamysl/nat-acl2021/-/blob/main.py)
+github.com/mnamysl/nat-acl2021 › main.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mnamysl/nat-acl2021/-/blob/flair_ext/trainers/trainer.py)
+github.com/mnamysl/nat-acl2021 › trainer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/CogComp/QuASE/-/blob/flair-experiments/SemanticBertEmbeddings.py)
+github.com/CogComp/QuASE › SemanticBertEmbeddings.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Alibaba-NLP/KB-NER/-/blob/train.py)
+github.com/Alibaba-NLP/KB-NER › train.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Alibaba-NLP/KB-NER/-/blob/flair/nn.py)
+github.com/Alibaba-NLP/KB-NER › nn.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Alibaba-NLP/KB-NER/-/blob/utils/train.py)
+github.com/Alibaba-NLP/KB-NER › train.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Alibaba-NLP/KB-NER/-/blob/utils/flair/nn.py)
+github.com/Alibaba-NLP/KB-NER › nn.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Alibaba-NLP/KB-NER/-/blob/flair/embeddings.py)
+github.com/Alibaba-NLP/KB-NER › embeddings.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Alibaba-NLP/KB-NER/-/blob/utils/flair/embeddings.py)
+github.com/Alibaba-NLP/KB-NER › embeddings.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Alibaba-NLP/KB-NER/-/blob/flair/trainers/trainer.py)
+github.com/Alibaba-NLP/KB-NER › trainer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Alibaba-NLP/KB-NER/-/blob/flair/models/language_model.py)
+github.com/Alibaba-NLP/KB-NER › language_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Alibaba-NLP/KB-NER/-/blob/utils/flair/trainers/trainer.py)
+github.com/Alibaba-NLP/KB-NER › trainer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Alibaba-NLP/KB-NER/-/blob/utils/flair/models/language_model.py)
+github.com/Alibaba-NLP/KB-NER › language_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Alibaba-NLP/KB-NER/-/blob/tests/test_data.py)
+github.com/Alibaba-NLP/KB-NER › test_data.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Alibaba-NLP/KB-NER/-/blob/utils/tests/test_data.py)
+github.com/Alibaba-NLP/KB-NER › test_data.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Alibaba-NLP/KB-NER/-/blob/tests/test_language_model.py)
+github.com/Alibaba-NLP/KB-NER › test_language_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Alibaba-NLP/KB-NER/-/blob/tests/test_model_integration.py)
+github.com/Alibaba-NLP/KB-NER › test_model_integration.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Alibaba-NLP/KB-NER/-/blob/utils/tests/test_language_model.py)
+github.com/Alibaba-NLP/KB-NER › test_language_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Alibaba-NLP/KB-NER/-/blob/utils/tests/test_model_integration.py)
+github.com/Alibaba-NLP/KB-NER › test_model_integration.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stefan-it/hmByT5/-/blob/bench/flair-fine-tuner.py)
+github.com/stefan-it/hmByT5 › flair-fine-tuner.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mlrun/functions/-/blob/pii_recognizer/pii_recognizer.py)
+github.com/mlrun/functions › pii_recognizer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/gucorpling/amalgum/-/blob/nlp_modules/pos_tagger.py)
+github.com/gucorpling/amalgum › pos_tagger.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/gucorpling/amalgum/-/blob/nlp_modules/rst_parser.py)
+github.com/gucorpling/amalgum › rst_parser.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/gucorpling/amalgum/-/blob/nlp_modules/flair_sent_splitter.py)
+github.com/gucorpling/amalgum › flair_sent_splitter.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/gucorpling/amalgum/-/blob/nlp_modules/flair_edu_segmenter.py)
+github.com/gucorpling/amalgum › flair_edu_segmenter.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Lvchangze/SpikeBERT/-/blob/textattack/shared/utils/strings.py)
+github.com/Lvchangze/SpikeBERT › strings.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Lvchangze/SpikeBERT/-/blob/textattack/constraints/grammaticality/part_of_speech.py)
+github.com/Lvchangze/SpikeBERT › part_of_speech.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/AndreFCruz/bias-detection/-/blob/src/datasets/hyperpartisan/hyperpartisan_dataset_flair.py)
+github.com/AndreFCruz/bias-detection › hyperpartisan_dataset_flair.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Lvchangze/snn/-/blob/textattack/shared/utils/strings.py)
+github.com/Lvchangze/snn › strings.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Lvchangze/snn/-/blob/textattack/constraints/grammaticality/part_of_speech.py)
+github.com/Lvchangze/snn › part_of_speech.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/nathaniel-ortiz/redditswapbot/-/blob/util/flair_sub_import.py)
+github.com/nathaniel-ortiz/redditswapbot › flair_sub_import.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/nathaniel-ortiz/redditswapbot/-/blob/util/flair_sql_import.py)
+github.com/nathaniel-ortiz/redditswapbot › flair_sql_import.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/wjq-learning/MSTI/-/blob/main.py)
+github.com/wjq-learning/MSTI › main.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/wjq-learning/MSTI/-/blob/flair/nn.py)
+github.com/wjq-learning/MSTI › nn.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/wjq-learning/MSTI/-/blob/flair/embeddings.py)
+github.com/wjq-learning/MSTI › embeddings.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/wjq-learning/MSTI/-/blob/flair/inference_utils.py)
+github.com/wjq-learning/MSTI › inference_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/wjq-learning/MSTI/-/blob/flair/trainers/trainer.py)
+github.com/wjq-learning/MSTI › trainer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/wjq-learning/MSTI/-/blob/flair/trainers/trainer_p.py)
+github.com/wjq-learning/MSTI › trainer_p.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/wjq-learning/MSTI/-/blob/flair/models/language_model.py)
+github.com/wjq-learning/MSTI › language_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/wjq-learning/MSTI/-/blob/test.py)
+github.com/wjq-learning/MSTI › test.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/siyanapavlova/Advances_in_QA/-/blob/eval_dfgn.py)
+github.com/siyanapavlova/Advances_in_QA › eval_dfgn.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/siyanapavlova/Advances_in_QA/-/blob/train_dfgn.py)
+github.com/siyanapavlova/Advances_in_QA › train_dfgn.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/siyanapavlova/Advances_in_QA/-/blob/modules/EntityGraph.py)
+github.com/siyanapavlova/Advances_in_QA › EntityGraph.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/tamuseanmiller/alpaca-stock-trading-bot/-/blob/trading_bot/sentiment.py)
+github.com/tamuseanmiller/alpaca-stock-trading-bot › sentiment.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stefan-it/flair-experiments/-/blob/ud-english/predict.py)
+github.com/stefan-it/flair-experiments › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stefan-it/flair-experiments/-/blob/conll2003-ner-english/utils_experiment.py)
+github.com/stefan-it/flair-experiments › utils_experiment.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Hellisotherpeople/Active-Explainable-Classification/-/blob/docu_learn.py)
+github.com/Hellisotherpeople/Active-Explainable-Classification › docu_learn.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Eyr3/TextCRS/-/blob/textattacknew/shared/utils/strings.py)
+github.com/Eyr3/TextCRS › strings.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Eyr3/TextCRS/-/blob/textattacknew/constraints/grammaticality/part_of_speech.py)
+github.com/Eyr3/TextCRS › part_of_speech.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mnamysl/nat-acl2020/-/blob/main.py)
+github.com/mnamysl/nat-acl2020 › main.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mnamysl/nat-acl2020/-/blob/flair_ext/trainers/trainer.py)
+github.com/mnamysl/nat-acl2020 › trainer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stefan-it/europeana-bert/-/blob/flair-ner-trainer-ft.py)
+github.com/stefan-it/europeana-bert › flair-ner-trainer-ft.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/texttechnologylab/textimager-uima/-/blob/textimager-uima-flair-ner/src/main/python/embeddings.py)
+github.com/texttechnologylab/textimager-uima › embeddings.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JULIELab/jcore-base/-/blob/jcore-flair-ner-ae/src/main/resources/de/julielab/jcore/ae/flairner/python/nerScript.py)
+github.com/JULIELab/jcore-base › nerScript.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/snu-mllab/Bayesian-Red-Teaming/-/blob/textattack/shared/utils/strings.py)
+github.com/snu-mllab/Bayesian-Red-Teaming › strings.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/snu-mllab/Bayesian-Red-Teaming/-/blob/textattack/constraints/grammaticality/part_of_speech.py)
+github.com/snu-mllab/Bayesian-Red-Teaming › part_of_speech.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/hemanthmayaluru/one-class-text-classification-using-ensemble-approach/-/blob/python%20files/ArXiv-Ensemble-Methods.py)
+github.com/hemanthmayaluru/one-class-text-classification-using-ensemble-approach › ArXiv-Ensemble-Methods.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/hemanthmayaluru/one-class-text-classification-using-ensemble-approach/-/blob/python%20files/webkb-Ensemble-Methods.py)
+github.com/hemanthmayaluru/one-class-text-classification-using-ensemble-approach › webkb-Ensemble-Methods.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/hemanthmayaluru/one-class-text-classification-using-ensemble-approach/-/blob/python%20files/quora-Ensemble-Methods.py)
+github.com/hemanthmayaluru/one-class-text-classification-using-ensemble-approach › quora-Ensemble-Methods.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/hemanthmayaluru/one-class-text-classification-using-ensemble-approach/-/blob/python%20files/reuters-Ensemble-Methods.py)
+github.com/hemanthmayaluru/one-class-text-classification-using-ensemble-approach › reuters-Ensemble-Methods.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/hemanthmayaluru/one-class-text-classification-using-ensemble-approach/-/blob/python%20files/news20groups-Ensemble-Methods.py)
+github.com/hemanthmayaluru/one-class-text-classification-using-ensemble-approach › news20groups-Ensemble-Methods.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/nedap/deidentify/-/blob/deidentify/taggers/flair_tagger.py)
+github.com/nedap/deidentify › flair_tagger.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/nedap/deidentify/-/blob/deidentify/methods/bilstmcrf/run_bilstmcrf.py)
+github.com/nedap/deidentify › run_bilstmcrf.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/ZuowenWang0000/GRUBERT-A-GRU-Based-Method-to-Fuse-BERT-Hidden-Layers-for-Twitter-sentiment-analysis/-/blob/train.py)
+github.com/ZuowenWang0000/GRUBERT-A-GRU-Based-Method-to-Fuse-BERT-Hidden-Layers-for-Twitter-sentiment-analysis › train.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/ZuowenWang0000/GRUBERT-A-GRU-Based-Method-to-Fuse-BERT-Hidden-Layers-for-Twitter-sentiment-analysis/-/blob/predict.py)
+github.com/ZuowenWang0000/GRUBERT-A-GRU-Based-Method-to-Fuse-BERT-Hidden-Layers-for-Twitter-sentiment-analysis › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/datasciencecampus/woffle/-/blob/woffle/embed/numeric/flair/embed.py)
+github.com/datasciencecampus/woffle › embed.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/anonymous-xl/eduner/-/blob/models/CLNER/train.py)
+github.com/anonymous-xl/eduner › train.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/anonymous-xl/eduner/-/blob/models/CLNER/flair/nn.py)
+github.com/anonymous-xl/eduner › nn.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/anonymous-xl/eduner/-/blob/models/CLNER/utils/train.py)
+github.com/anonymous-xl/eduner › train.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/anonymous-xl/eduner/-/blob/models/CLNER/utils/flair/nn.py)
+github.com/anonymous-xl/eduner › nn.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/anonymous-xl/eduner/-/blob/models/CLNER/flair/embeddings.py)
+github.com/anonymous-xl/eduner › embeddings.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/anonymous-xl/eduner/-/blob/models/CLNER/utils/flair/embeddings.py)
+github.com/anonymous-xl/eduner › embeddings.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/anonymous-xl/eduner/-/blob/models/CLNER/flair/trainers/trainer.py)
+github.com/anonymous-xl/eduner › trainer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/anonymous-xl/eduner/-/blob/models/CLNER/flair/models/language_model.py)
+github.com/anonymous-xl/eduner › language_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/anonymous-xl/eduner/-/blob/models/CLNER/utils/flair/trainers/trainer.py)
+github.com/anonymous-xl/eduner › trainer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/anonymous-xl/eduner/-/blob/models/CLNER/utils/flair/models/language_model.py)
+github.com/anonymous-xl/eduner › language_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/anonymous-xl/eduner/-/blob/models/CLNER/tests/test_data.py)
+github.com/anonymous-xl/eduner › test_data.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/anonymous-xl/eduner/-/blob/models/CLNER/utils/tests/test_data.py)
+github.com/anonymous-xl/eduner › test_data.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/anonymous-xl/eduner/-/blob/models/CLNER/tests/test_language_model.py)
+github.com/anonymous-xl/eduner › test_language_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/anonymous-xl/eduner/-/blob/models/CLNER/tests/test_model_integration.py)
+github.com/anonymous-xl/eduner › test_model_integration.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/anonymous-xl/eduner/-/blob/models/CLNER/utils/tests/test_language_model.py)
+github.com/anonymous-xl/eduner › test_language_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/anonymous-xl/eduner/-/blob/models/CLNER/utils/tests/test_model_integration.py)
+github.com/anonymous-xl/eduner › test_model_integration.py (0 matches)
+--------------------------------------------------------------------------------
+

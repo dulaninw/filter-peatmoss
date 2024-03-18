@@ -1,0 +1,235 @@
+repo_url,filepath,commit_date,message
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2021-01-05T20:28:45Z,"[cli] Add --device to asteroid-infer (#375)
+
+Defaults to CUDA if available
+
+Co-authored-by: Manuel Pariente <pariente.mnl@gmail.com>"
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-24T20:51:08Z,"[src] Fix #279 OLA support for separate() and asteroid-infer (#305)
+
+Co-authored-by: Pariente Manuel <pariente.mnl@gmail.com>"
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-10-22T09:03:29Z,[src] BC-breaking: Load models without sample_rate (#285)
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-10-22T08:21:59Z,[src&tests] Automatic resampling in separate + CLI. (#283)
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-10-01T10:11:28Z,[black] Update black to 20.8b1 (#265)
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-08-25T19:14:59Z,[CLI] Refactor `separate` method (future torch.script compat) (#245)
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-08-23T19:49:47Z,[CLI] Add asteroid-infer CLI to enhance/separate from the command line (#236)
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-08-13T07:21:11Z,[black] Flake8 compatibility + Black strings (#198)
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-08-12T13:47:18Z,[black] Change formatting with black using default config and line-length 100 (#197)
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-08-12T13:25:32Z,[docs] Brand new docs ! (#192)
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-06-03T09:31:00Z,[model_cards] Add message to create model card after publishing
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-05-28T21:14:33Z,[src & egs] Publishing pretrained models !! (wham/ConvTasNet) (#125)
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2023-10-12T20:40:19Z,"[install] Upgrade dependencies to torch 2.x and lightning 2.x (#682)
+
+* Update Lighting and Torch requirements to 2.X
+
+* Remove optimizer_idx from `lr_scheduler_step` in System
+
+* Replace torch.symeig with torch.linalg.eigh in beamforming
+
+* Disable X_UMX model in torch2.x (complex STFT needs to be used)
+
+* Skip XUMX tests until it is fixed.
+
+* Replace on_x_end to on_train_x_end
+
+* Replace torch.testing.assert_allclose with torch.testing.assert_close.
+
+* Black it"
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-04-09T19:48:10Z,[src&tests] Remove deprecated code (#474)
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-12T15:03:24Z,"[src] Add mulcat option to DPRNN (#416)
+
+Co-authored-by: Joseph Zhu <junzhez2@ifp-10.ifp.uiuc.edu>
+Co-authored-by: Pariente Manuel <pariente.mnl@gmail.com>"
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-08T18:27:37Z,"[src&egs] Add FasNetTAC model, dataset and recipe  (#306)
+
+* TAC masker network
+* FasNetTAC model
+* TAC recipe with TACDataset and FasNetTAC model
+* Add asteroid.dsp.xcorr
+
+Co-authored-by: Pariente Manuel <pariente.mnl@gmail.com>
+Co-authored-by: Iver Jordal <1470603+iver56@users.noreply.github.com>"
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-08T07:47:24Z,[src] Change n_channels to in_channels (#432)
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-07T19:32:19Z,[src] Fix unpassed SR in TasNet and SudoRMRF (#433)
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-07T19:26:03Z,[src] Make sample_rate positional in BaseModel (#431)
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-06T21:10:26Z,"[src] Support Multichannel models (#427)
+
+* Add n_channels to BaseModel
+
+* Load/save test for multichannel models
+
+* Add n_channels to Separatable
+
+* Multichannel in separate
+
+* Add n_channels to LambdaOverlapAdd"
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-01-25T10:56:58Z,"[src] Add stft_n_filters to BaseDCUNet (#406)
+
+Backward breaking: change default parameter to match DCUNet paper"
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-01-05T20:37:31Z,"[src] Fix Large-DCUNet-20 arch (#405)
+
+And add tests for the bigger architectures
+
+Co-authored-by: Manuel Pariente <pariente.mnl@gmail.com>"
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-12-07T17:56:12Z,"[hub] Support for huggingface model hub :tada: (#377)
+
+Co-authored-by: Pariente Manuel <pariente.mnl@gmail.com>"
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-27T09:41:14Z,"[src&tests] Fix complex and add tests (#358)
+
+- Add CLI tests
+- Add tests for complex_nn
+- Deprecate `as_torch_complex`
+- Fix DCCRN"
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-24T14:07:48Z,[CI] Catch warnings we expect (#351)
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-24T13:59:25Z,"[src&jit] Fix DCCRN and DCUNet-Large (#276)
+
+- Fix the architectures
+- JIT-able DCCRN and DCUNet
+- Automatic reshaping in DCUNet 
+
+Co-authored-by: Pariente Manuel <pariente.mnl@gmail.com>"
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-19T17:40:34Z,"[src] BaseModel takes sample_rate argument (#336)
+
+Addresses #318 by adding an optional sample_rate argument to BaseModel with a property getter and setter."
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-06T11:17:44Z,[src] New asteroid.show_available_models (#313)
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-27T18:33:25Z,"[src & tests] :tada: TorchScript support :tada: (#237)
+
+Jitability of most Asteroid features (filterbanks, encoder/decoder, norms, activations, masker, architecture, utils etc..) with tracing + automatic scripting when tracing on necessary modules. 
+Extended type-hints to several places.
+Backward-breaking changes: `filters` property not a property anymore (call `filters()` instead)
+
+Co-authored-by: popcornell <cornellsamuele@gmail.com>
+Co-authored-by: mpariente <pariente.mnl@gmail.com>
+Co-authored-by: HU Mathieu <mathieu.hu@inria.fr>
+Co-authored-by: mhu-coder <mathieu.hu12@gmail.com>"
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-22T09:03:29Z,[src] BC-breaking: Load models without sample_rate (#285)
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-22T08:21:59Z,[src&tests] Automatic resampling in separate + CLI. (#283)
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-02T15:50:04Z,[src & tests] New complex ops + Add DCUNet and DCCRNet (#224)
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-02T08:35:33Z,"[src] BaseTasNet -> BaseEncoderMaskerDecoder + add model hooks (#266)
+
+Co-authored-by: mpariente <pariente.mnl@gmail.com>"
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-25T17:12:02Z,[tests] Fix models_test.py
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-24T08:36:08Z,"[src & egs] Add DeMask: Surgical mask speech enhancement recipes (#235)
+
+Co-authored-by: mpariente <pariente.mnl@gmail.com>"
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-24T08:28:35Z,[tests] Fix wrong `separate` method in model tests (#241)
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-23T13:39:05Z,[tests] Improve tests for new model interface (#234)
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-18T14:04:51Z,Merge branch 'master' into tasnet
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-18T14:02:55Z,[src & tests] Split SuDORMRF architectures in encoder/masker/decoder (#208)
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-18T13:50:38Z,Add LSTMTasNet to serializable models
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-17T20:31:34Z,[src & tests] Fix serialization issues introduced in previous PR + some docs (#204)
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-17T19:13:50Z,"[src & tests] Add SuDoRM-RF model & online mixing collate function (#174)
+
+Co-authored-by: mpariente <pariente.mnl@gmail.com>"
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-13T07:21:11Z,[black] Flake8 compatibility + Black strings (#198)
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-12T13:47:18Z,[black] Change formatting with black using default config and line-length 100 (#197)
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-06-15T14:48:31Z,[src & tests] Support filenames at the input of `separate` (#154)
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-05-21T12:37:04Z,[src & tests] Importable models: ConvTasNet and DPRNNTasNet  (#109)
+github.com/TomohikoNakamura/asteroid_jaCappella,asteroid/scripts/asteroid_cli.py,2021-01-05T20:28:45Z,"[cli] Add --device to asteroid-infer (#375)
+
+Defaults to CUDA if available
+
+Co-authored-by: Manuel Pariente <pariente.mnl@gmail.com>"
+github.com/TomohikoNakamura/asteroid_jaCappella,asteroid/scripts/asteroid_cli.py,2020-11-24T20:51:08Z,"[src] Fix #279 OLA support for separate() and asteroid-infer (#305)
+
+Co-authored-by: Pariente Manuel <pariente.mnl@gmail.com>"
+github.com/TomohikoNakamura/asteroid_jaCappella,asteroid/scripts/asteroid_cli.py,2020-10-22T09:03:29Z,[src] BC-breaking: Load models without sample_rate (#285)
+github.com/TomohikoNakamura/asteroid_jaCappella,asteroid/scripts/asteroid_cli.py,2020-10-22T08:21:59Z,[src&tests] Automatic resampling in separate + CLI. (#283)
+github.com/TomohikoNakamura/asteroid_jaCappella,asteroid/scripts/asteroid_cli.py,2020-10-01T10:11:28Z,[black] Update black to 20.8b1 (#265)
+github.com/TomohikoNakamura/asteroid_jaCappella,asteroid/scripts/asteroid_cli.py,2020-08-25T19:14:59Z,[CLI] Refactor `separate` method (future torch.script compat) (#245)
+github.com/TomohikoNakamura/asteroid_jaCappella,asteroid/scripts/asteroid_cli.py,2020-08-23T19:49:47Z,[CLI] Add asteroid-infer CLI to enhance/separate from the command line (#236)
+github.com/TomohikoNakamura/asteroid_jaCappella,asteroid/scripts/asteroid_cli.py,2020-08-13T07:21:11Z,[black] Flake8 compatibility + Black strings (#198)
+github.com/TomohikoNakamura/asteroid_jaCappella,asteroid/scripts/asteroid_cli.py,2020-08-12T13:47:18Z,[black] Change formatting with black using default config and line-length 100 (#197)
+github.com/TomohikoNakamura/asteroid_jaCappella,asteroid/scripts/asteroid_cli.py,2020-08-12T13:25:32Z,[docs] Brand new docs ! (#192)
+github.com/TomohikoNakamura/asteroid_jaCappella,asteroid/scripts/asteroid_cli.py,2020-06-03T09:31:00Z,[model_cards] Add message to create model card after publishing
+github.com/TomohikoNakamura/asteroid_jaCappella,asteroid/scripts/asteroid_cli.py,2020-05-28T21:14:33Z,[src & egs] Publishing pretrained models !! (wham/ConvTasNet) (#125)
+github.com/TomohikoNakamura/asteroid_jaCappella,tests/models/models_test.py,2021-04-09T19:48:10Z,[src&tests] Remove deprecated code (#474)
+github.com/TomohikoNakamura/asteroid_jaCappella,tests/models/models_test.py,2021-02-12T15:03:24Z,"[src] Add mulcat option to DPRNN (#416)
+
+Co-authored-by: Joseph Zhu <junzhez2@ifp-10.ifp.uiuc.edu>
+Co-authored-by: Pariente Manuel <pariente.mnl@gmail.com>"
+github.com/TomohikoNakamura/asteroid_jaCappella,tests/models/models_test.py,2021-02-08T18:27:37Z,"[src&egs] Add FasNetTAC model, dataset and recipe  (#306)
+
+* TAC masker network
+* FasNetTAC model
+* TAC recipe with TACDataset and FasNetTAC model
+* Add asteroid.dsp.xcorr
+
+Co-authored-by: Pariente Manuel <pariente.mnl@gmail.com>
+Co-authored-by: Iver Jordal <1470603+iver56@users.noreply.github.com>"
+github.com/TomohikoNakamura/asteroid_jaCappella,tests/models/models_test.py,2021-02-08T07:47:24Z,[src] Change n_channels to in_channels (#432)
+github.com/TomohikoNakamura/asteroid_jaCappella,tests/models/models_test.py,2021-02-07T19:32:19Z,[src] Fix unpassed SR in TasNet and SudoRMRF (#433)
+github.com/TomohikoNakamura/asteroid_jaCappella,tests/models/models_test.py,2021-02-07T19:26:03Z,[src] Make sample_rate positional in BaseModel (#431)
+github.com/TomohikoNakamura/asteroid_jaCappella,tests/models/models_test.py,2021-02-06T21:10:26Z,"[src] Support Multichannel models (#427)
+
+* Add n_channels to BaseModel
+
+* Load/save test for multichannel models
+
+* Add n_channels to Separatable
+
+* Multichannel in separate
+
+* Add n_channels to LambdaOverlapAdd"
+github.com/TomohikoNakamura/asteroid_jaCappella,tests/models/models_test.py,2021-01-25T10:56:58Z,"[src] Add stft_n_filters to BaseDCUNet (#406)
+
+Backward breaking: change default parameter to match DCUNet paper"
+github.com/TomohikoNakamura/asteroid_jaCappella,tests/models/models_test.py,2021-01-05T20:37:31Z,"[src] Fix Large-DCUNet-20 arch (#405)
+
+And add tests for the bigger architectures
+
+Co-authored-by: Manuel Pariente <pariente.mnl@gmail.com>"
+github.com/TomohikoNakamura/asteroid_jaCappella,tests/models/models_test.py,2020-12-07T17:56:12Z,"[hub] Support for huggingface model hub :tada: (#377)
+
+Co-authored-by: Pariente Manuel <pariente.mnl@gmail.com>"
+github.com/TomohikoNakamura/asteroid_jaCappella,tests/models/models_test.py,2020-11-27T09:41:14Z,"[src&tests] Fix complex and add tests (#358)
+
+- Add CLI tests
+- Add tests for complex_nn
+- Deprecate `as_torch_complex`
+- Fix DCCRN"
+github.com/TomohikoNakamura/asteroid_jaCappella,tests/models/models_test.py,2020-11-24T14:07:48Z,[CI] Catch warnings we expect (#351)
+github.com/TomohikoNakamura/asteroid_jaCappella,tests/models/models_test.py,2020-11-24T13:59:25Z,"[src&jit] Fix DCCRN and DCUNet-Large (#276)
+
+- Fix the architectures
+- JIT-able DCCRN and DCUNet
+- Automatic reshaping in DCUNet 
+
+Co-authored-by: Pariente Manuel <pariente.mnl@gmail.com>"
+github.com/TomohikoNakamura/asteroid_jaCappella,tests/models/models_test.py,2020-11-19T17:40:34Z,"[src] BaseModel takes sample_rate argument (#336)
+
+Addresses #318 by adding an optional sample_rate argument to BaseModel with a property getter and setter."
+github.com/TomohikoNakamura/asteroid_jaCappella,tests/models/models_test.py,2020-11-06T11:17:44Z,[src] New asteroid.show_available_models (#313)
+github.com/TomohikoNakamura/asteroid_jaCappella,tests/models/models_test.py,2020-10-27T18:33:25Z,"[src & tests] :tada: TorchScript support :tada: (#237)
+
+Jitability of most Asteroid features (filterbanks, encoder/decoder, norms, activations, masker, architecture, utils etc..) with tracing + automatic scripting when tracing on necessary modules. 
+Extended type-hints to several places.
+Backward-breaking changes: `filters` property not a property anymore (call `filters()` instead)
+
+Co-authored-by: popcornell <cornellsamuele@gmail.com>
+Co-authored-by: mpariente <pariente.mnl@gmail.com>
+Co-authored-by: HU Mathieu <mathieu.hu@inria.fr>
+Co-authored-by: mhu-coder <mathieu.hu12@gmail.com>"
+github.com/TomohikoNakamura/asteroid_jaCappella,tests/models/models_test.py,2020-10-22T09:03:29Z,[src] BC-breaking: Load models without sample_rate (#285)
+github.com/TomohikoNakamura/asteroid_jaCappella,tests/models/models_test.py,2020-10-22T08:21:59Z,[src&tests] Automatic resampling in separate + CLI. (#283)
+github.com/TomohikoNakamura/asteroid_jaCappella,tests/models/models_test.py,2020-10-02T15:50:04Z,[src & tests] New complex ops + Add DCUNet and DCCRNet (#224)
+github.com/TomohikoNakamura/asteroid_jaCappella,tests/models/models_test.py,2020-10-02T08:35:33Z,"[src] BaseTasNet -> BaseEncoderMaskerDecoder + add model hooks (#266)
+
+Co-authored-by: mpariente <pariente.mnl@gmail.com>"
+github.com/TomohikoNakamura/asteroid_jaCappella,tests/models/models_test.py,2020-08-25T17:12:02Z,[tests] Fix models_test.py
+github.com/TomohikoNakamura/asteroid_jaCappella,tests/models/models_test.py,2020-08-24T08:36:08Z,"[src & egs] Add DeMask: Surgical mask speech enhancement recipes (#235)
+
+Co-authored-by: mpariente <pariente.mnl@gmail.com>"
+github.com/TomohikoNakamura/asteroid_jaCappella,tests/models/models_test.py,2020-08-24T08:28:35Z,[tests] Fix wrong `separate` method in model tests (#241)
+github.com/TomohikoNakamura/asteroid_jaCappella,tests/models/models_test.py,2020-08-23T13:39:05Z,[tests] Improve tests for new model interface (#234)
+github.com/TomohikoNakamura/asteroid_jaCappella,tests/models/models_test.py,2020-08-18T14:04:51Z,Merge branch 'master' into tasnet
+github.com/TomohikoNakamura/asteroid_jaCappella,tests/models/models_test.py,2020-08-18T14:02:55Z,[src & tests] Split SuDORMRF architectures in encoder/masker/decoder (#208)
+github.com/TomohikoNakamura/asteroid_jaCappella,tests/models/models_test.py,2020-08-18T13:50:38Z,Add LSTMTasNet to serializable models
+github.com/TomohikoNakamura/asteroid_jaCappella,tests/models/models_test.py,2020-08-17T20:31:34Z,[src & tests] Fix serialization issues introduced in previous PR + some docs (#204)
+github.com/TomohikoNakamura/asteroid_jaCappella,tests/models/models_test.py,2020-08-17T19:13:50Z,"[src & tests] Add SuDoRM-RF model & online mixing collate function (#174)
+
+Co-authored-by: mpariente <pariente.mnl@gmail.com>"
+github.com/TomohikoNakamura/asteroid_jaCappella,tests/models/models_test.py,2020-08-13T07:21:11Z,[black] Flake8 compatibility + Black strings (#198)
+github.com/TomohikoNakamura/asteroid_jaCappella,tests/models/models_test.py,2020-08-12T13:47:18Z,[black] Change formatting with black using default config and line-length 100 (#197)
+github.com/TomohikoNakamura/asteroid_jaCappella,tests/models/models_test.py,2020-06-15T14:48:31Z,[src & tests] Support filenames at the input of `separate` (#154)
+github.com/TomohikoNakamura/asteroid_jaCappella,tests/models/models_test.py,2020-05-21T12:37:04Z,[src & tests] Importable models: ConvTasNet and DPRNNTasNet  (#109)
+github.com/haiciyang/Remixing,src/asteroid/scripts/asteroid_cli.py,2022-02-03T20:19:10Z,asteroid

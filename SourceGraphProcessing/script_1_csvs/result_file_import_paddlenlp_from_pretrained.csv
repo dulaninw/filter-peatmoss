@@ -1,0 +1,1046 @@
+✱ 261 results for "context:global select:file visibility:public count:all lang:Python content:'import paddlenlp' AND from_pretrained\(" in 1.774s
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleHub/-/blob/paddlehub/module/nlp_module.py)
+github.com/PaddlePaddle/PaddleHub › nlp_module.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleNLP/-/blob/paddlenlp/trainer/trainer.py)
+github.com/PaddlePaddle/PaddleNLP › trainer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleNLP/-/blob/model_zoo/ernie-3.0/run_qa.py)
+github.com/PaddlePaddle/PaddleNLP › run_qa.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleNLP/-/blob/model_zoo/ernie-3.0/run_seq_cls.py)
+github.com/PaddlePaddle/PaddleNLP › run_seq_cls.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleNLP/-/blob/model_zoo/ernie-m/run_classifier.py)
+github.com/PaddlePaddle/PaddleNLP › run_classifier.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleNLP/-/blob/model_zoo/ernie-3.0/run_token_cls.py)
+github.com/PaddlePaddle/PaddleNLP › run_token_cls.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleNLP/-/blob/paddlenlp/transformers/model_utils.py)
+github.com/PaddlePaddle/PaddleNLP › model_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleNLP/-/blob/model_zoo/ernie-1.0/finetune/run_qa.py)
+github.com/PaddlePaddle/PaddleNLP › run_qa.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleNLP/-/blob/model_zoo/ernie-1.0/finetune/run_ner.py)
+github.com/PaddlePaddle/PaddleNLP › run_ner.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleNLP/-/blob/paddlenlp/transformers/processing_utils.py)
+github.com/PaddlePaddle/PaddleNLP › processing_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleNLP/-/blob/model_zoo/ernie-1.0/finetune/run_seq_cls.py)
+github.com/PaddlePaddle/PaddleNLP › run_seq_cls.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleNLP/-/blob/llm/llama/auto_parallel/run_pretrain_auto.py)
+github.com/PaddlePaddle/PaddleNLP › run_pretrain_auto.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleNLP/-/blob/llm/llama/auto_parallel/run_pretrain_hand.py)
+github.com/PaddlePaddle/PaddleNLP › run_pretrain_hand.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleNLP/-/blob/examples/text_matching/diffcse/run_diffcse.py)
+github.com/PaddlePaddle/PaddleNLP › run_diffcse.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleNLP/-/blob/examples/semantic_indexing/train_gradient_cache.py)
+github.com/PaddlePaddle/PaddleNLP › train_gradient_cache.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleNLP/-/blob/llm/llama/auto_parallel/run_pretrain_auto_static.py)
+github.com/PaddlePaddle/PaddleNLP › run_pretrain_auto_static.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleNLP/-/blob/model_zoo/gpt-3/ppfleetx/data/dataset/gpt_dataset.py)
+github.com/PaddlePaddle/PaddleNLP › gpt_dataset.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleNLP/-/blob/model_zoo/gpt-3/ppfleetx/data/tokenizers/gpt_tokenizer.py)
+github.com/PaddlePaddle/PaddleNLP › gpt_tokenizer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleNLP/-/blob/model_zoo/ernie-1.0/preprocess/create_pretraining_data.py)
+github.com/PaddlePaddle/PaddleNLP › create_pretraining_data.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/zilliztech/gptcache/-/blob/gptcache/embedding/paddlenlp.py)
+github.com/zilliztech/gptcache › paddlenlp.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleNLP/-/blob/model_zoo/gpt-3/ppfleetx/models/language_model/language_module.py)
+github.com/PaddlePaddle/PaddleNLP › language_module.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/awesome-DeepLearning/-/blob/transformer_courses/reading_comprehension_based_on_ernie/train.py)
+github.com/PaddlePaddle/awesome-DeepLearning › train.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/awesome-DeepLearning/-/blob/transformer_courses/reading_comprehension_based_on_ernie/evaluate.py)
+github.com/PaddlePaddle/awesome-DeepLearning › evaluate.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/awesome-DeepLearning/-/blob/Paddle_Industry_Practice_Sample_Library/Semantic_Matching/code/train.py)
+github.com/PaddlePaddle/awesome-DeepLearning › train.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/awesome-DeepLearning/-/blob/Paddle_Industry_Practice_Sample_Library/Semantic_Matching/code/predict.py)
+github.com/PaddlePaddle/awesome-DeepLearning › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/awesome-DeepLearning/-/blob/Paddle_Industry_Practice_Sample_Library/Waybill_Information_Extraction/run_ernie.py)
+github.com/PaddlePaddle/awesome-DeepLearning › run_ernie.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/awesome-DeepLearning/-/blob/transformer_courses/BERT_distillation/PaddleSlim-develop/demo/ofa/bert/run_glue_ofa.py)
+github.com/PaddlePaddle/awesome-DeepLearning › run_glue_ofa.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/awesome-DeepLearning/-/blob/Paddle_Industry_Practice_Sample_Library/Waybill_Information_Extraction/run_erniegram.py)
+github.com/PaddlePaddle/awesome-DeepLearning › run_erniegram.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleNLP/-/blob/applications/neural_search/ranking/ernie_matching/deploy/cpp/rpc_client.py)
+github.com/PaddlePaddle/PaddleNLP › rpc_client.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleNLP/-/blob/applications/neural_search/ranking/ernie_matching/deploy/cpp/http_client.py)
+github.com/PaddlePaddle/PaddleNLP › http_client.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleNLP/-/blob/applications/text_classification/multi_class/retrieval_based/utils/feature_extract.py)
+github.com/PaddlePaddle/PaddleNLP › feature_extract.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleNLP/-/blob/applications/text_classification/multi_label/retrieval_based/utils/feature_extract.py)
+github.com/PaddlePaddle/PaddleNLP › feature_extract.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleNLP/-/blob/applications/text_classification/hierarchical/retrieval_based/utils/feature_extract.py)
+github.com/PaddlePaddle/PaddleNLP › feature_extract.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleNLP/-/blob/tests/transformers/gpt/test_modeling.py)
+github.com/PaddlePaddle/PaddleNLP › test_modeling.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleNLP/-/blob/tests/transformers/opt/test_modeling.py)
+github.com/PaddlePaddle/PaddleNLP › test_modeling.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleNLP/-/blob/tests/transformers/glm/test_modeling.py)
+github.com/PaddlePaddle/PaddleNLP › test_modeling.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/FastDeploy/-/blob/benchmark/python/benchmark_ernie_seq_cls.py)
+github.com/PaddlePaddle/FastDeploy › benchmark_ernie_seq_cls.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleNLP/-/blob/tests/transformers/mbart/test_modeling.py)
+github.com/PaddlePaddle/PaddleNLP › test_modeling.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleNLP/-/blob/tests/transformers/bloom/test_modeling.py)
+github.com/PaddlePaddle/PaddleNLP › test_modeling.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleNLP/-/blob/tests/transformers/auto/test_tokenizer.py)
+github.com/PaddlePaddle/PaddleNLP › test_tokenizer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleNLP/-/blob/examples/language_model/t5/tests/test_t5_mp.py)
+github.com/PaddlePaddle/PaddleNLP › test_t5_mp.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/thunlp/OpenPrompt/-/blob/tutorial/7_ernie_paddlepaddle/basic.py)
+github.com/thunlp/OpenPrompt › basic.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/FastDeploy/-/blob/examples/multimodal/stable_diffusion/export_model.py)
+github.com/PaddlePaddle/FastDeploy › export_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/baidu/DuReader/-/blob/DuQM/train.py)
+github.com/baidu/DuReader › train.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/tata1661/FSL-Mate/-/blob/PaddleFSL/paddlefsl/model_zoo/pet.py)
+github.com/tata1661/FSL-Mate › pet.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/baidu/DuReader/-/blob/DuQM/predict.py)
+github.com/baidu/DuReader › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleSlim/-/blob/demo/quant/BiBERT/task_distill.py)
+github.com/PaddlePaddle/PaddleSlim › task_distill.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/tata1661/FSL-Mate/-/blob/PaddleFSL/paddlefsl/model_zoo/ptuning.py)
+github.com/tata1661/FSL-Mate › ptuning.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/Quantum/-/blob/paddle_quantum/qml/bert_qtc.py)
+github.com/PaddlePaddle/Quantum › bert_qtc.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleSlim/-/blob/demo/dygraph/dist/bert/task_distill.py)
+github.com/PaddlePaddle/PaddleSlim › task_distill.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/ZJU-OpenKS/OpenKS/-/blob/openks/models/paddle/ner.py)
+github.com/ZJU-OpenKS/OpenKS › ner.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleFleetX/-/blob/ppfleetx/data/dataset/gpt_dataset.py)
+github.com/PaddlePaddle/PaddleFleetX › gpt_dataset.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/CLUEbenchmark/modelfun/-/blob/modelfun/algorithm/paddle_backend/paddlener/eval.py)
+github.com/CLUEbenchmark/modelfun › eval.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/CLUEbenchmark/modelfun/-/blob/modelfun/algorithm/paddle_backend/paddlener/train.py)
+github.com/CLUEbenchmark/modelfun › train.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/CLUEbenchmark/modelfun/-/blob/modelfun/algorithm/paddle_backend/paddlener/predict.py)
+github.com/CLUEbenchmark/modelfun › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/CLUEbenchmark/modelfun/-/blob/modelfun/algorithm/paddle_backend/paddlecls/ptunning_cls.py)
+github.com/CLUEbenchmark/modelfun › ptunning_cls.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/CLUEbenchmark/modelfun/-/blob/modelfun/algorithm/paddle_backend/paddlecls/ptunning/predict.py)
+github.com/CLUEbenchmark/modelfun › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/CLUEbenchmark/modelfun/-/blob/modelfun/algorithm/paddle_backend/paddlecls/ptunning/ptunning.py)
+github.com/CLUEbenchmark/modelfun › ptunning.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleMIX/-/blob/paddlemix/processors/base_processing.py)
+github.com/PaddlePaddle/PaddleMIX › base_processing.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/ZJU-OpenKS/OpenKS/-/blob/openks/models/paddle/hypernym_discovery.py)
+github.com/ZJU-OpenKS/OpenKS › hypernym_discovery.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleFleetX/-/blob/ppfleetx/data/tokenizers/gpt_tokenizer.py)
+github.com/PaddlePaddle/PaddleFleetX › gpt_tokenizer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/WithHades/banfoStyle/-/blob/train.py)
+github.com/WithHades/banfoStyle › train.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/FlagOpen/FlagPerf/-/blob/training/benchmarks/gpt3_6.7B/paddle/run_pretraining.py)
+github.com/FlagOpen/FlagPerf › run_pretraining.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleMIX/-/blob/ppdiffusers/ppdiffusers/patches/ppnlp_patch_utils.py)
+github.com/PaddlePaddle/PaddleMIX › ppnlp_patch_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/hchhtc123/News-Text-Classification/-/blob/train2_skep.py)
+github.com/hchhtc123/News-Text-Classification › train2_skep.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/hchhtc123/News-Text-Classification/-/blob/train3_skep.py)
+github.com/hchhtc123/News-Text-Classification › train3_skep.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/hchhtc123/News-Text-Classification/-/blob/train4_skep.py)
+github.com/hchhtc123/News-Text-Classification › train4_skep.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/hchhtc123/News-Text-Classification/-/blob/train1_skep.py)
+github.com/hchhtc123/News-Text-Classification › train1_skep.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/hchhtc123/News-Text-Classification/-/blob/train2_nezha.py)
+github.com/hchhtc123/News-Text-Classification › train2_nezha.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/hchhtc123/News-Text-Classification/-/blob/train3_nezha.py)
+github.com/hchhtc123/News-Text-Classification › train3_nezha.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/hchhtc123/News-Text-Classification/-/blob/train4_nezha.py)
+github.com/hchhtc123/News-Text-Classification › train4_nezha.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/hchhtc123/News-Text-Classification/-/blob/train1_nezha.py)
+github.com/hchhtc123/News-Text-Classification › train1_nezha.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/hchhtc123/News-Text-Classification/-/blob/train2_robert.py)
+github.com/hchhtc123/News-Text-Classification › train2_robert.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/hchhtc123/News-Text-Classification/-/blob/train3_robert.py)
+github.com/hchhtc123/News-Text-Classification › train3_robert.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/hchhtc123/News-Text-Classification/-/blob/train4_robert.py)
+github.com/hchhtc123/News-Text-Classification › train4_robert.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/hchhtc123/News-Text-Classification/-/blob/train1_robert.py)
+github.com/hchhtc123/News-Text-Classification › train1_robert.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/Research/-/blob/KG/DuKEVU_Baseline/paddle-video-semantic-tag/train_semantic_tag.py)
+github.com/PaddlePaddle/Research › train_semantic_tag.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleFleetX/-/blob/ppfleetx/models/language_model/language_module.py)
+github.com/PaddlePaddle/PaddleFleetX › language_module.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/Research/-/blob/KG/DuKEVU_Baseline/paddle-video-semantic-tag/predict_semantic_tag.py)
+github.com/PaddlePaddle/Research › predict_semantic_tag.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/lvmoney/lvmoney-frame-parent/-/blob/lvmoney-frame-ai/lvmoney-frame-ai-python/src/main/resources/paddleStudy/Paddle8_2_2.py)
+github.com/lvmoney/lvmoney-frame-parent › Paddle8_2_2.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/rayvzn/MGTV_PIR/-/blob/ped.py)
+github.com/rayvzn/MGTV_PIR › ped.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/rayvzn/MGTV_PIR/-/blob/train.py)
+github.com/rayvzn/MGTV_PIR › train.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/rayvzn/MGTV_PIR/-/blob/predict.py)
+github.com/rayvzn/MGTV_PIR › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/trustAI/-/blob/tutorials/data_map/train_pointwise.py)
+github.com/PaddlePaddle/trustAI › train_pointwise.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Brilliantlin/2021CCFBDCI/-/blob/%E5%8D%83%E8%A8%80%E9%97%AE%E9%A2%98%E5%8C%B9%E9%85%8D/code1/model.py)
+github.com/Brilliantlin/2021CCFBDCI › model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Brilliantlin/2021CCFBDCI/-/blob/%E5%8D%83%E8%A8%80%E9%97%AE%E9%A2%98%E5%8C%B9%E9%85%8D/code1/run_att.py)
+github.com/Brilliantlin/2021CCFBDCI › run_att.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Brilliantlin/2021CCFBDCI/-/blob/%E5%8D%83%E8%A8%80%E9%97%AE%E9%A2%98%E5%8C%B9%E9%85%8D/code1/run_att_lac.py)
+github.com/Brilliantlin/2021CCFBDCI › run_att_lac.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Brilliantlin/2021CCFBDCI/-/blob/%E5%8D%83%E8%A8%80%E9%97%AE%E9%A2%98%E5%8C%B9%E9%85%8D/code1/infer_att_cv.py)
+github.com/Brilliantlin/2021CCFBDCI › infer_att_cv.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Brilliantlin/2021CCFBDCI/-/blob/%E5%8D%83%E8%A8%80%E9%97%AE%E9%A2%98%E5%8C%B9%E9%85%8D/code1/infer_att_lac.py)
+github.com/Brilliantlin/2021CCFBDCI › infer_att_lac.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Brilliantlin/2021CCFBDCI/-/blob/%E5%8D%83%E8%A8%80%E9%97%AE%E9%A2%98%E5%8C%B9%E9%85%8D/code1/run_multitask.py)
+github.com/Brilliantlin/2021CCFBDCI › run_multitask.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Brilliantlin/2021CCFBDCI/-/blob/%E5%8D%83%E8%A8%80%E9%97%AE%E9%A2%98%E5%8C%B9%E9%85%8D/code1/infer_multitask.py)
+github.com/Brilliantlin/2021CCFBDCI › infer_multitask.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleMIX/-/blob/ppdiffusers/ppdiffusers/pipelines/shap_e/pipeline_shap_e.py)
+github.com/PaddlePaddle/PaddleMIX › pipeline_shap_e.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/Serving/-/blob/examples/Pipeline/PaddleNLP/semantic_indexing/export_model.py)
+github.com/PaddlePaddle/Serving › export_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/nghuyong/ERNIE-Pytorch/-/blob/test.py)
+github.com/nghuyong/ERNIE-Pytorch › test.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/shangfr/Chinese-Synonyms/-/blob/research/using_emb/useing_emb.py)
+github.com/shangfr/Chinese-Synonyms › useing_emb.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleMIX/-/blob/ppdiffusers/ppdiffusers/pipelines/controlnet/pipeline_controlnet.py)
+github.com/PaddlePaddle/PaddleMIX › pipeline_controlnet.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleMIX/-/blob/ppdiffusers/ppdiffusers/pipelines/shap_e/pipeline_shap_e_img2img.py)
+github.com/PaddlePaddle/PaddleMIX › pipeline_shap_e_img2img.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/WithHades/banfoStyle/-/blob/preprocess.py)
+github.com/WithHades/banfoStyle › preprocess.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/continuous_integration/-/blob/test/tools/tool-test-inference/test_case/text_preprocess.py)
+github.com/PaddlePaddle/continuous_integration › text_preprocess.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/continuous_integration/-/blob/test/tools/tool-test-dl-algorithm-correctness/test_case/text_preprocess.py)
+github.com/PaddlePaddle/continuous_integration › text_preprocess.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/kevinng77/blenderbot_paddle/-/blob/paddlenlp/transformers/gpt/modeling.py)
+github.com/kevinng77/blenderbot_paddle › modeling.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/kevinng77/blenderbot_paddle/-/blob/paddlenlp/taskflow/models/dependency_parsing_model.py)
+github.com/kevinng77/blenderbot_paddle › dependency_parsing_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/InterpretDL/-/blob/tests/interpreter/test_nlp.py)
+github.com/PaddlePaddle/InterpretDL › test_nlp.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/Serving/-/blob/examples/Pipeline/PaddleNLP/semantic_indexing/deploy/python/predict.py)
+github.com/PaddlePaddle/Serving › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/Serving/-/blob/examples/Pipeline/PaddleNLP/semantic_indexing/deploy/C++/rpc_client.py)
+github.com/PaddlePaddle/Serving › rpc_client.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/Serving/-/blob/examples/Pipeline/PaddleNLP/semantic_indexing/deploy/C++/http_client.py)
+github.com/PaddlePaddle/Serving › http_client.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/Serving/-/blob/examples/Pipeline/PaddleNLP/semantic_indexing/deploy/python/web_service.py)
+github.com/PaddlePaddle/Serving › web_service.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/WithHades/banfoStyle/-/blob/generation.py)
+github.com/WithHades/banfoStyle › generation.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleMIX/-/blob/ppdiffusers/ppdiffusers/pipelines/kandinsky/pipeline_kandinsky_combined.py)
+github.com/PaddlePaddle/PaddleMIX › pipeline_kandinsky_combined.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleMIX/-/blob/ppdiffusers/ppdiffusers/pipelines/controlnet/pipeline_controlnet_inpaint.py)
+github.com/PaddlePaddle/PaddleMIX › pipeline_controlnet_inpaint.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleMIX/-/blob/ppdiffusers/ppdiffusers/pipelines/controlnet/pipeline_controlnet_img2img.py)
+github.com/PaddlePaddle/PaddleMIX › pipeline_controlnet_img2img.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/InterpretDL/-/blob/tests/interpreter/test_bt_ga_nlp.py)
+github.com/PaddlePaddle/InterpretDL › test_bt_ga_nlp.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleFleetX/-/blob/ppfleetx/data/data_tools/ernie/preprocess/create_pretraining_data.py)
+github.com/PaddlePaddle/PaddleFleetX › create_pretraining_data.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleMIX/-/blob/ppdiffusers/ppdiffusers/pipelines/kandinsky2_2/pipeline_kandinsky2_2_prior.py)
+github.com/PaddlePaddle/PaddleMIX › pipeline_kandinsky2_2_prior.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleMIX/-/blob/ppdiffusers/ppdiffusers/pipelines/kandinsky2_2/pipeline_kandinsky2_2_combined.py)
+github.com/PaddlePaddle/PaddleMIX › pipeline_kandinsky2_2_combined.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleMIX/-/blob/ppdiffusers/ppdiffusers/pipelines/stable_diffusion_xl/pipeline_stable_diffusion_xl.py)
+github.com/PaddlePaddle/PaddleMIX › pipeline_stable_diffusion_xl.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleMIX/-/blob/ppdiffusers/ppdiffusers/pipelines/stable_diffusion/pipeline_stable_diffusion_ldm3d.py)
+github.com/PaddlePaddle/PaddleMIX › pipeline_stable_diffusion_ldm3d.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleMIX/-/blob/ppdiffusers/ppdiffusers/pipelines/kandinsky2_2/pipeline_kandinsky2_2_prior_emb2emb.py)
+github.com/PaddlePaddle/PaddleMIX › pipeline_kandinsky2_2_prior_emb2emb.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/ConvBERT-Prod/-/blob/paddlenlp/ops/infer.py)
+github.com/JunnYu/ConvBERT-Prod › infer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/ConvBERT-Prod/-/blob/paddlenlp/taskflow/models/dependency_parsing_model.py)
+github.com/JunnYu/ConvBERT-Prod › dependency_parsing_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/few_shot/pet/pet.py)
+github.com/JunnYu/paddle_t5 › pet.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/few_shot/efl/train.py)
+github.com/JunnYu/paddle_t5 › train.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/few_shot/pet/predict.py)
+github.com/JunnYu/paddle_t5 › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/few_shot/efl/predict.py)
+github.com/JunnYu/paddle_t5 › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/semantic_indexing/recall.py)
+github.com/JunnYu/paddle_t5 › recall.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/few_shot/p-tuning/predict.py)
+github.com/JunnYu/paddle_t5 › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/semantic_indexing/predict.py)
+github.com/JunnYu/paddle_t5 › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/few_shot/efl/export_model.py)
+github.com/JunnYu/paddle_t5 › export_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/few_shot/p-tuning/ptuning.py)
+github.com/JunnYu/paddle_t5 › ptuning.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/semantic_indexing/train_ance.py)
+github.com/JunnYu/paddle_t5 › train_ance.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/text_matching/simbert/predict.py)
+github.com/JunnYu/paddle_t5 › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleMIX/-/blob/ppdiffusers/ppdiffusers/pipelines/stable_diffusion/pipeline_stable_diffusion_diffedit.py)
+github.com/PaddlePaddle/PaddleMIX › pipeline_stable_diffusion_diffedit.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/HJHGJGHHG/Paddle-FNet/-/blob/STEP2-%E6%95%B0%E6%8D%AE%E9%9B%86%E3%80%81Tokenizer%E3%80%81%E8%AF%84%E4%BC%B0%E6%8C%87%E6%A0%87%E5%AF%B9%E9%BD%90/compare_dataset.py)
+github.com/HJHGJGHHG/Paddle-FNet › compare_dataset.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/semantic_indexing/train_batch_neg.py)
+github.com/JunnYu/paddle_t5 › train_batch_neg.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/few_shot/efl/deploy/python/predict.py)
+github.com/JunnYu/paddle_t5 › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/semantic_indexing/run_ann_data_gen.py)
+github.com/JunnYu/paddle_t5 › run_ann_data_gen.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/semantic_indexing/train_hardest_neg.py)
+github.com/JunnYu/paddle_t5 › train_hardest_neg.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/information_extraction/msra_ner/eval.py)
+github.com/JunnYu/paddle_t5 › eval.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/text_classification/multi_label/train.py)
+github.com/JunnYu/paddle_t5 › train.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/text_matching/question_matching/train.py)
+github.com/JunnYu/paddle_t5 › train.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/information_extraction/msra_ner/train.py)
+github.com/JunnYu/paddle_t5 › train.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/information_extraction/DuEE/classifier.py)
+github.com/JunnYu/paddle_t5 › classifier.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/language_model/gpt/run_pretrain_static.py)
+github.com/JunnYu/paddle_t5 › run_pretrain_static.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/text_classification/multi_label/predict.py)
+github.com/JunnYu/paddle_t5 › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/text_matching/question_matching/predict.py)
+github.com/JunnYu/paddle_t5 › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/information_extraction/msra_ner/predict.py)
+github.com/JunnYu/paddle_t5 › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/text_matching/ernie_matching/export_model.py)
+github.com/JunnYu/paddle_t5 › export_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/text_matching/sentence_transformers/train.py)
+github.com/JunnYu/paddle_t5 › train.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/text_matching/sentence_transformers/predict.py)
+github.com/JunnYu/paddle_t5 › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/text_classification/pretrained_models/train.py)
+github.com/JunnYu/paddle_t5 › train.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/text_matching/ernie_matching/train_pairwise.py)
+github.com/JunnYu/paddle_t5 › train_pairwise.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/text_classification/multi_label/export_model.py)
+github.com/JunnYu/paddle_t5 › export_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/text_matching/ernie_matching/train_pointwise.py)
+github.com/JunnYu/paddle_t5 › train_pointwise.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/text_matching/ernie_matching/predict_pairwise.py)
+github.com/JunnYu/paddle_t5 › predict_pairwise.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/text_classification/pretrained_models/predict.py)
+github.com/JunnYu/paddle_t5 › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/sentiment_analysis/skep/deploy/python/predict.py)
+github.com/JunnYu/paddle_t5 › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/machine_reading_comprehension/SQuAD/run_squad.py)
+github.com/JunnYu/paddle_t5 › run_squad.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/text_matching/ernie_matching/predict_pointwise.py)
+github.com/JunnYu/paddle_t5 › predict_pointwise.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/information_extraction/waybill_ie/export_model.py)
+github.com/JunnYu/paddle_t5 › export_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/language_model/gpt-3/static/run_pretrain_static.py)
+github.com/JunnYu/paddle_t5 › run_pretrain_static.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/text_matching/ernie_matching/deploy/python/predict.py)
+github.com/JunnYu/paddle_t5 › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/text_classification/pretrained_models/export_model.py)
+github.com/JunnYu/paddle_t5 › export_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/machine_reading_comprehension/DuReader-robust/run_du.py)
+github.com/JunnYu/paddle_t5 › run_du.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/information_extraction/waybill_ie/deploy/python/predict.py)
+github.com/JunnYu/paddle_t5 › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/examples/text_classification/pretrained_models/deploy/python/predict.py)
+github.com/JunnYu/paddle_t5 › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/tests/ernie_text_cls/train.py)
+github.com/JunnYu/paddle_t5 › train.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/tests/ernie_text_cls/predict.py)
+github.com/JunnYu/paddle_t5 › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/tests/ernie_text_matching/predict.py)
+github.com/JunnYu/paddle_t5 › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/tests/ernie_text_cls/export_model.py)
+github.com/JunnYu/paddle_t5 › export_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/tests/ernie_text_matching/export_model.py)
+github.com/JunnYu/paddle_t5 › export_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/tests/ernie_text_matching/train_pointwise.py)
+github.com/JunnYu/paddle_t5 › train_pointwise.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/tests/ernie_information_extraction/predict.py)
+github.com/JunnYu/paddle_t5 › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_t5/-/blob/paddlenlp/tests/ernie_information_extraction/export_model.py)
+github.com/JunnYu/paddle_t5 › export_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleMIX/-/blob/ppdiffusers/ppdiffusers/pipelines/stable_diffusion/pipeline_stable_diffusion_paradigms.py)
+github.com/PaddlePaddle/PaddleMIX › pipeline_stable_diffusion_paradigms.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleMIX/-/blob/ppdiffusers/ppdiffusers/pipelines/stable_diffusion_xl/pipeline_stable_diffusion_xl_inpaint.py)
+github.com/PaddlePaddle/PaddleMIX › pipeline_stable_diffusion_xl_inpaint.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleMIX/-/blob/ppdiffusers/ppdiffusers/pipelines/stable_diffusion_xl/pipeline_stable_diffusion_xl_img2img.py)
+github.com/PaddlePaddle/PaddleMIX › pipeline_stable_diffusion_xl_img2img.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/dong03/ERNIEVIL2-pytorch/-/blob/test.py)
+github.com/dong03/ERNIEVIL2-pytorch › test.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleMIX/-/blob/ppdiffusers/ppdiffusers/pipelines/stable_diffusion_xl/pipeline_fastdeploy_stable_diffusion_xl.py)
+github.com/PaddlePaddle/PaddleMIX › pipeline_fastdeploy_stable_diffusion_xl.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleMIX/-/blob/ppdiffusers/ppdiffusers/pipelines/text_to_video_synthesis/pipeline_text_to_video_synth_img2img.py)
+github.com/PaddlePaddle/PaddleMIX › pipeline_text_to_video_synth_img2img.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleMIX/-/blob/ppdiffusers/ppdiffusers/pipelines/stable_diffusion_xl/pipeline_fastdeploy_stable_diffusion_xl_inpaint.py)
+github.com/PaddlePaddle/PaddleMIX › pipeline_fastdeploy_stable_diffusion_xl_inpaint.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PaddlePaddle/PaddleMIX/-/blob/ppdiffusers/ppdiffusers/pipelines/stable_diffusion_xl/pipeline_fastdeploy_stable_diffusion_xl_img2img.py)
+github.com/PaddlePaddle/PaddleMIX › pipeline_fastdeploy_stable_diffusion_xl_img2img.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_convbert/-/blob/paddlenlp/examples/few_shot/pet/pet.py)
+github.com/JunnYu/paddle_convbert › pet.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_convbert/-/blob/paddlenlp/examples/few_shot/efl/train.py)
+github.com/JunnYu/paddle_convbert › train.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_convbert/-/blob/paddlenlp/examples/few_shot/pet/predict.py)
+github.com/JunnYu/paddle_convbert › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_convbert/-/blob/paddlenlp/examples/few_shot/efl/predict.py)
+github.com/JunnYu/paddle_convbert › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_convbert/-/blob/paddlenlp/examples/semantic_indexing/recall.py)
+github.com/JunnYu/paddle_convbert › recall.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_convbert/-/blob/paddlenlp/examples/few_shot/p-tuning/predict.py)
+github.com/JunnYu/paddle_convbert › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_convbert/-/blob/paddlenlp/examples/semantic_indexing/predict.py)
+github.com/JunnYu/paddle_convbert › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_convbert/-/blob/paddlenlp/examples/few_shot/p-tuning/ptuning.py)
+github.com/JunnYu/paddle_convbert › ptuning.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_convbert/-/blob/paddlenlp/examples/semantic_indexing/train_ance.py)
+github.com/JunnYu/paddle_convbert › train_ance.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_convbert/-/blob/paddlenlp/examples/text_matching/simbert/predict.py)
+github.com/JunnYu/paddle_convbert › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_convbert/-/blob/paddlenlp/examples/semantic_indexing/train_batch_neg.py)
+github.com/JunnYu/paddle_convbert › train_batch_neg.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_convbert/-/blob/paddlenlp/examples/semantic_indexing/run_ann_data_gen.py)
+github.com/JunnYu/paddle_convbert › run_ann_data_gen.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_convbert/-/blob/paddlenlp/examples/semantic_indexing/train_hardest_neg.py)
+github.com/JunnYu/paddle_convbert › train_hardest_neg.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_convbert/-/blob/paddlenlp/examples/information_extraction/msra_ner/eval.py)
+github.com/JunnYu/paddle_convbert › eval.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_convbert/-/blob/paddlenlp/examples/text_classification/multi_label/train.py)
+github.com/JunnYu/paddle_convbert › train.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_convbert/-/blob/paddlenlp/examples/information_extraction/msra_ner/train.py)
+github.com/JunnYu/paddle_convbert › train.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_convbert/-/blob/paddlenlp/examples/information_extraction/DuEE/classifier.py)
+github.com/JunnYu/paddle_convbert › classifier.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_convbert/-/blob/paddlenlp/examples/language_model/gpt/run_pretrain_static.py)
+github.com/JunnYu/paddle_convbert › run_pretrain_static.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/shenqiang0601/deep_learning/-/blob/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%AE%9E%E6%88%9815%28%E8%BF%9B%E9%98%B6%E7%89%88%29-%E8%AE%A9%E6%9C%BA%E5%99%A8%E8%BF%9B%E8%A1%8C%E9%98%85%E8%AF%BB%E7%90%86%E8%A7%A3+%E4%BD%A0%E5%8F%AF%E4%BB%A5%E5%8F%98%E6%88%90%E5%87%BA%E9%A2%98%E8%80%85%E6%8F%90%E9%97%AE/reading.py)
+github.com/shenqiang0601/deep_learning › reading.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_convbert/-/blob/paddlenlp/examples/text_classification/multi_label/predict.py)
+github.com/JunnYu/paddle_convbert › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_convbert/-/blob/paddlenlp/examples/information_extraction/msra_ner/predict.py)
+github.com/JunnYu/paddle_convbert › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_convbert/-/blob/paddlenlp/examples/text_matching/ernie_matching/export_model.py)
+github.com/JunnYu/paddle_convbert › export_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_convbert/-/blob/paddlenlp/examples/text_matching/sentence_transformers/train.py)
+github.com/JunnYu/paddle_convbert › train.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_convbert/-/blob/paddlenlp/examples/text_matching/sentence_transformers/predict.py)
+github.com/JunnYu/paddle_convbert › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_convbert/-/blob/paddlenlp/examples/text_classification/pretrained_models/train.py)
+github.com/JunnYu/paddle_convbert › train.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_convbert/-/blob/paddlenlp/examples/text_matching/ernie_matching/train_pairwise.py)
+github.com/JunnYu/paddle_convbert › train_pairwise.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_convbert/-/blob/paddlenlp/examples/text_classification/multi_label/export_model.py)
+github.com/JunnYu/paddle_convbert › export_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_convbert/-/blob/paddlenlp/examples/text_matching/ernie_matching/train_pointwise.py)
+github.com/JunnYu/paddle_convbert › train_pointwise.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_convbert/-/blob/paddlenlp/examples/text_matching/ernie_matching/predict_pairwise.py)
+github.com/JunnYu/paddle_convbert › predict_pairwise.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_convbert/-/blob/paddlenlp/examples/text_classification/pretrained_models/predict.py)
+github.com/JunnYu/paddle_convbert › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_convbert/-/blob/paddlenlp/examples/sentiment_analysis/skep/deploy/python/predict.py)
+github.com/JunnYu/paddle_convbert › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_convbert/-/blob/paddlenlp/examples/machine_reading_comprehension/SQuAD/run_squad.py)
+github.com/JunnYu/paddle_convbert › run_squad.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_convbert/-/blob/paddlenlp/examples/text_matching/ernie_matching/predict_pointwise.py)
+github.com/JunnYu/paddle_convbert › predict_pointwise.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_convbert/-/blob/paddlenlp/examples/information_extraction/waybill_ie/export_model.py)
+github.com/JunnYu/paddle_convbert › export_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_convbert/-/blob/paddlenlp/examples/language_model/gpt-3/static/run_pretrain_static.py)
+github.com/JunnYu/paddle_convbert › run_pretrain_static.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_convbert/-/blob/paddlenlp/examples/text_matching/ernie_matching/deploy/python/predict.py)
+github.com/JunnYu/paddle_convbert › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_convbert/-/blob/paddlenlp/examples/text_classification/pretrained_models/export_model.py)
+github.com/JunnYu/paddle_convbert › export_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_convbert/-/blob/paddlenlp/examples/machine_reading_comprehension/DuReader-robust/run_du.py)
+github.com/JunnYu/paddle_convbert › run_du.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_convbert/-/blob/paddlenlp/examples/information_extraction/waybill_ie/deploy/python/predict.py)
+github.com/JunnYu/paddle_convbert › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_convbert/-/blob/paddlenlp/examples/text_classification/pretrained_models/deploy/python/predict.py)
+github.com/JunnYu/paddle_convbert › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_convbert/-/blob/paddlenlp/tests/ernie_text_cls/train.py)
+github.com/JunnYu/paddle_convbert › train.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_convbert/-/blob/paddlenlp/tests/ernie_text_cls/predict.py)
+github.com/JunnYu/paddle_convbert › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JunnYu/paddle_convbert/-/blob/paddlenlp/tests/ernie_text_cls/export_model.py)
+github.com/JunnYu/paddle_convbert › export_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/27182812/ChineseBERT_paddle/-/blob/paddlenlp/transformers/gpt/modeling.py)
+github.com/27182812/ChineseBERT_paddle › modeling.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/27182812/ChineseBERT_paddle/-/blob/paddlenlp/taskflow/models/dependency_parsing_model.py)
+github.com/27182812/ChineseBERT_paddle › dependency_parsing_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Eric3911/OpenAGI/-/blob/OpenPrompt-main/tutorial/7_ernie_paddlepaddle/basic.py)
+github.com/Eric3911/OpenAGI › basic.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/QiuSYang/deep-learning-study/-/blob/ai_deep_learning_course_study/baidu_aistudio_dl/natural_language_processing/src/THUNews_Ernie.py)
+github.com/QiuSYang/deep-learning-study › THUNews_Ernie.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/isLinXu/PaddleNavigation/-/blob/PaddleNLP/model_zoo/bert/run_glue.py)
+github.com/isLinXu/PaddleNavigation › run_glue.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/isLinXu/PaddleNavigation/-/blob/PaddleNLP/examples/few_shot/pet/pet.py)
+github.com/isLinXu/PaddleNavigation › pet.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/isLinXu/PaddleNavigation/-/blob/PaddleNLP/faster_tokenizer/perf/perf.py)
+github.com/isLinXu/PaddleNavigation › perf.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/isLinXu/PaddleNavigation/-/blob/PaddleNLP/examples/few_shot/efl/train.py)
+github.com/isLinXu/PaddleNavigation › train.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/isLinXu/PaddleNavigation/-/blob/PaddleNLP/model_zoo/ernie-3.0/compress_qa.py)
+github.com/isLinXu/PaddleNavigation › compress_qa.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/isLinXu/PaddleNavigation/-/blob/PaddleNLP/model_zoo/gpt/run_pretrain_static.py)
+github.com/isLinXu/PaddleNavigation › run_pretrain_static.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/isLinXu/PaddleNavigation/-/blob/PaddleNLP/paddlenlp/transformers/model_utils.py)
+github.com/isLinXu/PaddleNavigation › model_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/isLinXu/PaddleNavigation/-/blob/PaddleNLP/examples/few_shot/p-tuning/ptuning.py)
+github.com/isLinXu/PaddleNavigation › ptuning.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/isLinXu/PaddleNavigation/-/blob/PaddleNLP/model_zoo/ernie-1.0/finetune/run_qa.py)
+github.com/isLinXu/PaddleNavigation › run_qa.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/isLinXu/PaddleNavigation/-/blob/PaddleNLP/model_zoo/ernie-1.0/finetune/run_ner.py)
+github.com/isLinXu/PaddleNavigation › run_ner.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/isLinXu/PaddleNavigation/-/blob/PaddleNLP/examples/language_model/bert/run_glue.py)
+github.com/isLinXu/PaddleNavigation › run_glue.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/isLinXu/PaddleNavigation/-/blob/PaddleNLP/model_zoo/ernie-3.0/compress_token_cls.py)
+github.com/isLinXu/PaddleNavigation › compress_token_cls.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/isLinXu/PaddleNavigation/-/blob/PaddleNLP/model_zoo/ernie-1.0/run_pretrain_static.py)
+github.com/isLinXu/PaddleNavigation › run_pretrain_static.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/isLinXu/PaddleNavigation/-/blob/PaddleNLP/examples/text_correction/ernie-csc/train.py)
+github.com/isLinXu/PaddleNavigation › train.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/isLinXu/PaddleNavigation/-/blob/PaddleNLP/model_zoo/ernie-1.0/finetune/run_seq_cls.py)
+github.com/isLinXu/PaddleNavigation › run_seq_cls.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/isLinXu/PaddleNavigation/-/blob/PaddleNLP/examples/text_matching/diffcse/run_diffcse.py)
+github.com/isLinXu/PaddleNavigation › run_diffcse.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/isLinXu/PaddleNavigation/-/blob/PaddleNLP/examples/language_model/gpt/run_pretrain_static.py)
+github.com/isLinXu/PaddleNavigation › run_pretrain_static.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/isLinXu/PaddleNavigation/-/blob/PaddleNLP/model_zoo/gpt/data_tools/create_pretraining_data.py)
+github.com/isLinXu/PaddleNavigation › create_pretraining_data.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/isLinXu/PaddleNavigation/-/blob/PaddleNLP/examples/text_correction/ernie-csc/predict_sighan.py)
+github.com/isLinXu/PaddleNavigation › predict_sighan.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/isLinXu/PaddleNavigation/-/blob/PaddleNLP/examples/language_model/gpt-3/static/run_generation.py)
+github.com/isLinXu/PaddleNavigation › run_generation.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/isLinXu/PaddleNavigation/-/blob/PaddleNLP/model_zoo/ernie-1.0/data_tools/create_pretraining_data.py)
+github.com/isLinXu/PaddleNavigation › create_pretraining_data.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/isLinXu/PaddleNavigation/-/blob/PaddleNLP/examples/language_model/gpt-3/static/run_pretrain_static.py)
+github.com/isLinXu/PaddleNavigation › run_pretrain_static.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/isLinXu/PaddleNavigation/-/blob/PaddleNLP/examples/language_model/gpt/data_tools/create_pretraining_data.py)
+github.com/isLinXu/PaddleNavigation › create_pretraining_data.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/isLinXu/PaddleNavigation/-/blob/PaddleNLP/examples/language_model/moe/data_tools/create_pretraining_data.py)
+github.com/isLinXu/PaddleNavigation › create_pretraining_data.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/isLinXu/PaddleNavigation/-/blob/PaddleServing/examples/Pipeline/PaddleNLP/semantic_indexing/export_model.py)
+github.com/isLinXu/PaddleNavigation › export_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/isLinXu/PaddleNavigation/-/blob/PaddleNLP/examples/language_model/gpt-3/data_tools/create_pretraining_data.py)
+github.com/isLinXu/PaddleNavigation › create_pretraining_data.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/RicardoL1u/ChineseNLPDataAugmentation4Paddle/-/blob/test/test_align.py)
+github.com/RicardoL1u/ChineseNLPDataAugmentation4Paddle › test_align.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/isLinXu/PaddleNavigation/-/blob/PaddleNLP/applications/neural_search/ranking/ernie_matching/deploy/cpp/rpc_client.py)
+github.com/isLinXu/PaddleNavigation › rpc_client.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/isLinXu/PaddleNavigation/-/blob/PaddleServing/examples/Pipeline/PaddleNLP/semantic_indexing/deploy/python/predict.py)
+github.com/isLinXu/PaddleNavigation › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/isLinXu/PaddleNavigation/-/blob/PaddleServing/examples/Pipeline/PaddleNLP/semantic_indexing/deploy/C++/rpc_client.py)
+github.com/isLinXu/PaddleNavigation › rpc_client.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/isLinXu/PaddleNavigation/-/blob/PaddleNLP/applications/neural_search/ranking/ernie_matching/deploy/cpp/http_client.py)
+github.com/isLinXu/PaddleNavigation › http_client.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/isLinXu/PaddleNavigation/-/blob/PaddleServing/examples/Pipeline/PaddleNLP/semantic_indexing/deploy/C++/http_client.py)
+github.com/isLinXu/PaddleNavigation › http_client.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/isLinXu/PaddleNavigation/-/blob/PaddleServing/examples/Pipeline/PaddleNLP/semantic_indexing/deploy/python/web_service.py)
+github.com/isLinXu/PaddleNavigation › web_service.py (0 matches)
+--------------------------------------------------------------------------------
+

@@ -1,0 +1,1571 @@
+repo_url,filepath,commit_date,message
+github.com/langchain-ai/langchain,libs/community/langchain_community/embeddings/huggingface.py,2024-02-05T22:33:34Z,"community[patch]: Add Progress bar to HuggingFaceEmbeddings (#16758)
+
+- **Description:** Adds a function parameter to HuggingFaceEmbeddings
+called `show_progress` that enables a `tqdm` progress bar if enabled.
+Does not function if `multi_process = True`.
+  - **Issue:** n/a
+  - **Dependencies:** n/a"
+github.com/langchain-ai/langchain,libs/community/langchain_community/embeddings/huggingface.py,2024-01-17T08:30:07Z,"Community[patch]use secret str in Tavily and HuggingFaceInferenceEmbeddings (#16109)
+
+So the api keys don't show up in repr's 
+
+Still need to do tests"
+github.com/langchain-ai/langchain,libs/community/langchain_community/embeddings/huggingface.py,2023-12-11T21:53:30Z,"community[major], core[patch], langchain[patch], experimental[patch]: Create langchain-community (#14463)
+
+Moved the following modules to new package langchain-community in a backwards compatible fashion:
+
+```
+mv langchain/langchain/adapters community/langchain_community
+mv langchain/langchain/callbacks community/langchain_community/callbacks
+mv langchain/langchain/chat_loaders community/langchain_community
+mv langchain/langchain/chat_models community/langchain_community
+mv langchain/langchain/document_loaders community/langchain_community
+mv langchain/langchain/docstore community/langchain_community
+mv langchain/langchain/document_transformers community/langchain_community
+mv langchain/langchain/embeddings community/langchain_community
+mv langchain/langchain/graphs community/langchain_community
+mv langchain/langchain/llms community/langchain_community
+mv langchain/langchain/memory/chat_message_histories community/langchain_community
+mv langchain/langchain/retrievers community/langchain_community
+mv langchain/langchain/storage community/langchain_community
+mv langchain/langchain/tools community/langchain_community
+mv langchain/langchain/utilities community/langchain_community
+mv langchain/langchain/vectorstores community/langchain_community
+mv langchain/langchain/agents/agent_toolkits community/langchain_community
+mv langchain/langchain/cache.py community/langchain_community
+mv langchain/langchain/adapters community/langchain_community
+mv langchain/langchain/callbacks community/langchain_community/callbacks
+mv langchain/langchain/chat_loaders community/langchain_community
+mv langchain/langchain/chat_models community/langchain_community
+mv langchain/langchain/document_loaders community/langchain_community
+mv langchain/langchain/docstore community/langchain_community
+mv langchain/langchain/document_transformers community/langchain_community
+mv langchain/langchain/embeddings community/langchain_community
+mv langchain/langchain/graphs community/langchain_community
+mv langchain/langchain/llms community/langchain_community
+mv langchain/langchain/memory/chat_message_histories community/langchain_community
+mv langchain/langchain/retrievers community/langchain_community
+mv langchain/langchain/storage community/langchain_community
+mv langchain/langchain/tools community/langchain_community
+mv langchain/langchain/utilities community/langchain_community
+mv langchain/langchain/vectorstores community/langchain_community
+mv langchain/langchain/agents/agent_toolkits community/langchain_community
+mv langchain/langchain/cache.py community/langchain_community
+```
+
+Moved the following to core
+```
+mv langchain/langchain/utils/json_schema.py core/langchain_core/utils
+mv langchain/langchain/utils/html.py core/langchain_core/utils
+mv langchain/langchain/utils/strings.py core/langchain_core/utils
+cat langchain/langchain/utils/env.py >> core/langchain_core/utils/env.py
+rm langchain/langchain/utils/env.py
+```
+
+See .scripts/community_split/script_integrations.sh for all changes"
+github.com/mlflow/mlflow,mlflow/sentence_transformers/__init__.py,2024-02-14T08:23:05Z,"Update Embedding API for sentence transformers to be compatible with OpenAI format (#11019)
+
+Signed-off-by: lu-wang-dl <lu.wang@databricks.com>
+Signed-off-by: Michael Berk <michael.berk@databricks.com>
+Signed-off-by: mlflow-automation <mlflow-automation@users.noreply.github.com>
+Signed-off-by: michael-berk <michaelberk99@gmail.com>
+Signed-off-by: Lu Wang <lu.wang@databricks.com>
+Signed-off-by: Lu Wang <38018689+lu-wang-dl@users.noreply.github.com>
+Co-authored-by: michael-berk <michaelberk99@gmail.com>
+Co-authored-by: Michael Berk <michael.berk@databricks.com>
+Co-authored-by: mlflow-automation <mlflow-automation@users.noreply.github.com>"
+github.com/mlflow/mlflow,mlflow/sentence_transformers/__init__.py,2024-02-06T03:03:43Z,"Google docstring conversion batch 6 (#10879)
+
+Signed-off-by: Michael Berk <michael.berk@databricks.com>
+Signed-off-by: mlflow-automation <mlflow-automation@users.noreply.github.com>
+Signed-off-by: michael-berk <michaelberk99@gmail.com>
+Co-authored-by: Michael Berk <michael.berk@databricks.com>
+Co-authored-by: mlflow-automation <mlflow-automation@users.noreply.github.com>"
+github.com/mlflow/mlflow,mlflow/sentence_transformers/__init__.py,2023-12-20T02:55:12Z,"Fix `sentence_transformers` failure (#10695)
+
+Signed-off-by: harupy <17039389+harupy@users.noreply.github.com>"
+github.com/mlflow/mlflow,mlflow/sentence_transformers/__init__.py,2023-12-15T20:05:16Z,"add log_model example to sentence_transformers (#10682)
+
+Signed-off-by: Cdreetz <cdreetz@gmail.com>
+Signed-off-by: Christian R <117322020+cdreetz@users.noreply.github.com>
+Signed-off-by: Ben Wilson <39283302+BenWilson2@users.noreply.github.com>"
+github.com/mlflow/mlflow,mlflow/sentence_transformers/__init__.py,2023-10-27T21:01:26Z,"Add model_size_bytes attribute when saving the model (#10110)
+
+Signed-off-by: wenfeiy-db <wenfei.yan@databricks.com>"
+github.com/mlflow/mlflow,mlflow/sentence_transformers/__init__.py,2023-10-14T14:37:02Z,"enable RUF013 (#9949) (#9950)
+
+Signed-off-by: Serhii Fedash <lightnessofbein@gmail.com>
+Signed-off-by: mlflow-automation <mlflow-automation@users.noreply.github.com>
+Co-authored-by: mlflow-automation <mlflow-automation@users.noreply.github.com>"
+github.com/mlflow/mlflow,mlflow/sentence_transformers/__init__.py,2023-09-30T02:21:53Z,"move: sentence_transformers.py to (#9776)
+
+Signed-off-by: amiraflak <mehrdad.aflakparast@gmail.com>"
+github.com/langchain-ai/langchain,libs/community/langchain_community/embeddings/self_hosted_hugging_face.py,2024-01-26T23:01:12Z,"docs: Update documentation to use  'model_id' rather than 'model_name' to match actual API (#16615)
+
+- **Description:** Replace 'model_name' with 'model_id' for accuracy 
+- **Issue:**
+[link-to-issue](https://github.com/langchain-ai/langchain/issues/16577)
+  - **Dependencies:** 
+  - **Twitter handle:**"
+github.com/langchain-ai/langchain,libs/community/langchain_community/embeddings/self_hosted_hugging_face.py,2023-12-11T21:53:30Z,"community[major], core[patch], langchain[patch], experimental[patch]: Create langchain-community (#14463)
+
+Moved the following modules to new package langchain-community in a backwards compatible fashion:
+
+```
+mv langchain/langchain/adapters community/langchain_community
+mv langchain/langchain/callbacks community/langchain_community/callbacks
+mv langchain/langchain/chat_loaders community/langchain_community
+mv langchain/langchain/chat_models community/langchain_community
+mv langchain/langchain/document_loaders community/langchain_community
+mv langchain/langchain/docstore community/langchain_community
+mv langchain/langchain/document_transformers community/langchain_community
+mv langchain/langchain/embeddings community/langchain_community
+mv langchain/langchain/graphs community/langchain_community
+mv langchain/langchain/llms community/langchain_community
+mv langchain/langchain/memory/chat_message_histories community/langchain_community
+mv langchain/langchain/retrievers community/langchain_community
+mv langchain/langchain/storage community/langchain_community
+mv langchain/langchain/tools community/langchain_community
+mv langchain/langchain/utilities community/langchain_community
+mv langchain/langchain/vectorstores community/langchain_community
+mv langchain/langchain/agents/agent_toolkits community/langchain_community
+mv langchain/langchain/cache.py community/langchain_community
+mv langchain/langchain/adapters community/langchain_community
+mv langchain/langchain/callbacks community/langchain_community/callbacks
+mv langchain/langchain/chat_loaders community/langchain_community
+mv langchain/langchain/chat_models community/langchain_community
+mv langchain/langchain/document_loaders community/langchain_community
+mv langchain/langchain/docstore community/langchain_community
+mv langchain/langchain/document_transformers community/langchain_community
+mv langchain/langchain/embeddings community/langchain_community
+mv langchain/langchain/graphs community/langchain_community
+mv langchain/langchain/llms community/langchain_community
+mv langchain/langchain/memory/chat_message_histories community/langchain_community
+mv langchain/langchain/retrievers community/langchain_community
+mv langchain/langchain/storage community/langchain_community
+mv langchain/langchain/tools community/langchain_community
+mv langchain/langchain/utilities community/langchain_community
+mv langchain/langchain/vectorstores community/langchain_community
+mv langchain/langchain/agents/agent_toolkits community/langchain_community
+mv langchain/langchain/cache.py community/langchain_community
+```
+
+Moved the following to core
+```
+mv langchain/langchain/utils/json_schema.py core/langchain_core/utils
+mv langchain/langchain/utils/html.py core/langchain_core/utils
+mv langchain/langchain/utils/strings.py core/langchain_core/utils
+cat langchain/langchain/utils/env.py >> core/langchain_core/utils/env.py
+rm langchain/langchain/utils/env.py
+```
+
+See .scripts/community_split/script_integrations.sh for all changes"
+github.com/UKPLab/sentence-transformers,examples/training/multilingual/make_multilingual.py,2024-01-10T09:18:54Z,"[`chore`] Add Makefile for quality/style (code quality, formatting) with `ruff` (#2399)
+
+* Add ruff support for code quality
+
+* Remove star imports
+
+* Remove bare exceptions
+
+* Fix broken example; undefined variable
+
+* Fix broken example; wrong format string
+
+* No longer override imported ""datasets""
+
+* Use __all__ and avoid * imports
+
+* Comment away unused variables
+
+* Remove duplicate imports
+
+* Use isinstance to compare types
+
+* Use ""is None"" rather than ""== None""
+
+* Fix broken ValueError format-string
+
+* Remove ;
+
+* Remove unused imports
+
+* Resolve error if dataloader has get_config_dict()
+
+However, no dataloader seems to have get_config_dict()? It's a bit strange
+
+* Remove accidentally committed debugging
+
+* Remove unused imports in docs
+
+* Run code formatting via ruff
+
+This might induce some merge conflicts, but I'm not too concerned about it
+
+* Add 'make quality' to the CI"
+github.com/UKPLab/sentence-transformers,examples/training/multilingual/make_multilingual.py,2023-12-14T15:25:13Z,"chore; update make_multilingual.py (#2243)
+
+* chore; update make_multilingual.py
+
+Update paths for parallel dataset
+
+* Update broken paths throughout the examples
+
+* Remove now-unused correct_bias
+
+---------
+
+Co-authored-by: Tom Aarsen <Cubiegamedev@gmail.com>"
+github.com/UKPLab/sentence-transformers,examples/training/multilingual/make_multilingual.py,2021-09-27T07:00:56Z,revert model names
+github.com/UKPLab/sentence-transformers,examples/training/multilingual/make_multilingual.py,2021-09-07T12:46:11Z,update pre-trained model
+github.com/UKPLab/sentence-transformers,examples/training/multilingual/make_multilingual.py,2021-06-08T12:08:53Z,update model names to v2 models
+github.com/UKPLab/sentence-transformers,examples/training/multilingual/make_multilingual.py,2021-05-18T20:19:41Z,update model name example
+github.com/UKPLab/sentence-transformers,examples/training/multilingual/make_multilingual.py,2021-01-02T13:28:56Z,"Merge branch 'per-module-logger' of https://github.com/jmrf/sentence-transformers into dev-0.4.1
+
+# Conflicts:
+#	examples/training/avg_word_embeddings/training_stsbenchmark_avg_word_embeddings.py
+#	examples/training/avg_word_embeddings/training_stsbenchmark_bilstm.py
+#	examples/training/avg_word_embeddings/training_stsbenchmark_bow.py
+#	examples/training/avg_word_embeddings/training_stsbenchmark_cnn.py
+#	examples/training/avg_word_embeddings/training_stsbenchmark_tf-idf_word_embeddings.py
+#	examples/training/data_augmentation/train_sts_indomain_bm25.py
+#	examples/training/data_augmentation/train_sts_indomain_nlpaug.py
+#	examples/training/data_augmentation/train_sts_indomain_semantic.py
+#	examples/training/data_augmentation/train_sts_qqp_crossdomain.py
+#	examples/training/data_augmentation/train_sts_seed_optimization.py
+#	examples/training/distillation/model_distillation.py
+#	examples/training/nli/training_nli.py
+#	examples/training/other/training_batch_hard_trec.py
+#	examples/training/other/training_multi-task.py
+#	examples/training/sts/training_stsbenchmark.py
+#	examples/training/sts/training_stsbenchmark_continue_training.py
+#	requirements.txt
+#	sentence_transformers/SentenceTransformer.py
+#	sentence_transformers/__init__.py
+#	sentence_transformers/datasets/SentenceLabelDataset.py"
+github.com/UKPLab/sentence-transformers,examples/training/multilingual/make_multilingual.py,2020-12-23T21:19:15Z,update batch hard example
+github.com/UKPLab/sentence-transformers,examples/training/multilingual/make_multilingual.py,2020-12-14T15:33:07Z,per-file logger for all examples
+github.com/UKPLab/sentence-transformers,examples/training/multilingual/make_multilingual.py,2020-09-03T06:47:50Z,Update dataset download URL
+github.com/UKPLab/sentence-transformers,examples/training/multilingual/make_multilingual.py,2020-08-26T17:46:08Z,Typo
+github.com/UKPLab/sentence-transformers,examples/training/multilingual/make_multilingual.py,2020-08-26T17:44:00Z,Bugfix
+github.com/UKPLab/sentence-transformers,examples/training/multilingual/make_multilingual.py,2020-08-22T21:52:38Z,Update docs
+github.com/eosphoros-ai/DB-GPT,dbgpt/rag/embedding/embeddings.py,2024-01-24T13:41:19Z,"feat: add Jina Embeddings (#1105)
+
+Co-authored-by: Fangyin Cheng <staneyffer@gmail.com>"
+github.com/eosphoros-ai/DB-GPT,dbgpt/rag/embedding/embeddings.py,2024-01-14T13:01:37Z,refactor: Refactor proxy LLM (#1064)
+github.com/eosphoros-ai/DB-GPT,dbgpt/rag/embedding/embeddings.py,2024-01-03T01:45:26Z,"refactor: RAG Refactor (#985)
+
+Co-authored-by: Aralhi <xiaoping0501@gmail.com>
+Co-authored-by: csunny <cfqsunny@163.com>"
+github.com/microsoft/semantic-kernel,python/semantic_kernel/connectors/ai/hugging_face/services/hf_text_embedding.py,2024-02-28T18:53:53Z,"Python: rebuilt exceptions structure; pythonic version (#5231)
+
+### Motivation and Context
+
+<!-- Thank you for your contribution to the semantic-kernel repo!
+Please help reviewers and future users, providing the following
+information:
+  1. Why is this change required?
+  2. What problem does it solve?
+  3. What scenario does it contribute to?
+  4. If it fixes an open issue, please link to the issue here.
+-->
+
+The existing Exceptions structure was very much inspired by dotnet, this
+is now replaced with a pythonic implementations.
+
+This means all Exceptions derive from KernelException and then
+specialise for different purposes.
+
+Closes #2194
+
+### Description
+
+<!-- Describe your changes, the overall approach, the underlying design.
+These notes will help understanding how your code works. Thanks! -->
+
+Added folder for all exception types, all can be imported through `from
+semantic_kernel.exceptions import ...` no need for a user to know which
+file the relevant one is in, but keeps things tidy for developers.
+Removed old KernelException, added back subtypes for the errorcodes.
+Went through everything to make sure the `raise ... from exc` pattern is
+used as much as possible as that returns a better stacktrace.
+
+### Contribution Checklist
+
+<!-- Before submitting this PR, please make sure: -->
+
+- [x] The code builds clean without any errors or warnings
+- [x] The PR follows the [SK Contribution
+Guidelines](https://github.com/microsoft/semantic-kernel/blob/main/CONTRIBUTING.md)
+and the [pre-submission formatting
+script](https://github.com/microsoft/semantic-kernel/blob/main/CONTRIBUTING.md#development-scripts)
+raises no violations
+- [x] All unit tests pass, and I have added new tests where possible
+- [x] I didn't break anyone :smile:"
+github.com/microsoft/semantic-kernel,python/semantic_kernel/connectors/ai/hugging_face/services/hf_text_embedding.py,2024-02-24T20:05:40Z,"Python: major features for the Kernel Arguments, Function Result and new Prompt Templating (#5077)
+
+### Motivation and Context
+
+<!-- Thank you for your contribution to the semantic-kernel repo! Please
+help reviewers and future users, providing the following information:
+  1. Why is this change required?
+  2. What problem does it solve?
+  3. What scenario does it contribute to?
+  4. If it fixes an open issue, please link to the issue here. -->
+Major work to replace the context with Kernel Arguments on the front-end
+and Function Results on the back.
+
+Updated the function decorator to a new approach, in line with dotnet.
+
+Revamps the way function are called, allowing native functions to be
+completely ignorant of SK, other then the decorator.
+
+This also moves things into the new folder structure in sync with
+dotnet.
+
+### Description
+
+<!-- Describe your changes, the overall approach, the underlying design.
+These notes will help understanding how your code works. Thanks! -->
+Adds:
+- KernelArguments, a dict-like class that replaces the variables in
+KernelContext. Closes #4565
+- FunctionResult, a class to hold the results of function executions,
+includes the function, the value and metadata, as well as two convenient
+function to get the value out of it (str and get_inner_content) the
+first is generic, the second specifically for KernelContent responses
+(from AI services).
+- AI Service Selector class, has a default, which is based on the order
+in the arguments followed by the order in the functions, can be
+overridden to implement your own strategy. Closes #4631
+- Introduces ChatHistory and refactors the PromptTemplateConfig. Closes
+#4856, #4630
+- Improves parsing of templates, will now all validate during creation
+and throw an error then, instead of some that do not check for validaty
+until used.
+- Introduces named_args block and thereby the ability to have multiple
+arguments for a function call in a template. Closes #5003
+
+Updates:
+- kernel_function decorators, the parameter decorator was removed and
+instead we now use Annotated to add a description of a field and we get
+the type and required from the function definition.
+- core plugins, use the new approach to kernel_function decorators.
+- planners, template engines have all been updated to use the kernel and
+kernelarguments instead of Context.
+- Events have been updated, now use kernelarguments and function_result
+- Tokenizers support for named_args and improvements on parsing and
+checking.
+- Kernel examples and notebooks to use the latest code.
+- All unit and integration tests. There is more code coverage now than
+before.
+
+Removed:
+- kernelContext
+- kernel_function_parameter_decorator
+- delegate handling code for native functions
+- file_io_plugin and tests
+- SemanticFunctionConfig
+- ChatPromptTemplate
+
+### Contribution Checklist
+
+<!-- Before submitting this PR, please make sure: -->
+
+- [x] The code builds clean without any errors or warnings
+- [x] The PR follows the [SK Contribution
+Guidelines](https://github.com/microsoft/semantic-kernel/blob/main/CONTRIBUTING.md)
+and the [pre-submission formatting
+
+script](https://github.com/microsoft/semantic-kernel/blob/main/CONTRIBUTING.md#development-scripts)
+raises no violations
+- [x] All unit tests pass, and I have added new tests where possible
+- [ ] I didn't break anyone :smile:
+
+---------
+
+Co-authored-by: Evan Mattson <evmattso@microsoft.com>
+Co-authored-by: Evan Mattson <35585003+moonbox3@users.noreply.github.com>
+Co-authored-by: Evan Mattson <evan.mattson@microsoft.com>"
+github.com/microsoft/semantic-kernel,python/semantic_kernel/connectors/ai/hugging_face/services/hf_text_embedding.py,2024-01-26T17:15:35Z,"Python: Removes the _async suffix where is not needed (#4735)
+
+### Motivation and Context
+Delete all *_async where *_sync doesn't exist to make the library more
+Pythonic.
+
+Fixes #4629 
+
+### Contribution Checklist
+
+<!-- Before submitting this PR, please make sure: -->
+
+- [X] The code builds clean without any errors or warnings
+- [X] The PR follows the [SK Contribution
+Guidelines](https://github.com/microsoft/semantic-kernel/blob/main/CONTRIBUTING.md)
+and the [pre-submission formatting
+script](https://github.com/microsoft/semantic-kernel/blob/main/CONTRIBUTING.md#development-scripts)
+raises no violations
+- [X] All unit tests pass, and I have added new tests where possible
+- [X] I didn't break anyone :smile:
+
+---------
+
+Co-authored-by: Evan Mattson <35585003+moonbox3@users.noreply.github.com>"
+github.com/microsoft/semantic-kernel,python/semantic_kernel/connectors/ai/hugging_face/services/hf_text_embedding.py,2024-01-04T14:28:20Z,"Python: set line-length for black in sync with Ruff, run black. (#4396)
+
+### Motivation and Context
+
+<!-- Thank you for your contribution to the semantic-kernel repo!
+Please help reviewers and future users, providing the following
+information:
+  1. Why is this change required?
+  2. What problem does it solve?
+  3. What scenario does it contribute to?
+  4. If it fixes an open issue, please link to the issue here.
+-->
+As we are tightening the formatting and linting setups, this was
+missing, now the line-length for black and ruff are the same, thereby no
+longer running into black issues as often.
+
+### Description
+
+<!-- Describe your changes, the overall approach, the underlying design.
+These notes will help understanding how your code works. Thanks! -->
+
+### Contribution Checklist
+
+<!-- Before submitting this PR, please make sure: -->
+
+- [x] The code builds clean without any errors or warnings
+- [x] The PR follows the [SK Contribution
+Guidelines](https://github.com/microsoft/semantic-kernel/blob/main/CONTRIBUTING.md)
+and the [pre-submission formatting
+script](https://github.com/microsoft/semantic-kernel/blob/main/CONTRIBUTING.md#development-scripts)
+raises no violations
+- [x] All unit tests pass, and I have added new tests where possible
+- [x] I didn't break anyone :smile:"
+github.com/microsoft/semantic-kernel,python/semantic_kernel/connectors/ai/hugging_face/services/hf_text_embedding.py,2024-01-03T19:57:27Z,"Python: Implement AI request settings (#4097)
+
+### Motivation and Context
+
+<!-- Thank you for your contribution to the semantic-kernel repo!
+Please help reviewers and future users, providing the following
+information:
+  1. Why is this change required?
+  2. What problem does it solve?
+  3. What scenario does it contribute to?
+  4. If it fixes an open issue, please link to the issue here.
+-->
+This PR implements the new approach to AI Request settings as described
+here:
+https://github.com/microsoft/semantic-kernel/blob/main/docs/decisions/0008-support-generic-llm-request-settings.md
+and completes #3312
+
+### Description
+
+<!-- Describe your changes, the overall approach, the underlying design.
+These notes will help understanding how your code works. Thanks! -->
+Does this:
+- Creates AI Request Settings with service_id (referring to the
+registered AI services in a kernel) and extension_data, a dict that can
+hold any number of settings
+- has several methods:
+- `from_ai_request_settings` -> constructor to create a new
+request_settings object based on another, supports creating specific
+ai_request_settings from generic ones.
+- `update_from_ai_request_settings` -> updating the fields of a request
+setting from another ones.
+- `prepare_settings_dict` -> method that is used when actually creating
+the dict that get's passed to the handler of the AI service.
+- Created subclasses like OpenAIChatRequestSettings which has all the
+required fields of a OpenAI Chat completion, same for OpenAIText,
+AzureChat, GooglePalm, HuggingFace, etc.
+- added `get_request_settings_class` to ai_services to return the class
+used for the settings for that service.
+
+The goal is that when running, this settings object get's updated and a
+single operations (called `prepare_settings_dict`) is used to return a
+dict that can be passed to the api call directly, thereby reducing the
+need for custom logic everywhere, this will also negate the need for
+things like `complete_chat_with_functions_async` and others. So also
+removed complete_chat_..._async methods from openai and azure openai.
+
+It has also changed the prompt_template_config with the generic type for
+the AIRequestSettings or subclasses, and some other changes.
+
+### Contribution Checklist
+
+<!-- Before submitting this PR, please make sure: -->
+
+- [x] The code builds clean without any errors or warnings
+- [x] The PR follows the [SK Contribution
+Guidelines](https://github.com/microsoft/semantic-kernel/blob/main/CONTRIBUTING.md)
+and the [pre-submission formatting
+script](https://github.com/microsoft/semantic-kernel/blob/main/CONTRIBUTING.md#development-scripts)
+raises no violations
+- [x] All unit tests pass, and I have added new tests where possible
+- [ ] I didn't break anyone :smile:"
+github.com/microsoft/semantic-kernel,python/semantic_kernel/connectors/ai/hugging_face/services/hf_text_embedding.py,2023-12-16T18:41:41Z,"Python: Uses Python standard logging (#4115)
+
+### Motivation and Context
+
+This replaces passing Logger instances as arguments around with the
+preferred Python way of having each module define a module-wide `logger`
+instance at the top of the module. Fixes #3711
+
+### Description
+
+Removes any `log` argument and argument documentation. Replaces usage of
+those `log` arguments with the module-wide `logger` instance.
+
+### Contribution Checklist
+
+- [x] The code builds clean without any errors or warnings
+- [x] The PR follows the [SK Contribution
+Guidelines](https://github.com/microsoft/semantic-kernel/blob/main/CONTRIBUTING.md)
+and the [pre-submission formatting
+script](https://github.com/microsoft/semantic-kernel/blob/main/CONTRIBUTING.md#development-scripts)
+raises no violations
+- [x] All unit tests pass, and I have added new tests where possible
+- [x] I didn't break anyone :smile:
+
+---------
+
+Co-authored-by: Eduard van Valkenburg <eavanvalkenburg@users.noreply.github.com>"
+github.com/microsoft/semantic-kernel,python/semantic_kernel/connectors/ai/hugging_face/services/hf_text_embedding.py,2023-11-30T19:34:08Z,"Python: Upgrade to Pydantic 2+ (#3723)
+
+### Motivation and Context
+
+<!-- Thank you for your contribution to the semantic-kernel repo!
+Please help reviewers and future users, providing the following
+information:
+  1. Why is this change required?
+  2. What problem does it solve?
+  3. What scenario does it contribute to?
+  4. If it fixes an open issue, please link to the issue here.
+-->
+Upgraded pydantic to 2.0+, much cleaner, less complexity in different
+types of base models.
+
+### Description
+
+<!-- Describe your changes, the overall approach, the underlying design.
+These notes will help understanding how your code works. Thanks! -->
+
+### Contribution Checklist
+
+<!-- Before submitting this PR, please make sure: -->
+
+- [ ] The code builds clean without any errors or warnings
+- [ ] The PR follows the [SK Contribution
+Guidelines](https://github.com/microsoft/semantic-kernel/blob/main/CONTRIBUTING.md)
+and the [pre-submission formatting
+script](https://github.com/microsoft/semantic-kernel/blob/main/CONTRIBUTING.md#development-scripts)
+raises no violations
+- [ ] All unit tests pass, and I have added new tests where possible
+- [ ] I didn't break anyone :smile:"
+github.com/microsoft/semantic-kernel,python/semantic_kernel/connectors/ai/hugging_face/services/hf_text_embedding.py,2023-11-29T06:44:10Z,"Python: Make SK compatible with OpenAI 1.0 (#3555)
+
+Need to update SK Python to integrate the breaking changes from
+openai-python 1.0
+
+https://github.com/microsoft/semantic-kernel/issues/3330
+
+This PR replaces the old one that was merging to main
+https://github.com/microsoft/semantic-kernel/pull/3417
+
+---------
+
+### Motivation and Context
+
+<!-- Thank you for your contribution to the semantic-kernel repo!
+Please help reviewers and future users, providing the following
+information:
+  1. Why is this change required?
+  2. What problem does it solve?
+  3. What scenario does it contribute to?
+  4. If it fixes an open issue, please link to the issue here.
+-->
+
+### Description
+
+<!-- Describe your changes, the overall approach, the underlying design.
+These notes will help understanding how your code works. Thanks! -->
+
+### Contribution Checklist
+
+<!-- Before submitting this PR, please make sure: -->
+
+- [ ] The code builds clean without any errors or warnings
+- [ ] The PR follows the [SK Contribution
+Guidelines](https://github.com/microsoft/semantic-kernel/blob/main/CONTRIBUTING.md)
+and the [pre-submission formatting
+script](https://github.com/microsoft/semantic-kernel/blob/main/CONTRIBUTING.md#development-scripts)
+raises no violations
+- [ ] All unit tests pass, and I have added new tests where possible
+- [ ] I didn't break anyone :smile:
+
+---------
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: Joowon <joowon.kim@dm.snu.ac.kr>
+Co-authored-by: Roger Barreto <19890735+RogerBarreto@users.noreply.github.com>
+Co-authored-by: Dmytro Struk <13853051+dmytrostruk@users.noreply.github.com>
+Co-authored-by: Mark Wallace <127216156+markwallace-microsoft@users.noreply.github.com>
+Co-authored-by: Ben Thomas <ben.thomas@microsoft.com>
+Co-authored-by: Ben Thomas <bentho@microsoft.com>
+Co-authored-by: Devis Lucato <dluc@users.noreply.github.com>
+Co-authored-by: Aayush Kataria <aayushkataria3011@gmail.com>
+Co-authored-by: Abby Harrison <abby.harrison@microsoft.com>
+Co-authored-by: Abby Harrison <54643756+awharrison-28@users.noreply.github.com>
+Co-authored-by: Stephen Toub <stoub@microsoft.com>
+Co-authored-by: Teresa Hoang <125500434+teresaqhoang@users.noreply.github.com>
+Co-authored-by: Chris <66376200+crickman@users.noreply.github.com>
+Co-authored-by: Gil LaHaye <gillahaye@microsoft.com>
+Co-authored-by: Gina Triolo <51341242+gitri-ms@users.noreply.github.com>
+Co-authored-by: Tao Chen <TaoChenOSU@users.noreply.github.com>
+Co-authored-by: Lee Miller <lemiller@microsoft.com>
+Co-authored-by: Jennifer Marsman <jennifermarsman@users.noreply.github.com>
+Co-authored-by: Weihan Li <weihanli@outlook.com>
+Co-authored-by: SergeyMenshykh <68852919+SergeyMenshykh@users.noreply.github.com>
+Co-authored-by: Diego Colombo <dicolomb@microsoft.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Alex Chao <achao@achao>
+Co-authored-by: Eduard van Valkenburg <eavanvalkenburg@users.noreply.github.com>
+Co-authored-by: Evan Mattson <35585003+moonbox3@users.noreply.github.com>
+Co-authored-by: Evan Mattson <evan.mattson@microsoft.com>"
+github.com/microsoft/semantic-kernel,python/semantic_kernel/connectors/ai/hugging_face/services/hf_text_embedding.py,2023-08-31T23:49:49Z,"Python: Error fix for HuggingFaceTextEmbedding when trying to run on GPU (#2629)
+
+### Motivation and Context
+
+I run into error while trying to initialize `HuggingFaceTextEmbedding`
+with `device=0`.
+
+```
+Traceback (most recent call last):
+  File ""/usr/local/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py"", line 552, in _run_script
+    exec(code, module.__dict__)
+  File ""/app/app/app.py"", line 329, in <module>
+    asyncio.run(main())
+  File ""/usr/local/lib/python3.9/asyncio/runners.py"", line 44, in run
+    return loop.run_until_complete(main)
+  File ""/usr/local/lib/python3.9/asyncio/base_events.py"", line 647, in run_until_complete
+    return future.result()
+  File ""/app/app/app.py"", line 220, in main
+    kernel = init_kernel()
+  File ""/usr/local/lib/python3.9/site-packages/streamlit/runtime/caching/cache_utils.py"", line 211, in wrapper
+    return cached_func(*args, **kwargs)
+  File ""/usr/local/lib/python3.9/site-packages/streamlit/runtime/caching/cache_utils.py"", line 240, in __call__
+    return self._get_or_create_cached_value(args, kwargs)
+  File ""/usr/local/lib/python3.9/site-packages/streamlit/runtime/caching/cache_utils.py"", line 266, in _get_or_create_cached_value
+    return self._handle_cache_miss(cache, value_key, func_args, func_kwargs)
+  File ""/usr/local/lib/python3.9/site-packages/streamlit/runtime/caching/cache_utils.py"", line 320, in _handle_cache_miss
+    computed_value = self._info.func(*func_args, **func_kwargs)
+  File ""/app/app/app.py"", line 148, in init_kernel
+    sk_hf.HuggingFaceTextEmbedding(""sentence-transformers/all-MiniLM-L6-v2"", device=0),
+  File ""/usr/local/lib/python3.9/site-packages/semantic_kernel/connectors/ai/hugging_face/services/hf_text_embedding.py"", line 49, in __init__
+    ""cuda:"" + device if device >= 0 and torch.cuda.is_available() else ""cpu""
+TypeError: can only concatenate str (not ""int"") to str
+```
+
+<!-- Thank you for your contribution to the semantic-kernel repo!
+Please help reviewers and future users, providing the following
+information:
+  1. Why is this change required?
+  2. What problem does it solve?
+  3. What scenario does it contribute to?
+  4. If it fixes an open issue, please link to the issue here.
+-->
+
+### Description
+
+
+I replace `""cuda:"" + device` with `""cuda:"" + str(device)`
+
+<!-- Describe your changes, the overall approach, the underlying design.
+These notes will help understanding how your code works. Thanks! -->
+
+### Contribution Checklist
+
+<!-- Before submitting this PR, please make sure: -->
+
+- [ ] The code builds clean without any errors or warnings
+- [ ] The PR follows the [SK Contribution
+Guidelines](https://github.com/microsoft/semantic-kernel/blob/main/CONTRIBUTING.md)
+and the [pre-submission formatting
+script](https://github.com/microsoft/semantic-kernel/blob/main/CONTRIBUTING.md#development-scripts)
+raises no violations
+- [ ] All unit tests pass, and I have added new tests where possible
+- [ ] I didn't break anyone :smile:
+
+Co-authored-by: Abby Harrison <54643756+awharrison-28@users.noreply.github.com>"
+github.com/microsoft/semantic-kernel,python/semantic_kernel/connectors/ai/hugging_face/services/hf_text_embedding.py,2023-05-08T22:52:48Z,"Python: fixes and release (#855)
+
+* Fix lint errors
+* Bump version number
+* Add retry loop to integration tests
+* Enable all integration tests: some tests will fail if OpenAI/Azure are
+throttling."
+github.com/microsoft/semantic-kernel,python/semantic_kernel/connectors/ai/hugging_face/services/hf_text_embedding.py,2023-05-06T03:35:13Z,"Python: Optional dependencies (#820)
+
+### Motivation and Context
+The release of Python SK from 0.2.4 -> 0.2.6 significantly increased the
+size of the pip package. The dependencies causing this are not core to
+the kernel, so this PR establishes a pattern for SK connector
+dependencies (ex: Hugging Face, memory storage)
+
+### Description
+- Added a poetry group called hugging_face - this is the same name as
+the connectors namespace in the code.
+- Added dependency installs to the Hugging Face sample notebook.
+- removed Hugging Face dependencies from requirements.txt.
+- Added import errors for torch, transformers, and sentence-transformers
+in the hugging_face connector classes.
+- Added command `--with hugging_face` to integration test setup."
+github.com/microsoft/semantic-kernel,python/semantic_kernel/connectors/ai/hugging_face/services/hf_text_embedding.py,2023-04-27T00:07:29Z,"Python/Local Hugging Face Inference for Completions and Embeddings (#658)
+
+### Motivation and Context
+This PR introduces native python support for Hugging Face models that
+can: complete text, generate new text, summarize, and that generate
+embeddings. Currently only supports downloading the models locally from
+the HF model hub. Future plans include supporting the HF inference API
+as well.
+
+### Description
+- Added 2 services: `hf_text_completion` and `hf_text_embedding`
+- `hf_text_completion` supports the following tasks: _text-generation_,
+_text2text-generation_, and _summarization_
+- `hf_text_embedding` supports any model supported by the
+sentence-transformers pip package
+- Added dependencies: pytorch, transformers, sentence-transformers to
+`requirements.txt` and `poetry.lock`
+- fixed typo: `get_embedding_service_service_id` ->
+`get_embedding_service_id`
+- Added a number of integration tests for supported HF models"
+github.com/oobabooga/text-generation-webui,extensions/openai/cache_embedding_model.py,2023-11-10T15:34:27Z,"Make /v1/embeddings functional, add request/response types"
+github.com/oobabooga/text-generation-webui,extensions/openai/cache_embedding_model.py,2023-09-24T03:58:28Z,extensions/openai: Fix error when preparing cache for embedding models (#3995)
+github.com/oobabooga/text-generation-webui,extensions/openai/cache_embedding_model.py,2023-09-18T01:39:29Z,extensions/openai: load extension settings via settings.yaml (#3953)
+github.com/oobabooga/text-generation-webui,extensions/openai/cache_embedding_model.py,2023-09-16T03:11:16Z,Lint the openai extension
+github.com/oobabooga/text-generation-webui,extensions/openai/cache_embedding_model.py,2023-06-26T01:49:26Z,ExLlama with long context (#2875)
+github.com/oobabooga/text-generation-webui,extensions/openai/cache_embedding_model.py,2023-05-11T14:06:39Z,[extension/openai] add edits & image endpoints & fix prompt return in non --chat modes  (#1935)
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-09-02T12:31:35Z,知识库增加docx格式（仅供测试）
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-07-23T11:18:05Z,rtst支持在线embedding
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-07-19T12:33:20Z,改变知识库分段逻辑
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-06-29T15:36:22Z,Update gen_data_st.py
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-06-29T15:32:29Z,Update gen_data_st.py
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-06-22T19:27:28Z,111
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-06-13T02:54:20Z,Update gen_data_st.py
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-06-13T02:41:31Z,Update gen_data_st.py
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-06-06T13:17:27Z,rtst初步支持Annoy后端，还须实现merge_from方法
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-05-24T18:08:56Z,[FIX] Fix bug in gen_data_st.py
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-05-13T11:32:01Z,"Update gen_data_st.py
+
+识别大小写文件后缀格式；对非支持文件格式给出提示。"
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-05-07T05:01:46Z,知识库配置更科学。支持动态改变所用知识库；默认即通过参数化配置知识库
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-05-06T16:52:53Z,Merge branch 'main' into main
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-05-06T16:21:31Z,Update gen_data_st.py
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-05-06T16:13:12Z,Update gen_data_st.py
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-05-06T16:03:45Z,Update gen_data_st.py
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-05-06T15:44:46Z,修复文件索引建立
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-05-06T14:40:37Z,调整换行去除策略
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-05-06T14:13:45Z,调整换行去除策略
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-05-06T14:09:12Z,"Revert ""fix(gen_data_st.py): exit if txt dir is empty"""
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-05-06T09:22:04Z,"Update gen_data_st.py
+
+might cause the program to exit before updating index, comment those out"
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-05-06T03:28:45Z,fix(gen_data_st.py): exit if txt dir is empty
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-05-05T12:42:15Z,Update gen_data_st.py
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-05-05T06:32:09Z,yml实现设置
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-05-05T00:19:56Z,Merge branch 'main' into main
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-05-04T23:54:45Z,Update gen_data_st.py
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-05-04T19:38:41Z,"Merge pull request #236 from diannaojiang/main
+
+rtst参数个性化"
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-05-04T19:10:43Z,rtst参数个性化
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-05-04T14:34:18Z,rtst模式跳过不可读的文件
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-05-04T13:21:03Z,Update gen_data_st.py
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-05-01T11:10:15Z,调整文件名；api调用支持多用户；优化多用户时排队提示逻辑
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-04-30T01:47:28Z,st索引时，读立线程计算嵌入
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-04-30T00:42:40Z,st索引 进度显示
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-04-29T13:14:54Z,Update gen_data_st.py
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-04-29T12:20:27Z,Update gen_data_st.py
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-04-29T12:19:31Z,Update gen_data_st.py
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-04-29T10:42:46Z,索引txt支持自适应编码
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-04-29T09:14:53Z,rtst取代st；数据预处理流式进行，解决oom问题
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-04-29T03:48:12Z,支持pdf
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-04-29T03:47:16Z,支持pdf
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-04-29T03:20:11Z,支持pdf
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-04-25T07:58:56Z,修复拼写错误
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-04-22T07:39:15Z,报错自动打开文档
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-04-21T23:53:45Z,Update gen_data_st.py
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-04-21T12:08:20Z,gpt4free
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-04-19T05:52:08Z,st知识库索引支持叠加
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-04-18T16:22:42Z,Merge branch 'pr/156'
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-04-18T16:06:29Z,暴露向量模型路径
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-04-18T13:09:30Z,增加rwkv量化脚本
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-04-18T11:59:06Z,Update gen_data_st.py
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-04-18T11:45:05Z,st模式个性化选项添加
+github.com/wenda-LLM/wenda,plugins/gen_data_st.py,2023-04-18T05:19:38Z,"新知识库模组：st → sentence_transformers,内测版本"
+github.com/wenda-LLM/wenda,plugins/zhishiku_rtst.py,2023-08-01T11:39:18Z,Update zhishiku_rtst.py
+github.com/wenda-LLM/wenda,plugins/zhishiku_rtst.py,2023-07-23T11:23:57Z,rtst支持在线embedding优化
+github.com/wenda-LLM/wenda,plugins/zhishiku_rtst.py,2023-07-19T12:33:20Z,改变知识库分段逻辑
+github.com/wenda-LLM/wenda,plugins/zhishiku_rtst.py,2023-07-06T04:36:43Z,向量知识库管理工具支持读取现有库名称
+github.com/wenda-LLM/wenda,plugins/zhishiku_rtst.py,2023-06-26T12:36:00Z,优化动态多知识库处理
+github.com/wenda-LLM/wenda,plugins/zhishiku_rtst.py,2023-06-14T11:15:27Z,基于rtst的意图识别auto
+github.com/wenda-LLM/wenda,plugins/zhishiku_rtst.py,2023-06-09T08:27:36Z,新知识库：计算器。jast4fun
+github.com/wenda-LLM/wenda,plugins/zhishiku_rtst.py,2023-06-06T13:17:27Z,rtst初步支持Annoy后端，还须实现merge_from方法
+github.com/wenda-LLM/wenda,plugins/zhishiku_rtst.py,2023-06-02T12:49:48Z,修复rtst文件预览
+github.com/wenda-LLM/wenda,plugins/zhishiku_rtst.py,2023-06-01T03:21:33Z,静态资源路由由fastapi实现
+github.com/wenda-LLM/wenda,plugins/zhishiku_rtst.py,2023-05-29T07:36:49Z,rtst标题支持注释。现在可以用形如”xx研究报告【第一页】“的形式传入标题，相关内容将会被当成一篇文章返回上下文
+github.com/wenda-LLM/wenda,plugins/zhishiku_rtst.py,2023-05-19T09:19:19Z,Update zhishiku_rtst.py
+github.com/wenda-LLM/wenda,plugins/zhishiku_rtst.py,2023-05-19T03:20:05Z,抛出异常，用于跨域
+github.com/wenda-LLM/wenda,plugins/zhishiku_rtst.py,2023-05-13T09:46:35Z,-
+github.com/wenda-LLM/wenda,plugins/zhishiku_rtst.py,2023-05-07T05:03:34Z,Update zhishiku_rtst.py
+github.com/wenda-LLM/wenda,plugins/zhishiku_rtst.py,2023-05-07T05:01:46Z,知识库配置更科学。支持动态改变所用知识库；默认即通过参数化配置知识库
+github.com/wenda-LLM/wenda,plugins/zhishiku_rtst.py,2023-05-06T16:40:05Z,解耦
+github.com/wenda-LLM/wenda,plugins/zhishiku_rtst.py,2023-05-05T13:43:27Z,bug fix
+github.com/wenda-LLM/wenda,plugins/zhishiku_rtst.py,2023-05-05T06:32:09Z,yml实现设置
+github.com/wenda-LLM/wenda,plugins/zhishiku_rtst.py,2023-05-02T01:22:47Z,优化记忆增强auto
+github.com/wenda-LLM/wenda,plugins/zhishiku_rtst.py,2023-05-02T00:03:59Z,sogowx知识库
+github.com/wenda-LLM/wenda,plugins/zhishiku_rtst.py,2023-05-01T12:05:44Z,rtst知识库来源支持点击
+github.com/wenda-LLM/wenda,plugins/zhishiku_rtst.py,2023-05-01T11:10:15Z,调整文件名；api调用支持多用户；优化多用户时排队提示逻辑
+github.com/wenda-LLM/wenda,plugins/zhishiku_rtst.py,2023-04-30T10:38:28Z,bug fix
+github.com/wenda-LLM/wenda,plugins/zhishiku_rtst.py,2023-04-29T00:19:20Z,优化rtst逻辑：默认使用名为default的知识库，而不是上次使用的；优化错误提示；完善测试界面功能
+github.com/wenda-LLM/wenda,plugins/zhishiku_rtst.py,2023-04-27T12:47:47Z,rtst支持多库选择；st、rtst支持返回分数
+github.com/wenda-LLM/wenda,plugins/zhishiku_rtst.py,2023-04-25T16:04:22Z,bug fix
+github.com/wenda-LLM/wenda,plugins/zhishiku_rtst.py,2023-04-25T13:05:27Z,新模式rtst
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2024-02-21T08:54:26Z,"Merge pull request #152 from 123456ADWAE2/2
+
+更新代码"
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2024-02-21T08:52:15Z,Update app.py
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2024-02-21T08:48:34Z,Update app.py
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2024-02-21T08:29:20Z,"Merge pull request #150 from 123456ADWAE2/2
+
+[WIP]适配bge-m3和jina"
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2024-02-21T07:33:07Z,"Update app.py
+
+适配jina"
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2024-01-29T06:16:24Z,"Update app.py
+
+解决解码问题"
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-09-30T13:54:20Z,Update model  chatglm2
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-09-11T16:35:19Z,update internlm
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-05-19T17:00:32Z,"	modified:   app.py
+	modified:   docs/update_history.md"
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-04-28T08:34:55Z,Merge branch 'thomas-yanxin:master' into master
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-04-27T17:34:17Z,完善系列问题
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-04-27T02:12:25Z,Update app.py
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-04-26T18:52:00Z,优化Jina Serving API
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-04-26T15:01:34Z,"Merge pull request #42 from AliscaCL/feature/union_offline_online
+
+feat: modify code for union offline and online code which could help …"
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-04-26T13:45:54Z,feat: modify code for union offline and online code which could help user to transfer the project to offline environment only with double run the code on online & offline environment.
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-04-26T13:35:03Z,Update app.py
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-04-26T13:27:31Z,Update app.py
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-04-26T13:20:37Z,Update app.py
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-04-26T03:53:08Z,修复切换模型时可能的潜在问题
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-04-25T17:33:43Z,	modified:   app.py
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-04-25T05:04:57Z,提供单独的config.py配置文件
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-04-24T23:16:57Z,Fix Dockerfile / requirements.txt
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-04-22T10:43:37Z,修复多模型切换的bug
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-04-22T08:10:51Z,Update app.py
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-04-22T08:06:21Z,修改参数不参与重新加载模型
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-04-22T07:48:31Z,修复对不同系列模型推理的Bug
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-04-21T13:10:56Z,支持Vicuna
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-04-21T06:58:51Z,增加对ChatYuan-large-v2的支持
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-04-20T14:16:57Z,"	modified:   app.py
+	modified:   requirements.txt"
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-04-19T21:52:49Z,优化UI
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-04-19T21:40:02Z,优化PDF文件
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-04-19T06:09:40Z,	new file:   test.py
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-04-19T05:00:36Z,fix bug
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-04-19T03:52:42Z,Update app.py
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-04-19T03:45:43Z,Update app.py
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-04-19T03:45:04Z,"Update app.py
+
+修改默认采用ChatGLM-6B-int4 模型"
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-04-19T03:34:33Z,"Update app.py
+
+增加外部访问支持、
+增加ChatGLM-6b-local 本地模型读取路径 /data/chatglm-6b
+修复text2vec 无法加载的错误。"
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-04-17T04:41:28Z,Update app.py
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-04-16T12:44:30Z,fix history bug
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-04-16T07:07:59Z,Update app.py
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-04-16T06:28:43Z,Update app.py
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-04-16T04:14:33Z,Update app.py
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-04-12T03:24:10Z,Update app.py
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-04-10T09:19:20Z,Update app.py
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-04-10T09:18:29Z,Update app.py
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-04-10T09:07:48Z,upgrade
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-04-10T07:23:35Z,upgrade aap.py
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-04-10T06:19:44Z,update
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,app.py,2023-04-10T06:09:10Z,init
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,jina_serving.py,2023-04-28T15:45:49Z,	modified:   jina_serving.py
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,jina_serving.py,2023-04-28T15:43:18Z,更改向量存储为Qdrant
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,jina_serving.py,2023-04-27T17:34:17Z,完善系列问题
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,jina_serving.py,2023-04-26T18:53:17Z,	modified:   jina_serving.py
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,jina_serving.py,2023-04-26T18:52:00Z,优化Jina Serving API
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,jina_serving.py,2023-04-26T03:53:16Z,修复切换模型时可能的潜在问题
+github.com/X-D-Lab/LangChain-ChatGLM-Webui,jina_serving.py,2023-04-25T17:09:50Z,jina serving api
+github.com/NVIDIA/NeMo-Guardrails,nemoguardrails/eval/evaluate_topical.py,2024-02-15T14:09:27Z,Merge branch 'develop' into feature/colang-2.0
+github.com/NVIDIA/NeMo-Guardrails,nemoguardrails/eval/evaluate_topical.py,2024-02-14T21:06:37Z,Add support for `import_paths`.
+github.com/NVIDIA/NeMo-Guardrails,nemoguardrails/eval/evaluate_topical.py,2024-01-30T14:56:04Z,Fix import problems related to SentenceTransformers.
+github.com/NVIDIA/NeMo-Guardrails,nemoguardrails/eval/evaluate_topical.py,2023-12-13T15:38:09Z,Fix `config` parameter for evaluation scripts.
+github.com/NVIDIA/NeMo-Guardrails,nemoguardrails/eval/evaluate_topical.py,2023-10-03T19:22:21Z,Fix sync_wrapper.
+github.com/NVIDIA/NeMo-Guardrails,nemoguardrails/eval/evaluate_topical.py,2023-09-14T14:16:12Z,Fix get_last_bot_utterance_event after event naming changes in last release.
+github.com/NVIDIA/NeMo-Guardrails,nemoguardrails/eval/evaluate_topical.py,2023-07-26T19:04:38Z,"Rename `user_intent` to UMIM event `UserIntent`
+
+Signed-off-by: Severin Klingler <sklingler@nvidia.com>"
+github.com/NVIDIA/NeMo-Guardrails,nemoguardrails/eval/evaluate_topical.py,2023-07-26T19:02:10Z,"Turn `user_said` into UMIM action event `UtteranceUserActionFinished`
+
+Signed-off-by: Severin Klingler <sklingler@nvidia.com>"
+github.com/NVIDIA/NeMo-Guardrails,nemoguardrails/eval/evaluate_topical.py,2023-06-28T20:36:07Z,Fixed bug.
+github.com/NVIDIA/NeMo-Guardrails,nemoguardrails/eval/evaluate_topical.py,2023-06-22T16:58:49Z,Added output predictions helper function for topical rails.
+github.com/NVIDIA/NeMo-Guardrails,nemoguardrails/eval/evaluate_topical.py,2023-06-22T13:04:19Z,"Main change is adding similarity matching for intents in topical rails. Other changes: added random seed, fixed a bug on selecting a balanced test set."
+github.com/NVIDIA/NeMo-Guardrails,nemoguardrails/eval/evaluate_topical.py,2023-06-20T15:59:17Z,Moved the sync_wrapper outside the class definition.
+github.com/NVIDIA/NeMo-Guardrails,nemoguardrails/eval/evaluate_topical.py,2023-06-20T13:25:25Z,Some refactoring and improvements for the topical rails evaluation.
+github.com/NVIDIA/NeMo-Guardrails,nemoguardrails/eval/evaluate_topical.py,2023-06-20T09:54:17Z,Refactored code to use nemoguardrails.eval package that also includes an evaluation typer CLI that is also added to the nemoguardrails CLI.
+github.com/explodinggradients/ragas,src/ragas/embeddings/base.py,2024-02-28T03:22:53Z,"Add support for optional max concurrency (#643)
+
+**Added optional Semaphore-based concurrency control for #642** 
+As for the default value for `max_concurrency`, I don't know the ratio
+of API users vs. local LLM users, so the proposed default is an
+opinionated value of `16`
+* I *think* more people use OpenAI API for now vs. local LLMs, thus
+default is not `-1` (no limit)
+* `16` seems to be reasonably fast and doesn't seem to hit throughput
+limit in my experience
+
+**Tests**
+Embedding for 1k documents finished in <2min and subsequent Testset
+generation for `test_size=1000` proceeding without getting stuck:
+<img width=""693"" alt=""image""
+src=""https://github.com/explodinggradients/ragas/assets/6729737/d83fecc8-a815-43ee-a3b0-3395d7a9d244"">
+
+another 30s passes:
+<img width=""725"" alt=""image""
+src=""https://github.com/explodinggradients/ragas/assets/6729737/d4ab08ba-5a79-45f6-84b1-e563f107d682"">
+
+---------
+
+Co-authored-by: Jithin James <jamesjithin97@gmail.com>"
+github.com/explodinggradients/ragas,src/ragas/embeddings/base.py,2024-02-03T21:58:51Z,"Feat: prompt adaptation for test data generation (#530)
+
+- [x] prompt adaptation for languages
+- [x] Minor bug fixes and assertions
+- [x] JSON safe loading
+
+---------
+
+Co-authored-by: jjmachan <jamesjithin97@gmail.com>"
+github.com/explodinggradients/ragas,src/ragas/embeddings/base.py,2024-02-01T00:21:01Z,feat: configure retries and timeouts with evaluations and testset generators (#534)
+github.com/explodinggradients/ragas,src/ragas/embeddings/base.py,2024-01-28T03:51:15Z,"feat(executor): remove the need to have both sync and async versions of the function (#527)
+
+Unifed the calls to LLM, embeddings and json_loader with the following
+logic
+```py
+if is_async: # just call the async version
+	return await self._asafe_load(text=text, llm=llm, callbacks=callbacks)
+else: # call the sync version inside the event_loop
+	loop = asyncio.get_event_loop()
+	safe_load = partial(
+		self._safe_load, text=text, llm=llm, callbacks=callbacks
+	)
+	return await loop.run_in_executor(
+		None,
+		safe_load,
+	)
+
+```
+### LLM
+```py
+async def generate(
+	self,
+	prompt: PromptValue,
+	n: int = 1,
+	temperature: float = 1e-8,
+	stop: t.Optional[t.List[str]] = None,
+	callbacks: Callbacks = [],
+	is_async: bool = True,
+) -> LLMResult:
+```
+### Embeddings
+```py
+async def embed_texts(
+	self, texts: List[str], is_async: bool = True
+) -> t.List[t.List[float]]:
+```
+### Json Load
+```py
+async def safe_load(
+	self,
+	text: str,
+	llm: BaseRagasLLM,
+	callbacks: Callbacks = None,
+	is_async: bool = True,
+):
+```"
+github.com/explodinggradients/ragas,src/ragas/embeddings/base.py,2024-01-19T02:03:00Z,"fix: clean up embeddings for ragas and add docs for azure embeddings (#477)
+
+- cleanup `RagasBaseEmbeddings` classes
+- added documentation for AzureOpenAI"
+github.com/explodinggradients/ragas,src/ragas/embeddings/base.py,2024-01-04T15:30:46Z,"feat/executor: make ragas faster and more robust to run (#390)
+
+1. async vs threadpool
+2. executor APIs and how to use them
+3. BaseRagasLLM - how generate_text and agenerate_text work - what is
+the diff
+4. change in each metric - this is the most important to get review from
+@ikka because there might be small bugs in calculations I missed - the
+code might be working now but calculation errors can be very bad"
+github.com/explodinggradients/ragas,src/ragas/embeddings/base.py,2024-01-01T15:12:11Z,"feat: Automatic Prompt adaptation [language] (#407)
+
+Automatic prompt adaption for different languages.  
+
+- [x] Add support for all metrics
+- [x] Testing and experimentation
+- [ ] Add docs (with explanation)
+
+To be merged only after #401 
+
+### Usage
+```
+from ragas.metrics import faithfulness
+faithfulness.adapt(""hindi"")
+faithfulness.save()
+```
+
+---------
+
+Co-authored-by: Tino Max <tinothayil@gmail.com>
+Co-authored-by: jjmachan <jamesjithin97@gmail.com>"
+github.com/explodinggradients/ragas,src/ragas/embeddings/base.py,2023-12-14T06:39:58Z,"added class for FastEmbed (#379)
+
+* Added new class for FastEmbed Embeddings"
+github.com/explodinggradients/ragas,src/ragas/embeddings/base.py,2023-11-21T05:18:01Z,fix: openai env var load after init and before score also (#316)
+github.com/explodinggradients/ragas,src/ragas/embeddings/base.py,2023-11-15T10:17:38Z,"feat: add native support for OpenAI and AzureOpenAI (#261)
+
+- Add support for OpenAI and AzureOpenai both embeddings and LLMs
+- rework `RagasLLM` with an async version of generate
+- checks for API_KEYs and tests that ensure it is working"
+github.com/explodinggradients/ragas,src/ragas/embeddings/base.py,2023-11-08T15:15:20Z,"feat: RagasEmbeddings (#232)
+
+Co-authored-by: jjmachan <jamesjithin97@gmail.com>"
+github.com/dot-agent/nextpy,nextpy/ai/models/embedding/huggingface.py,2023-12-30T03:45:06Z,Added modification comment
+github.com/dot-agent/nextpy,nextpy/ai/models/embedding/huggingface.py,2023-12-25T22:10:21Z,Initial commit
+github.com/intel/intel-extension-for-transformers,intel_extension_for_transformers/langchain/embeddings/embeddings.py,2024-01-31T09:18:17Z,Add precommit config (#1216)
+github.com/intel/intel-extension-for-transformers,intel_extension_for_transformers/langchain/embeddings/embeddings.py,2023-11-27T08:38:29Z,"Extend langchain embedding API (#735)
+
+* extend langchain embeddings
+
+Signed-off-by: yuwenzho <yuwen.zhou@intel.com>"
+github.com/amzn/pecos,examples/MACLR/main.py,2021-12-14T18:40:09Z,add MACLR codes (#100)
+github.com/georgia-tech-db/evadb,evadb/functions/sentence_feature_extractor.py,2023-09-05T15:37:44Z,feat: UDF migrates to Function (#1034)
+github.com/amzn/pecos,examples/MACLR/model.py,2021-12-14T18:40:09Z,add MACLR codes (#100)
+github.com/amzn/pecos,examples/MACLR/evaluate.py,2021-12-14T18:40:09Z,add MACLR codes (#100)
+github.com/FrostMiKu/ChatGLM-LangChain,ui.py,2023-04-17T07:55:17Z,with langchain
+github.com/FrostMiKu/ChatGLM-LangChain,ui.py,2023-03-26T13:44:47Z,release
+github.com/liangwq/Chatglm_lora_multi-gpu,APP_example/chat_langchain/huggingface.py,2023-04-07T09:28:21Z,"新增langchain
+
+新增langchain做知识补充提问
+相当于是给chatglm外挂了搜索内容
+chatglm通过在指定知识预内做问题回答
+对于约束严格场景很有用"
+github.com/Azure/azure-sdk-for-python,sdk/ai/azure-ai-resources/azure/ai/resources/_index/_langchain/vendor/embeddings/huggingface.py,2023-11-11T16:10:38Z,"Make index namespace private in azure-ai-resources (#33081)
+
+* rename foler
+
+* update references"
+github.com/microsoft/MM-REACT,langchain/embeddings/huggingface.py,2023-02-21T00:38:43Z,Refactor some loops into list comprehensions (#1185)
+github.com/microsoft/MM-REACT,langchain/embeddings/huggingface.py,2023-02-18T00:14:49Z,instruct embeddings docs (#1131)
+github.com/microsoft/MM-REACT,langchain/embeddings/huggingface.py,2023-02-02T16:44:02Z,"rfc: instruct embeddings (#811)
+
+Co-authored-by: seanaedmiston <seane999@gmail.com>"
+github.com/microsoft/MM-REACT,langchain/embeddings/huggingface.py,2023-01-24T15:01:40Z,"Convert numpy arrays to lists in HuggingFaceEmbeddings (#714)
+
+`SentenceTransformer` returns a NumPy array, not a `List[List[float]]`
+or `List[float]` as specified in the interface of `Embeddings`. That PR
+makes it consistent with the interface."
+github.com/microsoft/MM-REACT,langchain/embeddings/huggingface.py,2022-11-27T08:24:59Z,"Add HuggingFace Hub Embeddings (#125)
+
+Add support for calling HuggingFace embedding models
+using the HuggingFaceHub Inference API. New class mirrors
+the existing HuggingFaceHub LLM implementation. Currently
+only supports 'sentence-transformers' models.
+
+Closes #86"
+github.com/microsoft/MM-REACT,langchain/embeddings/huggingface.py,2022-11-07T13:52:57Z,fix lint (#77)
+github.com/microsoft/MM-REACT,langchain/embeddings/huggingface.py,2022-11-07T13:46:44Z,"Issam/hf embeddings (#68)
+
+Add support of HuggingFace embedding models"
+github.com/Azure/app-service-linux-docs,HowTo/gRPC/Linux/OpenAI/LangChain/PyServer/venv/langchain/embeddings/huggingface.py,2024-02-29T20:19:37Z,adding windows grpc docs
+github.com/MaartenGr/KeyBERT,tests/test_backend.py,2024-02-28T19:51:09Z,Use batch_size parameter with keybert.backend.SentenceTransformerBackend (#210)
+github.com/liangwq/Chatglm_lora_multi-gpu,APP_example/langchain_ChatGLM/chains/local_doc_qa.py,2023-04-25T00:18:45Z,add langchaina local konwledge
+github.com/BodhiSearch/bodhilib,plugins/bodhiext.st/src/bodhiext/st/_st_embedder.py,2024-01-07T06:08:25Z,[Amir] fixing typing errors
+github.com/BodhiSearch/bodhilib,plugins/bodhiext.st/src/bodhiext/st/_st_embedder.py,2024-01-06T07:02:52Z,"[Amir] moving back sentence transformers to plugins directory, resolving mock failures by renaming project for time being"
+github.com/VoltaML/voltaML,voltaml/transformer/backends/st_utils.py,2022-10-22T22:53:37Z,NLP Updates
+github.com/Azure/app-service-linux-docs,HowTo/gRPC/Linux/OpenAI/LangChain/PyServer/venv/Lib/langchain/embeddings/huggingface.py,2024-02-29T20:19:37Z,adding windows grpc docs
+github.com/gh18l/CrawlGPT,langchain/embeddings/huggingface.py,2023-06-08T14:29:50Z,.
+github.com/gh18l/CrawlGPT,langchain/embeddings/huggingface.py,2023-05-25T16:22:45Z,first
+github.com/awa-ai/awadb,awadb/awa_embedding/huggingface.py,2023-07-26T07:00:01Z,Fix some bugs
+github.com/awa-ai/awadb,awadb/awa_embedding/huggingface.py,2023-07-25T04:17:44Z,Support embedding by importing AwaEmbedding
+github.com/awa-ai/awadb,awadb/awa_embedding/huggingface.py,2023-07-24T11:23:37Z,Add AwaEmbedding and LLMEmbedding for users
+github.com/RCGAI/SimplyRetrieve,chat/retrieval/retrieve.py,2023-08-04T02:54:47Z,initial commit
+github.com/836304831/langchain-anal,langchain/embeddings/huggingface.py,2023-07-15T07:32:18Z,init langchain
+github.com/836304831/langchain-anal,langchain/embeddings/self_hosted_hugging_face.py,2023-07-15T07:32:18Z,init langchain
+github.com/microsoft/MM-REACT,langchain/embeddings/self_hosted_hugging_face.py,2023-02-19T17:53:45Z,"Harrison/self hosted runhouse (#1154)
+
+Co-authored-by: Donny Greenberg <dongreenberg2@gmail.com>
+Co-authored-by: John Dagdelen <jdagdelen@users.noreply.github.com>
+Co-authored-by: Harrison Chase <harrisonchase@Harrisons-MBP.attlocal.net>
+Co-authored-by: Andrew White <white.d.andrew@gmail.com>
+Co-authored-by: Peng Qu <82029664+pengqu123@users.noreply.github.com>
+Co-authored-by: Matt Robinson <mthw.wm.robinson@gmail.com>
+Co-authored-by: jeff <tangj1122@gmail.com>
+Co-authored-by: Harrison Chase <harrisonchase@Harrisons-MacBook-Pro.local>
+Co-authored-by: zanderchase <zander@unfold.ag>
+Co-authored-by: Charles Frye <cfrye59@gmail.com>
+Co-authored-by: zanderchase <zanderchase@gmail.com>
+Co-authored-by: Shahriar Tajbakhsh <sh.tajbakhsh@gmail.com>
+Co-authored-by: Stefan Keselj <skeselj@princeton.edu>
+Co-authored-by: Francisco Ingham <fpingham@gmail.com>
+Co-authored-by: Dhruv Anand <105786647+dhruv-anand-aintech@users.noreply.github.com>
+Co-authored-by: cragwolfe <cragcw@gmail.com>
+Co-authored-by: Anton Troynikov <atroyn@users.noreply.github.com>
+Co-authored-by: William FH <13333726+hinthornw@users.noreply.github.com>
+Co-authored-by: Oliver Klingefjord <oliver@klingefjord.com>
+Co-authored-by: blob42 <contact@blob42.xyz>
+Co-authored-by: blob42 <spike@w530>
+Co-authored-by: Enrico Shippole <henryshippole@gmail.com>
+Co-authored-by: Ibis Prevedello <ibiscp@gmail.com>
+Co-authored-by: jped <jonathanped@gmail.com>
+Co-authored-by: Justin Torre <justintorre75@gmail.com>
+Co-authored-by: Ivan Vendrov <ivan@anthropic.com>
+Co-authored-by: Sasmitha Manathunga <70096033+mmz-001@users.noreply.github.com>
+Co-authored-by: Ankush Gola <9536492+agola11@users.noreply.github.com>
+Co-authored-by: Matt Robinson <mrobinson@unstructuredai.io>
+Co-authored-by: Jeff Huber <jeffchuber@gmail.com>
+Co-authored-by: Akshay <64036106+akshayvkt@users.noreply.github.com>
+Co-authored-by: Andrew Huang <jhuang16888@gmail.com>
+Co-authored-by: rogerserper <124558887+rogerserper@users.noreply.github.com>
+Co-authored-by: seanaedmiston <seane999@gmail.com>
+Co-authored-by: Hasegawa Yuya <52068175+Hase-U@users.noreply.github.com>
+Co-authored-by: Ivan Vendrov <ivendrov@gmail.com>
+Co-authored-by: Chen Wu (吴尘) <henrychenwu@cmu.edu>
+Co-authored-by: Dennis Antela Martinez <dennis.antela@gmail.com>
+Co-authored-by: Maxime Vidal <max.vidal@hotmail.fr>
+Co-authored-by: Rishabh Raizada <110235735+rishabh-ti@users.noreply.github.com>"
+github.com/KarelDO/xmc.dspy,src/programs/retriever.py,2024-01-30T03:16:13Z,fix:reproduce embeddings and cacheable url in config
+github.com/KarelDO/xmc.dspy,src/programs/retriever.py,2024-01-29T02:32:43Z,Initial commit
+github.com/liangwq/LLM_StableDiffusion_Studio,langchain_ChatGLM/chains/local_doc_qa.py,2023-04-23T16:08:09Z,add controlnet
+github.com/liangwq/LLM_StableDiffusion_Studio,langchain_ChatGLM/chains/.ipynb_checkpoints/local_doc_qa-checkpoint.py,2023-04-23T16:08:09Z,add controlnet
+github.com/Azure/app-service-linux-docs,HowTo/gRPC/Linux/OpenAI/LangChain/PyServer/venv/langchain/embeddings/self_hosted_hugging_face.py,2024-02-29T20:19:37Z,adding windows grpc docs
+github.com/gh18l/CrawlGPT,langchain/embeddings/self_hosted_hugging_face.py,2023-05-25T16:22:45Z,first
+github.com/liangwq/Chatglm_lora_multi-gpu,APP_example/langchain_ChatGLM/chains/.ipynb_checkpoints/local_doc_qa-checkpoint.py,2023-04-25T00:18:45Z,add langchaina local konwledge
+github.com/e0397123/AM-FM,engines/embedding_models/sbert/make_multilingual.py,2021-02-23T11:48:13Z,add new training code
+github.com/night-chen/ToolQA,benchmark/ReAct/code/tools/text/agenda_retriever.py,2023-07-14T00:40:59Z,add tool implementations and ReAct
+github.com/night-chen/ToolQA,benchmark/ReAct/code/tools/text/scirex_retriever.py,2023-07-14T00:40:59Z,add tool implementations and ReAct
+github.com/Azure/app-service-linux-docs,HowTo/gRPC/Linux/OpenAI/LangChain/PyServer/venv/Lib/langchain/embeddings/self_hosted_hugging_face.py,2024-02-29T20:19:37Z,adding windows grpc docs
+github.com/Koziev/chatbot,ruchatbot/bot/sbert_relevancy_detector.py,2022-11-30T06:52:17Z,pipeline optimization
+github.com/Koziev/chatbot,ruchatbot/bot/sbert_relevancy_detector.py,2022-10-18T16:11:16Z,replacing text-question relevancy model with sentence transformer based one
+github.com/Koziev/chatbot,ruchatbot/bot/sbert_paraphrase_detector.py,2022-10-28T05:39:11Z,enabling new sentence transformer-based paraphrase detection model in chatbot pipeline
+github.com/zwhe99/X-SIR,watermark.py,2024-02-23T11:48:43Z,add files
+github.com/zeus-dev919/sentence-transformers,examples/training/multilingual/make_multilingual.py,2021-09-27T07:00:56Z,revert model names
+github.com/zeus-dev919/sentence-transformers,examples/training/multilingual/make_multilingual.py,2021-09-07T12:46:11Z,update pre-trained model
+github.com/zeus-dev919/sentence-transformers,examples/training/multilingual/make_multilingual.py,2021-06-08T12:08:53Z,update model names to v2 models
+github.com/zeus-dev919/sentence-transformers,examples/training/multilingual/make_multilingual.py,2021-05-18T20:19:41Z,update model name example
+github.com/zeus-dev919/sentence-transformers,examples/training/multilingual/make_multilingual.py,2021-01-02T13:28:56Z,"Merge branch 'per-module-logger' of https://github.com/jmrf/sentence-transformers into dev-0.4.1
+
+# Conflicts:
+#	examples/training/avg_word_embeddings/training_stsbenchmark_avg_word_embeddings.py
+#	examples/training/avg_word_embeddings/training_stsbenchmark_bilstm.py
+#	examples/training/avg_word_embeddings/training_stsbenchmark_bow.py
+#	examples/training/avg_word_embeddings/training_stsbenchmark_cnn.py
+#	examples/training/avg_word_embeddings/training_stsbenchmark_tf-idf_word_embeddings.py
+#	examples/training/data_augmentation/train_sts_indomain_bm25.py
+#	examples/training/data_augmentation/train_sts_indomain_nlpaug.py
+#	examples/training/data_augmentation/train_sts_indomain_semantic.py
+#	examples/training/data_augmentation/train_sts_qqp_crossdomain.py
+#	examples/training/data_augmentation/train_sts_seed_optimization.py
+#	examples/training/distillation/model_distillation.py
+#	examples/training/nli/training_nli.py
+#	examples/training/other/training_batch_hard_trec.py
+#	examples/training/other/training_multi-task.py
+#	examples/training/sts/training_stsbenchmark.py
+#	examples/training/sts/training_stsbenchmark_continue_training.py
+#	requirements.txt
+#	sentence_transformers/SentenceTransformer.py
+#	sentence_transformers/__init__.py
+#	sentence_transformers/datasets/SentenceLabelDataset.py"
+github.com/zeus-dev919/sentence-transformers,examples/training/multilingual/make_multilingual.py,2020-12-23T21:19:15Z,update batch hard example
+github.com/zeus-dev919/sentence-transformers,examples/training/multilingual/make_multilingual.py,2020-12-14T15:33:07Z,per-file logger for all examples
+github.com/zeus-dev919/sentence-transformers,examples/training/multilingual/make_multilingual.py,2020-09-03T06:47:50Z,Update dataset download URL
+github.com/zeus-dev919/sentence-transformers,examples/training/multilingual/make_multilingual.py,2020-08-26T17:46:08Z,Typo
+github.com/zeus-dev919/sentence-transformers,examples/training/multilingual/make_multilingual.py,2020-08-26T17:44:00Z,Bugfix
+github.com/zeus-dev919/sentence-transformers,examples/training/multilingual/make_multilingual.py,2020-08-22T21:52:38Z,Update docs
+github.com/databricks/databricks-ml-examples,llm-models/embedding/bge/bge-large-v1.5/04_fine_tune_embedding.py,2023-11-14T01:42:54Z,Add fine-tuning example for bge-v1.5 from marketplace
+github.com/night-chen/ToolQA,benchmark/chameleon/run_toolqa/tools/text/agenda_retriever.py,2023-08-19T02:34:07Z,update chameleon and llama-2
+github.com/night-chen/ToolQA,benchmark/chameleon/run_toolqa/tools/text/scirex_retriever.py,2023-08-19T02:34:07Z,update chameleon and llama-2
+github.com/SonarSource/python-test-sources,pecos/examples/MACLR/main.py,2022-10-13T13:14:45Z,Add pecos
+github.com/SonarSource/python-test-sources,pecos/examples/MACLR/model.py,2022-10-13T13:14:45Z,Add pecos
+github.com/SonarSource/python-test-sources,pecos/examples/MACLR/evaluate.py,2022-10-13T13:14:45Z,Add pecos
+github.com/LubyRuffy/cheatsheet,ml/sentence_transformers_faiss_simplest_test.py,2024-01-10T13:20:43Z,增加wooyun提取语料库的实验结果。
+github.com/greenplum-db/GreenplumPython,greenplumpython/experimental/embedding.py,2024-01-31T03:33:37Z,"Fix unique key missing problem with search (#232)
+
+When creating embeddings, we store the unique key attnum in pg_options. 
+Previously, the unique key attnum was taken from the original table, so
+the error occurs if the
+embedding table and the original table have a different number or order
+of columns.
+This patch saves the unique key attnum from the embedding table instead."
+github.com/greenplum-db/GreenplumPython,greenplumpython/experimental/embedding.py,2023-12-07T02:38:22Z,"Fix missing unique key when searching embeddings (#226)
+
+Unique key is required when searching embeddings to join the
+embedding table and the original data table before returning the
+results. Previously, search on a dataframe that created from an
+existing table in database failed due to lacking of unique key in the
+dataframe.
+
+This patch fixes the issue by recording the unique key when
+`create_index()` in `pg_class` so that the info can be read when
+`search()`."
+github.com/greenplum-db/GreenplumPython,greenplumpython/experimental/embedding.py,2023-11-23T07:34:02Z,"Support more index types besides ivfflat (#224)
+
+Previously, we only support indexing embeddings using the `ivfflat`
+access method in [pgvector](https://github.com/pgvector/pgvector).
+
+Recently, a new access method `hnsw` has been added to pgvector.
+`hnsw` is believed to be more performant and accurate than `ivfflat`.
+To allow for more flexibility, we add a new parameter `method` to
+allow user to choose which access method to use when creating index.
+
+Also, a new parameter `embedding_dimension` is added to support more
+models, since dimension is required for pgvector to create index.
+
+A new test case for embeddings is added in `tests/test_embedding.py`.
+
+To support `set allow_system_table_mods = on;`, Postgres is upgraded
+from 12 to 13 on CI."
+github.com/greenplum-db/GreenplumPython,greenplumpython/experimental/embedding.py,2023-10-24T08:46:10Z,"Adapt vector modifier to model embedding dimension (#222)
+
+Previously we set the vector modifier fix to 384. This patch
+allows vector modifier to adjust the embedding dimension
+if possible by extracting the appropriate information from 
+the Sentence Transformer's `Models.Pooling` class, 
+otherwise throwing an error."
+github.com/greenplum-db/GreenplumPython,greenplumpython/experimental/embedding.py,2023-10-10T07:55:16Z,"Add tutorial for installing packages on server (#219)
+
+This patch adds a notebook `package.ipynb` on how to install Python
+packages on server without Internet access. In the tutorial, NFS is used
+to share the packages among multiple hosts in the same cluster. This can
+simplify the installation and maintenance process in a distributed env.
+
+This patch also adds warnings to notify that some features are currently
+experimental."
+github.com/greenplum-db/GreenplumPython,greenplumpython/experimental/embedding.py,2023-09-27T01:42:50Z,"Support bulk data loading from client (#217)
+
+Previously, to upload data from client to the database, the only way is
+to call `DataFrame.from_rows()` or `DataFrame.from_columns()`. In this
+way, data will be serialized as part of the query. When data is large,
+the query will become very long and can take large amount of memory.
+
+This patch fixes the issue by uploading the data files to the database
+with `COPY FROM STDIN`. In this way, the query can be kept short. After
+the data files are copied, a UDF is called to parse the files into rows.
+This makes it much easier to support various data formats, inluding the
+unseen ones.
+
+---------
+
+Co-authored-by: yihong0618 <zouzou0208@gmail.com>"
+github.com/greenplum-db/GreenplumPython,greenplumpython/experimental/embedding.py,2023-09-22T23:30:52Z,"Fix missing dependency on segments (#216)
+
+Previsously, to record dependency, we used `UPDATE` in SQL to update
+pg_depend. However, this only took effect on coordinator but not on
+segments. As a result, the embedding index cannot be drop on segments
+even with `DROP CASCADE`.
+
+This patch fixes this issue by calling the C function
+`recordDependencyOn()` with ctypes on all segements including
+coordinator. As a result, `DROP CASCADE` will also clean the embedding
+index on segments."
+github.com/greenplum-db/GreenplumPython,greenplumpython/experimental/embedding.py,2023-08-28T12:11:40Z,"Add module for indexing and searching embeddings (#207)
+
+Vector embeddings are essential for searching unstructured data, such
+as images and texts. Typically, to implement semantic search with
+embeddings, user will need to go through a complex process:
+
+1. Generate embeddings with transformers;
+2. Save the generated embeddings into a table;
+3. Create index on the generated embeddings;
+4. Search for items with most similar embeddings.
+
+To simplify the process, this patch adds a new module that provides
+only two functions: `create_index()` and `search()`. This hides all
+the embedding-related details and enables user to focus only on the
+text or image data that they are really interested in.
+
+---------
+
+Co-authored-by: Ruxue Zeng <zeng_ruxue@126.com>"
+github.com/Exploration-Lab/Shapes-of-Emotion,sentence-transformers/examples/training/multilingual/make_multilingual.py,2021-06-27T07:46:02Z,siamese training code added
+github.com/liteli1987gmail/python_langchain-CN,langchain/embeddings/huggingface.py,2023-06-12T08:07:56Z,项目初始化
+github.com/liteli1987gmail/python_langchain-CN,langchain/embeddings/self_hosted_hugging_face.py,2023-06-12T08:07:56Z,项目初始化
+github.com/thaddavis/python_flask_langchain_open_ai_example,python/langchain/embeddings/huggingface.py,2023-05-08T04:45:39Z,all the cli commands to test a production-grade lambda function
+github.com/thaddavis/python_flask_langchain_open_ai_example,package/langchain/embeddings/huggingface.py,2023-05-08T04:45:39Z,all the cli commands to test a production-grade lambda function
+github.com/thaddavis/python_flask_langchain_open_ai_example,package/langchain/embeddings/huggingface.py,2023-05-07T21:17:30Z,saving progress
+github.com/thaddavis/python_flask_langchain_open_ai_example,package/langchain/embeddings/huggingface.py,2023-04-28T21:34:02Z,initial commit
+github.com/thaddavis/python_flask_langchain_open_ai_example,python/langchain/embeddings/self_hosted_hugging_face.py,2023-05-08T04:45:39Z,all the cli commands to test a production-grade lambda function
+github.com/thaddavis/python_flask_langchain_open_ai_example,package/langchain/embeddings/self_hosted_hugging_face.py,2023-04-28T21:34:02Z,initial commit
+github.com/worm128/AI-YinMei-backup,text-generation-webui/extensions/openai/cache_embedding_model.py,2023-12-20T14:14:22Z,初始化ai
+github.com/GuyTevet/diversity-eval,diversity_metrics.py,2020-07-17T15:26:02Z,added utils.parse_path_list
+github.com/GuyTevet/diversity-eval,diversity_metrics.py,2020-07-13T14:28:18Z,"Firs release - data, run_metrics, run_experiments (only a placeholder)"
+github.com/databricks-industry-solutions/product-search,03_Fine_Tune_Model.py,2023-05-25T22:29:31Z,Update Chroma.from_documents call's parameter names
+github.com/databricks-industry-solutions/product-search,03_Fine_Tune_Model.py,2023-05-25T14:54:16Z,Add sentence_transformers into logged model's packages
+github.com/databricks-industry-solutions/product-search,03_Fine_Tune_Model.py,2023-05-24T21:29:42Z,Add typing related dependency and versions
+github.com/databricks-industry-solutions/product-search,03_Fine_Tune_Model.py,2023-05-24T14:39:13Z,Fix pip dependency; improve serving endpoint create/update code
+github.com/databricks-industry-solutions/product-search,03_Fine_Tune_Model.py,2023-05-08T21:26:57Z,Update notebook with repo links
+github.com/databricks-industry-solutions/product-search,03_Fine_Tune_Model.py,2023-04-18T15:58:11Z,Sample query tweaks
+github.com/databricks-industry-solutions/product-search,03_Fine_Tune_Model.py,2023-04-17T22:56:11Z,Update cluster config in RUNME to unblock it in Azure
+github.com/databricks-industry-solutions/product-search,03_Fine_Tune_Model.py,2023-04-17T19:32:42Z,init commit
+github.com/databricks-industry-solutions/product-search,02_Define_Basic_Search.py,2023-05-25T22:29:31Z,Update Chroma.from_documents call's parameter names
+github.com/databricks-industry-solutions/product-search,02_Define_Basic_Search.py,2023-05-25T14:54:16Z,Add sentence_transformers into logged model's packages
+github.com/databricks-industry-solutions/product-search,02_Define_Basic_Search.py,2023-05-24T21:29:42Z,Add typing related dependency and versions
+github.com/databricks-industry-solutions/product-search,02_Define_Basic_Search.py,2023-05-24T14:39:13Z,Fix pip dependency; improve serving endpoint create/update code
+github.com/databricks-industry-solutions/product-search,02_Define_Basic_Search.py,2023-05-08T21:26:57Z,Update notebook with repo links
+github.com/databricks-industry-solutions/product-search,02_Define_Basic_Search.py,2023-04-18T15:58:11Z,Sample query tweaks
+github.com/databricks-industry-solutions/product-search,02_Define_Basic_Search.py,2023-04-17T22:56:11Z,Update cluster config in RUNME to unblock it in Azure
+github.com/databricks-industry-solutions/product-search,02_Define_Basic_Search.py,2023-04-17T19:32:42Z,init commit
+github.com/nestauk/innovation_sweet_spots,innovation_sweet_spots/utils/embeddings_utils.py,2022-12-16T18:15:00Z,"[204] Optimal clustering parameters (#206)
+
+* Remove repitition from Vectors init and fix to wor with no vectors
+
+* Remove print statement
+
+* Simplify add_vectors
+
+* Remove unused variable
+
+* Add kmeans and grid search functions
+
+* Add bool for hdbscan clustering
+
+* Add highest_silhouette_model_params
+
+* Add notebook that uses new cluster functions
+
+* Speed up param_grid_search
+
+* added a visualisation of the optimal cluster
+
+* added a visualisation of the optimal cluster
+
+* Have separate grid search functions for Kmeans and HDBSCAN and add random state
+
+* Update example notebook to use new functions
+
+* Update functions to allow for noise labels
+
+* Update example notebook to use have_noise_labels parameter
+
+Co-authored-by: beingkk <kandersk@gmail.com>
+Co-authored-by: Karlis Kanders <beingkk@users.noreply.github.com>"
+github.com/nestauk/innovation_sweet_spots,innovation_sweet_spots/utils/embeddings_utils.py,2022-12-14T14:15:30Z,"[162] Find OpenAlex concepts related to food tech (#167)
+
+* added notebook and utils to query openalex concepts
+
+* NIHR getters + functions for loading/saving from S3
+
+* Add openalex concept notebook for all terms
+
+Co-authored-by: dede95 <adotu95@gmail.com>"
+github.com/nestauk/innovation_sweet_spots,innovation_sweet_spots/utils/embeddings_utils.py,2022-07-27T10:43:15Z,"[149] Granular food tech investments categories (#154)
+
+* script to generate label embeddings
+
+* exploring embeddings and labels
+
+* checking labels
+
+* granular category support
+
+* figure functions for refinement notebook
+
+* deeper dive
+
+* figures for workshop
+
+* exporting companies to check"
+github.com/nestauk/innovation_sweet_spots,innovation_sweet_spots/utils/embeddings_utils.py,2022-06-28T14:42:01Z,"[115] Parenting company exploration (#118)
+
+* exploration notebook
+
+* filtering keywords
+
+* selecting companies and clustering
+
+* renaming files
+
+* updated tokenisation output file name
+
+* brand aligned plotting utils
+
+* finishing a suite of basic analyses and graphs
+
+* stashing changes
+
+* reviewed companies
+
+* exploding funding rounds
+
+* pulling out VCs
+
+* stashing changes
+
+* adjusted filenames
+
+* getting tables
+
+* vc analysis
+
+* parenting futures article"
+github.com/nestauk/innovation_sweet_spots,innovation_sweet_spots/utils/embeddings_utils.py,2022-06-17T09:55:08Z,"[148] Food tech rapid exploration (#153)
+
+* rapid exploration
+
+* rapid insights and landscape
+
+* adjusting utils
+
+* rapid exploration"
+github.com/nestauk/innovation_sweet_spots,innovation_sweet_spots/analysis/notebooks/y2023_childcare/03_cb_embeddings.py,2023-07-21T16:32:36Z,"[241] Childcare investments (#215)
+
+* wrangling holoniq taxonomy
+
+* merging cb data with holoniq companies
+
+* processing company descriptions
+
+* compiling initial list of companies
+
+* childcare startups
+
+* sifting CB
+
+* updating list_v2
+
+* changing folder names
+
+* pipeline to label companies using chatgpt api
+
+* openai labelling
+
+* training subtheme model
+
+* test aws
+
+* labelling subthemes
+
+* descriptive analysis
+
+* descriptive analysis
+
+* final article analysis
+
+* final charts
+
+* syncing notebooks"
+github.com/nestauk/innovation_sweet_spots,innovation_sweet_spots/analysis/notebooks/y2023_childcare/06_aligning_taxonomies.py,2023-07-21T16:32:36Z,"[241] Childcare investments (#215)
+
+* wrangling holoniq taxonomy
+
+* merging cb data with holoniq companies
+
+* processing company descriptions
+
+* compiling initial list of companies
+
+* childcare startups
+
+* sifting CB
+
+* updating list_v2
+
+* changing folder names
+
+* pipeline to label companies using chatgpt api
+
+* openai labelling
+
+* training subtheme model
+
+* test aws
+
+* labelling subthemes
+
+* descriptive analysis
+
+* descriptive analysis
+
+* final article analysis
+
+* final charts
+
+* syncing notebooks"
+github.com/dDua/succesive_prompting,eluther_task/cot_drop.py,2022-12-08T13:14:02Z,fix whitespace
+github.com/dDua/succesive_prompting,eluther_task/cot_drop.py,2022-12-08T13:09:40Z,add task files
+github.com/allenai/open-mds,src/open_mds/perturbations.py,2022-12-08T23:09:13Z,"Remove remaining reference to ""worst-case"""
+github.com/allenai/open-mds,src/open_mds/perturbations.py,2022-11-30T18:17:19Z,Rename src dir
+github.com/IAAR-Shanghai/CRUD_RAG,src/embeddings/base.py,2024-01-31T12:06:58Z,init
+github.com/bentrevett/lexisearch,query_index.py,2022-10-26T20:20:31Z,fixed query to use k argument
+github.com/bentrevett/lexisearch,query_index.py,2022-10-26T20:14:44Z,reformat to get video title
+github.com/bentrevett/lexisearch,query_index.py,2022-10-26T18:57:24Z,add query arg
+github.com/bentrevett/lexisearch,query_index.py,2022-10-25T22:20:48Z,format w/ isort and black
+github.com/bentrevett/lexisearch,query_index.py,2022-10-25T22:14:46Z,added file for querying index
+github.com/bentrevett/lexisearch,create_index.py,2022-10-25T22:20:48Z,format w/ isort and black
+github.com/bentrevett/lexisearch,create_index.py,2022-10-25T22:14:34Z,added file for creating faiss index
+github.com/danilodiez/neo4j-llms,api/llm-api/lib/python3.10/site-packages/langchain/embeddings/huggingface.py,2023-09-26T12:38:02Z,connect neo4j and retrieve info with the LLM
+github.com/danilodiez/neo4j-llms,api/llm-api/lib/python3.10/site-packages/langchain/embeddings/self_hosted_hugging_face.py,2023-09-26T12:38:02Z,connect neo4j and retrieve info with the LLM
+github.com/jasonacox/TinyLLM,chatbot/server-flask.py,2024-02-11T22:31:41Z,Merge branch 'main' into fastapi
+github.com/jasonacox/TinyLLM,chatbot/server-flask.py,2024-02-11T22:25:49Z,v0.11.4 Flask udates
+github.com/jasonacox/TinyLLM,chatbot/server-flask.py,2024-02-11T07:18:42Z,Port to FastAPI #1
+github.com/ML-Recipes/BERT-FAQ,faq_bert.py,2021-04-01T09:30:22Z,Update import CrossEncoder class from sentence-transformers
+github.com/ML-Recipes/BERT-FAQ,faq_bert.py,2021-03-15T09:09:16Z,Refactor checking loss type in FAQ_BERT model prediction
+github.com/ML-Recipes/BERT-FAQ,faq_bert.py,2021-03-02T14:45:50Z,"Add scripts to generate Elasticsearch, BERT and top-k reranked results"
+github.com/prasaar/aiwhispr,python/llm-service/libSbertLlmService.py,2023-10-18T13:16:14Z,suppprt for text chunking.
+github.com/prasaar/aiwhispr,python/llm-service/libSbertLlmService.py,2023-09-22T03:44:33Z,Support for testConnect (First Batch)
+github.com/prasaar/aiwhispr,python/llm-service/libSbertLlmService.py,2023-09-09T14:37:26Z,Support llm_service_config passes as a dict
+github.com/prasaar/aiwhispr,python/llm-service/libSbertLlmService.py,2023-08-27T08:26:24Z,Support for spawning multiple processes for indexing
+github.com/prasaar/aiwhispr,python/llm-service/libSbertLlmService.py,2023-08-08T08:16:08Z,added libary for LLM Sbert Model
+github.com/aws-solutions-library-samples/guidance-for-custom-search-of-an-enterprise-knowledge-base-on-aws,lambda/langchain_processor_layer/python/langchain/embeddings/huggingface.py,2023-10-29T13:52:50Z,v3 debug branch init
+github.com/aws-solutions-library-samples/guidance-for-custom-search-of-an-enterprise-knowledge-base-on-aws,lambda/langchain_processor_layer/python/langchain/embeddings/huggingface.py,2023-08-21T04:21:56Z,add llama2 function
+github.com/aws-solutions-library-samples/guidance-for-custom-search-of-an-enterprise-knowledge-base-on-aws,lambda/langchain_processor_layer/python/langchain/embeddings/self_hosted_hugging_face.py,2023-10-29T13:52:50Z,v3 debug branch init
+github.com/aws-solutions-library-samples/guidance-for-custom-search-of-an-enterprise-knowledge-base-on-aws,lambda/langchain_processor_layer/python/langchain/embeddings/self_hosted_hugging_face.py,2023-08-21T04:21:56Z,add llama2 function
+github.com/Mickls/knowledge_with_chatglm,knowledge_query.py,2023-04-18T07:51:09Z,Initial commit
+github.com/MoroccoAI/2023-GenAI-Hackathon,Neural-Net-Ninjas/src/venv/Lib/site-packages/langchain_community/embeddings/huggingface.py,2023-12-17T20:17:57Z,upload
+github.com/MoroccoAI/2023-GenAI-Hackathon,Neural-Net-Ninjas/src/venv/Lib/site-packages/langchain_community/embeddings/self_hosted_hugging_face.py,2023-12-17T20:17:57Z,upload
+github.com/chiayewken/sutd-materials,deep_learning/project/embedding.py,2020-08-02T03:16:16Z,"Update for AI, NLP, DL, CV coursework"
+github.com/casia22/npc-engine,release/windows_ver/python_lib/python-3.9.6-embed-amd64/lib/site-packages/langchain/embeddings/huggingface.py,2023-08-12T10:44:40Z,[add]windows版本支持
+github.com/casia22/npc-engine,release/windows_ver/python_lib/python-3.9.6-embed-amd64/lib/site-packages/langchain/embeddings/self_hosted_hugging_face.py,2023-08-12T10:44:40Z,[add]windows版本支持
+github.com/VK-Ant/PDF_CSV_Based_ChatBot_With_Translator_Using_Streamlit,pdfchatbot_streamlit/chatbot_env/lib/python3.9/site-packages/langchain/embeddings/huggingface.py,2023-06-04T09:32:20Z,chatbot initial setup
+github.com/VK-Ant/PDF_CSV_Based_ChatBot_With_Translator_Using_Streamlit,pdfchatbot_streamlit/chatbot_env/lib/python3.9/site-packages/langchain/embeddings/self_hosted_hugging_face.py,2023-06-04T09:32:20Z,chatbot initial setup
+github.com/bergos/embedding-server,app/load_transformers.py,2023-04-24T21:45:55Z,initial commit
+github.com/MichiganNLP/In-the-wild-QA,src/src/closest_rtr/closest_rtr.py,2023-03-16T20:57:01Z,Fix answer field name for some baselines
+github.com/MichiganNLP/In-the-wild-QA,src/src/closest_rtr/closest_rtr.py,2023-03-16T20:06:07Z,Make IoUF1 return the result for multiple IoU thresholds and add Average Precision
+github.com/MichiganNLP/In-the-wild-QA,src/src/closest_rtr/closest_rtr.py,2022-04-15T19:52:32Z,Fix Closest RTR baseline
+github.com/MichiganNLP/In-the-wild-QA,src/src/closest_rtr/closest_rtr.py,2022-04-15T19:37:50Z,Reuse the PL module and metrics for the simple baselines
+github.com/MichiganNLP/In-the-wild-QA,src/src/closest_rtr/closest_rtr.py,2022-04-15T00:01:21Z,Fix the tokenizer
+github.com/MichiganNLP/In-the-wild-QA,src/src/closest_rtr/closest_rtr.py,2022-04-14T22:13:48Z,Fix the closest question baseline
+github.com/MichiganNLP/In-the-wild-QA,src/src/closest_rtr/closest_rtr.py,2022-04-14T14:12:37Z,Simplify __main__.py
+github.com/MichiganNLP/In-the-wild-QA,src/src/closest_rtr/closest_rtr.py,2022-04-13T17:26:34Z,Fix __main__.py
+github.com/MichiganNLP/In-the-wild-QA,src/src/closest_rtr/closest_rtr.py,2022-04-06T20:17:34Z,Add the metrics to be computed during training
+github.com/MichiganNLP/In-the-wild-QA,src/src/closest_rtr/closest_rtr.py,2022-02-21T22:22:26Z,Fix type of index
+github.com/MichiganNLP/In-the-wild-QA,src/src/closest_rtr/closest_rtr.py,2022-02-18T21:37:35Z,Add some typing and refactor
+github.com/MichiganNLP/In-the-wild-QA,src/src/closest_rtr/closest_rtr.py,2022-02-17T16:56:14Z,Updated script to work with modified version of the collected data
+github.com/MichiganNLP/In-the-wild-QA,src/src/closest_rtr/closest_rtr.py,2021-12-15T09:01:26Z,Optimize imports
+github.com/MichiganNLP/In-the-wild-QA,src/src/closest_rtr/closest_rtr.py,2021-12-10T21:28:40Z,WIP
+github.com/MichiganNLP/In-the-wild-QA,src/src/closest_rtr/closest_rtr.py,2021-12-10T19:55:32Z,WIP
+github.com/MichiganNLP/In-the-wild-QA,src/src/closest_rtr/closest_rtr.py,2021-10-14T18:57:17Z,Refactored the src directory
+github.com/Becomebright/GroundVQA,eval.py,2024-02-25T06:25:44Z,The initial release

@@ -1,0 +1,26 @@
+✱ 6 results for "context:global select:file visibility:public count:all lang:Python content:'import pyannote' AND from_pretrained\(" in 2.972s
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/pyannote/pyannote-audio/-/blob/pyannote/audio/models/embedding/wespeaker/convert.py)
+github.com/pyannote/pyannote-audio › convert.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Softcatala/whisper-ctranslate2/-/blob/src/whisper_ctranslate2/diarization.py)
+github.com/Softcatala/whisper-ctranslate2 › diarization.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mochan-b/whisper_pyannote_fusion/-/blob/whisper_pyannote_fusion/whisper_pyannote_fusion.py)
+github.com/mochan-b/whisper_pyannote_fusion › whisper_pyannote_fusion.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/asyml/forte/-/blob/examples/audio/speaker_segmentation_pipeline.py)
+github.com/asyml/forte › speaker_segmentation_pipeline.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NINAnor/ecoVAD/-/blob/anonymise_data.py)
+github.com/NINAnor/ecoVAD › anonymise_data.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mlrun/functions/-/blob/pyannote_audio/pyannote_audio.py)
+github.com/mlrun/functions › pyannote_audio.py (0 matches)
+--------------------------------------------------------------------------------
+

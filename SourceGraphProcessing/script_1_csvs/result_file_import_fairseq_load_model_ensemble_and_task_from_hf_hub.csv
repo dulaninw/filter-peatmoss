@@ -1,0 +1,174 @@
+✱ 43 results for "context:global select:file visibility:public count:all lang:Python content:'import fairseq' AND load_model_ensemble_and_task_from_hf_hub\(" in 7.621s
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/facebookresearch/fairseq/-/blob/fairseq/checkpoint_utils.py)
+github.com/facebookresearch/fairseq › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/freewym/espresso/-/blob/fairseq/checkpoint_utils.py)
+github.com/freewym/espresso › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/microsoft/NeuralSpeech/-/blob/VideoDubber/fairseq/checkpoint_utils.py)
+github.com/microsoft/NeuralSpeech › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/OFA-Sys/ONE-PEACE/-/blob/fairseq/fairseq/checkpoint_utils.py)
+github.com/OFA-Sys/ONE-PEACE › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Victorwz/LongMem/-/blob/fairseq/fairseq/checkpoint_utils.py)
+github.com/Victorwz/LongMem › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/gordicaleksa/Open-NLLB/-/blob/fairseq/checkpoint_utils.py)
+github.com/gordicaleksa/Open-NLLB › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/princeton-nlp/DinkyTrain/-/blob/fairseq/checkpoint_utils.py)
+github.com/princeton-nlp/DinkyTrain › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/thu-coai/DA-Transformer/-/blob/fairseq/checkpoint_utils.py)
+github.com/thu-coai/DA-Transformer › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/gonglinyuan/metro_t0/-/blob/training/fairseq/checkpoint_utils.py)
+github.com/gonglinyuan/metro_t0 › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/jungokasai/twist_decoding/-/blob/fairseq/fairseq/checkpoint_utils.py)
+github.com/jungokasai/twist_decoding › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/LUMIA-Group/FourierTransformer/-/blob/Summarization/fairseq/checkpoint_utils.py)
+github.com/LUMIA-Group/FourierTransformer › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/ChenxinAn-fdu/CoNT/-/blob/fairseq/checkpoint_utils.py)
+github.com/ChenxinAn-fdu/CoNT › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/chenllliang/ParetoMNMT/-/blob/fairseq/fairseq/checkpoint_utils.py)
+github.com/chenllliang/ParetoMNMT › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/imatge-upc/sign-topic/-/blob/fairseq/checkpoint_utils.py)
+github.com/imatge-upc/sign-topic › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/SillyTavern/SillyTavern-extras/-/blob/modules/voice_conversion/fairseq/checkpoint_utils.py)
+github.com/SillyTavern/SillyTavern-extras › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/zjwang21/mix-phoneme-bert/-/blob/fairseq/fairseq/checkpoint_utils.py)
+github.com/zjwang21/mix-phoneme-bert › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/StrongResearch/isc-demos/-/blob/fairseq/fairseq/checkpoint_utils.py)
+github.com/StrongResearch/isc-demos › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JeremyXSC/DMF/-/blob/fairseq/fairseq/checkpoint_utils.py)
+github.com/JeremyXSC/DMF › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Rongjiehuang/TranSpeech/-/blob/fairseq/checkpoint_utils.py)
+github.com/Rongjiehuang/TranSpeech › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/epfml/pam/-/blob/submodules/fairseq/fairseq/checkpoint_utils.py)
+github.com/epfml/pam › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/TakHemlata/SSL_Anti-spoofing/-/blob/fairseq-a54021305d6b3c4c5959ac9395135f63202db8f1/fairseq/checkpoint_utils.py)
+github.com/TakHemlata/SSL_Anti-spoofing › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/chenllliang/Gradient-Vaccine/-/blob/fairseq/fairseq/checkpoint_utils.py)
+github.com/chenllliang/Gradient-Vaccine › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/fe1ixxu/Intra-Distillation/-/blob/Machine_Translation/fairseq/checkpoint_utils.py)
+github.com/fe1ixxu/Intra-Distillation › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/UncleTensor/AudioSubnet/-/blob/fseq/fairseq/checkpoint_utils.py)
+github.com/UncleTensor/AudioSubnet › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/alibaba/translation-suggestion-psgd/-/blob/fairseq/checkpoint_utils.py)
+github.com/alibaba/translation-suggestion-psgd › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/jungokasai/beam_with_patience/-/blob/fairseq/fairseq/checkpoint_utils.py)
+github.com/jungokasai/beam_with_patience › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/hadasah/btm/-/blob/fairseq/fairseq/checkpoint_utils.py)
+github.com/hadasah/btm › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/demelin/transformer_lexical_shortcuts/-/blob/fairseq/fairseq/checkpoint_utils.py)
+github.com/demelin/transformer_lexical_shortcuts › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/lsj2408/Graphormer-GD/-/blob/engine/fairseq/checkpoint_utils.py)
+github.com/lsj2408/Graphormer-GD › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/gonglinyuan/ast_t5/-/blob/training/fairseq/checkpoint_utils.py)
+github.com/gonglinyuan/ast_t5 › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JeanKaddour/lawa/-/blob/bert/fairseq/fairseq/checkpoint_utils.py)
+github.com/JeanKaddour/lawa › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mcao516/rej-summ/-/blob/fairseq/checkpoint_utils.py)
+github.com/mcao516/rej-summ › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/gpengzhi/Bi-SimCut/-/blob/fairseq/fairseq/checkpoint_utils.py)
+github.com/gpengzhi/Bi-SimCut › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/0nutation/DUB/-/blob/fairseq/checkpoint_utils.py)
+github.com/0nutation/DUB › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/keyonvafa/career-code/-/blob/fairseq/fairseq/checkpoint_utils.py)
+github.com/keyonvafa/career-code › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/ictnlp/DASpeech/-/blob/fairseq/fairseq/checkpoint_utils.py)
+github.com/ictnlp/DASpeech › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Ascend/ModelZoo-PyTorch/-/blob/PyTorch/contrib/audio/wav2vec2.0/fairseq/checkpoint_utils.py)
+github.com/Ascend/ModelZoo-PyTorch › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Ascend/ModelZoo-PyTorch/-/blob/PyTorch/built-in/nlp/Data2vec_for_PyTorch/fairseq/checkpoint_utils.py)
+github.com/Ascend/ModelZoo-PyTorch › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Ascend/ModelZoo-PyTorch/-/blob/PyTorch/built-in/nlp/Scaling-nmt_for_Pytorch/fairseq/checkpoint_utils.py)
+github.com/Ascend/ModelZoo-PyTorch › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Ascend/ModelZoo-PyTorch/-/blob/PyTorch/built-in/nlp/Fairseq_Transformer_wmt18_for_PyTorch/fairseq/checkpoint_utils.py)
+github.com/Ascend/ModelZoo-PyTorch › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/MANGA-UOFA/NAUS/-/blob/fairseq/checkpoint_utils.py)
+github.com/MANGA-UOFA/NAUS › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/tencent-ailab/TriNet/-/blob/fairseq/checkpoint_utils.py)
+github.com/tencent-ailab/TriNet › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NLP2CT/kNN-TL/-/blob/kNN-TL/fairseq/checkpoint_utils.py)
+github.com/NLP2CT/kNN-TL › checkpoint_utils.py (0 matches)
+--------------------------------------------------------------------------------
+

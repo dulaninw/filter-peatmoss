@@ -1,0 +1,134 @@
+ ✱ 33 results for "context:global select:file visibility:public count:all lang:Python content:'import allennlp' AND from_path\(" in 3.311s
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/allenai/RL4LMs/-/blob/rl4lms/envs/text_generation/summ_metrics/summa_c.py)
+github.com/allenai/RL4LMs › summa_c.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Leezekun/Directional-Stimulus-Prompting/-/blob/rl4lms/envs/text_generation/summ_metrics/summa_c.py)
+github.com/Leezekun/Directional-Stimulus-Prompting › summa_c.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/feyzaakyurek/rl4f/-/blob/rl4lms/envs/text_generation/summ_metrics/summa_c.py)
+github.com/feyzaakyurek/rl4f › summa_c.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/jiacheng-xu/neu-compression-sum/-/blob/depricated/allennlp_cont_parser.py)
+github.com/jiacheng-xu/neu-compression-sum › allennlp_cont_parser.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/kajyuuen/allennlp-book/-/blob/mlflow/scripts/train.py)
+github.com/kajyuuen/allennlp-book › train.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/zhjohnchan/PTUnifier/-/blob/ptunifier/metrics/jb_scorers/RadGraph/allennlp_models/rc/tools/transformer_qa.py)
+github.com/zhjohnchan/PTUnifier › transformer_qa.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/martiansideofthemoon/longeval-summarization/-/blob/longeval/linkage/summac/model_summac.py)
+github.com/martiansideofthemoon/longeval-summarization › model_summac.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/basel-a/SMET/-/blob/parse_class.py)
+github.com/basel-a/SMET › parse_class.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/archiki/ReCEval/-/blob/evaluate_receval.py)
+github.com/archiki/ReCEval › evaluate_receval.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/AidaAmini/DyGIE-MECHANIC/-/blob/eval_utils.py)
+github.com/AidaAmini/DyGIE-MECHANIC › eval_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/CharlotteJackson/DC_Crash_Bot/-/blob/scripts/sentiment_class.py)
+github.com/CharlotteJackson/DC_Crash_Bot › sentiment_class.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/microsoft/compositional-generalization-span-level-attention/-/blob/text2sql_experiments/text2sql/data/dataset_readers/dataset_utils/span_utils.py)
+github.com/microsoft/compositional-generalization-span-level-attention › span_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/seq-to-mind/coref_dial_summ/-/blob/dialogue_coreference/dialogue_coreference.py)
+github.com/seq-to-mind/coref_dial_summ › dialogue_coreference.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/IreneZihuiLi/EHRKit-2022/-/blob/allennlp/loader.py)
+github.com/IreneZihuiLi/EHRKit-2022 › loader.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/IreneZihuiLi/EHRKit-2022/-/blob/allennlp/elmo-ner.py)
+github.com/IreneZihuiLi/EHRKit-2022 › elmo-ner.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/kasnerz/zeroshot-d2t-pipeline/-/blob/wikifluent/generate_examples.py)
+github.com/kasnerz/zeroshot-d2t-pipeline › generate_examples.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/thongnt99/acl22-depression-phq9/-/blob/prepare_data/filter_symptoms.py)
+github.com/thongnt99/acl22-depression-phq9 › filter_symptoms.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/huggingface/api-inference-community/-/blob/docker_images/allennlp/app/pipelines/question_answering.py)
+github.com/huggingface/api-inference-community › question_answering.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/georgetown-cset/ai-relevant-papers/-/blob/predict_wos.py)
+github.com/georgetown-cset/ai-relevant-papers › predict_wos.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/georgetown-cset/ai-relevant-papers/-/blob/evaluate_scibert.py)
+github.com/georgetown-cset/ai-relevant-papers › evaluate_scibert.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/MTTeql/MT-Teql/-/blob/nlp_utils.py)
+github.com/MTTeql/MT-Teql › nlp_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Wendy-Xiao/chatgpt_editing_summ/-/blob/RL4LMs/rl4lms/envs/text_generation/summ_metrics/summa_c.py)
+github.com/Wendy-Xiao/chatgpt_editing_summ › summa_c.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/sejaldua/IBM-research-challenge/-/blob/NLP_models/identify_cancer.py)
+github.com/sejaldua/IBM-research-challenge › identify_cancer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/sejaldua/IBM-research-challenge/-/blob/NLP_models/classify_study_type.py)
+github.com/sejaldua/IBM-research-challenge › classify_study_type.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Slash0BZ/speaker-identification/-/blob/code/extraction/run_coref_gutenberg.py)
+github.com/Slash0BZ/speaker-identification › run_coref_gutenberg.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/CogComp/Event_Process_Typing/-/blob/utils/data.py)
+github.com/CogComp/Event_Process_Typing › data.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/asyml/forte-wrappers/-/blob/tests/wrappers/allennlp_processors_test.py)
+github.com/asyml/forte-wrappers › allennlp_processors_test.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/arthurdeschamps/question-generation-nus-ids/-/blob/models/sg_dqg.py)
+github.com/arthurdeschamps/question-generation-nus-ids › sg_dqg.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/airbert-vln/bnb-dataset/-/blob/perturbate_dataset.py)
+github.com/airbert-vln/bnb-dataset › perturbate_dataset.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/isaacmg/ml_serving_flask/-/blob/allen_simple.py)
+github.com/isaacmg/ml_serving_flask › allen_simple.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/ihsgnef/pathologies/-/blob/input_reduction.py)
+github.com/ihsgnef/pathologies › input_reduction.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/ihsgnef/pathologies/-/blob/input_replacement.py)
+github.com/ihsgnef/pathologies › input_replacement.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/xbmxb/RAG-query-rewriting/-/blob/rl/RL4LMs/rl4lms/envs/text_generation/summ_metrics/summa_c.py)
+github.com/xbmxb/RAG-query-rewriting › summa_c.py (0 matches)
+--------------------------------------------------------------------------------
+

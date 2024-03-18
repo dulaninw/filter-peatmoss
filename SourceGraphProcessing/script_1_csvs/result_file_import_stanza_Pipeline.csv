@@ -1,0 +1,1638 @@
+✱ 409 results for "context:global select:file visibility:public count:all lang:Python content:'import stanza' AND Pipeline\(" in 4.702s
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/demo/semgrex.py)
+github.com/stanfordnlp/stanza › semgrex.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/demo/pipeline_demo.py)
+github.com/stanfordnlp/stanza › pipeline_demo.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/server/semgrex.py)
+github.com/stanfordnlp/stanza › semgrex.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/models/mwt/utils.py)
+github.com/stanfordnlp/stanza › utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/server/ud_enhancer.py)
+github.com/stanfordnlp/stanza › ud_enhancer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/server/tokensregex.py)
+github.com/stanfordnlp/stanza › tokensregex.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/pipeline/demo/demo_server.py)
+github.com/stanfordnlp/stanza › demo_server.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/models/constituency_parser.py)
+github.com/stanfordnlp/stanza › constituency_parser.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/server/dependency_converter.py)
+github.com/stanfordnlp/stanza › dependency_converter.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/utils/datasets/ner/convert_amt.py)
+github.com/stanfordnlp/stanza › convert_amt.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/utils/visualization/semgrex_app.py)
+github.com/stanfordnlp/stanza › semgrex_app.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/utils/datasets/ner/misc_to_date.py)
+github.com/stanfordnlp/stanza › misc_to_date.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/utils/datasets/ner/convert_bsnlp.py)
+github.com/stanfordnlp/stanza › convert_bsnlp.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/models/tokenization/tokenize_files.py)
+github.com/stanfordnlp/stanza › tokenize_files.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/utils/datasets/ner/convert_my_ucsy.py)
+github.com/stanfordnlp/stanza › convert_my_ucsy.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/utils/datasets/ner/convert_hy_armtdp.py)
+github.com/stanfordnlp/stanza › convert_hy_armtdp.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/AIGC-Audio/AudioGPT/-/blob/NeuralSeq/modules/syntaspeech/syntactic_graph_buider.py)
+github.com/AIGC-Audio/AudioGPT › syntactic_graph_buider.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/utils/datasets/constituency/selftrain.py)
+github.com/stanfordnlp/stanza › selftrain.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/utils/visualization/ner_visualization.py)
+github.com/stanfordnlp/stanza › ner_visualization.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/utils/datasets/coref/convert_ontonotes.py)
+github.com/stanfordnlp/stanza › convert_ontonotes.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/utils/visualization/semgrex_visualizer.py)
+github.com/stanfordnlp/stanza › semgrex_visualizer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/utils/datasets/sentiment/process_utils.py)
+github.com/stanfordnlp/stanza › process_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/utils/datasets/sentiment/process_scare.py)
+github.com/stanfordnlp/stanza › process_scare.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/utils/datasets/sentiment/process_corona.py)
+github.com/stanfordnlp/stanza › process_corona.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/utils/datasets/constituency/tokenize_wiki.py)
+github.com/stanfordnlp/stanza › tokenize_wiki.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/utils/datasets/sentiment/add_constituency.py)
+github.com/stanfordnlp/stanza › add_constituency.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/modelscope/modelscope/-/blob/modelscope/preprocessors/nlp/space_T_en/fields/common_utils.py)
+github.com/modelscope/modelscope › common_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/utils/datasets/constituency/convert_it_turin.py)
+github.com/stanfordnlp/stanza › convert_it_turin.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/utils/datasets/sentiment/process_es_tass2020.py)
+github.com/stanfordnlp/stanza › process_es_tass2020.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/utils/datasets/sentiment/process_ren_chinese.py)
+github.com/stanfordnlp/stanza › process_ren_chinese.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/utils/visualization/dependency_visualization.py)
+github.com/stanfordnlp/stanza › dependency_visualization.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/utils/datasets/constituency/selftrain_vi_quad.py)
+github.com/stanfordnlp/stanza › selftrain_vi_quad.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/utils/datasets/sentiment/process_usage_german.py)
+github.com/stanfordnlp/stanza › process_usage_german.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/utils/datasets/sentiment/process_it_sentipolc16.py)
+github.com/stanfordnlp/stanza › process_it_sentipolc16.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/utils/datasets/sentiment/process_vsfc_vietnamese.py)
+github.com/stanfordnlp/stanza › process_vsfc_vietnamese.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/models/constituency/score_converted_dependencies.py)
+github.com/stanfordnlp/stanza › score_converted_dependencies.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/utils/datasets/sentiment/convert_italian_poetry_classification.py)
+github.com/stanfordnlp/stanza › convert_italian_poetry_classification.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/tests/mwt/test_utils.py)
+github.com/stanfordnlp/stanza › test_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/tests/common/test_doc.py)
+github.com/stanfordnlp/stanza › test_doc.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/tests/pipeline/test_core.py)
+github.com/stanfordnlp/stanza › test_core.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/tests/ner/test_ner_tagger.py)
+github.com/stanfordnlp/stanza › test_ner_tagger.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/tests/ner/test_convert_amt.py)
+github.com/stanfordnlp/stanza › test_convert_amt.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/tests/resources/test_common.py)
+github.com/stanfordnlp/stanza › test_common.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/tests/pipeline/test_depparse.py)
+github.com/stanfordnlp/stanza › test_depparse.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/tests/pipeline/test_tokenizer.py)
+github.com/stanfordnlp/stanza › test_tokenizer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/tests/server/test_ud_enhancer.py)
+github.com/stanfordnlp/stanza › test_ud_enhancer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/tests/pipeline/test_decorators.py)
+github.com/stanfordnlp/stanza › test_decorators.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/tests/pipeline/test_lemmatizer.py)
+github.com/stanfordnlp/stanza › test_lemmatizer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/tests/common/test_data_objects.py)
+github.com/stanfordnlp/stanza › test_data_objects.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/tests/tokenization/test_spaces.py)
+github.com/stanfordnlp/stanza › test_spaces.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/tests/pipeline/test_requirements.py)
+github.com/stanfordnlp/stanza › test_requirements.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/tests/classifiers/test_classifier.py)
+github.com/stanfordnlp/stanza › test_classifier.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/tests/resources/test_installation.py)
+github.com/stanfordnlp/stanza › test_installation.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/XiangLi1999/Diffusion-LM/-/blob/improved-diffusion/scripts/infill.py)
+github.com/XiangLi1999/Diffusion-LM › infill.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/microsoft/presidio/-/blob/presidio-analyzer/presidio_analyzer/nlp_engine/stanza_nlp_engine.py)
+github.com/microsoft/presidio › stanza_nlp_engine.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/tests/pipeline/test_french_pipeline.py)
+github.com/stanfordnlp/stanza › test_french_pipeline.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/tests/pipeline/test_arabic_pipeline.py)
+github.com/stanfordnlp/stanza › test_arabic_pipeline.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/tests/pipeline/test_english_pipeline.py)
+github.com/stanfordnlp/stanza › test_english_pipeline.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/tests/classifiers/test_process_utils.py)
+github.com/stanfordnlp/stanza › test_process_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/tests/tokenization/test_tokenize_data.py)
+github.com/stanfordnlp/stanza › test_tokenize_data.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/explosion/projects/-/blob/benchmarks/speed/scripts/run_nlp.py)
+github.com/explosion/projects › run_nlp.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/tests/tokenization/test_tokenize_utils.py)
+github.com/stanfordnlp/stanza › test_tokenize_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/AlibabaResearch/DAMO-ConvAI/-/blob/proton/preprocess/cu.py)
+github.com/AlibabaResearch/DAMO-ConvAI › cu.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/tests/pipeline/test_pipeline_mwt_expander.py)
+github.com/stanfordnlp/stanza › test_pipeline_mwt_expander.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/tests/pipeline/test_pipeline_ner_processor.py)
+github.com/stanfordnlp/stanza › test_pipeline_ner_processor.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/tests/pipeline/test_pipeline_pos_processor.py)
+github.com/stanfordnlp/stanza › test_pipeline_pos_processor.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/argosopentech/argos-translate/-/blob/argostranslate/translate.py)
+github.com/argosopentech/argos-translate › translate.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/tests/tokenization/test_replace_long_tokens.py)
+github.com/stanfordnlp/stanza › test_replace_long_tokens.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/tests/classifiers/test_constituency_classifier.py)
+github.com/stanfordnlp/stanza › test_constituency_classifier.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/tests/pipeline/test_pipeline_depparse_processor.py)
+github.com/stanfordnlp/stanza › test_pipeline_depparse_processor.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/tests/pipeline/test_pipeline_sentiment_processor.py)
+github.com/stanfordnlp/stanza › test_pipeline_sentiment_processor.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanfordnlp/stanza/-/blob/stanza/tests/pipeline/test_pipeline_constituency_processor.py)
+github.com/stanfordnlp/stanza › test_pipeline_constituency_processor.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/XiangLi1999/Diffusion-LM/-/blob/improved-diffusion/control_gen/eval_control.py)
+github.com/XiangLi1999/Diffusion-LM › eval_control.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/facebookresearch/minihack/-/blob/minihack/wiki.py)
+github.com/facebookresearch/minihack › wiki.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/OrangeX4/NJUAI-Notes/-/blob/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80/Homework/project2/preprocess.py)
+github.com/OrangeX4/NJUAI-Notes › preprocess.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/turtlesoupy/this-word-does-not-exist/-/blob/title_maker_pro/datasets.py)
+github.com/turtlesoupy/this-word-does-not-exist › datasets.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/AlibabaResearch/DAMO-ConvAI/-/blob/s2sql/preprocess/common_utils.py)
+github.com/AlibabaResearch/DAMO-ConvAI › common_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/BramVanroy/spacy_conll/-/blob/spacy_conll/utils.py)
+github.com/BramVanroy/spacy_conll › utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/BLKSerene/Wordless/-/blob/wordless/wl_nlp/wl_nlp_utils.py)
+github.com/BLKSerene/Wordless › wl_nlp_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanford-oval/WikiChat/-/blob/wikiextractor/split_passages.py)
+github.com/stanford-oval/WikiChat › split_passages.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/GateNLP/python-gatenlp/-/blob/gatenlp/lib_stanza.py)
+github.com/GateNLP/python-gatenlp › lib_stanza.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/AlibabaResearch/DAMO-ConvAI/-/blob/proton/preprocess/common_utils.py)
+github.com/AlibabaResearch/DAMO-ConvAI › common_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/GateNLP/python-gatenlp/-/blob/tests/test_stanza.py)
+github.com/GateNLP/python-gatenlp › test_stanza.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/AlibabaResearch/DAMO-ConvAI/-/blob/sunsql/preprocess/common_utils.py)
+github.com/AlibabaResearch/DAMO-ConvAI › common_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/XiangLi1999/Diffusion-LM/-/blob/transformers/examples/pytorch/language-modeling/run_clm.py)
+github.com/XiangLi1999/Diffusion-LM › run_clm.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/marian-nmt/marian-examples/-/blob/forced-translation/scripts/lemmatize.py)
+github.com/marian-nmt/marian-examples › lemmatize.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/marian-nmt/marian-examples/-/blob/forced-translation/scripts/eval_lemmatized_glossary.py)
+github.com/marian-nmt/marian-examples › eval_lemmatized_glossary.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/marian-nmt/marian-examples/-/blob/forced-translation/scripts/add_target_lemma_annotations.py)
+github.com/marian-nmt/marian-examples › add_target_lemma_annotations.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/dh-miami/narratives_covid19/-/blob/scripts/topic_modelling/topic_modelling.py)
+github.com/dh-miami/narratives_covid19 › topic_modelling.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/rali-udem/jsRealB/-/blob/demos/UDregenerator/text2ud.py)
+github.com/rali-udem/jsRealB › text2ud.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/weixi-feng/Structured-Diffusion-Guidance/-/blob/scripts/txt2img_demo.py)
+github.com/weixi-feng/Structured-Diffusion-Guidance › txt2img_demo.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/rali-udem/jsRealB/-/blob/demos/Bilinguo/makeBilinguoData.py)
+github.com/rali-udem/jsRealB › makeBilinguoData.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/rali-udem/jsRealB/-/blob/demos/UDregenerator/text2ud-new.py)
+github.com/rali-udem/jsRealB › text2ud-new.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/yzhangcs/parser/-/blob/supar/utils/tokenizer.py)
+github.com/yzhangcs/parser › tokenizer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/jim-schwoebel/allie/-/blob/features/text_features/helpers/blabla/blabla/document_processor.py)
+github.com/jim-schwoebel/allie › document_processor.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/zhijing-jin/ARTS_TestSet/-/blob/code/utils.py)
+github.com/zhijing-jin/ARTS_TestSet › utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/ServiceNow/duorat/-/blob/duorat/utils/tokenization.py)
+github.com/ServiceNow/duorat › tokenization.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/zzsfornlp/zmsp/-/blob/msp2/scripts/wiki/raw2tok.py)
+github.com/zzsfornlp/zmsp › raw2tok.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/zzsfornlp/zmsp/-/blob/mspx/tools/annotate/ann_stanza.py)
+github.com/zzsfornlp/zmsp › ann_stanza.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/zzsfornlp/zmsp/-/blob/msp2/tools/annotate/ann_stanza.py)
+github.com/zzsfornlp/zmsp › ann_stanza.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/zzsfornlp/zmsp/-/blob/msp2/scripts/event/prep/s2_tokenize.py)
+github.com/zzsfornlp/zmsp › s2_tokenize.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/zzsfornlp/zmsp/-/blob/msp2/tasks/zmtl3/mat/prep/brat2json.py)
+github.com/zzsfornlp/zmsp › brat2json.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/zzsfornlp/zmsp/-/blob/msp2/tasks/zmtl3/scripts/misc/query_gpt3.py)
+github.com/zzsfornlp/zmsp › query_gpt3.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/zzsfornlp/zmsp/-/blob/msp2/tasks/zmtl3/scripts/srl/sz_read_c09zhf.py)
+github.com/zzsfornlp/zmsp › sz_read_c09zhf.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/zzsfornlp/zmsp/-/blob/msp2/tasks/zmtl3/scripts/srl/sz_collect_onto.py)
+github.com/zzsfornlp/zmsp › sz_collect_onto.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/turtlesoupy/this-word-does-not-exist/-/blob/title_maker_pro/word_generator.py)
+github.com/turtlesoupy/this-word-does-not-exist › word_generator.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/KoichiYasuoka/UniDic2UD/-/blob/unidic2ud/unidic2ud.py)
+github.com/KoichiYasuoka/UniDic2UD › unidic2ud.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/zhjohnchan/PTUnifier/-/blob/ptunifier/metrics/jb_scorers/RadEntityMatchExact/RadEntityMatchExact.py)
+github.com/zhjohnchan/PTUnifier › RadEntityMatchExact.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/primeqa/primeqa/-/blob/primeqa/qg/models/hybrid_qg/path_sampler.py)
+github.com/primeqa/primeqa › path_sampler.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/amir-zeldes/HebPipe/-/blob/hebpipe/heb_pipe.py)
+github.com/amir-zeldes/HebPipe › heb_pipe.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/hoochanlon/scripts/-/blob/d-python/get_resou_today_s.py)
+github.com/hoochanlon/scripts › get_resou_today_s.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/primeqa/primeqa/-/blob/primeqa/qg/models/passage_qg/answer_sampler.py)
+github.com/primeqa/primeqa › answer_sampler.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/nipunsadvilkar/pySBD/-/blob/benchmarks/genia_benchmark.py)
+github.com/nipunsadvilkar/pySBD › genia_benchmark.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/openredact/nerwhal/-/blob/nerwhal/nlp_utils.py)
+github.com/openredact/nerwhal › nlp_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/consuldemocracy/consuldemocracy/-/blob/public/machine_learning/scripts/budgets_related_content_and_tags_nmf.py)
+github.com/consuldemocracy/consuldemocracy › budgets_related_content_and_tags_nmf.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/consuldemocracy/consuldemocracy/-/blob/public/machine_learning/scripts/proposals_related_content_and_tags_nmf.py)
+github.com/consuldemocracy/consuldemocracy › proposals_related_content_and_tags_nmf.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/deeppavlov/dream/-/blob/annotators/bot_emotion_classifier/server.py)
+github.com/deeppavlov/dream › server.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/rstodden/TS_annotation_tool/-/blob/data/models.py)
+github.com/rstodden/TS_annotation_tool › models.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/nipunsadvilkar/pySBD/-/blob/benchmarks/benchmark_sbd_tools.py)
+github.com/nipunsadvilkar/pySBD › benchmark_sbd_tools.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/AlibabaResearch/DAMO-ConvAI/-/blob/star/LGESQL/cosql/preprocess/common_utils.py)
+github.com/AlibabaResearch/DAMO-ConvAI › common_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/AlibabaResearch/DAMO-ConvAI/-/blob/star/LGESQL/sparc/preprocess/common_utils.py)
+github.com/AlibabaResearch/DAMO-ConvAI › common_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/nipunsadvilkar/pySBD/-/blob/benchmarks/bigtext_speed_benchmark.py)
+github.com/nipunsadvilkar/pySBD › bigtext_speed_benchmark.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/AlibabaResearch/DAMO-ConvAI/-/blob/graphix/data_all_in/preprocess/common_utils.py)
+github.com/AlibabaResearch/DAMO-ConvAI › common_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/primeqa/primeqa/-/blob/primeqa/qg/processors/hybrid_qg/hybridqa_processor.py)
+github.com/primeqa/primeqa › hybridqa_processor.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/honghanhh/ner-combining-contextual-and-global-features/-/blob/enconll03_baselines/conll_stanza.py)
+github.com/honghanhh/ner-combining-contextual-and-global-features › conll_stanza.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mudabek/encoding-cxr-report-gen/-/blob/ner_reports.py)
+github.com/mudabek/encoding-cxr-report-gen › ner_reports.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/ncbi/GNorm2/-/blob/GeneNER_SpeAss_run.py)
+github.com/ncbi/GNorm2 › GeneNER_SpeAss_run.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/ncbi/GNorm2/-/blob/src_python/GeneNER/BIO_format.py)
+github.com/ncbi/GNorm2 › BIO_format.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/ncbi/GNorm2/-/blob/src_python/SpeAss/SA_Pubtator_Conll.py)
+github.com/ncbi/GNorm2 › SA_Pubtator_Conll.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/gregorycrane/Homerica/-/blob/stanza-greek.py)
+github.com/gregorycrane/Homerica › stanza-greek.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/AlibabaResearch/DAMO-ConvAI/-/blob/graphix/data_all_in/preprocess/common_utils_proton.py)
+github.com/AlibabaResearch/DAMO-ConvAI › common_utils_proton.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/hltcoe/patapsco/-/blob/patapsco/text.py)
+github.com/hltcoe/patapsco › text.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/smartcontractsyn/iSyn/-/blob/ContractToSmartContract-python/rule_based_extraction.py)
+github.com/smartcontractsyn/iSyn › rule_based_extraction.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/huggingface/api-inference-community/-/blob/docker_images/stanza/app/pipelines/token_classification.py)
+github.com/huggingface/api-inference-community › token_classification.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/quadrismegistus/cadence/-/blob/cadence/parsers/stanzanlp.py)
+github.com/quadrismegistus/cadence › stanzanlp.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/alexandrainst/danlp/-/blob/examples/benchmarks/pos_benchmarks.py)
+github.com/alexandrainst/danlp › pos_benchmarks.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/gazelle93/Transformer-Various-Positional-Encoding/-/blob/text_processing.py)
+github.com/gazelle93/Transformer-Various-Positional-Encoding › text_processing.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/estnltk/estnltk/-/blob/estnltk_neural/estnltk_neural/taggers/coreference/v1/utilities.py)
+github.com/estnltk/estnltk › utilities.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/explosion/spacy-stanza/-/blob/tests/test_language.py)
+github.com/explosion/spacy-stanza › test_language.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/language-ml/parsi.io/-/blob/parsi_io/modules/stockmarket_event_extractor/stockmarket_event_extractor.py)
+github.com/language-ml/parsi.io › stockmarket_event_extractor.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/cltk/cltk/-/blob/src/cltk/dependency/stanza_wrapper.py)
+github.com/cltk/cltk › stanza_wrapper.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/thunlp/OpenBackdoor/-/blob/openbackdoor/data/plain_dataset.py)
+github.com/thunlp/OpenBackdoor › plain_dataset.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/alexandrainst/danlp/-/blob/examples/benchmarks/dependency_benchmarks.py)
+github.com/alexandrainst/danlp › dependency_benchmarks.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/arianhosseini/negation-learning/-/blob/transformers/examples/get_conll.py)
+github.com/arianhosseini/negation-learning › get_conll.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/arianhosseini/negation-learning/-/blob/transformers/examples/new_get_conll.py)
+github.com/arianhosseini/negation-learning › new_get_conll.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/deeppavlov/dream/-/blob/annotators/bot_emotion_classifier/dscript_scheme_classifier.py)
+github.com/deeppavlov/dream › dscript_scheme_classifier.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/zide05/AdvFact/-/blob/adversarial_transformation/Antonyms_stress_test.py)
+github.com/zide05/AdvFact › Antonyms_stress_test.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/zide05/AdvFact/-/blob/adversarial_transformation/Named_entity_stress_test.py)
+github.com/zide05/AdvFact › Named_entity_stress_test.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/zide05/AdvFact/-/blob/adversarial_transformation/Numerical_inference_strss_test.py)
+github.com/zide05/AdvFact › Numerical_inference_strss_test.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/qijimrc/ROBUST/-/blob/src/analysis/hws_distance.py)
+github.com/qijimrc/ROBUST › hws_distance.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/estnltk/estnltk/-/blob/estnltk_neural/estnltk_neural/taggers/coreference/v1/coreference_api.py)
+github.com/estnltk/estnltk › coreference_api.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/ly19965/CVPR_Anti_UAV/-/blob/modelscope/preprocessors/nlp/space_T_en/fields/common_utils.py)
+github.com/ly19965/CVPR_Anti_UAV › common_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/estnltk/estnltk/-/blob/estnltk_neural/estnltk_neural/taggers/syntax/stanza_tagger/stanza_tagger.py)
+github.com/estnltk/estnltk › stanza_tagger.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/estnltk/estnltk/-/blob/estnltk_neural/estnltk_neural/taggers/syntax/stanza_tagger/ensemble_tagger.py)
+github.com/estnltk/estnltk › ensemble_tagger.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/RobustNLP/TestIC/-/blob/ROME/gt_err/synonym_final.py)
+github.com/RobustNLP/TestIC › synonym_final.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/RobustNLP/TestIC/-/blob/ROME/error_detection/synonym_clean.py)
+github.com/RobustNLP/TestIC › synonym_clean.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/RobustNLP/TestIC/-/blob/ROME/metaic_error_detection/ofa_base_meta/meta_relation_error_report_0.py)
+github.com/RobustNLP/TestIC › meta_relation_error_report_0.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/RobustNLP/TestIC/-/blob/ROME/metaic_error_detection/ofa_base_meta/meta_relation_error_report_bar2.py)
+github.com/RobustNLP/TestIC › meta_relation_error_report_bar2.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/RobustNLP/TestIC/-/blob/MetaIC/Report_erroneous_issues/azure_meta_relation_error_report_dir/meta_relation_error_report_0.py)
+github.com/RobustNLP/TestIC › meta_relation_error_report_0.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/RobustNLP/TestIC/-/blob/MetaIC/Report_erroneous_issues/azure_meta_relation_error_report_dir/meta_relation_error_report_bar1.py)
+github.com/RobustNLP/TestIC › meta_relation_error_report_bar1.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/RobustNLP/TestIC/-/blob/MetaIC/Report_erroneous_issues/azure_meta_relation_error_report_dir/meta_relation_error_report_bar2.py)
+github.com/RobustNLP/TestIC › meta_relation_error_report_bar2.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/RobustNLP/TestIC/-/blob/MetaIC/Report_erroneous_issues/azure_meta_relation_error_report_dir/meta_relation_error_report_bar3.py)
+github.com/RobustNLP/TestIC › meta_relation_error_report_bar3.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/jcyk/XAMR/-/blob/xl-amr/xlamr_stog/data/dataset_readers/amr_parsing/preprocess/feature_annotator_multilingual.py)
+github.com/jcyk/XAMR › feature_annotator_multilingual.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/huashen218/convxai/-/blob/convxai/utils/utils.py)
+github.com/huashen218/convxai › utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/huashen218/convxai/-/blob/notebook_unified_XAI_API/convxai/utils/utils.py)
+github.com/huashen218/convxai › utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/huashen218/convxai/-/blob/convxai/xai_models/preprocessing/global_xai_statistics/data_generator.py)
+github.com/huashen218/convxai › data_generator.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/AlibabaResearch/DAMO-ConvAI/-/blob/proton/preprocess/test_g.py)
+github.com/AlibabaResearch/DAMO-ConvAI › test_g.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/AlibabaResearch/DAMO-ConvAI/-/blob/proton/preprocess/test_grappa_prob.py)
+github.com/AlibabaResearch/DAMO-ConvAI › test_grappa_prob.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/AlibabaResearch/DAMO-ConvAI/-/blob/proton/preprocess/test_grappa_prob_cmp.py)
+github.com/AlibabaResearch/DAMO-ConvAI › test_grappa_prob_cmp.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/vvhg1/guided-text-generation-with-classifier-free-language-diffusion/-/blob/improved-diffusion/control_gen/eval_control.py)
+github.com/vvhg1/guided-text-generation-with-classifier-free-language-diffusion › eval_control.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/vvhg1/guided-text-generation-with-classifier-free-language-diffusion/-/blob/transformers/examples/pytorch/language-modeling/run_clm.py)
+github.com/vvhg1/guided-text-generation-with-classifier-free-language-diffusion › run_clm.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/hafriedlander/stable-diffusion-grpcserver/-/blob/sdgrpcserver/pipeline/text_embedding/structured_text_embedding.py)
+github.com/hafriedlander/stable-diffusion-grpcserver › structured_text_embedding.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/john-hewitt/model-editing-canonical-examples/-/blob/data/temporal/convert_eval.py)
+github.com/john-hewitt/model-editing-canonical-examples › convert_eval.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/john-hewitt/model-editing-canonical-examples/-/blob/data/temporal/convert_eval_train.py)
+github.com/john-hewitt/model-editing-canonical-examples › convert_eval_train.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/john-hewitt/model-editing-canonical-examples/-/blob/data/stereoset/make_stereoset_hard_neg.py)
+github.com/john-hewitt/model-editing-canonical-examples › make_stereoset_hard_neg.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Tbabm/CUP2/-/blob/common.py)
+github.com/Tbabm/CUP2 › common.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/bigscience-workshop/data-preparation/-/blob/preprocessing/training/01a_catalogue_cleaning_and_filtering/clean_helpers/sentence_splitter.py)
+github.com/bigscience-workshop/data-preparation › sentence_splitter.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/bigscience-workshop/catalogue_data/-/blob/clean_helpers/sentence_splitter.py)
+github.com/bigscience-workshop/catalogue_data › sentence_splitter.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/ncbi/SpeciesAssignment/-/blob/src/Species_Assignment.py)
+github.com/ncbi/SpeciesAssignment › Species_Assignment.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/ncbi/SpeciesAssignment/-/blob/src/species_assignment_eval_test.py)
+github.com/ncbi/SpeciesAssignment › species_assignment_eval_test.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/yerfor/SyntaSpeech/-/blob/modules/tts/syntaspeech/syntactic_graph_buider.py)
+github.com/yerfor/SyntaSpeech › syntactic_graph_buider.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/arthurdeschamps/question-generation-nus-ids/-/blob/data_processing/parse.py)
+github.com/arthurdeschamps/question-generation-nus-ids › parse.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/arthurdeschamps/question-generation-nus-ids/-/blob/knowledge_graph/kg_api.py)
+github.com/arthurdeschamps/question-generation-nus-ids › kg_api.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/arthurdeschamps/question-generation-nus-ids/-/blob/data_processing/nqg_dataset.py)
+github.com/arthurdeschamps/question-generation-nus-ids › nqg_dataset.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/arthurdeschamps/question-generation-nus-ids/-/blob/data_processing/data_generator.py)
+github.com/arthurdeschamps/question-generation-nus-ids › data_generator.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/thunlp/OpenBackdoor/-/blob/openbackdoor/attackers/poisoners/trojanlm_poisoner.py)
+github.com/thunlp/OpenBackdoor › trojanlm_poisoner.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/jackfromeast/CyberCoref/-/blob/dataLoader.py)
+github.com/jackfromeast/CyberCoref › dataLoader.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/utopia-group/WebQA/-/blob/lib/nlp/nlp.py)
+github.com/utopia-group/WebQA › nlp.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/reynoldsnlp/udar/-/blob/src/udar/misc.py)
+github.com/reynoldsnlp/udar › misc.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/reynoldsnlp/udar/-/blob/src/udar/sentence.py)
+github.com/reynoldsnlp/udar › sentence.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/nju-websoft/AdaLoGN/-/blob/utils/data_utils_preprocess.py)
+github.com/nju-websoft/AdaLoGN › data_utils_preprocess.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/jinpeng01/AIG_CL/-/blob/src/prepro/data_builder.py)
+github.com/jinpeng01/AIG_CL › data_builder.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/jinpeng01/AIG_CL/-/blob/graph_construction/graph_construction.py)
+github.com/jinpeng01/AIG_CL › graph_construction.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/text-processing/prose-rhythm-detector/-/blob/app/models/document_parser.py)
+github.com/text-processing/prose-rhythm-detector › document_parser.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/text-processing/prose-rhythm-detector/-/blob/app/models/document_loader.py)
+github.com/text-processing/prose-rhythm-detector › document_loader.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/text-processing/prose-rhythm-detector/-/blob/app/statistic_utils/PoS_ngram.py)
+github.com/text-processing/prose-rhythm-detector › PoS_ngram.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/text-processing/prose-rhythm-detector/-/blob/app/statistic_utils/PoS_count.py)
+github.com/text-processing/prose-rhythm-detector › PoS_count.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/text-processing/prose-rhythm-detector/-/blob/app/statistic_utils/statistic_util.py)
+github.com/text-processing/prose-rhythm-detector › statistic_util.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/pmchozas/termitup/-/blob/modules_api/postprocess.py)
+github.com/pmchozas/termitup › postprocess.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/pmchozas/termitup/-/blob/modules_api/delete_patterns_flair.py)
+github.com/pmchozas/termitup › delete_patterns_flair.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/amazon-science/masked-diffusion-lm/-/blob/improved-diffusion/scripts/infill.py)
+github.com/amazon-science/masked-diffusion-lm › infill.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/amazon-science/masked-diffusion-lm/-/blob/improved-diffusion/control_gen/eval_control.py)
+github.com/amazon-science/masked-diffusion-lm › eval_control.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/amazon-science/masked-diffusion-lm/-/blob/transformers/examples/pytorch/language-modeling/run_clm.py)
+github.com/amazon-science/masked-diffusion-lm › run_clm.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/luohongyin/RGX/-/blob/rgx_doc.py)
+github.com/luohongyin/RGX › rgx_doc.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/luohongyin/RGX/-/blob/search_rgx.py)
+github.com/luohongyin/RGX › search_rgx.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/luohongyin/RGX/-/blob/aer_ext_deptree.py)
+github.com/luohongyin/RGX › aer_ext_deptree.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/aajanki/finnish-pos-accuracy/-/blob/nlpmodels.py)
+github.com/aajanki/finnish-pos-accuracy › nlpmodels.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/aajanki/finnish-pos-accuracy/-/blob/download_models.py)
+github.com/aajanki/finnish-pos-accuracy › download_models.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/ShushanArakelyan/modular_code_search/-/blob/layout_assembly/layout_w_orig_verbs.py)
+github.com/ShushanArakelyan/modular_code_search › layout_w_orig_verbs.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/VPeterV/Structured-MFVI/-/blob/supar/utils/tokenizer.py)
+github.com/VPeterV/Structured-MFVI › tokenizer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Bibliome/alvisnlp/-/blob/alvisnlp-bibliome/src/main/resources/fr/inra/maiage/bibliome/alvisnlp/bibliomefactory/modules/python/stanza-alvisnlp.py)
+github.com/Bibliome/alvisnlp › stanza-alvisnlp.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/phHartl/eu-judgement-analyse/-/blob/analysis.py)
+github.com/phHartl/eu-judgement-analyse › analysis.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/microsoft/presidio-research/-/blob/presidio_evaluator/models/stanza_model.py)
+github.com/microsoft/presidio-research › stanza_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/shunk031/training-free-structured-diffusion-guidance/-/blob/tfsdg/pipelines/tfsdg_pipeline.py)
+github.com/shunk031/training-free-structured-diffusion-guidance › tfsdg_pipeline.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NLP-Suite/NLP-Suite/-/blob/src/SVO_main.py)
+github.com/NLP-Suite/NLP-Suite › SVO_main.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NLP-Suite/NLP-Suite/-/blob/src/SVO_util.py)
+github.com/NLP-Suite/NLP-Suite › SVO_util.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NLP-Suite/NLP-Suite/-/blob/src/BERT_util.py)
+github.com/NLP-Suite/NLP-Suite › BERT_util.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NLP-Suite/NLP-Suite/-/blob/src/SENNA_util.py)
+github.com/NLP-Suite/NLP-Suite › SENNA_util.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NLP-Suite/NLP-Suite/-/blob/src/charts_util.py)
+github.com/NLP-Suite/NLP-Suite › charts_util.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NLP-Suite/NLP-Suite/-/blob/src/Stanza_util.py)
+github.com/NLP-Suite/NLP-Suite › Stanza_util.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NLP-Suite/NLP-Suite/-/blob/src/NGrams_util.py)
+github.com/NLP-Suite/NLP-Suite › NGrams_util.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NLP-Suite/NLP-Suite/-/blob/src/wordclouds_util.py)
+github.com/NLP-Suite/NLP-Suite › wordclouds_util.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NLP-Suite/NLP-Suite/-/blob/src/Stanza_functions.py)
+github.com/NLP-Suite/NLP-Suite › Stanza_functions.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NLP-Suite/NLP-Suite/-/blob/src/file_cleaner_util.py)
+github.com/NLP-Suite/NLP-Suite › file_cleaner_util.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NLP-Suite/NLP-Suite/-/blob/src/statistics_txt_util.py)
+github.com/NLP-Suite/NLP-Suite › statistics_txt_util.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NLP-Suite/NLP-Suite/-/blob/src/nominalization_util.py)
+github.com/NLP-Suite/NLP-Suite › nominalization_util.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NLP-Suite/NLP-Suite/-/blob/src/word2vec_Gensim_util.py)
+github.com/NLP-Suite/NLP-Suite › word2vec_Gensim_util.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NLP-Suite/NLP-Suite/-/blob/src/Stanza_functions_util.py)
+github.com/NLP-Suite/NLP-Suite › Stanza_functions_util.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NLP-Suite/NLP-Suite/-/blob/src/sentence_analysis_util.py)
+github.com/NLP-Suite/NLP-Suite › sentence_analysis_util.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NLP-Suite/NLP-Suite/-/blob/src/CoNLL_k_sentences_util.py)
+github.com/NLP-Suite/NLP-Suite › CoNLL_k_sentences_util.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NLP-Suite/NLP-Suite/-/blob/src/file_spell_checker_util.py)
+github.com/NLP-Suite/NLP-Suite › file_spell_checker_util.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NLP-Suite/NLP-Suite/-/blob/src/file_search_byWord_util.py)
+github.com/NLP-Suite/NLP-Suite › file_search_byWord_util.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NLP-Suite/NLP-Suite/-/blob/src/file_classifier_NER_util.py)
+github.com/NLP-Suite/NLP-Suite › file_classifier_NER_util.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NLP-Suite/NLP-Suite/-/blob/src/NGrams_CoOccurrences_util.py)
+github.com/NLP-Suite/NLP-Suite › NGrams_CoOccurrences_util.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NLP-Suite/NLP-Suite/-/blob/src/knowledge_graphs_YAGO_util.py)
+github.com/NLP-Suite/NLP-Suite › knowledge_graphs_YAGO_util.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NLP-Suite/NLP-Suite/-/blob/src/file_spell_checker_util_RF.py)
+github.com/NLP-Suite/NLP-Suite › file_spell_checker_util_RF.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NLP-Suite/NLP-Suite/-/blob/src/file_splitter_ByLength_util.py)
+github.com/NLP-Suite/NLP-Suite › file_splitter_ByLength_util.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NLP-Suite/NLP-Suite/-/blob/src/TensorFlow_semantic_analysis.py)
+github.com/NLP-Suite/NLP-Suite › TensorFlow_semantic_analysis.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NLP-Suite/NLP-Suite/-/blob/src/sentiment_analysis_ANEW_util.py)
+github.com/NLP-Suite/NLP-Suite › sentiment_analysis_ANEW_util.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NLP-Suite/NLP-Suite/-/blob/src/sentiment_analysis_VADER_util.py)
+github.com/NLP-Suite/NLP-Suite › sentiment_analysis_VADER_util.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NLP-Suite/NLP-Suite/-/blob/src/file_splitter_ByKeyword_txt_util.py)
+github.com/NLP-Suite/NLP-Suite › file_splitter_ByKeyword_txt_util.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NLP-Suite/NLP-Suite/-/blob/src/html_annotator_extractor_util_NEW.py)
+github.com/NLP-Suite/NLP-Suite › html_annotator_extractor_util_NEW.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NLP-Suite/NLP-Suite/-/blob/src/file_splitter_ByKeyword_conll_util.py)
+github.com/NLP-Suite/NLP-Suite › file_splitter_ByKeyword_conll_util.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NLP-Suite/NLP-Suite/-/blob/src/abstract_concreteness_analysis_util.py)
+github.com/NLP-Suite/NLP-Suite › abstract_concreteness_analysis_util.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NLP-Suite/NLP-Suite/-/blob/src/sentiment_analysis_hedonometer_util.py)
+github.com/NLP-Suite/NLP-Suite › sentiment_analysis_hedonometer_util.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NLP-Suite/NLP-Suite/-/blob/src/knowledge_graphs_DBpedia_util_SPARQL.py)
+github.com/NLP-Suite/NLP-Suite › knowledge_graphs_DBpedia_util_SPARQL.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NLP-Suite/NLP-Suite/-/blob/src/sentiment_analysis_SentiWordNet_util.py)
+github.com/NLP-Suite/NLP-Suite › sentiment_analysis_SentiWordNet_util.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NLP-Suite/NLP-Suite/-/blob/src/file_find_non_related_documents_util.py)
+github.com/NLP-Suite/NLP-Suite › file_find_non_related_documents_util.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NLP-Suite/NLP-Suite/-/blob/src/file_splitter_ByBME_K_sentences_util.py)
+github.com/NLP-Suite/NLP-Suite › file_splitter_ByBME_K_sentences_util.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NLP-Suite/NLP-Suite/-/blob/src/html_annotator_gender_dictionary_util.py)
+github.com/NLP-Suite/NLP-Suite › html_annotator_gender_dictionary_util.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/xjtu-intsoft/chase/-/blob/Benchmark_Approaches/DuoratChar/duorat/utils/tokenization.py)
+github.com/xjtu-intsoft/chase › tokenization.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/princeton-nlp/MultilingualAnalysis/-/blob/preprocessing/xnli/convert_dataset_to_dependency.py)
+github.com/princeton-nlp/MultilingualAnalysis › convert_dataset_to_dependency.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/princeton-nlp/MultilingualAnalysis/-/blob/preprocessing/ner_pos/convert_dataset_to_dependency.py)
+github.com/princeton-nlp/MultilingualAnalysis › convert_dataset_to_dependency.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/princeton-nlp/MultilingualAnalysis/-/blob/preprocessing/sentence_retrieval/convert_dataset_to_dependency.py)
+github.com/princeton-nlp/MultilingualAnalysis › convert_dataset_to_dependency.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/princeton-nlp/MultilingualAnalysis/-/blob/preprocessing/dependency_parsing/convert_sentences_to_dependency.py)
+github.com/princeton-nlp/MultilingualAnalysis › convert_sentences_to_dependency.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mit-ccc/TweebankNLP/-/blob/twitter-stanza/demo/pipeline_demo.py)
+github.com/mit-ccc/TweebankNLP › pipeline_demo.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mit-ccc/TweebankNLP/-/blob/twitter-stanza/stanza/server/semgrex.py)
+github.com/mit-ccc/TweebankNLP › semgrex.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mit-ccc/TweebankNLP/-/blob/twitter-stanza/stanza/server/ud_enhancer.py)
+github.com/mit-ccc/TweebankNLP › ud_enhancer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mit-ccc/TweebankNLP/-/blob/twitter-stanza/stanza/server/tokensregex.py)
+github.com/mit-ccc/TweebankNLP › tokensregex.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mit-ccc/TweebankNLP/-/blob/twitter-stanza/scripts/sentiment/process_sb10k.py)
+github.com/mit-ccc/TweebankNLP › process_sb10k.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mit-ccc/TweebankNLP/-/blob/twitter-stanza/scripts/sentiment/process_scare.py)
+github.com/mit-ccc/TweebankNLP › process_scare.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mit-ccc/TweebankNLP/-/blob/twitter-stanza/stanza/pipeline/demo/demo_server.py)
+github.com/mit-ccc/TweebankNLP › demo_server.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mit-ccc/TweebankNLP/-/blob/twitter-stanza/scripts/sentiment/process_ren_chinese.py)
+github.com/mit-ccc/TweebankNLP › process_ren_chinese.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mit-ccc/TweebankNLP/-/blob/twitter-stanza/scripts/sentiment/process_usage_german.py)
+github.com/mit-ccc/TweebankNLP › process_usage_german.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mit-ccc/TweebankNLP/-/blob/twitter-stanza/stanza/utils/datasets/ner/convert_bsnlp.py)
+github.com/mit-ccc/TweebankNLP › convert_bsnlp.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mit-ccc/TweebankNLP/-/blob/twitter-stanza/stanza/utils/datasets/constituency/convert_it_turin.py)
+github.com/mit-ccc/TweebankNLP › convert_it_turin.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mit-ccc/TweebankNLP/-/blob/twitter-stanza/stanza/tests/test_core.py)
+github.com/mit-ccc/TweebankNLP › test_core.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mit-ccc/TweebankNLP/-/blob/twitter-stanza/stanza/tests/test_tagger.py)
+github.com/mit-ccc/TweebankNLP › test_tagger.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mit-ccc/TweebankNLP/-/blob/twitter-stanza/stanza/tests/test_depparse.py)
+github.com/mit-ccc/TweebankNLP › test_depparse.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mit-ccc/TweebankNLP/-/blob/twitter-stanza/stanza/tests/test_tokenizer.py)
+github.com/mit-ccc/TweebankNLP › test_tokenizer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mit-ccc/TweebankNLP/-/blob/twitter-stanza/stanza/tests/test_decorators.py)
+github.com/mit-ccc/TweebankNLP › test_decorators.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mit-ccc/TweebankNLP/-/blob/twitter-stanza/stanza/tests/test_lemmatizer.py)
+github.com/mit-ccc/TweebankNLP › test_lemmatizer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mit-ccc/TweebankNLP/-/blob/twitter-stanza/stanza/tests/test_ner_tagger.py)
+github.com/mit-ccc/TweebankNLP › test_ner_tagger.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mit-ccc/TweebankNLP/-/blob/twitter-stanza/stanza/tests/test_ud_enhancer.py)
+github.com/mit-ccc/TweebankNLP › test_ud_enhancer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mit-ccc/TweebankNLP/-/blob/twitter-stanza/stanza/tests/test_data_objects.py)
+github.com/mit-ccc/TweebankNLP › test_data_objects.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mit-ccc/TweebankNLP/-/blob/twitter-stanza/stanza/tests/test_mwt_expander.py)
+github.com/mit-ccc/TweebankNLP › test_mwt_expander.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mit-ccc/TweebankNLP/-/blob/twitter-stanza/stanza/tests/test_requirements.py)
+github.com/mit-ccc/TweebankNLP › test_requirements.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mit-ccc/TweebankNLP/-/blob/twitter-stanza/stanza/tests/test_french_pipeline.py)
+github.com/mit-ccc/TweebankNLP › test_french_pipeline.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mit-ccc/TweebankNLP/-/blob/twitter-stanza/stanza/tests/test_english_pipeline.py)
+github.com/mit-ccc/TweebankNLP › test_english_pipeline.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mit-ccc/TweebankNLP/-/blob/twitter-stanza/stanza/tests/resources/test_common.py)
+github.com/mit-ccc/TweebankNLP › test_common.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mit-ccc/TweebankNLP/-/blob/twitter-stanza/stanza/tests/test_pipeline_ner_processor.py)
+github.com/mit-ccc/TweebankNLP › test_pipeline_ner_processor.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mit-ccc/TweebankNLP/-/blob/twitter-stanza/stanza/tests/resources/test_installation.py)
+github.com/mit-ccc/TweebankNLP › test_installation.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mit-ccc/TweebankNLP/-/blob/twitter-stanza/stanza/tests/test_pipeline_sentiment_processor.py)
+github.com/mit-ccc/TweebankNLP › test_pipeline_sentiment_processor.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/zhihao-chen/NLP-experiments/-/blob/nlp/utils/tokenizers.py)
+github.com/zhihao-chen/NLP-experiments › tokenizers.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/philip-mueller/lovt/-/blob/src/data/text_utils/sentence_splitting.py)
+github.com/philip-mueller/lovt › sentence_splitting.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/centre-for-humanities-computing/newsFluxus/-/blob/src/tekisuto/preprocessing/lemmatizer.py)
+github.com/centre-for-humanities-computing/newsFluxus › lemmatizer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/griff4692/calibrating-summaries/-/blob/corruptions/entity/stanza_entities.py)
+github.com/griff4692/calibrating-summaries › stanza_entities.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/akutuzov/semeval2020/-/blob/code/postprocessing.py)
+github.com/akutuzov/semeval2020 › postprocessing.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/akutuzov/semeval2020/-/blob/code/processing/find_word_forms.py)
+github.com/akutuzov/semeval2020 › find_word_forms.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/akutuzov/semeval2020/-/blob/code/ling_features/stanza_process.py)
+github.com/akutuzov/semeval2020 › stanza_process.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/AlonEirew/CoreSearch/-/blob/scripts/extract_min_span.py)
+github.com/AlonEirew/CoreSearch › extract_min_span.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/nlpie/biomedicus/-/blob/python/biomedicus/dependencies/stanza_parser.py)
+github.com/nlpie/biomedicus › stanza_parser.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/nlpie/biomedicus/-/blob/python/biomedicus/dependencies/stanza_selective_parser.py)
+github.com/nlpie/biomedicus › stanza_selective_parser.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/pengr/IKD-mmt/-/blob/scripts/stanza_batch.py)
+github.com/pengr/IKD-mmt › stanza_batch.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/pengr/IKD-mmt/-/blob/scripts/extract_image_labels.py)
+github.com/pengr/IKD-mmt › extract_image_labels.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/ucd-dnp/ConTexto/-/blob/contexto/lematizacion.py)
+github.com/ucd-dnp/ConTexto › lematizacion.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/ucd-dnp/ConTexto/-/blob/contexto/utils/stanza_funcs.py)
+github.com/ucd-dnp/ConTexto › stanza_funcs.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/microsoft/ContextualSP/-/blob/unified_parser_text_to_sql/interactive.py)
+github.com/microsoft/ContextualSP › interactive.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/microsoft/ContextualSP/-/blob/unified_parser_text_to_sql/step1_schema_linking.py)
+github.com/microsoft/ContextualSP › step1_schema_linking.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/microsoft/ContextualSP/-/blob/unified_parser_text_to_sql/semparse/sql/spider_utils.py)
+github.com/microsoft/ContextualSP › spider_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/rashad101/RoMe/-/blob/components/ted_se.py)
+github.com/rashad101/RoMe › ted_se.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/SapienzaNLP/xl-amr/-/blob/xlamr_stog/data/dataset_readers/amr_parsing/preprocess/feature_annotator_multilingual.py)
+github.com/SapienzaNLP/xl-amr › feature_annotator_multilingual.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mo-xiaoxi/HDiff/-/blob/SR_Finder.py)
+github.com/mo-xiaoxi/HDiff › SR_Finder.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/UnderstandLingBV/LLaMa2lang/-/blob/translators/seamless_m4t_v2.py)
+github.com/UnderstandLingBV/LLaMa2lang › seamless_m4t_v2.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Lou1sM/video_annotation/-/blob/src/semantic_parser.py)
+github.com/Lou1sM/video_annotation › semantic_parser.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/quadrismegistus/lltk/-/blob/lltk/model/ner.py)
+github.com/quadrismegistus/lltk › ner.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/quadrismegistus/lltk/-/blob/lltk/text/utils.py)
+github.com/quadrismegistus/lltk › utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/vseloved/prj-nlp-2020/-/blob/students/LiudmylaSlava/project/fem/fem.py)
+github.com/vseloved/prj-nlp-2020 › fem.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/vseloved/prj-nlp-2020/-/blob/students/LiudmylaSlava/project/fem/app.py)
+github.com/vseloved/prj-nlp-2020 › app.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/vseloved/prj-nlp-2020/-/blob/students/BohdanYatsyna/homework5/base_line.py)
+github.com/vseloved/prj-nlp-2020 › base_line.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/vseloved/prj-nlp-2020/-/blob/students/BohdanYatsyna/homework2/task-02-3-2.py)
+github.com/vseloved/prj-nlp-2020 › task-02-3-2.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/vseloved/prj-nlp-2020/-/blob/students/BohdanYatsyna/homework5/prepare_data.py)
+github.com/vseloved/prj-nlp-2020 › prepare_data.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/vseloved/prj-nlp-2020/-/blob/students/AlisaMansurova/08-syntactic-parsing/parser.py)
+github.com/vseloved/prj-nlp-2020 › parser.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/vseloved/prj-nlp-2020/-/blob/students/DmytroMindra/05-bag-of-words/src/04-frequency_analysis.py)
+github.com/vseloved/prj-nlp-2020 › 04-frequency_analysis.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/vseloved/prj-nlp-2020/-/blob/students/OleksandrPetrov/02-structural-linguistics/3.2.collocations.py)
+github.com/vseloved/prj-nlp-2020 › 3.2.collocations.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/vseloved/prj-nlp-2020/-/blob/students/DmytroMindra/06-language-as-sequence/src/02-prepare-datasets.py)
+github.com/vseloved/prj-nlp-2020 › 02-prepare-datasets.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PlusLabNLP/DEGREE/-/blob/preprocessing/process_ace05ep.py)
+github.com/PlusLabNLP/DEGREE › process_ace05ep.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/VegB/Diagnose_VLN/-/blob/rxr/model/CLIP-ViL-VLN/rxr_src/utils.py)
+github.com/VegB/Diagnose_VLN › utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/utcsnlp/lfqa_discourse/-/blob/role_classifier/generate_t5_input_csv_file.py)
+github.com/utcsnlp/lfqa_discourse › generate_t5_input_csv_file.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/utcsnlp/lfqa_discourse/-/blob/role_classifier/generate_t5_input_json_file.py)
+github.com/utcsnlp/lfqa_discourse › generate_t5_input_json_file.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/loriqing/Label-Reasoning-Network/-/blob/probe_experiment/data/create_memory.py)
+github.com/loriqing/Label-Reasoning-Network › create_memory.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/BBN-E/ZS4IE/-/blob/serif/model/impl/stanza_adapter2/stanza_driver.py)
+github.com/BBN-E/ZS4IE › stanza_driver.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/sarves/thamizhi-morph/-/blob/thamizhi-morph-parsing.py)
+github.com/sarves/thamizhi-morph › thamizhi-morph-parsing.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/phsfr/UD_Persian-PerDT/-/blob/not-to-release/stanza_decode.py)
+github.com/phsfr/UD_Persian-PerDT › stanza_decode.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/spraakbanken/sparv-pipeline/-/blob/sparv/modules/stanza/stanza.py)
+github.com/spraakbanken/sparv-pipeline › stanza.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/spraakbanken/sparv-pipeline/-/blob/sparv/modules/stanza/stanza_swe.py)
+github.com/spraakbanken/sparv-pipeline › stanza_swe.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Eric3911/OpenAGI/-/blob/AudioGPT-master/NeuralSeq/modules/syntaspeech/syntactic_graph_buider.py)
+github.com/Eric3911/OpenAGI › syntactic_graph_buider.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Ermlab/PoLitBert/-/blob/text_utils.py)
+github.com/Ermlab/PoLitBert › text_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Ermlab/PoLitBert/-/blob/playground_taggers.py)
+github.com/Ermlab/PoLitBert › playground_taggers.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/humlab/penelope/-/blob/penelope/vendor/archive/stanza/utility.py)
+github.com/humlab/penelope › utility.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/humlab/penelope/-/blob/tests/vendor/stanza_test.py)
+github.com/humlab/penelope › stanza_test.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/INDElab/conversationkg/-/blob/conversationkg/conversations/factories.py)
+github.com/INDElab/conversationkg › factories.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/dpalmasan/TRUNAJOD2.0/-/blob/stanza_example.py)
+github.com/dpalmasan/TRUNAJOD2.0 › stanza_example.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/heqi2015/CA_GCN/-/blob/data/MNLI/dependency_output_mnli.py)
+github.com/heqi2015/CA_GCN › dependency_output_mnli.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/passing2961/PersonaChatGen/-/blob/profile_filtering.py)
+github.com/passing2961/PersonaChatGen › profile_filtering.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/eric11eca/Udep2Mono/-/blob/udep2mono/dependency_parse.py)
+github.com/eric11eca/Udep2Mono › dependency_parse.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/lang-uk/ner-uk/-/blob/scripts/eval_ner_models.py)
+github.com/lang-uk/ner-uk › eval_ner_models.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/EclipseCN/PhenoBERT/-/blob/phenobert/utils/api.py)
+github.com/EclipseCN/PhenoBERT › api.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/EclipseCN/PhenoBERT/-/blob/phenobert/utils/annotate.py)
+github.com/EclipseCN/PhenoBERT › annotate.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/ptarau/natlog/-/blob/apps/natgpt/textual.py)
+github.com/ptarau/natlog › textual.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/princeton-nlp/align-mlm/-/blob/preprocessing/xnli/convert_dataset_to_dependency.py)
+github.com/princeton-nlp/align-mlm › convert_dataset_to_dependency.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/princeton-nlp/align-mlm/-/blob/preprocessing/ner_pos/convert_dataset_to_dependency.py)
+github.com/princeton-nlp/align-mlm › convert_dataset_to_dependency.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/princeton-nlp/align-mlm/-/blob/preprocessing/sentence_retrieval/convert_dataset_to_dependency.py)
+github.com/princeton-nlp/align-mlm › convert_dataset_to_dependency.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/princeton-nlp/align-mlm/-/blob/preprocessing/dependency_parsing/convert_sentences_to_dependency.py)
+github.com/princeton-nlp/align-mlm › convert_sentences_to_dependency.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/IreneZihuiLi/EHRKit-2022/-/blob/wrapper_functions/utils.py)
+github.com/IreneZihuiLi/EHRKit-2022 › utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/IreneZihuiLi/EHRKit-2022/-/blob/wrapper_functions/stanza_functions.py)
+github.com/IreneZihuiLi/EHRKit-2022 › stanza_functions.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/IreneZihuiLi/EHRKit-2022/-/blob/collated_tasks/tasks/utils/get_clusters.py)
+github.com/IreneZihuiLi/EHRKit-2022 › get_clusters.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/IreneZihuiLi/EHRKit-2022/-/blob/collated_tasks/tasks/utils/get_sentences.py)
+github.com/IreneZihuiLi/EHRKit-2022 › get_sentences.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/kenantang/petci/-/blob/data/dataset.py)
+github.com/kenantang/petci › dataset.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/kenantang/petci/-/blob/models/lstm/dataloader.py)
+github.com/kenantang/petci › dataloader.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/s-nlp/multilingual-fake-news/-/blob/tools/features_extraction.py)
+github.com/s-nlp/multilingual-fake-news › features_extraction.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/wkvong/multimodal-baby/-/blob/analysis_tools/processing.py)
+github.com/wkvong/multimodal-baby › processing.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mehdi-mirzapour/French-CRS/-/blob/french_crs/fast_text2corefchains.py)
+github.com/mehdi-mirzapour/French-CRS › fast_text2corefchains.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/elisaF/subjective_discourse/-/blob/code/analyses/question_classifier.py)
+github.com/elisaF/subjective_discourse › question_classifier.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/eric-ai-lab/CPL/-/blob/CPL/utils/_utils/vqa_clip_inference.py)
+github.com/eric-ai-lab/CPL › vqa_clip_inference.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/zsLin177/SRL-as-GP/-/blob/supar/utils/tokenizer.py)
+github.com/zsLin177/SRL-as-GP › tokenizer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/dair-iitd/moie/-/blob/code/aligner.py)
+github.com/dair-iitd/moie › aligner.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/novoic/blabla/-/blob/blabla/document_processor.py)
+github.com/novoic/blabla › document_processor.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/BramVanroy/astred/-/blob/astred/utils.py)
+github.com/BramVanroy/astred › utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/QtacierP/PRIOR/-/blob/codes/prior/data/pretrain/text_process.py)
+github.com/QtacierP/PRIOR › text_process.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/khuangaf/ZeroFEC/-/blob/zerofec/models/answer_selector.py)
+github.com/khuangaf/ZeroFEC › answer_selector.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/changzheng123/L-CAD/-/blob/cldm/struct_tool.py)
+github.com/changzheng123/L-CAD › struct_tool.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/codingsoo/nlp2rest/-/blob/rule_extractor/rule_extractor.py)
+github.com/codingsoo/nlp2rest › rule_extractor.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/lxucs/multilingual-mrc-isdg/-/blob/isdg/preprocess.py)
+github.com/lxucs/multilingual-mrc-isdg › preprocess.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mayubo2333/fewshot_ED/-/blob/dataset_processing/k_shot/construct_fewshot_dataset.py)
+github.com/mayubo2333/fewshot_ED › construct_fewshot_dataset.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PlusLabNLP/TagPrime/-/blob/preprocessing/process_ace05ep.py)
+github.com/PlusLabNLP/TagPrime › process_ace05ep.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/THUNLP-MT/Template-NMT/-/blob/lexical_scripts/terminology_evaluation/evaluate_term_plain.py)
+github.com/THUNLP-MT/Template-NMT › evaluate_term_plain.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/tanfiona/CauseEffectDetection/-/blob/preprocess.py)
+github.com/tanfiona/CauseEffectDetection › preprocess.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/tanfiona/CauseEffectDetection/-/blob/src/process/dataset.py)
+github.com/tanfiona/CauseEffectDetection › dataset.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/FarimaFatahi/CompactIE/-/blob/data/compactness_measurements.py)
+github.com/FarimaFatahi/CompactIE › compactness_measurements.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/faizanahemad/facebook-hateful-memes/-/blob/facebook_hateful_memes_detector/models/text_models/LangFeatures.py)
+github.com/faizanahemad/facebook-hateful-memes › LangFeatures.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/awebson/congressional_adversary/-/blob/src/preprocess_PN/S1_tokenize.py)
+github.com/awebson/congressional_adversary › S1_tokenize.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/awebson/congressional_adversary/-/blob/src/preprocess_PN/S1_tokenize_with_NER.py)
+github.com/awebson/congressional_adversary › S1_tokenize_with_NER.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/AnzorGozalishvili/sifrank_serving/-/blob/api.py)
+github.com/AnzorGozalishvili/sifrank_serving › api.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/AnzorGozalishvili/sifrank_serving/-/blob/test/test.py)
+github.com/AnzorGozalishvili/sifrank_serving › test.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/sunnweiwei/MixCL/-/blob/mixup.py)
+github.com/sunnweiwei/MixCL › mixup.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/asyml/forte-wrappers/-/blob/src/stanza/fortex/stanza/stanza_processor.py)
+github.com/asyml/forte-wrappers › stanza_processor.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/john-hewitt/backpacks-flash-attn/-/blob/training/src/test_topic.py)
+github.com/john-hewitt/backpacks-flash-attn › test_topic.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/lucy3/gpt3_gender/-/blob/code/segment_original_books.py)
+github.com/lucy3/gpt3_gender › segment_original_books.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/jinpeng01/WGSum/-/blob/src/prepro/data_builder.py)
+github.com/jinpeng01/WGSum › data_builder.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/jinpeng01/WGSum/-/blob/graph_construction/graph_construction.py)
+github.com/jinpeng01/WGSum › graph_construction.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/tsproisl/textcomplexity/-/blob/utils/run_stanza.py)
+github.com/tsproisl/textcomplexity › run_stanza.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/eslambakr/HRS_benchmark/-/blob/codes/t2i_models/Structured-Diffusion-Guidance-master/scripts/txt2img_demo.py)
+github.com/eslambakr/HRS_benchmark › txt2img_demo.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/gucorpling/amalgum/-/blob/nlp_modules/dep_parser.py)
+github.com/gucorpling/amalgum › dep_parser.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/gucorpling/amalgum/-/blob/nlp_modules/pos_tagger.py)
+github.com/gucorpling/amalgum › pos_tagger.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/jkallini/mission-impossible-language-models/-/blob/data/tag.py)
+github.com/jkallini/mission-impossible-language-models › tag.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/jkallini/mission-impossible-language-models/-/blob/edge_probing/get_constituency_parses.py)
+github.com/jkallini/mission-impossible-language-models › get_constituency_parses.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/KaijuML/dtt-multi-branch/-/blob/onmt/metrics/hss.py)
+github.com/KaijuML/dtt-multi-branch › hss.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/KaijuML/dtt-multi-branch/-/blob/data/dep_parsing_gpu.py)
+github.com/KaijuML/dtt-multi-branch › dep_parsing_gpu.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/taishan1994/python_common_code_collection/-/blob/src/segment.py)
+github.com/taishan1994/python_common_code_collection › segment.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/HCDM/XRec/-/blob/SAER/data/extact_exp_data.py)
+github.com/HCDM/XRec › extact_exp_data.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/HCDM/XRec/-/blob/SAER/data/extract_features.py)
+github.com/HCDM/XRec › extract_features.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/HCDM/XRec/-/blob/CompExp/data/extract_exp_data.py)
+github.com/HCDM/XRec › extract_exp_data.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/HCDM/XRec/-/blob/CompExp/data/extract_features.py)
+github.com/HCDM/XRec › extract_features.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Filter-Bubble/e2e-Dutch/-/blob/e2edutch/util.py)
+github.com/Filter-Bubble/e2e-Dutch › util.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Filter-Bubble/e2e-Dutch/-/blob/test/test_stanza.py)
+github.com/Filter-Bubble/e2e-Dutch › test_stanza.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/AutumnCrocus/shadow_sim/-/blob/card2vec.py)
+github.com/AutumnCrocus/shadow_sim › card2vec.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/lingmod-tue/stanza-api/-/blob/main.py)
+github.com/lingmod-tue/stanza-api › main.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/BRGM/hubeau/-/blob/inria/Code/pipeline.py)
+github.com/BRGM/hubeau › pipeline.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/BRGM/hubeau/-/blob/inria/Code/pipeline_st.py)
+github.com/BRGM/hubeau › pipeline_st.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/hjkgrp/text_mining_tools/-/blob/text_mining_tools/MOF_stability_scripts/solvent_removal_stability_extraction.py)
+github.com/hjkgrp/text_mining_tools › solvent_removal_stability_extraction.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/causalNLP/logical-fallacy/-/blob/codes_for_models/experiments_round2/analyze_datasets.py)
+github.com/causalNLP/logical-fallacy › analyze_datasets.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/causalNLP/logical-fallacy/-/blob/codes_for_models/experiments_round2/logicclimate_split.py)
+github.com/causalNLP/logical-fallacy › logicclimate_split.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/causalNLP/logical-fallacy/-/blob/codes_for_models/experiments_round2/remove_content_words.py)
+github.com/causalNLP/logical-fallacy › remove_content_words.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/texttechnologylab/textimager-uima/-/blob/textimager-uima-stanza/src/main/docker/stanza_service.py)
+github.com/texttechnologylab/textimager-uima › stanza_service.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/natasha/naeval/-/blob/docker/stanza/app.py)
+github.com/natasha/naeval › app.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/GateNLP/gateplugin-Python/-/blob/src/main/resources/resources/pipelines/python-stanford-stanza.py)
+github.com/GateNLP/gateplugin-Python › python-stanford-stanza.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/AdrianBZG/SQLformer/-/blob/preprocessing/vocabulary_handler.py)
+github.com/AdrianBZG/SQLformer › vocabulary_handler.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/AdrianBZG/SQLformer/-/blob/preprocessing/spider_questions_to_graph.py)
+github.com/AdrianBZG/SQLformer › spider_questions_to_graph.py (0 matches)
+--------------------------------------------------------------------------------
+
