@@ -6,7 +6,7 @@ import pandas as pd
 API_OK = 0
 API_ERROR = 1
 
-GITHUB_TOKEN = "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"
+GITHUB_TOKEN = #your Github token
 
 def get_commits_associated_with_repo_file(owner: str, repo: str, filepath: str):
     try:
