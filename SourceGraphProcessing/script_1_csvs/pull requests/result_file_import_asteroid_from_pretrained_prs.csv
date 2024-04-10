@@ -1,0 +1,1668 @@
+repo_url,filepath,Creation Date,PR Comment,PR/Issue Number
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-12-15T15:29:00Z,"Should have a `ifcuda(with_cuda=..., without_cuda=...)` function? 
+This could be rewritten as 
+```python
+device = args.device if args.device is not None else ifcuda(""cuda"", ""cpu"") 
+```",375
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-12-15T15:37:08Z,"Hmmmm... not convinced :-D because that function would be exactly
+
+```
+def ifcuda(a, b):
+    return a if torch.cuda.is_available() else b
+```
+
+which isn't much different to just inlining that exact code",375
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-12-15T17:54:34Z,"Yes, it would be exactly this. 
+Inlining that code would be 
+```python
+device = args.device if args.device is not None else ""cuda"" if torch.cuda.is_available() else ""cpu""
+```
+which is much less clear. 
+I'll give it more thought :wink:",375
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-12-15T21:46:45Z,I’m ok with both :),375
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-12-15T15:00:00Z,Should be good for review!,375
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2021-01-04T09:19:34Z,Let's fix the linting and merge that. ,375
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-04T10:47:46Z,"This was the easiest (but maybe not the cleanest) way to make OLA work with any/unknown models, like in asteroid-infer. The alternative would be to add `n_src` to the `Separatable` interface (ie. the model)",305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-04T10:48:39Z,"I didn't know where to stick all of this, so it lives in `asteroid.foo` for now :-D ",305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-04T10:49:40Z,Protocols are a new feature in Python 3.8 that define an interface without requiring the implementing classes to inherit some abstract base class (ie. duck typing). It is used only for documentation right now,305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-04T11:05:35Z,"Wasn't worth adding this to the protocol. 99% of the time a Separatable instance will be a `nn.Module`. For `LambdaOverlapAdd`, `get_device` infers the correct device from `.parameters()` (wich is identical to `.nnet.parameters()`)",305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-04T11:07:32Z,Swapped order as noted in #279 ,305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-04T11:08:12Z,Having one method start with `_` is a bit ugly but I didn't know how to change it without being backwards incompatible. We could name it `forward_separate()` and have that default to `_separate()` in `BaseModel` but not sure if it's worth it just for a pretty name,305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-04T11:09:25Z,Removed these docstrings since these aren't actually function params,305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-04T11:10:33Z,Fixed resample not being passed to separate,305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-04T11:14:37Z,"Unrelated to this PR, but I think this is not very good design. You will always pass exactly 1 model, but N files. Usually you'd use a `--named-flag` for the model here, and unnamed/positional arguments for the files: `asteroid-infer -m mymodel file1.wav file2.wav ...`.",305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-04T12:59:08Z,"How do you handle the docs then? 
+![image](https://user-images.githubusercontent.com/18496796/98114600-c5afc500-1ea5-11eb-9118-a58adab8fce8.png)
+",305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-04T13:03:14Z,"Do you have pointers for CLI design ?
+The current `asteroid-infer mymodel --files all.wav files.wav` seems equally OK to me. But I'm happy to question this. ",305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-04T13:04:20Z,This line is way too long.. Black is supposed to handle that right? ,305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-04T13:05:36Z,I'd do the opposite `--ola-no-reorder` or smth like this. It's better to reorder by default. ,305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-04T13:06:31Z,"Oh yes, thanks. ",305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-04T13:08:28Z,Cool. ,305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-04T13:10:33Z,"One thing I don't like it that this won't have docs and the arguments are hidden. 
+This is not so nice when working in interactive envs. ",305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-04T13:14:53Z,"Side note: Even without backward compat concers, I would have liked it this way. 
+
+```python
+from asteroid import ConvTasNet
+
+model = ConvTasNet.from_pretrained("""")
+model.separate("""")
+```
+
+seems nicer 
+
+```python
+from asteroid import ConvTasNet
+from asteroid.foo import separate
+
+model = ConvTasNet.from_pretrained("""")
+separate(model, """")
+```
+
+So we can remove the ""Backwards compatibility"" ",305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-04T13:17:02Z,`separate`-able?,305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-04T13:19:49Z,"I understand the current goal of `Separatable` and I'll look more into `Protocol` later, thanks for the explanation.",305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-04T13:23:08Z,Got it and agree. ,305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-04T13:24:13Z,"Would it make sense to have possible default value in `get_device` like in `getattr`? 
+We'd use `get_device(model, ""cpu"")`, and `Separatable` would be 100% accurate? ",305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-04T13:29:40Z,"I agree. 
+I don't remember how it evolved but [this line](https://github.com/mpariente/asteroid/blob/master/asteroid/models/base_models.py#L31) annoys me. Asking users to overwrite a ""private"" method doesn't seem right.  
+
+I'd call it `inference_forward` or `wav2wav_forward` or IDK. Let's come up with a good name. 
+Because this is the interface we're providing users for their own separatable, I think it is worth it, even for a pretty name. ",305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-04T13:36:34Z,"I think this is fine. I was thinking of making it optional since the beginning. 
+I guess you left it as a positional argument on purpose, to force people to know it's better to provide it?",305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-04T13:39:10Z,"That's more confusing than clarifying IMO. This is enough:
+> `LambdaOverlapAdd` can be used with `foo.separate` and the `asteroid-infer` CLI 
+",305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-04T13:43:30Z,This also doesn't seem right. We should change the name. ,305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-04T13:46:33Z,"I would be more flexible here
+```python
+separate_func = getattr(model, ""_separate"", model)
+out_wavs = separate_func(wav, **kwargs)
+```
+
+This will call `_separate` where possible, `__call__` (calls `forward`) for `nn.Module` and also supports plain functions, is that useless? ",305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-04T13:52:47Z,We could check that the model does have `sample_rate` and raise an informative error otherwise.,305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-04T13:59:59Z,"This is wrong, no? 
+Calling `separate` on this class would return `nnet._separate(*args, **kwargs)` instead of using the OLA we want. This should be `self.forward`. 
+Or am I mistaken? ",305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-04T14:02:02Z,"A bit unrelated but we should be able to pass kwargs from here to the network.
+With a warning that we don't segment the kwargs so they are shared between chunks.  ",305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-04T14:02:33Z,Also not clear to me where to put this yet ^^,305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-04T14:27:15Z,No because I didn’t want to break the interface ,305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-04T14:29:02Z,Oh... Didn’t think about that. I will check if there is a better way. ,305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-04T14:31:48Z,Oops ,305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-04T15:41:09Z,Ok. ,305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-19T10:44:32Z,"I think ""separatable"" would be more common, but from a quick Google it seems the more appropriate term would be ""separable"". Shall we change to that?",305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-19T12:12:22Z,"<img width=""528"" alt=""Bildschirmfoto 2020-11-19 um 13 10 34"" src=""https://user-images.githubusercontent.com/175722/99664594-b2d1ee80-2a68-11eb-967f-ad0618f2c893.png"">
+
+What do you think about this? It is autogenerated from `--help`.
+
+Or do you want actual Python code docs for people that want to work on the CLI code itself?",305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-19T12:19:24Z,"I think this is reasonable, but it's a bit ugly. 
+Anyway, we should probably change the way we make CLI (using `click`, `typer` or `fire` which I discovered only recently), so yes, it does look fine for now. ",305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-19T12:59:41Z,@mpariente ,305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-19T14:32:54Z,"I thought that this was a naming convention. That because the method was `separate`, we called it `Separatable`. Isn't this the case? ",305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-19T14:40:34Z,"I don't know of any. It's just a pattern that has been used since forever by all UNIX commands. For example it makes it possible to use the program with `xargs`:
+
+```
+# Inference on all .wav files in /foo
+find /foo | grep 'wav$' | xargs asteroid-infer -m mymodel
+```",305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-19T14:44:52Z,"Yes but seems like to proper name would be ""separable"".
+
+We could also call the interface `Separate`, which is common eg. in Rust (eg. https://doc.rust-lang.org/reference/special-types-and-traits.html#copy instead of Copyable).
+
+Let's just pick any name, I don't really care :D",305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-19T14:57:27Z,"Ok, thanks. I haven't been using UNIX for so long so I don't know much.
+Note that we support globs in --files, but I understand the point. ",305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-24T20:35:17Z,"```suggestion
+from .dsp.overlap_add import LambdaOverlapAdd
+from .utils import get_device
+```",305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-19T08:22:47Z,Should we fix this and merge it? ,305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-19T11:03:19Z,Addressed most of the suggestions. Did not change the `_separate` name so far. Will continue working on it later,305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-19T11:32:56Z,"The `_separate` can be change in a follow up PR, it'll be better that way ",305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-19T14:46:11Z,We still need a name for all of this that's better than `asteroid.foo`! Maybe @popcornell you have an idea?,305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-19T14:55:04Z,"Should be in engine maybe ? 
+Like` engine.inference`. 
+Then you can put into the asteroid` __init__` and maybe have `from asteroid import separate`. ",305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-19T14:59:07Z,"`engine` is only related to training for now. I would keep it out of there. 
+What about simply `asteorid/separate.py`?  ",305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-19T15:09:22Z,`asteroid.separate` sounds ok,305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-20T10:38:05Z,Also good. If we plan to use `engine` only for training in 1.0 we should rename to `training` probably. ,305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-20T11:02:14Z,"Haha, yes ^^",305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-24T14:58:35Z,"This mainly looked ready right? 
+Let's rename to `asteroid.separate` and review again. ",305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-24T15:04:04Z,yes I'll do it,305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-24T15:31:00Z,/rebase,305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-11-24T15:59:54Z,"Oh, it already ran the tests, but didn't refresh the page. Well, then this seems good to go :)",305
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-10-21T20:09:17Z,This is great. LGTM!,285
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-10-22T08:22:37Z,\rebase,285
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-10-22T08:24:02Z,\rebase,285
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-10-22T09:03:05Z,Missing test for the CLI. Merging anyway. ,285
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-10-21T16:45:06Z,"I think we should not do any of this. It's easy for the user to resample for model input and resample the model output. So better be explicit and require the user to type a bit more. As a compromise we could have automatic resampling behind a flag: if the flag is true, resample without warning; if the flag is false, raise an error.",283
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-10-21T17:13:45Z,It makes sense to do it because of the CLI IMO..,283
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-10-22T07:12:23Z,"This is exactly how I’d do it. If you u prefer you could even make resample default to true in the CLI, but not sure if that’s good. ",283
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-10-01T10:06:27Z,"Looks like I tend to add a leading space where I shouldn't :joy: 
+Thanks !",265
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-10-01T10:09:29Z,Note you can also add `?w=1` to the GH URL to hide whitespace changes.,265
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-10-01T10:11:19Z,"That's super cool ! 
+Where can I find more like this?",265
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-10-01T10:21:18Z,"> Where can I find more like this?
+
+I don't know, honestly. You may find the list of keyboard shortcuts helpful; press `?` on this page.",265
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-08-23T16:47:26Z,I'd add `recursive=True` to `glob()`,236
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-08-23T18:52:13Z,second this ,236
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-08-23T16:51:42Z,"Nice and simple!
+
+- We can use librosa to load all the files, it uses `soundfile` and falls back to `audioread` (ffmpeg on Linux IIRC). But it requires librosa to be installed. We could also try soundfile first and then fall back to librosa. Soundfile will get mp3 support soon https://github.com/erikd/libsndfile/issues/258
+- I think we should add a check to `separate()` to make sure it never overwrites any files. That's particularly important now that we have code that goes through entire directories.
+
+Am I correct that with this, user can now install Asteroid and do something like `asteroid-infer mpariente/convtasnet-xyz /my/files` without ever manually downloading any models? That would be awesome.",236
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-08-23T18:32:48Z,"> We can use librosa to load all the files, it uses soundfile and falls back to audioread (ffmpeg on Linux IIRC). But it requires librosa to be installed. We could also try soundfile first and then fall back to librosa. Soundfile will get mp3 support soon erikd/libsndfile#258
+
+I would use torchaudio here (which is using sox, and recently support for opus and ogg was added) or directly use ffmpeg-python which is supports almost all formats but is quite slow.",236
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-08-23T18:54:21Z,Yes maybe torchaudio will be better also because they plan to support more formats in the future. ,236
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-08-23T18:55:50Z,"I'll use torchaudio for loading then. 
+This will come in a follow up PR because it's not really related to the CLI. Thanks for the feedback",236
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-08-23T18:56:53Z,"> I think we should add a check to separate() to make sure it never overwrites any files. That's particularly important now that we have code that goes through entire directories.
+
+Yes, I agree. It will be in the follow up PR as well. 
+
+> Am I correct that with this, user can now install Asteroid and do something like asteroid-infer mpariente/convtasnet-xyz /my/files without ever manually downloading any models? That would be awesome.
+
+This is correct. This was also the case without the CLI. 
+Note that the downloaded models are cached as well. ",236
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-08-23T19:49:33Z,"Only tested locally, we'll need to find a way to correctly test the CLI in the near future. ",236
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-08-13T07:08:33Z,Sounds good! Maybe there's also some kind of warning mode for pre-commit that we could use with flake8.,198
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-08-13T07:19:56Z,"I saw that `--exit-zero` does that, but I'm not sure it's useful because the commit is sent right? 
+Or if we integrate deep source, the warnings appear locally so they can be fixed in the next commit? ",198
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-08-13T07:20:44Z,"TravisCI takes around 15mins per build, I'm bored. 
+I'm going to switch to Github Actions soon. ",198
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-08-11T12:55:32Z,">     * Couldn't use automodule on `asteroid.data` without members
+
+What do you mean with that?",192
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-08-11T13:44:17Z,"I had to do that 
+```rst
+PyTorch Datasets
+================
+
+.. currentmodule:: asteroid.data
+
+.. autoclass:: LibriMix
+.. autoclass:: Wsj0mixDataset
+.. autoclass:: WhamDataset
+.. autoclass:: WhamRDataset
+.. autoclass:: SmsWsjDataset
+.. autoclass:: KinectWsjMixDataset
+.. autoclass:: DNSDataset
+.. autoclass:: MUSDB18Dataset
+```
+
+Instead, I'd like to do that 
+
+```rst
+PyTorch Datasets
+================
+.. automodule:: asteroid.data
+   :members:
+```
+and this doesn't list anything actually. 
+If I do this 
+
+```rst
+PyTorch Datasets
+================
+.. automodule:: asteroid.data
+   :members: LibriMix, WhamDataset
+```
+
+it works though.",192
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-08-11T20:19:50Z,"Hey, sorry for the late reply.
+
+I tried to generate the documentation and found that I was missing the sphinx extensions `m2r2`, `nbsphinx` used by `docs/source/conf.py`. Would it be sensible to add them to `requirements.txt`?
+
+About the `automodule` directive, have you tried with the `:imported-members:` added to `data.rst`? So the complete file would contain:
+
+```rst
+PyTorch Datasets
+================
+
+.. automodule:: asteroid.data
+    :members:
+    :imported-members:
+```
+
+Stupid question, is there a way to type double colon without github popping a floating window with all the available emojis (which makes the interface slow AF...)?",192
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-08-11T20:28:44Z,"Thanks for the answer. 
+Yes, I can add the extensions to the docs requirements. 
+I think I tried and didn't work either, I'll try again tomorrow !
+
+About the `:`, if you add a space after it quite fast, it doesn't show up :joy: 
+But I like emojis so I won't complain :star_struck: ",192
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-08-11T20:29:30Z,"Correction, both extensions are in the `docs/requirements.txt` which is the one to build the docs.",192
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-08-11T20:40:33Z,"> I think I tried and didn't work either, I'll try again tomorrow !
+
+Weird, it works on my end 😕 . When you try again, can you reload the page with `Ctrl + Shift + R`, which bypasses the cache? Otherwise, you may visualize an outdated html document.
+
+> Correction, both extensions are in the docs/requirements.txt which is the one to build the docs.
+
+Thanks for the clarification. I completely missed the file as I was expecting all the requirements to be in a single `requirements.txt` (habits 🙄...)
+
+> Couldn't have anchor point in the index when using automodule (I'd like to have all elements listed in the sidebar)
+
+Does this [stackoverflow](https://stackoverflow.com/questions/58486590/sphinx-sidebar-include-modules-functions-and-class-methods) thread describe what you want to achieve? Sounds like it's a work in progress in Sphinx 😖.",192
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-08-11T20:56:23Z,"Then, I'm happier with the current version that has the indices in the sidebar. 
+Thanks for looking into it ! ",192
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-08-12T13:25:20Z,"Alright, I'm happy with the current version. It's not perfect but way better than before, let's merge it and we'll iterate on it after.
+Ping @michelolzam ",192
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-08-12T14:11:17Z,"I think it's really good!
+
+Would be even better with a link in the README or repo description so that people will find it in the first place :-)",192
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-08-12T15:58:33Z,"Once we are happy with the docs, I'll link to it, thanks!
+
+Le mer. 12 août 2020 à 16:11, Jonas Haag <notifications@github.com> a
+écrit :
+
+> I think it's really good!
+>
+> Would be even better with a link in the README or repo description so that
+> people will find it in the first place :-)
+>
+> —
+> You are receiving this because you modified the open/close state.
+> Reply to this email directly, view it on GitHub
+> <https://github.com/mpariente/asteroid/pull/192#issuecomment-672895146>,
+> or unsubscribe
+> <https://github.com/notifications/unsubscribe-auth/AEND2HEYXNNAO4T7SWEVK5LSAKPJNANCNFSM4P2YRZVQ>
+> .
+>
+",192
+github.com/asteroid-team/asteroid,asteroid/scripts/asteroid_cli.py,2020-05-28T21:14:02Z,"The first _real_ pre-trained model is available [here](https://zenodo.org/communities/asteroid-models) with approval of LDC. 
+
+Lots of things left to do, but this is a start, merging ",125
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-01T09:53:49Z,This comment should be before `  self.inter_RNN = DoubleRNN(...)`,416
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-01T09:53:53Z,Same here,416
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-01T15:05:45Z,"```suggestion
+```",416
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-01T15:08:08Z,I don't think it's inspired by this repo right? ,416
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-01T15:08:36Z,Need to be more explicit. ,416
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-08T07:52:19Z,"```suggestion
+        rnn_output1, _ = self.rnn1(inp)
+        rnn_output2, _ = self.rnn2(inp)
+        return torch.cat((rnn_output1 * rnn_output2, inp), -1)
+```",416
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-09T07:30:15Z,"```suggestion
+    """"""MulCat RNN block from [1].
+    
+    Composed of two RNNs, returns ``cat([RNN_1(x) * RNN_2(x), x])``.
+```
+",416
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-09T07:30:27Z,"Need to add reference, as done in other models. ",416
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-09T07:32:52Z,That doesn't look right. Why did you do that? ,416
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-09T07:59:54Z,"I think we just add whatever model we just want to test with jit here, no?",416
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-09T09:36:04Z,"We need to keep all the tests, otherwise we don't know when we break things. ",416
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-09T09:36:55Z,I added them back,416
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-10T09:19:02Z,"It's not what I meant. 
+I mean to use the `@pytest.mark.parameterize` to test both. 
+I'll take care of it.",416
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-12T14:54:46Z,"```suggestion
+                bidirectional=True,
+```",416
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-01-21T17:50:37Z,"Great this time, thanks !",416
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-01-22T19:42:41Z,@JorisCos do you mind reviewing please? ,416
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-07T19:35:45Z,@JunzheJosephZhu ?,416
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-07T20:52:25Z,"I guess the best way to do it would be combining them into s single object, adding an option for single/doubleRNN and adding a switch statement into the code?
+
+For example,
+class singleRNN(...):
+   def init(...,...,mulcat=False)
+   If mulcat:
+       self.inter_RNN = ...
+   else:
+       self.inter_RNN1 =
+       self.inter_RNN2 =
+
+The code would be somewhat more confusing to readers though
+
+",416
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-08T07:55:27Z,"Let's keep the code like this for now. 
+Please
+- Rename `DoubleRNN` to `MulCatRNN`
+- Add a description in the docstring. 
+- Test the `mul_cat` option in jit_test.py",416
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-09T03:27:26Z,"It looks like when running the jit test, sudormrf always fails the test. Is this something I need to worry about, or is this unrelated to DPRNN?
+Also, there's this super weird issue:
+
+The two lines below would work with torch jit:
+        _return torch.cat((rnn_output1 * rnn_output2, inp), 2)
+        return torch.cat((rnn_output1, inp), -1)_
+
+but this line throws an error: 
+        _return torch.cat((rnn_output1 * rnn_output2, inp), -1)_
+E           torch.jit.TracingCheckError: Tracing failed sanity checks!
+E           Encountered an exception while running the trace with test inputs.
+E           Exception:
+E               The following operation failed in the TorchScript interpreter.
+E               Traceback of TorchScript (most recent call last):
+E               RuntimeError: vector::_M_range_check: __n (which is 18446744073709551615) >= this->size() (which is 3)
+
+I ended up with:
+ _return torch.cat((rnn_output1 * rnn_output2, inp), 2)_
+which works fine",416
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-09T09:26:31Z,"Also, do you want to implement multi-stage loss? That was also in the facebook paper.
+I personally would prefer to first include it in my own recipe, since I'm gonna re-write the backbone anyway.",416
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-09T09:38:06Z,"Eventually, yes, but in the recipe sounds fine. 
+
+> since I'm gonna re-write the backbone anyway.
+
+What do you mean? ",416
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-09T09:40:45Z,"I mean I will use DPRNNBlock but not DPRNN for my separator, since the part starting from Conv2D diverge.",416
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-09T09:55:18Z,"Alright. 
+Can you fix the other issues I mentioned so that we can merge? ",416
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-09T15:15:18Z,"Ok, I'll do it ASAP. Btw, how do you write test cases for dataset objects? Can I just write if __name__ == ""__main__"" in my recipe?",416
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-09T15:40:47Z,We don't have tests for datasets.. Which is a large limitation. ,416
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-10T08:18:28Z,I just finished my work with variable speaker wsj0mix dataset in my recipe folder. Should I start a PR yet?,416
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-10T09:20:41Z,I have no clue why it's not passing the test_save_and_load_dprnn. Do you have any idea?,416
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-10T09:21:01Z,"The loading is failing. 
+
+We need to test the mulcat version, but still keep the old tests. For that, we can use `@pytest.mark.parameterize`. 
+
+Regarding the recipe, yes, you can make a PR :smiley:  Thanks",416
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-10T09:21:55Z,Because `use_mulcat` is not returned in `get_config` (as I mentioned before) so the new model doesn't use it. ,416
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-10T09:23:45Z,ok,416
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-10T11:00:38Z,"Hi, I'm starting to write the model class. I noticed that in all your models that are in the source code just use make_optimizer, but those in the recipe define make_model_and_optimizer. Do I have to follow this?
+Also, why do the models in the source code not have load_best_model function?",416
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-10T11:22:05Z,"No, you don't have to. 
+The most important is that loading the model for eval is easy. ",416
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-12T10:29:37Z,"how do i write test cases for models in my recipe?
+Also, github send me an email everyday telling me the version consistency check failed. I have no clue what it means",416
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-12T14:02:34Z,"> how do i write test cases for models in my recipe?
+
+They aren't tested if they are in the recipe folder. 
+
+> Also, github send me an email everyday telling me the version consistency check failed. I have no clue what it means
+
+Sorry about that, I don't receive those e-mails.. Anybody else receives those e-mails? ",416
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-12T14:59:37Z,"I
+- Fixed the jit tests
+- Parameterize model test with `use_mulcat`
+- Restore always bidirectional IntraRNN
+- Removed the recipe files (which should be added to another branch). 
+
+This is ready for merging on my side. 
+Next time, don't make PRs from your master branch please :wink: ",416
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-13T03:22:35Z,"---------- Forwarded message ---------
+From: Joseph <notifications@github.com>
+Date: Sat, Feb 13, 2021 at 8:11 AM
+Subject: [JunzheJosephZhu/asteroid] Run failed: Version consistency -
+master (c6ef670)
+To: JunzheJosephZhu/asteroid <asteroid@noreply.github.com>
+CC: Ci activity <ci_activity@noreply.github.com>
+
+
+
+[image: GitHub] [JunzheJosephZhu/asteroid] Version consistency workflow run
+
+  Version consistency: Some jobs were not successful
+
+View workflow run
+<https://github.com/JunzheJosephZhu/asteroid/actions/runs/562583919>
+
+[image: CI (3.6, 1.6.0)]
+
+*Version consistency* / CI (3.6, 1.6.0)
+Cancelled
+[image: annotations for Version consistency / CI (3.6, 1.6.0)] 2
+<https://github.com/JunzheJosephZhu/asteroid/actions/runs/562583919>
+[image: CI (3.6, 1.7.0)]
+
+*Version consistency* / CI (3.6, 1.7.0)
+Cancelled
+[image: annotations for Version consistency / CI (3.6, 1.7.0)] 2
+<https://github.com/JunzheJosephZhu/asteroid/actions/runs/562583919>
+[image: CI (3.6, nightly)]
+
+*Version consistency* / CI (3.6, nightly)
+Failed in 1 minute and 47 seconds
+[image: annotations for Version consistency / CI (3.6, nightly)] 1
+<https://github.com/JunzheJosephZhu/asteroid/actions/runs/562583919>
+
+
+
+—
+You are receiving this because this workflow ran on your branch.
+Manage your GitHub Actions notifications
+<https://github.com/settings/notifications>
+
+
+GitHub, Inc. ・88 Colin P Kelly Jr Street
+<https://www.google.com/maps/search/88+Colin+P+Kelly+Jr+Street++San+Francisco,+CA+94107?entry=gmail&source=g>
+・San Francisco, CA 94107
+<https://www.google.com/maps/search/88+Colin+P+Kelly+Jr+Street++San+Francisco,+CA+94107?entry=gmail&source=g>
+
+-- 
+Joseph Zhu
+",416
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-13T09:49:59Z,Not sure.. ,416
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-04T14:18:24Z,Adding a `self.activation = activations.get(activation)`  and `self.norm = norm_type` could save space and makes things a bit clearer ,306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-12-08T21:30:38Z,"```suggestion
+        return self.samplerate
+```",306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-12-08T21:47:37Z,"Thanks. We'll have to pass `sample_rate` to `BaseModel` and remove that part anyway, but in the mean time, at least it makes sense, thanks. ",306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-02T18:42:11Z,"but activation must be different for each MLP block
+",306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-04T10:49:01Z,Named after the Matlab function ?  ,306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-04T10:49:12Z,"I wonder if it should expect batch, mic_channels, seq_len to keep having the same input format everywhere",306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-04T10:49:34Z,LibriSpeech/test-clean,306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-04T11:37:58Z,"Yes, I think that would be much better! ",306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-05T10:20:31Z,"maybe, i named that way only because it sounds cooler i did not think about MATLAB",306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-05T10:22:11Z,Agree. What do you think that right now it does not compute all possible pairs when both inputs are multi-channel ? We do not need that functionality right now but we might need it in future. ,306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-05T11:51:41Z,I guess that's fine for now. Probably by using broadcasting it can be achieved quite cheap. ,306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-05T11:52:00Z,It sounds cool! :smiley: ,306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-05T14:14:15Z,Can you add a docstring to say what valid_mics is please? ,306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-05T14:25:43Z,"Same here, I don't know what is `valid_mics`.",306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-05T14:26:04Z,Let's remove that. ,306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-05T14:29:03Z,We'll need docs here. ,306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-05T14:29:45Z,"Maybe this description goes in the docstring, and we call it something smaller? 
+The name will be used as a tag in the HF's hub.  ",306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-05T14:32:52Z,"So, we're missing this, right? ",306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-05T14:34:35Z,"This is unused. 
+I understand that we would want to limit the confusion between conf args and bash args, but here, there is no way to have several config files.
+
+Let's add an argument for that in the train file. ",306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-05T14:35:12Z,Pass conf file from bash and load here. ,306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-05T21:34:25Z,good catch thanks,306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-05T21:34:43Z,no i forgot to re-comment it back. It is working ,306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-05T21:35:05Z,"TACDataset ? 
+",306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-05T21:35:48Z,I need a linter which checks for ipdb,306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-06T00:02:17Z,added,306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-08T15:12:06Z,"Do you agree that  ""Input signal should not be shorter than the ref signal."" was wrong? ",306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-08T15:12:56Z,`input` is a built-in so I replaced by `inp`,306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-08T15:26:36Z,"I wonder why not adding this is asteroid/data? 
+Is there a reason? Do you feel it's too recipe specific? ",306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-08T15:45:32Z,"I misunderstood something. 
+I thought that you wanted to pass config files directly, instead of the usual way, and that the conf file could be passed in run.sh? ",306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-08T16:53:51Z,"If we don't have a default value, we cannot use it in the inference CLI. 
+
+If there is no `valid_mics`, we consider all recordings to have the max number of mics. 
+@popcornell , can you validate that this is ok? ",306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-08T17:01:57Z,Yes this is a sensible default,306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-08T17:02:47Z,That did not work for some reason. Reverting to standard approach ,306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-08T17:03:46Z,Cool thanks. ,306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-08T17:05:43Z,"This dataset is problematic if you remember due to lack of spatial diversity in mics and the limited noise types.
+I would not add it to the toolkit IMO. ",306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-08T17:06:24Z,"yes missing the not
+",306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-08T17:28:05Z,"Ok, cool",306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-04T08:38:19Z,"Cool, thanks !
+
+> IMO in future we will have to refactor and re-organize the whole masknn
+
+Can you explain why, in your opinion, please? 
+
+5. Tests missing (TODO)",306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-04T08:44:50Z,"Another thing: I know that if we merge this without squashing, the binary files will be in the git history,  even if removed from the PR. This would be problematic because they are quite heavy. 
+
+But, I'm not sure what happens if we squash. My intuition is that they won't be in history. I know @iver56 has some knowledge about this, do you know about this particular case? ",306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-04T09:10:47Z,"> 
+> 
+> Another thing: I know that if we merge this without squashing, the binary files will be in the git history, even if removed from the PR. This would be problematic because they are quite heavy.
+> 
+> But, I'm not sure what happens if we squash. My intuition is that they won't be in history. I know @iver56 has some knowledge about this, do you know about this particular case?
+
+I'm not an expert on this topic, but I think if you squash the commits (where one of them added a file and a later one removed it again), the squashed commit does not include the file. So I think if you include only the squashed commit, and discard the original, offending commits, the repository won't contain the big file. Maybe `git gc` is needed for pruning loose objects. You can check the repository size at https://api.github.com/repos/mpariente/asteroid",306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-04T09:21:09Z,Thanks a lot for the feedback and resources Iver ! ,306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-04T09:26:32Z,"Your call really IMO if we squash there should not be in the history as long as I remove them.  If we wanna be sure i can make another pull request. 
+
+Sure,  IMO we have to be more modular and distinguish between models and building blocks. 
+For example: in `attention.py` there is DPTNet and is imported and wrapped in `models`. 
+I think in attention.py only building blocks should be included. And i would rename masknn to nnet or  blocks or smthing like that. 
+I would put both DPTNet and DPTAsNet in models. ",306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-04T12:05:57Z,"> Your call really IMO if we squash there should not be in the history as long as I remove them. If we wanna be sure i can make another pull request.
+
+Let's keep it that way. I think it'll be ok. 
+
+You say that mask nets should be considered as models, it makes sense. 
+I don't have a clear idea of how to organize it better, or why it is currently limiting. I'm happy to discuss about that.",306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-04T14:27:07Z,What do you think about the NCC module we move it to DSP ? ,306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-04T14:50:21Z,"> What do you think about the NCC module we move it to DSP ?
+
+IMO yes ",306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-04T14:52:54Z,Also keep in mind this is the first step towards Multi-Channel support so we may want also to start to think about how to organize the toolkit also to support multi-channel separation and enhancement algorithms and building blocks. ,306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-10T10:42:31Z,@popcornell do you feel like writing simple docstrings on the parts in the source code? Reviewing will be easier from there. ,306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-10T17:26:40Z,Yes but i have limited time available this week ,306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-02T14:29:20Z,/lint,306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-02T14:36:24Z,/lint,306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-02T18:56:01Z,"Added docstrings, removed .pkl config files. Added comments, added a dsp.spatial module with fast multi-channel cross-correlation. ",306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-04T09:32:52Z,"Great! 
+Let's merge master into the branch because this is a mess to review. ",306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-05T10:25:43Z,"> We need tests for the model and the xcor function
+
+it is at -9.3 on the multichannel dataset. epoch 36
+Both are working quite well ",306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-05T11:50:32Z,"Joris meant unit tests, to make sure we don't break things when we edit the files next time. ",306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-05T21:38:52Z,"> Joris meant unit tests, to make sure we don't break things when we edit the files next time.
+
+yeah i know but I hate them, adding some basic tests . However I need to get creative for xcorr one",306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-06T00:04:20Z,"> I wonder if the padding to max_mics couldn't be done in the network instead of in the dataloader? WDYT?
+You can't because you have to pad in order to batch examples with different number of mics.",306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-06T18:29:03Z,"Yeah, I realized that after I asked the question, thanks. ",306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-06T18:29:37Z,Re-request my review when you're done please,306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-08T15:55:11Z,\rebase,306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-08T16:01:40Z,/rebase,306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-08T17:06:05Z,"Also, the model currently only supports 3D inputs, which won't work with inference. 
+I don't know what to do about that. 
+In `BaseEncoderMaskerDecoder`, we have these three funcs to handle input shapes in a jitable way, should we also integrate in `FasNetTAC`?
+IMO, we can merge like this now and see if somebody can work on the jitability afterwards, maybe then, move these shape related stuff into `BaseModel` which can be useful in other models. ",306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-08T17:19:31Z,"I think there is a confusion in the `enc_dim` and `feature_dim` because if I change one without the other, the forward doesn't work. ",306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-08T17:34:24Z,"Great, the problem seems to be solved for `feature_dim`, there is still a problem with `enc_dim` though.. ",306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-08T17:58:54Z,Now should be solved. I extended the test also ,306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-08T18:24:27Z,GREAT !,306
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-07T19:25:23Z,👍 ,432
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-07T19:27:09Z,How did you find it? Test failure?,433
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-07T19:30:12Z,Unexpected warning in `BaseModel` with the new mechanism,433
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-07T08:58:40Z,"```suggestion
+                ""The argument `sample_rate` of `BaseModel` will be required in the future. ""
+```",431
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-07T08:59:07Z,How does it look now @jonashaag ?,431
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-07T10:30:56Z,:+1:,431
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-06T22:35:12Z,"Positional and having a default are orthogonal concepts. I think the wording should be: “will be required argument in the future.”
+
+Also, is it safe to remove the backwards compat SR table lookups now? (I am not up to date on that front)",431
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-07T08:56:47Z,"> Positional and having a default are orthogonal concepts. I think the wording should be: “will be required argument in the future.”
+
+Thanks.
+I was thinking about the wording and I was sure I messed it up :wink: 
+
+> Also, is it safe to remove the backwards compat SR table lookups now? (I am not up to date on that front)
+
+No, the only model that has 16k FS is DeMask, which is not on HF's hub yet (@popcornell ? ^^) ",431
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-02T21:05:50Z,I don't think this needs to be a property as the `sample_rate` but we could do it. ,427
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-02T21:08:22Z,"Should we add a flag to ignore that, if passed, make us ignore that and take the first channels or something? 
+Something that would be passed from the CLI to here (`--ignore-channels-check`).
+I'm not sure it's useful. ",427
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-02T21:08:55Z,"```suggestion
+    # Pass wav as [batch, n_chan, time]; here: [1, chan, time]
+```",427
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-02T21:10:38Z,"As said in the PR. We must have the `sample_rate` as argument. 
+
+If we want fixed number of channels, we don't need it in the `__init__`, we just `super(n_channels=2)` and that works. ",427
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-02T23:35:14Z,"why not ? some models are tied to the number of channels and actually to the array topology
+",427
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-03T08:48:09Z,"For sample_rate, we made it like that because the model holds reference to the sample_rate, but the filterbank as well, so we wanted the raise the warning when setting it. 
+
+But for the number of channels, for now nothing holds reference to it. 
+If we see it's a limitation in the future we can always write a setter/getter. 
+
+Asteroid, as Python, is for consenting adults :wink: ",427
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-03T11:42:46Z,Not sure...,427
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-03T12:16:41Z,"@popcornell what's your opinion on that? 
+Maybe we can start by not having it. And if we find it useful later, or there is a user demand, we can change that. ",427
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-02T21:14:55Z,"Another note: there will be several scenarios for `LambdaOverlapAdd`:
+- Multichannel input, single output (should work fine)
+- Multichannel input, multichannel output (not sure it works). 
+
+We should add some tests and if the second case doesn't work, raise a useful error. ",427
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-03T11:40:58Z,"> This can be serialized, but not loaded because `sample_rate` is needed in the model conf to load the model.
+
+How about moving the check for missing sample rate to *after* the model object has been constructed, and then checking using `hasattr(model, ""sample_rate"")`? That way you are free to set the `sample_rate` property however you like as long as it's present.",427
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-03T12:15:45Z,"> > This can be serialized, but not loaded because `sample_rate` is needed in the model conf to load the model.
+> 
+> How about moving the check for missing sample rate to _after_ the model object has been constructed, and then checking using `hasattr(model, ""sample_rate"")`? That way you are free to set the `sample_rate` property however you like as long as it's present.
+
+I thought about that. 
+That seems fine to me, let's do that. ",427
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-03T20:36:36Z,">  How about moving the check for missing sample rate to after the model object has been constructed, and then checking using hasattr(model, ""sample_rate"")? That way you are free to set the sample_rate property however you like as long as it's present.
+
+`sample_rate` has a default value, so actually this won't work because the `sample_rate` property will be there. ",427
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-05T12:49:19Z,"How about we drop it? It's backwards incompatible, but loading models will still work, and it's easy to fix for people. Maybe it's time we don't default to 8 kHz anymore now that people are using Asteroid for other things than traditional 8 kHz speech separation ",427
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-05T13:06:40Z,"Well, I'd be ok with that! ",427
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-02-06T21:09:41Z,"This is enough for this PR. 
+After merging this, I'll create a PR to remove the default on the sample rate. ",427
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-01-23T18:19:44Z,"It took time to find out what the bug was because those tests were not clear enough. 
+Let's try to improve it: 
+- Pass everything to `make_enc_dec` as kwargs, this is unclear currently.
+- Add a `n_fft` variable, and reference `n_fft + 2` in the `istft` to be clear. ",406
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-01-23T18:20:17Z,"Same here, name kwargs + introduce `n_fft`. ",406
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-01-05T19:33:13Z,"There is a problem with CI (1.7.0 build) that might be related to the stride (changed input shape), could someone have a look? 
+
+The other STOI problem on the nightly build _should_ be fixed now. ",406
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-01-08T14:47:05Z,We can have a closer look to what's wrong with DCCRNet @jonashaag ,406
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-01-22T19:43:53Z,Could you explain the fix please? What was wrong? ,406
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-01-23T16:37:19Z,"Sure, I added `stft_n_filters` in DCUNet and DCCRNet. I also changed the default values of `stft_n_filters` `stft_n_kernel_size` and `stft_stride`. In the tests the models are initialized with the default values and the tests use hard-coded values tied to those default parameters, so they needed to be changed. ",406
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-01-23T16:40:36Z,"At first, I was confused by the jit tests on DCCRNet that kept failing, but it was because I didn't change this line 
+` masknet_kwargs.setdefault(""n_freqs"", stft_n_filters // 2)` . ",406
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-01-23T16:43:31Z,"Before, because ` stft_n_filters` was equal to ` stft_kernel_size` ` masknet_kwargs.setdefault(""n_freqs"", stft_kernel_size // 2)` was ok but it had to be changed ",406
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-01-23T18:15:34Z,"Makes complete sense, thanks for the explanation! ",406
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-01-25T10:56:21Z,Thanks again ! ,406
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-01-05T14:05:46Z,"Thanks!
+
+We should add a test. (We should have added a test when we added Large-DCUNet-20...)",405
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2021-01-05T20:22:29Z,/rebase,405
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-12-04T23:59:23Z,:joy: :joy: :joy: ,377
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-12-05T00:16:21Z,"We'll keep `hf_get_from_cache` because we'll drop Zenodo support as soon as our models are fully migrated to HuggingFace's hub. 
+And we'll add a note about this behaviour in the docstring above. 
+Thanks for the note! ",377
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-12-05T10:47:50Z,"Did you know `model_id, revision = filename_or_url.split(""@"")`? :) (assuming exactly 1 `@`)",377
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-12-05T10:56:06Z,Can you tell why the custom header?,377
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-12-05T11:02:13Z,"Not a change request but just a FYI for the curious reader :-) – this would be much nicer using `pathlib`:
+
+```py
+matching_files =  [f.name for f in cache_dir.glob(cache_path.with_suffix("".*"").name)
+                   if f.suffix not in {"".json"", "".lock""}]
+```",377
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-12-07T10:14:31Z,True!,377
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-12-07T10:17:50Z,"In case of an LFS file (i.e. where the HTTP request does not return the file's content directly, but a redirect to a Cloudfront URL), our server uses `""X-Linked-Etag""` to include the `sha256` of the actual linked file (the large file itself). 
+
+It made more sense to us to use this hash (which we already have and don't have to compute again, as it can be very costly for super large files), but then it's not really the Etag of the redirect response itself.
+
+We could probably document this better at some point.",377
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-12-07T17:22:14Z,"Let's remove this note.  
+```suggestion
+```",377
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-12-07T17:23:45Z,"Let's assume this is tested in HF, we'll test it later if we have issues with it. ",377
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-12-05T00:23:18Z,"Thank you so much for this @julien-c, this is really exciting!
+
+> If it's too much code, feel free to remove/update some of it. We could also spin this code off into a utility library (`pip install huggingface_hub`?) at some point.
+
+This would make complete sense at some point, but the amount of copy/paste is fine, we'll keep everything. 
+
+We need to somehow be able to maintain that code so I'll have to read it carefully, I don't grasp everything yet :upside_down_face: ",377
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-12-05T11:05:58Z,Looks very good to me,377
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-12-05T11:08:17Z,What about uploads? 🤔,377
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-12-05T11:46:56Z,"You create a repo on the hub's page, clone it and push to it what you want, no fancy CLI required. 
+
+![image](https://user-images.githubusercontent.com/18496796/101241604-dbf4af00-36f7-11eb-9003-7642a8994a37.png)
+",377
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-12-07T10:12:18Z,"re. uploads: yes. In `transformers` we have programmatic ability to create (and even delete) model repos, which we could also spin off into the same small utility-focused library at some point. 
+
+But the design goal is to be able to upload models using just `git + git-lfs` so that it's quite independent from library implementations.
+
+The one thing that's not supported out of the box on the upload side is upload of files larger than 5GB: you need a custom lfs transfer agent that's currently bundled to `transformers` (and in the future in a separate library). That's quite a big model size though so should be rare.",377
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-25T18:59:51Z,"I thought you'd like to debate that @jonashaag.
+It's very unlikely that an asteroid tensor will have length 2 in it's last dimension, however very possible that a torchaudio tensor has even shape or dim -2. That's why we should default to torchaudio style IMO. ",358
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-25T18:59:53Z,"Actually, not a ValueError.",358
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-25T19:01:46Z,"```python
+In [9]: conv1d(torch.randn(1), torch.randn(1))
+---------------------------------------------------------------------------
+RuntimeError                              Traceback (most recent call last)
+<ipython-input-9-77ce17263db7> in <module>
+----> 1 conv1d(torch.randn(1), torch.randn(1))
+
+RuntimeError: weight should have at least three dimensions
+
+In [10]: conv1d(torch.randn(1), torch.randn(1, 1, 1))
+---------------------------------------------------------------------------
+RuntimeError                              Traceback (most recent call last)
+<ipython-input-10-b74bee98ca1e> in <module>
+----> 1 conv1d(torch.randn(1), torch.randn(1, 1, 1))
+
+RuntimeError: Expected 3-dimensional input for 3-dimensional weight [1, 1, 1], but got 1-dimensional input of size [1] instead
+
+In [11]: conv1d(torch.randn(11, 2, 3), torch.randn(1, 1, 1))
+---------------------------------------------------------------------------
+RuntimeError                              Traceback (most recent call last)
+<ipython-input-11-3f5f81e79961> in <module>
+----> 1 conv1d(torch.randn(11, 2, 3), torch.randn(1, 1, 1))
+
+RuntimeError: Given groups=1, weight of size [1, 1, 1], expected input[11, 2, 3] to have 1 channels, but got 2 channels instead
+```",358
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-25T19:18:59Z,"I'd be in favour of removing it completely as it will be confusing if it works from mag and phase or from real and imag. 
+And using either of `torch_complex_from*` will be more explicit.",358
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-25T19:55:49Z,"Or rather, rename it to `torch_complex_from_reim`?",358
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-25T20:03:50Z,"Hmm... I'm not sure what's the advantage of handling this case. The idea of this generic conversion function was that if you write some code (say a library) that uses complex numbers, you can accept any type of complex representation. So you don't have to know the representation upfront.
+
+If you know upfront in the library what type of tensor you have then you can do the conversion directly without this function.
+
+If you don't know what you have in the library, then IMO the library should complain to its user that it got input that it didn't understand, which is what the current code does.",358
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-25T20:17:25Z,"I knew you would disagree hahah 
+As we discussed. Let's remove this function entirely and add `to_torch_complex` is `asteroid-filterbanks`.",358
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-26T14:49:01Z,Here. ,358
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-26T14:49:08Z,Here,358
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-26T14:49:38Z,Needed to install. Otherwise the CLI didn't work. Don't know why. ,358
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-25T20:59:19Z,\rebase,358
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-20T11:46:53Z,"JIT takes time to startup, so we use `script_if_tracing` instead so that, if necessary, a module/function is scripted when we trace a model, but JIT is not loaded when asteroid is imported. 
+
+Besides, I'm not sure I see the point of scripting, but if it's scriptable, we can add it :wink: ",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-20T12:21:46Z,Very clear. ,276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-20T12:22:13Z,What happened here? ,276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-20T12:23:10Z,"Is it possible to make ""mini"" architectures for this in their respective files? For tests, demos on collab etc.. That would be cool. ",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-20T12:25:19Z,"Oh, I'll need to remove that after this is merged.. ",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-20T12:26:04Z,Ohh great that this is passing !,276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-20T12:26:51Z,"Can you explain the new shapes please? 
+It's to give the name number of frames of STFT but have different wav size? Or what is the motivation? ",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-20T12:27:41Z,"Better test if there are two layers I guess
+```suggestion
+            ""n_layers"": 2,
+```
+",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-20T13:03:00Z,OK I'm not very familiar with all of this. I just added this to make the tests pass 😅 Please change to whatever is better!,276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-20T13:03:57Z,It was bad in the initial implementation; the subclasses override this attribute and it doesn't make sense to have it in the parent class IMO,276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-20T13:04:22Z,"Makes sense, I will try",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-20T13:07:08Z,The problem is that DCUNet only works with certain shapes (T - 1 must be divisible by 16). I found these by trial and error. It's the same shapes as elsewhere + 4500.,276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-20T14:12:57Z,"No problem. I didn't know anything about it until recently. 
+I'll check what was the error. ",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-20T14:17:29Z,"Ok, thanks. This is what I thought. 
+Would it make sense to handle the ""slicing"" in the model? So that we don't have to be careful about it everywhere else? 
+
+I'm worried that these tests pass because the effective input size, after the STFT, is the same. In this case, the scripting unit test is not useful. ",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-20T14:18:20Z,I'll have a deeper look at that asap,276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-20T14:39:44Z,"This is what I had in mind. All the inputs have the same shape once out of the STFT, so this test ensure that if the input has the same shape, scripting keeps consistency. This is already good, but not enough. 
+I'll keep digging",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-20T14:49:08Z,Fixed,276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-22T19:18:12Z,I did it. Have a look if you can. ,276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-23T09:15:51Z,"Undecided if this should be called `""mini""` only. ",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-23T09:17:07Z,"Probably need better variable names and better docstrings.
+`torch.Size` is not scriptable yet and reshaping cannot be traced because they aren't static, so passing the input is the simple solution. We can do other things but this is just to see if we'd like to have that. ",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-23T09:17:43Z,Needed to pass this as a `torch.Tensor` for scripting.,276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-23T09:18:05Z,Needed to convert to `int` for scripting. ,276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-23T09:19:21Z,"This was 4701 previously. With 5010, it used to fail, now it doesn't. So the scripting reshapes properly, which is cool. ",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-23T18:17:26Z,"Yes, ""mini"" or ""test"" or ""Asteroid-Mini"" or ...
+
+In any case we should add a comment that this isn't in the paper.",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-23T22:23:10Z,"This is great, and very useful !",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-23T22:23:30Z,"This is very ugly, isn't it?..  ",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-24T07:59:59Z,"It's similar to `librosa.util.fix_length`. I wonder if we should call it something similar, but then it'd be inconsistent with the other names",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-24T08:02:29Z,"I agree, I think I did it this way because there where some argument overriding issues with the DCCRN constructor but I don't remember the details and I'm sure we can also get it to work without the extra level. Would you suggest to add the masknet kwargs to the model kwargs, ie. flat? Seems to least ugly to me. So:
+
+```py
+def __init__(self, encoders, decoders, **kwargs):
+    ...
+    encoder, decoder = make_enc_dec(...)
+    masker = self.masknet_class.default_architecture(architecture, **kwargs)
+    super().__init__(encoder, masker, decoder)
+```",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-24T08:56:23Z,"Also don't know. 
+It would be ok to change the name of `pad_x_to_y`, if we think of a better one, that unifies those things. ",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-24T08:56:55Z,"Yes, this will be much better IMO. ",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-24T09:04:03Z,Let's do it later maybe,276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-24T09:55:08Z,Why is `n_src` here as well? ,276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-24T09:56:04Z,Why did the `sample_rate` disappear? ,276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-24T10:01:24Z,"```suggestion
+def torch_version_tuple():
+    version, *suffix = torch.__version__.split(""+"")
+    return tuple(map(int, version.split("".""))) + tuple(suffix)
+```",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-24T10:18:02Z,"```suggestion
+    def __init__(self, encoders, decoders, output_layer=None, mask_bound=""tanh"", **kwargs):
+```",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-24T10:20:28Z,I removed all the duplicate params everywhere and kept only the ones we need (`stft_kernel_size` in this case). We can also add it back if you think it's more clear,276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-24T11:09:08Z,"Ok, thanks. ",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-24T11:24:42Z,"```suggestion
+```",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-24T11:34:47Z,"Can you have a look at this? 
+Maybe this solves the issue you were mentioning? I didn't find the failure on my end. Checking if it works with torch 1.7",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-24T11:42:30Z,Checking if negative padding works here (trimming and padding in the same function) and solves the 1.7 error,276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-24T11:48:17Z,Cool !,276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-24T11:48:51Z,"The issue was somewhere else, in `trim_x_to_y` if both have the same length, but it's fixed now",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-24T11:52:30Z,"I finally saw that, thanks. ",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-26T17:37:16Z,"@kssk16 Note that our LSTM is of size 640 rather than 512 because we're not stripping the Nyquist frequency so have 257 rather than 256 frequency bins.
+
+Maybe we should change this as well so the implementation matches the paper.",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-27T10:33:03Z,"> @kssk16 Note that our LSTM is of size 640 rather than 512 because we're not stripping the Nyquist frequency so have 257 rather than 256 frequency bins.
+> 
+> Maybe we should change this as well so the implementation matches the paper.
+
+@jonashaag Thanks for letting me know.",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-27T15:02:40Z,"More differences:
+
+- ~~They use PReLu, not Leaky ReLu~~
+- ~~They use (2, 1) padding for all encoders and (2, 0) padding for all decoders~~
+- ~~In the output layer they use output_padding=(1, 0)~~
+- They use a window of size 400, pad it (centered) to 512 and then use a 512 FFT. We don't do the 400 thing.",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-02T15:24:45Z,Note: New WIP version here https://github.com/jonashaag/asteroid/blob/b053ed67806da48270742ff01202d158a3faaef8/asteroid/masknn/recurrent.py#L549 https://github.com/jonashaag/asteroid/blob/b053ed67806da48270742ff01202d158a3faaef8/asteroid/models/dccrnet.py ,276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-19T10:11:37Z,"OK, this should be ready to review.
+
+The DCCRN implementation isn't 100% identical to the paper one, but very similar. Differences I know of: using 512 FFT instead of 400 + 2 * 56 zero padding; slightly different padding in T dimension.
+
+While fixing the DCCRN implementation I realized that you don't need the `intermediate_layer` concept because you can simply replace it by an ""asymmetric"" u-net structure where the deepest layer's ""partner"" is the identity. In fact, the `intermediate_layer` concept doesn't actually fit the DCCRN architecture, so I removed it.
+
+I also included a fix to the DCUNet architectures that I realized was wrong.
+
+In general, I'd appreciate if someone could compare my implementations to the papers because I'm quite unsure if there are more differences that I didn't spot. Code can be found here https://paperswithcode.com/paper/dccrn-deep-complex-convolution-recurrent-1 https://paperswithcode.com/paper/phase-aware-speech-enhancement-with-deep-1
+
+Commit fc0232cdf9892de50ecdaff23183da293776ccf4 is sort of unrelated, we can exclude it.",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-19T11:31:59Z,Maybe @kssk16 @huyanxin @sweetcocoa and @chanil1218 would like to have a look? That would be nice!,276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-20T14:48:32Z,"If I print in the BaseUNet's forward in this way
+```python
+    def forward(self, x):
+        enc_outs = []
+        for idx, enc in enumerate(self.encoders):
+            x = enc(x)
+            enc_outs.append(x)
+            print(f""Encoding {idx}"", x.shape)
+        for idx, (enc_out, dec) in enumerate(zip(reversed(enc_outs[:-1]), self.decoders)):
+            x = dec(x)
+            print(f""Decoding {idx}"", x.shape)
+            x = torch.cat([x, enc_out], dim=1)
+        return self.output_layer(x)
+```
+
+I get
+```
+print(tf_rep.shape) torch.Size([1, 256, 36])
+Encoding 0 torch.Size([1, 16, 128, 35])
+Encoding 1 torch.Size([1, 32, 64, 34])
+Encoding 2 torch.Size([1, 64, 32, 33])
+Encoding 3 torch.Size([1, 128, 16, 32])
+Encoding 4 torch.Size([1, 128, 8, 31])
+Encoding 5 torch.Size([1, 128, 4, 30])
+Encoding 6 torch.Size([1, 128, 4, 30])
+Decoding 0 torch.Size([1, 128, 4, 30])
+Decoding 1 torch.Size([1, 128, 8, 31])
+Decoding 2 torch.Size([1, 128, 16, 32])
+Decoding 3 torch.Size([1, 64, 32, 33])
+Decoding 4 torch.Size([1, 32, 64, 34])
+Decoding 5 torch.Size([1, 16, 128, 35])
+```
+
+where the time dimension is not divided by two at every iteration, but just looses one. Is this intended? At least this doesn't seem consistent with the docstring and also your comments that suggest that the time dim has to be divisible by the prod of strides. Are the strides on both freq and time dimension? 
+
+By the way, for DCCRNet, the jit test passes even with different size, which is great news !
+",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-20T18:04:17Z,"Could it be that you confused DCUNet and DCCRNet here?
+
+```
+$ python -c 'import asteroid.models as m, torch; m.DCUNet(""DCUNet-10"")(torch.randn(1,50000))'
+Encoding 0 torch.Size([1, 32, 129, 97])
+Encoding 1 torch.Size([1, 64, 65, 49])
+Encoding 2 torch.Size([1, 64, 33, 25])
+Encoding 3 torch.Size([1, 64, 17, 13])
+Encoding 4 torch.Size([1, 64, 9, 13])
+Decoding 0 torch.Size([1, 64, 17, 13])
+Decoding 1 torch.Size([1, 64, 33, 25])
+Decoding 2 torch.Size([1, 64, 65, 49])
+Decoding 3 torch.Size([1, 32, 129, 97])
+...
+```
+
+The paddings are different in DCUNet. In DCCRNet we use the ""official"" padding (or very similar), that is, the encoders each lose 1 frame in the T dim and the decoders add it back using output padding.
+
+In DCUNet, there is not official implementation available, so I used what's most common with other implementations, which seems to be padding so that for each encoder, `T -> (T+1)/2` roughly, for example `17 -> 9 -> 5 -> 3 -> 2 -> 2`. We can also use some other padding, I'm not an expert in u-nets (not expert in anything in deep learning really 😅)",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-20T18:45:25Z,"It is completely possible, yes ! 
+I'm not an expert in either of these architectures and didn't read the papers in detail recently. 
+
+Given that DCCRNet is much more flexible, I guess it makes sense to isolate the tests of DCUNet, right? 
+I'll do that",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-20T19:45:44Z,"IMO, this should be good. 
+
+I found the correct durations for DCUNet by hand as well, so we test 3 shapes and the traced model is consistent, which is great ! 
+
+Few things:
+- Having to guess input shape is very bad, and the error message is half helpful because it is in the frequency domain, so it doesn't directly help to get the right shape in the time domain. How can we improve that? Do we want to improve that? 
+- Those tests are pretty slow, so it would be nice to have ""mini"" architectures. 
+
+![image](https://user-images.githubusercontent.com/18496796/99842909-f57eee00-2b70-11eb-9cd4-a60079ba2d8d.png)
+
+Extending DCCRNet to separation shouldn't be too hard, we just need to overwrite the second entry of the last line in the architecture file that is past to the complex conv, right. So we could easily add a `n_src` arg to it and enable separation. Am I missing something? 
+
+![image](https://user-images.githubusercontent.com/18496796/99843080-3e36a700-2b71-11eb-8c84-76f725ba7498.png)
+",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-22T19:20:10Z,"I made ""mini"" architecture. 
+
+Still wondering about the guessing of the input shape. 
+Maybe padding trimming the time axis and raising a warning would be better? WDYT?  ",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-22T19:40:11Z,"In the line of: 
+```patch
+Index: asteroid/masknn/convolutional.py
+<+>UTF-8
+===================================================================
+--- asteroid/masknn/convolutional.py	(revision dd47fce87c6d72878c6fffc38f14b1ef74ff1c27)
++++ asteroid/masknn/convolutional.py	(date 1606073650145)
+@@ -516,15 +516,29 @@
+             **kwargs,
+         )
+ 
+-    def _check_input_dims(self, x):
+-        # TODO: We can probably lift the shape requirements once Keras-style ""same""
+-        # padding for convolutions has landed: https://github.com/pytorch/pytorch/pull/42190
++
++    def fix_input_dims(self, x):
+         freq_prod, time_prod = self.encoders_stride_product
+-        if (x.shape[1] - 1) % freq_prod or (x.shape[2] - 1) % time_prod:
++        if (x.shape[1] - 1) % freq_prod:
+             raise TypeError(
+                 f""Input shape must be [batch, freq + 1, time + 1] with freq divisible by ""
+-                f""{freq_prod} and time divisible by {time_prod}, got {x.shape} instead""
++                f""{freq_prod}, got {x.shape} instead""
+             )
++        if (x.shape[2] - 1) % time_prod:
++            div, mod = divmod((x.shape[2] - 1), time_prod)
++            pad_shape = [0, time_prod - mod]
++            x = nn.functional.pad(x, pad_shape, mode=""constant"")
++        return x
++
++    # def _check_input_dims(self, x):
++    #     # TODO: We can probably lift the shape requirements once Keras-style ""same""
++    #     # padding for convolutions has landed: https://github.com/pytorch/pytorch/pull/42190
++    #     freq_prod, time_prod = self.encoders_stride_product
++    #     if (x.shape[1] - 1) % freq_prod or (x.shape[2] - 1) % time_prod:
++    #         raise TypeError(
++    #             f""Input shape must be [batch, freq + 1, time + 1] with freq divisible by ""
++    #             f""{freq_prod} and time divisible by {time_prod}, got {x.shape} instead""
++    #         )
+ 
+ 
+ class SuDORMRF(nn.Module):
+Index: asteroid/masknn/base.py
+<+>UTF-8
+===================================================================
+--- asteroid/masknn/base.py	(revision dd47fce87c6d72878c6fffc38f14b1ef74ff1c27)
++++ asteroid/masknn/base.py	(date 1606072909225)
+@@ -92,8 +92,9 @@
+         )
+ 
+     def forward(self, x):
+-        self._check_input_dims(x)
++        x = self.fix_input_dims(x)
+         return super().forward(x.unsqueeze(1))
+ 
+-    def _check_input_dims(self, x):
++    def fix_input_dims(self, x):
+         """"""Overwrite this in subclasses to implement dimension checks.""""""
++        return x
+```
+
+which doesn't work because the padding doesn't match the `tf_rep` when applying the mask but we could also correct for that without problems. ",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-23T16:06:23Z,"> So we could easily add a `n_src` arg to it and enable separation. Am I missing something?
+
+I think so, yes! Probably also applies to DCUNet.
+
+> Maybe padding trimming the time axis and raising a warning would be better?
+
+I like the padding/trimming approach but I dislike warnings when you can raise an error instead. I suggest to make things explicit: By default it raises an error that tells you to enable padding/trimming or fix your input size. PoC, maybe the choice between padding and trimming is over engineered?
+
+```py
+# time_prod
+strideprod = 16
+# x.shape[1]
+l = 35
+# New self.fix_length parameter to __init__
+fix_length = None  # or ""pad"" or ""trim""
+
+l_remainder = (l - 1) % strideprod
+if l_remainder:
+    if fix_length == ""trim"":
+        l -= l_remainder
+        print(f""Trimmed length to {l}"")
+    elif fix_length == ""pad"":
+        l += strideprod - l_remainder
+        print(f""Padded length to {l}"")
+    else:
+        print('Invalid shape, use fix_length=""trim"" or fix_length=""pad""')
+
+# tf = pad_or_trim_to(tf, l)
+# tf = net(tf)
+# tf = reconstruct_shape(tf, x.shape[1])
+```",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-23T18:08:53Z,"I understand. 
+In the current code, I don't raise a warning, I just pad. Feel free to adapt if how you'd like. ",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-23T18:18:57Z,"> In the current code, I don't raise a warning, I just pad. Feel free to adapt if how you'd like.
+
+OK, working on it now!",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-23T19:27:06Z,"Made some changes, what do you think? It didn't have time to look at the tests yet, but the tests work for both fix modes, and fail for None.
+
+Btw there is a test failure related to Torch complex number support (already fixed in Torch nightly)",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-23T21:55:38Z,"Do you have a link to the issue or the PR? 
+Maybe we should run tests on torch-nightly as well? 
+I'll have a look at the changes. ",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-24T07:57:24Z,"> Do you have a link to the issue or the PR?
+
+I think it is https://github.com/pytorch/pytorch/issues/47157
+
+> Maybe we should run tests on torch-nightly as well?
+
+That would be a good idea.",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-24T07:58:05Z,"> * Comment the test that's failing, or skip if torch is under 1.8, sounds ok?
+
+Better skip if Torch < 1.8",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-24T08:57:55Z,I let you take care of those changes (skip the test and masknet_kwargs). We'll add tests on nigthly afterwards. ,276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-24T09:40:42Z,"Ok, done! I also changed the args specifications to be all tuples because I accidentally modified some of the lists because they are mutable, which is a terrible thing to debug.",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-24T09:57:14Z,I created a PR against PyTorch for better version checks https://github.com/pytorch/pytorch/pull/48414,276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-24T11:10:09Z,I'll review the whole PR again today but I think it's ready to be merged !,276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-24T11:21:56Z,"> I'll review the whole PR again today
+
+Thank you! Much appreciated. Somehow this PR got MUCH bigger than expected :-D",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-24T11:47:04Z,"Found missing shape check for DCCRN, added tests for shape checks, and also fixed the PyTorch 1.8 issue (it only breaks if you do `foo[:x]` where `x = len(foo)`, ie. a noop slice)",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-24T11:49:53Z,"So the trimming padding can be done with a single function, `trim_x_to_y`  and `pad_or_trim_x_to_y` are not needed it seems. ",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-24T11:52:07Z,It's quite dangerous to push to the same branch in the same time (my bad :sweat_smile: ) but we did well ^^,276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-24T11:53:06Z,"> So the trimming padding can be done with a single function
+
+Indeed it seems so! https://github.com/pytorch/pytorch/blob/367426494759ddde0896665ed55c6f9af2870cf0/aten/src/ATen/native/ConstantPadNd.cpp#L25",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-24T11:55:16Z,"So we could remove the trim functions and change the pad docstring to say ""right-pad or right-trim"".
+
+Btw I won't be pushing any code for the next few hours, so feel free to push :P",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-24T12:00:06Z,I'll do that. ,276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-24T12:45:45Z,"I re-reviewed everything and it LGTM
+Waiting for your approval to merge it. ",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-24T13:51:18Z,"Also did a quick review, LGTM, go ahead :)",276
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-19T13:43:15Z,"I think this is a solid solution. But maybe the expected cost this scenario:
+
+> users might change it without changing other part of the model that reference it
+
+(with cost = probability of someone hitting that use × time it takes them to fix the issue) isn't worth doing such a ""complicated"" solution and we can simply go with a normal attribute instead?",336
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-11-19T15:19:23Z,"I think it's nice to be able to raise the warning, which justifies this approach.
+Going to fix the rest, add tests, and merge since you seem ok. 
+Thanks for the review",336
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-23T19:22:02Z,do you have an alternative to this? this is an important fix for torch.script as it does not allow forward passes that would have `Optional[torch.Tensor]`,237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-23T19:54:44Z,"I don't exactly understand the question. 
+This looks like it will always return a torch.Tensor with the `else` right? ",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-24T06:04:54Z,"yes, and this is required for torch.script as a path without a returned tensor is not allowed",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-24T06:05:16Z,the questions is if setting this path to the default is okay for yiou,237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-24T07:22:22Z,"Yes, that seems alright. 
+I don't think people will give 1-dim tensor as spectrograms.. ",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-24T17:24:20Z,Actually not needed here? ,237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-02T18:34:01Z,"We should probably have a comment here to explain that this is for scriptability. 
+I wonder, @faroit, is there a prettier way to do that? 
+For example, this is not going to change when a model is exported (the control flow op is static), so this could be traced instead of scripted? And we could keep the same behaviour as currently?  ",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-02T18:34:04Z,What this related to the jitability? ,237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-02T18:49:16Z,"Oops, really sorry for that. As you have certainly guessed, it has nothing to do with jitability :s. Is there any way to rewrite the commit history without making it worse?",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-02T18:53:39Z,"It's better to leave unrelated code unchanged. This is fine for this one, you can leave it. ",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-02T19:23:50Z,"If you want to go branchless in the different `forward` methods, we could add a pointer to a function that switches to  the actual forward method when the class is initialized. Not necessarily the most elegant solution, but it should remove the need for `if` statements. For example, for `Conv1DBlock`, it would look like:
+
+```python
+    # In Conv1DBlock
+    def forward(self, x):
+        """""" Input shape [batch, feats, seq]""""""
+        shared_out = self.shared_block(x)
+        res_out = self.res_conv(shared_out)
+        if not self.skip_out_chan:
+            return res_out, res_out
+        skip_out = self.skip_conv(shared_out)
+        return res_out, skip_out
+```
+
+```python
+    def __init__(self, ...):
+        #...
+        if self.skip_conv:
+            self._skip_return = self._skip_out_return
+        else:
+            self._skip_return = self._no_skip_return
+
+    def forward(self, x):
+        """""" Input shape [batch, feats, seq]""""""
+        shared_out = self.shared_block(x)
+        res_out = self.res_conv(shared_out)
+        skip_out = self._skip_return(shared_out)
+        return res_out, skip_out
+
+    def _skip_out_return(self, shared_out):
+        return self.skip_conv(shared_out)
+
+    def _no_skip_return(self, shared_out):
+        return torch.tensor([0.0])
+```
+
+What do you think?",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-02T19:32:40Z,"But you needed to keep the `torch.tensor([0.])` in the `_no_skip_forward` because script would raise an error otherwise right?  I thought about that and I don't think it solves the problem. Scripting will raise the same typing issues and tracing will still work in the same way. 
+
+Also, if we return two tensors, there is a simpler solution without if in the forward, which is much more readable IMO
+```python
+# init
+self.skip_conv = nn.Conv1d() if skip_chan else nn.Identity()
+...
+# forward
+return res_out, self.skip_conv(res_out)
+```
+but this still doesn't solve the problem. 
+
+We can really on the dev to decide whether the control flow is static or not, if it's static, trace is fine, otherwise script is needed, and in this case, typing issues need to be fixed. ",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-04T12:49:43Z,"@mhu-coder pointed out that this is wrong, the sqrt should only be applied to the variance. He'll fix it. ",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-04T13:17:13Z,thanks for reporting it here. I have added a test and fixed the issue (in 1 commit each) but have not pushed yet.,237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-22T09:23:39Z,@popcornell do you have an argument to keep the `DualPathProcessing` definition in the `forward`?,237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-22T09:25:50Z,"The mask should be computed with `in_chan`, not with `mha_in_dim`. So actually, we don't need an output linear layer, but all these layers will `use `in_chan`, from `net_out_conv`.",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-22T09:27:50Z,Still very unsure about that.. ,237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-22T09:30:24Z,Isn't there a built-in function to do that? ,237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-22T09:35:14Z,Why from 1000 to 32? ,237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-22T09:36:48Z,"Let's test the filterbanks independently of the models, otherwise it'll grow too much. 
+By using `BaseModel` with a `nn.Identity` masker, and test consistency with different input shapes once traced. ",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-22T09:37:17Z,Why not `torch.testing.assert_allclose`?,237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-22T09:52:09Z,Just to avoid using the same length at the input but does the value really matter?,237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-22T10:00:54Z,"32 samples makes 2 frames, it seems small. But I agree to have samples with different sizes. ",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-22T11:46:00Z,"Do you mean having a class inheriting from `BaseModel` with a `masker` component set to `torch.nn.Identity` just to check that the traced model can process input data with various values of `ndim`?
+
+In this case, why not a class inheriting from `BaseEncoderMaskerDecoder` instead? It makes writing the class much easier.
+
+I have written the test but, as suspected, tracing will only take one of the branches in the `forward`s of the encoder and the decoder meaning that if a model has been traced with, say, a 2D input, the traced model will only work with 2D tensors. From here, we can either script the `forward`s of the encoder and decoder or rewrite these methods to not have branches. I'll have a look at the scripting solution.
+
+**Edit**: Or we could have a hybrid export where some blocks are traced and others are scripted. In this sense, we could systematically script the encoder and the decoder of a `BaseEncoderMaskerDecoder` instance when exporting. This way, exported models will always support inputs of various shapes. However, this would also mean that each model would need to define an `export` or `trace` method in which we specify which parts are to be scripted. You can get a better illustration if you look at the changes I made to `asteroid/models/base_models.py` and `tests/models/jit_test.py`. I gotta say, I am not really satisfied with this solution...",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-22T13:57:08Z,"I meant  `BaseEncoderMaskerDecoder`, yes. 
+And yes, scripting will be the solution. ",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-22T22:53:22Z,Sorry saw this now. No my bad this was an error actually ,237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-23T07:32:35Z,Thanks !,237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-27T18:59:55Z,"Sorry for being late with the review. This is the only change that looks a bit weird to me. Was this necessary for Jit compat? If so, I think we should at least add a comment, or even better move this logic into a function with a descriptive name.",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-27T19:08:49Z,"I don't think this was necessary, @mhu-coder can you tell? 
+Why does it look weird? ",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-27T19:15:57Z,"It was necessary for tracing but as a traced model would have always taken the branch taken during tracing. In other words, it wouldn't have been possible to use the model with inputs of dimensions different to the example used during tracing and have an output with the right/expected dimension.
+However, if we move this output shaping block in its own function, I am sure we could keep the old more readable logic and add the `torch.jit.scripting_if_tracing` decorator added to it. So the changes would be something like:
+
+```python
+def forward(self, wav):
+   # ...
+   return shape_output(reconstructed, wav.ndim)
+
+@torch.jit.scripting_if_tracing
+def shape_output(reconstructed, wav_dim):  # really not sure about the name of the function
+    if wav_dim == 1:
+        return reconstructed.squeeze(0)
+    return reconstructed
+```",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-27T19:31:48Z,Sounds better. Mind submitting a PR? ,237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-27T19:48:12Z,"sure, on it",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-27T21:34:05Z,Cool! It’s just a very uncommon way to write an if else clause :-) and also implicitly assumes 0/1 == True/False for Torch tensors ,237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-23T19:58:08Z,"This is a first step, thanks a lot ! 
+I guess, we'll also need to modify the tests, should I do it? Or do you plan to do it? ",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-23T20:00:24Z,"There is this test failure which I don't fully understand, was not here before and doesn't really seem related
+
+```
+tests/engine/scheduler_test.py:16: in common_setup
+    trainer = Trainer(max_epochs=1, fast_dev_run=True)
+/opt/hostedtoolcache/Python/3.6.11/x64/lib/python3.6/site-packages/pytorch_lightning/trainer/trainer.py:310: in __init__
+    torch.backends.cudnn.deterministic = self.deterministic
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <torch.backends.ContextProp object at 0x7f3cbd0ad7f0>
+obj = <module 'torch.backends.cudnn' from '/opt/hostedtoolcache/Python/3.6.11/x64/lib/python3.6/site-packages/torch/backends/cudnn/__init__.py'>
+val = False
+
+    def __set__(self, obj, val):
+        if not flags_frozen():
+            self.setter(val)
+        else:
+            raise RuntimeError(""not allowed to set %s flags ""
+>                              ""after disable_global_flags; please use flags() context manager instead"" % obj.__name__)
+E           RuntimeError: not allowed to set torch.backends.cudnn flags after disable_global_flags; please use flags() context manager instead
+
+/opt/hostedtoolcache/Python/3.6.11/x64/lib/python3.6/site-packages/torch/backends/__init__.py:39: RuntimeError
+```
+Do you know what this is about? ",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-24T10:26:23Z,"> Do you know what this is about?
+
+@mpariente no, not really. But maybe we can take out a few commits to get this merged.
+
+I think at least 3cbfb991b60bbc7353947e5e1401d0038ac2a483 should be picked",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-24T17:57:43Z,"Only 5 errors left but I don't know why, you didn't touch schedulers or system's code, that seems weird. ",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-02T13:56:39Z,"@mhu-coder will have a look at that as well, so let's look out for merge conflicts. 
+We'll be three on the same branch. Please rebase (`git pull --rebase`) when possible and merge only when there are merge rebase conflicts. 
+
+Also, there will be some tricky decisions to make to fix jitability, take a stab at it and add a comment on the PR at the places you're not sure about, we'll iterate from there.
+
+Thanks in advance !",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-02T18:56:09Z,"I wonder if we shouldn't trace models instead of scripting them, the static typing can be more annoying than the tracing. And we would script the methods we know won't be faithful. I don't know if we have a lot of _dynamic_ control flow in the models. Any opinion? ",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-02T19:07:46Z,"> I wonder if we shouldn't trace models instead of scripting them, the static typing can be more annoying than the tracing. And we would script the methods we know won't be faithful. I don't know if we have a lot of dynamic control flow in the models. Any opinion?
+
+yes, tracing would surely be favorable but I thought scripting is easier and should be done first. Also tracing requires fixed batch sizes for recurrent models. Not sure if we want to go that route?",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-02T19:18:59Z,"But, you can mix scripting in tracing. Where needed, we would add the `@torch.jit.script` decorator (which can then handle the batch sizes in RNNs I guess), for the rest the tracing would handle the static control flow so we don't need to fix all the scripting problems. 
+The intermediate representation is the same between scripting and tracing so the end models can be the same if we handle it well. 
+
+I asked for opinions/feedback on twitter, just in case. ",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-02T20:19:22Z,"> But, you can mix scripting in tracing. Where needed, we would add the @torch.jit.script decorator (which can then handle the batch sizes in RNNs I guess), for the rest the tracing would handle the static control flow so we don't need to fix all the scripting problems.
+
+yep, thats how I handled it in open-unmix now. The core (including the LSTM) is traceable, the wiener filter is scriptable.",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-03T07:59:17Z,"Torchscript assumes that every variable with undefined types are Tensors, then crashes at runtime when it discovers that it wasn't the case or when the type of the variable changed. This also includes function keyword arguments as it does not use the default value to infer the type. The doc of [torch.jit](https://pytorch.org/docs/stable/jit_language_reference.html) advises to use a MyPy-style type annotations or type hints (like I did in `param_sinc_fb.py`) to force non `Tensor` types.
+
+So it would be probably better to stick to one for consistency. @mpariente , do you have a preference between the two possible solutions?",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-03T08:47:48Z,"> yep, thats how I handled it in open-unmix now. The core (including the LSTM) is traceable, the wiener filter is scriptable.
+
+And in the end, do you trace or script the model? 
+
+> Torchscript assumes that every variable with undefined types are Tensors, then crashes at runtime when it discovers that it wasn't the case or when the type of the variable changed. This also includes function keyword arguments as it does not use the default value to infer the type. The doc of [torch.jit](https://pytorch.org/docs/stable/jit_language_reference.html) advises to use a MyPy-style type annotations or type hints (like I did in `param_sinc_fb.py`) to force non `Tensor` types.
+> 
+
+> So it would be probably better to stick to one for consistency. @mpariente , do you have a preference between the two possible solutions?
+
+I saw part of that, and adding typing to Asteroid's Modules wouldn't hurt.
+But I still think, that both scripting and tracing can be mixed without problem, it's actually meant to be used this way, right? 
+I don't think it's about consistency, tracing is limited by essence but more flexible, and scripting is more general but also more rigid and torch gives us those two tools, I think we can use both of them. 
+",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-03T08:50:19Z,"> I saw part of that, and adding typing to Asteroid's Modules wouldn't hurt.
+
+I meant, would you prefer MyPy-style typing or Python type hints? Or you don't mind having a mix of both?",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-03T08:51:16Z,"Oh ok sorry, didn't understand it this way. 
+I'll have a look now then",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-03T08:53:36Z,Python type hints please :wink: ,237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-04T13:21:04Z,"Regarding tracing vs. scripting, since the idea is to use `torch.jit.trace` everywhere and to switch to script mode by decorating functions that need this mode with `torch.jit.script`, would it be alright to replace calls to `torch.jit.script` with calls to `torch.jit.trace` in `jit_test.py`?",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-19T14:54:50Z,"Hey guys,
+A bit late for the hackathon and I don't know if this feature is still planned but I have had another look and solved some of the issues (there only warnings left when tracing the models in the tests). Below is a summary of the issues that are left:
+* `DPTNet` expects the number of features to be a multiple of the number of heads in the multi attention layer but the `__init__` method of the class gives no control to the `n_heads` argument of `DPTransformer`. This makes writing the tracing test for `DPTNet` with `STFT` rather cumbersome. A way around it would be the addition of the keyword argument `n_heads` to the `__init__` of `DPTNet`, which would add another argument to a method that already has many...
+* When tracing a model, the jit compiler raises a warning anytime it encounters a branch in the code as only one of these branches will be taken by the traced model. In particular, all the checks written in the models are effectively bypassed
+
+On the upside, properties do not seem problematic.",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-19T18:14:35Z,"Didn't read the code in detail but that sounds great ! 
+Which version of torch are you using btw? 
+
+> On the upside, properties do not seem problematic.
+
+Which properties in particular? 
+
+
+
+
+> * `DPTNet` expects the number of features to be a multiple of the number of heads in the multi attention layer but the `__init__` method of the class gives no control to the `n_heads` argument of `DPTransformer`. This makes writing the tracing test for `DPTNet` with `STFT` rather cumbersome. A way around it would be the addition of the keyword argument `n_heads` to the `__init__` of `DPTNet`, which would add another argument to a method that already has many...
+
+I think it was an oversight, we should add `n_heads` in `DPTNet`. Many arguments to architectures is not a problem IMO. 
+Regarding the problem between number of features and `n_head`, I wonder if there isn't a Linear layer between the input and the masker. I'll have a look. 
+
+
+>  * When tracing a model, the jit compiler raises a warning anytime it encounters a branch in the code as only one of these branches will be taken by the traced model. In particular, all the checks written in the models are effectively bypassed
+
+Can you elaborate please? ",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-20T11:42:36Z,"> Which version of torch are you using btw?
+
+I am using torch 1.6.0. Are you using something else?
+
+> Which properties in particular?
+
+I remember that jit.script had issues with class properties but I may be wrong here. When using `trace`, tracing a `DeMask` model, to which I added a shameless copy/paste `sample_rate` property, did not raise errors.
+
+> Can you elaborate please?
+
+Example of warning:
+```
+tests/models/jit_test.py::test_trace_bss_model[LSTMTasNet]
+  anaconda3/envs/asteroid/lib/python3.7/site-packages/torch/nn/modules/rnn.py:176: TracerWarning: Converting a
+  tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python
+  values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+    if self.input_size != input.size(-1):
+```
+I guess, the condition will always evaluate to the value that was found during tracing. Kind of ironic that the code that raises this warning is part of torch. But it also happens for some lines in asteroid too:
+
+```
+tests/models/jit_test.py::test_trace_bss_model[LSTMTasNet]
+  asteroid/asteroid/filterbanks/enc_dec.py:172: TracerWarning: Converting a tensor to a Python boolean might
+  cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as
+  a constant in the future. This means that the trace might not generalize to other inputs!
+    if channels == 1 and self.as_conv1d:
+```",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-21T07:57:43Z,"- 1.6.0 is fine, I was just asking. 
+- Ok for the property. I guess it'll still break if there are graph computations inside it. 
+- Thanks for the examples. We have to browse the code very carefully to find where the tracing isn't enough, and we need to script that part. There are graphs that'll stay static at run time (is there skip connection etc..) and others won't (number of input channels etc..). 
+
+Regarding the DPTNet, I re-checked, there is no Linear layer in the paper. We should add one if the input dim is not divisible by the number of heads, otherwise it's pretty useless. @mhu-coder, do you feel like doing it?",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-21T08:24:13Z,"> Regarding the DPTNet, I re-checked, there is no Linear layer in the paper. We should add one if the input dim is not divisible by the number of heads, otherwise it's pretty useless. @mhu-coder, do you feel like doing it?
+
+Sure, will have a look in the afternoon.
+
+FYI, I had a look at scripting the models instead of tracing them:
+* `ConvTasNet` was fine
+* `DPRNNTasNet` and `LSTMTasNet`: I ran into an issue in `torch/nn/modules/rnn.py` that read `GeneratorExp aren't supported`, which can be removed by converting a set comprehension into a regular loop but then ended up with a `AttributeError` caused by `torch/jit/frontend`.
+* `DPTNet`: some issues with parts of torch and asteroid but ultimately, `torch.script` does not support methods/functions that take callables as argument (cf https://discuss.pytorch.org/t/function-type-in-torchscript/65416). This is the case of some functions in `asteroid/dsp/overlap_add.py`.",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-21T15:48:00Z,"Ok, what's left to do to merge this @mhu-coder ? ",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-21T16:25:43Z,"Just added the linear layers (one at the input, another at the output) to DPTransform when `in_chan` is not a multiple of `n_heads`.
+
+`DPTNet` is still missing an argument for `n_heads` in its `__init__` method.
+
+Other than that, there is still the question of which model can be traced and which should be scripted instead. But I wonder if it wouldn't be better to give this responsibility to the person that is going to trace/script a model.",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-22T19:05:50Z,"Cool, thanks !
+
+I actually thought that it was possible to decorate functions in `nn.Module`, but it's not for now ([see language reference](https://pytorch.org/docs/stable/jit_language_reference.html#language-reference)). My idea (before that) was to add a `script` decorator to all methods needing scripting, and that would have been satisfying. But that's not possible. So the `trace` method you propose is good for now.  ",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-22T19:12:13Z,"Actually, if we make an external method out of `forward`, we can script automatically, which would be prettier. And for the Encoder/Decoder, it's possible. 
+
+Also, we'll use `torch.jit.script_if_tracing` instead of `script` so we avoid the start up time. ",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-22T20:08:35Z,"Finally scripted the `forward` by making it external. I guess we don't need the `trace` function anymore, can we remove it? ",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-22T20:13:25Z,"So, I merged master. 
+Tracing tests take quite a while. I'm wondering if it shouldn't be a different CI build altogether, so that we can really test thing rigorously. Thoughts? 
+
+Note to myself (assistance accepted): before merging, need to go through the whole `masknn` codebase to be sure that tracing is enough on all the modules that we don't script. ",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-23T08:23:48Z,"> Finally scripted the `forward` by making it external. I guess we don't need the `trace` function anymore, can we remove it?
+
+Neat! Sure, let's remove `trace`, no need to keep around lines that are unused
+
+> before merging, need to go through the whole masknn codebase to be sure that tracing is enough on all the modules that we don't script.
+
+It's not as good as carefully reading the code of each mask but we can add tests to check that every model can handle input variable shapes (actually, I am facing some runtime errors but will try to fix as many as I can). This will increase the time `jit_test.py` takes to run though.",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-23T13:46:07Z,"Just added a couple of tests to check that traced models produce the same output for n-D input tensors (with n in [1, ..., 4]). Is it normal that most of the original/non-traced models crash?",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-23T13:56:12Z,"> Just added a couple of tests to check that traced models produce the same output for n-D input tensors (with n in [1, ..., 4]). Is it normal that most of the original/non-traced models crash?
+
+Yes. I don't see why not. 
+Conv1d expects a 3D input, and doesn't support 4d inputs, LSTM either etc.. 
+
+Thanks but those tests can be removed. ",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-23T18:08:50Z,"I think I see what you mean.
+
+BTW, I saw that `DeMask` could not handle 1-D input when traced with a 2-D input but I guess this comes from the way the forward is written and the whole class could be refactored anyway.
+
+When a `(batch, time)` data (with batch > 1) is given to LSTMTasNet, there's a RuntimeError that is raised in the forward of the decoder:
+```
+E       RuntimeError: The following operation failed in the TorchScript interpreter.
+E       Traceback of TorchScript (most recent call last):
+E         File ""asteroid/filterbanks/enc_dec.py"", line 296, in multishape_conv_transpose1d
+E               view_as = (-1,) + spec.shape[-2:]
+E               out = F.conv_transpose1d(
+E                   spec.view(view_as),
+E                   ~~~~~~~~~ <--- HERE
+E                   filters,
+E                   stride=stride,
+E       RuntimeError: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+```
+
+I guess this could be the object of another pull request?",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-23T18:57:39Z,"> BTW, I saw that DeMask could not handle 1-D input when traced with a 2-D input but I guess this comes from the way the forward is written and the whole class could be refactored anyway.
+
+I agree. 
+
+> I guess this could be the object of another pull request?
+
+This PR is already so big that we can use `reshape` instead, no problem. ",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-23T19:48:17Z,"yeah, you're right. It's time to finish this PR.
+I have just reverted the `res, res` return in `asteroid/masknn/convolutional.py` to what it was before as the method output consistency in type is only needed for `torch.jit.script`. So, in other word, if we always trace/never script a model relying on `Conv1DBlock` or `TDConvNet`, the inconsistency is fine.
+
+Is the thorough check of the modules in `asteroid/masknn` the only thing left for this PR?",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-24T07:03:08Z,"I guess, yes. 
+Maybe we'll ""fix"" DeMask in another PR. ",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-24T18:26:36Z,"Not 100% sure 
+
+- [x] masknn/norms (externalized funcs + unit test)
+- [x] masknn/activations (nothing to worry about).
+- [x] masknn/attention
+- [x] `TDConvNet`, `TDConvNetpp`, `Conv1dBlock`, `UConvBlock`, `UBlock`, `SuDORMRFImproved`, `SuDORMRF`. All but `# CHECK-JIT`
+- [x] masknn/recurrent (missing   # CHECK-JIT)   
+- [x] models: `BaseModel`, `ConvTasNet`, `DPRNNTasNet`, `LSTMTasNet`, `DPTNet` (`SuDORMRF*Net`)
+- [x] filterbanks: all filterbanks + encoder + decoder.
+- [x] filterbanks/transforms
+- [x] dsp: mixture_consistency: ok. Lambda overlap non scriptable (traceable maybe?) To be checked. DualPathprocessing used in DPTNet and works (no specific unit test)
+
+This PR won't assure tracability/jitability for the complex module, the DCCRN and DCUNet. We'll do that on a follow-up PR (Cc. @jonashaag). Most of it is tagged with # CHECK-JIT on the class. 
+
+",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-24T19:54:02Z,"Going back to norms, this doesn't work
+```python
+from asteroid.masknn import norms
+
+model = norms.GlobLN(10)
+x = torch.randn(1, 10, 12)
+traced = torch.jit.trace(model, x)
+y = torch.randn(2, 10, 18, 12)
+assert_allclose(traced(y), model(y))
+```
+
+If we script GlobLN instead, it's going to work. ",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-24T19:56:22Z,"`script_if_tracing` is not working on 1.6.0 because it returns a function, instead of calling the function. 
+So we'll make a patch for it. (Works on nightly, fixed [here](https://github.com/pytorch/pytorch/pull/42486) for reference)",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-26T11:05:28Z,Reading for merging IMO. ,237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-26T13:44:35Z,"Added SuDORMRF networks as well finally. 
+@mhu-coder @jonashaag @popcornell @faroit any feedback appreciated.",237
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-21T20:09:17Z,This is great. LGTM!,285
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-22T08:22:37Z,\rebase,285
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-22T08:24:02Z,\rebase,285
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-22T09:03:05Z,Missing test for the CLI. Merging anyway. ,285
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-21T16:45:06Z,"I think we should not do any of this. It's easy for the user to resample for model input and resample the model output. So better be explicit and require the user to type a bit more. As a compromise we could have automatic resampling behind a flag: if the flag is true, resample without warning; if the flag is false, raise an error.",283
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-21T17:13:45Z,It makes sense to do it because of the CLI IMO..,283
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-22T07:12:23Z,"This is exactly how I’d do it. If you u prefer you could even make resample default to true in the CLI, but not sure if that’s good. ",283
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-22T07:33:48Z,"Actually, I thought about this yesterday. And this won't work for serializing and loading. 
+`BaseTasNet` expects encoder and decoder to have the filterbank `attribute`, so that we can call `get_config`.
+Here, the only thing you need in the name of the architecutre, so we should probably rewrite the serialize and from_pretrained methods. 
+That's when we might want to split the current `BaseTasNet` into two. ",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-23T07:26:51Z,"After merging #232, it will be easier to do it without any tricks. ",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-24T17:31:03Z,"Oops, what happened here?",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-24T17:33:30Z,"Fixed:
+
+- Edge case `desired_len > signal_len`
+- Always return stop as int (as documented)",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-24T17:33:45Z,Deduplicated some tests,224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-24T17:34:50Z,Fixed name,224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-24T18:32:17Z,"They are not alternated, they are concatenated `[r1, r2,..., i1, i2, ...]`.",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-24T19:29:00Z,"I understand the goal, but can you explain the detail of the attribute overwriting please? ",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-24T19:50:35Z,I see what this does (and it's cool) but this is not clear from either the name or the docstring,224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-24T19:54:04Z,"That's one way of doing it. Which gives 
+```python
+complex_module = OnComponents(m, *args, **kwargs)
+```
+What about this way 
+```python
+complex_module = OnComponents(m(*args, **kwargs))
+```
+so that we wrap instances instead of objects? 
+Did you think about both design and chose this one? If yes, why? ",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-24T19:55:59Z,"Would like to see the equations for that. 
+The sigmoid bound will allow for `sqrt(2)` magnitude mask right? ",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-24T19:57:48Z,What is this? ,224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-24T19:59:15Z,Why not a relative import here? ,224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-24T20:05:04Z,"Thanks ! 
+That should really live in a separate PR though. 
+It's fine this time but next time, I'd rather have several small ones please. ",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-24T20:06:27Z,This is seems really specific to the DCUNet architecture. ,224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-24T20:06:56Z,"> `enc_out_chan + skip_in_chan`
+
+Does this mean the skip connection is concatenative? ",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-24T20:07:44Z,"Maybe this is useful in general, IDK. ",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-24T20:09:38Z,Add `unet` in the function name somewhere please. ,224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-24T20:19:11Z,"Also, if `skip_connections` is not kwarg, why do we need the `*`? I don't know about this ^^",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-24T20:20:30Z,"In the long run, the purpose of the file is to hold all the base classes of `masknn`? ",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-26T18:56:11Z,"Will this be the preferred method for instantiating them? 
+If yes, we should add the accepted keys in `architectures.`",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-26T19:04:50Z,"Maybe document here that there is the `default_architecture` classmethod? With valid architecture names? 
+Or add the `show_available_architectures` class method in the base class? 
+Otherwise, I don't see how the user discovers which architecture to use. ",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-26T19:07:07Z,"That's pretty, I never use it. ",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-26T19:10:55Z,"I love this ! 
+@popcornell do you feel like to give your opinion on this as well? ",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-26T19:12:29Z,"@popcornell Opinion about renaming that to `BaseEMDNet`? 
+(with code to make it backward compatible, obviously)",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-26T19:14:21Z,"Can we have this whole file in a separate PR please? 
+This is quite important and I'd like to be able to dissociate from the rest. 
+Thanks",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-26T19:15:52Z,"Can we put the default architecture to `""DCCRN-CL""`?",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-06T12:02:07Z,It is different: Your code uses only a single instance of `m` and thus only 1x the weights,224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-06T12:02:30Z,I know... do you have an idea how to call it?,224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-06T12:03:14Z,"Added formulas, is this what you wanted? sqrt(2) is a possible magnitude value for BDSS.",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-06T12:04:41Z,Oversight. Will remove.,224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-06T12:05:11Z,"I dunno, I just needed a place to stick these :-D",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-06T12:05:56Z,This is now documented here.,224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-06T12:07:47Z,Moved common code from DCU and DCCRN here,224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-06T12:14:36Z,"Maybe it's specific, I don't know... I have seen it many times, e.g. ""Singing Voice Separation with Deep U-Net Convolutional Networks"", Spleeter, DCUNet, DCCRNet, ... Granted, those are all variations of the same u-net structure. But I think even in the original u-net paper they use this structure.
+
+`skip_connections`: The `*` forces the following arguments to be keyword-only arguments. It's just a way to force people to call it like `unet_decoder_args(..., skip_connections=True)` rather than `unet_decoder_args(..., True)`, which is less readable code. So just a way to force people to write better code. I always do it for arguments that don't have an obvious meaning at the caller site. But I don't have strong opinions about it, so if you don't like it I can remove it.",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-06T12:15:14Z,Yes!,224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-06T19:41:48Z,"- Ok to keep this code in utils then, thanks.
+- Ok for that. I would maybe add `True` as a default value, WDYT? ",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-06T19:44:45Z,"It can perform (documented) copy of the instance right? 
+But maybe you're right that the from the first way, it's clearer that two modules are instantiated. ",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-06T19:45:57Z,Typo `represenatation`.,224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-06T19:48:30Z,"Sorry for coming up with this in the second round, but what would you think about `on_reim` instead and `OnReIm`? It's probably clearer that it's for complex tensors. WDYT? ",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-06T19:57:14Z,"If `module` a linear layer, we'll just have a complex linear (complex weights on complex inputs). 
+It's tempting to call it something like `ComplexLambdaModule` but this is not accurate because the `module_cls` is instantiated, not called as is. Maybe `ComplexModuleWrapper`? 
+Q: are there other potential class that would deserve this name more? IDK",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-06T19:57:32Z,That's great thanks ! ,224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-06T20:00:23Z,"All black related commit should come in a single PR. 
+I'm sorry to be rigid on that but this will make a cleaner history. 
+Imagine if we introduced a bug with this PR and we have the revert everything and check what made the bug, and redo all the formatting. Having separate PRs is better. ",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-01T10:15:23Z,I like it!,224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-02T08:38:20Z,Still need to solve this. ,224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-02T08:40:01Z,"```suggestion
+```",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-02T08:45:47Z,Why the RNN as `ComplexSingleRNN` and the linear layer not? Just wondering.,224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-02T08:47:13Z,Let's fix the conflicts with master on this. ,224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-02T08:49:36Z,What about `masknet_kwargs`?,224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-02T09:30:05Z,"Good point, changed it.",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-21T11:57:38Z,"Thanks a lot for the PR, I'll have a look soon !",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-21T13:12:46Z,"That looks good in general, thanks !
+
+> Usage of PyTorch 1.7+ native complex128 dtype rather than Asteroid style complex type or torchaudio style complex type.
+> 
+
+We have to converge on that, it's not clear yet what we'll do. 
+I like the current unification between real and complex filterbanks, and treating the STFT as a real filterbank does have advantages. 
+We could add a `as_complex` argument to both `Encoder` and `Decoder` that would change what they would return and what they would expect.
+We would also have to see how complex tensors are treated in layers. 
+But overall, we'll need it for beamforming and other things so we'll use it. Not sure yet how. 
+
+> Code structure, class names, code placing. Many things I wasn't sure where to place in the Asteroid codebase.
+
+This looks great for now. 
+The `complex_nn.py` might move if it grows too much but it'll be easy to be BC.
+For now, the configurations of DCUnet are part of the models, however I think they could belong the the masknn. 
+Could DCUnet be useful for precomputed STFT features (if somebidy wants)?
+I think the answer is yes, so the configuration should be linked to the masker network rather than the full encoder/masker/decoder. Do you agree with me? 
+If yes, we could have a `_dc_unet_config.py` file in `masknn` and read the config from there so that we don't have this huge dict of list. 
+
+> 
+> Location of complex norms, activations, etc.
+
+For now, I think this is fine. Again, if it comes to grow, be used in several other architectures, we'll refactor and keep the imports in `complex_nn.py`.
+
+> 
+> Dealing with input shapes in `DCUMaskNet.forward`. Due to the encoder/decoder structure only specific T/F dimensions will work without padding or other workarounds.
+
+It's a usual concern with Unet architectures I guess. 
+Either we have a padding strategy and we do it automatically, or we document the accepted input shapes (and maybe provide utilities for the reshaping/passing?). I probably takes time to get the automatic padding right and unit-test it so I'd say document the accepted shapes for now.
+",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-21T16:47:14Z,"Ok, great!
+
+You are right, the architectures belong to the masknet.
+
+Will make the changes you suggested, and also add docstrings etc.
+
+Btw I just realized that the name ""BaseTasNet"" does not actually match what's going on here (TF domain masks). Also, for TasNet, is it really ""time domain"" if masking is done on a latent representation (that may very well be STFT-like)? 😅",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-21T18:27:01Z,"It's true that I didn't have in mind it would be used as much when I named it `BaseTasNet`. As long as you go back to the time domain, it's similar to TasNet, even if the latent space is the STFT's space. 
+
+Anyway, maybe we can rename it `BaseEMD` (for encoder masker Decoder)? Or do you have names in mind that could fit? ",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-24T17:03:47Z,"Should be good to review now. Sorry for making so many changes in a single PR. If it is difficult to review, I will split.
+
+Probably misses lots of tests; I will wait for codecov to tell me the uncovered places and add some tests.",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-06T12:00:46Z,"I split the changes into multiple commits, but did not split into multiple PRs, so as to not lose your review comments.
+
+If you want me to split into multiple PRs I'm happy to do it.",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-06T12:35:44Z,I updated black to latest version because it now also formats docstrings.,224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-06T19:33:35Z,"I didn't comment on much on the `BaseTasNet` part on purpose. 
+I'd like to cherry-pick that commit (88701900175535548383dc75ced135f12d81250b) to make a new PR, this is more visible for other people which might be interested, and for future reference. For the rest, it can stay like that, thanks a lot!",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-12T17:10:30Z,"Hello, guys, does the the result of DCCRN over all the datasets match with the original paper？",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-12T17:10:41Z,@jonashaag ,224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-12T17:36:26Z,"Haven't done a full training yet, so I don't know! Also it's not possible to have identical results without using the exact same dataset and augmentation techniques described in the paper, of which we don't have the code.",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-25T10:03:51Z,"Hey @jonashaag, can we split this PR into three now please? ",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-09-25T12:17:32Z,Yes will do it next week. ,224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-01T10:27:16Z,Removed all changes not related to DCUNet. We can continue discuss DCUNet changes here.,224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-02T09:34:09Z,I *think* I have addressed all review comments,224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-02T14:49:29Z,"This looks great, thanks a lot again ! 
+The CI fails though..",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-02T14:51:31Z,"Ah well, multiple places with recursive imports... this ""let's flatten the namespaces by importing things in the parent module"" thing causes lots of problems. (For example importing models to `asteroid.models.` or even `asteroid.`) Specifically the problem is that importing submodules in `__init__.py` causes trouble with relative imports in those submodules.
+
+Will try to fix it",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-02T15:01:43Z,"> Ah well, multiple places with recursive imports... this ""let's flatten the namespaces by importing things in the parent module"" thing causes lots of problems. (For example importing models to asteroid.models. or even asteroid.) 
+
+I think models should be importable from `asteroid` directly. For `torch_utils` it was for backwards compat because there was a `torch_utils.py` file before that. 
+
+Thanks for fixing it. Now there is a new ""real"" failure. ",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-02T15:50:15Z,"That was a nice one, thanks a lot Jonas !",224
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-01T10:14:13Z,"Thanks !
+
+I know it was my idea but I think the name BaseEMDNet is not that clear. 
+Do we plan that people will discover it easily because it's the baseclass of all the models we use for now? Otherwise, the name doesn't speak for itself. ",266
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-01T10:25:47Z,"Unfortunately I don't have a better naming suggestion. Maybe `BaseEncoderMaskerDecoderNet` is a bit better. But yes, I would expect people to find and understand the class pretty quickly despite its name.",266
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-10-01T10:40:00Z,Maybe `BaseEncoderMaskerDecoder`? We don't really need the `Net`.,266
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-23T17:55:06Z,"This is `self.__dict__`
+```
+{'training': True, '_parameters': OrderedDict(), '_buffers': OrderedDict(), '_non_persistent_buffers_set': set(), '_backward_hooks': OrderedDict(), '_forward_hooks': OrderedDict(), '_forward_pre_hooks': OrderedDict(), '_state_dict_hooks': OrderedDict(), '_load_state_dict_pre_hooks': OrderedDict(), '_modules': OrderedDict([('encoder', Encoder(
+  (filterbank): STFTFB()
+)), ('decoder', Decoder(
+  (filterbank): STFTFB()
+)), ('masker', Sequential(
+  (0): GlobLN()
+  (1): Conv1d(257, 1024, kernel_size=(1,), stride=(1,))
+  (2): GlobLN()
+  (3): ReLU()
+  (4): Dropout(p=0, inplace=False)
+  (5): Conv1d(1024, 257, kernel_size=(1,), stride=(1,))
+  (6): ReLU()
+))]), 'input_type': 'mag', 'output_type': 'mag', 'hidden_dims': [1024], 'dropout': 0, 'activation': 'relu', 'mask_act': 'relu', 'norm_type': 'gLN', 'fb_type': 'stft', 'n_filters': 512, 'stride': 256, 'kernel_size': 512, 'fb_kwargs': {}}
+
+```
+is this really what we want ? ",235
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-23T18:04:20Z,forgot to filter  the underscore,235
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-23T18:06:16Z,"maybe this can do it `model_args = {k: v for k, v in self.__dict__.items() if not k.startswith('_') and k != ""training""}`",235
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-23T18:50:35Z,"In this case, it's working but as soon as you add attributes to the class, it won't.. 
+",235
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-23T18:50:59Z,"It takes two seconds and it's very clear 
+```suggestion
+        model_args = {
+            ""input_type"": self.input_type,
+            ""output_type"": self.output_type,
+            ""hidden_dims"": self.hidden_dims,
+            ""dropout"": self.dropout,
+            ""activation"": self.activation,
+            ""mask_act"": self.mask_act,
+            ""norm_type"": self.norm_type,
+            ""fb_type"": self.fb_type,
+            ""n_filters"": self.n_filters,
+            ""stride"": self.stride,
+            ""kernel_size"": self.kernel_size,
+            ""fb_kwargs"": self.fb_kwargs,
+        }",235
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-23T18:53:58Z,"Actually, this also doesn't work. Because `fb_kwargs` doesn't get passed though correctly. 
+And also not in the current code
+",235
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-24T07:25:41Z,/rebase,235
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-24T08:37:50Z,"Nice PR ! 
+Thanks :rocket: ",235
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-18T14:20:28Z,"Merging, we can iterate on it if this doesn't look reasonable or needs more params.",209
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-18T13:35:28Z,Maybe change these default values?,208
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-18T13:52:03Z,"What do you mean? 
+This is to test with a small architecture to speed up CI",208
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-18T14:03:20Z,"I'm merging this. If I didn't understand your initial comment about the defaults, we can always iterate from there. ",208
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-18T14:20:28Z,"Merging, we can iterate on it if this doesn't look reasonable or needs more params.",209
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-07-22T12:43:52Z,I let it train with the config given above yesterday for a few hours and it seems training duration to reach X dB SI-SDR is similar to DPRNN[ks=16].,174
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-07-22T12:50:20Z,"Thanks for the PR Jonas ! 
+Good to have some info about the speed of convergence as well 
+
+If I understand well, you changed `GlobLN` only right? 
+I thought that you had a re-implementation. 
+This is great but I feel like I should ask @etzinis if he is ok that we integrate his code here? 
+
+If he is ok with that, I'll have few comments on docstrings mainly (because this is not the same style as ours) and we'll merge. ",174
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-07-22T13:09:14Z,"Sorry, no, not a re-implementation. As said I only de-duplicated some code (for example GlobLN seems to be copy-pasted 1:1 from Asteroid to SuDoRM-RF).",174
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-07-22T14:46:10Z,Hey guys! I already have an implementation of sudo rm rf using asteroid.,174
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-07-22T14:47:39Z,Whatever you want manu,174
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-07-22T14:53:30Z,Oh well then maybe it’s easier to use your implementation :),174
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-07-22T15:20:24Z,"Yes @etzinis, I should have asked before ! 
+What are the changes compared to this PR? 
+
+Sorry @jonashaag but it makes more sense to have the code directly from the author or the paper, I hope you understand. Let's keep this PR open until @etzinis decides.",174
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-07-22T15:38:08Z,No worries! Sorry for interfering. I did not realize that @etzinis was aware of Asteroid and even a contributor.,174
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-07-22T16:43:34Z,I think @jonashaag  did a great job so I think that we could actually merge his architecture. My implementation was adding stuff into other parts of the code as well. But the very important thing that we also need is the data augmentation part. How about putting a PR with my changes and then @jonashaag  can adjust these changes accordingly to this PR which is in better shape. @mpariente WDYT?,174
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-07-23T06:35:39Z,"That sounds good ! 
+We're waiting for your PR @etzinis then, thanks to both of you ",174
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-07-27T00:36:33Z,Ok please check this PR https://github.com/mpariente/asteroid/pull/185,174
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-10T10:10:05Z,"So @etzinis, let's merge this? ",174
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-17T10:02:55Z,"Integrated asteroid filterbanks, updated docs and included tests. 
+@etzinis can you have a look? 
+@jonashaag as well maybe? ",174
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-17T14:00:17Z,looks good to me! How about the onliine mixing code?,174
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-17T16:44:59Z,"Thanks for the feedback ! 
+
+> How about the onliine mixing code?
+
+I was thinking of writing a `collate_fn` for it, I'll have a look tonight",174
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-17T16:50:40Z,"```python
+        # Augment the data.
+        if train:
+            # Online mixing over samples of the batch. (This might cause to get
+            # utterances from the same speaker but it's highly improbable).
+            energies = torch.sum(targets ** 2, dim=-1, keepdim=True)
+            new_s1 = targets[torch.randperm(energies.shape[0]), 0, :]
+            new_s2 = targets[torch.randperm(energies.shape[0]), 1, :]
+
+            # Why is those lines needed? It's to keep the SNRs of each mixture unchanged? 
+            new_s2 = new_s2 * torch.sqrt(energies[:, 1] /
+                                         (new_s2 ** 2).sum(-1, keepdims=True))
+            new_s1 = new_s1 * torch.sqrt(energies[:, 0] /
+                                         (new_s1 ** 2).sum(-1, keepdims=True))
+            inputs = new_s1 + new_s2
+            targets[:, 0, :] = new_s1
+            targets[:, 1, :] = new_s2
+```",174
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-17T17:23:55Z,"I added it now. 
+We'll merge this for now and see about adding the recipe afterwards (maybe after refactor will be much easier).",174
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-13T07:08:33Z,Sounds good! Maybe there's also some kind of warning mode for pre-commit that we could use with flake8.,198
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-13T07:19:56Z,"I saw that `--exit-zero` does that, but I'm not sure it's useful because the commit is sent right? 
+Or if we integrate deep source, the warnings appear locally so they can be fixed in the next commit? ",198
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-08-13T07:20:44Z,"TravisCI takes around 15mins per build, I'm bored. 
+I'm going to switch to Github Actions soon. ",198
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-05-20T20:29:05Z,Just tagging this issue #53 as related ,109
+github.com/asteroid-team/asteroid,tests/models/models_test.py,2020-05-21T12:36:26Z,This implies nothing so far so I'll merge. The preparation of the model for publishing will come next,109
