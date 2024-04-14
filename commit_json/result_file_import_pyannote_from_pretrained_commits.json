@@ -1,0 +1,68 @@
+[
+    {
+        "repo_url": "github.com/pyannote/pyannote-audio",
+        "filepath": "pyannote/audio/models/embedding/wespeaker/convert.py",
+        "commit_date": "2023-11-16T08:22:45Z",
+        "message": "feat(model): add WeSpeaker embedding wrapper based on pytorch (#1540)"
+    },
+    {
+        "repo_url": "github.com/Softcatala/whisper-ctranslate2",
+        "filepath": "src/whisper_ctranslate2/diarization.py",
+        "commit_date": "2024-01-04T19:52:00Z",
+        "message": "Add experimental diariazation support"
+    },
+    {
+        "repo_url": "github.com/mochan-b/whisper_pyannote_fusion",
+        "filepath": "whisper_pyannote_fusion/whisper_pyannote_fusion.py",
+        "commit_date": "2023-11-03T08:59:52Z",
+        "message": "Downmix and downsample audio and send as waveform to pipeline to avoid slowdown"
+    },
+    {
+        "repo_url": "github.com/mochan-b/whisper_pyannote_fusion",
+        "filepath": "whisper_pyannote_fusion/whisper_pyannote_fusion.py",
+        "commit_date": "2023-10-31T08:24:42Z",
+        "message": "Fix json string and dict issues"
+    },
+    {
+        "repo_url": "github.com/mochan-b/whisper_pyannote_fusion",
+        "filepath": "whisper_pyannote_fusion/whisper_pyannote_fusion.py",
+        "commit_date": "2023-09-18T00:01:17Z",
+        "message": "Only correct if in the initial prompt"
+    },
+    {
+        "repo_url": "github.com/mochan-b/whisper_pyannote_fusion",
+        "filepath": "whisper_pyannote_fusion/whisper_pyannote_fusion.py",
+        "commit_date": "2023-09-08T03:26:36Z",
+        "message": "Some fixes. Added audacity labels"
+    },
+    {
+        "repo_url": "github.com/mochan-b/whisper_pyannote_fusion",
+        "filepath": "whisper_pyannote_fusion/whisper_pyannote_fusion.py",
+        "commit_date": "2023-08-28T23:46:35Z",
+        "message": "Add whisperx based fusion method. Fixed the package structure."
+    },
+    {
+        "repo_url": "github.com/asyml/forte",
+        "filepath": "examples/audio/speaker_segmentation_pipeline.py",
+        "commit_date": "2023-01-19T19:56:40Z",
+        "message": "Update default serialization to the new `json` method. (#918)"
+    },
+    {
+        "repo_url": "github.com/asyml/forte",
+        "filepath": "examples/audio/speaker_segmentation_pipeline.py",
+        "commit_date": "2022-01-21T17:45:24Z",
+        "message": "Add audio processing example (#600)\n\nCo-authored-by: Suqi Sun <suqi.sun@petuum.com>"
+    },
+    {
+        "repo_url": "github.com/NINAnor/ecoVAD",
+        "filepath": "anonymise_data.py",
+        "commit_date": "2022-08-31T06:18:46Z",
+        "message": "First commit"
+    },
+    {
+        "repo_url": "github.com/mlrun/functions",
+        "filepath": "pyannote_audio/pyannote_audio.py",
+        "commit_date": "2024-01-09T11:09:19Z",
+        "message": "[pyannote_audio] Rename speech diarization to this new name (#766)\n\n* [Build] Fix html links, Add <function>.html as source in documentation\n\n* Update CI temporarily and update index\n\n* [XGB-Custom] Fix test artifact key name\n\n* [XGB-Serving][XGB-Test][XGB-Trainer] Fix tests - artifact key\n\n* [Build] Install python 3.9 when testing (#618)\n\n* [Build] Update python version in CI (#620)\n\n* [Build] Install python 3.9 when testing\n\n* [Build] Update python version in CI\n\n* .\n\n* Revert \"[Build] Update python version in CI (#620)\" (#621)\n\nThis reverts commit 0cd1f1585a618c253f201b6f5a63502cdbddb591.\n\n* Revert \"[Build] Install python 3.9 when testing (#618)\" (#619)\n\nThis reverts commit 3301415200e52326bade1e17f99cb6b6d3880860.\n\n* [Build] Build with python 3.9 (#622)\n\n* [Build] Build with python 3.9\n\n* .\n\n* rename\n\n* Yoni's comments and new name\n\n---------\n\nCo-authored-by: yonishelach <yonatanshelach@gmail.com>\nCo-authored-by: Yoni Shelach <92271540+yonishelach@users.noreply.github.com>"
+    }
+]
