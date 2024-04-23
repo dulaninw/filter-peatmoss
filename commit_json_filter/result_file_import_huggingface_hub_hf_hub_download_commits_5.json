@@ -1,0 +1,794 @@
+[
+{
+    "repo_url": "github.com/huggingface/optimum-neuron",
+    "filepath": "tests/test_cache_utils.py",
+    "commit_date": "2023-11-14T10:40:37Z",
+    "message": "Fix broken tests (#274)\n\n* Fix tests\n\n* Fixes test_runner\n\n* Skip generate tests as long as #262 has not been merged\n\n* Wont fail if secondary caches dont not have write access\n\n* Remove support for old neuron compilation cache naming\n\n* Update test_trainium_common.yml\n\n* Add cleanups to CI\n\n* Experiment with new mixin class\n\n* Remove comment in workflow\n\n* Skipping GPTNeoX test as it is flaky\n\n---------\n\nCo-authored-by: Guillaume LEGENDRE <glegendre01@gmail.com>"
+},
+{
+    "repo_url": "github.com/huggingface/optimum-neuron",
+    "filepath": "tests/test_cache_utils.py",
+    "commit_date": "2023-07-04T16:44:35Z",
+    "message": "Fixes the cache after update (#119)\n\n* Fix cache for new versions\n\n* Unspecified attributes for NeuronHash\n\n* Make trainium test"
+},
+{
+    "repo_url": "github.com/huggingface/optimum-neuron",
+    "filepath": "tests/test_cache_utils.py",
+    "commit_date": "2023-05-31T16:42:15Z",
+    "message": "`optimum-cli neuron cache list` command (#85)\n\n* optimum-cli neuron cache list command\n\n* Update help\n\n* Styling\n\n* Add test\n\n* Styling\n\n* Add staging tests"
+},
+{
+    "repo_url": "github.com/huggingface/optimum-neuron",
+    "filepath": "tests/test_cache_utils.py",
+    "commit_date": "2023-05-30T08:47:58Z",
+    "message": "Cache registry (#72)\n\n* [WIP] registry file\n\n* Add test\n\n* Styling\n\n* Handle concurrency on the registry\n\n* Styling\n\n* Fix tests"
+},
+{
+    "repo_url": "github.com/huggingface/optimum-neuron",
+    "filepath": "tests/test_cache_utils.py",
+    "commit_date": "2023-05-23T16:08:22Z",
+    "message": "Add last line for licenses (#69)\n\nadd last lin"
+},
+{
+    "repo_url": "github.com/huggingface/optimum-neuron",
+    "filepath": "tests/test_cache_utils.py",
+    "commit_date": "2023-05-14T17:10:00Z",
+    "message": "optimum-cli neuron cache add command (#51)\n\n* [WIP] optimum-cli neuron cache add command\n\n* [WIP] compilation utils\n\n* Add tests\n\n* Actually add tests\n\n* Trigger CI\n\n* Fix setup\n\n* Test\n\n* Test\n\n* Update pip\n\n* Add repository variables\n\n* Make run example a trainium test\n\n* Remove staging test from run example\n\n* Install python3.8-venv\n\n* Install python3.8-venv\n\n* Add test\n\n* Fix test\n\n* Remove print\n\n* Commented tests\n\n* Styling\n\n* Fix\n\n* Fix tests\n\n* Styling\n\n* Fix\n\n* Fix image classification\n\n* Use cache repo for compilation tests\n\n* Fix\n\n* Add None check"
+},
+{
+    "repo_url": "github.com/huggingface/optimum-neuron",
+    "filepath": "tests/test_cache_utils.py",
+    "commit_date": "2023-04-28T16:05:01Z",
+    "message": "`optimum-cli` Trainium cache (#49)\n\n* optimum-cli neuron cache commands\n\n* Add tests\n\n* Add tests\n\n* Fix issues\n\n* Add documentation\n\n* Fix tests and workflow\n\n* Add login\n\n* Change doc\n\n* Fix tests\n\n* Fix import\n\n* Fix tests\n\n* Styling\n\n* Fix tests\n\n* Apply suggestions"
+},
+{
+    "repo_url": "github.com/huggingface/optimum-neuron",
+    "filepath": "tests/test_cache_utils.py",
+    "commit_date": "2023-04-14T13:36:22Z",
+    "message": "Compilation caching system connected to the HF Hub (#24)\n\n* [WIP] caching system\n\n* caching system\n\n* Styling\n\n* Handle cache_stats\n\n* Caching system working\n\n* [WIP] tests\n\n* Update\n\n* Update test_common.yml\n\n* [WIP] tests\n\n* test_cache_utils.py done\n\n* [WIP] test_trainers.py\n\n* Move xm import inside compute_hash\n\n* Cleaning\n\n* Add workflows on Tranium instances\n\n* Add tests that checks if writing rights are there\n\n* Rename workflow\n\n* Trigger CI\n\n* Fix for CI\n\n* Trigger CI\n\n* Fix for CI\n\n* Remove print\n\n* Fix for CI\n\n* Test something\n\n* Not including the exporters tests\n\n* Apply suggestions\n\n* Disable python installation since we use the AMI\n\n* New hashing approach, without saving any file to disk\n\n* Small fix\n\n* Fix for the multiple worker setup\n\n* Add tests\n\n* Fix issues with multiple workers\n\n* Working for multiple workers\n\n* Finalizing tests\n\n* Cleaning\n\n* Trigger CI\n\n* Make tests inferentia tests\n\n* Add requires helper functions\n\n* Add dummy compiler version\n\n* Styling\n\n* Fix bf16 patching\n\n* Fix tests\n\n* Fix teardown"
+},
+{
+    "repo_url": "github.com/UncleTensor/AudioSubnet",
+    "filepath": "models/bark_voice_clone.py",
+    "commit_date": "2024-02-12T17:35:20Z",
+    "message": "Added Text to Music models, custom models option and auto_update (yes/no)"
+},
+{
+    "repo_url": "github.com/UncleTensor/AudioSubnet",
+    "filepath": "models/bark_voice_clone.py",
+    "commit_date": "2024-01-16T20:55:35Z",
+    "message": "Add Bark/VoiceClone Model and Optimize Miner Response Timeout\n\n- Implemented the Bark/VoiceClone model for enhanced voice cloning capabilities.\n- Optimized the timeout settings for miner responses, improving overall system efficiency. Updated to 90 seconds\n- Updated the punishment function to detect inactive miners not running any model, applying penalties based on the defined punishment factor.\n- Enhanced logging mechanisms for better clarity and troubleshooting.\n- Modified the minimum compute requirements file.\n- Added additional necessary libraries for running Voice\u00a0Cloning\u00a0in requirement.txt."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2024-02-27T11:11:47Z",
+    "message": "[Update] An example for Gemma model was initially added.\n[Update] An example for Transformer Reinforcement Learning (TRL) library to train small LLMs (sLLMs) was initially added."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2024-02-21T12:45:57Z",
+    "message": "[Update] Examples for DINO and DPT models were implemented in hugging_face_transformers_test.py."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2024-02-16T06:16:19Z",
+    "message": "[Update] Placeholders for examples of Hugging Face TRL library were added."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2024-02-08T03:52:31Z",
+    "message": "[Update] Several examples for stable diffusion models of Stability AI were implemented.\n[Update] Information about Transformer Reinforcement Learning (TRL) library was moved from hugging_face_test.py to hugging_face_transformers_test.py."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2024-01-31T08:31:27Z",
+    "message": "[Update] A test was added to fine-tune a ResNet model using Dog/Cat dataset in pytorch_transfer_learning.py."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2024-01-28T13:07:24Z",
+    "message": "[Update] An example of Zephyr-7B was added in hugging_face_transformers_test.py, but was not tested.\n[Update] The information about Transformer Reinforcement Learning (TRL) was described in hugging_face_test.py."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2024-01-11T04:04:23Z",
+    "message": "[Update] An example for retrieval-augmented generation (RAG) was added in hugging_face_transformers_test.py.\n[Update] Information about TableMASTER-mmocr was removed from mmocr_usage_guide.txt."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-12-24T02:40:32Z",
+    "message": "[Update] A few examples for Mistral-7B and Mixtral-8x7B models were added.\n[Update] The installation of TensorFlow 2 were updated."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-12-23T12:07:02Z",
+    "message": "[Update] An example of ORCA-2 model was added.\n[Update] The examples for ViT, ViLT, BEiT, LayoutLM, and Donut models were merged respectively.\n[Update] The information about data preparation, training, evaluation, visualization, and model export were supplemented in paddle_ocr_usage_guide.txt."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-11-24T08:49:41Z",
+    "message": "[Update] A customized version of ViT model was implemented and tested, which doesn't have classification token and head."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-11-20T04:48:59Z",
+    "message": "[Update] A few examples for Falcon model were initially implemented.\n[Update] A few examples for StarCoder and Replit models were implemented, but yet tested."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-11-10T01:27:50Z",
+    "message": "[Update] LLMs Yi-6B & Yi-34B were tested."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-11-06T12:24:53Z",
+    "message": "[Update] The forecasts of transformers.TimeSeriesTransformerForPrediction were evaluated by MASE, MAPE, sMAPE.\n[Update] Metrics for evaluating ML models' performance in evaluate library were tested."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-11-03T10:46:04Z",
+    "message": "[Update] Two examples for phi-1 & phi-1.5 models were initially added.\n[Update] A few examples for Kosmos-2 model were initially added."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-10-12T12:13:43Z",
+    "message": "[Update] A few examples for Probabilistic time series transformer model were added."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-10-07T08:51:44Z",
+    "message": "[Update] Several examples for Perceiver IO model were initially committed."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-09-26T10:56:44Z",
+    "message": "[Update] A simple example for Code Llama model was initially added.\n[Update] A few commands were explained to profile Python scripts."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-09-21T12:31:58Z",
+    "message": "[Update] A simple example for OpenLLaMA models was implemented."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-09-04T03:59:25Z",
+    "message": "[New] A few examples for PID, MPC, LQR using python-control library was initially added.\n[Update] A simple example for trajectory transformer models was added in hugging_face_transformers_test.py."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-09-02T12:30:02Z",
+    "message": "[New] An example for model predictive control (MPC) was initially committed.\n[Update] A test for CodeParrot model was initially implemented in hugging_face_transformers_test.py."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-08-31T06:01:24Z",
+    "message": "[Update] Memory footprint and computing performance (FLOPS) Hugging Face transformers models was measured.\n[Update] A simple test for Hugging Face datasets was added."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-08-04T08:13:21Z",
+    "message": "[Update] An example for OpenFlamingo library was added."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-07-25T12:07:07Z",
+    "message": "[Update] A few examples for Llama 2 model were added in hugging_face_transformers_test.py.\n[Update] Model parallelism was tested based on Hugging Face Accelerate library in hugging_face_transformers_test.py.\n[Update] Information about Hugging Face Accelerate library was reinforced."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-07-22T06:48:12Z",
+    "message": "[Update] Cross references about transformer and ViT models were reinforced.\n[Chore] vit_test.py was moved from sw_dev/python/rnd/test/machine_learning/vit_test.py to sw_dev/python/rnd/test/machine_vision/vit_test.py.\n[Update] The installation of node.js was explained."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-07-17T01:20:26Z",
+    "message": "[Update] Several examples for CodeBERT, CodeBERTa, CodeT5+, CodeGen2, & CodeGen2.5 models were added.\n[Update] An example of SpeechT5 model was divied into 3 examples: ASR, TTS, & speech-to-speech."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-07-12T07:54:25Z",
+    "message": "[Update] An example for Decision Transformer was initially committed.\n[Update] A few examples for NVIDIA Megatron-LM, ASR, TTS models were implemented.\n[Update] An example for SegFormer model was initially added."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-06-30T14:20:26Z",
+    "message": "[Update] The method, chain of thoughts (CoT) was tested on two LLMs, LLaMA & MPT."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-06-27T04:15:37Z",
+    "message": "[Update] A few examples for MPT & TVLT models were implemented in hugging_face_transformers_test.py.\n[Chore] table_generation_usage_guide.txt was moved to SWLP repository."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-06-22T14:49:33Z",
+    "message": "[Update] Three language models were tested: LLaMA, Galactica, & OPT models."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-06-15T07:51:37Z",
+    "message": "[Update] The example of LLaMA model was reinforced."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-05-26T18:49:16Z",
+    "message": "[Update] A test for data parallelism was implemented in PyTorch library."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-05-05T03:23:29Z",
+    "message": "[Update] Two simple tests for two Facebook's language models, OPT and Galactica were initially implemented."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-04-30T14:34:59Z",
+    "message": "[New] A simple tutorial for MMSegmentation library was initially committed."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-04-06T03:27:45Z",
+    "message": "[Update] A couple of simple examples for LLaMa model were implemented, but they were not tested due to library version issue."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-04-04T11:52:41Z",
+    "message": "[Update] Several examples for CodeT5 and CodeGen models were implemented to generate code.\n[Update] Several examples for GIT and BLIP models for vision-and-language modeling models were implemented.\n[Update] A few examples for TaPEx model were implemented to understand tables."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-04-01T14:10:48Z",
+    "message": "[New] A couple of examples for GPT4All models were added, but they were not correctly working."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-04-01T06:26:08Z",
+    "message": "[New] Two simple examples for PaLM and PaLM+RLHF models were implemented, but the models were not trained in the examples."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-03-30T08:06:47Z",
+    "message": "[New] Several examples for table processing (Table Transformer, TATR), OCR (TrOCR), speech processing (SpeechT5) were initially added to hugging_face_transformers_test.py."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-03-29T05:25:41Z",
+    "message": "[Update] Several examples for speech recognition (whisper) & synthesis (tacotron2 & fastspeech2) were newly implemented in hugging_face_transformers_test.py."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-03-26T07:02:13Z",
+    "message": "[New] A few examples for ALIGN model were implemented in hugging_face_transformers_test.py.\n[Update] A couple of examples for CLIP model were added in hugging_face_transformers_test.py.\n[Update] Useful information about Transformer architectures was described."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-03-24T06:24:31Z",
+    "message": "[Update] A simple example about dataclass in Python was added."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-03-22T14:48:31Z",
+    "message": "[Update] A couple of examples of seq-to-seq models for LoRA & Prefix Tuning were implemented in hugging_face_test.py.\n[Update] An example for CLIP model was implemented in hugging_face_transformers_test.py.\n[Update] A few examples for Whisper model were implemented in hugging_face_transformers_test.py.\n[New] A usage guide for Hugging Face library was added."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-03-21T07:10:38Z",
+    "message": "[Update] A simple example of Parameter-Efficient Fine-Tuning (PEFT) library was added to hugging_face_test.py.\n[Update] A simple test of tokenizers was added to hugging_face_transformers_test.py."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-03-18T11:41:29Z",
+    "message": "[Update] A couple of examples for diffusion models of StabilityAI and CompVis were added."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-03-18T05:09:16Z",
+    "message": "[Update] A few examples for Flan-T5 model were reinforced in hugging_face_transformers_test.py."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-03-16T11:52:13Z",
+    "message": "[Update] Information about Hugging Face models was supplemented."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-03-15T12:08:24Z",
+    "message": "[Update] An example for question answering using GPT-neo was added."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-03-14T02:43:49Z",
+    "message": "[Update] A few examples for BLOOM and Flan-T5 models were implemented."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-03-09T01:51:43Z",
+    "message": "[Update] A test for KLUE BERT models was implemented."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-03-09T01:49:32Z",
+    "message": "[Update] A few examples of text summarization for Korean & English were implemented, but their results were not good.\n[Update] A few examples for T5 model were added."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-03-07T17:44:21Z",
+    "message": "[Update] A few tests were added for GPT & BERT models."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-03-01T14:37:43Z",
+    "message": "[New] A few guides were initially committed for Hugging Face Hub library."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-01-19T10:11:50Z",
+    "message": "[Update] Several examples for vision, vision and language models were added in HuggingFace library."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2023-01-19T08:06:44Z",
+    "message": "[Update] Several examples for LayoutLM & Donut models were implemented in HugggingFace library."
+},
+{
+    "repo_url": "github.com/sangwook236/SWDT",
+    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+    "commit_date": "2022-04-01T07:00:58Z",
+    "message": "[Chore] transformers_test.py was renamed to hugging_face_transformers_test.py."
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2023-11-24T11:24:04Z",
+    "message": "Fix typo in warning message (#27055)\n\n* Fix typo in warning message\n\nThe path of `default_cache_path` is hf_cache_home/hub. There is no\ndirectory named transformers under hf_cache_home\n\n* Fix a typo in comment\n\n* Update the version number\n\nv4.22.0 is the earlist version that contains those changes in PR #18492"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2023-11-21T17:36:26Z",
+    "message": "Harmonize HF environment variables + other cleaning (#27564)\n\n* Harmonize HF environment variables + other cleaning\n\n* backward compat\n\n* switch from HUGGINGFACE_HUB_CACHE to HF_HUB_CACHE\n\n* revert"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2023-11-15T13:10:39Z",
+    "message": "[ `PretrainedConfig`] Improve messaging  (#27438)\n\n* import hf error\n\n* nits\n\n* fixup\n\n* catch the error at the correct place\n\n* style\n\n* improve message a tiny bit\n\n* Update src/transformers/utils/hub.py\n\nCo-authored-by: Lucain <lucainp@gmail.com>\n\n* add a test\n\n---------\n\nCo-authored-by: Lucain <lucainp@gmail.com>"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2023-10-31T18:16:49Z",
+    "message": "Safetensors serialization by default (#27064)\n\n* Safetensors serialization by default\n\n* First pass on the tests\n\n* Second pass on the tests\n\n* Third pass on the tests\n\n* Fix TF weight loading from TF-format safetensors\n\n* Specific encoder-decoder fixes for weight crossloading\n\n* Add VisionEncoderDecoder fixes for TF too\n\n* Change filename test for pt-to-tf\n\n* One missing fix for TFVisionEncoderDecoder\n\n* Fix the other crossload test\n\n* Support for flax + updated tests\n\n* Apply suggestions from code review\n\nCo-authored-by: Sanchit Gandhi <93869735+sanchit-gandhi@users.noreply.github.com>\n\n* Sanchit's comments\n\n* Sanchit's comments 2\n\n* Nico's comments\n\n* Fix tests\n\n* cleanup\n\n* Apply suggestions from code review\n\nCo-authored-by: amyeroberts <22614925+amyeroberts@users.noreply.github.com>\n\n---------\n\nCo-authored-by: Matt <rocketknight1@gmail.com>\nCo-authored-by: Sanchit Gandhi <93869735+sanchit-gandhi@users.noreply.github.com>\nCo-authored-by: amyeroberts <22614925+amyeroberts@users.noreply.github.com>"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2023-10-27T12:32:54Z",
+    "message": "Provide alternative when warning on use_auth_token (#27105)"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2023-10-26T10:37:09Z",
+    "message": "Add-support for commit description (#26704)\n\n* fix\n\n* update\n\n* revert\n\n* add dosctring\n\n* good to go\n\n* update\n\n* add a test"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2023-10-23T12:25:48Z",
+    "message": "Change default `max_shard_size` to smaller value (#26942)\n\n* Update modeling_utils.py\n\n* fixup\n\n* let's change it to 5GB\n\n* fix"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2023-08-22T05:55:35Z",
+    "message": "Support specifying revision in push_to_hub (#25578)\n\nSupport revision in push_to_hub"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2023-08-07T15:47:22Z",
+    "message": "Migrate Trainer from `Repository` to `upload_folder` (#25095)\n\n* First draft\n\n* Deal with progress bars\n\n* Update src/transformers/utils/hub.py\n\nCo-authored-by: Lucain <lucainp@gmail.com>\n\n* Address review comments\n\n* Forgot one\n\n* Pin hf_hub\n\n* Add argument for push all and fix tests\n\n* Fix tests\n\n* Address review comments\n\n---------\n\nCo-authored-by: Lucain <lucainp@gmail.com>"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2023-07-28T09:40:08Z",
+    "message": "Fix `.push_to_hub` and cleanup `get_full_repo_name` usage (#25120)\n\n* Fix .push_to_hub and cleanup get_full_repo_name usage\n\n* Do not rely on Python bool conversion magic\n\n* request changes"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2023-07-26T13:09:59Z",
+    "message": "update `use_auth_token` -> `token` (#25083)\n\n* update\n\n---------\n\nCo-authored-by: ydshieh <ydshieh@users.noreply.github.com>"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2023-07-24T13:12:39Z",
+    "message": "Support GatedRepoError + use raise from (#25034)\n\n* Support GatedRepoError + use raise from\n\n* Apply suggestions from code review\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\n\n* Use token instead of use_auth_token in error messages\n\n---------\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2023-06-12T12:51:09Z",
+    "message": "Fix push to hub (#24187)\n\nAdd fix"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2023-06-07T13:07:33Z",
+    "message": "[`Hub`] Add `safe_serialization` in push_to_hub (#24074)\n\nadd `safe_serialization` in push_to_hub"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2023-05-31T19:31:28Z",
+    "message": "[PushToHub] Make it possible to upload folders (#23920)\n\nAdd first draft"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2023-05-16T10:10:54Z",
+    "message": "Use `mkstemp` to replace deprecated `mktemp` (#23372)\n\n* Use `mkstemp` to replace deprecated `mktemp`\n\nThe `tempfile.mktemp` function is [deprecated](https://docs.python.org/3/library/tempfile.html#tempfile.mktemp) due to [security issues](https://cwe.mitre.org/data/definitions/377.html).\n\n* Update src/transformers/utils/hub.py\n\nCo-authored-by: amyeroberts <22614925+amyeroberts@users.noreply.github.com>\n\n---------\n\nCo-authored-by: amyeroberts <22614925+amyeroberts@users.noreply.github.com>"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2023-05-10T00:37:57Z",
+    "message": "Test composition (#23214)\n\n* Remove nestedness in tool config\n\n* Really do it\n\n* Use remote tools descriptions\n\n* Work\n\n* Clean up eval\n\n* Changes\n\n* Tools\n\n* Tools\n\n* tool\n\n* Fix everything\n\n* Use last result/assign for evaluation\n\n* Prompt\n\n* Remove hardcoded selection\n\n* Evaluation for chat agents\n\n* correct some spelling\n\n* Small fixes\n\n* Change summarization model (#23172)\n\n* Fix link displayed\n\n* Update description of the tool\n\n* Fixes in chat prompt\n\n* Custom tools, custom prompt\n\n* Tool clean up\n\n* save_pretrained and push_to_hub for tool\n\n* Fix init\n\n* Tests\n\n* Fix tests\n\n* Tool save/from_hub/push_to_hub and tool->load_tool\n\n* Clean push_to_hub and add app file\n\n* Custom inference API for endpoints too\n\n* Clean up\n\n* old remote tool and new remote tool\n\n* Make a requirements\n\n* return_code adds tool creation\n\n* Avoid redundancy between global variables\n\n* Remote tools can be loaded\n\n* Tests\n\n* Text summarization tests\n\n* Quality\n\n* Properly mark tests\n\n* Test the python interpreter\n\n* And the CI shall be green.\n\n* fix loading of additional tools\n\n* Work on RemoteTool and fix tests\n\n* General clean up\n\n* Guard imports\n\n* Fix tools\n\n* docs: Fix broken link in 'How to add a model...'  (#23216)\n\nfix link\n\n* Get default endpoint from the Hub\n\n* Add guide\n\n* Simplify tool config\n\n* Docs\n\n* Some fixes\n\n* Docs\n\n* Docs\n\n* Docs\n\n* Fix code returned by agent\n\n* Try this\n\n* Match args with signature in remote tool\n\n* Should fix python interpreter for Python 3.8\n\n* Fix push_to_hub for tools\n\n* Other fixes to push_to_hub\n\n* Add API doc page\n\n* Docs\n\n* Docs\n\n* Custom tools\n\n* Pin tensorflow-probability (#23220)\n\n* Pin tensorflow-probability\n\n* [all-test]\n\n* [all-test] Fix syntax for bash\n\n* PoC for some chaining API\n\n* Text to speech\n\n* J'ai pris des libert\u00e9s\n\n* Rename\n\n* Basic python interpreter\n\n* Add agents\n\n* Quality\n\n* Add translation tool\n\n* temp\n\n* GenQA + LID + S2T\n\n* Quality + word missing in translation\n\n* Add open assistance, support f-strings in evaluate\n\n* captioning + s2t fixes\n\n* Style\n\n* Refactor descriptions and remove chain\n\n* Support errors and rename OpenAssistantAgent\n\n* Add setup\n\n* Deal with typos + example of inference API\n\n* Some rename + README\n\n* Fixes\n\n* Update prompt\n\n* Unwanted change\n\n* Make sure everyone has a default\n\n* One prompt to rule them all.\n\n* SD\n\n* Description\n\n* Clean up remote tools\n\n* More remote tools\n\n* Add option to return code and update doc\n\n* Image segmentation\n\n* ControlNet\n\n* Gradio demo\n\n* Diffusers protection\n\n* Lib protection\n\n* ControlNet description\n\n* Cleanup\n\n* Style\n\n* Remove accelerate and try to be reproducible\n\n* No randomness\n\n* Male Basic optional in token\n\n* Clean description\n\n* Better prompts\n\n* Fix args eval in interpreter\n\n* Add tool wrapper\n\n* Tool on the Hub\n\n* Style post-rebase\n\n* Big refactor of descriptions, batch generation and evaluation for agents\n\n* Make problems easier - interface to debug\n\n* More problems, add python primitives\n\n* Back to one prompt\n\n* Remove dict for translation\n\n* Be consistent\n\n* Add prompts\n\n* New version of the agent\n\n* Evaluate new agents\n\n* New endpoints agents\n\n* Make all tools a dict variable\n\n* Typo\n\n* Add problems\n\n* Add to big prompt\n\n* Harmonize\n\n* Add tools\n\n* New evaluation\n\n* Add more tools\n\n* Build prompt with tools descriptions\n\n* Tools on the Hub\n\n* Let's chat!\n\n* Cleanup\n\n* Temporary bs4 safeguard\n\n* Cache agents and clean up\n\n* Blank init\n\n* Fix evaluation for agents\n\n* New format for tools on the Hub\n\n* Add method to reset state\n\n* Remove nestedness in tool config\n\n* Really do it\n\n* Use remote tools descriptions\n\n* Work\n\n* Clean up eval\n\n* Changes\n\n* Tools\n\n* Tools\n\n* tool\n\n* Fix everything\n\n* Use last result/assign for evaluation\n\n* Prompt\n\n* Remove hardcoded selection\n\n* Evaluation for chat agents\n\n* correct some spelling\n\n* Small fixes\n\n* Change summarization model (#23172)\n\n* Fix link displayed\n\n* Update description of the tool\n\n* Fixes in chat prompt\n\n* Custom tools, custom prompt\n\n* Tool clean up\n\n* save_pretrained and push_to_hub for tool\n\n* Fix init\n\n* Tests\n\n* Fix tests\n\n* Tool save/from_hub/push_to_hub and tool->load_tool\n\n* Clean push_to_hub and add app file\n\n* Custom inference API for endpoints too\n\n* Clean up\n\n* old remote tool and new remote tool\n\n* Make a requirements\n\n* return_code adds tool creation\n\n* Avoid redundancy between global variables\n\n* Remote tools can be loaded\n\n* Tests\n\n* Text summarization tests\n\n* Quality\n\n* Properly mark tests\n\n* Test the python interpreter\n\n* And the CI shall be green.\n\n* Work on RemoteTool and fix tests\n\n* fix loading of additional tools\n\n* General clean up\n\n* Guard imports\n\n* Fix tools\n\n* Get default endpoint from the Hub\n\n* Simplify tool config\n\n* Add guide\n\n* Docs\n\n* Some fixes\n\n* Docs\n\n* Docs\n\n* Fix code returned by agent\n\n* Try this\n\n* Docs\n\n* Match args with signature in remote tool\n\n* Should fix python interpreter for Python 3.8\n\n* Fix push_to_hub for tools\n\n* Other fixes to push_to_hub\n\n* Add API doc page\n\n* Fixes\n\n* Doc fixes\n\n* Docs\n\n* Fix audio\n\n* Custom tools\n\n* Audio fix\n\n* Improve custom tools docstring\n\n* Docstrings\n\n* Trigger CI\n\n* Mode docstrings\n\n* More docstrings\n\n* Improve custom tools\n\n* Fix for remote tools\n\n* Style\n\n* Fix repo consistency\n\n* Quality\n\n* Tip\n\n* Cleanup on doc\n\n* Cleanup toc\n\n* Add disclaimer for starcoder vs openai\n\n* Remove disclaimer\n\n* Small fixed in the prompts\n\n* 4.29\n\n* Update src/transformers/tools/agents.py\n\nCo-authored-by: Lysandre Debut <lysandre.debut@reseau.eseo.fr>\n\n* Complete documentation\n\n* Small fixes\n\n* Agent evaluation\n\n* Note about gradio-tools & LC\n\n* Clean up agents and prompt\n\n* Apply suggestions from code review\n\nCo-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>\n\n* Apply suggestions from code review\n\nCo-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>\n\n* Note about gradio-tools & LC\n\n* Add copyrights and address review comments\n\n* Quality\n\n* Add all language codes\n\n* Add remote tool tests\n\n* Move custom prompts to other docs\n\n* Apply suggestions from code review\n\nCo-authored-by: amyeroberts <22614925+amyeroberts@users.noreply.github.com>\n\n* TTS tests\n\n* Quality\n\n---------\n\nCo-authored-by: Lysandre <hi@lyand.re>\nCo-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>\nCo-authored-by: Philipp Schmid <32632186+philschmid@users.noreply.github.com>\nCo-authored-by: Connor Henderson <connor.henderson@talkiatry.com>\nCo-authored-by: Lysandre <lysandre.debut@reseau.eseo.fr>\nCo-authored-by: Lysandre <lysandre@huggingface.co>\nCo-authored-by: amyeroberts <22614925+amyeroberts@users.noreply.github.com>"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2023-03-29T13:46:30Z",
+    "message": "Don't hard error when cache version can't be converted to int (#22427)"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2023-03-09T21:58:03Z",
+    "message": "Add a progress bar for the total download of shards (#22062)\n\n* Add a progress bar for the total download of shards\n\n* Check for no cache at all\n\n* Fix check"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2023-03-02T08:45:42Z",
+    "message": "[Refactor] Relative imports wherever we can (#21880)\n\n* initial commit\n\n* update\n\n* second batch\n\n* style\n\n* fix imports\n\n* fix relative import on pipeline"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2023-02-06T23:10:56Z",
+    "message": "Update quality tooling for formatting (#21480)\n\n* Result of black 23.1\n\n* Update target to Python 3.7\n\n* Switch flake8 to ruff\n\n* Configure isort\n\n* Configure isort\n\n* Apply isort with line limit\n\n* Put the right black version\n\n* adapt black in check copies\n\n* Fix copies"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2023-01-27T17:09:49Z",
+    "message": "Little cleanup: let huggingface_hub manage token retrieval (#21333)\n\n* Let huggingface_hub manage token retrieval\n\n* flake8\n\n* code quality\n\n* adapt in every PushToHubMixin children\n\n* add explicit return type"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2023-01-24T15:37:10Z",
+    "message": "Use `logger.info` instead of `print` to emit a logging message in `hub.py` (#21273)\n\nuse logger.info() instead of print() to emit a debug message"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-11-28T15:35:52Z",
+    "message": "Safetensors offload (#20321)\n\n* INtegrate safetensos in weight offloading\n\n* Use safetensors checkpoint for offload when available\n\n* Make naming consistent\n\n* Make load faster\n\n* Quality\n\n* Add default"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-10-19T14:55:57Z",
+    "message": "Fix cache version file creation (#19750)"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-10-10T13:19:33Z",
+    "message": "Stop relying on huggingface_hub's private methods (#19392)\n\n* Leverage hfh for move cache\n\n* Style"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-09-30T19:13:39Z",
+    "message": "Fix cached lookup filepath on windows for hub (#19178)\n\n* Update hub.py commit_hash extraction\n\nAdd safety mechanism for windows systems to unify logic (replace double backslashes with /)\n\n* Fix string quotetype\n\n* Aaaa circleci is messing with me.\n\n* Switch to using as_posix() method from pathlib\n\n* Update src/transformers/utils/hub.py\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\n\n* Update src/transformers/utils/hub.py\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-09-29T12:58:39Z",
+    "message": "Use `hf_raise_for_status` instead of deprecated `_raise_for_status` (#19244)\n\n* Use  instead of  from huggingface_hub\n\n* bump huggingface_hub to 0.10.0 + make deps_table_update"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-09-26T22:01:00Z",
+    "message": "Fix cached_file in offline mode for cached non-existing files (#19206)\n\n* Fix cached_file in offline mode for cached non-existing files\n\n* Add tests\n\n* Test with offline mode"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-09-19T19:27:18Z",
+    "message": "Don't warn of move if cache is empty (#19109)"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-09-15T13:39:59Z",
+    "message": "Move cache: expand error message (#19051)"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-09-13T17:11:24Z",
+    "message": "Re-add support for single url files in objects download (#19014)"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-09-12T16:09:37Z",
+    "message": "Align try_to_load_from_cache with huggingface_hub (#18966)\n\n* Align try_to_load_from_cache with huggingface_hub\n\n* Fix tests"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-09-06T16:34:37Z",
+    "message": "Further reduce the number of alls to head for cached objects (#18871)\n\n* Further reduce the number of alls to head for cached models/tokenizers/pipelines\n\n* Fix tests\n\n* Address review comments"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-09-02T14:30:06Z",
+    "message": "Clean up utils.hub using the latest from hf_hub (#18857)\n\n* Clean up utils.hub using the latest from hf_hub\n\n* Adapt test\n\n* Address review comment\n\n* Fix test"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-08-10T19:46:03Z",
+    "message": "Properly move cache when it is not in default path (#18563)"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-08-10T15:55:18Z",
+    "message": "Use commit hash to look in cache instead of calling head (#18534)\n\n* Use commit hash to look in cache instead of calling head\n\n* Add tests\n\n* Add attr for local configs too\n\n* Stupid typos\n\n* Fix tests\n\n* Update src/transformers/utils/hub.py\n\nCo-authored-by: Julien Chaumond <julien@huggingface.co>\n\n* Address Julien's comments\n\nCo-authored-by: Julien Chaumond <julien@huggingface.co>"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-08-08T14:22:27Z",
+    "message": "New cache fixes: add safeguard before looking in folders (#18522)"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-08-08T12:48:10Z",
+    "message": "Clean up hub (#18497)\n\n* Clean up utils.hub\n\n* Remove imports\n\n* More fixes\n\n* Last fix"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-08-06T07:42:55Z",
+    "message": "`transformers-cli login` => `huggingface-cli login` (#18490)\n\n* zero chance anyone's using that constant no?\n\n* `transformers-cli login` => `huggingface-cli login`\n\n* `transformers-cli repo create` => `huggingface-cli repo create`\n\n* `make style`"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-08-05T17:29:38Z",
+    "message": "Typo reported by Joel Grus on TWTR (#18493)"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-08-05T17:24:53Z",
+    "message": "Forgot one new_ for cache migration"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-08-05T17:14:00Z",
+    "message": "Move cache folder to huggingface/hub for consistency with hf_hub (#18492)\n\n* Move cache folder to just huggingface\n\n* Thank you VsCode for this needless import\n\n* Move to hub\n\n* Forgot one"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-08-05T14:12:40Z",
+    "message": "Use new huggingface_hub tools for download models (#18438)\n\n* Draft new cached_file\n\n* Initial draft for config and model\n\n* Small fixes\n\n* Fix first batch of tests\n\n* Look in cache when internet is down\n\n* Fix last tests\n\n* Bad black, not fixing all quality errors\n\n* Make diff less\n\n* Implement change for TF and Flax models\n\n* Add tokenizer and feature extractor\n\n* For compatibility with main\n\n* Add utils to move the cache and auto-do it at first use.\n\n* Quality\n\n* Deal with empty commit shas\n\n* Deal with empty etag\n\n* Address review comments"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-08-01T16:07:30Z",
+    "message": "Rewrite push_to_hub to use upload_files (#18366)\n\n* Rewrite push_to_hub to use upload_files\n\n* Adapt the doc a bit\n\n* Address review comments and clean doc"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-07-19T09:53:53Z",
+    "message": "[From pretrained] Allow download from subfolder inside model repo (#18184)\n\n* add first generation tutorial\n\n* [from_pretrained] Allow loading models from subfolders\n\n* remove gen file\n\n* add doc strings\n\n* allow download from subfolder\n\n* add tests\n\n* Apply suggestions from code review\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\n\n* apply comments\n\n* correct doc string\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-07-13T16:43:08Z",
+    "message": "Make sharded checkpoints work in offline mode (#18125)\n\n* Make sharded checkpoints work in offline mode\n\n* Add test"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-07-13T14:53:25Z",
+    "message": "Revert \"Make sharded checkpoints work in offline mode\"\n\nThis reverts commit 3564c6578630a3bef29d2c7c36c7d29b68acd874."
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-07-13T14:51:56Z",
+    "message": "Make sharded checkpoints work in offline mode"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-07-11T16:45:06Z",
+    "message": "Add filename to info diaplyed when downloading things in from_pretrained (#18099)"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-06-21T16:01:08Z",
+    "message": "TF Sharded (#17713)\n\n* initial commit\n\n* update modeeling tf utils\n\n* quality\n\n* clean and update args\n\n* update\n\n* remove potential bug\n\n* code quality\n\n* update\n\n* update max shard\n\n* update tests for sharding from pretrained\n\n* fix remaining test\n\n* make style\n\n* h5py if tf available\n\n* update and fix test\n\n* fix test\n\n* style\n\n* modified push to hub to support shard for TF\n\n* quick fix\n\n* update code\n\n* merge branch main and style\n\n* Apply suggestions from code review\n\nCo-authored-by: Joao Gante <joaofranciscocardosogante@gmail.com>\nCo-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>\n\n* update based on reviews\n\n* update doc\n\n* update and style\n\n* Apply suggestions from code review\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\n\n* Update based on reviews\n\n* fix typo\n\n* style\n\nCo-authored-by: Joao Gante <joaofranciscocardosogante@gmail.com>\nCo-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-06-21T15:51:18Z",
+    "message": "Prepare transformers for v0.8.0 huggingface-hub release (#17716)\n\n* Prepare CI for v0.8.0\n\n* pin hfh (revert before merge)\n\n* Revert \"pin hfh (revert before merge)\"\n\nThis reverts commit a0103140e1c77b810ffcb735192968bc03be3e1f.\n\n* Test rc3\n\n* Test latest rc\n\n* Unpin to the RC\n\nCo-authored-by: Sylvain Gugger <Sylvain.gugger@gmail.com>"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-06-10T13:41:53Z",
+    "message": "\ud83d\udc1b Properly raise `RepoNotFoundError` when not authenticated (#17651)\n\n* Raise RepoNotFoundError in case of 401\n\n* Include changes from revert-17646-skip_repo_not_found\n\n* Add a comment\n\n* \ud83d\udc84 Code quality\n\n* \ud83d\udc9a Update `get_from_cache` test\n\n* \ud83d\udc9a Code quality & skip failing test"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-06-07T15:57:52Z",
+    "message": "Add examples telemetry (#17552)\n\n* Add examples telemetry\n\n* Alternative approach\n\n* Add to all other examples\n\n* Add to templates as well\n\n* Put framework separately\n\n* Same for TensorFlow"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-05-12T20:25:55Z",
+    "message": "Black preview (#17217)\n\n* Black preview\n\n* Fixup too!\n\n* Fix check copies\n\n* Use the same version as the CI\n\n* Bump black"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-04-29T16:26:45Z",
+    "message": "Revert \"Updating variable names. (#16445)\" (#17011)\n\nThis reverts commit 4f3a14e3c235c8b6b8cd2f5bc448a0cffacddf61."
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-04-25T19:15:00Z",
+    "message": " Fix issue probably-meant-fstring found at https://codereview.doctor (#16913)"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-03-23T19:56:49Z",
+    "message": "Make Transformers use cache files when hf.co is down (#16362)\n\n* Make Transformers use cache files when hf.co is down\n\n* Fix tests\n\n* Was there a random circleCI failure?\n\n* Isolate patches\n\n* Style\n\n* Comment out the failure since it doesn't fail anymore\n\n* Better comment"
+},
+{
+    "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-03-23T14:26:33Z",
+    "message": "Reorganize file utils (#16264)\n\n* Split file_utils in several submodules\n\n* Fixes\n\n* Add back more objects\n\n* More fixes\n\n* Who exactly decided to import that from there?\n\n* Second suggestion to code with code review\n\n* Revert wront move\n\n* Fix imports\n\n* Adapt all imports\n\n* Adapt all imports everywhere\n\n* Revert this import, will fix in a separate commit"
+},
+{
+    "repo_url": "github.com/huggingface/optimum-amd",
+    "filepath": "tests/ryzenai/test_modeling.py",
+    "commit_date": "2024-02-27T15:51:24Z",
+    "message": "[RyzenAI] Add operators regression tests (#90)\n\n* add vaip report extraction\n\n* restructure tests\n\n* add baseline generator\n\n* update inheritance\n\n* add baseline json\n\n* fix mixin\n\n* fix input\n\n* fix input\n\n* add default config constant\n\n* fix movenet\n\n* style\n\n* added readme\n\n* added sdk comment\n\n* updated readme with steps\n\n* style"
+},
+{
+    "repo_url": "github.com/huggingface/optimum-amd",
+    "filepath": "tests/ryzenai/test_modeling.py",
+    "commit_date": "2024-02-12T08:50:07Z",
+    "message": "Update nightly CI (#61)\n\n* Fix nightly CI\n\n* add conftest\n\n* add conftest\n\n* style\n\n* style"
+},
+{
+    "repo_url": "github.com/huggingface/optimum-amd",
+    "filepath": "tests/ryzenai/test_modeling.py",
+    "commit_date": "2024-02-09T09:19:13Z",
+    "message": "[RyzenAI] Add CI test yaml (#52)"
+},
+{
+    "repo_url": "github.com/huggingface/optimum-amd",
+    "filepath": "tests/ryzenai/test_modeling.py",
+    "commit_date": "2024-01-30T11:21:25Z",
+    "message": "[RyzenAI] Fix vaip_config path in tests (#49)\n\n* fix path\n\n* add tests\n\n* fix style\n\n* fix typo\n\n* fix typo"
+},
+{
+    "repo_url": "github.com/huggingface/optimum-amd",
+    "filepath": "tests/ryzenai/test_modeling.py",
+    "commit_date": "2024-01-10T09:40:01Z",
+    "message": "Add support for Ryzen pretrained model inference (#40)\n\n* add object det\n\n* update cls\n\n* fix typo\n\n* added tests\n\n* added other tasks\n\n* sort\n\n* fox typeo"
+},
+{
+    "repo_url": "github.com/toshiaki1729/stable-diffusion-webui-dataset-tag-editor",
+    "filepath": "scripts/dataset_tag_editor/interrogators/waifu_diffusion_tagger.py",
+    "commit_date": "2023-02-26T03:24:27Z",
+    "message": "enable wd-v14-tagger for AMD GPU users (#43)"
+},
+{
+    "repo_url": "github.com/toshiaki1729/stable-diffusion-webui-dataset-tag-editor",
+    "filepath": "scripts/dataset_tag_editor/interrogators/waifu_diffusion_tagger.py",
+    "commit_date": "2023-01-22T05:48:44Z",
+    "message": "implement some wd tagger v1 and v2, use multi dropdown for selecting interrogator"
+},
+{
+    "repo_url": "github.com/toshiaki1729/stable-diffusion-webui-dataset-tag-editor",
+    "filepath": "scripts/dataset_tag_editor/interrogators/waifu_diffusion_tagger.py",
+    "commit_date": "2023-01-13T15:57:52Z",
+    "message": "refactoring, implement #33 (but not available for now)"
+}
+]

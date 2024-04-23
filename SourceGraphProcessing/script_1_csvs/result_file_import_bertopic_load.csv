@@ -1,0 +1,90 @@
+✱ 22 results for "context:global select:file visibility:public count:all lang:Python content:'import bertopic' AND load\(" in 6.582s
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/MaartenGr/BERTopic/-/blob/bertopic/_bertopic.py)
+github.com/MaartenGr/BERTopic › _bertopic.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/MaartenGr/BERTopic/-/blob/bertopic/_save_utils.py)
+github.com/MaartenGr/BERTopic › _save_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/MaartenGr/BERTopic/-/blob/bertopic/representation/_pos.py)
+github.com/MaartenGr/BERTopic › _pos.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/aws/amazon-sagemaker-examples/-/blob/advanced_functionality/pytorch_extend_container_train_deploy_bertopic/container/bert-topic/bert-topic-inference.py)
+github.com/aws/amazon-sagemaker-examples › bert-topic-inference.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/aws/amazon-sagemaker-examples/-/blob/advanced_functionality/pytorch_extend_container_train_deploy_bertopic/container/bert-topic-byoreq/bert-topic-inference.py)
+github.com/aws/amazon-sagemaker-examples › bert-topic-inference.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/MaartenGr/BERTopic/-/blob/tests/test_other.py)
+github.com/MaartenGr/BERTopic › test_other.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/MaartenGr/BERTopic/-/blob/tests/test_bertopic.py)
+github.com/MaartenGr/BERTopic › test_bertopic.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/saeeddhqan/Maryam/-/blob/maryam/core/util/iris/topic.py)
+github.com/saeeddhqan/Maryam › topic.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/hyintell/topicx/-/blob/baselines/bertopic/_bertopic.py)
+github.com/hyintell/topicx › _bertopic.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/atoti/notebooks/-/blob/notebooks/01-use-cases/other-industries/influencers-analysis/bertopic_local/bertopic_custom/_bertopic.py)
+github.com/atoti/notebooks › _bertopic.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/huggingface/api-inference-community/-/blob/docker_images/bertopic/app/pipelines/text_classification.py)
+github.com/huggingface/api-inference-community › text_classification.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/lgarma/research-assistant/-/blob/app/utils/topic_model.py)
+github.com/lgarma/research-assistant › topic_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/grant-TraDA/NLP-2023W/-/blob/13.%20Mining%20UNGA%20debates/project1/solution/app/05_BERTopic.py)
+github.com/grant-TraDA/NLP-2023W › 05_BERTopic.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/grant-TraDA/NLP-2023W/-/blob/13.%20Mining%20UNGA%20debates/project1/solution/metrics/metric_values.py)
+github.com/grant-TraDA/NLP-2023W › metric_values.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/nestauk/innovation_sweet_spots/-/blob/innovation_sweet_spots/utils/pd/pd_analysis_utils.py)
+github.com/nestauk/innovation_sweet_spots › pd_analysis_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Shkaolin/BERTopic-as-service/-/blob/service/api/utils.py)
+github.com/Shkaolin/BERTopic-as-service › utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Shkaolin/BERTopic-as-service/-/blob/tests/conftest.py)
+github.com/Shkaolin/BERTopic-as-service › conftest.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/rbiswasfc/kaggle-feedback-effectiveness-3rd-place-solution/-/blob/code/predict_ensemble.py)
+github.com/rbiswasfc/kaggle-feedback-effectiveness-3rd-place-solution › predict_ensemble.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/rbiswasfc/kaggle-feedback-effectiveness-3rd-place-solution/-/blob/code/predict_efficiency.py)
+github.com/rbiswasfc/kaggle-feedback-effectiveness-3rd-place-solution › predict_efficiency.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/drob-xx/TopicTuner/-/blob/topictuner/topictuner.py)
+github.com/drob-xx/TopicTuner › topictuner.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Aidenzich/HelloBERTopic/-/blob/main.py)
+github.com/Aidenzich/HelloBERTopic › main.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/OmdenaAI/omdena-pennsylvania-startup/-/blob/src/tasks/task-6-model-deployment/webapp/apps/topic_model.py)
+github.com/OmdenaAI/omdena-pennsylvania-startup › topic_model.py (0 matches)
+--------------------------------------------------------------------------------
+

@@ -1,0 +1,55 @@
+repo_url,filepath,commit_date,message
+github.com/pyannote/pyannote-audio,pyannote/audio/models/embedding/wespeaker/convert.py,2023-11-16T08:22:45Z,feat(model): add WeSpeaker embedding wrapper based on pytorch (#1540)
+github.com/Softcatala/whisper-ctranslate2,src/whisper_ctranslate2/diarization.py,2024-01-04T19:52:00Z,Add experimental diariazation support
+github.com/mochan-b/whisper_pyannote_fusion,whisper_pyannote_fusion/whisper_pyannote_fusion.py,2023-11-03T08:59:52Z,Downmix and downsample audio and send as waveform to pipeline to avoid slowdown
+github.com/mochan-b/whisper_pyannote_fusion,whisper_pyannote_fusion/whisper_pyannote_fusion.py,2023-10-31T08:24:42Z,Fix json string and dict issues
+github.com/mochan-b/whisper_pyannote_fusion,whisper_pyannote_fusion/whisper_pyannote_fusion.py,2023-09-18T00:01:17Z,Only correct if in the initial prompt
+github.com/mochan-b/whisper_pyannote_fusion,whisper_pyannote_fusion/whisper_pyannote_fusion.py,2023-09-08T03:26:36Z,Some fixes. Added audacity labels
+github.com/mochan-b/whisper_pyannote_fusion,whisper_pyannote_fusion/whisper_pyannote_fusion.py,2023-08-28T23:46:35Z,Add whisperx based fusion method. Fixed the package structure.
+github.com/asyml/forte,examples/audio/speaker_segmentation_pipeline.py,2023-01-19T19:56:40Z,Update default serialization to the new `json` method. (#918)
+github.com/asyml/forte,examples/audio/speaker_segmentation_pipeline.py,2022-01-21T17:45:24Z,"Add audio processing example (#600)
+
+Co-authored-by: Suqi Sun <suqi.sun@petuum.com>"
+github.com/NINAnor/ecoVAD,anonymise_data.py,2022-08-31T06:18:46Z,First commit
+github.com/mlrun/functions,pyannote_audio/pyannote_audio.py,2024-01-09T11:09:19Z,"[pyannote_audio] Rename speech diarization to this new name (#766)
+
+* [Build] Fix html links, Add <function>.html as source in documentation
+
+* Update CI temporarily and update index
+
+* [XGB-Custom] Fix test artifact key name
+
+* [XGB-Serving][XGB-Test][XGB-Trainer] Fix tests - artifact key
+
+* [Build] Install python 3.9 when testing (#618)
+
+* [Build] Update python version in CI (#620)
+
+* [Build] Install python 3.9 when testing
+
+* [Build] Update python version in CI
+
+* .
+
+* Revert ""[Build] Update python version in CI (#620)"" (#621)
+
+This reverts commit 0cd1f1585a618c253f201b6f5a63502cdbddb591.
+
+* Revert ""[Build] Install python 3.9 when testing (#618)"" (#619)
+
+This reverts commit 3301415200e52326bade1e17f99cb6b6d3880860.
+
+* [Build] Build with python 3.9 (#622)
+
+* [Build] Build with python 3.9
+
+* .
+
+* rename
+
+* Yoni's comments and new name
+
+---------
+
+Co-authored-by: yonishelach <yonatanshelach@gmail.com>
+Co-authored-by: Yoni Shelach <92271540+yonishelach@users.noreply.github.com>"

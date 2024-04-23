@@ -1,0 +1,404 @@
+[
+    {
+        "repo_url": "github.com/allenai/RL4LMs",
+        "filepath": "rl4lms/envs/text_generation/summ_metrics/summa_c.py",
+        "commit_date": "2022-10-03T21:10:03Z",
+        "message": "Added code for the release"
+    },
+    {
+        "repo_url": "github.com/Leezekun/Directional-Stimulus-Prompting",
+        "filepath": "rl4lms/envs/text_generation/summ_metrics/summa_c.py",
+        "commit_date": "2023-03-31T03:34:01Z",
+        "message": "first commit"
+    },
+    {
+        "repo_url": "github.com/feyzaakyurek/rl4f",
+        "filepath": "rl4lms/envs/text_generation/summ_metrics/summa_c.py",
+        "commit_date": "2023-05-15T22:20:31Z",
+        "message": "add alphabetize"
+    },
+    {
+        "repo_url": "github.com/jiacheng-xu/neu-compression-sum",
+        "filepath": "depricated/allennlp_cont_parser.py",
+        "commit_date": "2019-11-01T00:52:02Z",
+        "message": "init ci"
+    },
+    {
+        "repo_url": "github.com/kajyuuen/allennlp-book",
+        "filepath": "mlflow/scripts/train.py",
+        "commit_date": "2020-03-03T07:44:12Z",
+        "message": "Init commit"
+    },
+    {
+        "repo_url": "github.com/zhjohnchan/PTUnifier",
+        "filepath": "ptunifier/metrics/jb_scorers/RadGraph/allennlp_models/rc/tools/transformer_qa.py",
+        "commit_date": "2023-08-10T06:54:38Z",
+        "message": "init"
+    },
+    {
+        "repo_url": "github.com/martiansideofthemoon/longeval-summarization",
+        "filepath": "longeval/linkage/summac/model_summac.py",
+        "commit_date": "2023-01-26T17:58:37Z",
+        "message": "Update"
+    },
+    {
+        "repo_url": "github.com/basel-a/SMET",
+        "filepath": "parse_class.py",
+        "commit_date": "2023-04-15T09:10:41Z",
+        "message": "first"
+    },
+    {
+        "repo_url": "github.com/archiki/ReCEval",
+        "filepath": "evaluate_receval.py",
+        "commit_date": "2023-04-23T17:39:24Z",
+        "message": "adding code files"
+    },
+    {
+        "repo_url": "github.com/AidaAmini/DyGIE-MECHANIC",
+        "filepath": "eval_utils.py",
+        "commit_date": "2020-09-26T01:24:11Z",
+        "message": "dygiepp-cofie"
+    },
+    {
+        "repo_url": "github.com/CharlotteJackson/DC_Crash_Bot",
+        "filepath": "scripts/sentiment_class.py",
+        "commit_date": "2021-02-10T17:05:34Z",
+        "message": "add moving violations analysis and geocoding script"
+    },
+    {
+        "repo_url": "github.com/microsoft/compositional-generalization-span-level-attention",
+        "filepath": "text2sql_experiments/text2sql/data/dataset_readers/dataset_utils/span_utils.py",
+        "commit_date": "2022-04-05T00:10:30Z",
+        "message": "initial commit"
+    },
+    {
+        "repo_url": "github.com/seq-to-mind/coref_dial_summ",
+        "filepath": "dialogue_coreference/dialogue_coreference.py",
+        "commit_date": "2021-09-10T09:30:55Z",
+        "message": "Add files via upload"
+    },
+    {
+        "repo_url": "github.com/IreneZihuiLi/EHRKit-2022",
+        "filepath": "allennlp/loader.py",
+        "commit_date": "2022-04-05T16:00:34Z",
+        "message": "First Commit"
+    },
+    {
+        "repo_url": "github.com/IreneZihuiLi/EHRKit-2022",
+        "filepath": "allennlp/elmo-ner.py",
+        "commit_date": "2022-04-05T16:00:34Z",
+        "message": "First Commit"
+    },
+    {
+        "repo_url": "github.com/kasnerz/zeroshot-d2t-pipeline",
+        "filepath": "wikifluent/generate_examples.py",
+        "commit_date": "2021-11-19T17:25:01Z",
+        "message": "Update repository"
+    },
+    {
+        "repo_url": "github.com/thongnt99/acl22-depression-phq9",
+        "filepath": "prepare_data/filter_symptoms.py",
+        "commit_date": "2022-05-18T12:41:14Z",
+        "message": "code to label data"
+    },
+    {
+        "repo_url": "github.com/huggingface/api-inference-community",
+        "filepath": "docker_images/allennlp/app/pipelines/question_answering.py",
+        "commit_date": "2023-04-07T10:08:31Z",
+        "message": "Resolve numerous typos (#224)"
+    },
+    {
+        "repo_url": "github.com/huggingface/api-inference-community",
+        "filepath": "docker_images/allennlp/app/pipelines/question_answering.py",
+        "commit_date": "2022-03-16T10:53:41Z",
+        "message": "MNT move api-inference-community to root of the repo"
+    },
+    {
+        "repo_url": "github.com/georgetown-cset/ai-relevant-papers",
+        "filepath": "predict_wos.py",
+        "commit_date": "2020-02-18T01:28:10Z",
+        "message": "Initial commit"
+    },
+    {
+        "repo_url": "github.com/georgetown-cset/ai-relevant-papers",
+        "filepath": "evaluate_scibert.py",
+        "commit_date": "2020-02-18T01:28:10Z",
+        "message": "Initial commit"
+    },
+    {
+        "repo_url": "github.com/MTTeql/MT-Teql",
+        "filepath": "nlp_utils.py",
+        "commit_date": "2021-09-14T11:54:46Z",
+        "message": "revise"
+    },
+    {
+        "repo_url": "github.com/Wendy-Xiao/chatgpt_editing_summ",
+        "filepath": "RL4LMs/rl4lms/envs/text_generation/summ_metrics/summa_c.py",
+        "commit_date": "2023-05-03T23:35:06Z",
+        "message": "add RL4LMs package"
+    },
+    {
+        "repo_url": "github.com/sejaldua/IBM-research-challenge",
+        "filepath": "NLP_models/identify_cancer.py",
+        "commit_date": "2020-02-01T22:00:44Z",
+        "message": "commented code and cleaned up NLP functions"
+    },
+    {
+        "repo_url": "github.com/sejaldua/IBM-research-challenge",
+        "filepath": "NLP_models/identify_cancer.py",
+        "commit_date": "2020-02-01T15:47:44Z",
+        "message": "Update identify_cancer.py\n\ngrammar"
+    },
+    {
+        "repo_url": "github.com/sejaldua/IBM-research-challenge",
+        "filepath": "NLP_models/identify_cancer.py",
+        "commit_date": "2020-02-01T14:00:40Z",
+        "message": "pushing NLP model for identifying cancer types"
+    },
+    {
+        "repo_url": "github.com/sejaldua/IBM-research-challenge",
+        "filepath": "NLP_models/classify_study_type.py",
+        "commit_date": "2020-02-01T22:00:44Z",
+        "message": "commented code and cleaned up NLP functions"
+    },
+    {
+        "repo_url": "github.com/sejaldua/IBM-research-challenge",
+        "filepath": "NLP_models/classify_study_type.py",
+        "commit_date": "2020-02-01T21:35:28Z",
+        "message": "organization"
+    },
+    {
+        "repo_url": "github.com/Slash0BZ/speaker-identification",
+        "filepath": "code/extraction/run_coref_gutenberg.py",
+        "commit_date": "2022-10-11T19:49:31Z",
+        "message": "initial commit"
+    },
+    {
+        "repo_url": "github.com/CogComp/Event_Process_Typing",
+        "filepath": "utils/data.py",
+        "commit_date": "2020-09-28T07:10:02Z",
+        "message": ""
+    },
+    {
+        "repo_url": "github.com/CogComp/Event_Process_Typing",
+        "filepath": "utils/data.py",
+        "commit_date": "2020-09-21T20:13:58Z",
+        "message": "initial commit"
+    },
+    {
+        "repo_url": "github.com/asyml/forte-wrappers",
+        "filepath": "tests/wrappers/allennlp_processors_test.py",
+        "commit_date": "2021-11-10T19:59:33Z",
+        "message": "Ignore long sentences in the input fed to AllenNLP SRL (#81)\n\n* long sentences\n\n* pylint\n\n* for mypy\n\n* typo\n\n* remove debug\n\n* typo"
+    },
+    {
+        "repo_url": "github.com/asyml/forte-wrappers",
+        "filepath": "tests/wrappers/allennlp_processors_test.py",
+        "commit_date": "2021-10-07T16:08:10Z",
+        "message": "Handle empty inputs in AllenNLP Processor (#77)\n\n* make sure srl is included in test\n\n* black\n\n* Ignore empty sentences in allennlp\n\n* Update config error.\n\n* Handle empty mentions.\n\n* Add tests for empty mentions.\n\n* Remove un-supported config in test.\n\n* Fix documentation."
+    },
+    {
+        "repo_url": "github.com/asyml/forte-wrappers",
+        "filepath": "tests/wrappers/allennlp_processors_test.py",
+        "commit_date": "2021-09-08T14:31:02Z",
+        "message": "Change wrapper package from Forte to Fortex (#73)\n\n* Move to fortex\n\n* Fix import in test.\n\n* Rename package.\n\n* Fix examples.\n\n* Update init imports.\n\n* Update test strings.\n\n* Fix imports in elastics.\n\n* Fix imports in allennlp.\n\n* Typo\n\n* Fix class name in docs.\n\n* Clean up documentation.\n\n* Add docuemntation back.\n\n* Fixing documentation and gpu setups.\n\n* Black all setups.\n\n* Remove obsolete configs"
+    },
+    {
+        "repo_url": "github.com/asyml/forte-wrappers",
+        "filepath": "tests/wrappers/allennlp_processors_test.py",
+        "commit_date": "2021-06-09T05:24:38Z",
+        "message": "Set up namespace packaging (#46)\n\n* Set up namespace packaging\n\n* Try workflow syntax.\n\n* Fix doc build and black.\n\n* check syntax.\n\n* Try string.\n\n* Use for loop\n\n* Typo\n\n* Typo\n\n* Skip spacy temporarily.\n\n* Use nltk for other test cases instead of spacy."
+    },
+    {
+        "repo_url": "github.com/asyml/forte-wrappers",
+        "filepath": "tests/wrappers/allennlp_processors_test.py",
+        "commit_date": "2021-06-08T22:29:03Z",
+        "message": "Simplify package name. (#44)\n\n* Simplify package name.\n\n* Update formats to solve pylint issue after renaming.\n\n* Correct workflow paths.\n\n* Install black\n\n* Remove init, version, rename onto, and use namespace packages.\n\n* Rename in string.\n\n* Install project for doc build.\n\n* Exclude files in package."
+    },
+    {
+        "repo_url": "github.com/asyml/forte-wrappers",
+        "filepath": "tests/wrappers/allennlp_processors_test.py",
+        "commit_date": "2021-06-02T21:59:37Z",
+        "message": "Moving indexer tests to wrapper (#36)\n\n* add indexer tests\n\n* wait for elastic to be ready"
+    },
+    {
+        "repo_url": "github.com/arthurdeschamps/question-generation-nus-ids",
+        "filepath": "models/sg_dqg.py",
+        "commit_date": "2020-06-22T06:43:32Z",
+        "message": "Fix a few pieces of code for SQG to be able to train the model. Results are very bad, there has to be something wrong somewhere."
+    },
+    {
+        "repo_url": "github.com/arthurdeschamps/question-generation-nus-ids",
+        "filepath": "models/sg_dqg.py",
+        "commit_date": "2020-06-15T16:06:51Z",
+        "message": "Modify ASs2s to replace all named entities with appropriate tokens during training, and use mappings to replace them back during inference. BLEU score went up 1 point."
+    },
+    {
+        "repo_url": "github.com/arthurdeschamps/question-generation-nus-ids",
+        "filepath": "models/sg_dqg.py",
+        "commit_date": "2020-06-11T11:03:21Z",
+        "message": "Successful migration from the Estimator API to the Keras paradigm."
+    },
+    {
+        "repo_url": "github.com/arthurdeschamps/question-generation-nus-ids",
+        "filepath": "models/sg_dqg.py",
+        "commit_date": "2020-06-10T06:47:47Z",
+        "message": "Multiple fixes  in eval mode of ASs2s."
+    },
+    {
+        "repo_url": "github.com/arthurdeschamps/question-generation-nus-ids",
+        "filepath": "models/sg_dqg.py",
+        "commit_date": "2020-06-08T10:19:13Z",
+        "message": "Fix eval mode for ASs2s. Implement multilayer keyword-net according to the paper."
+    },
+    {
+        "repo_url": "github.com/arthurdeschamps/question-generation-nus-ids",
+        "filepath": "models/sg_dqg.py",
+        "commit_date": "2020-06-03T14:17:58Z",
+        "message": "Add ASs2s project and transposed it to Python 3 and Tensorflow 2"
+    },
+    {
+        "repo_url": "github.com/arthurdeschamps/question-generation-nus-ids",
+        "filepath": "models/sg_dqg.py",
+        "commit_date": "2020-06-02T02:49:01Z",
+        "message": "Add a few safe fallbacks for when the SG DQG data processing pipeline fails. Also improve answer span retrieval algorithm to cover more cases and some corner cases."
+    },
+    {
+        "repo_url": "github.com/arthurdeschamps/question-generation-nus-ids",
+        "filepath": "models/sg_dqg.py",
+        "commit_date": "2020-06-01T08:13:59Z",
+        "message": "Reduce amount of parsing when reading SQuAD."
+    },
+    {
+        "repo_url": "github.com/arthurdeschamps/question-generation-nus-ids",
+        "filepath": "models/sg_dqg.py",
+        "commit_date": "2020-05-31T15:01:57Z",
+        "message": "Integrate full data generation + training for SG DQG as only translating SQuAD with pre-trained HotpotQA didn't cut it."
+    },
+    {
+        "repo_url": "github.com/arthurdeschamps/question-generation-nus-ids",
+        "filepath": "models/sg_dqg.py",
+        "commit_date": "2020-05-29T07:34:21Z",
+        "message": "Predictions with SG-DQG using pre-trained models work. Results are poor. Will try to feed entire paragraphs instead of single sentences."
+    },
+    {
+        "repo_url": "github.com/arthurdeschamps/question-generation-nus-ids",
+        "filepath": "models/sg_dqg.py",
+        "commit_date": "2020-05-28T10:58:18Z",
+        "message": "Manage to make predictions for SQuAD using HotpotQA pretrained model. Answer zones seem to not be working."
+    },
+    {
+        "repo_url": "github.com/arthurdeschamps/question-generation-nus-ids",
+        "filepath": "models/sg_dqg.py",
+        "commit_date": "2020-05-27T02:27:46Z",
+        "message": "Integrate SG-Deep-Question-Generation project and reverse engineer initial graph construction steps"
+    },
+    {
+        "repo_url": "github.com/airbert-vln/bnb-dataset",
+        "filepath": "perturbate_dataset.py",
+        "commit_date": "2022-03-08T07:59:57Z",
+        "message": "chore: cleaning"
+    },
+    {
+        "repo_url": "github.com/isaacmg/ml_serving_flask",
+        "filepath": "allen_simple.py",
+        "commit_date": "2019-01-08T21:31:32Z",
+        "message": "fix url"
+    },
+    {
+        "repo_url": "github.com/isaacmg/ml_serving_flask",
+        "filepath": "allen_simple.py",
+        "commit_date": "2019-01-08T21:28:38Z",
+        "message": "Update for Java call to simplfy and fix UT"
+    },
+    {
+        "repo_url": "github.com/isaacmg/ml_serving_flask",
+        "filepath": "allen_simple.py",
+        "commit_date": "2018-12-21T01:59:21Z",
+        "message": "updated host"
+    },
+    {
+        "repo_url": "github.com/isaacmg/ml_serving_flask",
+        "filepath": "allen_simple.py",
+        "commit_date": "2018-12-20T23:48:56Z",
+        "message": "added simple debug test"
+    },
+    {
+        "repo_url": "github.com/isaacmg/ml_serving_flask",
+        "filepath": "allen_simple.py",
+        "commit_date": "2018-12-20T21:47:01Z",
+        "message": "refix por"
+    },
+    {
+        "repo_url": "github.com/isaacmg/ml_serving_flask",
+        "filepath": "allen_simple.py",
+        "commit_date": "2018-12-20T21:44:34Z",
+        "message": "Swap port to standard 8080"
+    },
+    {
+        "repo_url": "github.com/isaacmg/ml_serving_flask",
+        "filepath": "allen_simple.py",
+        "commit_date": "2018-12-17T00:56:59Z",
+        "message": "Core works\n\nadded tests"
+    },
+    {
+        "repo_url": "github.com/isaacmg/ml_serving_flask",
+        "filepath": "allen_simple.py",
+        "commit_date": "2018-12-16T17:45:34Z",
+        "message": "Refactor alllennlp serviing class"
+    },
+    {
+        "repo_url": "github.com/isaacmg/ml_serving_flask",
+        "filepath": "allen_simple.py",
+        "commit_date": "2018-12-16T04:58:37Z",
+        "message": "Update code for site w"
+    },
+    {
+        "repo_url": "github.com/isaacmg/ml_serving_flask",
+        "filepath": "allen_simple.py",
+        "commit_date": "2018-12-16T04:44:09Z",
+        "message": "add"
+    },
+    {
+        "repo_url": "github.com/isaacmg/ml_serving_flask",
+        "filepath": "allen_simple.py",
+        "commit_date": "2018-12-15T23:53:31Z",
+        "message": "Add more files"
+    },
+    {
+        "repo_url": "github.com/ihsgnef/pathologies",
+        "filepath": "input_reduction.py",
+        "commit_date": "2020-05-09T11:15:11Z",
+        "message": "update"
+    },
+    {
+        "repo_url": "github.com/ihsgnef/pathologies",
+        "filepath": "input_reduction.py",
+        "commit_date": "2020-05-09T04:53:16Z",
+        "message": "update"
+    },
+    {
+        "repo_url": "github.com/ihsgnef/pathologies",
+        "filepath": "input_reduction.py",
+        "commit_date": "2020-05-08T18:57:14Z",
+        "message": "update"
+    },
+    {
+        "repo_url": "github.com/ihsgnef/pathologies",
+        "filepath": "input_replacement.py",
+        "commit_date": "2020-05-09T11:15:11Z",
+        "message": "update"
+    },
+    {
+        "repo_url": "github.com/ihsgnef/pathologies",
+        "filepath": "input_replacement.py",
+        "commit_date": "2020-05-09T04:53:16Z",
+        "message": "update"
+    },
+    {
+        "repo_url": "github.com/xbmxb/RAG-query-rewriting",
+        "filepath": "rl/RL4LMs/rl4lms/envs/text_generation/summ_metrics/summa_c.py",
+        "commit_date": "2023-10-21T10:47:12Z",
+        "message": "morecode"
+    }
+]

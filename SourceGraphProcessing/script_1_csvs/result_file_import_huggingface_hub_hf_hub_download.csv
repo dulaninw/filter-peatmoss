@@ -1,0 +1,606 @@
+✱ 151 results for "context:global select:file visibility:public count:all lang:Python content:'import huggingface_hub' AND hf_hub_download\(" in 1.593s
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/huggingface/transformers/-/blob/src/transformers/utils/hub.py)
+github.com/huggingface/transformers › hub.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/gradio-app/gradio/-/blob/gradio/flagging.py)
+github.com/gradio-app/gradio › flagging.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/gradio-app/gradio/-/blob/gradio/themes/base.py)
+github.com/gradio-app/gradio › base.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mlflow/mlflow/-/blob/mlflow/transformers/__init__.py)
+github.com/mlflow/mlflow › __init__.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/huggingface/diffusers/-/blob/scripts/convert_k_upscaler_to_diffusers.py)
+github.com/huggingface/diffusers › convert_k_upscaler_to_diffusers.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/huggingface/diffusers/-/blob/src/diffusers/commands/fp16_safetensors.py)
+github.com/huggingface/diffusers › fp16_safetensors.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/coqui-ai/TTS/-/blob/TTS/tts/layers/bark/hubert/hubert_manager.py)
+github.com/coqui-ai/TTS › hubert_manager.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/FMInference/FlexGen/-/blob/benchmark/third_party/transformers/src/transformers/utils/hub.py)
+github.com/FMInference/FlexGen › hub.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/speechbrain/speechbrain/-/blob/speechbrain/utils/fetching.py)
+github.com/speechbrain/speechbrain › fetching.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/TheLastBen/fast-stable-diffusion/-/blob/Dreambooth/hub.py)
+github.com/TheLastBen/fast-stable-diffusion › hub.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/OpenNMT/OpenNMT-py/-/blob/tools/convert_HF.py)
+github.com/OpenNMT/OpenNMT-py › convert_HF.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/neuml/txtai/-/blob/src/python/txtai/cloud/hub.py)
+github.com/neuml/txtai › hub.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/huggingface/text-generation-inference/-/blob/server/text_generation_server/utils/hub.py)
+github.com/huggingface/text-generation-inference › hub.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/OpenNMT/OpenNMT-py/-/blob/tools/convert_HF_llamalike.py)
+github.com/OpenNMT/OpenNMT-py › convert_HF_llamalike.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/williamyang1991/VToonify/-/blob/vtoonify_model.py)
+github.com/williamyang1991/VToonify › vtoonify_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/microsoft/LMOps/-/blob/minillm/transformers/src/transformers/utils/hub.py)
+github.com/microsoft/LMOps › hub.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/marqo-ai/marqo/-/blob/src/marqo/s2_inference/processing/yolox_utils.py)
+github.com/marqo-ai/marqo › yolox_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/deforum-art/sd-webui-deforum/-/blob/scripts/deforum_helpers/vid2depth.py)
+github.com/deforum-art/sd-webui-deforum › vid2depth.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/argilla-io/argilla/-/blob/src/argilla/client/feedback/integrations/huggingface/dataset.py)
+github.com/argilla-io/argilla › dataset.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/asteroid-team/asteroid/-/blob/asteroid/utils/hub_utils.py)
+github.com/asteroid-team/asteroid › hub_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Tongjilibo/bert4torch/-/blob/bert4torch/snippets/misc.py)
+github.com/Tongjilibo/bert4torch › misc.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Nerogar/OneTrainer/-/blob/modules/module/WDModel.py)
+github.com/Nerogar/OneTrainer › WDModel.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/27182812/ChatGLM-LLaMA-chinese-insturct/-/blob/src/transformers/utils/hub.py)
+github.com/27182812/ChatGLM-LLaMA-chinese-insturct › hub.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/longyuewangdcu/Chinese-Llama-2/-/blob/transformers/src/transformers/utils/hub.py)
+github.com/longyuewangdcu/Chinese-Llama-2 › hub.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Toni-SM/skrl/-/blob/skrl/utils/huggingface.py)
+github.com/Toni-SM/skrl › huggingface.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/tgxs002/HPSv2/-/blob/hpsv2/utils.py)
+github.com/tgxs002/HPSv2 › utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/chaoyi-wu/Finetune_LLAMA/-/blob/Python_Package/transformers-main/src/transformers/utils/hub.py)
+github.com/chaoyi-wu/Finetune_LLAMA › hub.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/MendelXu/SAN/-/blob/predict.py)
+github.com/MendelXu/SAN › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/aihao2000/stable-diffusion-reference-only/-/blob/app.py)
+github.com/aihao2000/stable-diffusion-reference-only › app.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/aihao2000/stable-diffusion-reference-only/-/blob/scripts/stable_diffusion_reference_only_on_tab.py)
+github.com/aihao2000/stable-diffusion-reference-only › stable_diffusion_reference_only_on_tab.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/tgxs002/HPSv2/-/blob/hpsv2/img_score.py)
+github.com/tgxs002/HPSv2 › img_score.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/declare-lab/tango/-/blob/mustango/diffusers/scripts/convert_k_upscaler_to_diffusers.py)
+github.com/declare-lab/tango › convert_k_upscaler_to_diffusers.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/tgxs002/HPSv2/-/blob/hpsv2/evaluation.py)
+github.com/tgxs002/HPSv2 › evaluation.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/SqueezeAILab/KVQuant/-/blob/gradients/src/transformers/utils/hub.py)
+github.com/SqueezeAILab/KVQuant › hub.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/kssteven418/BigLittleDecoder/-/blob/src/transformers/utils/hub.py)
+github.com/kssteven418/BigLittleDecoder › hub.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/wxjiao/ParroT/-/blob/transformers/src/transformers/utils/hub.py)
+github.com/wxjiao/ParroT › hub.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/kohjingyu/fromage/-/blob/demo/app.py)
+github.com/kohjingyu/fromage › app.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/xijiu9/Train_Transformers_with_INT4/-/blob/SingleDivide/transformersLocal/utils/hub.py)
+github.com/xijiu9/Train_Transformers_with_INT4 › hub.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mkshing/svdiff-pytorch/-/blob/inference.py)
+github.com/mkshing/svdiff-pytorch › inference.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/yegcjs/DiffusionLLM/-/blob/transformers/src/transformers/utils/hub.py)
+github.com/yegcjs/DiffusionLLM › hub.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/MikeGu721/EasyLLM/-/blob/installs/transformers-install/src/transformers/utils/hub.py)
+github.com/MikeGu721/EasyLLM › hub.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/skshadan/TTS-RVC-API/-/blob/app/routers/tts.py)
+github.com/skshadan/TTS-RVC-API › tts.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/douhaohaode/xtts_v2/-/blob/TTS/tts/layers/bark/hubert/hubert_manager.py)
+github.com/douhaohaode/xtts_v2 › hubert_manager.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/predibase/lorax/-/blob/server/lorax_server/utils/sources/hub.py)
+github.com/predibase/lorax › hub.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/KevinWang676/Bark-Voice-Cloning/-/blob/bark/hubert/hubert_manager.py)
+github.com/KevinWang676/Bark-Voice-Cloning › hubert_manager.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/thu-coai/PICL/-/blob/transformers/src/transformers/utils/hub.py)
+github.com/thu-coai/PICL › hub.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/cure-lab/MagicDrive/-/blob/third_party/diffusers/scripts/convert_k_upscaler_to_diffusers.py)
+github.com/cure-lab/MagicDrive › convert_k_upscaler_to_diffusers.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/shikiw/OPERA/-/blob/transformers-4.29.2/src/transformers/utils/hub.py)
+github.com/shikiw/OPERA › hub.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/HillZhang1999/ICD/-/blob/transformers/src/transformers/utils/hub.py)
+github.com/HillZhang1999/ICD › hub.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/junzhezhang/DeformToon3D/-/blob/external/VToonify/vtoonify_model.py)
+github.com/junzhezhang/DeformToon3D › vtoonify_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/EdVince/whisper-trtllm/-/blob/transformers/src/transformers/utils/hub.py)
+github.com/EdVince/whisper-trtllm › hub.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/interactiveaudiolab/ppgs/-/blob/ppgs/load.py)
+github.com/interactiveaudiolab/ppgs › load.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/dki-lab/Pangu/-/blob/allennlp/common/file_utils.py)
+github.com/dki-lab/Pangu › file_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/ictnlp/TruthX/-/blob/transformers/src/transformers/utils/hub.py)
+github.com/ictnlp/TruthX › hub.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/cedrickchee/transformers-llama/-/blob/src/transformers/utils/hub.py)
+github.com/cedrickchee/transformers-llama › hub.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mkshing/e4t-diffusion/-/blob/e4t/utils.py)
+github.com/mkshing/e4t-diffusion › utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Nerogar/OneTrainer/-/blob/modules/module/HPSv2ScoreModel.py)
+github.com/Nerogar/OneTrainer › HPSv2ScoreModel.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/xbmxb/RAG-query-rewriting/-/blob/rl/RL4LMs/rl4lms/envs/text_generation/transformersllm/utils/hub.py)
+github.com/xbmxb/RAG-query-rewriting › hub.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mhh0318/Cocktail/-/blob/annotator/SAN/predict.py)
+github.com/mhh0318/Cocktail › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/linto-ai/linto-stt/-/blob/whisper/stt/processing/alignment_model.py)
+github.com/linto-ai/linto-stt › alignment_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/jialuli-luka/PanoGen/-/blob/Stable-Diffusion/diffusers/scripts/convert_k_upscaler_to_diffusers.py)
+github.com/jialuli-luka/PanoGen › convert_k_upscaler_to_diffusers.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mkshing/svdiff-pytorch/-/blob/svdiff_pytorch/utils.py)
+github.com/mkshing/svdiff-pytorch › utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Ascend/ModelZoo-PyTorch/-/blob/PyTorch/dev/perf/speechbrain-tdnn/speechbrain/pretrained/fetching.py)
+github.com/Ascend/ModelZoo-PyTorch › fetching.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/ArthurConmy/Automatic-Circuit-Discovery/-/blob/acdc/induction/utils.py)
+github.com/ArthurConmy/Automatic-Circuit-Discovery › utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/FMInference/H2O/-/blob/h2o_flexgen/benchmark/third_party/transformers/src/transformers/utils/hub.py)
+github.com/FMInference/H2O › hub.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/THUDM/SwissArmyTransformer/-/blob/examples/eva2/transform_param.py)
+github.com/THUDM/SwissArmyTransformer › transform_param.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/OpenNMT/CTranslate2/-/blob/python/ctranslate2/converters/transformers.py)
+github.com/OpenNMT/CTranslate2 › transformers.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/kuutsav/llm-toys/-/blob/llm_toys/hf/transformers/utils/hub.py)
+github.com/kuutsav/llm-toys › hub.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/D8-Dreambooth/stable-diffusion-plus/-/blob/core/helpers/captioners/wolf.py)
+github.com/D8-Dreambooth/stable-diffusion-plus › wolf.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/pravdomil/Rerender-A-Video/-/blob/app.py)
+github.com/pravdomil/Rerender-A-Video › app.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/pravdomil/Rerender-A-Video/-/blob/global_state.py)
+github.com/pravdomil/Rerender-A-Video › global_state.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/pravdomil/Rerender-A-Video/-/blob/flow/flow_utils.py)
+github.com/pravdomil/Rerender-A-Video › flow_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/SepidehHosseinian/Python-Essentials-for-MLOps/-/blob/venv/lib/python3.7/site-packages/transformers/utils/hub.py)
+github.com/SepidehHosseinian/Python-Essentials-for-MLOps › hub.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/suu990901/LLaMA-InfoEntropy-Loss/-/blob/transformers/utils/hub.py)
+github.com/suu990901/LLaMA-InfoEntropy-Loss › hub.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/skeskinen/bert.cpp/-/blob/models/download-ggml.py)
+github.com/skeskinen/bert.cpp › download-ggml.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Ascend/ModelZoo-PyTorch/-/blob/PyTorch/contrib/audio/tdnn/speechbrain/pretrained/fetching.py)
+github.com/Ascend/ModelZoo-PyTorch › fetching.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/SqueezeAILab/KVQuant/-/blob/deployment/transformers/src/transformers/utils/hub.py)
+github.com/SqueezeAILab/KVQuant › hub.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/triton-inference-server/pytriton/-/blob/examples/nemo_megatron_gpt_multinode/helpers.py)
+github.com/triton-inference-server/pytriton › helpers.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/wandb/weave/-/blob/weave/ecosystem/huggingface/hfmodel.py)
+github.com/wandb/weave › hfmodel.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/UMass-Foundation-Model/CoVLM/-/blob/transformers/src/transformers/utils/hub.py)
+github.com/UMass-Foundation-Model/CoVLM › hub.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/huggingface/optimum-neuron/-/blob/optimum/neuron/utils/cache_utils.py)
+github.com/huggingface/optimum-neuron › cache_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/drboog/ProFusion/-/blob/diffusers/scripts/convert_k_upscaler_to_diffusers.py)
+github.com/drboog/ProFusion › convert_k_upscaler_to_diffusers.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/EricLBuehler/xlora/-/blob/src/xlora/xlora_utils.py)
+github.com/EricLBuehler/xlora › xlora_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/kevin-meng/HuggingfaceDownloadShare/-/blob/app.py)
+github.com/kevin-meng/HuggingfaceDownloadShare › app.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/AMAAI-Lab/mustango/-/blob/diffusers/scripts/convert_k_upscaler_to_diffusers.py)
+github.com/AMAAI-Lab/mustango › convert_k_upscaler_to_diffusers.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/SillyTavern/SillyTavern-extras/-/blob/modules/voice_conversion/rvc/hubert/hubert_manager.py)
+github.com/SillyTavern/SillyTavern-extras › hubert_manager.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/KU-CVLAB/DreamMatcher/-/blob/diffusers/scripts/convert_k_upscaler_to_diffusers.py)
+github.com/KU-CVLAB/DreamMatcher › convert_k_upscaler_to_diffusers.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/KU-CVLAB/DreamMatcher/-/blob/diffusers/src/diffusers/commands/fp16_safetensors.py)
+github.com/KU-CVLAB/DreamMatcher › fp16_safetensors.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/kwaroran/abg-comfyui/-/blob/__init__.py)
+github.com/kwaroran/abg-comfyui › __init__.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/GoogleCloudPlatform/localllm/-/blob/llm-tool/modeldownload.py)
+github.com/GoogleCloudPlatform/localllm › modeldownload.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/jiawei-ren/dreamgaussian4d/-/blob/diffusers/scripts/convert_k_upscaler_to_diffusers.py)
+github.com/jiawei-ren/dreamgaussian4d › convert_k_upscaler_to_diffusers.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/huggingface/huggingface_hub/-/blob/tests/test_hf_api.py)
+github.com/huggingface/huggingface_hub › test_hf_api.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/jiawei-ren/dreamgaussian4d/-/blob/diffusers/src/diffusers/commands/fp16_safetensors.py)
+github.com/jiawei-ren/dreamgaussian4d › fp16_safetensors.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/zejunwang1/bert4vec/-/blob/bert4vec/util.py)
+github.com/zejunwang1/bert4vec › util.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/XuandongZhao/WatermarkAttacker/-/blob/src/diffusers/commands/fp16_safetensors.py)
+github.com/XuandongZhao/WatermarkAttacker › fp16_safetensors.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/BiDiff/bidiff/-/blob/scripts/convert_k_upscaler_to_diffusers.py)
+github.com/BiDiff/bidiff › convert_k_upscaler_to_diffusers.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/dvlab-research/LLMGA/-/blob/llmga/diffusers/scripts/convert_k_upscaler_to_diffusers.py)
+github.com/dvlab-research/LLMGA › convert_k_upscaler_to_diffusers.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/SillyTavern/SillyTavern-extras/-/blob/modules/voice_conversion/rvc/custom_pitch_extraction.py)
+github.com/SillyTavern/SillyTavern-extras › custom_pitch_extraction.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/dvlab-research/LLMGA/-/blob/llmga/diffusers/src/diffusers/commands/fp16_safetensors.py)
+github.com/dvlab-research/LLMGA › fp16_safetensors.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/kohjingyu/gill/-/blob/demo/app_gradio.py)
+github.com/kohjingyu/gill › app_gradio.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/BraveGroup/Drive-WM/-/blob/scripts/convert_k_upscaler_to_diffusers.py)
+github.com/BraveGroup/Drive-WM › convert_k_upscaler_to_diffusers.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Veason-silverbullet/UniTRec/-/blob/transformers/utils/hub.py)
+github.com/Veason-silverbullet/UniTRec › hub.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/BraveGroup/Drive-WM/-/blob/src/diffusers/commands/fp16_safetensors.py)
+github.com/BraveGroup/Drive-WM › fp16_safetensors.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/ototadana/sd-face-editor/-/blob/scripts/inferencers/anime_segmentation/mask_generator.py)
+github.com/ototadana/sd-face-editor › mask_generator.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Ascend/ModelZoo-PyTorch/-/blob/PyTorch/built-in/diffusion/diffusers0.17.0/scripts/convert_k_upscaler_to_diffusers.py)
+github.com/Ascend/ModelZoo-PyTorch › convert_k_upscaler_to_diffusers.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Ascend/ModelZoo-PyTorch/-/blob/PyTorch/built-in/diffusion/diffusers0.18.1/scripts/convert_k_upscaler_to_diffusers.py)
+github.com/Ascend/ModelZoo-PyTorch › convert_k_upscaler_to_diffusers.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/huggingface/huggingface_hub/-/blob/tests/test_file_download.py)
+github.com/huggingface/huggingface_hub › test_file_download.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Preemo-Inc/text-generation-inference/-/blob/server/text_generation_server/utils/hub.py)
+github.com/Preemo-Inc/text-generation-inference › hub.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Ascend/ModelZoo-PyTorch/-/blob/PyTorch/built-in/diffusion/diffusers0.21.0/src/diffusers/commands/fp16_safetensors.py)
+github.com/Ascend/ModelZoo-PyTorch › fp16_safetensors.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/kleinay/seq2seq_constrained_decoding/-/blob/tests/test_helpers/pipeline.py)
+github.com/kleinay/seq2seq_constrained_decoding › pipeline.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/IBM/BadDiffusion/-/blob/diffusers/scripts/convert_k_upscaler_to_diffusers.py)
+github.com/IBM/BadDiffusion › convert_k_upscaler_to_diffusers.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/haotian-liu/transformers_llava/-/blob/src/transformers/utils/hub.py)
+github.com/haotian-liu/transformers_llava › hub.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mattyamonaca/layerdivider/-/blob/ldivider/bg_remover.py)
+github.com/mattyamonaca/layerdivider › bg_remover.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/akx/ggify/-/blob/ggify.py)
+github.com/akx/ggify › ggify.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/ShoufaChen/gradio-box/-/blob/gradio/flagging.py)
+github.com/ShoufaChen/gradio-box › flagging.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/ShoufaChen/gradio-box/-/blob/gradio/themes/base.py)
+github.com/ShoufaChen/gradio-box › base.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/TomohikoNakamura/asteroid_jaCappella/-/blob/asteroid/utils/hub_utils.py)
+github.com/TomohikoNakamura/asteroid_jaCappella › hub_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/TomohikoNakamura/asteroid_jaCappella/-/blob/egs/jaCappella/X-UMX/eval.py)
+github.com/TomohikoNakamura/asteroid_jaCappella › eval.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/TomohikoNakamura/asteroid_jaCappella/-/blob/egs/jaCappella/MRDLA/eval.py)
+github.com/TomohikoNakamura/asteroid_jaCappella › eval.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/TomohikoNakamura/asteroid_jaCappella/-/blob/egs/jaCappella/DPTNet/eval.py)
+github.com/TomohikoNakamura/asteroid_jaCappella › eval.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/PKU-ML/ContraNorm/-/blob/BERT_gleu/transformers/utils/hub.py)
+github.com/PKU-ML/ContraNorm › hub.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/ContextualAI/lens/-/blob/lens/model.py)
+github.com/ContextualAI/lens › model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/kleinay/QANom/-/blob/qanom/qasrl_seq2seq_pipeline.py)
+github.com/kleinay/QANom › qasrl_seq2seq_pipeline.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/harrisonvanderbyl/rwkvstic/-/blob/src/rwkvstic/interOpLoaders/rwkvRs.py)
+github.com/harrisonvanderbyl/rwkvstic › rwkvRs.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mattyamonaca/PBRemTools/-/blob/scripts/td_abg.py)
+github.com/mattyamonaca/PBRemTools › td_abg.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/JusperLee/TDANet/-/blob/look2hear/models/base_model.py)
+github.com/JusperLee/TDANet › base_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/taylorai/galactic/-/blob/src/galactic/taggers.py)
+github.com/taylorai/galactic › taggers.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/sangwook236/SWDT/-/blob/sw_dev/python/rnd/test/machine_learning/hugging_face_test.py)
+github.com/sangwook236/SWDT › hugging_face_test.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/camenduru/Rerender-hf/-/blob/app.py)
+github.com/camenduru/Rerender-hf › app.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/camenduru/Rerender-hf/-/blob/flow/flow_utils.py)
+github.com/camenduru/Rerender-hf › flow_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/KutsuyaYuki/ABG_extension/-/blob/scripts/app.py)
+github.com/KutsuyaYuki/ABG_extension › app.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/stanford-crfm/levanter/-/blob/src/levanter/compat/hf_checkpoints.py)
+github.com/stanford-crfm/levanter › hf_checkpoints.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/taylorai/onnx_embedding_models/-/blob/src/onnx_embedding_models/model.py)
+github.com/taylorai/onnx_embedding_models › model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/commune-ai/commune/-/blob/commune/modules/model/hf/textgen/server/text_generation_server/utils/hub.py)
+github.com/commune-ai/commune › hub.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/gitmylo/bark-voice-cloning-HuBERT-quantizer/-/blob/bark_hubert_quantizer/hubert_manager.py)
+github.com/gitmylo/bark-voice-cloning-HuBERT-quantizer › hubert_manager.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Audio-AGI/WavJourney/-/blob/VoiceParser/hubert_manager.py)
+github.com/Audio-AGI/WavJourney › hubert_manager.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/eric-ai-lab/DSD/-/blob/diffusers/scripts/convert_k_upscaler_to_diffusers.py)
+github.com/eric-ai-lab/DSD › convert_k_upscaler_to_diffusers.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/da03/hierarchical_diffusion_LM/-/blob/src/transformers/utils/hub.py)
+github.com/da03/hierarchical_diffusion_LM › hub.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/huggingface/optimum-neuron/-/blob/tests/test_cache_utils.py)
+github.com/huggingface/optimum-neuron › test_cache_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/UncleTensor/AudioSubnet/-/blob/models/bark_voice_clone.py)
+github.com/UncleTensor/AudioSubnet › bark_voice_clone.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/sangwook236/SWDT/-/blob/sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py)
+github.com/sangwook236/SWDT › hugging_face_transformers_test.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/XiudiChen/ConPL/-/blob/transformers/utils/hub.py)
+github.com/XiudiChen/ConPL › hub.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/kssteven418/SqueezeLLM-gradients/-/blob/src/transformers/utils/hub.py)
+github.com/kssteven418/SqueezeLLM-gradients › hub.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/huggingface/optimum-amd/-/blob/tests/ryzenai/test_modeling.py)
+github.com/huggingface/optimum-amd › test_modeling.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/i-Eval/ieval-instruction/-/blob/src/transformers/src/transformers/utils/hub.py)
+github.com/i-Eval/ieval-instruction › hub.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/toshiaki1729/stable-diffusion-webui-dataset-tag-editor/-/blob/scripts/dataset_tag_editor/interrogators/waifu_diffusion_tagger.py)
+github.com/toshiaki1729/stable-diffusion-webui-dataset-tag-editor › waifu_diffusion_tagger.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/swj0419/in-context-pretraining/-/blob/lib/huggingface_pytorch-transformers_main/src/transformers/utils/hub.py)
+github.com/swj0419/in-context-pretraining › hub.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Eyr3/TextCRS/-/blob/textattacknew/models/transformers1/utils/hub.py)
+github.com/Eyr3/TextCRS › hub.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/RUCAIBox/LIVE/-/blob/transformers/src/transformers/utils/hub.py)
+github.com/RUCAIBox/LIVE › hub.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/RUCAIBox/LIVE/-/blob/transformers/build/lib/transformers/utils/hub.py)
+github.com/RUCAIBox/LIVE › hub.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/trinhtuanvubk/bark-voice-cloning/-/blob/hubert/hubert_manager.py)
+github.com/trinhtuanvubk/bark-voice-cloning › hubert_manager.py (0 matches)
+--------------------------------------------------------------------------------
+

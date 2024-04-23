@@ -1,0 +1,142 @@
+✱ 35 results for "context:global select:file visibility:public count:all lang:Python content:'import speechbrain' AND from_hparams\(" in 4.6s
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/speechbrain/speechbrain/-/blob/tools/g2p.py)
+github.com/speechbrain/speechbrain › g2p.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/speechbrain/speechbrain/-/blob/recipes/CVSS/S2ST/train.py)
+github.com/speechbrain/speechbrain › train.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/speechbrain/speechbrain/-/blob/tools/profiling/profile.py)
+github.com/speechbrain/speechbrain › profile.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/speechbrain/speechbrain/-/blob/speechbrain/inference/ASR.py)
+github.com/speechbrain/speechbrain › ASR.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/speechbrain/speechbrain/-/blob/speechbrain/inference/TTS.py)
+github.com/speechbrain/speechbrain › TTS.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/speechbrain/speechbrain/-/blob/recipes/SLURP/direct/train.py)
+github.com/speechbrain/speechbrain › train.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/speechbrain/speechbrain/-/blob/speechbrain/inference/classifiers.py)
+github.com/speechbrain/speechbrain › classifiers.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/speechbrain/speechbrain/-/blob/recipes/timers-and-such/direct/train.py)
+github.com/speechbrain/speechbrain › train.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/speechbrain/speechbrain/-/blob/recipes/REAL-M/sisnr-estimation/train.py)
+github.com/speechbrain/speechbrain › train.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/speechbrain/speechbrain/-/blob/recipes/LibriTTS/TTS/mstacotron2/train.py)
+github.com/speechbrain/speechbrain › train.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/speechbrain/speechbrain/-/blob/recipes/LJSpeech/TTS/fastspeech2/train.py)
+github.com/speechbrain/speechbrain › train.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/speechbrain/speechbrain/-/blob/speechbrain/inference/interpretability.py)
+github.com/speechbrain/speechbrain › interpretability.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/speechbrain/speechbrain/-/blob/recipes/fluent-speech-commands/direct/train.py)
+github.com/speechbrain/speechbrain › train.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/speechbrain/speechbrain/-/blob/recipes/LJSpeech/TTS/fastspeech2/train_internal_alignment.py)
+github.com/speechbrain/speechbrain › train_internal_alignment.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/speechbrain/speechbrain/-/blob/tests/utils/refactoring_checks.py)
+github.com/speechbrain/speechbrain › refactoring_checks.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/speechbrain/speechbrain/-/blob/tests/templates/fetching_ddp_dynbatch_finetuning/finetune.py)
+github.com/speechbrain/speechbrain › finetune.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/speechbrain/speechbrain/-/blob/tests/templates/fetching_ddp_dynbatch_finetuning/finetune_fetch_once.py)
+github.com/speechbrain/speechbrain › finetune_fetch_once.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/speechbrain/speechbrain/-/blob/tests/templates/fetching_ddp_dynbatch_finetuning/single_node_pretrained.py)
+github.com/speechbrain/speechbrain › single_node_pretrained.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/MontrealCorpusTools/Montreal-Forced-Aligner/-/blob/montreal_forced_aligner/vad/segmenter.py)
+github.com/MontrealCorpusTools/Montreal-Forced-Aligner › segmenter.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/linto-ai/linto-stt/-/blob/whisper/stt/processing/alignment_model.py)
+github.com/linto-ai/linto-stt › alignment_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/huggingface/open_asr_leaderboard/-/blob/speechbrain/run_eval.py)
+github.com/huggingface/open_asr_leaderboard › run_eval.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/MontrealCorpusTools/Montreal-Forced-Aligner/-/blob/montreal_forced_aligner/diarization/multiprocessing.py)
+github.com/MontrealCorpusTools/Montreal-Forced-Aligner › multiprocessing.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/MontrealCorpusTools/Montreal-Forced-Aligner/-/blob/montreal_forced_aligner/diarization/speaker_diarizer.py)
+github.com/MontrealCorpusTools/Montreal-Forced-Aligner › speaker_diarizer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/jansel/pytorch-jit-paritybench/-/blob/generated/test_speechbrain_speechbrain.py)
+github.com/jansel/pytorch-jit-paritybench › test_speechbrain_speechbrain.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Ascend/ModelZoo-PyTorch/-/blob/PyTorch/contrib/audio/tdnn/speechbrain/pretrained/interfaces.py)
+github.com/Ascend/ModelZoo-PyTorch › interfaces.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/speechbrain/benchmarks/-/blob/tests/utils/refactoring_checks.py)
+github.com/speechbrain/benchmarks › refactoring_checks.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/radinshayanfar/speaker-verification/-/blob/snorm_embeddings.py)
+github.com/radinshayanfar/speaker-verification › snorm_embeddings.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/radinshayanfar/speaker-verification/-/blob/speaker_verification_cosine.py)
+github.com/radinshayanfar/speaker-verification › speaker_verification_cosine.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/sangwook236/SWDT/-/blob/sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py)
+github.com/sangwook236/SWDT › hugging_face_transformers_test.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/CanKeles5/senh/-/blob/models.py)
+github.com/CanKeles5/senh › models.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Ascend/ModelZoo-PyTorch/-/blob/PyTorch/dev/perf/speechbrain-tdnn/tools/g2p.py)
+github.com/Ascend/ModelZoo-PyTorch › g2p.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Ascend/ModelZoo-PyTorch/-/blob/PyTorch/dev/perf/speechbrain-tdnn/tools/profiling/profile.py)
+github.com/Ascend/ModelZoo-PyTorch › profile.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Ascend/ModelZoo-PyTorch/-/blob/PyTorch/dev/perf/speechbrain-tdnn/speechbrain/pretrained/interfaces.py)
+github.com/Ascend/ModelZoo-PyTorch › interfaces.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/nuaazs/VAF/-/blob/src/utils/preprocess/new_vad.py)
+github.com/nuaazs/VAF › new_vad.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/amitpuri/Ask-picturize-it/-/blob/Utils/TranscribeSpeechbrain.py)
+github.com/amitpuri/Ask-picturize-it › TranscribeSpeechbrain.py (0 matches)
+--------------------------------------------------------------------------------
+

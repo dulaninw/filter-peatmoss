@@ -1,0 +1,332 @@
+[
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2024-02-27T11:11:47Z",
+        "message": "[Update] An example for Gemma model was initially added.\n[Update] An example for Transformer Reinforcement Learning (TRL) library to train small LLMs (sLLMs) was initially added."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2024-02-21T12:45:57Z",
+        "message": "[Update] Examples for DINO and DPT models were implemented in hugging_face_transformers_test.py."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2024-02-16T06:16:19Z",
+        "message": "[Update] Placeholders for examples of Hugging Face TRL library were added."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2024-02-08T03:52:31Z",
+        "message": "[Update] Several examples for stable diffusion models of Stability AI were implemented.\n[Update] Information about Transformer Reinforcement Learning (TRL) library was moved from hugging_face_test.py to hugging_face_transformers_test.py."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2024-01-31T08:31:27Z",
+        "message": "[Update] A test was added to fine-tune a ResNet model using Dog/Cat dataset in pytorch_transfer_learning.py."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2024-01-28T13:07:24Z",
+        "message": "[Update] An example of Zephyr-7B was added in hugging_face_transformers_test.py, but was not tested.\n[Update] The information about Transformer Reinforcement Learning (TRL) was described in hugging_face_test.py."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2024-01-11T04:04:23Z",
+        "message": "[Update] An example for retrieval-augmented generation (RAG) was added in hugging_face_transformers_test.py.\n[Update] Information about TableMASTER-mmocr was removed from mmocr_usage_guide.txt."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-12-24T02:40:32Z",
+        "message": "[Update] A few examples for Mistral-7B and Mixtral-8x7B models were added.\n[Update] The installation of TensorFlow 2 were updated."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-12-23T12:07:02Z",
+        "message": "[Update] An example of ORCA-2 model was added.\n[Update] The examples for ViT, ViLT, BEiT, LayoutLM, and Donut models were merged respectively.\n[Update] The information about data preparation, training, evaluation, visualization, and model export were supplemented in paddle_ocr_usage_guide.txt."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-11-24T08:49:41Z",
+        "message": "[Update] A customized version of ViT model was implemented and tested, which doesn't have classification token and head."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-11-20T04:48:59Z",
+        "message": "[Update] A few examples for Falcon model were initially implemented.\n[Update] A few examples for StarCoder and Replit models were implemented, but yet tested."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-11-10T01:27:50Z",
+        "message": "[Update] LLMs Yi-6B & Yi-34B were tested."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-11-06T12:24:53Z",
+        "message": "[Update] The forecasts of transformers.TimeSeriesTransformerForPrediction were evaluated by MASE, MAPE, sMAPE.\n[Update] Metrics for evaluating ML models' performance in evaluate library were tested."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-11-03T10:46:04Z",
+        "message": "[Update] Two examples for phi-1 & phi-1.5 models were initially added.\n[Update] A few examples for Kosmos-2 model were initially added."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-10-12T12:13:43Z",
+        "message": "[Update] A few examples for Probabilistic time series transformer model were added."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-10-07T08:51:44Z",
+        "message": "[Update] Several examples for Perceiver IO model were initially committed."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-09-26T10:56:44Z",
+        "message": "[Update] A simple example for Code Llama model was initially added.\n[Update] A few commands were explained to profile Python scripts."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-09-21T12:31:58Z",
+        "message": "[Update] A simple example for OpenLLaMA models was implemented."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-09-04T03:59:25Z",
+        "message": "[New] A few examples for PID, MPC, LQR using python-control library was initially added.\n[Update] A simple example for trajectory transformer models was added in hugging_face_transformers_test.py."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-09-02T12:30:02Z",
+        "message": "[New] An example for model predictive control (MPC) was initially committed.\n[Update] A test for CodeParrot model was initially implemented in hugging_face_transformers_test.py."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-08-31T06:01:24Z",
+        "message": "[Update] Memory footprint and computing performance (FLOPS) Hugging Face transformers models was measured.\n[Update] A simple test for Hugging Face datasets was added."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-08-04T08:13:21Z",
+        "message": "[Update] An example for OpenFlamingo library was added."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-07-25T12:07:07Z",
+        "message": "[Update] A few examples for Llama 2 model were added in hugging_face_transformers_test.py.\n[Update] Model parallelism was tested based on Hugging Face Accelerate library in hugging_face_transformers_test.py.\n[Update] Information about Hugging Face Accelerate library was reinforced."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-07-22T06:48:12Z",
+        "message": "[Update] Cross references about transformer and ViT models were reinforced.\n[Chore] vit_test.py was moved from sw_dev/python/rnd/test/machine_learning/vit_test.py to sw_dev/python/rnd/test/machine_vision/vit_test.py.\n[Update] The installation of node.js was explained."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-07-17T01:20:26Z",
+        "message": "[Update] Several examples for CodeBERT, CodeBERTa, CodeT5+, CodeGen2, & CodeGen2.5 models were added.\n[Update] An example of SpeechT5 model was divied into 3 examples: ASR, TTS, & speech-to-speech."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-07-12T07:54:25Z",
+        "message": "[Update] An example for Decision Transformer was initially committed.\n[Update] A few examples for NVIDIA Megatron-LM, ASR, TTS models were implemented.\n[Update] An example for SegFormer model was initially added."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-06-30T14:20:26Z",
+        "message": "[Update] The method, chain of thoughts (CoT) was tested on two LLMs, LLaMA & MPT."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-06-27T04:15:37Z",
+        "message": "[Update] A few examples for MPT & TVLT models were implemented in hugging_face_transformers_test.py.\n[Chore] table_generation_usage_guide.txt was moved to SWLP repository."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-06-22T14:49:33Z",
+        "message": "[Update] Three language models were tested: LLaMA, Galactica, & OPT models."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-06-15T07:51:37Z",
+        "message": "[Update] The example of LLaMA model was reinforced."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-05-26T18:49:16Z",
+        "message": "[Update] A test for data parallelism was implemented in PyTorch library."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-05-05T03:23:29Z",
+        "message": "[Update] Two simple tests for two Facebook's language models, OPT and Galactica were initially implemented."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-04-30T14:34:59Z",
+        "message": "[New] A simple tutorial for MMSegmentation library was initially committed."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-04-06T03:27:45Z",
+        "message": "[Update] A couple of simple examples for LLaMa model were implemented, but they were not tested due to library version issue."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-04-04T11:52:41Z",
+        "message": "[Update] Several examples for CodeT5 and CodeGen models were implemented to generate code.\n[Update] Several examples for GIT and BLIP models for vision-and-language modeling models were implemented.\n[Update] A few examples for TaPEx model were implemented to understand tables."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-04-01T14:10:48Z",
+        "message": "[New] A couple of examples for GPT4All models were added, but they were not correctly working."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-04-01T06:26:08Z",
+        "message": "[New] Two simple examples for PaLM and PaLM+RLHF models were implemented, but the models were not trained in the examples."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-03-30T08:06:47Z",
+        "message": "[New] Several examples for table processing (Table Transformer, TATR), OCR (TrOCR), speech processing (SpeechT5) were initially added to hugging_face_transformers_test.py."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-03-29T05:25:41Z",
+        "message": "[Update] Several examples for speech recognition (whisper) & synthesis (tacotron2 & fastspeech2) were newly implemented in hugging_face_transformers_test.py."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-03-26T07:02:13Z",
+        "message": "[New] A few examples for ALIGN model were implemented in hugging_face_transformers_test.py.\n[Update] A couple of examples for CLIP model were added in hugging_face_transformers_test.py.\n[Update] Useful information about Transformer architectures was described."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-03-24T06:24:31Z",
+        "message": "[Update] A simple example about dataclass in Python was added."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-03-22T14:48:31Z",
+        "message": "[Update] A couple of examples of seq-to-seq models for LoRA & Prefix Tuning were implemented in hugging_face_test.py.\n[Update] An example for CLIP model was implemented in hugging_face_transformers_test.py.\n[Update] A few examples for Whisper model were implemented in hugging_face_transformers_test.py.\n[New] A usage guide for Hugging Face library was added."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-03-21T07:10:38Z",
+        "message": "[Update] A simple example of Parameter-Efficient Fine-Tuning (PEFT) library was added to hugging_face_test.py.\n[Update] A simple test of tokenizers was added to hugging_face_transformers_test.py."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-03-18T11:41:29Z",
+        "message": "[Update] A couple of examples for diffusion models of StabilityAI and CompVis were added."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-03-18T05:09:16Z",
+        "message": "[Update] A few examples for Flan-T5 model were reinforced in hugging_face_transformers_test.py."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-03-16T11:52:13Z",
+        "message": "[Update] Information about Hugging Face models was supplemented."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-03-15T12:08:24Z",
+        "message": "[Update] An example for question answering using GPT-neo was added."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-03-14T02:43:49Z",
+        "message": "[Update] A few examples for BLOOM and Flan-T5 models were implemented."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-03-09T01:51:43Z",
+        "message": "[Update] A test for KLUE BERT models was implemented."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-03-09T01:49:32Z",
+        "message": "[Update] A few examples of text summarization for Korean & English were implemented, but their results were not good.\n[Update] A few examples for T5 model were added."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-03-07T17:44:21Z",
+        "message": "[Update] A few tests were added for GPT & BERT models."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-03-01T14:37:43Z",
+        "message": "[New] A few guides were initially committed for Hugging Face Hub library."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-01-19T10:11:50Z",
+        "message": "[Update] Several examples for vision, vision and language models were added in HuggingFace library."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2023-01-19T08:06:44Z",
+        "message": "[Update] Several examples for LayoutLM & Donut models were implemented in HugggingFace library."
+    },
+    {
+        "repo_url": "github.com/sangwook236/SWDT",
+        "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+        "commit_date": "2022-04-01T07:00:58Z",
+        "message": "[Chore] transformers_test.py was renamed to hugging_face_transformers_test.py."
+    }
+]

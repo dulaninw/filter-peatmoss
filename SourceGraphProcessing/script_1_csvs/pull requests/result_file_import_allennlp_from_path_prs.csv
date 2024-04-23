@@ -1,0 +1,12 @@
+repo_url,filepath,Creation Date,PR Comment,PR/Issue Number
+github.com/asyml/forte-wrappers,tests/wrappers/allennlp_processors_test.py,2021-06-08T17:39:45Z,"```suggestion
+- [Tweepy](https://docs.tweepy.org/en/latest/index.html) ([Processors](https://github.com/asyml/forte-wrappers/tree/main/forte/twitter))
+```",44
+github.com/asyml/forte-wrappers,tests/wrappers/allennlp_processors_test.py,2021-06-08T17:40:38Z,"```suggestion
+- [Tweepy](https://docs.tweepy.org/en/latest/index.html) ([Processors](https://github.com/asyml/forte-wrappers/tree/main/forte/twitter))
+```",44
+github.com/asyml/forte-wrappers,tests/wrappers/allennlp_processors_test.py,2021-06-08T18:01:22Z,"updated, thanks!
+",44
+github.com/asyml/forte-wrappers,tests/wrappers/allennlp_processors_test.py,2021-06-08T18:01:56Z,"> Perhaps twitter related processors haven't been changed folder name to forte?
+
+Right, I didn't merge with master when doing the renaming. Now it should be done. ",44

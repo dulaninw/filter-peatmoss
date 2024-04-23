@@ -1,0 +1,467 @@
+{
+    "0": {
+        "repository": "github.com/cedrickchee/transformers-llama",
+        "text": [
+            {
+                "repo_url": "github.com/cedrickchee/transformers-llama",
+                "filepath": "src/transformers/utils/hub.py",
+                "commit_date": "2022-08-06T07:42:55Z",
+                "message_summary": "Update CLI commands from `transformers-cli` to `huggingface-cli`",
+                "update_details": "CLI commands have been updated from `transformers-cli` to `huggingface-cli`"
+            }
+        ]
+    },
+    "4": {
+        "repository": "github.com/cedrickchee/transformers-llama",
+        "text": [
+            {
+                "repo_url": "github.com/cedrickchee/transformers-llama",
+                "filepath": "src/transformers/utils/hub.py",
+                "commit_date": "2022-08-05T14:12:40Z",
+                "message_summary": "Use new huggingface_hub tools for download models",
+                "ptm_addition_details": {
+                    "name": "huggingface_hub",
+                    "version": "latest",
+                    "problem_addressed": "Downloading models efficiently"
+                }
+            }
+        ]
+    },
+    "12": {
+        "repository": "github.com/cedrickchee/transformers-llama",
+        "text": [
+            {
+                "repo_url": "github.com/cedrickchee/transformers-llama",
+                "filepath": "src/transformers/utils/hub.py",
+                "commit_date": "2022-06-21T15:51:18Z",
+                "message_summary": "Prepare transformers for v0.8.0 huggingface-hub release",
+                "ptm_addition_details": {
+                    "version": "v0.8.0",
+                    "name": "huggingface-hub",
+                    "problem_addressed": "Preparing for release"
+                }
+            }
+        ]
+    },
+    "34": {
+        "repository": "github.com/OpenNMT/CTranslate2",
+        "text": [
+            {
+                "repo_url": "github.com/OpenNMT/CTranslate2",
+                "filepath": "python/ctranslate2/converters/transformers.py",
+                "commit_date": "2024-02-28T14:00:35Z",
+                "message_summary": "Support Gemma model",
+                "ptm_addition_details": {
+                    "name": "Gemma",
+                    "version": "not specified",
+                    "problem_addressed": "not specified"
+                }
+            }
+        ]
+    },
+    "36": {
+        "repository": "github.com/OpenNMT/CTranslate2",
+        "text": [
+            {
+                "repo_url": "github.com/OpenNMT/CTranslate2",
+                "filepath": "python/ctranslate2/converters/transformers.py",
+                "commit_date": "2023-11-29T18:01:51Z",
+                "message_summary": "Adding PhiConfig",
+                "ptm_addition_details": {
+                    "name": "PhiConfig"
+                }
+            }
+        ]
+    },
+    "38": {
+        "repository": "github.com/OpenNMT/CTranslate2",
+        "text": [
+            {
+                "repo_url": "github.com/OpenNMT/CTranslate2",
+                "filepath": "python/ctranslate2/converters/transformers.py",
+                "commit_date": "2023-11-20T09:39:17Z",
+                "message_summary": "Better HF-to-CT2 conversion for Whisper model",
+                "ptm_addition_details": {
+                    "name": "Whisper",
+                    "version": "not specified",
+                    "problem_addressed": "Conversion from HF to CTranslate2"
+                }
+            }
+        ]
+    },
+    "39": {
+        "repository": "github.com/OpenNMT/CTranslate2",
+        "text": [
+            {
+                "repo_url": "github.com/OpenNMT/CTranslate2",
+                "filepath": "python/ctranslate2/converters/transformers.py",
+                "commit_date": "2023-11-17T12:22:49Z",
+                "message_summary": "Fixed decoder_start_token_id for T5",
+                "ptm_addition_details": {
+                    "name": "T5"
+                }
+            }
+        ]
+    },
+    "40": {
+        "repository": "github.com/OpenNMT/CTranslate2",
+        "text": [
+            {
+                "repo_url": "github.com/OpenNMT/CTranslate2",
+                "filepath": "python/ctranslate2/converters/transformers.py",
+                "commit_date": "2023-11-08T17:17:22Z",
+                "message_summary": "Added compatibility for openai whisper large-v3",
+                "ptm_addition_details": {
+                    "name": "openai whisper large-v3",
+                    "version": "v3",
+                    "problem_addressed": "Change from 80 to 128 in mel input feature"
+                }
+            }
+        ]
+    },
+    "42": {
+        "repository": "github.com/OpenNMT/CTranslate2",
+        "text": [
+            {
+                "repo_url": "github.com/OpenNMT/CTranslate2",
+                "filepath": "python/ctranslate2/converters/transformers.py",
+                "commit_date": "2023-11-07T07:52:40Z",
+                "message_summary": "Minimal support for Mistral 7B model.",
+                "ptm_addition_details": {
+                    "name": "Mistral 7B",
+                    "version": "7B",
+                    "problem_addressed": "Loader and rotary length support"
+                }
+            }
+        ]
+    },
+    "43": {
+        "repository": "github.com/OpenNMT/CTranslate2",
+        "text": [
+            {
+                "repo_url": "github.com/OpenNMT/CTranslate2",
+                "filepath": "python/ctranslate2/converters/transformers.py",
+                "commit_date": "2023-11-03T11:29:00Z",
+                "message_summary": "Support Transformers in the Wav2Vec2 Encoder for the ASR Inference",
+                "ptm_addition_details": {
+                    "name": "Wav2Vec2",
+                    "version": "Transformers",
+                    "problem_addressed": "ASR Inference"
+                }
+            }
+        ]
+    },
+    "44": {
+        "repository": "github.com/OpenNMT/CTranslate2",
+        "text": [
+            {
+                "repo_url": "github.com/OpenNMT/CTranslate2",
+                "filepath": "python/ctranslate2/converters/transformers.py",
+                "commit_date": "2023-09-15T13:19:02Z",
+                "message_summary": "Added converter for MixFormerSequentialForCausalLM",
+                "ptm_addition_details": {
+                    "name": "MixFormerSequentialForCausalLM"
+                }
+            }
+        ]
+    },
+    "55": {
+        "repository": "github.com/OpenNMT/CTranslate2",
+        "text": [
+            {
+                "repo_url": "github.com/OpenNMT/CTranslate2",
+                "filepath": "python/ctranslate2/converters/transformers.py",
+                "commit_date": "2023-07-17T08:39:23Z",
+                "message_summary": "Support bfloat16 execution on the GPU",
+                "ptm_addition_details": {
+                    "name": "Transformers",
+                    "version": "bfloat16",
+                    "problem_addressed": "Support bfloat16 execution on the GPU"
+                }
+            }
+        ]
+    },
+    "59": {
+        "repository": "github.com/OpenNMT/CTranslate2",
+        "text": [
+            {
+                "repo_url": "github.com/OpenNMT/CTranslate2",
+                "filepath": "python/ctranslate2/converters/transformers.py",
+                "commit_date": "2023-06-15T10:02:38Z",
+                "message_summary": "Add an XLMRoberta Config to the HF transformers converter",
+                "ptm_addition_details": {
+                    "name": "XLMRoberta",
+                    "problem_addressed": "Config added to the HF transformers converter"
+                }
+            }
+        ]
+    },
+    "67": {
+        "repository": "github.com/OpenNMT/CTranslate2",
+        "text": [
+            {
+                "repo_url": "github.com/OpenNMT/CTranslate2",
+                "filepath": "python/ctranslate2/converters/transformers.py",
+                "commit_date": "2023-05-26T09:59:27Z",
+                "message_summary": "Add a converter for GPTBigCode",
+                "ptm_addition_details": {
+                    "name": "GPTBigCode"
+                }
+            }
+        ]
+    },
+    "68": {
+        "repository": "github.com/OpenNMT/CTranslate2",
+        "text": [
+            {
+                "repo_url": "github.com/OpenNMT/CTranslate2",
+                "filepath": "python/ctranslate2/converters/transformers.py",
+                "commit_date": "2023-05-23T08:40:12Z",
+                "message_summary": "Adding support for transformers - Salesforce/CodeGen architecture",
+                "ptm_addition_details": {
+                    "name": "transformers - Salesforce/CodeGen",
+                    "version": "experimental config for codegen-2-2B",
+                    "problem_addressed": "Support for transformers - Salesforce/CodeGen architecture"
+                }
+            }
+        ]
+    },
+    "73": {
+        "repository": "github.com/OpenNMT/CTranslate2",
+        "text": [
+            {
+                "repo_url": "github.com/OpenNMT/CTranslate2",
+                "filepath": "python/ctranslate2/converters/transformers.py",
+                "commit_date": "2023-04-06T13:13:05Z",
+                "message_summary": "Implement rotary embeddings and support the GPT-J model",
+                "ptm_addition_details": {
+                    "name": "GPT-J",
+                    "version": "not specified",
+                    "problem_addressed": "Support added for GPT-J model"
+                }
+            }
+        ]
+    },
+    "75": {
+        "repository": "github.com/OpenNMT/CTranslate2",
+        "text": [
+            {
+                "repo_url": "github.com/OpenNMT/CTranslate2",
+                "filepath": "python/ctranslate2/converters/transformers.py",
+                "commit_date": "2023-03-14T18:06:23Z",
+                "message_summary": "Add method Whisper.align to implement word-level timestamps",
+                "ptm_addition_details": {
+                    "name": "Whisper",
+                    "problem_addressed": "Implementing word-level timestamps"
+                }
+            }
+        ]
+    },
+    "76": {
+        "repository": "github.com/OpenNMT/CTranslate2",
+        "text": [
+            {
+                "repo_url": "github.com/OpenNMT/CTranslate2",
+                "filepath": "python/ctranslate2/converters/transformers.py",
+                "commit_date": "2023-03-06T09:36:55Z",
+                "message_summary": "Immediately load HF models in FP16 if it is the target conversion type",
+                "ptm_addition_details": {
+                    "name": "HF models",
+                    "version": "not specified",
+                    "problem_addressed": "Loading HF models in FP16"
+                },
+                "update_details": "Exclude int8_float16"
+            }
+        ]
+    },
+    "77": {
+        "repository": "github.com/OpenNMT/CTranslate2",
+        "text": [
+            {
+                "repo_url": "github.com/OpenNMT/CTranslate2",
+                "filepath": "python/ctranslate2/converters/transformers.py",
+                "commit_date": "2023-03-02T09:38:28Z",
+                "message_summary": "Add option to copy any HF model files in the converted model directory",
+                "ptm_addition_details": {
+                    "name": "Hugging Face",
+                    "version": "not specified",
+                    "problem_addressed": "Copying HF model files in the converted model directory"
+                }
+            }
+        ]
+    },
+    "86": {
+        "repository": "github.com/OpenNMT/CTranslate2",
+        "text": [
+            {
+                "repo_url": "github.com/OpenNMT/CTranslate2",
+                "filepath": "python/ctranslate2/converters/transformers.py",
+                "commit_date": "2022-11-02T11:29:47Z",
+                "message_summary": "Integrate the Whisper model from OpenAI",
+                "ptm_addition_details": {
+                    "name": "Whisper",
+                    "problem_addressed": "Speech synthesis"
+                }
+            }
+        ]
+    },
+    "90": {
+        "repository": "github.com/OpenNMT/CTranslate2",
+        "text": [
+            {
+                "repo_url": "github.com/OpenNMT/CTranslate2",
+                "filepath": "python/ctranslate2/converters/transformers.py",
+                "commit_date": "2022-07-27T13:54:45Z",
+                "message_summary": "Add support for NLLB multilingual models",
+                "update_details": "Update Transformers version"
+            }
+        ]
+    },
+    "98": {
+        "repository": "github.com/OpenNMT/CTranslate2",
+        "text": [
+            {
+                "repo_url": "github.com/OpenNMT/CTranslate2",
+                "filepath": "python/ctranslate2/converters/transformers.py",
+                "commit_date": "2022-05-17T15:56:17Z",
+                "message_summary": "Support OPT models via the Transformers converter",
+                "ptm_addition_details": {
+                    "name": "OPT",
+                    "problem_addressed": "Supporting OPT models"
+                }
+            }
+        ]
+    },
+    "101": {
+        "repository": "github.com/pravdomil/Rerender-A-Video",
+        "text": [
+            {
+                "repo_url": "github.com/pravdomil/Rerender-A-Video",
+                "filepath": "app.py",
+                "commit_date": "2023-06-22T02:54:28Z",
+                "message_summary": "Added midas depth and environment for MAX_KEYFRAME",
+                "ptm_addition_details": {
+                    "name": "MIDAS",
+                    "version": "unknown",
+                    "problem_addressed": "Depth estimation"
+                }
+            }
+        ]
+    },
+    "105": {
+        "repository": "github.com/Ascend/ModelZoo-PyTorch",
+        "text": [
+            {
+                "repo_url": "github.com/Ascend/ModelZoo-PyTorch",
+                "filepath": "PyTorch/contrib/audio/tdnn/speechbrain/pretrained/fetching.py",
+                "commit_date": "2023-07-10T07:05:29Z",
+                "message_summary": "Added new training script for Tdnn model",
+                "ptm_addition_details": {
+                    "name": "Tdnn",
+                    "version": "unknown",
+                    "problem_addressed": "Speech recognition"
+                }
+            }
+        ]
+    },
+    "116": {
+        "repository": "github.com/wandb/weave",
+        "text": [
+            {
+                "repo_url": "github.com/wandb/weave",
+                "filepath": "weave/ecosystem/huggingface/hfmodel.py",
+                "commit_date": "2022-07-11T22:34:05Z",
+                "message_summary": "Deeper HuggingFace integration",
+                "ptm_addition_details": {
+                    "name": "HuggingFace",
+                    "problem_addressed": "Text generation"
+                }
+            }
+        ]
+    },
+    "124": {
+        "repository": "github.com/huggingface/optimum-neuron",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/optimum-neuron",
+                "filepath": "optimum/neuron/utils/cache_utils.py",
+                "commit_date": "2023-09-08T14:21:22Z",
+                "message_summary": "Add support for GQA in ParallelSelfAttention",
+                "ptm_addition_details": {
+                    "name": "GQA",
+                    "problem_addressed": "Support added in ParallelSelfAttention"
+                }
+            }
+        ]
+    },
+    "149": {
+        "repository": "github.com/GoogleCloudPlatform/localllm",
+        "text": [
+            {
+                "repo_url": "github.com/GoogleCloudPlatform/localllm",
+                "filepath": "llm-tool/modeldownload.py",
+                "commit_date": "2023-11-26T20:22:05Z",
+                "message_summary": "Use the hugging face cache instead of /model",
+                "ptm_addition_details": {
+                    "name": "huggingface hub library",
+                    "version": "latest",
+                    "problem_addressed": "Using local cache instead of a file in the root directory"
+                }
+            }
+        ]
+    },
+    "150": {
+        "repository": "github.com/GoogleCloudPlatform/localllm",
+        "text": [
+            {
+                "repo_url": "github.com/GoogleCloudPlatform/localllm",
+                "filepath": "llm-tool/modeldownload.py",
+                "commit_date": "2023-11-26T20:22:05Z",
+                "message_summary": "Add support for download command",
+                "ptm_addition_details": {
+                    "name": "Hugging Face Transformers",
+                    "problem_addressed": "Downloading and caching pre-trained models"
+                },
+                "update_details": "Investigated using Hugging Face Transformers library for model downloading and caching"
+            }
+        ]
+    },
+    "154": {
+        "repository": "github.com/huggingface/huggingface_hub",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/huggingface_hub",
+                "filepath": "tests/test_hf_api.py",
+                "commit_date": "2024-02-20T12:11:52Z",
+                "message_summary": "Deprecate `ModelFilter/DatasetFilter` (#2028)",
+                "update_details": "Moved all attributes from ModelFilter class to list_models arguments and added a filter query builder to build a query. Updated list_models to take both filter as an Iterable and also update the filter list based on other arguments in the method. Reformat code. Update checks to be consistent. Add build_dataset_filter method and modified list_dataset. Update list_models and list_dataset methods to use set for filters to avoid duplication. Update warning to use FutureWarning instead of DeprecatedWarning. Update search helper classes docstrings to follow HF doc-builder syntax. Modify warnings to be consistent. Move comments to inline to fix mypy issues. Move model filter builder and dataset filter builder. Remove stacklevel argument from warnings. Apply suggestions from code review. Fix warning docstring. Add deprecation decorator to tests.",
+                "tasks": [
+                    "Deprecate DatasetFilter and ModelFilter classes",
+                    "Modify list_models method",
+                    "Reformat code",
+                    "Update checks",
+                    "Add build_dataset_filter method",
+                    "Modify list_dataset method",
+                    "Update warnings",
+                    "Update search helper classes docstrings",
+                    "Move comments to inline",
+                    "Remove stacklevel argument from warnings",
+                    "Apply suggestions from code review",
+                    "Fix warning docstring"
+                ]
+            }
+        ]
+    },
+    "157": {
+        "repository": "github.com/huggingface/huggingface_hub",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/huggingface_hub",
+                "filepath": "tests/test_hf_api.py",
+                "commit_date": "2024-01-15T14:54:01Z",
+                "message_summary": "Fix inconstent `warnings.warn` in repocard.py",
+                "update_details": "replace warnings.warn by logger.warn in repocard.py"
+            }
+        ]
+    }
+}

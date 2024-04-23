@@ -1,0 +1,2240 @@
+[
+    {
+        "repo_url": "github.com/langchain-ai/langchain",
+        "filepath": "libs/community/langchain_community/embeddings/huggingface.py",
+        "commit_date": "2024-02-05T22:33:34Z",
+        "message": "community[patch]: Add Progress bar to HuggingFaceEmbeddings (#16758)\n\n- **Description:** Adds a function parameter to HuggingFaceEmbeddings\ncalled `show_progress` that enables a `tqdm` progress bar if enabled.\nDoes not function if `multi_process = True`.\n  - **Issue:** n/a\n  - **Dependencies:** n/a"
+    },
+    {
+        "repo_url": "github.com/langchain-ai/langchain",
+        "filepath": "libs/community/langchain_community/embeddings/huggingface.py",
+        "commit_date": "2024-01-17T08:30:07Z",
+        "message": "Community[patch]use secret str in Tavily and HuggingFaceInferenceEmbeddings (#16109)\n\nSo the api keys don't show up in repr's \n\nStill need to do tests"
+    },
+    {
+        "repo_url": "github.com/langchain-ai/langchain",
+        "filepath": "libs/community/langchain_community/embeddings/huggingface.py",
+        "commit_date": "2023-12-11T21:53:30Z",
+        "message": "community[major], core[patch], langchain[patch], experimental[patch]: Create langchain-community (#14463)\n\nMoved the following modules to new package langchain-community in a backwards compatible fashion:\n\n```\nmv langchain/langchain/adapters community/langchain_community\nmv langchain/langchain/callbacks community/langchain_community/callbacks\nmv langchain/langchain/chat_loaders community/langchain_community\nmv langchain/langchain/chat_models community/langchain_community\nmv langchain/langchain/document_loaders community/langchain_community\nmv langchain/langchain/docstore community/langchain_community\nmv langchain/langchain/document_transformers community/langchain_community\nmv langchain/langchain/embeddings community/langchain_community\nmv langchain/langchain/graphs community/langchain_community\nmv langchain/langchain/llms community/langchain_community\nmv langchain/langchain/memory/chat_message_histories community/langchain_community\nmv langchain/langchain/retrievers community/langchain_community\nmv langchain/langchain/storage community/langchain_community\nmv langchain/langchain/tools community/langchain_community\nmv langchain/langchain/utilities community/langchain_community\nmv langchain/langchain/vectorstores community/langchain_community\nmv langchain/langchain/agents/agent_toolkits community/langchain_community\nmv langchain/langchain/cache.py community/langchain_community\nmv langchain/langchain/adapters community/langchain_community\nmv langchain/langchain/callbacks community/langchain_community/callbacks\nmv langchain/langchain/chat_loaders community/langchain_community\nmv langchain/langchain/chat_models community/langchain_community\nmv langchain/langchain/document_loaders community/langchain_community\nmv langchain/langchain/docstore community/langchain_community\nmv langchain/langchain/document_transformers community/langchain_community\nmv langchain/langchain/embeddings community/langchain_community\nmv langchain/langchain/graphs community/langchain_community\nmv langchain/langchain/llms community/langchain_community\nmv langchain/langchain/memory/chat_message_histories community/langchain_community\nmv langchain/langchain/retrievers community/langchain_community\nmv langchain/langchain/storage community/langchain_community\nmv langchain/langchain/tools community/langchain_community\nmv langchain/langchain/utilities community/langchain_community\nmv langchain/langchain/vectorstores community/langchain_community\nmv langchain/langchain/agents/agent_toolkits community/langchain_community\nmv langchain/langchain/cache.py community/langchain_community\n```\n\nMoved the following to core\n```\nmv langchain/langchain/utils/json_schema.py core/langchain_core/utils\nmv langchain/langchain/utils/html.py core/langchain_core/utils\nmv langchain/langchain/utils/strings.py core/langchain_core/utils\ncat langchain/langchain/utils/env.py >> core/langchain_core/utils/env.py\nrm langchain/langchain/utils/env.py\n```\n\nSee .scripts/community_split/script_integrations.sh for all changes"
+    },
+    {
+        "repo_url": "github.com/mlflow/mlflow",
+        "filepath": "mlflow/sentence_transformers/__init__.py",
+        "commit_date": "2024-02-14T08:23:05Z",
+        "message": "Update Embedding API for sentence transformers to be compatible with OpenAI format (#11019)\n\nSigned-off-by: lu-wang-dl <lu.wang@databricks.com>\nSigned-off-by: Michael Berk <michael.berk@databricks.com>\nSigned-off-by: mlflow-automation <mlflow-automation@users.noreply.github.com>\nSigned-off-by: michael-berk <michaelberk99@gmail.com>\nSigned-off-by: Lu Wang <lu.wang@databricks.com>\nSigned-off-by: Lu Wang <38018689+lu-wang-dl@users.noreply.github.com>\nCo-authored-by: michael-berk <michaelberk99@gmail.com>\nCo-authored-by: Michael Berk <michael.berk@databricks.com>\nCo-authored-by: mlflow-automation <mlflow-automation@users.noreply.github.com>"
+    },
+    {
+        "repo_url": "github.com/mlflow/mlflow",
+        "filepath": "mlflow/sentence_transformers/__init__.py",
+        "commit_date": "2024-02-06T03:03:43Z",
+        "message": "Google docstring conversion batch 6 (#10879)\n\nSigned-off-by: Michael Berk <michael.berk@databricks.com>\nSigned-off-by: mlflow-automation <mlflow-automation@users.noreply.github.com>\nSigned-off-by: michael-berk <michaelberk99@gmail.com>\nCo-authored-by: Michael Berk <michael.berk@databricks.com>\nCo-authored-by: mlflow-automation <mlflow-automation@users.noreply.github.com>"
+    },
+    {
+        "repo_url": "github.com/mlflow/mlflow",
+        "filepath": "mlflow/sentence_transformers/__init__.py",
+        "commit_date": "2023-12-20T02:55:12Z",
+        "message": "Fix `sentence_transformers` failure (#10695)\n\nSigned-off-by: harupy <17039389+harupy@users.noreply.github.com>"
+    },
+    {
+        "repo_url": "github.com/mlflow/mlflow",
+        "filepath": "mlflow/sentence_transformers/__init__.py",
+        "commit_date": "2023-12-15T20:05:16Z",
+        "message": "add log_model example to sentence_transformers (#10682)\n\nSigned-off-by: Cdreetz <cdreetz@gmail.com>\nSigned-off-by: Christian R <117322020+cdreetz@users.noreply.github.com>\nSigned-off-by: Ben Wilson <39283302+BenWilson2@users.noreply.github.com>"
+    },
+    {
+        "repo_url": "github.com/mlflow/mlflow",
+        "filepath": "mlflow/sentence_transformers/__init__.py",
+        "commit_date": "2023-10-27T21:01:26Z",
+        "message": "Add model_size_bytes attribute when saving the model (#10110)\n\nSigned-off-by: wenfeiy-db <wenfei.yan@databricks.com>"
+    },
+    {
+        "repo_url": "github.com/mlflow/mlflow",
+        "filepath": "mlflow/sentence_transformers/__init__.py",
+        "commit_date": "2023-10-14T14:37:02Z",
+        "message": "enable RUF013 (#9949) (#9950)\n\nSigned-off-by: Serhii Fedash <lightnessofbein@gmail.com>\nSigned-off-by: mlflow-automation <mlflow-automation@users.noreply.github.com>\nCo-authored-by: mlflow-automation <mlflow-automation@users.noreply.github.com>"
+    },
+    {
+        "repo_url": "github.com/mlflow/mlflow",
+        "filepath": "mlflow/sentence_transformers/__init__.py",
+        "commit_date": "2023-09-30T02:21:53Z",
+        "message": "move: sentence_transformers.py to (#9776)\n\nSigned-off-by: amiraflak <mehrdad.aflakparast@gmail.com>"
+    },
+    {
+        "repo_url": "github.com/langchain-ai/langchain",
+        "filepath": "libs/community/langchain_community/embeddings/self_hosted_hugging_face.py",
+        "commit_date": "2024-01-26T23:01:12Z",
+        "message": "docs: Update documentation to use  'model_id' rather than 'model_name' to match actual API (#16615)\n\n- **Description:** Replace 'model_name' with 'model_id' for accuracy \n- **Issue:**\n[link-to-issue](https://github.com/langchain-ai/langchain/issues/16577)\n  - **Dependencies:** \n  - **Twitter handle:**"
+    },
+    {
+        "repo_url": "github.com/langchain-ai/langchain",
+        "filepath": "libs/community/langchain_community/embeddings/self_hosted_hugging_face.py",
+        "commit_date": "2023-12-11T21:53:30Z",
+        "message": "community[major], core[patch], langchain[patch], experimental[patch]: Create langchain-community (#14463)\n\nMoved the following modules to new package langchain-community in a backwards compatible fashion:\n\n```\nmv langchain/langchain/adapters community/langchain_community\nmv langchain/langchain/callbacks community/langchain_community/callbacks\nmv langchain/langchain/chat_loaders community/langchain_community\nmv langchain/langchain/chat_models community/langchain_community\nmv langchain/langchain/document_loaders community/langchain_community\nmv langchain/langchain/docstore community/langchain_community\nmv langchain/langchain/document_transformers community/langchain_community\nmv langchain/langchain/embeddings community/langchain_community\nmv langchain/langchain/graphs community/langchain_community\nmv langchain/langchain/llms community/langchain_community\nmv langchain/langchain/memory/chat_message_histories community/langchain_community\nmv langchain/langchain/retrievers community/langchain_community\nmv langchain/langchain/storage community/langchain_community\nmv langchain/langchain/tools community/langchain_community\nmv langchain/langchain/utilities community/langchain_community\nmv langchain/langchain/vectorstores community/langchain_community\nmv langchain/langchain/agents/agent_toolkits community/langchain_community\nmv langchain/langchain/cache.py community/langchain_community\nmv langchain/langchain/adapters community/langchain_community\nmv langchain/langchain/callbacks community/langchain_community/callbacks\nmv langchain/langchain/chat_loaders community/langchain_community\nmv langchain/langchain/chat_models community/langchain_community\nmv langchain/langchain/document_loaders community/langchain_community\nmv langchain/langchain/docstore community/langchain_community\nmv langchain/langchain/document_transformers community/langchain_community\nmv langchain/langchain/embeddings community/langchain_community\nmv langchain/langchain/graphs community/langchain_community\nmv langchain/langchain/llms community/langchain_community\nmv langchain/langchain/memory/chat_message_histories community/langchain_community\nmv langchain/langchain/retrievers community/langchain_community\nmv langchain/langchain/storage community/langchain_community\nmv langchain/langchain/tools community/langchain_community\nmv langchain/langchain/utilities community/langchain_community\nmv langchain/langchain/vectorstores community/langchain_community\nmv langchain/langchain/agents/agent_toolkits community/langchain_community\nmv langchain/langchain/cache.py community/langchain_community\n```\n\nMoved the following to core\n```\nmv langchain/langchain/utils/json_schema.py core/langchain_core/utils\nmv langchain/langchain/utils/html.py core/langchain_core/utils\nmv langchain/langchain/utils/strings.py core/langchain_core/utils\ncat langchain/langchain/utils/env.py >> core/langchain_core/utils/env.py\nrm langchain/langchain/utils/env.py\n```\n\nSee .scripts/community_split/script_integrations.sh for all changes"
+    },
+    {
+        "repo_url": "github.com/UKPLab/sentence-transformers",
+        "filepath": "examples/training/multilingual/make_multilingual.py",
+        "commit_date": "2024-01-10T09:18:54Z",
+        "message": "[`chore`] Add Makefile for quality/style (code quality, formatting) with `ruff` (#2399)\n\n* Add ruff support for code quality\n\n* Remove star imports\n\n* Remove bare exceptions\n\n* Fix broken example; undefined variable\n\n* Fix broken example; wrong format string\n\n* No longer override imported \"datasets\"\n\n* Use __all__ and avoid * imports\n\n* Comment away unused variables\n\n* Remove duplicate imports\n\n* Use isinstance to compare types\n\n* Use \"is None\" rather than \"== None\"\n\n* Fix broken ValueError format-string\n\n* Remove ;\n\n* Remove unused imports\n\n* Resolve error if dataloader has get_config_dict()\n\nHowever, no dataloader seems to have get_config_dict()? It's a bit strange\n\n* Remove accidentally committed debugging\n\n* Remove unused imports in docs\n\n* Run code formatting via ruff\n\nThis might induce some merge conflicts, but I'm not too concerned about it\n\n* Add 'make quality' to the CI"
+    },
+    {
+        "repo_url": "github.com/UKPLab/sentence-transformers",
+        "filepath": "examples/training/multilingual/make_multilingual.py",
+        "commit_date": "2023-12-14T15:25:13Z",
+        "message": "chore; update make_multilingual.py (#2243)\n\n* chore; update make_multilingual.py\n\nUpdate paths for parallel dataset\n\n* Update broken paths throughout the examples\n\n* Remove now-unused correct_bias\n\n---------\n\nCo-authored-by: Tom Aarsen <Cubiegamedev@gmail.com>"
+    },
+    {
+        "repo_url": "github.com/UKPLab/sentence-transformers",
+        "filepath": "examples/training/multilingual/make_multilingual.py",
+        "commit_date": "2021-09-27T07:00:56Z",
+        "message": "revert model names"
+    },
+    {
+        "repo_url": "github.com/UKPLab/sentence-transformers",
+        "filepath": "examples/training/multilingual/make_multilingual.py",
+        "commit_date": "2021-09-07T12:46:11Z",
+        "message": "update pre-trained model"
+    },
+    {
+        "repo_url": "github.com/UKPLab/sentence-transformers",
+        "filepath": "examples/training/multilingual/make_multilingual.py",
+        "commit_date": "2021-06-08T12:08:53Z",
+        "message": "update model names to v2 models"
+    },
+    {
+        "repo_url": "github.com/UKPLab/sentence-transformers",
+        "filepath": "examples/training/multilingual/make_multilingual.py",
+        "commit_date": "2021-05-18T20:19:41Z",
+        "message": "update model name example"
+    },
+    {
+        "repo_url": "github.com/UKPLab/sentence-transformers",
+        "filepath": "examples/training/multilingual/make_multilingual.py",
+        "commit_date": "2021-01-02T13:28:56Z",
+        "message": "Merge branch 'per-module-logger' of https://github.com/jmrf/sentence-transformers into dev-0.4.1\n\n# Conflicts:\n#\texamples/training/avg_word_embeddings/training_stsbenchmark_avg_word_embeddings.py\n#\texamples/training/avg_word_embeddings/training_stsbenchmark_bilstm.py\n#\texamples/training/avg_word_embeddings/training_stsbenchmark_bow.py\n#\texamples/training/avg_word_embeddings/training_stsbenchmark_cnn.py\n#\texamples/training/avg_word_embeddings/training_stsbenchmark_tf-idf_word_embeddings.py\n#\texamples/training/data_augmentation/train_sts_indomain_bm25.py\n#\texamples/training/data_augmentation/train_sts_indomain_nlpaug.py\n#\texamples/training/data_augmentation/train_sts_indomain_semantic.py\n#\texamples/training/data_augmentation/train_sts_qqp_crossdomain.py\n#\texamples/training/data_augmentation/train_sts_seed_optimization.py\n#\texamples/training/distillation/model_distillation.py\n#\texamples/training/nli/training_nli.py\n#\texamples/training/other/training_batch_hard_trec.py\n#\texamples/training/other/training_multi-task.py\n#\texamples/training/sts/training_stsbenchmark.py\n#\texamples/training/sts/training_stsbenchmark_continue_training.py\n#\trequirements.txt\n#\tsentence_transformers/SentenceTransformer.py\n#\tsentence_transformers/__init__.py\n#\tsentence_transformers/datasets/SentenceLabelDataset.py"
+    },
+    {
+        "repo_url": "github.com/UKPLab/sentence-transformers",
+        "filepath": "examples/training/multilingual/make_multilingual.py",
+        "commit_date": "2020-12-23T21:19:15Z",
+        "message": "update batch hard example"
+    },
+    {
+        "repo_url": "github.com/UKPLab/sentence-transformers",
+        "filepath": "examples/training/multilingual/make_multilingual.py",
+        "commit_date": "2020-12-14T15:33:07Z",
+        "message": "per-file logger for all examples"
+    },
+    {
+        "repo_url": "github.com/UKPLab/sentence-transformers",
+        "filepath": "examples/training/multilingual/make_multilingual.py",
+        "commit_date": "2020-09-03T06:47:50Z",
+        "message": "Update dataset download URL"
+    },
+    {
+        "repo_url": "github.com/UKPLab/sentence-transformers",
+        "filepath": "examples/training/multilingual/make_multilingual.py",
+        "commit_date": "2020-08-26T17:46:08Z",
+        "message": "Typo"
+    },
+    {
+        "repo_url": "github.com/UKPLab/sentence-transformers",
+        "filepath": "examples/training/multilingual/make_multilingual.py",
+        "commit_date": "2020-08-26T17:44:00Z",
+        "message": "Bugfix"
+    },
+    {
+        "repo_url": "github.com/UKPLab/sentence-transformers",
+        "filepath": "examples/training/multilingual/make_multilingual.py",
+        "commit_date": "2020-08-22T21:52:38Z",
+        "message": "Update docs"
+    },
+    {
+        "repo_url": "github.com/eosphoros-ai/DB-GPT",
+        "filepath": "dbgpt/rag/embedding/embeddings.py",
+        "commit_date": "2024-01-24T13:41:19Z",
+        "message": "feat: add Jina Embeddings (#1105)\n\nCo-authored-by: Fangyin Cheng <staneyffer@gmail.com>"
+    },
+    {
+        "repo_url": "github.com/eosphoros-ai/DB-GPT",
+        "filepath": "dbgpt/rag/embedding/embeddings.py",
+        "commit_date": "2024-01-14T13:01:37Z",
+        "message": "refactor: Refactor proxy LLM (#1064)"
+    },
+    {
+        "repo_url": "github.com/eosphoros-ai/DB-GPT",
+        "filepath": "dbgpt/rag/embedding/embeddings.py",
+        "commit_date": "2024-01-03T01:45:26Z",
+        "message": "refactor: RAG Refactor (#985)\n\nCo-authored-by: Aralhi <xiaoping0501@gmail.com>\nCo-authored-by: csunny <cfqsunny@163.com>"
+    },
+    {
+        "repo_url": "github.com/microsoft/semantic-kernel",
+        "filepath": "python/semantic_kernel/connectors/ai/hugging_face/services/hf_text_embedding.py",
+        "commit_date": "2024-02-28T18:53:53Z",
+        "message": "Python: rebuilt exceptions structure; pythonic version (#5231)\n\n### Motivation and Context\n\n<!-- Thank you for your contribution to the semantic-kernel repo!\nPlease help reviewers and future users, providing the following\ninformation:\n  1. Why is this change required?\n  2. What problem does it solve?\n  3. What scenario does it contribute to?\n  4. If it fixes an open issue, please link to the issue here.\n-->\n\nThe existing Exceptions structure was very much inspired by dotnet, this\nis now replaced with a pythonic implementations.\n\nThis means all Exceptions derive from KernelException and then\nspecialise for different purposes.\n\nCloses #2194\n\n### Description\n\n<!-- Describe your changes, the overall approach, the underlying design.\nThese notes will help understanding how your code works. Thanks! -->\n\nAdded folder for all exception types, all can be imported through `from\nsemantic_kernel.exceptions import ...` no need for a user to know which\nfile the relevant one is in, but keeps things tidy for developers.\nRemoved old KernelException, added back subtypes for the errorcodes.\nWent through everything to make sure the `raise ... from exc` pattern is\nused as much as possible as that returns a better stacktrace.\n\n### Contribution Checklist\n\n<!-- Before submitting this PR, please make sure: -->\n\n- [x] The code builds clean without any errors or warnings\n- [x] The PR follows the [SK Contribution\nGuidelines](https://github.com/microsoft/semantic-kernel/blob/main/CONTRIBUTING.md)\nand the [pre-submission formatting\nscript](https://github.com/microsoft/semantic-kernel/blob/main/CONTRIBUTING.md#development-scripts)\nraises no violations\n- [x] All unit tests pass, and I have added new tests where possible\n- [x] I didn't break anyone :smile:"
+    },
+    {
+        "repo_url": "github.com/microsoft/semantic-kernel",
+        "filepath": "python/semantic_kernel/connectors/ai/hugging_face/services/hf_text_embedding.py",
+        "commit_date": "2024-02-24T20:05:40Z",
+        "message": "Python: major features for the Kernel Arguments, Function Result and new Prompt Templating (#5077)\n\n### Motivation and Context\n\n<!-- Thank you for your contribution to the semantic-kernel repo! Please\nhelp reviewers and future users, providing the following information:\n  1. Why is this change required?\n  2. What problem does it solve?\n  3. What scenario does it contribute to?\n  4. If it fixes an open issue, please link to the issue here. -->\nMajor work to replace the context with Kernel Arguments on the front-end\nand Function Results on the back.\n\nUpdated the function decorator to a new approach, in line with dotnet.\n\nRevamps the way function are called, allowing native functions to be\ncompletely ignorant of SK, other then the decorator.\n\nThis also moves things into the new folder structure in sync with\ndotnet.\n\n### Description\n\n<!-- Describe your changes, the overall approach, the underlying design.\nThese notes will help understanding how your code works. Thanks! -->\nAdds:\n- KernelArguments, a dict-like class that replaces the variables in\nKernelContext. Closes #4565\n- FunctionResult, a class to hold the results of function executions,\nincludes the function, the value and metadata, as well as two convenient\nfunction to get the value out of it (str and get_inner_content) the\nfirst is generic, the second specifically for KernelContent responses\n(from AI services).\n- AI Service Selector class, has a default, which is based on the order\nin the arguments followed by the order in the functions, can be\noverridden to implement your own strategy. Closes #4631\n- Introduces ChatHistory and refactors the PromptTemplateConfig. Closes\n#4856, #4630\n- Improves parsing of templates, will now all validate during creation\nand throw an error then, instead of some that do not check for validaty\nuntil used.\n- Introduces named_args block and thereby the ability to have multiple\narguments for a function call in a template. Closes #5003\n\nUpdates:\n- kernel_function decorators, the parameter decorator was removed and\ninstead we now use Annotated to add a description of a field and we get\nthe type and required from the function definition.\n- core plugins, use the new approach to kernel_function decorators.\n- planners, template engines have all been updated to use the kernel and\nkernelarguments instead of Context.\n- Events have been updated, now use kernelarguments and function_result\n- Tokenizers support for named_args and improvements on parsing and\nchecking.\n- Kernel examples and notebooks to use the latest code.\n- All unit and integration tests. There is more code coverage now than\nbefore.\n\nRemoved:\n- kernelContext\n- kernel_function_parameter_decorator\n- delegate handling code for native functions\n- file_io_plugin and tests\n- SemanticFunctionConfig\n- ChatPromptTemplate\n\n### Contribution Checklist\n\n<!-- Before submitting this PR, please make sure: -->\n\n- [x] The code builds clean without any errors or warnings\n- [x] The PR follows the [SK Contribution\nGuidelines](https://github.com/microsoft/semantic-kernel/blob/main/CONTRIBUTING.md)\nand the [pre-submission formatting\n\nscript](https://github.com/microsoft/semantic-kernel/blob/main/CONTRIBUTING.md#development-scripts)\nraises no violations\n- [x] All unit tests pass, and I have added new tests where possible\n- [ ] I didn't break anyone :smile:\n\n---------\n\nCo-authored-by: Evan Mattson <evmattso@microsoft.com>\nCo-authored-by: Evan Mattson <35585003+moonbox3@users.noreply.github.com>\nCo-authored-by: Evan Mattson <evan.mattson@microsoft.com>"
+    },
+    {
+        "repo_url": "github.com/microsoft/semantic-kernel",
+        "filepath": "python/semantic_kernel/connectors/ai/hugging_face/services/hf_text_embedding.py",
+        "commit_date": "2024-01-26T17:15:35Z",
+        "message": "Python: Removes the _async suffix where is not needed (#4735)\n\n### Motivation and Context\nDelete all *_async where *_sync doesn't exist to make the library more\nPythonic.\n\nFixes #4629 \n\n### Contribution Checklist\n\n<!-- Before submitting this PR, please make sure: -->\n\n- [X] The code builds clean without any errors or warnings\n- [X] The PR follows the [SK Contribution\nGuidelines](https://github.com/microsoft/semantic-kernel/blob/main/CONTRIBUTING.md)\nand the [pre-submission formatting\nscript](https://github.com/microsoft/semantic-kernel/blob/main/CONTRIBUTING.md#development-scripts)\nraises no violations\n- [X] All unit tests pass, and I have added new tests where possible\n- [X] I didn't break anyone :smile:\n\n---------\n\nCo-authored-by: Evan Mattson <35585003+moonbox3@users.noreply.github.com>"
+    },
+    {
+        "repo_url": "github.com/microsoft/semantic-kernel",
+        "filepath": "python/semantic_kernel/connectors/ai/hugging_face/services/hf_text_embedding.py",
+        "commit_date": "2024-01-04T14:28:20Z",
+        "message": "Python: set line-length for black in sync with Ruff, run black. (#4396)\n\n### Motivation and Context\n\n<!-- Thank you for your contribution to the semantic-kernel repo!\nPlease help reviewers and future users, providing the following\ninformation:\n  1. Why is this change required?\n  2. What problem does it solve?\n  3. What scenario does it contribute to?\n  4. If it fixes an open issue, please link to the issue here.\n-->\nAs we are tightening the formatting and linting setups, this was\nmissing, now the line-length for black and ruff are the same, thereby no\nlonger running into black issues as often.\n\n### Description\n\n<!-- Describe your changes, the overall approach, the underlying design.\nThese notes will help understanding how your code works. Thanks! -->\n\n### Contribution Checklist\n\n<!-- Before submitting this PR, please make sure: -->\n\n- [x] The code builds clean without any errors or warnings\n- [x] The PR follows the [SK Contribution\nGuidelines](https://github.com/microsoft/semantic-kernel/blob/main/CONTRIBUTING.md)\nand the [pre-submission formatting\nscript](https://github.com/microsoft/semantic-kernel/blob/main/CONTRIBUTING.md#development-scripts)\nraises no violations\n- [x] All unit tests pass, and I have added new tests where possible\n- [x] I didn't break anyone :smile:"
+    },
+    {
+        "repo_url": "github.com/microsoft/semantic-kernel",
+        "filepath": "python/semantic_kernel/connectors/ai/hugging_face/services/hf_text_embedding.py",
+        "commit_date": "2024-01-03T19:57:27Z",
+        "message": "Python: Implement AI request settings (#4097)\n\n### Motivation and Context\n\n<!-- Thank you for your contribution to the semantic-kernel repo!\nPlease help reviewers and future users, providing the following\ninformation:\n  1. Why is this change required?\n  2. What problem does it solve?\n  3. What scenario does it contribute to?\n  4. If it fixes an open issue, please link to the issue here.\n-->\nThis PR implements the new approach to AI Request settings as described\nhere:\nhttps://github.com/microsoft/semantic-kernel/blob/main/docs/decisions/0008-support-generic-llm-request-settings.md\nand completes #3312\n\n### Description\n\n<!-- Describe your changes, the overall approach, the underlying design.\nThese notes will help understanding how your code works. Thanks! -->\nDoes this:\n- Creates AI Request Settings with service_id (referring to the\nregistered AI services in a kernel) and extension_data, a dict that can\nhold any number of settings\n- has several methods:\n- `from_ai_request_settings` -> constructor to create a new\nrequest_settings object based on another, supports creating specific\nai_request_settings from generic ones.\n- `update_from_ai_request_settings` -> updating the fields of a request\nsetting from another ones.\n- `prepare_settings_dict` -> method that is used when actually creating\nthe dict that get's passed to the handler of the AI service.\n- Created subclasses like OpenAIChatRequestSettings which has all the\nrequired fields of a OpenAI Chat completion, same for OpenAIText,\nAzureChat, GooglePalm, HuggingFace, etc.\n- added `get_request_settings_class` to ai_services to return the class\nused for the settings for that service.\n\nThe goal is that when running, this settings object get's updated and a\nsingle operations (called `prepare_settings_dict`) is used to return a\ndict that can be passed to the api call directly, thereby reducing the\nneed for custom logic everywhere, this will also negate the need for\nthings like `complete_chat_with_functions_async` and others. So also\nremoved complete_chat_..._async methods from openai and azure openai.\n\nIt has also changed the prompt_template_config with the generic type for\nthe AIRequestSettings or subclasses, and some other changes.\n\n### Contribution Checklist\n\n<!-- Before submitting this PR, please make sure: -->\n\n- [x] The code builds clean without any errors or warnings\n- [x] The PR follows the [SK Contribution\nGuidelines](https://github.com/microsoft/semantic-kernel/blob/main/CONTRIBUTING.md)\nand the [pre-submission formatting\nscript](https://github.com/microsoft/semantic-kernel/blob/main/CONTRIBUTING.md#development-scripts)\nraises no violations\n- [x] All unit tests pass, and I have added new tests where possible\n- [ ] I didn't break anyone :smile:"
+    },
+    {
+        "repo_url": "github.com/microsoft/semantic-kernel",
+        "filepath": "python/semantic_kernel/connectors/ai/hugging_face/services/hf_text_embedding.py",
+        "commit_date": "2023-12-16T18:41:41Z",
+        "message": "Python: Uses Python standard logging (#4115)\n\n### Motivation and Context\n\nThis replaces passing Logger instances as arguments around with the\npreferred Python way of having each module define a module-wide `logger`\ninstance at the top of the module. Fixes #3711\n\n### Description\n\nRemoves any `log` argument and argument documentation. Replaces usage of\nthose `log` arguments with the module-wide `logger` instance.\n\n### Contribution Checklist\n\n- [x] The code builds clean without any errors or warnings\n- [x] The PR follows the [SK Contribution\nGuidelines](https://github.com/microsoft/semantic-kernel/blob/main/CONTRIBUTING.md)\nand the [pre-submission formatting\nscript](https://github.com/microsoft/semantic-kernel/blob/main/CONTRIBUTING.md#development-scripts)\nraises no violations\n- [x] All unit tests pass, and I have added new tests where possible\n- [x] I didn't break anyone :smile:\n\n---------\n\nCo-authored-by: Eduard van Valkenburg <eavanvalkenburg@users.noreply.github.com>"
+    },
+    {
+        "repo_url": "github.com/microsoft/semantic-kernel",
+        "filepath": "python/semantic_kernel/connectors/ai/hugging_face/services/hf_text_embedding.py",
+        "commit_date": "2023-11-30T19:34:08Z",
+        "message": "Python: Upgrade to Pydantic 2+ (#3723)\n\n### Motivation and Context\n\n<!-- Thank you for your contribution to the semantic-kernel repo!\nPlease help reviewers and future users, providing the following\ninformation:\n  1. Why is this change required?\n  2. What problem does it solve?\n  3. What scenario does it contribute to?\n  4. If it fixes an open issue, please link to the issue here.\n-->\nUpgraded pydantic to 2.0+, much cleaner, less complexity in different\ntypes of base models.\n\n### Description\n\n<!-- Describe your changes, the overall approach, the underlying design.\nThese notes will help understanding how your code works. Thanks! -->\n\n### Contribution Checklist\n\n<!-- Before submitting this PR, please make sure: -->\n\n- [ ] The code builds clean without any errors or warnings\n- [ ] The PR follows the [SK Contribution\nGuidelines](https://github.com/microsoft/semantic-kernel/blob/main/CONTRIBUTING.md)\nand the [pre-submission formatting\nscript](https://github.com/microsoft/semantic-kernel/blob/main/CONTRIBUTING.md#development-scripts)\nraises no violations\n- [ ] All unit tests pass, and I have added new tests where possible\n- [ ] I didn't break anyone :smile:"
+    },
+    {
+        "repo_url": "github.com/microsoft/semantic-kernel",
+        "filepath": "python/semantic_kernel/connectors/ai/hugging_face/services/hf_text_embedding.py",
+        "commit_date": "2023-11-29T06:44:10Z",
+        "message": "Python: Make SK compatible with OpenAI 1.0 (#3555)\n\nNeed to update SK Python to integrate the breaking changes from\nopenai-python 1.0\n\nhttps://github.com/microsoft/semantic-kernel/issues/3330\n\nThis PR replaces the old one that was merging to main\nhttps://github.com/microsoft/semantic-kernel/pull/3417\n\n---------\n\n### Motivation and Context\n\n<!-- Thank you for your contribution to the semantic-kernel repo!\nPlease help reviewers and future users, providing the following\ninformation:\n  1. Why is this change required?\n  2. What problem does it solve?\n  3. What scenario does it contribute to?\n  4. If it fixes an open issue, please link to the issue here.\n-->\n\n### Description\n\n<!-- Describe your changes, the overall approach, the underlying design.\nThese notes will help understanding how your code works. Thanks! -->\n\n### Contribution Checklist\n\n<!-- Before submitting this PR, please make sure: -->\n\n- [ ] The code builds clean without any errors or warnings\n- [ ] The PR follows the [SK Contribution\nGuidelines](https://github.com/microsoft/semantic-kernel/blob/main/CONTRIBUTING.md)\nand the [pre-submission formatting\nscript](https://github.com/microsoft/semantic-kernel/blob/main/CONTRIBUTING.md#development-scripts)\nraises no violations\n- [ ] All unit tests pass, and I have added new tests where possible\n- [ ] I didn't break anyone :smile:\n\n---------\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: Joowon <joowon.kim@dm.snu.ac.kr>\nCo-authored-by: Roger Barreto <19890735+RogerBarreto@users.noreply.github.com>\nCo-authored-by: Dmytro Struk <13853051+dmytrostruk@users.noreply.github.com>\nCo-authored-by: Mark Wallace <127216156+markwallace-microsoft@users.noreply.github.com>\nCo-authored-by: Ben Thomas <ben.thomas@microsoft.com>\nCo-authored-by: Ben Thomas <bentho@microsoft.com>\nCo-authored-by: Devis Lucato <dluc@users.noreply.github.com>\nCo-authored-by: Aayush Kataria <aayushkataria3011@gmail.com>\nCo-authored-by: Abby Harrison <abby.harrison@microsoft.com>\nCo-authored-by: Abby Harrison <54643756+awharrison-28@users.noreply.github.com>\nCo-authored-by: Stephen Toub <stoub@microsoft.com>\nCo-authored-by: Teresa Hoang <125500434+teresaqhoang@users.noreply.github.com>\nCo-authored-by: Chris <66376200+crickman@users.noreply.github.com>\nCo-authored-by: Gil LaHaye <gillahaye@microsoft.com>\nCo-authored-by: Gina Triolo <51341242+gitri-ms@users.noreply.github.com>\nCo-authored-by: Tao Chen <TaoChenOSU@users.noreply.github.com>\nCo-authored-by: Lee Miller <lemiller@microsoft.com>\nCo-authored-by: Jennifer Marsman <jennifermarsman@users.noreply.github.com>\nCo-authored-by: Weihan Li <weihanli@outlook.com>\nCo-authored-by: SergeyMenshykh <68852919+SergeyMenshykh@users.noreply.github.com>\nCo-authored-by: Diego Colombo <dicolomb@microsoft.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Alex Chao <achao@achao>\nCo-authored-by: Eduard van Valkenburg <eavanvalkenburg@users.noreply.github.com>\nCo-authored-by: Evan Mattson <35585003+moonbox3@users.noreply.github.com>\nCo-authored-by: Evan Mattson <evan.mattson@microsoft.com>"
+    },
+    {
+        "repo_url": "github.com/microsoft/semantic-kernel",
+        "filepath": "python/semantic_kernel/connectors/ai/hugging_face/services/hf_text_embedding.py",
+        "commit_date": "2023-08-31T23:49:49Z",
+        "message": "Python: Error fix for HuggingFaceTextEmbedding when trying to run on GPU (#2629)\n\n### Motivation and Context\n\nI run into error while trying to initialize `HuggingFaceTextEmbedding`\nwith `device=0`.\n\n```\nTraceback (most recent call last):\n  File \"/usr/local/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py\", line 552, in _run_script\n    exec(code, module.__dict__)\n  File \"/app/app/app.py\", line 329, in <module>\n    asyncio.run(main())\n  File \"/usr/local/lib/python3.9/asyncio/runners.py\", line 44, in run\n    return loop.run_until_complete(main)\n  File \"/usr/local/lib/python3.9/asyncio/base_events.py\", line 647, in run_until_complete\n    return future.result()\n  File \"/app/app/app.py\", line 220, in main\n    kernel = init_kernel()\n  File \"/usr/local/lib/python3.9/site-packages/streamlit/runtime/caching/cache_utils.py\", line 211, in wrapper\n    return cached_func(*args, **kwargs)\n  File \"/usr/local/lib/python3.9/site-packages/streamlit/runtime/caching/cache_utils.py\", line 240, in __call__\n    return self._get_or_create_cached_value(args, kwargs)\n  File \"/usr/local/lib/python3.9/site-packages/streamlit/runtime/caching/cache_utils.py\", line 266, in _get_or_create_cached_value\n    return self._handle_cache_miss(cache, value_key, func_args, func_kwargs)\n  File \"/usr/local/lib/python3.9/site-packages/streamlit/runtime/caching/cache_utils.py\", line 320, in _handle_cache_miss\n    computed_value = self._info.func(*func_args, **func_kwargs)\n  File \"/app/app/app.py\", line 148, in init_kernel\n    sk_hf.HuggingFaceTextEmbedding(\"sentence-transformers/all-MiniLM-L6-v2\", device=0),\n  File \"/usr/local/lib/python3.9/site-packages/semantic_kernel/connectors/ai/hugging_face/services/hf_text_embedding.py\", line 49, in __init__\n    \"cuda:\" + device if device >= 0 and torch.cuda.is_available() else \"cpu\"\nTypeError: can only concatenate str (not \"int\") to str\n```\n\n<!-- Thank you for your contribution to the semantic-kernel repo!\nPlease help reviewers and future users, providing the following\ninformation:\n  1. Why is this change required?\n  2. What problem does it solve?\n  3. What scenario does it contribute to?\n  4. If it fixes an open issue, please link to the issue here.\n-->\n\n### Description\n\n\nI replace `\"cuda:\" + device` with `\"cuda:\" + str(device)`\n\n<!-- Describe your changes, the overall approach, the underlying design.\nThese notes will help understanding how your code works. Thanks! -->\n\n### Contribution Checklist\n\n<!-- Before submitting this PR, please make sure: -->\n\n- [ ] The code builds clean without any errors or warnings\n- [ ] The PR follows the [SK Contribution\nGuidelines](https://github.com/microsoft/semantic-kernel/blob/main/CONTRIBUTING.md)\nand the [pre-submission formatting\nscript](https://github.com/microsoft/semantic-kernel/blob/main/CONTRIBUTING.md#development-scripts)\nraises no violations\n- [ ] All unit tests pass, and I have added new tests where possible\n- [ ] I didn't break anyone :smile:\n\nCo-authored-by: Abby Harrison <54643756+awharrison-28@users.noreply.github.com>"
+    },
+    {
+        "repo_url": "github.com/microsoft/semantic-kernel",
+        "filepath": "python/semantic_kernel/connectors/ai/hugging_face/services/hf_text_embedding.py",
+        "commit_date": "2023-05-08T22:52:48Z",
+        "message": "Python: fixes and release (#855)\n\n* Fix lint errors\n* Bump version number\n* Add retry loop to integration tests\n* Enable all integration tests: some tests will fail if OpenAI/Azure are\nthrottling."
+    },
+    {
+        "repo_url": "github.com/microsoft/semantic-kernel",
+        "filepath": "python/semantic_kernel/connectors/ai/hugging_face/services/hf_text_embedding.py",
+        "commit_date": "2023-05-06T03:35:13Z",
+        "message": "Python: Optional dependencies (#820)\n\n### Motivation and Context\nThe release of Python SK from 0.2.4 -> 0.2.6 significantly increased the\nsize of the pip package. The dependencies causing this are not core to\nthe kernel, so this PR establishes a pattern for SK connector\ndependencies (ex: Hugging Face, memory storage)\n\n### Description\n- Added a poetry group called hugging_face - this is the same name as\nthe connectors namespace in the code.\n- Added dependency installs to the Hugging Face sample notebook.\n- removed Hugging Face dependencies from requirements.txt.\n- Added import errors for torch, transformers, and sentence-transformers\nin the hugging_face connector classes.\n- Added command `--with hugging_face` to integration test setup."
+    },
+    {
+        "repo_url": "github.com/microsoft/semantic-kernel",
+        "filepath": "python/semantic_kernel/connectors/ai/hugging_face/services/hf_text_embedding.py",
+        "commit_date": "2023-04-27T00:07:29Z",
+        "message": "Python/Local Hugging Face Inference for Completions and Embeddings (#658)\n\n### Motivation and Context\nThis PR introduces native python support for Hugging Face models that\ncan: complete text, generate new text, summarize, and that generate\nembeddings. Currently only supports downloading the models locally from\nthe HF model hub. Future plans include supporting the HF inference API\nas well.\n\n### Description\n- Added 2 services: `hf_text_completion` and `hf_text_embedding`\n- `hf_text_completion` supports the following tasks: _text-generation_,\n_text2text-generation_, and _summarization_\n- `hf_text_embedding` supports any model supported by the\nsentence-transformers pip package\n- Added dependencies: pytorch, transformers, sentence-transformers to\n`requirements.txt` and `poetry.lock`\n- fixed typo: `get_embedding_service_service_id` ->\n`get_embedding_service_id`\n- Added a number of integration tests for supported HF models"
+    },
+    {
+        "repo_url": "github.com/oobabooga/text-generation-webui",
+        "filepath": "extensions/openai/cache_embedding_model.py",
+        "commit_date": "2023-11-10T15:34:27Z",
+        "message": "Make /v1/embeddings functional, add request/response types"
+    },
+    {
+        "repo_url": "github.com/oobabooga/text-generation-webui",
+        "filepath": "extensions/openai/cache_embedding_model.py",
+        "commit_date": "2023-09-24T03:58:28Z",
+        "message": "extensions/openai: Fix error when preparing cache for embedding models (#3995)"
+    },
+    {
+        "repo_url": "github.com/oobabooga/text-generation-webui",
+        "filepath": "extensions/openai/cache_embedding_model.py",
+        "commit_date": "2023-09-18T01:39:29Z",
+        "message": "extensions/openai: load extension settings via settings.yaml (#3953)"
+    },
+    {
+        "repo_url": "github.com/oobabooga/text-generation-webui",
+        "filepath": "extensions/openai/cache_embedding_model.py",
+        "commit_date": "2023-09-16T03:11:16Z",
+        "message": "Lint the openai extension"
+    },
+    {
+        "repo_url": "github.com/oobabooga/text-generation-webui",
+        "filepath": "extensions/openai/cache_embedding_model.py",
+        "commit_date": "2023-06-26T01:49:26Z",
+        "message": "ExLlama with long context (#2875)"
+    },
+    {
+        "repo_url": "github.com/oobabooga/text-generation-webui",
+        "filepath": "extensions/openai/cache_embedding_model.py",
+        "commit_date": "2023-05-11T14:06:39Z",
+        "message": "[extension/openai] add edits & image endpoints & fix prompt return in non --chat modes  (#1935)"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-09-02T12:31:35Z",
+        "message": "\u77e5\u8bc6\u5e93\u589e\u52a0docx\u683c\u5f0f\uff08\u4ec5\u4f9b\u6d4b\u8bd5\uff09"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-07-23T11:18:05Z",
+        "message": "rtst\u652f\u6301\u5728\u7ebfembedding"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-07-19T12:33:20Z",
+        "message": "\u6539\u53d8\u77e5\u8bc6\u5e93\u5206\u6bb5\u903b\u8f91"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-06-29T15:36:22Z",
+        "message": "Update gen_data_st.py"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-06-29T15:32:29Z",
+        "message": "Update gen_data_st.py"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-06-22T19:27:28Z",
+        "message": "111"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-06-13T02:54:20Z",
+        "message": "Update gen_data_st.py"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-06-13T02:41:31Z",
+        "message": "Update gen_data_st.py"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-06-06T13:17:27Z",
+        "message": "rtst\u521d\u6b65\u652f\u6301Annoy\u540e\u7aef\uff0c\u8fd8\u987b\u5b9e\u73b0merge_from\u65b9\u6cd5"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-05-24T18:08:56Z",
+        "message": "[FIX] Fix bug in gen_data_st.py"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-05-13T11:32:01Z",
+        "message": "Update gen_data_st.py\n\n\u8bc6\u522b\u5927\u5c0f\u5199\u6587\u4ef6\u540e\u7f00\u683c\u5f0f\uff1b\u5bf9\u975e\u652f\u6301\u6587\u4ef6\u683c\u5f0f\u7ed9\u51fa\u63d0\u793a\u3002"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-05-07T05:01:46Z",
+        "message": "\u77e5\u8bc6\u5e93\u914d\u7f6e\u66f4\u79d1\u5b66\u3002\u652f\u6301\u52a8\u6001\u6539\u53d8\u6240\u7528\u77e5\u8bc6\u5e93\uff1b\u9ed8\u8ba4\u5373\u901a\u8fc7\u53c2\u6570\u5316\u914d\u7f6e\u77e5\u8bc6\u5e93"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-05-06T16:52:53Z",
+        "message": "Merge branch 'main' into main"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-05-06T16:21:31Z",
+        "message": "Update gen_data_st.py"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-05-06T16:13:12Z",
+        "message": "Update gen_data_st.py"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-05-06T16:03:45Z",
+        "message": "Update gen_data_st.py"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-05-06T15:44:46Z",
+        "message": "\u4fee\u590d\u6587\u4ef6\u7d22\u5f15\u5efa\u7acb"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-05-06T14:40:37Z",
+        "message": "\u8c03\u6574\u6362\u884c\u53bb\u9664\u7b56\u7565"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-05-06T14:13:45Z",
+        "message": "\u8c03\u6574\u6362\u884c\u53bb\u9664\u7b56\u7565"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-05-06T14:09:12Z",
+        "message": "Revert \"fix(gen_data_st.py): exit if txt dir is empty\""
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-05-06T09:22:04Z",
+        "message": "Update gen_data_st.py\n\nmight cause the program to exit before updating index, comment those out"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-05-06T03:28:45Z",
+        "message": "fix(gen_data_st.py): exit if txt dir is empty"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-05-05T12:42:15Z",
+        "message": "Update gen_data_st.py"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-05-05T06:32:09Z",
+        "message": "yml\u5b9e\u73b0\u8bbe\u7f6e"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-05-05T00:19:56Z",
+        "message": "Merge branch 'main' into main"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-05-04T23:54:45Z",
+        "message": "Update gen_data_st.py"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-05-04T19:38:41Z",
+        "message": "Merge pull request #236 from diannaojiang/main\n\nrtst\u53c2\u6570\u4e2a\u6027\u5316"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-05-04T19:10:43Z",
+        "message": "rtst\u53c2\u6570\u4e2a\u6027\u5316"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-05-04T14:34:18Z",
+        "message": "rtst\u6a21\u5f0f\u8df3\u8fc7\u4e0d\u53ef\u8bfb\u7684\u6587\u4ef6"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-05-04T13:21:03Z",
+        "message": "Update gen_data_st.py"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-05-01T11:10:15Z",
+        "message": "\u8c03\u6574\u6587\u4ef6\u540d\uff1bapi\u8c03\u7528\u652f\u6301\u591a\u7528\u6237\uff1b\u4f18\u5316\u591a\u7528\u6237\u65f6\u6392\u961f\u63d0\u793a\u903b\u8f91"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-04-30T01:47:28Z",
+        "message": "st\u7d22\u5f15\u65f6\uff0c\u8bfb\u7acb\u7ebf\u7a0b\u8ba1\u7b97\u5d4c\u5165"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-04-30T00:42:40Z",
+        "message": "st\u7d22\u5f15 \u8fdb\u5ea6\u663e\u793a"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-04-29T13:14:54Z",
+        "message": "Update gen_data_st.py"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-04-29T12:20:27Z",
+        "message": "Update gen_data_st.py"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-04-29T12:19:31Z",
+        "message": "Update gen_data_st.py"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-04-29T10:42:46Z",
+        "message": "\u7d22\u5f15txt\u652f\u6301\u81ea\u9002\u5e94\u7f16\u7801"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-04-29T09:14:53Z",
+        "message": "rtst\u53d6\u4ee3st\uff1b\u6570\u636e\u9884\u5904\u7406\u6d41\u5f0f\u8fdb\u884c\uff0c\u89e3\u51b3oom\u95ee\u9898"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-04-29T03:48:12Z",
+        "message": "\u652f\u6301pdf"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-04-29T03:47:16Z",
+        "message": "\u652f\u6301pdf"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-04-29T03:20:11Z",
+        "message": "\u652f\u6301pdf"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-04-25T07:58:56Z",
+        "message": "\u4fee\u590d\u62fc\u5199\u9519\u8bef"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-04-22T07:39:15Z",
+        "message": "\u62a5\u9519\u81ea\u52a8\u6253\u5f00\u6587\u6863"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-04-21T23:53:45Z",
+        "message": "Update gen_data_st.py"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-04-21T12:08:20Z",
+        "message": "gpt4free"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-04-19T05:52:08Z",
+        "message": "st\u77e5\u8bc6\u5e93\u7d22\u5f15\u652f\u6301\u53e0\u52a0"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-04-18T16:22:42Z",
+        "message": "Merge branch 'pr/156'"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-04-18T16:06:29Z",
+        "message": "\u66b4\u9732\u5411\u91cf\u6a21\u578b\u8def\u5f84"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-04-18T13:09:30Z",
+        "message": "\u589e\u52a0rwkv\u91cf\u5316\u811a\u672c"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-04-18T11:59:06Z",
+        "message": "Update gen_data_st.py"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-04-18T11:45:05Z",
+        "message": "st\u6a21\u5f0f\u4e2a\u6027\u5316\u9009\u9879\u6dfb\u52a0"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/gen_data_st.py",
+        "commit_date": "2023-04-18T05:19:38Z",
+        "message": "\u65b0\u77e5\u8bc6\u5e93\u6a21\u7ec4\uff1ast \u2192 sentence_transformers,\u5185\u6d4b\u7248\u672c"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/zhishiku_rtst.py",
+        "commit_date": "2023-08-01T11:39:18Z",
+        "message": "Update zhishiku_rtst.py"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/zhishiku_rtst.py",
+        "commit_date": "2023-07-23T11:23:57Z",
+        "message": "rtst\u652f\u6301\u5728\u7ebfembedding\u4f18\u5316"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/zhishiku_rtst.py",
+        "commit_date": "2023-07-19T12:33:20Z",
+        "message": "\u6539\u53d8\u77e5\u8bc6\u5e93\u5206\u6bb5\u903b\u8f91"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/zhishiku_rtst.py",
+        "commit_date": "2023-07-06T04:36:43Z",
+        "message": "\u5411\u91cf\u77e5\u8bc6\u5e93\u7ba1\u7406\u5de5\u5177\u652f\u6301\u8bfb\u53d6\u73b0\u6709\u5e93\u540d\u79f0"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/zhishiku_rtst.py",
+        "commit_date": "2023-06-26T12:36:00Z",
+        "message": "\u4f18\u5316\u52a8\u6001\u591a\u77e5\u8bc6\u5e93\u5904\u7406"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/zhishiku_rtst.py",
+        "commit_date": "2023-06-14T11:15:27Z",
+        "message": "\u57fa\u4e8ertst\u7684\u610f\u56fe\u8bc6\u522bauto"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/zhishiku_rtst.py",
+        "commit_date": "2023-06-09T08:27:36Z",
+        "message": "\u65b0\u77e5\u8bc6\u5e93\uff1a\u8ba1\u7b97\u5668\u3002jast4fun"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/zhishiku_rtst.py",
+        "commit_date": "2023-06-06T13:17:27Z",
+        "message": "rtst\u521d\u6b65\u652f\u6301Annoy\u540e\u7aef\uff0c\u8fd8\u987b\u5b9e\u73b0merge_from\u65b9\u6cd5"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/zhishiku_rtst.py",
+        "commit_date": "2023-06-02T12:49:48Z",
+        "message": "\u4fee\u590drtst\u6587\u4ef6\u9884\u89c8"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/zhishiku_rtst.py",
+        "commit_date": "2023-06-01T03:21:33Z",
+        "message": "\u9759\u6001\u8d44\u6e90\u8def\u7531\u7531fastapi\u5b9e\u73b0"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/zhishiku_rtst.py",
+        "commit_date": "2023-05-29T07:36:49Z",
+        "message": "rtst\u6807\u9898\u652f\u6301\u6ce8\u91ca\u3002\u73b0\u5728\u53ef\u4ee5\u7528\u5f62\u5982\u201dxx\u7814\u7a76\u62a5\u544a\u3010\u7b2c\u4e00\u9875\u3011\u201c\u7684\u5f62\u5f0f\u4f20\u5165\u6807\u9898\uff0c\u76f8\u5173\u5185\u5bb9\u5c06\u4f1a\u88ab\u5f53\u6210\u4e00\u7bc7\u6587\u7ae0\u8fd4\u56de\u4e0a\u4e0b\u6587"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/zhishiku_rtst.py",
+        "commit_date": "2023-05-19T09:19:19Z",
+        "message": "Update zhishiku_rtst.py"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/zhishiku_rtst.py",
+        "commit_date": "2023-05-19T03:20:05Z",
+        "message": "\u629b\u51fa\u5f02\u5e38\uff0c\u7528\u4e8e\u8de8\u57df"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/zhishiku_rtst.py",
+        "commit_date": "2023-05-13T09:46:35Z",
+        "message": "-"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/zhishiku_rtst.py",
+        "commit_date": "2023-05-07T05:03:34Z",
+        "message": "Update zhishiku_rtst.py"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/zhishiku_rtst.py",
+        "commit_date": "2023-05-07T05:01:46Z",
+        "message": "\u77e5\u8bc6\u5e93\u914d\u7f6e\u66f4\u79d1\u5b66\u3002\u652f\u6301\u52a8\u6001\u6539\u53d8\u6240\u7528\u77e5\u8bc6\u5e93\uff1b\u9ed8\u8ba4\u5373\u901a\u8fc7\u53c2\u6570\u5316\u914d\u7f6e\u77e5\u8bc6\u5e93"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/zhishiku_rtst.py",
+        "commit_date": "2023-05-06T16:40:05Z",
+        "message": "\u89e3\u8026"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/zhishiku_rtst.py",
+        "commit_date": "2023-05-05T13:43:27Z",
+        "message": "bug fix"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/zhishiku_rtst.py",
+        "commit_date": "2023-05-05T06:32:09Z",
+        "message": "yml\u5b9e\u73b0\u8bbe\u7f6e"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/zhishiku_rtst.py",
+        "commit_date": "2023-05-02T01:22:47Z",
+        "message": "\u4f18\u5316\u8bb0\u5fc6\u589e\u5f3aauto"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/zhishiku_rtst.py",
+        "commit_date": "2023-05-02T00:03:59Z",
+        "message": "sogowx\u77e5\u8bc6\u5e93"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/zhishiku_rtst.py",
+        "commit_date": "2023-05-01T12:05:44Z",
+        "message": "rtst\u77e5\u8bc6\u5e93\u6765\u6e90\u652f\u6301\u70b9\u51fb"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/zhishiku_rtst.py",
+        "commit_date": "2023-05-01T11:10:15Z",
+        "message": "\u8c03\u6574\u6587\u4ef6\u540d\uff1bapi\u8c03\u7528\u652f\u6301\u591a\u7528\u6237\uff1b\u4f18\u5316\u591a\u7528\u6237\u65f6\u6392\u961f\u63d0\u793a\u903b\u8f91"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/zhishiku_rtst.py",
+        "commit_date": "2023-04-30T10:38:28Z",
+        "message": "bug fix"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/zhishiku_rtst.py",
+        "commit_date": "2023-04-29T00:19:20Z",
+        "message": "\u4f18\u5316rtst\u903b\u8f91\uff1a\u9ed8\u8ba4\u4f7f\u7528\u540d\u4e3adefault\u7684\u77e5\u8bc6\u5e93\uff0c\u800c\u4e0d\u662f\u4e0a\u6b21\u4f7f\u7528\u7684\uff1b\u4f18\u5316\u9519\u8bef\u63d0\u793a\uff1b\u5b8c\u5584\u6d4b\u8bd5\u754c\u9762\u529f\u80fd"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/zhishiku_rtst.py",
+        "commit_date": "2023-04-27T12:47:47Z",
+        "message": "rtst\u652f\u6301\u591a\u5e93\u9009\u62e9\uff1bst\u3001rtst\u652f\u6301\u8fd4\u56de\u5206\u6570"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/zhishiku_rtst.py",
+        "commit_date": "2023-04-25T16:04:22Z",
+        "message": "bug fix"
+    },
+    {
+        "repo_url": "github.com/wenda-LLM/wenda",
+        "filepath": "plugins/zhishiku_rtst.py",
+        "commit_date": "2023-04-25T13:05:27Z",
+        "message": "\u65b0\u6a21\u5f0frtst"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2024-02-21T08:54:26Z",
+        "message": "Merge pull request #152 from 123456ADWAE2/2\n\n\u66f4\u65b0\u4ee3\u7801"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2024-02-21T08:52:15Z",
+        "message": "Update app.py"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2024-02-21T08:48:34Z",
+        "message": "Update app.py"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2024-02-21T08:29:20Z",
+        "message": "Merge pull request #150 from 123456ADWAE2/2\n\n[WIP]\u9002\u914dbge-m3\u548cjina"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2024-02-21T07:33:07Z",
+        "message": "Update app.py\n\n\u9002\u914djina"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2024-01-29T06:16:24Z",
+        "message": "Update app.py\n\n\u89e3\u51b3\u89e3\u7801\u95ee\u9898"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-09-30T13:54:20Z",
+        "message": "Update model  chatglm2"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-09-11T16:35:19Z",
+        "message": "update internlm"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-05-19T17:00:32Z",
+        "message": "\tmodified:   app.py\n\tmodified:   docs/update_history.md"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-04-28T08:34:55Z",
+        "message": "Merge branch 'thomas-yanxin:master' into master"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-04-27T17:34:17Z",
+        "message": "\u5b8c\u5584\u7cfb\u5217\u95ee\u9898"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-04-27T02:12:25Z",
+        "message": "Update app.py"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-04-26T18:52:00Z",
+        "message": "\u4f18\u5316Jina Serving API"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-04-26T15:01:34Z",
+        "message": "Merge pull request #42 from AliscaCL/feature/union_offline_online\n\nfeat: modify code for union offline and online code which could help \u2026"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-04-26T13:45:54Z",
+        "message": "feat: modify code for union offline and online code which could help user to transfer the project to offline environment only with double run the code on online & offline environment."
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-04-26T13:35:03Z",
+        "message": "Update app.py"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-04-26T13:27:31Z",
+        "message": "Update app.py"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-04-26T13:20:37Z",
+        "message": "Update app.py"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-04-26T03:53:08Z",
+        "message": "\u4fee\u590d\u5207\u6362\u6a21\u578b\u65f6\u53ef\u80fd\u7684\u6f5c\u5728\u95ee\u9898"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-04-25T17:33:43Z",
+        "message": "\tmodified:   app.py"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-04-25T05:04:57Z",
+        "message": "\u63d0\u4f9b\u5355\u72ec\u7684config.py\u914d\u7f6e\u6587\u4ef6"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-04-24T23:16:57Z",
+        "message": "Fix Dockerfile / requirements.txt"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-04-22T10:43:37Z",
+        "message": "\u4fee\u590d\u591a\u6a21\u578b\u5207\u6362\u7684bug"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-04-22T08:10:51Z",
+        "message": "Update app.py"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-04-22T08:06:21Z",
+        "message": "\u4fee\u6539\u53c2\u6570\u4e0d\u53c2\u4e0e\u91cd\u65b0\u52a0\u8f7d\u6a21\u578b"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-04-22T07:48:31Z",
+        "message": "\u4fee\u590d\u5bf9\u4e0d\u540c\u7cfb\u5217\u6a21\u578b\u63a8\u7406\u7684Bug"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-04-21T13:10:56Z",
+        "message": "\u652f\u6301Vicuna"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-04-21T06:58:51Z",
+        "message": "\u589e\u52a0\u5bf9ChatYuan-large-v2\u7684\u652f\u6301"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-04-20T14:16:57Z",
+        "message": "\tmodified:   app.py\n\tmodified:   requirements.txt"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-04-19T21:52:49Z",
+        "message": "\u4f18\u5316UI"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-04-19T21:40:02Z",
+        "message": "\u4f18\u5316PDF\u6587\u4ef6"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-04-19T06:09:40Z",
+        "message": "\tnew file:   test.py"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-04-19T05:00:36Z",
+        "message": "fix bug"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-04-19T03:52:42Z",
+        "message": "Update app.py"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-04-19T03:45:43Z",
+        "message": "Update app.py"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-04-19T03:45:04Z",
+        "message": "Update app.py\n\n\u4fee\u6539\u9ed8\u8ba4\u91c7\u7528ChatGLM-6B-int4 \u6a21\u578b"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-04-19T03:34:33Z",
+        "message": "Update app.py\n\n\u589e\u52a0\u5916\u90e8\u8bbf\u95ee\u652f\u6301\u3001\n\u589e\u52a0ChatGLM-6b-local \u672c\u5730\u6a21\u578b\u8bfb\u53d6\u8def\u5f84 /data/chatglm-6b\n\u4fee\u590dtext2vec \u65e0\u6cd5\u52a0\u8f7d\u7684\u9519\u8bef\u3002"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-04-17T04:41:28Z",
+        "message": "Update app.py"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-04-16T12:44:30Z",
+        "message": "fix history bug"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-04-16T07:07:59Z",
+        "message": "Update app.py"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-04-16T06:28:43Z",
+        "message": "Update app.py"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-04-16T04:14:33Z",
+        "message": "Update app.py"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-04-12T03:24:10Z",
+        "message": "Update app.py"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-04-10T09:19:20Z",
+        "message": "Update app.py"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-04-10T09:18:29Z",
+        "message": "Update app.py"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-04-10T09:07:48Z",
+        "message": "upgrade"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-04-10T07:23:35Z",
+        "message": "upgrade aap.py"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-04-10T06:19:44Z",
+        "message": "update"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "app.py",
+        "commit_date": "2023-04-10T06:09:10Z",
+        "message": "init"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "jina_serving.py",
+        "commit_date": "2023-04-28T15:45:49Z",
+        "message": "\tmodified:   jina_serving.py"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "jina_serving.py",
+        "commit_date": "2023-04-28T15:43:18Z",
+        "message": "\u66f4\u6539\u5411\u91cf\u5b58\u50a8\u4e3aQdrant"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "jina_serving.py",
+        "commit_date": "2023-04-27T17:34:17Z",
+        "message": "\u5b8c\u5584\u7cfb\u5217\u95ee\u9898"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "jina_serving.py",
+        "commit_date": "2023-04-26T18:53:17Z",
+        "message": "\tmodified:   jina_serving.py"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "jina_serving.py",
+        "commit_date": "2023-04-26T18:52:00Z",
+        "message": "\u4f18\u5316Jina Serving API"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "jina_serving.py",
+        "commit_date": "2023-04-26T03:53:16Z",
+        "message": "\u4fee\u590d\u5207\u6362\u6a21\u578b\u65f6\u53ef\u80fd\u7684\u6f5c\u5728\u95ee\u9898"
+    },
+    {
+        "repo_url": "github.com/X-D-Lab/LangChain-ChatGLM-Webui",
+        "filepath": "jina_serving.py",
+        "commit_date": "2023-04-25T17:09:50Z",
+        "message": "jina serving api"
+    },
+    {
+        "repo_url": "github.com/NVIDIA/NeMo-Guardrails",
+        "filepath": "nemoguardrails/eval/evaluate_topical.py",
+        "commit_date": "2024-02-15T14:09:27Z",
+        "message": "Merge branch 'develop' into feature/colang-2.0"
+    },
+    {
+        "repo_url": "github.com/NVIDIA/NeMo-Guardrails",
+        "filepath": "nemoguardrails/eval/evaluate_topical.py",
+        "commit_date": "2024-02-14T21:06:37Z",
+        "message": "Add support for `import_paths`."
+    },
+    {
+        "repo_url": "github.com/NVIDIA/NeMo-Guardrails",
+        "filepath": "nemoguardrails/eval/evaluate_topical.py",
+        "commit_date": "2024-01-30T14:56:04Z",
+        "message": "Fix import problems related to SentenceTransformers."
+    },
+    {
+        "repo_url": "github.com/NVIDIA/NeMo-Guardrails",
+        "filepath": "nemoguardrails/eval/evaluate_topical.py",
+        "commit_date": "2023-12-13T15:38:09Z",
+        "message": "Fix `config` parameter for evaluation scripts."
+    },
+    {
+        "repo_url": "github.com/NVIDIA/NeMo-Guardrails",
+        "filepath": "nemoguardrails/eval/evaluate_topical.py",
+        "commit_date": "2023-10-03T19:22:21Z",
+        "message": "Fix sync_wrapper."
+    },
+    {
+        "repo_url": "github.com/NVIDIA/NeMo-Guardrails",
+        "filepath": "nemoguardrails/eval/evaluate_topical.py",
+        "commit_date": "2023-09-14T14:16:12Z",
+        "message": "Fix get_last_bot_utterance_event after event naming changes in last release."
+    },
+    {
+        "repo_url": "github.com/NVIDIA/NeMo-Guardrails",
+        "filepath": "nemoguardrails/eval/evaluate_topical.py",
+        "commit_date": "2023-07-26T19:04:38Z",
+        "message": "Rename `user_intent` to UMIM event `UserIntent`\n\nSigned-off-by: Severin Klingler <sklingler@nvidia.com>"
+    },
+    {
+        "repo_url": "github.com/NVIDIA/NeMo-Guardrails",
+        "filepath": "nemoguardrails/eval/evaluate_topical.py",
+        "commit_date": "2023-07-26T19:02:10Z",
+        "message": "Turn `user_said` into UMIM action event `UtteranceUserActionFinished`\n\nSigned-off-by: Severin Klingler <sklingler@nvidia.com>"
+    },
+    {
+        "repo_url": "github.com/NVIDIA/NeMo-Guardrails",
+        "filepath": "nemoguardrails/eval/evaluate_topical.py",
+        "commit_date": "2023-06-28T20:36:07Z",
+        "message": "Fixed bug."
+    },
+    {
+        "repo_url": "github.com/NVIDIA/NeMo-Guardrails",
+        "filepath": "nemoguardrails/eval/evaluate_topical.py",
+        "commit_date": "2023-06-22T16:58:49Z",
+        "message": "Added output predictions helper function for topical rails."
+    },
+    {
+        "repo_url": "github.com/NVIDIA/NeMo-Guardrails",
+        "filepath": "nemoguardrails/eval/evaluate_topical.py",
+        "commit_date": "2023-06-22T13:04:19Z",
+        "message": "Main change is adding similarity matching for intents in topical rails. Other changes: added random seed, fixed a bug on selecting a balanced test set."
+    },
+    {
+        "repo_url": "github.com/NVIDIA/NeMo-Guardrails",
+        "filepath": "nemoguardrails/eval/evaluate_topical.py",
+        "commit_date": "2023-06-20T15:59:17Z",
+        "message": "Moved the sync_wrapper outside the class definition."
+    },
+    {
+        "repo_url": "github.com/NVIDIA/NeMo-Guardrails",
+        "filepath": "nemoguardrails/eval/evaluate_topical.py",
+        "commit_date": "2023-06-20T13:25:25Z",
+        "message": "Some refactoring and improvements for the topical rails evaluation."
+    },
+    {
+        "repo_url": "github.com/NVIDIA/NeMo-Guardrails",
+        "filepath": "nemoguardrails/eval/evaluate_topical.py",
+        "commit_date": "2023-06-20T09:54:17Z",
+        "message": "Refactored code to use nemoguardrails.eval package that also includes an evaluation typer CLI that is also added to the nemoguardrails CLI."
+    },
+    {
+        "repo_url": "github.com/explodinggradients/ragas",
+        "filepath": "src/ragas/embeddings/base.py",
+        "commit_date": "2024-02-28T03:22:53Z",
+        "message": "Add support for optional max concurrency (#643)\n\n**Added optional Semaphore-based concurrency control for #642** \nAs for the default value for `max_concurrency`, I don't know the ratio\nof API users vs. local LLM users, so the proposed default is an\nopinionated value of `16`\n* I *think* more people use OpenAI API for now vs. local LLMs, thus\ndefault is not `-1` (no limit)\n* `16` seems to be reasonably fast and doesn't seem to hit throughput\nlimit in my experience\n\n**Tests**\nEmbedding for 1k documents finished in <2min and subsequent Testset\ngeneration for `test_size=1000` proceeding without getting stuck:\n<img width=\"693\" alt=\"image\"\nsrc=\"https://github.com/explodinggradients/ragas/assets/6729737/d83fecc8-a815-43ee-a3b0-3395d7a9d244\">\n\nanother 30s passes:\n<img width=\"725\" alt=\"image\"\nsrc=\"https://github.com/explodinggradients/ragas/assets/6729737/d4ab08ba-5a79-45f6-84b1-e563f107d682\">\n\n---------\n\nCo-authored-by: Jithin James <jamesjithin97@gmail.com>"
+    },
+    {
+        "repo_url": "github.com/explodinggradients/ragas",
+        "filepath": "src/ragas/embeddings/base.py",
+        "commit_date": "2024-02-03T21:58:51Z",
+        "message": "Feat: prompt adaptation for test data generation (#530)\n\n- [x] prompt adaptation for languages\n- [x] Minor bug fixes and assertions\n- [x] JSON safe loading\n\n---------\n\nCo-authored-by: jjmachan <jamesjithin97@gmail.com>"
+    },
+    {
+        "repo_url": "github.com/explodinggradients/ragas",
+        "filepath": "src/ragas/embeddings/base.py",
+        "commit_date": "2024-02-01T00:21:01Z",
+        "message": "feat: configure retries and timeouts with evaluations and testset generators (#534)"
+    },
+    {
+        "repo_url": "github.com/explodinggradients/ragas",
+        "filepath": "src/ragas/embeddings/base.py",
+        "commit_date": "2024-01-28T03:51:15Z",
+        "message": "feat(executor): remove the need to have both sync and async versions of the function (#527)\n\nUnifed the calls to LLM, embeddings and json_loader with the following\nlogic\n```py\nif is_async: # just call the async version\n\treturn await self._asafe_load(text=text, llm=llm, callbacks=callbacks)\nelse: # call the sync version inside the event_loop\n\tloop = asyncio.get_event_loop()\n\tsafe_load = partial(\n\t\tself._safe_load, text=text, llm=llm, callbacks=callbacks\n\t)\n\treturn await loop.run_in_executor(\n\t\tNone,\n\t\tsafe_load,\n\t)\n\n```\n### LLM\n```py\nasync def generate(\n\tself,\n\tprompt: PromptValue,\n\tn: int = 1,\n\ttemperature: float = 1e-8,\n\tstop: t.Optional[t.List[str]] = None,\n\tcallbacks: Callbacks = [],\n\tis_async: bool = True,\n) -> LLMResult:\n```\n### Embeddings\n```py\nasync def embed_texts(\n\tself, texts: List[str], is_async: bool = True\n) -> t.List[t.List[float]]:\n```\n### Json Load\n```py\nasync def safe_load(\n\tself,\n\ttext: str,\n\tllm: BaseRagasLLM,\n\tcallbacks: Callbacks = None,\n\tis_async: bool = True,\n):\n```"
+    },
+    {
+        "repo_url": "github.com/explodinggradients/ragas",
+        "filepath": "src/ragas/embeddings/base.py",
+        "commit_date": "2024-01-19T02:03:00Z",
+        "message": "fix: clean up embeddings for ragas and add docs for azure embeddings (#477)\n\n- cleanup `RagasBaseEmbeddings` classes\n- added documentation for AzureOpenAI"
+    },
+    {
+        "repo_url": "github.com/explodinggradients/ragas",
+        "filepath": "src/ragas/embeddings/base.py",
+        "commit_date": "2024-01-04T15:30:46Z",
+        "message": "feat/executor: make ragas faster and more robust to run (#390)\n\n1. async vs threadpool\n2. executor APIs and how to use them\n3. BaseRagasLLM - how generate_text and agenerate_text work - what is\nthe diff\n4. change in each metric - this is the most important to get review from\n@ikka because there might be small bugs in calculations I missed - the\ncode might be working now but calculation errors can be very bad"
+    },
+    {
+        "repo_url": "github.com/explodinggradients/ragas",
+        "filepath": "src/ragas/embeddings/base.py",
+        "commit_date": "2024-01-01T15:12:11Z",
+        "message": "feat: Automatic Prompt adaptation [language] (#407)\n\nAutomatic prompt adaption for different languages.  \n\n- [x] Add support for all metrics\n- [x] Testing and experimentation\n- [ ] Add docs (with explanation)\n\nTo be merged only after #401 \n\n### Usage\n```\nfrom ragas.metrics import faithfulness\nfaithfulness.adapt(\"hindi\")\nfaithfulness.save()\n```\n\n---------\n\nCo-authored-by: Tino Max <tinothayil@gmail.com>\nCo-authored-by: jjmachan <jamesjithin97@gmail.com>"
+    },
+    {
+        "repo_url": "github.com/explodinggradients/ragas",
+        "filepath": "src/ragas/embeddings/base.py",
+        "commit_date": "2023-12-14T06:39:58Z",
+        "message": "added class for FastEmbed (#379)\n\n* Added new class for FastEmbed Embeddings"
+    },
+    {
+        "repo_url": "github.com/explodinggradients/ragas",
+        "filepath": "src/ragas/embeddings/base.py",
+        "commit_date": "2023-11-21T05:18:01Z",
+        "message": "fix: openai env var load after init and before score also (#316)"
+    },
+    {
+        "repo_url": "github.com/explodinggradients/ragas",
+        "filepath": "src/ragas/embeddings/base.py",
+        "commit_date": "2023-11-15T10:17:38Z",
+        "message": "feat: add native support for OpenAI and AzureOpenAI (#261)\n\n- Add support for OpenAI and AzureOpenai both embeddings and LLMs\n- rework `RagasLLM` with an async version of generate\n- checks for API_KEYs and tests that ensure it is working"
+    },
+    {
+        "repo_url": "github.com/explodinggradients/ragas",
+        "filepath": "src/ragas/embeddings/base.py",
+        "commit_date": "2023-11-08T15:15:20Z",
+        "message": "feat: RagasEmbeddings (#232)\n\nCo-authored-by: jjmachan <jamesjithin97@gmail.com>"
+    },
+    {
+        "repo_url": "github.com/dot-agent/nextpy",
+        "filepath": "nextpy/ai/models/embedding/huggingface.py",
+        "commit_date": "2023-12-30T03:45:06Z",
+        "message": "Added modification comment"
+    },
+    {
+        "repo_url": "github.com/dot-agent/nextpy",
+        "filepath": "nextpy/ai/models/embedding/huggingface.py",
+        "commit_date": "2023-12-25T22:10:21Z",
+        "message": "Initial commit"
+    },
+    {
+        "repo_url": "github.com/intel/intel-extension-for-transformers",
+        "filepath": "intel_extension_for_transformers/langchain/embeddings/embeddings.py",
+        "commit_date": "2024-01-31T09:18:17Z",
+        "message": "Add precommit config (#1216)"
+    },
+    {
+        "repo_url": "github.com/intel/intel-extension-for-transformers",
+        "filepath": "intel_extension_for_transformers/langchain/embeddings/embeddings.py",
+        "commit_date": "2023-11-27T08:38:29Z",
+        "message": "Extend langchain embedding API (#735)\n\n* extend langchain embeddings\n\nSigned-off-by: yuwenzho <yuwen.zhou@intel.com>"
+    },
+    {
+        "repo_url": "github.com/amzn/pecos",
+        "filepath": "examples/MACLR/main.py",
+        "commit_date": "2021-12-14T18:40:09Z",
+        "message": "add MACLR codes (#100)"
+    },
+    {
+        "repo_url": "github.com/georgia-tech-db/evadb",
+        "filepath": "evadb/functions/sentence_feature_extractor.py",
+        "commit_date": "2023-09-05T15:37:44Z",
+        "message": "feat: UDF migrates to Function (#1034)"
+    },
+    {
+        "repo_url": "github.com/amzn/pecos",
+        "filepath": "examples/MACLR/model.py",
+        "commit_date": "2021-12-14T18:40:09Z",
+        "message": "add MACLR codes (#100)"
+    },
+    {
+        "repo_url": "github.com/amzn/pecos",
+        "filepath": "examples/MACLR/evaluate.py",
+        "commit_date": "2021-12-14T18:40:09Z",
+        "message": "add MACLR codes (#100)"
+    },
+    {
+        "repo_url": "github.com/FrostMiKu/ChatGLM-LangChain",
+        "filepath": "ui.py",
+        "commit_date": "2023-04-17T07:55:17Z",
+        "message": "with langchain"
+    },
+    {
+        "repo_url": "github.com/FrostMiKu/ChatGLM-LangChain",
+        "filepath": "ui.py",
+        "commit_date": "2023-03-26T13:44:47Z",
+        "message": "release"
+    },
+    {
+        "repo_url": "github.com/liangwq/Chatglm_lora_multi-gpu",
+        "filepath": "APP_example/chat_langchain/huggingface.py",
+        "commit_date": "2023-04-07T09:28:21Z",
+        "message": "\u65b0\u589elangchain\n\n\u65b0\u589elangchain\u505a\u77e5\u8bc6\u8865\u5145\u63d0\u95ee\n\u76f8\u5f53\u4e8e\u662f\u7ed9chatglm\u5916\u6302\u4e86\u641c\u7d22\u5185\u5bb9\nchatglm\u901a\u8fc7\u5728\u6307\u5b9a\u77e5\u8bc6\u9884\u5185\u505a\u95ee\u9898\u56de\u7b54\n\u5bf9\u4e8e\u7ea6\u675f\u4e25\u683c\u573a\u666f\u5f88\u6709\u7528"
+    },
+    {
+        "repo_url": "github.com/Azure/azure-sdk-for-python",
+        "filepath": "sdk/ai/azure-ai-resources/azure/ai/resources/_index/_langchain/vendor/embeddings/huggingface.py",
+        "commit_date": "2023-11-11T16:10:38Z",
+        "message": "Make index namespace private in azure-ai-resources (#33081)\n\n* rename foler\n\n* update references"
+    },
+    {
+        "repo_url": "github.com/microsoft/MM-REACT",
+        "filepath": "langchain/embeddings/huggingface.py",
+        "commit_date": "2023-02-21T00:38:43Z",
+        "message": "Refactor some loops into list comprehensions (#1185)"
+    },
+    {
+        "repo_url": "github.com/microsoft/MM-REACT",
+        "filepath": "langchain/embeddings/huggingface.py",
+        "commit_date": "2023-02-18T00:14:49Z",
+        "message": "instruct embeddings docs (#1131)"
+    },
+    {
+        "repo_url": "github.com/microsoft/MM-REACT",
+        "filepath": "langchain/embeddings/huggingface.py",
+        "commit_date": "2023-02-02T16:44:02Z",
+        "message": "rfc: instruct embeddings (#811)\n\nCo-authored-by: seanaedmiston <seane999@gmail.com>"
+    },
+    {
+        "repo_url": "github.com/microsoft/MM-REACT",
+        "filepath": "langchain/embeddings/huggingface.py",
+        "commit_date": "2023-01-24T15:01:40Z",
+        "message": "Convert numpy arrays to lists in HuggingFaceEmbeddings (#714)\n\n`SentenceTransformer` returns a NumPy array, not a `List[List[float]]`\nor `List[float]` as specified in the interface of `Embeddings`. That PR\nmakes it consistent with the interface."
+    },
+    {
+        "repo_url": "github.com/microsoft/MM-REACT",
+        "filepath": "langchain/embeddings/huggingface.py",
+        "commit_date": "2022-11-27T08:24:59Z",
+        "message": "Add HuggingFace Hub Embeddings (#125)\n\nAdd support for calling HuggingFace embedding models\nusing the HuggingFaceHub Inference API. New class mirrors\nthe existing HuggingFaceHub LLM implementation. Currently\nonly supports 'sentence-transformers' models.\n\nCloses #86"
+    },
+    {
+        "repo_url": "github.com/microsoft/MM-REACT",
+        "filepath": "langchain/embeddings/huggingface.py",
+        "commit_date": "2022-11-07T13:52:57Z",
+        "message": "fix lint (#77)"
+    },
+    {
+        "repo_url": "github.com/microsoft/MM-REACT",
+        "filepath": "langchain/embeddings/huggingface.py",
+        "commit_date": "2022-11-07T13:46:44Z",
+        "message": "Issam/hf embeddings (#68)\n\nAdd support of HuggingFace embedding models"
+    },
+    {
+        "repo_url": "github.com/Azure/app-service-linux-docs",
+        "filepath": "HowTo/gRPC/Linux/OpenAI/LangChain/PyServer/venv/langchain/embeddings/huggingface.py",
+        "commit_date": "2024-02-29T20:19:37Z",
+        "message": "adding windows grpc docs"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/KeyBERT",
+        "filepath": "tests/test_backend.py",
+        "commit_date": "2024-02-28T19:51:09Z",
+        "message": "Use batch_size parameter with keybert.backend.SentenceTransformerBackend (#210)"
+    },
+    {
+        "repo_url": "github.com/liangwq/Chatglm_lora_multi-gpu",
+        "filepath": "APP_example/langchain_ChatGLM/chains/local_doc_qa.py",
+        "commit_date": "2023-04-25T00:18:45Z",
+        "message": "add langchaina local konwledge"
+    },
+    {
+        "repo_url": "github.com/BodhiSearch/bodhilib",
+        "filepath": "plugins/bodhiext.st/src/bodhiext/st/_st_embedder.py",
+        "commit_date": "2024-01-07T06:08:25Z",
+        "message": "[Amir] fixing typing errors"
+    },
+    {
+        "repo_url": "github.com/BodhiSearch/bodhilib",
+        "filepath": "plugins/bodhiext.st/src/bodhiext/st/_st_embedder.py",
+        "commit_date": "2024-01-06T07:02:52Z",
+        "message": "[Amir] moving back sentence transformers to plugins directory, resolving mock failures by renaming project for time being"
+    },
+    {
+        "repo_url": "github.com/VoltaML/voltaML",
+        "filepath": "voltaml/transformer/backends/st_utils.py",
+        "commit_date": "2022-10-22T22:53:37Z",
+        "message": "NLP Updates"
+    },
+    {
+        "repo_url": "github.com/Azure/app-service-linux-docs",
+        "filepath": "HowTo/gRPC/Linux/OpenAI/LangChain/PyServer/venv/Lib/langchain/embeddings/huggingface.py",
+        "commit_date": "2024-02-29T20:19:37Z",
+        "message": "adding windows grpc docs"
+    },
+    {
+        "repo_url": "github.com/gh18l/CrawlGPT",
+        "filepath": "langchain/embeddings/huggingface.py",
+        "commit_date": "2023-06-08T14:29:50Z",
+        "message": "."
+    },
+    {
+        "repo_url": "github.com/gh18l/CrawlGPT",
+        "filepath": "langchain/embeddings/huggingface.py",
+        "commit_date": "2023-05-25T16:22:45Z",
+        "message": "first"
+    },
+    {
+        "repo_url": "github.com/awa-ai/awadb",
+        "filepath": "awadb/awa_embedding/huggingface.py",
+        "commit_date": "2023-07-26T07:00:01Z",
+        "message": "Fix some bugs"
+    },
+    {
+        "repo_url": "github.com/awa-ai/awadb",
+        "filepath": "awadb/awa_embedding/huggingface.py",
+        "commit_date": "2023-07-25T04:17:44Z",
+        "message": "Support embedding by importing AwaEmbedding"
+    },
+    {
+        "repo_url": "github.com/awa-ai/awadb",
+        "filepath": "awadb/awa_embedding/huggingface.py",
+        "commit_date": "2023-07-24T11:23:37Z",
+        "message": "Add AwaEmbedding and LLMEmbedding for users"
+    },
+    {
+        "repo_url": "github.com/RCGAI/SimplyRetrieve",
+        "filepath": "chat/retrieval/retrieve.py",
+        "commit_date": "2023-08-04T02:54:47Z",
+        "message": "initial commit"
+    },
+    {
+        "repo_url": "github.com/836304831/langchain-anal",
+        "filepath": "langchain/embeddings/huggingface.py",
+        "commit_date": "2023-07-15T07:32:18Z",
+        "message": "init langchain"
+    },
+    {
+        "repo_url": "github.com/836304831/langchain-anal",
+        "filepath": "langchain/embeddings/self_hosted_hugging_face.py",
+        "commit_date": "2023-07-15T07:32:18Z",
+        "message": "init langchain"
+    },
+    {
+        "repo_url": "github.com/microsoft/MM-REACT",
+        "filepath": "langchain/embeddings/self_hosted_hugging_face.py",
+        "commit_date": "2023-02-19T17:53:45Z",
+        "message": "Harrison/self hosted runhouse (#1154)\n\nCo-authored-by: Donny Greenberg <dongreenberg2@gmail.com>\nCo-authored-by: John Dagdelen <jdagdelen@users.noreply.github.com>\nCo-authored-by: Harrison Chase <harrisonchase@Harrisons-MBP.attlocal.net>\nCo-authored-by: Andrew White <white.d.andrew@gmail.com>\nCo-authored-by: Peng Qu <82029664+pengqu123@users.noreply.github.com>\nCo-authored-by: Matt Robinson <mthw.wm.robinson@gmail.com>\nCo-authored-by: jeff <tangj1122@gmail.com>\nCo-authored-by: Harrison Chase <harrisonchase@Harrisons-MacBook-Pro.local>\nCo-authored-by: zanderchase <zander@unfold.ag>\nCo-authored-by: Charles Frye <cfrye59@gmail.com>\nCo-authored-by: zanderchase <zanderchase@gmail.com>\nCo-authored-by: Shahriar Tajbakhsh <sh.tajbakhsh@gmail.com>\nCo-authored-by: Stefan Keselj <skeselj@princeton.edu>\nCo-authored-by: Francisco Ingham <fpingham@gmail.com>\nCo-authored-by: Dhruv Anand <105786647+dhruv-anand-aintech@users.noreply.github.com>\nCo-authored-by: cragwolfe <cragcw@gmail.com>\nCo-authored-by: Anton Troynikov <atroyn@users.noreply.github.com>\nCo-authored-by: William FH <13333726+hinthornw@users.noreply.github.com>\nCo-authored-by: Oliver Klingefjord <oliver@klingefjord.com>\nCo-authored-by: blob42 <contact@blob42.xyz>\nCo-authored-by: blob42 <spike@w530>\nCo-authored-by: Enrico Shippole <henryshippole@gmail.com>\nCo-authored-by: Ibis Prevedello <ibiscp@gmail.com>\nCo-authored-by: jped <jonathanped@gmail.com>\nCo-authored-by: Justin Torre <justintorre75@gmail.com>\nCo-authored-by: Ivan Vendrov <ivan@anthropic.com>\nCo-authored-by: Sasmitha Manathunga <70096033+mmz-001@users.noreply.github.com>\nCo-authored-by: Ankush Gola <9536492+agola11@users.noreply.github.com>\nCo-authored-by: Matt Robinson <mrobinson@unstructuredai.io>\nCo-authored-by: Jeff Huber <jeffchuber@gmail.com>\nCo-authored-by: Akshay <64036106+akshayvkt@users.noreply.github.com>\nCo-authored-by: Andrew Huang <jhuang16888@gmail.com>\nCo-authored-by: rogerserper <124558887+rogerserper@users.noreply.github.com>\nCo-authored-by: seanaedmiston <seane999@gmail.com>\nCo-authored-by: Hasegawa Yuya <52068175+Hase-U@users.noreply.github.com>\nCo-authored-by: Ivan Vendrov <ivendrov@gmail.com>\nCo-authored-by: Chen Wu (\u5434\u5c18) <henrychenwu@cmu.edu>\nCo-authored-by: Dennis Antela Martinez <dennis.antela@gmail.com>\nCo-authored-by: Maxime Vidal <max.vidal@hotmail.fr>\nCo-authored-by: Rishabh Raizada <110235735+rishabh-ti@users.noreply.github.com>"
+    },
+    {
+        "repo_url": "github.com/KarelDO/xmc.dspy",
+        "filepath": "src/programs/retriever.py",
+        "commit_date": "2024-01-30T03:16:13Z",
+        "message": "fix:reproduce embeddings and cacheable url in config"
+    },
+    {
+        "repo_url": "github.com/KarelDO/xmc.dspy",
+        "filepath": "src/programs/retriever.py",
+        "commit_date": "2024-01-29T02:32:43Z",
+        "message": "Initial commit"
+    },
+    {
+        "repo_url": "github.com/liangwq/LLM_StableDiffusion_Studio",
+        "filepath": "langchain_ChatGLM/chains/local_doc_qa.py",
+        "commit_date": "2023-04-23T16:08:09Z",
+        "message": "add controlnet"
+    },
+    {
+        "repo_url": "github.com/liangwq/LLM_StableDiffusion_Studio",
+        "filepath": "langchain_ChatGLM/chains/.ipynb_checkpoints/local_doc_qa-checkpoint.py",
+        "commit_date": "2023-04-23T16:08:09Z",
+        "message": "add controlnet"
+    },
+    {
+        "repo_url": "github.com/Azure/app-service-linux-docs",
+        "filepath": "HowTo/gRPC/Linux/OpenAI/LangChain/PyServer/venv/langchain/embeddings/self_hosted_hugging_face.py",
+        "commit_date": "2024-02-29T20:19:37Z",
+        "message": "adding windows grpc docs"
+    },
+    {
+        "repo_url": "github.com/gh18l/CrawlGPT",
+        "filepath": "langchain/embeddings/self_hosted_hugging_face.py",
+        "commit_date": "2023-05-25T16:22:45Z",
+        "message": "first"
+    },
+    {
+        "repo_url": "github.com/liangwq/Chatglm_lora_multi-gpu",
+        "filepath": "APP_example/langchain_ChatGLM/chains/.ipynb_checkpoints/local_doc_qa-checkpoint.py",
+        "commit_date": "2023-04-25T00:18:45Z",
+        "message": "add langchaina local konwledge"
+    },
+    {
+        "repo_url": "github.com/e0397123/AM-FM",
+        "filepath": "engines/embedding_models/sbert/make_multilingual.py",
+        "commit_date": "2021-02-23T11:48:13Z",
+        "message": "add new training code"
+    },
+    {
+        "repo_url": "github.com/night-chen/ToolQA",
+        "filepath": "benchmark/ReAct/code/tools/text/agenda_retriever.py",
+        "commit_date": "2023-07-14T00:40:59Z",
+        "message": "add tool implementations and ReAct"
+    },
+    {
+        "repo_url": "github.com/night-chen/ToolQA",
+        "filepath": "benchmark/ReAct/code/tools/text/scirex_retriever.py",
+        "commit_date": "2023-07-14T00:40:59Z",
+        "message": "add tool implementations and ReAct"
+    },
+    {
+        "repo_url": "github.com/Azure/app-service-linux-docs",
+        "filepath": "HowTo/gRPC/Linux/OpenAI/LangChain/PyServer/venv/Lib/langchain/embeddings/self_hosted_hugging_face.py",
+        "commit_date": "2024-02-29T20:19:37Z",
+        "message": "adding windows grpc docs"
+    },
+    {
+        "repo_url": "github.com/Koziev/chatbot",
+        "filepath": "ruchatbot/bot/sbert_relevancy_detector.py",
+        "commit_date": "2022-11-30T06:52:17Z",
+        "message": "pipeline optimization"
+    },
+    {
+        "repo_url": "github.com/Koziev/chatbot",
+        "filepath": "ruchatbot/bot/sbert_relevancy_detector.py",
+        "commit_date": "2022-10-18T16:11:16Z",
+        "message": "replacing text-question relevancy model with sentence transformer based one"
+    },
+    {
+        "repo_url": "github.com/Koziev/chatbot",
+        "filepath": "ruchatbot/bot/sbert_paraphrase_detector.py",
+        "commit_date": "2022-10-28T05:39:11Z",
+        "message": "enabling new sentence transformer-based paraphrase detection model in chatbot pipeline"
+    },
+    {
+        "repo_url": "github.com/zwhe99/X-SIR",
+        "filepath": "watermark.py",
+        "commit_date": "2024-02-23T11:48:43Z",
+        "message": "add files"
+    },
+    {
+        "repo_url": "github.com/zeus-dev919/sentence-transformers",
+        "filepath": "examples/training/multilingual/make_multilingual.py",
+        "commit_date": "2021-09-27T07:00:56Z",
+        "message": "revert model names"
+    },
+    {
+        "repo_url": "github.com/zeus-dev919/sentence-transformers",
+        "filepath": "examples/training/multilingual/make_multilingual.py",
+        "commit_date": "2021-09-07T12:46:11Z",
+        "message": "update pre-trained model"
+    },
+    {
+        "repo_url": "github.com/zeus-dev919/sentence-transformers",
+        "filepath": "examples/training/multilingual/make_multilingual.py",
+        "commit_date": "2021-06-08T12:08:53Z",
+        "message": "update model names to v2 models"
+    },
+    {
+        "repo_url": "github.com/zeus-dev919/sentence-transformers",
+        "filepath": "examples/training/multilingual/make_multilingual.py",
+        "commit_date": "2021-05-18T20:19:41Z",
+        "message": "update model name example"
+    },
+    {
+        "repo_url": "github.com/zeus-dev919/sentence-transformers",
+        "filepath": "examples/training/multilingual/make_multilingual.py",
+        "commit_date": "2021-01-02T13:28:56Z",
+        "message": "Merge branch 'per-module-logger' of https://github.com/jmrf/sentence-transformers into dev-0.4.1\n\n# Conflicts:\n#\texamples/training/avg_word_embeddings/training_stsbenchmark_avg_word_embeddings.py\n#\texamples/training/avg_word_embeddings/training_stsbenchmark_bilstm.py\n#\texamples/training/avg_word_embeddings/training_stsbenchmark_bow.py\n#\texamples/training/avg_word_embeddings/training_stsbenchmark_cnn.py\n#\texamples/training/avg_word_embeddings/training_stsbenchmark_tf-idf_word_embeddings.py\n#\texamples/training/data_augmentation/train_sts_indomain_bm25.py\n#\texamples/training/data_augmentation/train_sts_indomain_nlpaug.py\n#\texamples/training/data_augmentation/train_sts_indomain_semantic.py\n#\texamples/training/data_augmentation/train_sts_qqp_crossdomain.py\n#\texamples/training/data_augmentation/train_sts_seed_optimization.py\n#\texamples/training/distillation/model_distillation.py\n#\texamples/training/nli/training_nli.py\n#\texamples/training/other/training_batch_hard_trec.py\n#\texamples/training/other/training_multi-task.py\n#\texamples/training/sts/training_stsbenchmark.py\n#\texamples/training/sts/training_stsbenchmark_continue_training.py\n#\trequirements.txt\n#\tsentence_transformers/SentenceTransformer.py\n#\tsentence_transformers/__init__.py\n#\tsentence_transformers/datasets/SentenceLabelDataset.py"
+    },
+    {
+        "repo_url": "github.com/zeus-dev919/sentence-transformers",
+        "filepath": "examples/training/multilingual/make_multilingual.py",
+        "commit_date": "2020-12-23T21:19:15Z",
+        "message": "update batch hard example"
+    },
+    {
+        "repo_url": "github.com/zeus-dev919/sentence-transformers",
+        "filepath": "examples/training/multilingual/make_multilingual.py",
+        "commit_date": "2020-12-14T15:33:07Z",
+        "message": "per-file logger for all examples"
+    },
+    {
+        "repo_url": "github.com/zeus-dev919/sentence-transformers",
+        "filepath": "examples/training/multilingual/make_multilingual.py",
+        "commit_date": "2020-09-03T06:47:50Z",
+        "message": "Update dataset download URL"
+    },
+    {
+        "repo_url": "github.com/zeus-dev919/sentence-transformers",
+        "filepath": "examples/training/multilingual/make_multilingual.py",
+        "commit_date": "2020-08-26T17:46:08Z",
+        "message": "Typo"
+    },
+    {
+        "repo_url": "github.com/zeus-dev919/sentence-transformers",
+        "filepath": "examples/training/multilingual/make_multilingual.py",
+        "commit_date": "2020-08-26T17:44:00Z",
+        "message": "Bugfix"
+    },
+    {
+        "repo_url": "github.com/zeus-dev919/sentence-transformers",
+        "filepath": "examples/training/multilingual/make_multilingual.py",
+        "commit_date": "2020-08-22T21:52:38Z",
+        "message": "Update docs"
+    },
+    {
+        "repo_url": "github.com/databricks/databricks-ml-examples",
+        "filepath": "llm-models/embedding/bge/bge-large-v1.5/04_fine_tune_embedding.py",
+        "commit_date": "2023-11-14T01:42:54Z",
+        "message": "Add fine-tuning example for bge-v1.5 from marketplace"
+    },
+    {
+        "repo_url": "github.com/night-chen/ToolQA",
+        "filepath": "benchmark/chameleon/run_toolqa/tools/text/agenda_retriever.py",
+        "commit_date": "2023-08-19T02:34:07Z",
+        "message": "update chameleon and llama-2"
+    },
+    {
+        "repo_url": "github.com/night-chen/ToolQA",
+        "filepath": "benchmark/chameleon/run_toolqa/tools/text/scirex_retriever.py",
+        "commit_date": "2023-08-19T02:34:07Z",
+        "message": "update chameleon and llama-2"
+    },
+    {
+        "repo_url": "github.com/SonarSource/python-test-sources",
+        "filepath": "pecos/examples/MACLR/main.py",
+        "commit_date": "2022-10-13T13:14:45Z",
+        "message": "Add pecos"
+    },
+    {
+        "repo_url": "github.com/SonarSource/python-test-sources",
+        "filepath": "pecos/examples/MACLR/model.py",
+        "commit_date": "2022-10-13T13:14:45Z",
+        "message": "Add pecos"
+    },
+    {
+        "repo_url": "github.com/SonarSource/python-test-sources",
+        "filepath": "pecos/examples/MACLR/evaluate.py",
+        "commit_date": "2022-10-13T13:14:45Z",
+        "message": "Add pecos"
+    },
+    {
+        "repo_url": "github.com/LubyRuffy/cheatsheet",
+        "filepath": "ml/sentence_transformers_faiss_simplest_test.py",
+        "commit_date": "2024-01-10T13:20:43Z",
+        "message": "\u589e\u52a0wooyun\u63d0\u53d6\u8bed\u6599\u5e93\u7684\u5b9e\u9a8c\u7ed3\u679c\u3002"
+    },
+    {
+        "repo_url": "github.com/greenplum-db/GreenplumPython",
+        "filepath": "greenplumpython/experimental/embedding.py",
+        "commit_date": "2024-01-31T03:33:37Z",
+        "message": "Fix unique key missing problem with search (#232)\n\nWhen creating embeddings, we store the unique key attnum in pg_options. \nPreviously, the unique key attnum was taken from the original table, so\nthe error occurs if the\nembedding table and the original table have a different number or order\nof columns.\nThis patch saves the unique key attnum from the embedding table instead."
+    },
+    {
+        "repo_url": "github.com/greenplum-db/GreenplumPython",
+        "filepath": "greenplumpython/experimental/embedding.py",
+        "commit_date": "2023-12-07T02:38:22Z",
+        "message": "Fix missing unique key when searching embeddings (#226)\n\nUnique key is required when searching embeddings to join the\nembedding table and the original data table before returning the\nresults. Previously, search on a dataframe that created from an\nexisting table in database failed due to lacking of unique key in the\ndataframe.\n\nThis patch fixes the issue by recording the unique key when\n`create_index()` in `pg_class` so that the info can be read when\n`search()`."
+    },
+    {
+        "repo_url": "github.com/greenplum-db/GreenplumPython",
+        "filepath": "greenplumpython/experimental/embedding.py",
+        "commit_date": "2023-11-23T07:34:02Z",
+        "message": "Support more index types besides ivfflat (#224)\n\nPreviously, we only support indexing embeddings using the `ivfflat`\naccess method in [pgvector](https://github.com/pgvector/pgvector).\n\nRecently, a new access method `hnsw` has been added to pgvector.\n`hnsw` is believed to be more performant and accurate than `ivfflat`.\nTo allow for more flexibility, we add a new parameter `method` to\nallow user to choose which access method to use when creating index.\n\nAlso, a new parameter `embedding_dimension` is added to support more\nmodels, since dimension is required for pgvector to create index.\n\nA new test case for embeddings is added in `tests/test_embedding.py`.\n\nTo support `set allow_system_table_mods = on;`, Postgres is upgraded\nfrom 12 to 13 on CI."
+    },
+    {
+        "repo_url": "github.com/greenplum-db/GreenplumPython",
+        "filepath": "greenplumpython/experimental/embedding.py",
+        "commit_date": "2023-10-24T08:46:10Z",
+        "message": "Adapt vector modifier to model embedding dimension (#222)\n\nPreviously we set the vector modifier fix to 384. This patch\nallows vector modifier to adjust the embedding dimension\nif possible by extracting the appropriate information from \nthe Sentence Transformer's `Models.Pooling` class, \notherwise throwing an error."
+    },
+    {
+        "repo_url": "github.com/greenplum-db/GreenplumPython",
+        "filepath": "greenplumpython/experimental/embedding.py",
+        "commit_date": "2023-10-10T07:55:16Z",
+        "message": "Add tutorial for installing packages on server (#219)\n\nThis patch adds a notebook `package.ipynb` on how to install Python\npackages on server without Internet access. In the tutorial, NFS is used\nto share the packages among multiple hosts in the same cluster. This can\nsimplify the installation and maintenance process in a distributed env.\n\nThis patch also adds warnings to notify that some features are currently\nexperimental."
+    },
+    {
+        "repo_url": "github.com/greenplum-db/GreenplumPython",
+        "filepath": "greenplumpython/experimental/embedding.py",
+        "commit_date": "2023-09-27T01:42:50Z",
+        "message": "Support bulk data loading from client (#217)\n\nPreviously, to upload data from client to the database, the only way is\nto call `DataFrame.from_rows()` or `DataFrame.from_columns()`. In this\nway, data will be serialized as part of the query. When data is large,\nthe query will become very long and can take large amount of memory.\n\nThis patch fixes the issue by uploading the data files to the database\nwith `COPY FROM STDIN`. In this way, the query can be kept short. After\nthe data files are copied, a UDF is called to parse the files into rows.\nThis makes it much easier to support various data formats, inluding the\nunseen ones.\n\n---------\n\nCo-authored-by: yihong0618 <zouzou0208@gmail.com>"
+    },
+    {
+        "repo_url": "github.com/greenplum-db/GreenplumPython",
+        "filepath": "greenplumpython/experimental/embedding.py",
+        "commit_date": "2023-09-22T23:30:52Z",
+        "message": "Fix missing dependency on segments (#216)\n\nPrevisously, to record dependency, we used `UPDATE` in SQL to update\npg_depend. However, this only took effect on coordinator but not on\nsegments. As a result, the embedding index cannot be drop on segments\neven with `DROP CASCADE`.\n\nThis patch fixes this issue by calling the C function\n`recordDependencyOn()` with ctypes on all segements including\ncoordinator. As a result, `DROP CASCADE` will also clean the embedding\nindex on segments."
+    },
+    {
+        "repo_url": "github.com/greenplum-db/GreenplumPython",
+        "filepath": "greenplumpython/experimental/embedding.py",
+        "commit_date": "2023-08-28T12:11:40Z",
+        "message": "Add module for indexing and searching embeddings (#207)\n\nVector embeddings are essential for searching unstructured data, such\nas images and texts. Typically, to implement semantic search with\nembeddings, user will need to go through a complex process:\n\n1. Generate embeddings with transformers;\n2. Save the generated embeddings into a table;\n3. Create index on the generated embeddings;\n4. Search for items with most similar embeddings.\n\nTo simplify the process, this patch adds a new module that provides\nonly two functions: `create_index()` and `search()`. This hides all\nthe embedding-related details and enables user to focus only on the\ntext or image data that they are really interested in.\n\n---------\n\nCo-authored-by: Ruxue Zeng <zeng_ruxue@126.com>"
+    },
+    {
+        "repo_url": "github.com/Exploration-Lab/Shapes-of-Emotion",
+        "filepath": "sentence-transformers/examples/training/multilingual/make_multilingual.py",
+        "commit_date": "2021-06-27T07:46:02Z",
+        "message": "siamese training code added"
+    },
+    {
+        "repo_url": "github.com/liteli1987gmail/python_langchain-CN",
+        "filepath": "langchain/embeddings/huggingface.py",
+        "commit_date": "2023-06-12T08:07:56Z",
+        "message": "\u9879\u76ee\u521d\u59cb\u5316"
+    },
+    {
+        "repo_url": "github.com/liteli1987gmail/python_langchain-CN",
+        "filepath": "langchain/embeddings/self_hosted_hugging_face.py",
+        "commit_date": "2023-06-12T08:07:56Z",
+        "message": "\u9879\u76ee\u521d\u59cb\u5316"
+    },
+    {
+        "repo_url": "github.com/thaddavis/python_flask_langchain_open_ai_example",
+        "filepath": "python/langchain/embeddings/huggingface.py",
+        "commit_date": "2023-05-08T04:45:39Z",
+        "message": "all the cli commands to test a production-grade lambda function"
+    },
+    {
+        "repo_url": "github.com/thaddavis/python_flask_langchain_open_ai_example",
+        "filepath": "package/langchain/embeddings/huggingface.py",
+        "commit_date": "2023-05-08T04:45:39Z",
+        "message": "all the cli commands to test a production-grade lambda function"
+    },
+    {
+        "repo_url": "github.com/thaddavis/python_flask_langchain_open_ai_example",
+        "filepath": "package/langchain/embeddings/huggingface.py",
+        "commit_date": "2023-05-07T21:17:30Z",
+        "message": "saving progress"
+    },
+    {
+        "repo_url": "github.com/thaddavis/python_flask_langchain_open_ai_example",
+        "filepath": "package/langchain/embeddings/huggingface.py",
+        "commit_date": "2023-04-28T21:34:02Z",
+        "message": "initial commit"
+    },
+    {
+        "repo_url": "github.com/thaddavis/python_flask_langchain_open_ai_example",
+        "filepath": "python/langchain/embeddings/self_hosted_hugging_face.py",
+        "commit_date": "2023-05-08T04:45:39Z",
+        "message": "all the cli commands to test a production-grade lambda function"
+    },
+    {
+        "repo_url": "github.com/thaddavis/python_flask_langchain_open_ai_example",
+        "filepath": "package/langchain/embeddings/self_hosted_hugging_face.py",
+        "commit_date": "2023-04-28T21:34:02Z",
+        "message": "initial commit"
+    },
+    {
+        "repo_url": "github.com/worm128/AI-YinMei-backup",
+        "filepath": "text-generation-webui/extensions/openai/cache_embedding_model.py",
+        "commit_date": "2023-12-20T14:14:22Z",
+        "message": "\u521d\u59cb\u5316ai"
+    },
+    {
+        "repo_url": "github.com/GuyTevet/diversity-eval",
+        "filepath": "diversity_metrics.py",
+        "commit_date": "2020-07-17T15:26:02Z",
+        "message": "added utils.parse_path_list"
+    },
+    {
+        "repo_url": "github.com/GuyTevet/diversity-eval",
+        "filepath": "diversity_metrics.py",
+        "commit_date": "2020-07-13T14:28:18Z",
+        "message": "Firs release - data, run_metrics, run_experiments (only a placeholder)"
+    },
+    {
+        "repo_url": "github.com/databricks-industry-solutions/product-search",
+        "filepath": "03_Fine_Tune_Model.py",
+        "commit_date": "2023-05-25T22:29:31Z",
+        "message": "Update Chroma.from_documents call's parameter names"
+    },
+    {
+        "repo_url": "github.com/databricks-industry-solutions/product-search",
+        "filepath": "03_Fine_Tune_Model.py",
+        "commit_date": "2023-05-25T14:54:16Z",
+        "message": "Add sentence_transformers into logged model's packages"
+    },
+    {
+        "repo_url": "github.com/databricks-industry-solutions/product-search",
+        "filepath": "03_Fine_Tune_Model.py",
+        "commit_date": "2023-05-24T21:29:42Z",
+        "message": "Add typing related dependency and versions"
+    },
+    {
+        "repo_url": "github.com/databricks-industry-solutions/product-search",
+        "filepath": "03_Fine_Tune_Model.py",
+        "commit_date": "2023-05-24T14:39:13Z",
+        "message": "Fix pip dependency; improve serving endpoint create/update code"
+    },
+    {
+        "repo_url": "github.com/databricks-industry-solutions/product-search",
+        "filepath": "03_Fine_Tune_Model.py",
+        "commit_date": "2023-05-08T21:26:57Z",
+        "message": "Update notebook with repo links"
+    },
+    {
+        "repo_url": "github.com/databricks-industry-solutions/product-search",
+        "filepath": "03_Fine_Tune_Model.py",
+        "commit_date": "2023-04-18T15:58:11Z",
+        "message": "Sample query tweaks"
+    },
+    {
+        "repo_url": "github.com/databricks-industry-solutions/product-search",
+        "filepath": "03_Fine_Tune_Model.py",
+        "commit_date": "2023-04-17T22:56:11Z",
+        "message": "Update cluster config in RUNME to unblock it in Azure"
+    },
+    {
+        "repo_url": "github.com/databricks-industry-solutions/product-search",
+        "filepath": "03_Fine_Tune_Model.py",
+        "commit_date": "2023-04-17T19:32:42Z",
+        "message": "init commit"
+    },
+    {
+        "repo_url": "github.com/databricks-industry-solutions/product-search",
+        "filepath": "02_Define_Basic_Search.py",
+        "commit_date": "2023-05-25T22:29:31Z",
+        "message": "Update Chroma.from_documents call's parameter names"
+    },
+    {
+        "repo_url": "github.com/databricks-industry-solutions/product-search",
+        "filepath": "02_Define_Basic_Search.py",
+        "commit_date": "2023-05-25T14:54:16Z",
+        "message": "Add sentence_transformers into logged model's packages"
+    },
+    {
+        "repo_url": "github.com/databricks-industry-solutions/product-search",
+        "filepath": "02_Define_Basic_Search.py",
+        "commit_date": "2023-05-24T21:29:42Z",
+        "message": "Add typing related dependency and versions"
+    },
+    {
+        "repo_url": "github.com/databricks-industry-solutions/product-search",
+        "filepath": "02_Define_Basic_Search.py",
+        "commit_date": "2023-05-24T14:39:13Z",
+        "message": "Fix pip dependency; improve serving endpoint create/update code"
+    },
+    {
+        "repo_url": "github.com/databricks-industry-solutions/product-search",
+        "filepath": "02_Define_Basic_Search.py",
+        "commit_date": "2023-05-08T21:26:57Z",
+        "message": "Update notebook with repo links"
+    },
+    {
+        "repo_url": "github.com/databricks-industry-solutions/product-search",
+        "filepath": "02_Define_Basic_Search.py",
+        "commit_date": "2023-04-18T15:58:11Z",
+        "message": "Sample query tweaks"
+    },
+    {
+        "repo_url": "github.com/databricks-industry-solutions/product-search",
+        "filepath": "02_Define_Basic_Search.py",
+        "commit_date": "2023-04-17T22:56:11Z",
+        "message": "Update cluster config in RUNME to unblock it in Azure"
+    },
+    {
+        "repo_url": "github.com/databricks-industry-solutions/product-search",
+        "filepath": "02_Define_Basic_Search.py",
+        "commit_date": "2023-04-17T19:32:42Z",
+        "message": "init commit"
+    },
+    {
+        "repo_url": "github.com/nestauk/innovation_sweet_spots",
+        "filepath": "innovation_sweet_spots/utils/embeddings_utils.py",
+        "commit_date": "2022-12-16T18:15:00Z",
+        "message": "[204] Optimal clustering parameters (#206)\n\n* Remove repitition from Vectors init and fix to wor with no vectors\n\n* Remove print statement\n\n* Simplify add_vectors\n\n* Remove unused variable\n\n* Add kmeans and grid search functions\n\n* Add bool for hdbscan clustering\n\n* Add highest_silhouette_model_params\n\n* Add notebook that uses new cluster functions\n\n* Speed up param_grid_search\n\n* added a visualisation of the optimal cluster\n\n* added a visualisation of the optimal cluster\n\n* Have separate grid search functions for Kmeans and HDBSCAN and add random state\n\n* Update example notebook to use new functions\n\n* Update functions to allow for noise labels\n\n* Update example notebook to use have_noise_labels parameter\n\nCo-authored-by: beingkk <kandersk@gmail.com>\nCo-authored-by: Karlis Kanders <beingkk@users.noreply.github.com>"
+    },
+    {
+        "repo_url": "github.com/nestauk/innovation_sweet_spots",
+        "filepath": "innovation_sweet_spots/utils/embeddings_utils.py",
+        "commit_date": "2022-12-14T14:15:30Z",
+        "message": "[162] Find OpenAlex concepts related to food tech (#167)\n\n* added notebook and utils to query openalex concepts\n\n* NIHR getters + functions for loading/saving from S3\n\n* Add openalex concept notebook for all terms\n\nCo-authored-by: dede95 <adotu95@gmail.com>"
+    },
+    {
+        "repo_url": "github.com/nestauk/innovation_sweet_spots",
+        "filepath": "innovation_sweet_spots/utils/embeddings_utils.py",
+        "commit_date": "2022-07-27T10:43:15Z",
+        "message": "[149] Granular food tech investments categories (#154)\n\n* script to generate label embeddings\n\n* exploring embeddings and labels\n\n* checking labels\n\n* granular category support\n\n* figure functions for refinement notebook\n\n* deeper dive\n\n* figures for workshop\n\n* exporting companies to check"
+    },
+    {
+        "repo_url": "github.com/nestauk/innovation_sweet_spots",
+        "filepath": "innovation_sweet_spots/utils/embeddings_utils.py",
+        "commit_date": "2022-06-28T14:42:01Z",
+        "message": "[115] Parenting company exploration (#118)\n\n* exploration notebook\n\n* filtering keywords\n\n* selecting companies and clustering\n\n* renaming files\n\n* updated tokenisation output file name\n\n* brand aligned plotting utils\n\n* finishing a suite of basic analyses and graphs\n\n* stashing changes\n\n* reviewed companies\n\n* exploding funding rounds\n\n* pulling out VCs\n\n* stashing changes\n\n* adjusted filenames\n\n* getting tables\n\n* vc analysis\n\n* parenting futures article"
+    },
+    {
+        "repo_url": "github.com/nestauk/innovation_sweet_spots",
+        "filepath": "innovation_sweet_spots/utils/embeddings_utils.py",
+        "commit_date": "2022-06-17T09:55:08Z",
+        "message": "[148] Food tech rapid exploration (#153)\n\n* rapid exploration\n\n* rapid insights and landscape\n\n* adjusting utils\n\n* rapid exploration"
+    },
+    {
+        "repo_url": "github.com/nestauk/innovation_sweet_spots",
+        "filepath": "innovation_sweet_spots/analysis/notebooks/y2023_childcare/03_cb_embeddings.py",
+        "commit_date": "2023-07-21T16:32:36Z",
+        "message": "[241] Childcare investments (#215)\n\n* wrangling holoniq taxonomy\n\n* merging cb data with holoniq companies\n\n* processing company descriptions\n\n* compiling initial list of companies\n\n* childcare startups\n\n* sifting CB\n\n* updating list_v2\n\n* changing folder names\n\n* pipeline to label companies using chatgpt api\n\n* openai labelling\n\n* training subtheme model\n\n* test aws\n\n* labelling subthemes\n\n* descriptive analysis\n\n* descriptive analysis\n\n* final article analysis\n\n* final charts\n\n* syncing notebooks"
+    },
+    {
+        "repo_url": "github.com/nestauk/innovation_sweet_spots",
+        "filepath": "innovation_sweet_spots/analysis/notebooks/y2023_childcare/06_aligning_taxonomies.py",
+        "commit_date": "2023-07-21T16:32:36Z",
+        "message": "[241] Childcare investments (#215)\n\n* wrangling holoniq taxonomy\n\n* merging cb data with holoniq companies\n\n* processing company descriptions\n\n* compiling initial list of companies\n\n* childcare startups\n\n* sifting CB\n\n* updating list_v2\n\n* changing folder names\n\n* pipeline to label companies using chatgpt api\n\n* openai labelling\n\n* training subtheme model\n\n* test aws\n\n* labelling subthemes\n\n* descriptive analysis\n\n* descriptive analysis\n\n* final article analysis\n\n* final charts\n\n* syncing notebooks"
+    },
+    {
+        "repo_url": "github.com/dDua/succesive_prompting",
+        "filepath": "eluther_task/cot_drop.py",
+        "commit_date": "2022-12-08T13:14:02Z",
+        "message": "fix whitespace"
+    },
+    {
+        "repo_url": "github.com/dDua/succesive_prompting",
+        "filepath": "eluther_task/cot_drop.py",
+        "commit_date": "2022-12-08T13:09:40Z",
+        "message": "add task files"
+    },
+    {
+        "repo_url": "github.com/allenai/open-mds",
+        "filepath": "src/open_mds/perturbations.py",
+        "commit_date": "2022-12-08T23:09:13Z",
+        "message": "Remove remaining reference to \"worst-case\""
+    },
+    {
+        "repo_url": "github.com/allenai/open-mds",
+        "filepath": "src/open_mds/perturbations.py",
+        "commit_date": "2022-11-30T18:17:19Z",
+        "message": "Rename src dir"
+    },
+    {
+        "repo_url": "github.com/IAAR-Shanghai/CRUD_RAG",
+        "filepath": "src/embeddings/base.py",
+        "commit_date": "2024-01-31T12:06:58Z",
+        "message": "init"
+    },
+    {
+        "repo_url": "github.com/bentrevett/lexisearch",
+        "filepath": "query_index.py",
+        "commit_date": "2022-10-26T20:20:31Z",
+        "message": "fixed query to use k argument"
+    },
+    {
+        "repo_url": "github.com/bentrevett/lexisearch",
+        "filepath": "query_index.py",
+        "commit_date": "2022-10-26T20:14:44Z",
+        "message": "reformat to get video title"
+    },
+    {
+        "repo_url": "github.com/bentrevett/lexisearch",
+        "filepath": "query_index.py",
+        "commit_date": "2022-10-26T18:57:24Z",
+        "message": "add query arg"
+    },
+    {
+        "repo_url": "github.com/bentrevett/lexisearch",
+        "filepath": "query_index.py",
+        "commit_date": "2022-10-25T22:20:48Z",
+        "message": "format w/ isort and black"
+    },
+    {
+        "repo_url": "github.com/bentrevett/lexisearch",
+        "filepath": "query_index.py",
+        "commit_date": "2022-10-25T22:14:46Z",
+        "message": "added file for querying index"
+    },
+    {
+        "repo_url": "github.com/bentrevett/lexisearch",
+        "filepath": "create_index.py",
+        "commit_date": "2022-10-25T22:20:48Z",
+        "message": "format w/ isort and black"
+    },
+    {
+        "repo_url": "github.com/bentrevett/lexisearch",
+        "filepath": "create_index.py",
+        "commit_date": "2022-10-25T22:14:34Z",
+        "message": "added file for creating faiss index"
+    },
+    {
+        "repo_url": "github.com/danilodiez/neo4j-llms",
+        "filepath": "api/llm-api/lib/python3.10/site-packages/langchain/embeddings/huggingface.py",
+        "commit_date": "2023-09-26T12:38:02Z",
+        "message": "connect neo4j and retrieve info with the LLM"
+    },
+    {
+        "repo_url": "github.com/danilodiez/neo4j-llms",
+        "filepath": "api/llm-api/lib/python3.10/site-packages/langchain/embeddings/self_hosted_hugging_face.py",
+        "commit_date": "2023-09-26T12:38:02Z",
+        "message": "connect neo4j and retrieve info with the LLM"
+    },
+    {
+        "repo_url": "github.com/jasonacox/TinyLLM",
+        "filepath": "chatbot/server-flask.py",
+        "commit_date": "2024-02-11T22:31:41Z",
+        "message": "Merge branch 'main' into fastapi"
+    },
+    {
+        "repo_url": "github.com/jasonacox/TinyLLM",
+        "filepath": "chatbot/server-flask.py",
+        "commit_date": "2024-02-11T22:25:49Z",
+        "message": "v0.11.4 Flask udates"
+    },
+    {
+        "repo_url": "github.com/jasonacox/TinyLLM",
+        "filepath": "chatbot/server-flask.py",
+        "commit_date": "2024-02-11T07:18:42Z",
+        "message": "Port to FastAPI #1"
+    },
+    {
+        "repo_url": "github.com/ML-Recipes/BERT-FAQ",
+        "filepath": "faq_bert.py",
+        "commit_date": "2021-04-01T09:30:22Z",
+        "message": "Update import CrossEncoder class from sentence-transformers"
+    },
+    {
+        "repo_url": "github.com/ML-Recipes/BERT-FAQ",
+        "filepath": "faq_bert.py",
+        "commit_date": "2021-03-15T09:09:16Z",
+        "message": "Refactor checking loss type in FAQ_BERT model prediction"
+    },
+    {
+        "repo_url": "github.com/ML-Recipes/BERT-FAQ",
+        "filepath": "faq_bert.py",
+        "commit_date": "2021-03-02T14:45:50Z",
+        "message": "Add scripts to generate Elasticsearch, BERT and top-k reranked results"
+    },
+    {
+        "repo_url": "github.com/prasaar/aiwhispr",
+        "filepath": "python/llm-service/libSbertLlmService.py",
+        "commit_date": "2023-10-18T13:16:14Z",
+        "message": "suppprt for text chunking."
+    },
+    {
+        "repo_url": "github.com/prasaar/aiwhispr",
+        "filepath": "python/llm-service/libSbertLlmService.py",
+        "commit_date": "2023-09-22T03:44:33Z",
+        "message": "Support for testConnect (First Batch)"
+    },
+    {
+        "repo_url": "github.com/prasaar/aiwhispr",
+        "filepath": "python/llm-service/libSbertLlmService.py",
+        "commit_date": "2023-09-09T14:37:26Z",
+        "message": "Support llm_service_config passes as a dict"
+    },
+    {
+        "repo_url": "github.com/prasaar/aiwhispr",
+        "filepath": "python/llm-service/libSbertLlmService.py",
+        "commit_date": "2023-08-27T08:26:24Z",
+        "message": "Support for spawning multiple processes for indexing"
+    },
+    {
+        "repo_url": "github.com/prasaar/aiwhispr",
+        "filepath": "python/llm-service/libSbertLlmService.py",
+        "commit_date": "2023-08-08T08:16:08Z",
+        "message": "added libary for LLM Sbert Model"
+    },
+    {
+        "repo_url": "github.com/aws-solutions-library-samples/guidance-for-custom-search-of-an-enterprise-knowledge-base-on-aws",
+        "filepath": "lambda/langchain_processor_layer/python/langchain/embeddings/huggingface.py",
+        "commit_date": "2023-10-29T13:52:50Z",
+        "message": "v3 debug branch init"
+    },
+    {
+        "repo_url": "github.com/aws-solutions-library-samples/guidance-for-custom-search-of-an-enterprise-knowledge-base-on-aws",
+        "filepath": "lambda/langchain_processor_layer/python/langchain/embeddings/huggingface.py",
+        "commit_date": "2023-08-21T04:21:56Z",
+        "message": "add llama2 function"
+    },
+    {
+        "repo_url": "github.com/aws-solutions-library-samples/guidance-for-custom-search-of-an-enterprise-knowledge-base-on-aws",
+        "filepath": "lambda/langchain_processor_layer/python/langchain/embeddings/self_hosted_hugging_face.py",
+        "commit_date": "2023-10-29T13:52:50Z",
+        "message": "v3 debug branch init"
+    },
+    {
+        "repo_url": "github.com/aws-solutions-library-samples/guidance-for-custom-search-of-an-enterprise-knowledge-base-on-aws",
+        "filepath": "lambda/langchain_processor_layer/python/langchain/embeddings/self_hosted_hugging_face.py",
+        "commit_date": "2023-08-21T04:21:56Z",
+        "message": "add llama2 function"
+    },
+    {
+        "repo_url": "github.com/Mickls/knowledge_with_chatglm",
+        "filepath": "knowledge_query.py",
+        "commit_date": "2023-04-18T07:51:09Z",
+        "message": "Initial commit"
+    },
+    {
+        "repo_url": "github.com/MoroccoAI/2023-GenAI-Hackathon",
+        "filepath": "Neural-Net-Ninjas/src/venv/Lib/site-packages/langchain_community/embeddings/huggingface.py",
+        "commit_date": "2023-12-17T20:17:57Z",
+        "message": "upload"
+    },
+    {
+        "repo_url": "github.com/MoroccoAI/2023-GenAI-Hackathon",
+        "filepath": "Neural-Net-Ninjas/src/venv/Lib/site-packages/langchain_community/embeddings/self_hosted_hugging_face.py",
+        "commit_date": "2023-12-17T20:17:57Z",
+        "message": "upload"
+    },
+    {
+        "repo_url": "github.com/chiayewken/sutd-materials",
+        "filepath": "deep_learning/project/embedding.py",
+        "commit_date": "2020-08-02T03:16:16Z",
+        "message": "Update for AI, NLP, DL, CV coursework"
+    },
+    {
+        "repo_url": "github.com/casia22/npc-engine",
+        "filepath": "release/windows_ver/python_lib/python-3.9.6-embed-amd64/lib/site-packages/langchain/embeddings/huggingface.py",
+        "commit_date": "2023-08-12T10:44:40Z",
+        "message": "[add]windows\u7248\u672c\u652f\u6301"
+    },
+    {
+        "repo_url": "github.com/casia22/npc-engine",
+        "filepath": "release/windows_ver/python_lib/python-3.9.6-embed-amd64/lib/site-packages/langchain/embeddings/self_hosted_hugging_face.py",
+        "commit_date": "2023-08-12T10:44:40Z",
+        "message": "[add]windows\u7248\u672c\u652f\u6301"
+    },
+    {
+        "repo_url": "github.com/VK-Ant/PDF_CSV_Based_ChatBot_With_Translator_Using_Streamlit",
+        "filepath": "pdfchatbot_streamlit/chatbot_env/lib/python3.9/site-packages/langchain/embeddings/huggingface.py",
+        "commit_date": "2023-06-04T09:32:20Z",
+        "message": "chatbot initial setup"
+    },
+    {
+        "repo_url": "github.com/VK-Ant/PDF_CSV_Based_ChatBot_With_Translator_Using_Streamlit",
+        "filepath": "pdfchatbot_streamlit/chatbot_env/lib/python3.9/site-packages/langchain/embeddings/self_hosted_hugging_face.py",
+        "commit_date": "2023-06-04T09:32:20Z",
+        "message": "chatbot initial setup"
+    },
+    {
+        "repo_url": "github.com/bergos/embedding-server",
+        "filepath": "app/load_transformers.py",
+        "commit_date": "2023-04-24T21:45:55Z",
+        "message": "initial commit"
+    },
+    {
+        "repo_url": "github.com/MichiganNLP/In-the-wild-QA",
+        "filepath": "src/src/closest_rtr/closest_rtr.py",
+        "commit_date": "2023-03-16T20:57:01Z",
+        "message": "Fix answer field name for some baselines"
+    },
+    {
+        "repo_url": "github.com/MichiganNLP/In-the-wild-QA",
+        "filepath": "src/src/closest_rtr/closest_rtr.py",
+        "commit_date": "2023-03-16T20:06:07Z",
+        "message": "Make IoUF1 return the result for multiple IoU thresholds and add Average Precision"
+    },
+    {
+        "repo_url": "github.com/MichiganNLP/In-the-wild-QA",
+        "filepath": "src/src/closest_rtr/closest_rtr.py",
+        "commit_date": "2022-04-15T19:52:32Z",
+        "message": "Fix Closest RTR baseline"
+    },
+    {
+        "repo_url": "github.com/MichiganNLP/In-the-wild-QA",
+        "filepath": "src/src/closest_rtr/closest_rtr.py",
+        "commit_date": "2022-04-15T19:37:50Z",
+        "message": "Reuse the PL module and metrics for the simple baselines"
+    },
+    {
+        "repo_url": "github.com/MichiganNLP/In-the-wild-QA",
+        "filepath": "src/src/closest_rtr/closest_rtr.py",
+        "commit_date": "2022-04-15T00:01:21Z",
+        "message": "Fix the tokenizer"
+    },
+    {
+        "repo_url": "github.com/MichiganNLP/In-the-wild-QA",
+        "filepath": "src/src/closest_rtr/closest_rtr.py",
+        "commit_date": "2022-04-14T22:13:48Z",
+        "message": "Fix the closest question baseline"
+    },
+    {
+        "repo_url": "github.com/MichiganNLP/In-the-wild-QA",
+        "filepath": "src/src/closest_rtr/closest_rtr.py",
+        "commit_date": "2022-04-14T14:12:37Z",
+        "message": "Simplify __main__.py"
+    },
+    {
+        "repo_url": "github.com/MichiganNLP/In-the-wild-QA",
+        "filepath": "src/src/closest_rtr/closest_rtr.py",
+        "commit_date": "2022-04-13T17:26:34Z",
+        "message": "Fix __main__.py"
+    },
+    {
+        "repo_url": "github.com/MichiganNLP/In-the-wild-QA",
+        "filepath": "src/src/closest_rtr/closest_rtr.py",
+        "commit_date": "2022-04-06T20:17:34Z",
+        "message": "Add the metrics to be computed during training"
+    },
+    {
+        "repo_url": "github.com/MichiganNLP/In-the-wild-QA",
+        "filepath": "src/src/closest_rtr/closest_rtr.py",
+        "commit_date": "2022-02-21T22:22:26Z",
+        "message": "Fix type of index"
+    },
+    {
+        "repo_url": "github.com/MichiganNLP/In-the-wild-QA",
+        "filepath": "src/src/closest_rtr/closest_rtr.py",
+        "commit_date": "2022-02-18T21:37:35Z",
+        "message": "Add some typing and refactor"
+    },
+    {
+        "repo_url": "github.com/MichiganNLP/In-the-wild-QA",
+        "filepath": "src/src/closest_rtr/closest_rtr.py",
+        "commit_date": "2022-02-17T16:56:14Z",
+        "message": "Updated script to work with modified version of the collected data"
+    },
+    {
+        "repo_url": "github.com/MichiganNLP/In-the-wild-QA",
+        "filepath": "src/src/closest_rtr/closest_rtr.py",
+        "commit_date": "2021-12-15T09:01:26Z",
+        "message": "Optimize imports"
+    },
+    {
+        "repo_url": "github.com/MichiganNLP/In-the-wild-QA",
+        "filepath": "src/src/closest_rtr/closest_rtr.py",
+        "commit_date": "2021-12-10T21:28:40Z",
+        "message": "WIP"
+    },
+    {
+        "repo_url": "github.com/MichiganNLP/In-the-wild-QA",
+        "filepath": "src/src/closest_rtr/closest_rtr.py",
+        "commit_date": "2021-12-10T19:55:32Z",
+        "message": "WIP"
+    },
+    {
+        "repo_url": "github.com/MichiganNLP/In-the-wild-QA",
+        "filepath": "src/src/closest_rtr/closest_rtr.py",
+        "commit_date": "2021-10-14T18:57:17Z",
+        "message": "Refactored the src directory"
+    },
+    {
+        "repo_url": "github.com/Becomebright/GroundVQA",
+        "filepath": "eval.py",
+        "commit_date": "2024-02-25T06:25:44Z",
+        "message": "The initial release"
+    }
+]

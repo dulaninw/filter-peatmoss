@@ -1,0 +1,3962 @@
+repo_url,filepath,commit_date,message
+github.com/google-research/google-research,agile_modeling/load_clip.py,2024-01-23T00:22:24Z,"Open-sourcing the code for ""CLIP as RNN: Segment Countless Visual Concepts without Training Endeavor"".
+https://arxiv.org/abs/2312.07661
+
+PiperOrigin-RevId: 600601383"
+github.com/google-research/google-research,agile_modeling/load_clip.py,2023-09-15T18:25:10Z,"Steps 1-3 (up to initial model training) ported to external colab.
+
+PiperOrigin-RevId: 565729930"
+github.com/langchain-ai/langchain,libs/experimental/langchain_experimental/open_clip/open_clip.py,2024-02-24T02:24:16Z,"experimental: docstrings update (#18048)
+
+Added missed docstrings. Formatted docsctrings to the consistent format."
+github.com/langchain-ai/langchain,libs/experimental/langchain_experimental/open_clip/open_clip.py,2024-01-02T20:09:45Z,"langchain[patch], experimental[patch]: replace langchain.schema imports (#15410)
+
+Import from core instead.
+
+Ran:
+```bash
+git grep -l 'from langchain.schema\.output_parser' | xargs -L 1 sed -i '' ""s/from\ langchain\.schema\.output_parser/from\ langchain_core.output_parsers/g""
+git grep -l 'from langchain.schema\.messages' | xargs -L 1 sed -i '' ""s/from\ langchain\.schema\.messages/from\ langchain_core.messages/g""
+git grep -l 'from langchain.schema\.document' | xargs -L 1 sed -i '' ""s/from\ langchain\.schema\.document/from\ langchain_core.documents/g""
+git grep -l 'from langchain.schema\.runnable' | xargs -L 1 sed -i '' ""s/from\ langchain\.schema\.runnable/from\ langchain_core.runnables/g""
+git grep -l 'from langchain.schema\.vectorstore' | xargs -L 1 sed -i '' ""s/from\ langchain\.schema\.vectorstore/from\ langchain_core.vectorstores/g""
+git grep -l 'from langchain.schema\.language_model' | xargs -L 1 sed -i '' ""s/from\ langchain\.schema\.language_model/from\ langchain_core.language_models/g""
+git grep -l 'from langchain.schema\.embeddings' | xargs -L 1 sed -i '' ""s/from\ langchain\.schema\.embeddings/from\ langchain_core.embeddings/g""
+git grep -l 'from langchain.schema\.storage' | xargs -L 1 sed -i '' ""s/from\ langchain\.schema\.storage/from\ langchain_core.stores/g""
+git checkout master libs/langchain/tests/unit_tests/schema/
+make format
+cd libs/experimental
+make format
+cd ../langchain
+make format
+```"
+github.com/langchain-ai/langchain,libs/experimental/langchain_experimental/open_clip/open_clip.py,2023-12-05T21:36:38Z,"Multi-modal RAG template (#14186)
+
+* OpenCLIP embeddings
+* GPT-4V
+
+---------
+
+Co-authored-by: Erick Friis <erick@langchain.dev>"
+github.com/langchain-ai/langchain,libs/experimental/langchain_experimental/open_clip/open_clip.py,2023-12-01T23:13:20Z,"Update Open CLIP embd (#14155)
+
+Prior default model required a large amt of RAM and often crashed
+Jupyter ntbk kernel."
+github.com/langchain-ai/langchain,libs/experimental/langchain_experimental/open_clip/open_clip.py,2023-11-10T17:43:10Z,"Add Chroma multimodal cookbook (#12952)
+
+Pending:
+* https://github.com/chroma-core/chroma/pull/1294
+* https://github.com/chroma-core/chroma/pull/1293
+
+---------
+
+Co-authored-by: Erick Friis <erick@langchain.dev>
+Co-authored-by: Bagatur <baskaryan@gmail.com>"
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2024-02-21T21:37:25Z,"[ENH] Remove ONNX Logspam (#1747)
+
+## Description of changes
+
+After 1.17, ONNXRuntime produces scary warnings on mac platforms,
+because it tries to put our default embedding function into the CoreML
+execution environment, where it doesn't fit.
+
+This PR suppresses warnings from ONNX within the default embedding
+function so that users don't see scary warnings.
+
+## Test plan
+
+Locally tested via the `start_here` notebook.
+
+## Documentation Changes
+N/A"
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2024-01-17T17:13:57Z,"[WIP] [ENH] add exponential backoff and jitter to embedding calls (#1526)
+
+This is a WIP, closes https://github.com/chroma-core/chroma/issues/1524
+
+*Summarize the changes made by this PR.*
+ - Improvements & Bug fixes
+	 - Use `tenacity` to add exponential backoff and jitter
+ - New functionality
+- control the parameters of the exponential backoff and jitter and allow
+the user to use their own wait functions from `tenacity`'s API
+
+## Test plan
+*How are these changes tested?*
+
+- [x] Tests pass locally with `pytest` for python, `yarn test` for js
+
+## Documentation Changes
+None"
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2024-01-11T21:13:27Z,"[BUG]Type errors in embading function #1169 (#1517)
+
+## Description of changes
+
+- Added correct type annotations for these methods #1169 
+
+## Test plan
+*How are these changes tested?*
+
+- [ ] Tests pass locally with `pytest` for python, `yarn test` for js
+
+## Documentation Changes
+*Are all docstrings for user-facing APIs updated if required? Do we need
+to make documentation changes in the [docs
+repository](https://github.com/chroma-core/docs)?*
+
+---------
+
+Co-authored-by: Ran <rccalman@gmail.com>
+Co-authored-by: Ben Eggers <64657842+beggers@users.noreply.github.com>"
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2024-01-05T18:14:56Z,"Replace ONNXMiniLM_L6_V2._init_model_and_tokenizer with tokenizer and model cached properties (#1194)
+
+## Description of changes
+
+*Summarize the changes made by this PR.*
+ - Improvements & Bug fixes
+- Fixes #1193: race condition in
+`ONNXMiniLM_L6_V2._init_model_and_tokenizer`
+
+## Test plan
+*How are these changes tested?*
+
+- [x] Tests pass locally with `pytest` for python, `yarn test` for js"
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2024-01-04T17:11:40Z,"[CLN] Import json at top-level in embedding_functions (#1562)
+
+## Description of changes
+
+*Summarize the changes made by this PR.*
+ - Improvements & Bug fixes
+	 - Move `import json` out of Amazon Bedrock EF and to top-level imports
+
+## Test plan
+*How are these changes tested?*
+
+- [x] Tests pass locally with `pytest` for python, `yarn test` for js
+
+## Documentation Changes
+*Are all docstrings for user-facing APIs updated if required? Do we need
+to make documentation changes in the [docs
+repository](https://github.com/chroma-core/docs)?*"
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-12-23T21:46:19Z,"identity to equality check (#1566)
+
+## Description of changes
+
+Changes identity `is` to equality `==` check
+
+Co-authored-by: Jeffrey Huber <jeff@trychroma.com>"
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-12-20T23:26:50Z,"Add Amazon Bedrock Embedding function (#1361)
+
+https://docs.aws.amazon.com/bedrock/latest/userguide/embeddings.html
+
+## Description of changes
+
+ - New functionality
+	 - Support Amazon Bedrock embedding function
+
+## Test plan
+
+- [ ] Tests pass locally with `pytest` for python, `yarn test` for js
+
+Tested locally by given profile_name with appropreate `~/.aws/config`
+
+```py
+>>> import boto3
+>>> from chromadb.utils.embedding_functions import AmazonBedrockEmbeddingFunction
+>>> session = boto3.Session(profile_name=""myprofile"", region_name=""us-east-1"")
+>>> ef = AmazonBedrockEmbeddingFunction(session=session)
+>>> ef([""Hello Bedrock""])
+[[-0.73046875, 0.390625, 0.24511719, 0.111816406, 0.83203125, 0.79296875,...,]]
+```
+
+## Documentation Changes
+Written docstrings as much as possible.
+
+---------
+
+Co-authored-by: Ben Eggers <64657842+beggers@users.noreply.github.com>"
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-12-19T21:56:33Z,"[ENH]: SHA256 sum check of Chroma's onnx model. (#1493)
+
+Refs: #883
+
+## Description of changes
+
+*Summarize the changes made by this PR.*
+ - Improvements & Bug fixes
+- Verify ONNX all-MiniLM-L6 model model download from s3 with static
+SHA256 (within the python code)
+
+## Test plan
+*How are these changes tested?*
+
+- [x] Tests pass locally with `pytest` for python
+
+## Documentation Changes
+N/A"
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-12-15T01:19:37Z,"Gemini (#1520)
+
+This adds a Google Gemini embedding function and an RAG chat example 
+
+TODO
+- [x] JS support
+- [x] Docs PR"
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-11-29T18:53:09Z,"[ENH]: Embedding Function - Hugging Face Text Embedding Server (#1371)
+
+Refs: [Feature Request]: Hugging Face text embedding inference custom
+embedding #1367
+
+## Description of changes
+
+*Summarize the changes made by this PR.*
+ - New functionality
+	 - New Embedding Function for HF Text Embedding Server
+	 - Added sample docker compose to run things locally
+	 - Added example notebook
+
+## Test plan
+*How are these changes tested?*
+
+- [x] Tests pass locally with `pytest` for python
+
+## Documentation Changes
+TBD
+
+https://github.com/huggingface/text-embeddings-inference"
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-11-28T22:58:15Z,"Remove redundant check for ""requests"" module (#1427)
+
+`requests` is imported in line 17, and hence required:
+
+
+https://github.com/chroma-core/chroma/blob/33289e8c5b0b5d65132a2995ab7199e83eaeacdf/chromadb/utils/embedding_functions.py#L17"
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-11-17T18:01:17Z,"Pass input_type to cohere embedding models (#1407)
+
+## Description of changes
+
+*Summarize the changes made by this PR.*
+ - Improvements & Bug fixes
+	 - Fixes https://github.com/chroma-core/chroma/issues/1385
+ - New functionality
+	 - ...
+
+## Test plan
+*How are these changes tested?*
+
+Got a Cohere API key and repro'd the issue locally. With this change,
+calling the embedding function no longer breaks.
+
+- [x] Tests pass locally with `pytest` for python, `yarn test` for js
+
+## Documentation Changes
+*Are all docstrings for user-facing APIs updated if required? Do we need
+to make documentation changes in the [docs
+repository](https://github.com/chroma-core/docs)?*"
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-11-17T06:32:03Z,"feat: add Jina AI embedding function (#1324)
+
+## Description of changes
+
+Hey Chroma team!
+
+We just launched [Jina Embeddings](https://jina.ai/embeddings/) and
+would love to add a possibilty for the community to use it with
+JinaEmbeddingFunctions.
+
+Thanks!
+
+## Documentation Changes
+Link to docs PR: https://github.com/chroma-core/docs/pull/153
+
+---------
+
+Signed-off-by: Joan Fontanals Martinez <joan.martinez@jina.ai>"
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-11-16T05:55:58Z,"ENH: Allow default headers to be passed to OpenAI API (#1397)
+
+## Description of changes
+
+*Summarize the changes made by this PR.*
+ - Improvements & Bug fixes
+- Allows users to pass custom headers to OpenAI API, enabling
+intermediary proxies with different authentication methods.
+ - New functionality
+- New optional `default_headers` input at the `OpenAIEmbeddingFunction`
+class.
+
+## Test plan
+*How are these changes tested?*
+
+- [x] Tests pass locally with `pytest` for python, `yarn test` for js
+
+## Documentation Changes
+*Are all docstrings for user-facing APIs updated if required? Do we need
+to make documentation changes in the [docs
+repository](https://github.com/chroma-core/docs)?*
+
+Since this is a relatively specific feature, I believe it won't require
+an usage example in the docs.
+
+Co-authored-by: Gustavo Antoniassi <gustavo.antoniassi@ifood.com.br>"
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-11-08T22:22:58Z,"support of OpenAI package v1.X.X for utils.OpenAIEmbeddingFunction, deployment_id parameter for openai v0.X.X (#1338)
+
+## Description of changes
+- Add support of OpenAI package v1.X.X for utils.OpenAIEmbeddingFunction
+- Add Azure OpenAI Deployment ID parameter for openai v0.X.X lib in
+utils.OpenAIEmbeddingFunction
+
+## Test plan
+*How are these changes tested?*
+
+Tested as dependency of https://github.com/Nayjest/ai-microcore with
+Azure & openai packages v0.28.1 & v1.0.1, v1.1.0"
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-11-07T22:07:53Z,"[ENH] Multimodal Embedding Functions (#1345)
+
+## Description of changes
+
+This PR introduces multi-modal embeddings into Chroma. 
+- It adds the generic `EmbeddingFunction` which can take various data
+types. Existing functions take the `Documents` type.
+- Adds `Images` as a type (numpy NDArray taking ints or floats)
+- Add `OpenCLIPEmbeddingFunction` which is an
+`EmbeddingFunction[Union[Documents, Images]]`
+
+## Test
+
+Integration tests pass. 
+
+A new test for multimodal embedding functions:
+[chromadb/test/ef/test_multimodal_ef.py](https://github.com/chroma-core/chroma/blob/86a9e2620352ee0b2844bc3233f9e001cc4aa3d9/chromadb/test/ef/test_multimodal_ef.py)
+
+## Documentation
+
+See https://github.com/chroma-core/chroma/pull/1294
+
+## TODOs
+- [x] Tests
+- [x] ~Wiring through FastAPI~ Nothing to wire through
+- [x] Documentation
+- [x] Telemetry
+- [ ] JavaScript"
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-11-07T18:00:00Z,"Revert ""[ENH] Multimodal Embeddings"" (#1344)
+
+Reverts chroma-core/chroma#1293"
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-11-07T17:57:00Z,"[ENH] Multimodal Embeddings (#1293)
+
+## Description of changes
+
+This PR introduces multi-modal embeddings into Chroma. 
+- It adds the generic `EmbeddingFunction` which can take various data
+types. Existing functions take the `Documents` type.
+- Adds `Images` as a type (numpy NDArray taking ints or floats)
+- Add `OpenCLIPEmbeddingFunction` which is an
+`EmbeddingFunction[Union[Documents, Images]]`
+
+## Test
+
+Integration tests pass. 
+
+A new test for multimodal embedding functions:
+[chromadb/test/ef/test_multimodal_ef.py](https://github.com/chroma-core/chroma/blob/86a9e2620352ee0b2844bc3233f9e001cc4aa3d9/chromadb/test/ef/test_multimodal_ef.py)
+
+## Documentation
+
+See https://github.com/chroma-core/chroma/pull/1294
+
+## TODOs
+- [x] Tests
+- [x] ~Wiring through FastAPI~ Nothing to wire through
+- [x] Documentation
+- [x] Telemetry
+- [ ] ~JavaScript~"
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-09-22T22:49:58Z,"[ENH] Metric batching and more metrics (#1163)
+
+## Description of changes
+This PR accomplishes two things:
+- Adds batching to metrics to decrease load to Posthog
+- Adds more metric instrumentation
+
+Each `TelemetryEvent` type now has a `batch_size` member defining how
+many of that Event to include in a batch. `TelemetryEvent`s with
+`batch_size > 1` must also define `can_batch()` and `batch()` methods to
+do the actual batching -- our posthog client can't do this itself since
+different `TelemetryEvent`s use different count fields. The Posthog
+client combines events until they hit their `batch_size` then fires them
+off as one event.
+
+NB: this means we can drop up to `batch_size` events -- since we only
+batch `add()` calls right now this seems fine, though we may want to
+address it in the future.
+
+As for the additional telemetry, I pretty much copied Anton's draft
+https://github.com/chroma-core/chroma/pull/859 with some minor changes.
+
+Other considerations: Maybe we should implement `can_batch()` and
+`batch()` on all events, even those which don't currently use them? I'd
+prefer not to leave dead code hanging around but happy to go either way.
+
+I created a ticket for the type ignores:
+https://github.com/chroma-core/chroma/issues/1169
+
+## Test plan
+pytest passes modulo a couple unrelated failures
+
+With `print(event.properties)` in posthog client's `_direct_capture()`:
+```
+>>> import chromadb
+>>> client = chromadb.Client()
+{'batch_size': 1}
+>>> collection = client.create_collection(""sample_collection"")
+{'batch_size': 1, 'collection_uuid': 'bb19d790-4ec7-436c-b781-46dab047625d', 'embedding_function': 'ONNXMiniLM_L6_V2'}
+>>> collection.add(
+...     documents=[""This is document1"", ""This is document2""], # we embed for you, or bring your own
+...     metadatas=[{""source"": ""notion""}, {""source"": ""google-docs""}], # filter on arbitrary metadata!
+...     ids=[""doc1"", ""doc2""], # must be unique for each doc 
+... )
+{'batch_size': 1, 'collection_uuid': 'bb19d790-4ec7-436c-b781-46dab047625d', 'add_amount': 2, 'with_documents': 2, 'with_metadata': 2}
+>>> for i in range(50):
+...   collection.add(documents=[str(i)], ids=[str(i)])
+... 
+{'batch_size': 20, 'collection_uuid': 'bb19d790-4ec7-436c-b781-46dab047625d', 'add_amount': 20, 'with_documents': 20, 'with_metadata': 0}
+{'batch_size': 20, 'collection_uuid': 'bb19d790-4ec7-436c-b781-46dab047625d', 'add_amount': 20, 'with_documents': 20, 'with_metadata': 0}
+>>> for i in range(50):
+...   collection.add(documents=[str(i) + ' ' + str(n) for n in range(20)], ids=[str(i) + ' ' + str(n) for n in range(20)])
+... 
+{'batch_size': 20, 'collection_uuid': 'bb19d790-4ec7-436c-b781-46dab047625d', 'add_amount': 210, 'with_documents': 210, 'with_metadata': 0}
+{'batch_size': 20, 'collection_uuid': 'bb19d790-4ec7-436c-b781-46dab047625d', 'add_amount': 400, 'with_documents': 400, 'with_metadata': 0}
+{'batch_size': 20, 'collection_uuid': 'bb19d790-4ec7-436c-b781-46dab047625d', 'add_amount': 400, 'with_documents': 400, 'with_metadata': 0}
+```
+
+## Documentation Changes
+https://github.com/chroma-core/docs/pull/139
+
+https://github.com/chroma-core/docs/commit/a4fd57d4d2cc3cae00cbb4a9245b938e2f0d1842"
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-08-29T17:18:53Z,"[ENH] Added providers to onnx runtime session (#1006)
+
+Refs:  https://onnxruntime.ai/docs/api/python/api_summary.html
+
+Refs: #1004
+
+## Description of changes
+
+*Summarize the changes made by this PR.*
+ - Improvements & Bug fixes
+- In multi-provider envs Onnyx Runtime requires that providers are
+specified (with order of preference) as input to the InferrenceSession
+
+## Test plan
+Ideally, we'll need a GPU runners for testing -
+https://github.com/github/roadmap/issues/505
+
+## Documentation Changes
+No change to docs is required.
+
+> Note: Sorry for the unsigned commit, I tried using GH Codespaces for
+this one."
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-08-15T01:18:11Z,"Fix model download for ONNX embedder (#976)
+
+## Description of changes
+The current function is looking for the tar.gz file instead of checking
+if the folder already exists, so if the tar.gz gets deleted after
+extraction, it downloads it again.. This PR resolves this and checks for
+the model in the extracted folder before attempting to download or
+extract again.
+
+## Test plan
+By using it
+
+## Documentation Changes
+I didn't find any documentation about how this does the download."
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-07-28T21:35:31Z,"fix: update api request (#890)
+
+## Description of changes
+
+*Summarize the changes made by this PR.*
+ - Improvements & Bug fixes
+	 - Update the API endpoint for Google VertexEmbedding
+ - New functionality
+	 - ...
+
+## Test plan
+*How are these changes tested?*
+At the moment, there is any unit test for embedding function. However I
+have tested the new code change locally and it worked.
+
+## Documentation Changes
+*Are all docstrings for user-facing APIs updated if required? Do we need
+to make documentation changes in the [docs
+repository](https://github.com/chroma-core/docs)?*
+
+1. The default model_name should be textembedding-gecko instead of
+textembedding-gecko-001
+2. The _api_url should be changed to
+3. The json payload should take in only 1 string instead of array of
+strings. Thus I made a for loop to call the api endpoint in the event
+there are arrays of text documents passed into the _call() function"
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-07-27T23:09:43Z,"add azure openai api_version param (#832)
+
+## Description of changes
+
+*Summarize the changes made by this PR.*
+ - Improvements & Bug fixes
+Fix the bug that causes functionality to be unavailable when using
+azure-openai due to missing api version parameter.
+openai examples:
+https://github.com/openai/openai-cookbook/blob/main/examples/azure/embeddings.ipynb
+ - New functionality
+	 - ...
+
+## Test plan
+*How are these changes tested?*
+
+## Documentation Changes
+*Are all docstrings for user-facing APIs updated if required? Do we need
+to make documentation changes in the [docs
+repository](https://github.com/chroma-core/docs)?*
+
+fix https://github.com/chroma-core/chroma/issues/698
+
+---------
+
+Co-authored-by: litong <you@example.com>"
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-07-27T23:06:23Z,"Update chromadb/utils/embedding_functions.py (#816)
+
+This is a copy of https://github.com/kevinlu1248/chroma/pull/7, written
+by Sweep, an AI junior dev.
+
+## Description of changes
+This PR adds documentation for the HuggingFace embeddings feature in the
+chroma repository. The HuggingFaceEmbeddingFunction class is already
+implemented in the `chromadb/utils/embedding_functions.py` file, but it
+is currently undocumented. This PR adds docstrings to the class and
+updates the README.md file to explain how to use the class and what it
+does.
+
+## Changes Made
+- Added docstrings to the HuggingFaceEmbeddingFunction class in
+`chromadb/utils/embedding_functions.py`
+- Updated the README.md file to include a section about the
+HuggingFaceEmbeddingFunction class, explaining its usage and providing
+an example
+- Mentioned that the requests package is required and provided the
+command to install it
+
+---------
+
+Co-authored-by: sweep-ai[bot] <128439645+sweep-ai[bot]@users.noreply.github.com>"
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-06-28T17:16:06Z,"Normalized embeddings (#737)
+
+## Description of changes
+Added support to the use of normalize embeddings in the
+`SentenceTransformerEmbeddingFunction` class by adding a new attribute
+to the class and use it when calling the `encode` function.
+
+## Test plan
+I was planning to add a new test case where an object was created with
+`normalize_embeddings=True` but I haven't found any test which is
+currently testing `SentenceTransformerEmbeddingFunction` (I guess that
+should be in the folder `test/utils`).
+
+## Documentation Changes
+The document talking about [embeddings] should be changed. In the
+section *Sentence Transformers* it should be mentioned the possiblitiy
+of using an optional parameter `normalize_embeddings`. A similar text to
+the one in the SentenceTransformer documentation could be used (or
+adapted):
+
+> If set to True, returned vectors will have length 1. In that case, the
+faster dot-product (util.dot_score) instead of cosine similarity can be
+used."
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-06-21T21:01:34Z,"fix wrong return type (#613)
+
+## Description of changes
+Related issue: #594
+*Summarize the changes made by this PR.*
+ - Improvements & Bug fixes
+- HuggingFaceEmbeddingFunction: fix wrong return type from List to
+List[List]
+- GoogleVertexEmbeddingFunction: fix wrong return type of empty dict to
+empty List
+
+## Test plan
+*How are these changes tested?*
+
+## Documentation Changes
+*Are all docstrings for user-facing APIs updated if required? Do we need
+to make documentation changes in the [docs
+repository](https://github.com/chroma-core/docs)?*
+
+---------
+
+Co-authored-by: Tegar Dani Pratama <tegar.dani@hukumonline.com>
+Co-authored-by: Jeffrey Huber <jeff@trychroma.com>"
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-05-31T21:23:10Z,"Add a thin client (#610)
+
+## Description of changes
+*Summarize the changes made by this PR.*
+ - Improvements & Bug fixes
+	 - Typing cleanup
+- Changes embedding function defaults to work through the default params
+as opposed to via None so that None now means - NO embedding function as
+opposed to use the default. This is technically a breaking change.
+ - New functionality
+- Adds a thin client that restricts what you can create to the REST api
+client and builds it separately so it can be published to its own pypi
+package. The thin client restricts the default embedding function to be
+None always - forcing manual specification of the embedding function
+while using the thin client.
+- The thin client is built with its own pyproject.toml with a limited
+set of dependencies and a is_thin_client.py file that acts as a compile
+flag. The build script stages the toml, places the two files in the
+right place, performs the build and then tears down the changes.
+	 
+Addresses #289 
+
+## Test plan
+The existing tests should cover this configuration. We can add CI for
+the thin-client in the future.
+
+## Documentation Changes
+We will add a section on the docs that explains the thin client and its
+limitations."
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-05-19T22:07:41Z,"Add Google Vertex Embedding Function (#528)
+
+Add Google Vertex Embedding Function
+
+
+https://console.cloud.google.com/vertex-ai/publishers/google/model-garden/textembedding-gecko?project=noted-victory-383712
+
+## Description of changes
+Added Google Vertex Embedding Function
+
+## Test plan
+By providing the API key and project ID.
+
+## Documentation Changes
+Has as much documentation as the others in that file.
+
+---------
+
+Co-authored-by: Jeffrey Huber <jeff@trychroma.com>"
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-05-19T22:06:46Z,"Add task instruction pairing to InstructorEmbeddingFunction (#556)
+
+## Description of changes
+
+- Add an optional `instruction` constructor parameter to
+InstructorEmbeddingFunction to allow `instruction` and Document pairs to
+be encoded.
+
+## Test plan
+
+
+## Documentation Changes
+Added examples to the Alternative Embedding notebook.
+
+Not sure if this is a good implementation, since you'll need a separate
+Collection for each instruction you want to use (or reassign
+`self._instruction`), but at least the change is pretty minimal. For my
+use case, two instructions are enough (one for storing, one for
+retrieving). For a scenario where you need lots of different
+instructions, perhaps ""Represent the <Science|Financial|Political|etc.>
+article: "", another solution is needed.
+
+Feature Request #546
+
+---------
+
+Co-authored-by: Jeffrey Huber <jeff@trychroma.com>"
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-05-19T07:30:04Z,"Switch to ONNX model for default embedding model (#267)
+
+## Description of changes
+
+*Summarize the changes made by this PR.* 
+ - Improvements & Bug fixes
+	 - None
+ - New functionality
+- Adds a ONNX port of sentence-transformers all-MiniLM-L6-v2 in order to
+remove the dependencies on pytorch, sentence-transformers,
+sentence-piece and other heavy depdencies. This reduced the on disk
+environment size needed for dependencies to run chroma from ~900MB to
+~300MB
+- The ONNX port and verification of its accuracy live in
+https://github.com/chroma-core/onnx-embedding
+- The ONNX model is hosted on S3 after being generated in the above repo
+- The implementation here runs the model and applies mean-pooling using
+numpy since that's the final layer.
+- The embedding model will download the model using tqdm to provide the
+same download experience as before
+	 - If the model is cached it will not be downloaded. 
+	 - In contrast to before, the model is now ONLY downloaded if used!
+- The net-new dependencies are onnxruntime and tokenizers, both are
+lightweight.
+	 - Updated the default model to be this one instead of ST.
+- We create a new DefaultEmbeddingFunction which aliases the ONNX
+embedding function
+
+## Test plan
+Added a test to test multiple batches with the new model
+
+## Documentation Changes
+*Are all docstrings for user-facing APIs updated if required? Do we need
+to make documentation changes in the [docs
+repository](https://github.com/chroma-core/docs)?*
+We will need to change the documentation here
+https://docs.trychroma.com/embeddings#default-sentence-transformers to
+highlight this fact."
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-05-19T05:11:55Z,"Added api_base and api_type to the OpenAIEmbeddingFunction  (#517)
+
+Added api_base and api_type to the OpenAIEmbeddingFunction to support
+outside the base openai deployment like Azure etc
+
+## Description of changes
+
+This PR adds support for deploying the OpenAIEmbeddingFunction on
+platforms other than the base OpenAI deployment, such as Azure, by
+allowing users to specify the `api_base` and `api_type` parameters.
+
+### Improvements & Bug fixes
+- None
+
+### New functionality
+- Added `api_base` and `api_type` as optional parameters to the
+`OpenAIEmbeddingFunction` to support deployment on other platforms like
+Azure, etc.
+
+## Test plan
+
+To test the changes made in this PR, the following steps can be taken:
+
+### Test against Azure
+1. Set up the OpenAIEmbeddingFunction with the new `api_base` and
+`api_type` parameters.
+2. Deploy the embedding model on the desired platform (e.g., Azure).
+3. Run sample embeddings and test the new deployment against the Azure
+deployment instance.
+
+### Test against Base Open AI
+1. Set up the OpenAIEmbeddingFunction with just the `api_key and without
+the new `api_base` and `api_type` parameters.
+2. Run sample embeddings and test the new deployment against the OpenAI
+instance.
+
+## Documentation Changes
+
+All docstrings for user-facing APIs needs to be updated to reflect the
+new `api_base` and `api_type` parameters. Additionally, documentation in
+the [docs repository](https://github.com/chroma-core/docs) should be
+updated to provide guidance on how to use the new parameters for
+deploying the OpenAIEmbeddingFunction on platforms other than the base
+OpenAI deployment. This change will be submitted as a separate pull
+request.
+
+---------
+
+Co-authored-by: Jeff Huber <jeff@trychroma.com>"
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-05-18T04:49:54Z,"Add organization_id to openai embeddings (#548)
+
+## Description of changes
+This related to #547 issue.
+ - New functionality added:
+	 - add optional organization_id parameter to OpenAIEmbeddingFunction.
+
+## Test plan
+- Create the class object without organization_id and no errors
+expected.
+- Create the class object with organization_id.
+
+## Documentation Changes
+*Are all docstrings for user-facing APIs updated if required? Do we need
+to make documentation changes in the [docs
+repository](https://github.com/chroma-core/docs)?*
+- The class optional parameters are not mentioned explicitly."
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-05-12T23:43:17Z,"Add Text2VecEmbeddingFunction (#417)
+
+Add Text2VecEmbeddingFunction for Chinese sentence embedding.
+
+Co-authored-by: hammadb <hammad@trychroma.com>"
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-05-11T21:50:57Z,Merge branch 'main' into main
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-05-10T05:52:12Z,"Add precommit hooks (#483)
+
+Adds precommit hooks based on #433 to our repository. Only one file here is new - the configuration for the hooks, everything else is linting/formatting fixes. We do not run the typechecker globally since that would be quite lengthy to clean up - instead we will have to incrementally clean up type check issues as we go."
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-05-09T18:23:22Z,"Add Google PaLM embedding function. (#445)
+
+* Add Google PaLM embedding function.
+
+* Address feedback by @markmcd.
+
+* Default model, import failure string
+
+---------
+
+Co-authored-by: atroyn <anton.troynikov@gmail.com>"
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-05-06T04:03:15Z,"Team/hypothesis tests (#474)
+
+Merges the team/hypothesis-tests branch to main. Which adds a robust property-based testing suite to Chroma. lfg."
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-04-18T00:59:45Z,"make api_key in OpenAIEmbeddingFunction optional (#320)
+
+* make api_key in OpenAIEmbeddingFunction optional
+
+* make optional api_key actually work
+
+* Early error
+
+---------
+
+Co-authored-by: atroyn <anton.troynikov@gmail.com>"
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-04-18T00:54:53Z,"[bugfix] Ensure Openai batch embeddings are sorted by index (#344)
+
+* Ensure openai batch embeddings are sorted by index
+
+* Use lambda
+
+---------
+
+Co-authored-by: atroyn <anton.troynikov@gmail.com>"
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-04-11T21:04:25Z,"Adds option to pass compute device like cpu, cuda, cuda:1 to SentenceTransformerEmbeddingFunction"
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-04-03T19:37:16Z,"Add flake8 linter, address linter issues (#287)
+
+Adds the flake8 linter configured to run with black in vscode"
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-03-24T03:07:13Z,added embedding function for the Instructor models.
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-03-17T05:46:48Z,"Merge pull request #206 from danielgross/patch-2
+
+In my experience T5 is much better, add comment with that as an option."
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-03-17T05:35:25Z,Update embedding_functions.py
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-03-16T02:42:15Z,use requests Session object to keep requests imported
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-03-16T02:02:25Z,need to access instance variables
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-03-16T01:48:52Z,add wrapper for hugging faces embedding api
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-03-07T19:45:19Z,"In my experience T5 is much better, add comment with that as an option."
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-03-03T18:40:46Z,"Unified error messages (#199)
+
+Unifies error messages across the project to make them more useful and consistent
+Improves the error message for invalid collection names
+
+---------
+
+Co-authored-by: Hammad Bashir <HammadB@users.noreply.github.com>"
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-02-17T18:06:08Z,"Add support for cohere embeddings (#141)
+
+* Add support for cohere embeddings
+
+* Keep newlines"
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-02-15T20:13:22Z,"Remove newlines to improve performance
+
+Per OpenAI's get_embedding function here: https://github.com/openai/openai-python/blob/main/openai/embeddings_utils.py"
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-02-14T03:45:38Z,"OpenAI Embeddings (#117)
+
+* Adding OpenAI embedding functions
+
+* OpenAI"
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-02-13T01:08:56Z,Default embedding function (#26)
+github.com/chroma-core/chroma,chromadb/utils/embedding_functions.py,2023-02-11T05:58:44Z,"Add embedding functions (#19)
+
+* Pass in embedding function.
+
+* Embedding function
+
+* Text-only queries
+
+* Add correct result and types for get (#15)
+
+* Reactor get result to client (#16)
+
+* Add query result (#17)
+
+* fix
+
+* Nit
+
+---------
+
+Co-authored-by: Hammad Bashir <HammadB@users.noreply.github.com>
+Co-authored-by: Jeffrey Huber <jeff@trychroma.com>"
+github.com/open-mmlab/mmsegmentation,projects/CAT-Seg/cat_seg/models/clip_ovseg.py,2023-08-09T15:57:30Z,"[Project] Support CAT-Seg from CVPR2023 (#3098)
+
+Thanks for your contribution and we appreciate it a lot. The following
+instructions would make your pull request more healthy and more easily
+get feedback. If you do not understand some items, don't worry, just
+make the pull request and seek help from maintainers.
+
+## Motivation
+
+Support CAT-Seg open-vocabulary semantic segmentation (CVPR2023).
+
+## Modification
+
+Support CAT-Seg open-vocabulary semantic segmentation (CVPR2023).
+- [x] Support CAT-Seg model training.
+- [x] CLIP model based `backbone` (R101 & Swin-B), aggregation layers
+based `neck`, and `decoder` head.
+  - [x] Provide customized coco-stuff164k_384x384 training configs.
+- [x] Language model supports for `open vocabulary` (OV) tasks. 
+  - [x] Support CLIP-based pretrained language model (LM) inference.
+  - [x] Add commonly used prompts templates. 
+- [x] Add README tutorials.
+- [x] Add zero-shot testing scripts.
+
+**Working on the following tasks.**
+- [x] Add unit test.
+
+## BC-breaking (Optional)
+
+Does the modification introduce changes that break the
+backward-compatibility of the downstream repos?
+If so, please describe how it breaks the compatibility and how the
+downstream projects should modify their code to keep compatibility with
+this PR.
+
+## Use cases (Optional)
+
+If this PR introduces a new feature, it is better to list some use cases
+here, and update the documentation.
+
+## Checklist
+
+1. Pre-commit or other linting tools are used to fix the potential lint
+issues.
+2. The modification is covered by complete unit tests. If not, please
+add more unit test to ensure the correctness.
+3. If the modification has potential influence on downstream projects,
+this PR should be tested with downstream projects, like MMDet or
+MMDet3D.
+4. The documentation has been modified accordingly, like docstring or
+example tutorials.
+
+---------
+
+Co-authored-by: xiexinch <xiexinch@outlook.com>"
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2024-01-07T23:34:40Z,"Improve error handling and API error codes (#656)
+
+Co-authored-by: Farshid Zavareh <farshid@marqo.ai>"
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-07-26T07:35:54Z,"Improve image download validation and resource management (#551)
+
+Explicitly close streaming HTTP connections and PIL images. Ensure _id is never treated as an image URL. Error out if _id is specified as a tensor field by the user."
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-06-26T13:10:20Z,"download integrity (#502)
+
+* catch automodel.pretrained error
+
+* finished open_clip part
+
+* finished open_clip part
+
+* catch mainline
+
+* finish the test
+
+* finish the test
+
+* raise internal errors now.
+
+* update string
+
+* update error message
+
+* update error message
+
+* update error message
+
+* update error message
+
+* update error catching
+
+* update error catching for loading clip model into openclip
+
+* update error handling in s2_inference
+
+* update error handling in s2_inference
+
+* catch mainline
+
+* catch mainline"
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-06-23T06:31:19Z,"Consolidating default device to CUDA when available (#508)
+
+* preliminary replacement work
+
+* changed a few cpus to cuda
+
+* add defaults in tensor search, bulk search, add docs, also added env var
+
+* 1st sweep of removing device params, on parallel now
+
+* transferred default calc from add docs to orch
+
+* replaced defaults in clip_utils.py
+
+* replaced defaults in s2_inference, clip_utils, onnx_utils
+
+* removed defaults everywhere
+
+* added device to vectorise, CLIP calls
+
+* updated device in other models, aux functions
+
+* added device for vectorise and encoding tests
+
+* added device to everything before test_add_documents
+
+* more test fixes
+
+* fixed more test, hardcoded cpu for _float_tensor_to_list
+
+* hardcoded cpu for _float_tensor_to_list
+
+* removed debug message for best available device
+
+* changed comment on vector text search
+
+* all tensor_search tests pass
+
+* fixed errors raised
+
+* added new unit tests, changed env var name
+
+* util env var, replace with empty dict
+
+* updated bulk search default and utils tests
+
+* separated on start method, added search test
+
+* updated validation and more tests
+
+* added unit tests for all internal func validations
+
+* added tests for add docs mp and batch request
+
+* removed validation from Model. Added to SBERT and HF models instead
+
+* added tests to fail if no default orch, search, bulk search
+
+* removed Model test
+
+* moved validation back to Model parent class
+
+* added Model no device test back in"
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-06-22T06:09:05Z,"Return metrics (#506)
+
+* basic Request level metrics/telemetry
+
+* add unit tests for telemetry
+
+* add request metrics to add/search APIs
+
+* python 3.8 fixes
+
+* simplify threaded metrics in download_images
+
+* fix bug
+
+* simplify tests
+
+* fix None in tests
+
+* make tests extra clean
+
+* make metric names more user friendly
+
+* add image download for search. Other improvements
+
+* fix unit tests for clip_utils
+
+* remove 'vector_inference'
+
+* search.create_vectors -> search.vector_inference_full_pipeline
+
+* preprocess -> processing_before_opensearch
+
+* better naming for RequestMetric(s)"
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-06-13T00:07:26Z,"remove autocast for cpu (#491)
+
+* remove autocast for cpu
+
+* add tests
+
+* add tests"
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-05-22T03:01:11Z,"Refactor `tensor_search::search` to use shared functions from `tensor_search::bulk_search` (#469)
+
+* refactor tensor_search/search
+
+* move SearchQuery.context and SearchQuery.scoreModifiers to pydantic
+
+* fix removed SearchContext object
+
+* fix tests
+
+* fix inference for model auth tests
+
+* PR fixes
+
+* add more tests
+
+* multi modal test +1"
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-05-19T07:08:17Z,"custom hf model loading with authentication  (#474)
+
+* custom hf model loading with authentication for hf model
+
+* custom hf model loading with authentication for hf model
+
+* custom hf model loading with authentication for hf model
+
+* custom hf model loading with authentication for hf model
+
+* custom hf model loading with authentication for hf model
+
+* pass the loading from huggingface repo directly test
+
+* test for loading model
+
+* only need to test variants
+
+* add more tests
+
+* add more tests
+
+* fix a test and remove pring
+
+* fix a test and remove pring
+
+* fix a test and remove pring
+
+* fix a test and remove pring
+
+* fix a test and remove pring
+
+* fix a test and remove pring
+
+* fix a test and remove pring
+
+* fix a test and remove pring
+
+* use repo_id instead of name now
+
+* use repo_id instead of name now
+
+* revise from jack
+
+* revise from pandu
+
+* revise from pandu
+
+* update code
+
+* catch automodel.pretrained error
+
+* catch automodel.pretrained error
+
+* catch automodel.pretrained error
+
+* catch automodel.pretrained error
+
+* catch automodel.pretrained error
+
+* catch automodel.pretrained error
+
+* reivise
+
+* add extra tests
+
+* bug fix"
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-05-11T00:35:53Z,"Stateless model auth (#460)
+
+* added model auth
+
+* Added objects for structure
+
+* introducing AddDocsParams object for addDocuments calls
+
+untested
+
+* added pydantic plugin advice to dev guide
+
+* refactored test_add_docs to use AddDocsParams class
+
+* updated tensor search docstring
+
+* refactored tests to work with new AddDocsParams object
+
+* Commit for refactoring done to test_add_documents_use_existing_tensors.py
+
+* refactored delete_documents to use the add_documents wrapper
+
+* added transitional add_docs wrapper
+
+* added transition add docs wrappers to add_documents calls in these test cases
+
+* added transition add docs wrappers to add_documents calls in these test cases
+
+* test updated to use new add_docs param object
+
+* cleaning up tests with issues
+
+* made progress integrating s3
+
+* add docs, s3 works
+
+* search seems to work (it at least passes through the auth info OK)
+
+* added boto to reqs add hf skeleton funcs
+
+* added changes
+
+* fixed test_bulk_search_different_models_separate_vectorise_calls
+
+* created test_model_auth_s3 ()
+
+* test_model_auth_s3() asserts boto3 client instantiation
+
+* made assertions about the presence of the model file
+
+* added hf loading tests
+
+* added tests for hf, s3 search
+
+* added test for s3/hf mismatch
+
+* test refactor
+
+* added cuda test
+
+* add_docs parses model auth str
+
+* corrected add_docs derivatives test
+
+* removed unused vectorise params
+
+* fixed bug, not passing through auth in multimodal_combination
+
+* added test for no creds
+
+* added test_bad_creds_error_s3
+
+* test for access to non existent hf repo
+
+* Added test_after_downloading_search_doesnt_redownload
+
+* fixed checking loaded models
+
+* added from_s3 tests
+
+* added from_hf tests
+
+* added test_custom_clip_utils.py
+
+need to fix tests
+
+* added call to search before add docs parallel
+
+* Added search call before parallel add_docs
+
+* fixed casing issue in SearchQuery
+
+* fixed tests
+
+* completed custom clip utils test
+
+* updated version
+
+* improved error msg, added bulk search tests
+
+* made custom clip tests stricter
+
+* added device to model auth cuda setup
+
+* added tests for CLIP._download_from_repo
+
+* added CLIP.load() tests
+
+* added OPEN_CLIP.load() tests
+
+* fixed private model and test
+
+* corrected HF auth and location inheritance
+
+* removed test_put_documents_orchestrator() as put_documents is deprecated
+
+* corrected version"
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-02-28T03:18:22Z,"[feature] Multimodal tensor combination (#332)
+
+* draft PR
+
+* add test
+
+* delete comments and prints
+
+* new design
+
+* adding test
+
+* add assertion
+
+* change comments
+
+* add more args
+
+* add more test
+
+* remove print
+
+* catch mainline
+
+* catch mainline
+
+* catch mainline
+
+* catch mainline
+
+* catch mainline
+
+* catch mainline
+
+* adding test
+
+* adding test
+
+* change _infer_opensearch_data_type
+
+* support dictionary
+
+* fix text
+
+* add test
+
+* revise parameters
+
+* add to image repo
+
+* revise again.
+
+* revised
+
+* add batch downloading.
+
+* revise test
+
+* add new test
+
+* remove space
+
+* revised.
+
+* revised.
+
+* revised.
+
+* revised.
+
+* update index info
+
+* update index info
+
+* update validation
+
+* update test for new api
+
+* updated
+
+* updated
+
+* add validate mappings
+
+* add todo
+
+* revised
+
+* revised
+
+* revised
+
+* revised
+
+* revised
+
+* revised
+
+* revised
+
+* add test
+
+* add test
+
+* add test
+
+* Mappings for add_docs (#355)
+
+* Update CONTRIBUTING.md
+
+* Update CONTRIBUTING.md
+
+* Adding mappings validation
+
+* mappings validation within add_documents
+
+* added mappings to endpoint and orchestrator: untested
+
+* add test
+
+* add more tests
+
+* add more tests
+
+* add more tests
+
+* finalise
+
+* add open_search test
+
+* update all the error messages.
+
+* update all the error messages.
+
+---------
+
+Co-authored-by: pandu-k <107458762+pandu-k@users.noreply.github.com>"
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-02-27T05:04:57Z,"Update clip_utils.py (#351)
+
+update custom open_clip models to use open_clip base tokenizer instead of clip"
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-02-20T11:09:11Z,"Image download headings (#336)
+
+* add header for authentication
+
+* update load image path tests
+
+* remove headers as a required argument
+
+* update tests and image utils
+
+* fixed bugs
+
+* Changed headers type to dict internally
+
+* Image download headers propagated for search()
+
+* changed remaining image_download_headers param defaults to None
+
+---------
+
+Co-authored-by: Tom Hamer <tom@marqo.ai>"
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-02-16T23:42:55Z,"Fp16 clip update (#331)
+
+* update fp16 model and add tests
+
+* update fp16 model and add tests"
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-02-14T00:39:38Z,"[features] Open clip update (#305)
+
+* update open_clip models
+
+* update open_clip models
+
+* update open_clip models
+
+* update open_clip models
+
+* update open_clip models
+
+* add auto_cast to open_clip
+
+* add auto_cast to open_clip
+
+* convert to float32 at output to normalize it.
+
+* convert to float32 at output to normalize it.
+
+* add onnx32/open_clip/ViT-L-14/openai and
+onnx16/open_clip/ViT-L-14/openai"
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-02-13T23:17:02Z,"Broaden catch download error (#321)
+
+* RequestException is excepted, which is the super class of all requests errors
+
+* Fixed unit tests"
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-02-12T23:14:31Z,bug fix (#315)
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-02-10T04:30:25Z,"Concurrent image downloads  (#281)
+
+* added changed files from branch concurrent download img 2
+
+* refactored model registry/multilingual clip to prevent circular import
+
+* Fixed bug where a bounding box is returned rather than highlights
+
+* added test cases
+
+* removed unnecessary extra call
+
+* remove unused circular reference
+
+* added timeout of 3 seconds to image downloads
+
+* added timeout and unit tests
+
+* added timeout test to clip_utils
+
+* Widened the net of image download errors
+
+* Specific image retrieval error is passed to user"
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-02-02T22:55:01Z,change downloading path for clip
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-02-01T23:52:19Z,revised based on pandu's comments
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-02-01T06:51:40Z,change error message
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-02-01T06:51:28Z,change error message
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-02-01T06:47:39Z,remove space
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-02-01T06:37:28Z,revise error style!
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-01-30T07:22:21Z,Separate clip and open_clip load
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-01-30T07:18:29Z,Separate clip and open_clip load
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-01-30T04:50:53Z,add test
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-01-30T04:46:12Z,add test
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-01-30T03:21:40Z,add test
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-01-27T01:59:01Z,add test
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-01-27T01:58:11Z,add test
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-01-27T01:57:31Z,add test
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-01-27T01:38:27Z,add test
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-01-27T01:29:58Z,add test
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-01-27T01:27:12Z,add test
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-01-27T01:20:08Z,open_clip finish
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-01-27T01:15:07Z,open_clip finish
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-01-25T07:40:14Z,add generic clip model tests
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-01-25T03:26:41Z,generic clip revise
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-01-25T03:13:52Z,generic clip revise
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-01-25T03:12:50Z,generic clip revise
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-01-25T03:11:16Z,generic clip revise
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-01-25T03:00:54Z,generic clip revise
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-01-25T02:52:44Z,add fp16 model support
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-01-25T01:02:11Z,add fp16 model support
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-01-25T00:21:15Z,add fp16 model support
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-01-24T09:50:24Z,add fp16 model support
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-01-24T02:43:56Z,add fp16 model support
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-01-24T02:40:26Z,add fp16 model support
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-01-24T02:34:39Z,add fp16 model support
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-01-24T02:25:40Z,add fp16 model support
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-01-24T01:01:04Z,add large scale test
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-01-11T05:42:19Z,only load visual in clip
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-01-11T05:39:20Z,only load visual in clip
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-01-10T23:00:56Z,add unit test for multilingual clip
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-01-10T07:20:56Z,add multilingual clip
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-01-10T07:18:59Z,add multilingual clip
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-01-10T05:31:24Z,add model registry
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-01-10T05:30:47Z,add model registry
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2023-01-06T07:28:22Z,"Onnx refactor: adding open_clip onnx support, decouple image preprocess (#255)
+
+* merge model properties
+
+* add transform and open_clip support for onnx_clip
+
+* add transform and open_clip support for onnx_clip
+
+* add transform and open_clip support for onnx_clip
+
+* add transform and open_clip support for onnx_clip
+
+* add transform and open_clip support for onnx_clip
+
+* add transform and open_clip support for onnx_clip
+
+* update open_clip tokenizer function
+
+* update open_clip tokenizer function
+
+* add ""onnx32/open_clip/ViT-L-14/laionb_s32b_b82k"" and ""onnx16/open_clip/ViT-L-14/laionb_s32b_b82k""
+
+* add ""onnx32/open_clip/ViT-L-14/laionb_s32b_b82k"" and ""onnx16/open_clip/ViT-L-14/laionb_s32b_b82k""
+
+* add ""onnx32/open_clip/ViT-L-14/laionb_s32b_b82k"" and ""onnx16/open_clip/ViT-L-14/laionb_s32b_b82k""
+
+* add ""onnx32/open_clip/ViT-L-14/laionb_s32b_b82k"" and ""onnx16/open_clip/ViT-L-14/laionb_s32b_b82k""
+
+* add ""onnx32/open_clip/ViT-L-14/laionb_s32b_b82k"" and ""onnx16/open_clip/ViT-L-14/laionb_s32b_b82k""
+
+* add ""onnx32/open_clip/ViT-L-14/laionb_s32b_b82k"" and ""onnx16/open_clip/ViT-L-14/laionb_s32b_b82k""
+
+* add ""onnx32/open_clip/ViT-L-14-336/openai""
+
+* add ""onnx32/open_clip/ViT-L-14-336/openai""
+
+* onnx/open_clip/ViT-B-32/openai
+
+* onnx/open_clip/ViT-B-32/laion400m_e31
+
+* onnx/open_clip/ViT-B-32/laion400m_e31
+
+* onnx/open_clip/ViT-B-32/laion400m_e31
+
+* 'onnx32/open_clip/ViT-B-32-quickgelu/laion400m_e31'
+
+* 'onnx32/open_clip/ViT-B-32-quickgelu/laion400m_e32'
+
+* 'onnx32/open_clip/ViT-B-16/openai'
+
+* ViT-B-16/laion400m_e31
+
+* ViT-B-16/laion400m_e32
+
+* onnx32/open_clip/ViT-B-16-plus-240/laion400m_e31
+
+* ViT-B-16-plus-240/laion400m_e32
+
+* onnx32/open_clip/ViT-H-14/laion2b_s32b_b79k
+
+* adding zip, unzip logic
+
+* adding zip, unzip logic
+
+* adding zip, unzip logic
+
+* adding zip, unzip logic
+
+* adding zip, unzip logic
+
+* adding zip, unzip logic
+
+* adding zip, unzip logic
+
+* adding zip, unzip logic
+
+* adding zip, unzip logic
+
+* 'onnx32/open_clip/ViT-g-14/laion2b_s12b_b42k'
+
+* finish all the open_clip onnx model card
+
+* add test for onnx/open_clip
+
+* add test for onnx/open_clip
+
+* clear loaded models in encoding test
+
+* clear loaded models in encoding test
+
+* clear loaded models in encoding test
+
+* revise space between functions
+
+* revise space between functions"
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2022-12-13T22:45:12Z,"Visual search update release (#214)
+
+* Visual search update (#210)
+
+* add parametrisation for chunking, overlapping boxes and combined model+boxes
+
+* add more tests
+
+* integrate yolox and simple grid changes
+
+* helper functions for opencv and yolox
+
+* add yolox patch class and helper functions
+
+* update to use opencv
+
+* update model cache and add logging
+
+* fix model caching and device selection
+
+* device conflicts
+
+* add attention based bb generation
+
+* update bboxes and test yolo
+
+* refactor and add attention based ViT for bb determination
+
+* create dino specific utils file for vit attention
+
+* include dino files
+
+* split the image file into seperate utils
+
+* refactor, split into seperate files and use a proper base class
+
+* add more tests
+
+* update and add more tests
+
+* refactor and clean up
+
+* add more packages
+
+* clean up and refactor
+
+* update tests
+
+* docker and cloud versions
+
+* change
+
+* fix device for owl
+
+* update types and dco strings
+
+* rename file
+
+* rename file
+
+* move tests
+
+* pytorch utils test
+
+* add another error for model loading
+
+* update functions to handle some edge cases and update types
+
+* add more tests
+
+* update the yolox utils to download the proper model
+
+* add yolox specific tests
+
+* update reqs and setup to be on the latest
+
+* update dockerfile to be same as new one
+
+* clean up
+
+* add the example and app
+
+* update file locations
+
+* update demo
+
+* bump model version
+
+* update demo
+
+* minor text edits
+
+* update demo
+
+* update demo
+
+* better error handling
+
+* update tests
+
+* change to PIL error
+
+* add more error types
+
+* small fixes for errors
+
+* error handling
+
+* update tests
+
+* remove models
+
+* clean up, doc strings and formatting
+
+* update tests
+
+* minor formatting
+
+Co-authored-by: Jesse Clark <jesse@s2search.io>
+
+* update some function names after merge
+
+* clean up and rename
+
+* Pinning tox ci (#211)
+
+* Branch aware ci tests (#209)
+
+* set the MQ_API_TEST_BRANCH to the current branch
+
+* setting github ref to just branch name
+
+* Adding quotes around env var
+
+* fixed syntax error
+
+* parsing the github.ref string
+
+* exporting just before running
+
+* added image_to_test input
+
+* fix: typo
+
+* default image to test is now explicit
+
+* updated documentation for image_to_test var
+
+* Update unit_test_CI.yml
+
+* tox pinned to 3.26
+
+Co-authored-by: pandu-k <107458762+pandu-k@users.noreply.github.com>
+Co-authored-by: Pandu Oliver Kerr <pandu@s2search.io>
+
+* Update Dockerfile
+
+remove space
+
+* clean up
+
+* move to headless opencv
+
+* tidying up
+
+* update error
+
+* minor edits
+
+* fix PR feedback and add more descriptions in the docstrings
+
+* use literal type
+
+* clean up, make the names more descriptive
+
+* change logging level to debug for some messages
+
+Co-authored-by: Jesse Clark <jesse@s2search.io>
+Co-authored-by: pandu-k <107458762+pandu-k@users.noreply.github.com>
+Co-authored-by: Pandu Oliver Kerr <pandu@s2search.io>"
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2022-12-02T06:30:39Z,use UnidentifiedImageError if it cannot be loaded from URL source
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2022-11-29T01:36:55Z,Check HTTP status for remote image paths
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2022-10-10T00:06:42Z,finish several comments
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2022-10-10T00:02:54Z,finish several comments
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2022-10-07T05:10:32Z,"""using clip model from open_clip"""
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2022-08-26T04:27:24Z,split the image load to be used elsewhere
+github.com/marqo-ai/marqo,src/marqo/s2_inference/clip_utils.py,2022-08-02T09:06:24Z,init commit
+github.com/modelscope/modelscope,modelscope/models/multi_modal/clip_interrogator/model.py,2024-02-21T06:24:24Z,Fix word pubicly -> publicly (#748)
+github.com/modelscope/modelscope,modelscope/models/multi_modal/clip_interrogator/model.py,2023-05-22T02:53:18Z,add 1.6
+github.com/Docta-ai/docta,docta/core/preprocess.py,2023-05-08T06:35:08Z,first commit
+github.com/marqo-ai/marqo,src/marqo/s2_inference/onnx_clip_utils.py,2024-01-07T23:34:40Z,"Improve error handling and API error codes (#656)
+
+Co-authored-by: Farshid Zavareh <farshid@marqo.ai>"
+github.com/marqo-ai/marqo,src/marqo/s2_inference/onnx_clip_utils.py,2023-06-23T06:31:19Z,"Consolidating default device to CUDA when available (#508)
+
+* preliminary replacement work
+
+* changed a few cpus to cuda
+
+* add defaults in tensor search, bulk search, add docs, also added env var
+
+* 1st sweep of removing device params, on parallel now
+
+* transferred default calc from add docs to orch
+
+* replaced defaults in clip_utils.py
+
+* replaced defaults in s2_inference, clip_utils, onnx_utils
+
+* removed defaults everywhere
+
+* added device to vectorise, CLIP calls
+
+* updated device in other models, aux functions
+
+* added device for vectorise and encoding tests
+
+* added device to everything before test_add_documents
+
+* more test fixes
+
+* fixed more test, hardcoded cpu for _float_tensor_to_list
+
+* hardcoded cpu for _float_tensor_to_list
+
+* removed debug message for best available device
+
+* changed comment on vector text search
+
+* all tensor_search tests pass
+
+* fixed errors raised
+
+* added new unit tests, changed env var name
+
+* util env var, replace with empty dict
+
+* updated bulk search default and utils tests
+
+* separated on start method, added search test
+
+* updated validation and more tests
+
+* added unit tests for all internal func validations
+
+* added tests for add docs mp and batch request
+
+* removed validation from Model. Added to SBERT and HF models instead
+
+* added tests to fail if no default orch, search, bulk search
+
+* removed Model test
+
+* moved validation back to Model parent class
+
+* added Model no device test back in"
+github.com/marqo-ai/marqo,src/marqo/s2_inference/onnx_clip_utils.py,2023-04-19T11:17:59Z,"Automatic model ejection (#372)
+
+* revise
+
+* revise
+
+* revise
+
+* revised
+
+* revised
+
+* revised
+
+* revised
+
+* revised
+
+* revised
+
+* revised
+
+* revised
+
+* revised
+
+* revised
+
+* revised
+
+* revised
+
+* revised
+
+* add time_stamps to all models
+
+* add time_stamps to all models
+
+* add time_stamps to all models
+
+* datetime
+
+* update
+
+* update
+
+* update
+
+* revise
+
+* revise
+
+* revise
+
+* revise
+
+* revise
+
+* typo
+
+* typo
+
+* add test
+
+* add test
+
+* add test
+
+* add test
+
+* add test
+
+* add test
+
+* add test
+
+* add test
+
+* add test
+
+* add test
+
+* add test
+
+* add test
+
+* add test
+
+* add test
+
+* add test
+
+* add test
+
+* add test
+
+* add test
+
+* add test
+
+* add test
+
+* add test
+
+* add test
+
+* add test
+
+* typo
+
+* updated
+
+* updated
+
+* updated
+
+* updated
+
+* revised.
+
+* revised.
+
+* revised.
+
+* revised.
+
+* revised.
+
+* revised.
+
+* revised.
+
+* revised.
+
+* revised.
+
+* revised.
+
+* revised.
+
+* revised.
+
+* revised.
+
+* revised.
+
+* revised.
+
+* update mock
+
+* update mock
+
+* update lock error
+
+* update lock error
+
+* update lock error
+
+* update lock error
+
+* update lock error
+
+* update lock error
+
+* update lock error
+
+* update lock error
+
+* update lock error
+
+* update lock error
+
+* update lock error
+
+* update lock error
+
+* update lock error
+
+* update lock error
+
+* update lock error
+
+* update lock error
+
+* update lock error
+
+* update lock error
+
+* update lock error
+
+* update lock error
+
+* change error to 4xx
+
+* replace _load_model
+
+* updated
+
+* add lock
+
+* add lock
+
+* add lock
+
+* add lock
+
+* add lock
+
+* add lock
+
+* add lock
+
+* add lock
+
+* update to float
+
+* update to float
+
+* update to float
+
+* update to float
+
+* update to float
+
+* revised
+
+* revised
+
+* add a new test
+
+* revise the threading test
+
+* revise the threading test
+
+* revise the threading test
+
+* revised
+
+* revised
+
+* update errors
+
+* catch mainline
+
+* catch mainline
+
+* revised
+
+* finish the tensor_search.py
+
+* update comments
+
+* update unittest
+
+* update unittest
+
+* update unittest
+
+* update unittest
+
+* modify create index
+
+* modify create index
+
+* modify create index
+
+* modify create index
+
+* modify create index
+
+* modify create index
+
+* modify create index
+
+* modify create index
+
+* modify create index
+
+* update unittest
+
+* update unittest
+
+* update unittest
+
+* update unittest
+
+* update unittest
+
+* update unittest
+
+* update unittest
+
+* update unittest
+
+* update unittest
+
+* add torch.cuda.empty cache
+
+* update unit test
+
+* update unit test
+
+* updating unittest
+
+* updating unittest
+
+* updating unittest
+
+* update models are onnx can't be tested in tox
+
+* update models are onnx can't be tested in tox
+
+* update models as onnx can't be tested in cuda in tox
+
+* update models as onnx can't be tested in cuda in tox
+
+* update clear loaded models
+
+* update clear loaded models
+
+* update clear loaded models
+
+* update clear loaded models
+
+* update clear loaded models
+
+* update device
+
+* update device
+
+* update device
+
+* update device
+
+* update device
+
+* update device
+
+* update device
+
+* update device
+
+* update device
+
+* update device
+
+* update device
+
+* update test
+
+* change device
+
+* change form
+
+* stop multilingual clip
+
+* update onnxruntime-gpu version
+
+* update unittest model
+
+* revise onnx
+
+* revise onnx
+
+* revise onnx
+
+* revise onnx
+
+* revise onnx
+
+* address pandu comments."
+github.com/marqo-ai/marqo,src/marqo/s2_inference/onnx_clip_utils.py,2023-02-20T11:09:11Z,"Image download headings (#336)
+
+* add header for authentication
+
+* update load image path tests
+
+* remove headers as a required argument
+
+* update tests and image utils
+
+* fixed bugs
+
+* Changed headers type to dict internally
+
+* Image download headers propagated for search()
+
+* changed remaining image_download_headers param defaults to None
+
+---------
+
+Co-authored-by: Tom Hamer <tom@marqo.ai>"
+github.com/marqo-ai/marqo,src/marqo/s2_inference/onnx_clip_utils.py,2023-01-06T07:28:22Z,"Onnx refactor: adding open_clip onnx support, decouple image preprocess (#255)
+
+* merge model properties
+
+* add transform and open_clip support for onnx_clip
+
+* add transform and open_clip support for onnx_clip
+
+* add transform and open_clip support for onnx_clip
+
+* add transform and open_clip support for onnx_clip
+
+* add transform and open_clip support for onnx_clip
+
+* add transform and open_clip support for onnx_clip
+
+* update open_clip tokenizer function
+
+* update open_clip tokenizer function
+
+* add ""onnx32/open_clip/ViT-L-14/laionb_s32b_b82k"" and ""onnx16/open_clip/ViT-L-14/laionb_s32b_b82k""
+
+* add ""onnx32/open_clip/ViT-L-14/laionb_s32b_b82k"" and ""onnx16/open_clip/ViT-L-14/laionb_s32b_b82k""
+
+* add ""onnx32/open_clip/ViT-L-14/laionb_s32b_b82k"" and ""onnx16/open_clip/ViT-L-14/laionb_s32b_b82k""
+
+* add ""onnx32/open_clip/ViT-L-14/laionb_s32b_b82k"" and ""onnx16/open_clip/ViT-L-14/laionb_s32b_b82k""
+
+* add ""onnx32/open_clip/ViT-L-14/laionb_s32b_b82k"" and ""onnx16/open_clip/ViT-L-14/laionb_s32b_b82k""
+
+* add ""onnx32/open_clip/ViT-L-14/laionb_s32b_b82k"" and ""onnx16/open_clip/ViT-L-14/laionb_s32b_b82k""
+
+* add ""onnx32/open_clip/ViT-L-14-336/openai""
+
+* add ""onnx32/open_clip/ViT-L-14-336/openai""
+
+* onnx/open_clip/ViT-B-32/openai
+
+* onnx/open_clip/ViT-B-32/laion400m_e31
+
+* onnx/open_clip/ViT-B-32/laion400m_e31
+
+* onnx/open_clip/ViT-B-32/laion400m_e31
+
+* 'onnx32/open_clip/ViT-B-32-quickgelu/laion400m_e31'
+
+* 'onnx32/open_clip/ViT-B-32-quickgelu/laion400m_e32'
+
+* 'onnx32/open_clip/ViT-B-16/openai'
+
+* ViT-B-16/laion400m_e31
+
+* ViT-B-16/laion400m_e32
+
+* onnx32/open_clip/ViT-B-16-plus-240/laion400m_e31
+
+* ViT-B-16-plus-240/laion400m_e32
+
+* onnx32/open_clip/ViT-H-14/laion2b_s32b_b79k
+
+* adding zip, unzip logic
+
+* adding zip, unzip logic
+
+* adding zip, unzip logic
+
+* adding zip, unzip logic
+
+* adding zip, unzip logic
+
+* adding zip, unzip logic
+
+* adding zip, unzip logic
+
+* adding zip, unzip logic
+
+* adding zip, unzip logic
+
+* 'onnx32/open_clip/ViT-g-14/laion2b_s12b_b42k'
+
+* finish all the open_clip onnx model card
+
+* add test for onnx/open_clip
+
+* add test for onnx/open_clip
+
+* clear loaded models in encoding test
+
+* clear loaded models in encoding test
+
+* clear loaded models in encoding test
+
+* revise space between functions
+
+* revise space between functions"
+github.com/marqo-ai/marqo,src/marqo/s2_inference/onnx_clip_utils.py,2022-12-30T01:33:57Z,delete printing lines (#252)
+github.com/marqo-ai/marqo,src/marqo/s2_inference/onnx_clip_utils.py,2022-12-29T06:50:14Z,"[Onnx clip]Adding the clip_onnx to our avaible models for faster inference (#245)
+
+* onnx32/openai/ViT-L/14
+
+* onnx32/openai/ViT-L/14
+
+* onnx32/openai/ViT-L/14
+
+* onnx32/openai/ViT-L/14
+
+* add a timer
+
+* add a timer
+
+* add a timer
+
+* add a timer
+
+* add a timer
+
+* add a timer
+
+* add a timer
+
+* add a timer
+
+* add a timer
+
+* add a timer
+
+* add a timer
+
+* add a timer
+
+* add a timer
+
+* add a timer
+
+* add a timer
+
+* cleaning
+
+* add test for onnx_clip
+
+* make sure onnx-16 model still use float32 for textual inference for best accuracy.
+
+* make sure onnx-16 model still use float32 for textual inference for best accuracy.
+
+* we merge the hf models.
+
+* update id to _device_id"
+github.com/microsoft/Cream,TinyCLIP/inference.py,2023-10-25T15:21:08Z,"[TinyCLIP] Inference Example (#196)
+
+* [TinyCLIP] Inference Example"
+github.com/mlfoundations/open_clip,tests/util_test.py,2023-05-12T18:35:41Z,"Add EVA models (via timm backbone), torch.compile support, more (#500)
+
+* Add EVA models (via timm backbone), torch.compile support, pure bf16/fp16 mode, safetensors push support
+
+* Fix optional type refinement for torchscript
+
+* Back torchcompile changes out of factory, needs to be closer to use for various reasons
+
+* Fix output_dict + jit regression, remove native OpenAI jit load as it's not working reliably in PyTorch 2.0, always extract state-dict, load model, re-jit (if enabled)"
+github.com/mlfoundations/open_clip,tests/util_test.py,2023-01-29T00:41:42Z,"Add coca trained (#307) (#308)
+
+* Add coca trained (#307)
+
+* initial setup
+
+* add coca loss
+
+* remove loss from the model
+
+* fix loss
+
+* add underscores
+
+* name changes
+
+* add cross attention to Residual and CustomResidual
+
+* fix if
+
+* ädd transformer 'decoder'
+
+* minor fix
+
+* looks better
+
+* initlize coca model structure
+
+* clean
+
+* typo and format
+
+* checkpoint signature
+
+* adjust multimodal decoder and add CoCaTransformer
+
+* keep older logic
+
+* remove chunk
+
+* typo
+
+* fix
+
+* make chunk dim explicit
+
+* adjust cfg names
+
+* add attentionalpooling
+
+* add attentional pooling to coca
+
+* small change
+
+* add cocatransformer variants and AttentionPooling
+
+* remoive older attention pooler
+
+* adapt embed text to coca text transformer
+
+* rm coca layers
+
+* rename and remove useless CoCa models
+
+* make attentionpooler pooler only
+
+* refactor for one transformer only
+
+* coca forward works
+
+* separatae context and n_queries
+
+* add inital coca_base config
+
+* remove config
+
+* small loss change
+
+* init training file
+
+* make variable order right
+
+* remove print
+
+* uniform names
+
+* renaming
+
+* add coca funcs to init
+
+* add coca config and exclude from testing
+
+* add and comment simple test (no trained model)
+
+* add L2 norm
+
+* make L2 same as in clip
+
+* remove unused temperature
+
+* type
+
+* clean
+
+* fix config
+
+* make rename and move cfg
+
+* rename
+
+* temptative add coca to factory
+
+* fix config
+
+* update config
+
+* embed contrastive cls token in model
+
+* remove unused arg
+
+* import create_loss
+
+* make factory accept coca
+
+* make caption loss distributed
+
+* make loss customizable
+
+* pass loss trhough training_epoch
+
+* add coca specific params to params
+
+* removed decoder unused parameters
+
+* remove unused attributes
+
+* adjust coca_config
+
+* fix config and remove unused parameters
+
+* remove comment
+
+* remove more comments
+
+* rename attention pooler
+
+* rename TransformerDecoder
+
+* make AttentionalPooler clearer
+
+* add local loss logic to cocaloss
+
+* only create loss if train in data
+
+* remove wrong file
+
+* fix attentional pooler call
+
+* not ready for testing
+
+* really not ready for testing
+
+* eof lien
+
+* uniform names
+
+* add possible generative loss to evaluate
+
+* change _build function names
+
+* remove wrong import
+
+* remove local_loss from captioning loss
+
+* indexing error
+
+* finish renaming
+
+* adjust configs
+
+* add training test for coca
+
+* simplify captioning loss
+
+* remove hf
+
+* fix evaluate and loss
+
+* remove print
+
+* move projection
+
+* add coca vit 32 config
+
+* test on new config
+
+* adjust coca_base config
+
+* remove coca from test_inference
+
+* maybe fix regression test
+
+* make logits and labels contiguous
+
+* simpler logic
+
+* make contiguous after transpose
+
+* last test
+
+* try fix loss
+
+* CoCa PR: loss fix + rename file
+
+* wait for feedback on this
+
+* cleanup
+
+* CoCa PR: add set_grad_checkpointing + fix checkpoint API
+
+* CoCa PR: fix eval (which uses encode_x instead of forward)
+
+* move making space for CLS token into encode_text
+
+* rever zs changes + fix
+
+Co-authored-by: gpucce <g.puccetti92@gmail.com>
+Co-authored-by: gpucce <g.puccetti@gmail.com>
+Co-authored-by: iejmac <iejmac@ip-172-31-44-155.ec2.internal>
+
+* Add coca to CI
+
+* Add coca to CI pr
+
+* simplify encode_iamge (#313)
+
+Co-authored-by: Romain Beaumont <romain.rom1@gmail.com>
+
+* Add cls mask (#312)
+
+* buil_cls_mask
+
+* add cls_mask to encode_text
+
+* add model properties
+
+Co-authored-by: Romain Beaumont <romain.rom1@gmail.com>
+Co-authored-by: gpucce <g.puccetti@gmail.com>
+
+* Ignore pad tokens in captioning loss (#316)
+
+* add ignore_index
+
+* just need to pick right index
+
+Co-authored-by: gpucce <g.puccetti@gmail.com>
+
+* add `generate` to coca model (#314)
+
+* add initial generative support
+
+* make generation context_length independend
+
+* remove kwargs
+
+* last positional embeddings for CLS
+
+* typo
+
+* fix mask len
+
+* add comment
+
+* remove unused args
+
+* simpler logic for input shorter than context length
+
+Co-authored-by: gpucce <g.puccetti@gmail.com>
+
+* use `TextEncoder` in coca `encode_image` (#321)
+
+* use self.text in encode image
+
+* unused var
+
+* rever aAtention and CustoResidualAttentionBlock
+
+* remove whiteline
+
+* add dict output
+
+* bintegrate self.text attributes
+
+* HF compatibility
+
+* better config and minor fixes
+
+* clean
+
+* remove eembed_cls option from HF
+
+* use cls_token_position
+
+* fix cls masking
+
+* resize labels
+
+* text -> self.text
+
+* split loss logging
+
+* add total loss
+
+* minor logs formatting
+
+* fix generate
+
+* simpler logic
+
+* disentangle proj for HF too
+
+* adjust config
+
+* only norm cls
+
+* move attn_pool to VisionTransformer
+
+* adjust coca_base config
+
+* fix grad checkpointing in MultimodalTransformer
+
+Co-authored-by: gpucce <g.puccetti@gmail.com>
+Co-authored-by: iejMac <kilianmaciej6@gmail.com>
+
+* Get some basic PEP changes out of the way
+
+* Add tests bis (#355)
+
+* make jit compilable
+
+* redundant annotation
+
+* less tests
+
+* less annotations
+
+* even less annotations
+
+* fix name check in ci
+
+* some annotations back
+
+* make it simpler
+
+* make hf simpler too
+
+* better jit support with tests
+
+* remove extra line
+
+* add customtextclip
+
+* more jit tests
+
+* missing assert
+
+* add eval
+
+* typo
+
+* rever forward changes
+
+* clean coca model
+
+* more cleaning
+
+* last cleaning
+
+* train.py: fix is_clip when doing distributed (#364)
+
+* add README (#365)
+
+* add README
+
+* multimodal_cfg info
+
+* multimodal
+
+* remove output_dict argument (#368)
+
+* remove output_dict argument
+
+* cleaner
+
+* do same thing for _encode_image (#366)
+
+* do same thing for _encode_image
+
+* encoder
+
+* try this
+
+* adjust inference tests
+
+* fix syntax
+
+* True not None
+
+* dumb
+
+* CoCa/forward: remove unused output_dict param
+
+* Revert ""do same thing for _encode_image (#366)""
+
+This reverts commit de343fb73e9512c63bcbf3d902359c652580aef0.
+
+* refactor
+
+* white space
+
+* remove extra layer norm
+
+* move to_logits into decoder
+
+* leave for later
+
+* better torchscript
+
+* annotate hf too
+
+* Add CoCa-ViT-L/14 config (#379)
+
+* Remove dead LN code, refactor attn_pool conditional for more clarity, minor formatting tweaks
+
+* latent_dim to embed_dim
+
+* remove extra cfg
+
+* A bit more cleanup, keep context_length as context len, 'num_pos' to incl extra tokens. None type check for embed_cls instead of getattr
+
+* CoCa: add B/32 pretrained (#389)
+
+* add B/32 pretrained
+
+* fix
+
+* no capital
+
+* slash
+
+* remove coca from ci.yml
+
+---------
+
+Co-authored-by: gpucce <g.puccetti92@gmail.com>
+Co-authored-by: gpucce <g.puccetti@gmail.com>
+Co-authored-by: iejmac <iejmac@ip-172-31-44-155.ec2.internal>
+Co-authored-by: iejMac <kilianmaciej6@gmail.com>
+Co-authored-by: Ross Wightman <rwightman@gmail.com>"
+github.com/mlfoundations/open_clip,tests/util_test.py,2022-12-09T00:40:09Z,"CI: on-the-fly data generation for regression test determinism (#260)
+
+* CI on-the-fly data generation for regression tests
+
+* delete old reg test data
+
+* util_test.py option to create test data for specific git revision
+skip instead of fail regression tests if data not found
+register pytest markers in pytest.ini
+
+* use sha instead of branch name if on a detached HEAD
+fixed typo
+
+* CI: save model list util_test to ensure no model names leak from test to reference
+
+* CI: use marker instead of name filter to collect model names from pytest
+
+* CI: use manual revision for checkout action
+
+* util_test: avoid nested exception to make sure working tree is being restored on failure
+
+* cache venv with minor version specific python
+ensure durations file exists
+
+* only pop stash if changes were stashed
+
+* keep naming for env and durations cache the same
+
+Co-authored-by: Romain Beaumont <romain.rom1@gmail.com>"
+github.com/mlfoundations/open_clip,tests/util_test.py,2022-11-20T00:03:34Z,"create HF models without pretrained weights (#235)
+
+HF model inference tests on random models"
+github.com/mlfoundations/open_clip,tests/util_test.py,2022-11-17T17:32:24Z,"Parallelize CI tests (#228)
+
+* parallelize CI tests
+
+* disable macos testing for now, as it's slow
+
+* typo
+
+* util_test only import argparse if called as script"
+github.com/mlfoundations/open_clip,tests/util_test.py,2022-11-12T17:49:07Z,inference testing using pre-generated data
+github.com/mlfoundations/open_clip,tests/test_inference_simple.py,2023-01-30T22:38:24Z,Cover jit and force_custom_text in simple tests
+github.com/mlfoundations/open_clip,tests/test_inference_simple.py,2022-11-13T10:51:10Z,"Add roberta base ViT-B/32 pretrained. (#221)
+
+* Add roberta base ViT-B/32 pretrained.
+
+A ViT-B/32 with roberta base encoder with a 61.7% top-1 ImageNet-1k zero-shot was trained on stability. See model details here https://huggingface.co/laion/CLIP-ViT-B-32-roberta-base-laion2B-s12B-b32k
+This is the first openclip model using a HF text tower. It has better performance on a range of tasks compared to the standard text encoder, see [metrics](https://huggingface.co/laion/CLIP-ViT-B-32-roberta-base-laion2B-s12B-b32k/blob/main/unknown.png)
+
+* test"
+github.com/mlfoundations/open_clip,tests/test_inference_simple.py,2022-11-10T10:23:24Z,"training/params.py: remove hf params and get them from model config (#215)
+
+* zero_shot.py: set correct tokenizer based on args
+
+* training/params.py: remove HF specific params, get those automatically from config
+
+* set tokenizer in PreTrainedTextEncoder
+
+* fix CsvDataset
+
+* take tokenizer name from tokenizer
+
+* Fix
+
+* add tok name to test
+
+* None
+
+* update
+
+* no need to store this anymore
+
+* upadte README
+
+* add tokenizer attribute
+
+* remove useless code
+
+* update example
+
+* use model.tokenizer in test inference simple
+
+* trying getattr
+
+* syntax
+
+* get_tokenizer
+
+* factory fix
+
+* fix test
+
+* fix
+
+* fix'
+
+* add get-tokenizer to README + update exmaple
+
+* update README
+
+* zero-shot get_tokenizer
+
+Co-authored-by: Romain Beaumont <romain.rom1@gmail.com>
+Co-authored-by: iejmac <iejmac@gpu-st-p4d-24xlarge-4.hpc-1click-sandbox.pcluster>"
+github.com/mlfoundations/open_clip,tests/test_inference_simple.py,2022-11-07T18:58:43Z,"Implement simple training test. (#203)
+
+Only runs the training, no actual check except no crashes.
+
+For #198"
+github.com/mlfoundations/open_clip,tests/test_download_pretrained.py,2023-01-23T23:59:33Z,Fetch from Hugging Face Hub using hf_hub: prefix
+github.com/mlfoundations/open_clip,tests/test_download_pretrained.py,2022-11-07T13:49:38Z,fix download pretrained test
+github.com/mlfoundations/open_clip,tests/test_download_pretrained.py,2022-11-07T13:34:49Z,Add checksum verification for pretrained model weights downloaded from mlfoundations github releases url (#145)
+github.com/eric-ai-lab/MiniGPT-5,metric.py,2023-10-04T02:05:44Z,init push
+github.com/GoogleCloudPlatform/vertex-ai-samples,community-content/vertex_model_garden/model_oss/open_clip/handler.py,2024-02-20T15:17:32Z,Unify the model name as MODEL_ID in related containers and notebooks. (#2720)
+github.com/GoogleCloudPlatform/vertex-ai-samples,community-content/vertex_model_garden/model_oss/open_clip/handler.py,2023-12-04T15:11:07Z,copy vertex_vision_model_garden as vertex_model_garden (#2565)
+github.com/YuxinWenRick/hard-prompts-made-easy,optim_utils.py,2023-04-02T16:02:47Z,optim tru stable diffusion
+github.com/YuxinWenRick/hard-prompts-made-easy,optim_utils.py,2023-02-16T23:01:21Z,update negative prompt example
+github.com/YuxinWenRick/hard-prompts-made-easy,optim_utils.py,2023-02-10T01:54:36Z,"add CLI script, clean up readme, clean up printing"
+github.com/YuxinWenRick/hard-prompts-made-easy,optim_utils.py,2023-02-07T17:13:46Z,init commit
+github.com/Algolzw/daclip-uir,da-clip/src/evaluate.py,2023-10-07T09:22:47Z,update readme
+github.com/UMass-Foundation-Model/3D-LLM,three_steps_3d_feature/second_step/clip_sam.py,2023-07-25T20:48:41Z,change_format
+github.com/UMass-Foundation-Model/3D-LLM,three_steps_3d_feature/second_step/clip_sam.py,2023-07-25T16:21:20Z,3d_recon_readme
+github.com/UMass-Foundation-Model/3D-LLM,three_steps_3d_feature/second_step/clip_sam.py,2023-07-24T22:31:18Z,features
+github.com/zideliu/StyleDrop-PyTorch,predict.py,2023-07-07T21:06:29Z,replicate
+github.com/alaamaalouf/FollowAnything,follow_anything.py,2023-12-05T19:37:20Z,fix threshold
+github.com/alaamaalouf/FollowAnything,follow_anything.py,2023-08-13T15:15:37Z,follow_anything stop once it finishes reading offline video
+github.com/alaamaalouf/FollowAnything,follow_anything.py,2023-08-01T14:18:07Z,"code for detect, track, and follow + code for creating query features using DINO"
+github.com/roatienza/Deep-Learning-Experiments,versions/2023/model_serving/demo/triton/server.py,2023-11-18T02:20:33Z,model serving
+github.com/zideliu/StyleDrop-PyTorch,gradio_demo.py,2023-08-23T09:45:07Z,Update gradio_demo.py
+github.com/zideliu/StyleDrop-PyTorch,gradio_demo.py,2023-08-23T09:41:19Z,Update gradio_demo.py
+github.com/zideliu/StyleDrop-PyTorch,gradio_demo.py,2023-08-23T09:29:52Z,Update gradio_demo.py
+github.com/zideliu/StyleDrop-PyTorch,gradio_demo.py,2023-07-09T00:52:03Z,update for colab
+github.com/zideliu/StyleDrop-PyTorch,gradio_demo.py,2023-07-09T00:07:07Z,update gradio demo
+github.com/zideliu/StyleDrop-PyTorch,gradio_demo.py,2023-07-05T05:09:29Z,fix some bugs
+github.com/zideliu/StyleDrop-PyTorch,gradio_demo.py,2023-07-05T03:49:03Z,ADD set_seed
+github.com/zideliu/StyleDrop-PyTorch,gradio_demo.py,2023-07-04T03:10:02Z,first commit
+github.com/UMass-Foundation-Model/3D-LLM,three_steps_3d_feature/second_step/clip_maskformer.py,2023-07-25T20:48:41Z,change_format
+github.com/UMass-Foundation-Model/3D-LLM,three_steps_3d_feature/second_step/clip_maskformer.py,2023-07-25T16:21:20Z,3d_recon_readme
+github.com/AnyLoc/AnyLoc,clip_wrapper.py,2023-08-02T17:09:32Z,Created first (public) release
+github.com/VoltaML/voltaML-fast-stable-diffusion,core/interrogation/clip.py,2023-11-21T18:05:16Z,float8 support
+github.com/VoltaML/voltaML-fast-stable-diffusion,core/interrogation/clip.py,2023-11-07T21:11:27Z,Redo imports from diffusers to satisfy Pylance
+github.com/VoltaML/voltaML-fast-stable-diffusion,core/interrogation/clip.py,2023-10-18T19:33:19Z,Remove pylint
+github.com/VoltaML/voltaML-fast-stable-diffusion,core/interrogation/clip.py,2023-08-02T17:36:09Z,"Purge rich.progress and replace it with tqdm, queue progress added"
+github.com/VoltaML/voltaML-fast-stable-diffusion,core/interrogation/clip.py,2023-08-01T18:35:14Z,"Arbitrary size + Inference cleanup (#128)
+
+Cleaned the inference backend code a little bit, now it should have less
+redundant/copy-pasted code.
+
+Also made odd/non-8-aligned sizes possible to do with PyTorch.
+*AIT - arbitrary sizes at the very least - has some peculiar issues with
+ControlNet so I decided to drop it from this PR*
+
+---------
+
+Co-authored-by: Stax124 <tamoncz@gmail.com>
+Co-authored-by: Stax124 <60222162+Stax124@users.noreply.github.com>"
+github.com/VoltaML/voltaML-fast-stable-diffusion,core/interrogation/clip.py,2023-07-29T09:20:23Z,"Quantized CLIP (#123)
+
+# TL;DR;
+- `/api/hardware/capabilities`
+- drops support for IREE (may come back later, just don't have the time
+to support it)
+- CLIP quantization
+- frontend: settings ui revamp
+  - more *optional, **disappearing*** settings based on conditions
+  - dynamic options based on capabilities of host machine
+# 
+In an attempt to further lower latency, I've tried to quantize the text
+encoder to 8bit/4bit.
+This PR also includes some revamps to the settings menu and a new API
+endpoint `/hardware/capabilities`.
+The endpoint returns a short run-down of what the hardware can do, an
+example response is the following:
+```json5
+{
+	""supported_backends"": [""cpu"", ""cuda""],
+	""supported_precisions_cpu"": [""float32"", ""bfloat16""],
+	""supported_precisions_gpu"": [""float32"", ""bfloat16"", ""float16""],
+	""supported_torch_compile_backends"": [""aot_ts_nvfuser"", ""cudagraphs"", ""inductor"", ""nvprims_nvfuser"", ""onnxrt""],
+	""has_tensorfloat"": true, // true if user has ampere+
+	""has_tensor_cores"": true, // true if user has volta+
+	""supports_xformers"": false, // true if current installation supports xformers, false for torch nightlies
+	""supports_int8"": true // true if a basic quantized matmul is successful
+}
+```
+Quantization requires the installation of
+[bitsandbytes](https://github.com/TimDettmers/bitsandbytes/), however it
+is completely optional. Attached is the same generation (40 steps,
+DPMSolverSinglestep, seed: 123123, prompt: ""1girl"") at different
+quantization levels.
+
+TODO:
+
+- [ ] Update capabilities when something changes
+- [ ] Investigate print-out when loading models with quantization
+
+Full precision:
+
+![f711ee6d-c547-4880-886a-7b3c0b054f03-0](https://github.com/VoltaML/voltaML-fast-stable-diffusion/assets/22561485/0f5b2c96-cc95-4b73-b798-604b18dcb84a)
+
+8-bit quantization:
+
+![58a32c8f-735e-4640-aec9-2239bab7bb6d-0](https://github.com/VoltaML/voltaML-fast-stable-diffusion/assets/22561485/218b3697-408c-4df6-985c-17685ea28fff)
+
+4-bit quantization:
+
+![8fe123f0-8246-42c7-b14e-42f6538db7f3-0](https://github.com/VoltaML/voltaML-fast-stable-diffusion/assets/22561485/afb06e0b-b467-47cc-adba-d4c41766327b)
+
+---------
+
+Co-authored-by: Stax124 <tamoncz@gmail.com>"
+github.com/VoltaML/voltaML-fast-stable-diffusion,core/interrogation/clip.py,2023-06-18T11:41:08Z,"Affix deps, fix AITemplate, set SDPA as default attention"
+github.com/VoltaML/voltaML-fast-stable-diffusion,core/interrogation/clip.py,2023-05-18T17:14:47Z,"Autocast, VAE tiling & fix offload (#82)
+
+* autocast stuff
+
+* autocast pt. 2
+
+* enable offload
+
+* autocast
+
+* frontend
+
+* Fix model offload... again...
+
+* Precision changes & autocast fixes
+
+* fix model offload in img2img
+
+* fix no-offload
+
+* only initialize autocast if directml autocast is needed
+
+* fix disable=True on torch.dml.autocast
+
+* Build frontend with locked deps
+
+* onnx fix
+
+* fix ait
+
+* reorder sorts
+
+---------
+
+Co-authored-by: Stax124 <tamoncz@gmail.com>"
+github.com/VoltaML/voltaML-fast-stable-diffusion,core/interrogation/clip.py,2023-05-06T17:10:05Z,"Multiple device support & PyTorch optimizations (#62)
+
+* Start work on further jit trace options
+
+* format
+
+* AMD gpu info support & memory clear option
+
+* clear_memory_policy
+
+* Fix manager
+
+* Cuda flags
+
+* Pyamdgpuinfo
+
+* format
+
+* Cleanup, refactor
+
+* format
+
+* oops
+
+* fix perf_loop
+
+* format
+
+* fix everything
+
+* format
+
+* Formatting, support for extra requirement check for Linux
+
+* trace
+
+* format
+
+* UI, renames, cleanup
+
+* PyLint cleanups
+
+* Rebuild frontend
+
+* no more one-way
+
+* only enable reduced prec on ampere+
+
+* Cleaning stuff up & HW Scheduling check on Windows
+
+* format
+
+* Add DirectML support
+
+* fix stuffix stuff
+
+* a
+
+* ipex stuff pt. 1
+
+* Revamp #install_pytorch() and further IPEX optimizations
+
+* try & fix xpu
+
+* fix pt2
+
+* fix requirements
+
+* ipex fix
+
+* XPU changes
+
+* Revamp install_requirements.py & fix config order
+
+* fix interrogators on directml
+
+* start work on iree
+
+* fix things
+
+* iree progress
+
+I GOT PAST TORCH-MLIR :tada:
+now I just need to get iree to work as well :)
+
+* cleanup
+
+* basic profiling
+
+* Black, fix some merge issues
+
+* Get rid of the profiler
+
+* Reformat
+
+* Fix .vscode/settings.json
+
+* Cleanup, purge unnecessary stuff
+
+* Fix TextualInversions on Windows
+
+* Get rid of duped file, add spinner to optimization
+
+* Frontend add more backend settings
+
+---------
+
+Co-authored-by: Stax124 <tamoncz@gmail.com>"
+github.com/VoltaML/voltaML-fast-stable-diffusion,core/interrogation/clip.py,2023-04-23T10:48:33Z,"Interrogators (#56)
+
+* try to quantize things
+
+* Start work on interrogators
+
+(Deepdanbooru is the only one tested, and it works)
+
+* finish interrogation work
+
+* Revert lwp_sd.py
+
+* Refactor
+
+* Partial Frontend for tagger
+
+* Fix requirement installer
+
+* Frontend functional
+
+---------
+
+Co-authored-by: Stax124 <tamoncz@gmail.com>"
+github.com/lancedb/vectordb-recipes,examples/arxiv-recommender/main.py,2024-02-01T16:01:42Z,"linting  (#130)
+
+* talk with podcast
+
+* added talk-with-podcast
+
+* imgs
+
+* updated readme
+
+* added requirements file
+
+* added support for Langroid
+
+* typo
+
+* requirements update
+
+* path and colab fix
+
+* sentiment link fix
+
+* comments in colab
+
+* fix
+
+* description change
+
+* doc link fix
+
+* talk-with-wikipedia
+
+* added pylinting
+
+* added pylinting
+
+* removed pylint
+
+* lint test
+
+* lint path
+
+* added polar
+
+---------
+
+Co-authored-by: Ayush Chaurasia <ayush.chaurarsia@gmail.com>"
+github.com/lancedb/vectordb-recipes,examples/arxiv-recommender/main.py,2023-08-24T10:57:24Z,update
+github.com/lancedb/vectordb-recipes,examples/arxiv-recommender/main.py,2023-08-17T11:52:40Z,add initial files
+github.com/ByChelsea/VAND-APRIL-GAN,train.py,2023-07-05T08:35:29Z,faster
+github.com/ByChelsea/VAND-APRIL-GAN,train.py,2023-06-28T07:24:16Z,Simpler Version
+github.com/ByChelsea/VAND-APRIL-GAN,train.py,2023-06-21T13:53:00Z,bug fix
+github.com/ByChelsea/VAND-APRIL-GAN,train.py,2023-06-13T08:38:14Z,first commit
+github.com/altndrr/vic,src/models/clip.py,2024-02-02T14:14:47Z,"Improve metrics compute (#17)
+
+* Compute metrics once
+
+* Compute semantic iou and similarity on step
+
+* Ensure batch dim in `SentenceScore`"
+github.com/altndrr/vic,src/models/clip.py,2023-12-14T18:38:49Z,"Major code overhaul (#16)
+
+* Remove `.yaml` extension from config files
+
+* Remove `.compile` in `train.py`
+
+* Print config tree as last of extras
+
+* Remove colorlogger
+
+* Add missing types and docstrings
+
+* Update data
+
+* Suppress kaggle `OSError`
+
+* Add requests header to avoid HTTP 406 errors in download
+
+* Update metrics
+
+* Support masking in `NearestNeighboursClassifier`
+
+* Refactor retrieval system
+
+* Refactor models
+
+* Support disabling loggers
+
+* Fix wandb hparams logging format
+
+* Remove optim from CLIP config
+
+* Add interrogate pre-commit
+
+* Fix pytype issues
+
+* Fix default models filepath
+
+* Set default CaSED alpha to `0.7`
+
+* Add new dependencies
+
+* Rename `databases.json` file
+
+* Update citation
+
+* Bump repo version
+
+* Add reference in method
+
+* Update HuggingFace inference code
+
+* Add logo"
+github.com/altndrr/vic,src/models/clip.py,2023-06-02T07:11:50Z,Initial commit
+github.com/UMass-Foundation-Model/3D-LLM,3DLanguage_data/ChatCaptioner_based/gen_features/clip_oa.py,2023-09-09T04:51:38Z,refactor gen_features
+github.com/Newbeeer/diffusion_restart_sampling,diffuser/clip_score.py,2023-06-25T03:07:36Z,update
+github.com/diffusion-classifier/diffusion-classifier,run_winoground.py,2024-02-14T23:25:53Z,add DiT eval
+github.com/diffusion-classifier/diffusion-classifier,run_winoground.py,2023-11-08T21:06:29Z,add Winoground evaluation script
+github.com/NVIDIA/tao_pytorch_backend,nvidia_tao_pytorch/cv/odise/modeling/backbone/clip.py,2023-12-05T22:13:46Z,TAO 5.2 Release - PyTorch
+github.com/3DTopia/3DTopia,ldm/modules/encoders/modules.py,2024-01-18T08:05:22Z,first commit
+github.com/OpenGVLab/Instruct2Act,engine_robotic.py,2023-05-18T12:21:58Z,update the readme && remove some useless lines
+github.com/OpenGVLab/Instruct2Act,engine_robotic.py,2023-05-18T07:18:57Z,first commit
+github.com/aim-uofa/StyleDrop-PyTorch,predict.py,2023-07-07T21:06:29Z,replicate
+github.com/roatienza/Deep-Learning-Experiments,versions/2023/model_serving/demo/triton/openclip/server.py,2023-11-18T02:20:33Z,model serving
+github.com/Newbeeer/diffusion_restart_sampling,diffuser/eval_clip_score.py,2023-06-25T03:07:36Z,update
+github.com/Nerogar/OneTrainer,modules/module/HPSv2ScoreModel.py,2023-10-25T16:38:57Z,load HPSv2 with the correct precision
+github.com/Nerogar/OneTrainer,modules/module/HPSv2ScoreModel.py,2023-10-24T17:39:29Z,HPSv2 support for AlignProp
+github.com/aim-uofa/StyleDrop-PyTorch,gradio_demo.py,2023-07-09T00:52:03Z,update for colab
+github.com/aim-uofa/StyleDrop-PyTorch,gradio_demo.py,2023-07-09T00:07:07Z,update gradio demo
+github.com/aim-uofa/StyleDrop-PyTorch,gradio_demo.py,2023-07-05T05:09:29Z,fix some bugs
+github.com/aim-uofa/StyleDrop-PyTorch,gradio_demo.py,2023-07-05T03:49:03Z,ADD set_seed
+github.com/aim-uofa/StyleDrop-PyTorch,gradio_demo.py,2023-07-04T03:10:02Z,first commit
+github.com/Newbeeer/diffusion_restart_sampling,diffuser/coco_data_loader.py,2023-06-25T03:07:36Z,update
+github.com/WalBouss/GEM,gem/gem.py,2023-12-05T08:21:13Z,Initial commit :tada:
+github.com/gersteinlab/ML-Bench,MLAgent/repo/open_clip/tests/util_test.py,2023-11-18T21:06:52Z,test
+github.com/gersteinlab/ML-Bench,MLAgent/repo/open_clip/tests/test_inference_simple.py,2023-11-18T21:06:52Z,test
+github.com/gersteinlab/ML-Bench,MLAgent/repo/open_clip/tests/test_download_pretrained.py,2023-11-18T21:06:52Z,test
+github.com/achao2013/deep3dmap,deep3dmap/models/modulars/ns_encoders/openclip_encoder.py,2023-05-28T02:32:39Z,add lerf and related dependency
+github.com/minghanqin/LangSplat,preprocess.py,2023-12-26T11:07:35Z,init
+github.com/wkcn/TinyCLIP,inference.py,2024-03-01T02:15:21Z,[TinyCLIP] inference auto weight inheritance
+github.com/wkcn/TinyCLIP,inference.py,2024-01-21T12:18:23Z,first commit
+github.com/shenyunhang/APE,ape/modeling/text/clip_wrapper_open.py,2023-12-05T02:34:21Z,This is the 1st commit
+github.com/Algolzw/daclip-uir,universal-image-restoration/config/daclip-sde/train.py,2023-10-02T11:44:56Z,add uir code
+github.com/jianzhnie/GigaGAN,gigagan/open_clip.py,2023-04-01T01:53:41Z,Update open_clip.py
+github.com/jianzhnie/GigaGAN,gigagan/open_clip.py,2023-03-20T06:52:33Z,Create open_clip.py
+github.com/bytedance/fc-clip,fcclip/modeling/backbone/clip.py,2023-08-10T23:29:33Z,add support for resnet
+github.com/bytedance/fc-clip,fcclip/modeling/backbone/clip.py,2023-08-07T07:11:21Z,init commit
+github.com/ThereforeGames/unprompted,lib_unprompted/stable_diffusion/hard_prompts_made_easy.py,2023-08-08T03:48:35Z,v9.15.0
+github.com/ThereforeGames/unprompted,lib_unprompted/stable_diffusion/hard_prompts_made_easy.py,2023-02-13T05:44:46Z,v7.5.0
+github.com/zideliu/StyleDrop-PyTorch,train_t2i_colab_v2.py,2023-07-08T07:33:12Z,updated colab train script
+github.com/NVIDIA-AI-IOT/jetson-intro-to-distillation,openclip_utils.py,2023-08-01T20:53:22Z,license
+github.com/NVIDIA-AI-IOT/jetson-intro-to-distillation,openclip_utils.py,2023-06-27T21:37:06Z,initial commit
+github.com/daveredrum/SceneTex,models/pipeline/texture_pipeline.py,2023-11-28T15:38:19Z,Add code
+github.com/lucidrains/gigagan-pytorch,gigagan_pytorch/open_clip.py,2023-07-21T00:26:47Z,"for conditional training, complete the auxiliary clip contrastive loss"
+github.com/lucidrains/gigagan-pytorch,gigagan_pytorch/open_clip.py,2023-04-06T15:36:56Z,"auxiliary losses almost all complete, save for text conditioning within vision aided discriminator"
+github.com/lucidrains/gigagan-pytorch,gigagan_pytorch/open_clip.py,2023-04-04T20:03:50Z,clean solution to reconstruction loss from any fmap resolution in the discriminator
+github.com/lucidrains/gigagan-pytorch,gigagan_pytorch/open_clip.py,2023-04-03T18:07:28Z,make some headway into vision-aided gan loss
+github.com/lucidrains/gigagan-pytorch,gigagan_pytorch/open_clip.py,2023-03-29T20:53:19Z,knock out two of the aux losses
+github.com/lucidrains/gigagan-pytorch,gigagan_pytorch/open_clip.py,2023-03-13T20:39:51Z,prepare open clip
+github.com/Understanding-Visual-Datasets/VisDiff,serve/clip_server.py,2023-11-29T20:48:05Z,"initial release
+
+Co-Authored-By: Lisa Dunlap <25967790+lisadunlap@users.noreply.github.com>
+Co-Authored-By: Yuhui Zhang <yuhuiz@cs.stanford.edu>"
+github.com/Nota-NetsPresso/BK-SDM,src/eval_clip_score.py,2024-02-27T14:26:01Z,#51 update package and copyright info
+github.com/Nota-NetsPresso/BK-SDM,src/eval_clip_score.py,2023-07-25T18:59:54Z,add initial codes
+github.com/zideliu/StyleDrop-PyTorch,train_t2i_custom_v2.py,2023-07-08T03:34:00Z,fix bugs
+github.com/zideliu/StyleDrop-PyTorch,train_t2i_custom_v2.py,2023-07-04T03:10:02Z,first commit
+github.com/YuxinWenRick/tree-ring-watermark,run_tree_ring_watermark.py,2023-10-28T03:10:40Z,"corrected TPR@1%FPR, expect better performance"
+github.com/YuxinWenRick/tree-ring-watermark,run_tree_ring_watermark.py,2023-05-31T14:39:55Z,initial release
+github.com/LAION-AI/CLIP_benchmark,clip_benchmark/models/open_clip.py,2023-01-05T22:50:20Z,"Support Japanese CLIP by rinna (#50)
+
+* support japanese clip
+
+* Add comments
+
+* add `ja_clip` flag to base_args for passing tests
+
+* add japanese clip to features in readme
+
+* support japanese-clip for retrieval
+
+* load proper model by model_type
+
+* fix test
+
+* undo changes in metrics
+
+* add wrapper for ja_clip
+
+* Rename models.py to model_collection.py
+
+* use model_collection in cli.py
+
+* import os in cli.py
+
+* Update cli.py
+
+* delete duplicate of loading `model_collection`
+
+* rename a var `model` to `model_name` in models
+
+* small fixes for better name in japanese_clip.py
+
+* add How to add other CLIP models in readme
+
+Co-authored-by: Romain Beaumont <romain.rom1@gmail.com>"
+github.com/CuriseJia/FreeStyleRet,src/models/style_retrieval.py,2023-11-29T09:21:06Z,1.1
+github.com/CuriseJia/FreeStyleRet,src/models/style_retrieval.py,2023-11-15T15:13:43Z,0.3.5
+github.com/CuriseJia/FreeStyleRet,src/models/style_retrieval.py,2023-11-13T16:27:32Z,0.3.4
+github.com/CuriseJia/FreeStyleRet,src/models/style_retrieval.py,2023-11-11T14:21:12Z,0.3.1
+github.com/CuriseJia/FreeStyleRet,src/models/style_retrieval.py,2023-11-10T16:51:50Z,0.3.0
+github.com/CuriseJia/FreeStyleRet,src/models/style_retrieval.py,2023-11-10T10:11:33Z,0.2.10
+github.com/CuriseJia/FreeStyleRet,src/models/style_retrieval.py,2023-11-09T08:04:49Z,0.2.9.2
+github.com/CuriseJia/FreeStyleRet,src/models/style_retrieval.py,2023-11-05T17:25:12Z,0.2.8
+github.com/CuriseJia/FreeStyleRet,src/models/style_retrieval.py,2023-11-03T07:50:24Z,0.2.6
+github.com/CuriseJia/FreeStyleRet,src/models/style_retrieval.py,2023-11-02T17:44:39Z,0.2.5
+github.com/CuriseJia/FreeStyleRet,src/models/style_retrieval.py,2023-11-01T16:35:10Z,0.2.4
+github.com/CuriseJia/FreeStyleRet,src/models/style_retrieval.py,2023-10-31T12:26:20Z,0.2.2
+github.com/CuriseJia/FreeStyleRet,src/models/style_retrieval.py,2023-10-23T02:09:03Z,0.1.5
+github.com/CuriseJia/FreeStyleRet,src/models/style_retrieval.py,2023-10-21T15:14:16Z,0.1.4
+github.com/CuriseJia/FreeStyleRet,src/models/style_retrieval.py,2023-10-20T06:25:54Z,0.1.2
+github.com/CuriseJia/FreeStyleRet,src/models/style_retrieval.py,2023-10-19T14:46:26Z,0.1.0
+github.com/CuriseJia/FreeStyleRet,src/models/style_retrieval.py,2023-10-19T02:50:12Z,0.0.4
+github.com/CuriseJia/FreeStyleRet,src/models/style_retrieval.py,2023-10-18T10:42:06Z,0.0.3
+github.com/CuriseJia/FreeStyleRet,src/models/style_retrieval.py,2023-10-18T08:01:17Z,0.0.2
+github.com/CuriseJia/FreeStyleRet,src/models/style_retrieval.py,2023-10-17T15:14:06Z,0.0.1
+github.com/CuriseJia/FreeStyleRet,imagenet_test/clip_test.py,2023-11-15T15:13:43Z,0.3.5
+github.com/CuriseJia/FreeStyleRet,imagenet_test/clip_test.py,2023-11-13T16:27:32Z,0.3.4
+github.com/CuriseJia/FreeStyleRet,imagenet_test/clip_test.py,2023-11-13T10:27:54Z,0.3.3
+github.com/CuriseJia/FreeStyleRet,imagenet_test/clip_test.py,2023-11-07T16:36:49Z,0.2.9.1
+github.com/CuriseJia/FreeStyleRet,comparison_test/clip_test.py,2023-11-15T15:13:43Z,0.3.5
+github.com/CuriseJia/FreeStyleRet,comparison_test/clip_test.py,2023-11-13T16:27:32Z,0.3.4
+github.com/CuriseJia/FreeStyleRet,comparison_test/clip_test.py,2023-11-13T10:27:54Z,0.3.3
+github.com/CuriseJia/FreeStyleRet,comparison_test/clip_test.py,2023-11-11T14:21:12Z,0.3.1
+github.com/CuriseJia/FreeStyleRet,comparison_test/clip_test.py,2023-11-09T08:04:49Z,0.2.9.2
+github.com/CuriseJia/FreeStyleRet,comparison_test/clip_test.py,2023-11-06T17:31:00Z,0.2.9
+github.com/CuriseJia/FreeStyleRet,comparison_test/prompt_model.py,2023-11-13T10:27:54Z,0.3.3
+github.com/CuriseJia/FreeStyleRet,comparison_test/prompt_model.py,2023-11-11T14:21:12Z,0.3.1
+github.com/CuriseJia/FreeStyleRet,comparison_test/prompt_model.py,2023-11-10T16:51:50Z,0.3.0
+github.com/CuriseJia/FreeStyleRet,comparison_test/prompt_model.py,2023-11-10T10:11:33Z,0.2.10
+github.com/CuriseJia/FreeStyleRet,comparison_test/prompt_model.py,2023-11-06T17:31:00Z,0.2.9
+github.com/CuriseJia/FreeStyleRet,imagenet_test/languagebind_test.py,2023-11-15T15:13:43Z,0.3.5
+github.com/CuriseJia/FreeStyleRet,imagenet_test/languagebind_test.py,2023-11-13T16:27:32Z,0.3.4
+github.com/CuriseJia/FreeStyleRet,comparison_test/languagebind_test.py,2023-11-15T15:13:43Z,0.3.5
+github.com/CuriseJia/FreeStyleRet,comparison_test/languagebind_test.py,2023-11-13T16:27:32Z,0.3.4
+github.com/wusize/CLIPSelf,tools/generate_text_embeddings.py,2023-09-30T07:14:45Z,'init'
+github.com/OpenGVLab/InternVL,clip_benchmark/clip_benchmark/models/open_clip.py,2023-12-25T18:38:14Z,Release code and models
+github.com/taesiri/ZoomIsAllYouNeed,src/ImageNet_Hard/benchmark-openclip.py,2023-05-25T00:58:04Z,Add files via upload
+github.com/taesiri/ZoomIsAllYouNeed,src/ImageNet_Hard/benchmark_openclip.py,2023-05-26T14:04:04Z,openclip benchmark
+github.com/taesiri/ZoomIsAllYouNeed,src/ImageNet_Hard/benchmark_openclip_datacomp.py,2023-05-26T03:43:03Z,Added results for datacomp/commonpool
+github.com/aim-uofa/StyleDrop-PyTorch,train_t2i_colab_v2.py,2023-07-08T07:33:12Z,updated colab train script
+github.com/leptonai/examples,advanced/open-clip/open-clip.py,2023-08-16T03:44:55Z,black format
+github.com/leptonai/examples,advanced/open-clip/open-clip.py,2023-08-16T03:29:08Z,more
+github.com/leptonai/examples,advanced/open-clip/open-clip.py,2023-08-16T03:26:47Z,Fix lint error
+github.com/leptonai/examples,advanced/open-clip/open-clip.py,2023-08-15T21:42:04Z,chore(examples): merge the clip model code form leptonai/lepton to here
+github.com/leptonai/examples,advanced/open-clip/open-clip.py,2023-08-15T21:22:42Z,add type annotation
+github.com/leptonai/examples,advanced/open-clip/open-clip.py,2023-08-14T23:48:44Z,feat(clip) : add clip as an example
+github.com/haoshao-nku/medical_seg,mmsegmentation/projects/CAT-Seg/cat_seg/models/clip_ovseg.py,2023-12-15T14:20:47Z,update code
+github.com/zideliu/StyleDrop-PyTorch,extract_empty_feature.py,2023-07-09T07:21:34Z,fixing memory overflow
+github.com/zideliu/StyleDrop-PyTorch,extract_empty_feature.py,2023-07-04T03:10:02Z,first commit
+github.com/pharmapsychotic/clip-interrogator,clip_interrogator/clip_interrogator.py,2023-09-10T00:15:11Z,Update CACHE_URL_BASE
+github.com/pharmapsychotic/clip-interrogator,clip_interrogator/clip_interrogator.py,2023-04-12T16:56:37Z,change dribble to dribbble (#69)
+github.com/pharmapsychotic/clip-interrogator,clip_interrogator/clip_interrogator.py,2023-03-20T03:43:46Z,"Support for many different caption models:
+blip-base, blip-large, blip2-2.7b, blip2-flan-t5-xl, git-large-coco"
+github.com/pharmapsychotic/clip-interrogator,clip_interrogator/clip_interrogator.py,2023-03-20T01:02:23Z,Expose LabelTable and load_list and give example in README how they can be used to rank your own list of terms.
+github.com/pharmapsychotic/clip-interrogator,clip_interrogator/clip_interrogator.py,2023-02-22T02:55:19Z,Move definition of clip_model_name (#52)
+github.com/pharmapsychotic/clip-interrogator,clip_interrogator/clip_interrogator.py,2023-02-20T22:30:26Z,Minor fix to BLIP offloading
+github.com/pharmapsychotic/clip-interrogator,clip_interrogator/clip_interrogator.py,2023-02-20T22:11:33Z,"More safetensor, download, and VRAM improvements"
+github.com/pharmapsychotic/clip-interrogator,clip_interrogator/clip_interrogator.py,2023-02-19T04:29:36Z,When blip_offload enabled keep BLIP model on CPU to start.
+github.com/pharmapsychotic/clip-interrogator,clip_interrogator/clip_interrogator.py,2023-02-18T21:31:45Z,add the negative cache url
+github.com/pharmapsychotic/clip-interrogator,clip_interrogator/clip_interrogator.py,2023-02-18T20:53:02Z,"safetensors!
+- store cached embeddings in safetensor format
+- updated huggingface ci-preprocess repo
+- bumped version to 0.5.0"
+github.com/pharmapsychotic/clip-interrogator,clip_interrogator/clip_interrogator.py,2023-02-05T18:31:12Z,.
+github.com/pharmapsychotic/clip-interrogator,clip_interrogator/clip_interrogator.py,2023-02-05T18:18:12Z,"0.4.2:
+- upgrade chain to take a min_count parameter so it won't early out until it has considered at least min_count flavors
+- interrogate method (""best"" mode) also checks against classic and fast to use their output if it's better
+- fix bug of config.download_cache option not being used!
+- add notes on Config object to readme"
+github.com/pharmapsychotic/clip-interrogator,clip_interrogator/clip_interrogator.py,2023-02-05T00:32:49Z,"Bunch of updates! (#40)
+
+- auto download the cache files from huggingface
+- experimental negative prompt mode
+- slight quality and performance improvement to best mode
+- analyze tab in Colab and run_gradio to get table of ranked terms"
+github.com/pharmapsychotic/clip-interrogator,clip_interrogator/clip_interrogator.py,2023-01-06T01:44:38Z,"Make the BLIP model configurable, can set config.blip_model_type now to 'base' or 'large'"
+github.com/pharmapsychotic/clip-interrogator,clip_interrogator/clip_interrogator.py,2023-01-04T18:39:45Z,Update to nicer BLIP packaging
+github.com/pharmapsychotic/clip-interrogator,clip_interrogator/clip_interrogator.py,2022-12-10T21:42:46Z,Fix for running on CPU
+github.com/pharmapsychotic/clip-interrogator,clip_interrogator/clip_interrogator.py,2022-11-29T22:38:48Z,"0.3.1 fix for running on cpu, update readme usage instructions"
+github.com/pharmapsychotic/clip-interrogator,clip_interrogator/clip_interrogator.py,2022-11-28T18:36:24Z,Handle exception trying to load cached table
+github.com/pharmapsychotic/clip-interrogator,clip_interrogator/clip_interrogator.py,2022-11-28T18:30:39Z,"Default to ViT-L, lower intermediate count for Colab with ViT-H"
+github.com/pharmapsychotic/clip-interrogator,clip_interrogator/clip_interrogator.py,2022-11-27T23:54:13Z,"Ability to swap CLIP models (takes about 5s for ViTL and 10s for ViTH), update Replicate cog"
+github.com/pharmapsychotic/clip-interrogator,clip_interrogator/clip_interrogator.py,2022-11-26T23:59:00Z,"More fixes, improvement and cleanup."
+github.com/pharmapsychotic/clip-interrogator,clip_interrogator/clip_interrogator.py,2022-11-25T16:33:13Z,"Handle differences in how open_clip does prompt truncation, run_gradio support for all the open_clip models and --share option."
+github.com/pharmapsychotic/clip-interrogator,clip_interrogator/clip_interrogator.py,2022-11-25T15:26:00Z,Shuffle BLIP back to system RAM to help with 16GB Colab
+github.com/pharmapsychotic/clip-interrogator,clip_interrogator/clip_interrogator.py,2022-11-24T21:27:28Z,First test version with OpenCLIP and ViTH!
+github.com/pharmapsychotic/clip-interrogator,clip_interrogator/clip_interrogator.py,2022-11-21T20:17:36Z,"Update notebook batch processing with option to rename files so can be used with [filewords] in Dreambooth!
+- new `quiet` config option so CLIP Interrogator doesn't print and tqdm
+- `max_flavors` option to each interrogate method"
+github.com/pharmapsychotic/clip-interrogator,clip_interrogator/clip_interrogator.py,2022-11-06T04:21:13Z,Gradio version plus classic and fast modes
+github.com/pharmapsychotic/clip-interrogator,clip_interrogator/clip_interrogator.py,2022-11-06T02:41:08Z,CLIPInterrogator -> Interrogator
+github.com/pharmapsychotic/clip-interrogator,clip_interrogator/clip_interrogator.py,2022-11-06T02:02:08Z,Add to pip!
+github.com/data2ml/all-clip,all_clip/open_clip.py,2024-01-21T20:47:24Z,Split in one file per model.
+github.com/tgxs002/align_sd,process_diffusiondb.py,2023-05-10T12:34:17Z,"highlight updates, fix typo, add regularization images"
+github.com/aim-uofa/StyleDrop-PyTorch,train_t2i_custom_v2.py,2023-07-08T03:34:00Z,fix bugs
+github.com/aim-uofa/StyleDrop-PyTorch,train_t2i_custom_v2.py,2023-07-04T03:10:02Z,first commit
+github.com/Vision-CAIR/ChatCaptioner,ChatCaptioner/chatcaptioner/clip.py,2023-04-11T11:48:46Z,update
+github.com/matsui528/scs,search.py,2023-10-23T11:28:50Z,readme update
+github.com/matsui528/scs,search.py,2023-10-23T14:32:00Z,readme
+github.com/matsui528/scs,search.py,2023-10-23T14:21:34Z,added comments
+github.com/matsui528/scs,search.py,2023-10-23T14:11:39Z,initial finish
+github.com/matsui528/scs,search_streamlit.py,2023-10-23T16:49:33Z,streamlit
+github.com/Algolzw/daclip-uir,universal-image-restoration/config/daclip-sde/test.py,2023-10-02T11:44:56Z,add uir code
+github.com/naamiinepal/medvlsm,src/datamodules/datasets/image_text_mask.py,2024-02-09T09:18:05Z,"test: packages, cfgs, and integrity of the repo"
+github.com/naamiinepal/medvlsm,src/datamodules/datasets/image_text_mask.py,2024-02-09T05:18:21Z,BiomedCLIP* configured
+github.com/naamiinepal/medvlsm,src/datamodules/datasets/image_text_mask.py,2023-12-27T14:37:51Z,feat!: integrated the ZS-Ref implementation
+github.com/naamiinepal/medvlsm,src/datamodules/datasets/image_text_mask.py,2023-11-22T01:44:25Z,feat!: new configurable framework for vlsm
+github.com/AnyLoc/AnyLoc,examples/trivial_vpr_with_clip.py,2023-08-02T17:09:32Z,Created first (public) release
+github.com/djghosh13/geneval,evaluation/evaluate_images.py,2023-12-14T22:19:35Z,Updated README
+github.com/djghosh13/geneval,evaluation/evaluate_images.py,2023-12-14T21:56:56Z,Fixed model download and path
+github.com/djghosh13/geneval,evaluation/evaluate_images.py,2023-12-14T18:16:08Z,Updated scripts for single-GPU
+github.com/djghosh13/geneval,evaluation/evaluate_images.py,2023-08-22T21:09:50Z,Initial code release
+github.com/mlfoundations/datacomp,eval_utils/wds_eval.py,2023-07-22T20:33:48Z,"Style fix (#35)
+
+* precommit changes
+
+* add precommit hook"
+github.com/mlfoundations/datacomp,eval_utils/wds_eval.py,2023-04-28T04:18:58Z,Initial commit
+github.com/dome272/Paella,src_distributed/utils.py,2023-04-13T14:47:27Z,v3 main commit
+github.com/kerrj/lerf,lerf/encoders/openclip_encoder.py,2024-01-18T00:12:46Z,Update paths+configs to nerfstudio 1.0 version
+github.com/kerrj/lerf,lerf/encoders/openclip_encoder.py,2023-04-19T21:06:17Z,refactor to fix handle in callback
+github.com/kerrj/lerf,lerf/encoders/openclip_encoder.py,2023-04-14T22:03:56Z,code for using new viewer with custom ViewerText
+github.com/kerrj/lerf,lerf/encoders/openclip_encoder.py,2023-04-04T16:34:46Z,init commit
+github.com/carefree0910/carefree-learn,examples/reproduce/clip/run_open_clip.py,2023-12-06T06:38:27Z,✅Re-introduced `reproduce/clip`
+github.com/carefree0910/carefree-learn,examples/reproduce/clip/run_open_clip.py,2023-03-21T11:05:30Z,🎉Started `v0.4.x`
+github.com/carefree0910/carefree-learn,examples/reproduce/clip/run_open_clip.py,2022-12-10T07:24:17Z,🚚Move `reproduce` to `examples` root
+github.com/concept-graphs/concept-graphs,conceptgraph/scripts/eval_replica_semseg.py,2024-01-16T06:40:59Z,add sem seg evaluation script on replica
+github.com/huggingface/api-inference-community,docker_images/open_clip/app/pipelines/zero_shot_image_classification.py,2023-11-08T20:34:17Z,Missed the exp() on logit scale for OpenCLIP update (#349)
+github.com/huggingface/api-inference-community,docker_images/open_clip/app/pipelines/zero_shot_image_classification.py,2023-11-08T06:06:41Z,"Update OpenCLIP to latest version, bump other reqs (#347)
+
+* Update OpenCLIP to latest version, bump other reqs, add support for sigmoid scores for SigLIP models
+
+* Fix black complaints"
+github.com/huggingface/api-inference-community,docker_images/open_clip/app/pipelines/zero_shot_image_classification.py,2023-04-18T15:17:20Z,"Initial open_clip zero-shot support. Test working locally but docker failing. (#232)
+
+* Initial open_clip support. Test working locally but docker failing.
+
+* Fixing zero-shot-cls
+
+* Fixing docker test.
+
+---------
+
+Co-authored-by: Nicolas Patry <patry.nicolas@protonmail.com>"
+github.com/mlfoundations/datacomp,eval_utils/wino_eval.py,2023-07-22T20:33:48Z,"Style fix (#35)
+
+* precommit changes
+
+* add precommit hook"
+github.com/mlfoundations/datacomp,eval_utils/wino_eval.py,2023-05-31T23:11:13Z,"Update HF evalset cache dir and download script (#21)
+
+* Update HF evalset cache and download script
+
+* Fix cache dir"
+github.com/mlfoundations/datacomp,eval_utils/wino_eval.py,2023-04-28T04:18:58Z,Initial commit
+github.com/concept-graphs/concept-graphs,conceptgraph/scripts/generate_gsa_results.py,2024-02-28T04:49:23Z,refactor get clip feature function to be batched
+github.com/concept-graphs/concept-graphs,conceptgraph/scripts/generate_gsa_results.py,2024-02-23T16:05:34Z,temp ugly bugfix
+github.com/concept-graphs/concept-graphs,conceptgraph/scripts/generate_gsa_results.py,2024-02-23T04:44:09Z,added yolo world detection option
+github.com/concept-graphs/concept-graphs,conceptgraph/scripts/generate_gsa_results.py,2024-02-23T04:39:42Z,change outdated tag2text stuff to ram stuff
+github.com/concept-graphs/concept-graphs,conceptgraph/scripts/generate_gsa_results.py,2023-09-29T05:44:42Z,add initial public code
+github.com/aim-uofa/StyleDrop-PyTorch,extract_empty_feature.py,2023-07-09T07:21:34Z,fixing memory overflow
+github.com/aim-uofa/StyleDrop-PyTorch,extract_empty_feature.py,2023-07-04T03:10:02Z,first commit
+github.com/frank-xwang/InstanceDiffusion,eval/eval_attribute_binding.py,2024-02-11T00:40:51Z,add attribute binding
+github.com/mlfoundations/datacomp,eval_utils/retr_eval.py,2023-07-22T20:33:48Z,"Style fix (#35)
+
+* precommit changes
+
+* add precommit hook"
+github.com/mlfoundations/datacomp,eval_utils/retr_eval.py,2023-05-31T23:11:13Z,"Update HF evalset cache dir and download script (#21)
+
+* Update HF evalset cache and download script
+
+* Fix cache dir"
+github.com/mlfoundations/datacomp,eval_utils/retr_eval.py,2023-04-28T05:30:27Z,Update retrieval metrics
+github.com/mlfoundations/datacomp,eval_utils/retr_eval.py,2023-04-28T04:18:58Z,Initial commit
+github.com/lucidrains/perfusion-pytorch,perfusion_pytorch/open_clip.py,2023-08-14T16:07:14Z,"add a function that can accept open clip, a bunch of prompts as List[str], and return the C covariance matrix needed"
+github.com/facebookresearch/PUG,PUG_SPAR/run_eval_vlms_on_spar.py,2023-08-09T00:51:32Z,Initial commit
+github.com/zzc-1998/SJTU-H3D,quality_measure_utils/semantic_affinity_quality_measure.py,2023-06-14T09:05:14Z,Add files via upload
+github.com/concept-graphs/concept-graphs,conceptgraph/scripts/streamlined_detections.py,2024-02-28T04:49:58Z,"add clip fts, add profiling code, other small updates"
+github.com/concept-graphs/concept-graphs,conceptgraph/scripts/streamlined_detections.py,2024-02-27T03:07:17Z,added streamlined detections script
+github.com/KU-CVLAB/CAT-Seg,cat_seg/modeling/transformer/cat_seg_predictor.py,2023-03-21T12:14:05Z,initial commit
+github.com/chs20/RobustVLM,CLIP_benchmark/clip_benchmark/models/open_clip.py,2024-02-19T18:17:12Z,Initial commit
+github.com/concept-graphs/concept-graphs,conceptgraph/scripts/visualize_cfslam_results.py,2023-09-29T05:44:42Z,add initial public code
+github.com/Vision-CAIR/ChatCaptioner,Video_ChatCaptioner/chatcaptioner/clip.py,2023-04-11T11:46:37Z,update
+github.com/Computer-Vision-in-the-Wild/UniCL-OpenCLIP,tests/util_test.py,2022-12-09T03:23:32Z,update
+github.com/Computer-Vision-in-the-Wild/UniCL-OpenCLIP,tests/test_inference_simple.py,2022-12-09T03:23:32Z,update
+github.com/tgxs002/HPSv2,hpsv2/tests/util_test.py,2023-08-02T06:54:12Z,Implement Pypi package
+github.com/ParisNeo/lollms,lollms/image_gen_modules/clip_interrogator.py,2023-11-28T15:46:16Z,Update clip_interrogator.py
+github.com/ParisNeo/lollms,lollms/image_gen_modules/clip_interrogator.py,2023-11-28T01:03:58Z,added vision to all models
+github.com/tgxs002/HPSv2,hpsv2/tests/test_inference_simple.py,2023-08-02T06:54:12Z,Implement Pypi package
+github.com/abhishekkrthakur/diffuzers,diffuzers/clip_interrogator.py,2023-01-04T16:03:12Z,update
+github.com/tgxs002/HPSv2,hpsv2/tests/test_download_pretrained.py,2023-08-02T06:54:12Z,Implement Pypi package
+github.com/facebookresearch/SIEVE,eval_utils/wds_eval.py,2023-12-14T20:43:31Z,Initial commit
+github.com/facebookresearch/SIEVE,eval_utils/wino_eval.py,2023-12-14T20:43:31Z,Initial commit
+github.com/facebookresearch/SIEVE,eval_utils/retr_eval.py,2023-12-14T20:43:31Z,Initial commit
+github.com/d8ahazard/sd_smartprocess,clipinterrogator.py,2023-01-03T02:59:28Z,"Add min/max CLIP length, don't adjust image size unless we tell it to"
+github.com/d8ahazard/sd_smartprocess,clipinterrogator.py,2022-12-15T19:48:36Z,"Code cleanup, fixes"
+github.com/d8ahazard/sd_smartprocess,clipinterrogator.py,2022-12-10T23:54:02Z,Moar fun
+github.com/d8ahazard/sd_smartprocess,clipinterrogator.py,2022-12-10T23:33:34Z,"Super Update
+
+Add WD14 tagger.
+Add CLIP v2.1 interrogator.
+Allow filtering wd14, booru tags by score.
+Add don't rename option.
+Update ReallySafe
+Bump BLIP version?
+Remove split image options.
+Completely overhaul smartprocess..."
+github.com/zideliu/StyleDrop-PyTorch,extract_test_prompt_feature.py,2023-07-04T03:10:02Z,first commit
+github.com/unum-cloud/coco-sm,modules/open_clip.py,2023-08-17T14:18:53Z,Init: First commit
+github.com/ByChelsea/VAND-APRIL-GAN,test.py,2023-07-05T08:36:13Z,faster
+github.com/ByChelsea/VAND-APRIL-GAN,test.py,2023-06-28T15:04:39Z,support resnet
+github.com/ByChelsea/VAND-APRIL-GAN,test.py,2023-06-28T07:24:16Z,Simpler Version
+github.com/ByChelsea/VAND-APRIL-GAN,test.py,2023-06-22T09:18:51Z,fix bug
+github.com/ByChelsea/VAND-APRIL-GAN,test.py,2023-06-21T14:48:45Z,fix bug
+github.com/ByChelsea/VAND-APRIL-GAN,test.py,2023-06-21T13:53:00Z,bug fix
+github.com/ByChelsea/VAND-APRIL-GAN,test.py,2023-06-13T08:38:14Z,first commit
+github.com/KU-CVLAB/CAT-Seg,open_clip/tests/util_test.py,2023-03-21T12:14:05Z,initial commit
+github.com/KU-CVLAB/CAT-Seg,open_clip/tests/test_inference_simple.py,2023-03-21T12:14:05Z,initial commit
+github.com/KU-CVLAB/CAT-Seg,open_clip/tests/test_download_pretrained.py,2023-03-21T12:14:05Z,initial commit
+github.com/aim-uofa/StyleDrop-PyTorch,extract_test_prompt_feature.py,2023-07-04T03:10:02Z,first commit
+github.com/aimagelab/open-fashion-clip,quick_start.py,2023-08-31T11:45:14Z,Code and checkpoint release
+github.com/aimagelab/open-fashion-clip,quick_start.py,2023-08-31T10:37:53Z,Code and checkpoint release
+github.com/UCSC-VLAA/vllm-safety-benchmark,safety_evaluations/redteaming/misleading_vision_attack/misleading_vis_attack.py,2023-11-24T02:09:04Z,first commit
+github.com/modelscope/normal-depth-diffusion,tools/compute_metric.py,2023-12-11T02:42:52Z,init
+github.com/modelscope/normal-depth-diffusion,tools/compute_metric_curves.py,2023-12-11T02:42:52Z,init
+github.com/modelscope/normal-depth-diffusion,tools/compute_clip_metric_curves.py,2023-12-11T02:42:52Z,init
+github.com/modelscope/normal-depth-diffusion,tools/compute_objaverse_clipscore.py,2023-12-11T02:42:52Z,init
+github.com/modelscope/normal-depth-diffusion,tools/compute_cfg_clip_metric_curves.py,2023-12-11T02:42:52Z,init
+github.com/NeuralRealm/StableFusion,stablefusion/scripts/clip_interrogator.py,2023-03-03T12:10:15Z,rearranged the file and add upscaler feature
+github.com/waltonfuture/InstructionGPT-4,cluster/kmeans++/kmeans_pp.py,2023-10-09T07:45:22Z,codes
+github.com/waltonfuture/InstructionGPT-4,cluster/spectral/spectral_clustering.py,2023-10-09T07:45:22Z,codes
+github.com/waltonfuture/InstructionGPT-4,cc_sbu_align_test/full_score.py,2023-10-09T07:45:22Z,codes
+github.com/orrzohar/LOVM,modelGPT/create_models.py,2023-06-14T18:52:24Z,init
+github.com/orrzohar/LOVM,modelGPT/encode_dataset.py,2023-06-14T18:52:24Z,init
+github.com/orrzohar/LOVM,modelGPT/encode_syn_dataset.py,2023-06-14T18:52:24Z,init
+github.com/yeongjoonJu/NeuroInspect,clip_illusion.py,2023-10-19T02:56:24Z,requirements are modified
+github.com/yeongjoonJu/NeuroInspect,clip_illusion.py,2023-09-07T01:56:16Z,add core relevance score
+github.com/yeongjoonJu/NeuroInspect,clip_illusion.py,2023-07-23T06:38:35Z,adding extra neurou aug
+github.com/yeongjoonJu/NeuroInspect,clip_illusion.py,2023-07-19T05:42:05Z,init repo
+github.com/yandex-research/adaptive-diffusion,consistency_models_sd/evaluations/clip_score.py,2023-12-19T05:34:44Z,"Initial update
+* two examples of t2i
+* arxiv link"
+github.com/crystallee-ai/controlGIF,clip_interrogator/clip_interrogator.py,2023-11-26T05:51:01Z,Update clip_interrogator.py
+github.com/crystallee-ai/controlGIF,clip_interrogator/clip_interrogator.py,2023-11-25T09:12:55Z,v1
+github.com/hq-deng/AnoVL,vl_test.py,2023-09-07T09:44:56Z,Add files via upload
+github.com/hq-deng/AnoVL,vis_test.py,2023-09-07T09:44:56Z,Add files via upload
+github.com/huzeyann/MemoryEncodingModel,mem/backbone.py,2023-08-10T06:34:06Z,rename files
+github.com/iejMac/clip-video-encode,clip_video_encode/simplemapper.py,2023-09-13T02:54:38Z,"clip-video-encode: add VQ-GAN frame tokenization (#77)
+
+* clip-video-encode: add VQ-GAN frame tokenization
+
+* it works
+
+* automatic is_gumbel
+
+* update
+
+* bigger bs
+
+* attempt at resuming
+
+* update tests
+
+* fix black
+
+* fix black
+
+* fix
+
+---------
+
+Co-authored-by: iejmac <iejmac@ip-26-0-151-20.us-west-2.compute.internal>
+Co-authored-by: iejmac <iejmac@ip-172-64-56-42.us-west-2.compute.internal>
+Co-authored-by: iejmac <iejmac@ip-26-0-146-117.us-west-2.compute.internal>
+Co-authored-by: iejmac <iejmac@ip-26-0-155-198.us-west-2.compute.internal>"
+github.com/iejMac/clip-video-encode,clip_video_encode/simplemapper.py,2023-04-26T07:35:37Z,"captioning: allow setting params (#73)
+
+* captioning: allow setting params
+
+* fix black
+
+* docstring
+
+---------
+
+Co-authored-by: iejmac <iejmac@ip-26-0-151-112.us-west-2.compute.internal>"
+github.com/iejMac/clip-video-encode,clip_video_encode/simplemapper.py,2023-04-06T10:55:57Z,"Add CLIP similarity if caption exists + add autocast in FrameMapper (#69)
+
+* Add CLIP similarity if caption exists
+
+* progress
+
+* fix lint
+
+* batch normalization of caption embs"
+github.com/iejMac/clip-video-encode,clip_video_encode/simplemapper.py,2023-04-02T10:43:30Z,"Add CoCa captioning (#67)
+
+* Add CoCa captioning
+
+* works
+
+* fix black
+
+* req
+
+* fix lint
+
+* fix black
+
+* reset"
+github.com/iejMac/clip-video-encode,clip_video_encode/simplemapper.py,2022-07-31T20:45:12Z,"LiveNumpyEncoder: waits for incoming frame arrays and encodes them with CLIP (1700 samples/s) (#31)
+
+* NumpyEncoder: waits for incoming frame arrays and encodes them with CLIP
+
+* works 1700 FPS
+
+* pass in dev
+
+* rename
+
+* add example
+
+* fix lint"
+github.com/iejMac/clip-video-encode,clip_video_encode/simplemapper.py,2022-06-15T06:52:42Z,"Asynchronously Read and Encode frames for efficiency. (~4x speedup depending on target video FPS) (#7)
+
+* Asynchronously Load, Embed, and Save videos for efficiency
+
+* saver: initial version
+
+* that was supposed to be the loader
+
+* small update
+
+* small testing script
+
+* new idea
+
+* adding batcher
+
+* taking step back and reimplementing main in modules
+
+* Simple version of all 4 components
+
+* Move preprocessing to batcher + log perf in samples/s + batcher 2.7x performance improvement
+
+* Use multiprocessing to make Reader faster
+
+* simplereader -> reader
+
+* Batcher improvements + perf metrics update
+
+* add unit tests for all modules
+
+* add modules to package
+
+* Reading + Mapping parallelism
+
+* final version for update
+
+* Revert to regular preprocessing, channel dim might've been mixed up
+
+* tests updated
+
+* new clip_video_encode script
+
+* fix ci
+
+* ci fix
+
+* shared_memory not in python < 3.8
+
+* some linting + remove time prints
+
+* linting
+
+* lint fix
+
+* better default value for dest"
+github.com/TIGER-AI-Lab/ImagenHub,src/imagen_hub/depend/clip_retrieval/load_clip.py,2023-10-20T00:35:15Z,release 0.1.0
+github.com/Zhiyuan-R/ChatGPT-Powered-Hierarchical-Comparisons-for-Image-Classification,main.py,2023-12-17T17:59:32Z,basic_files
+github.com/Ascend/ModelZoo-PyTorch,AscendIE/AscendIE/StableDiffusion/clip_score.py,2023-10-09T12:26:20Z,"!5610 [自研][PyTorch离线推理][Text-to-Image][StableDiffusion] 添加AIE-SD的unetparser功能、精度计算功能及README推理指导
+* fix bugs
+* Merge https://gitee.com/ascend/ModelZoo-PyTorch
+* fix codecheck issues
+* Merge https://gitee.com/ascend/ModelZoo-PyTorch
+* add unet_onnx_parser, clip score and readme"
+github.com/Ascend/ModelZoo-PyTorch,ACL_PyTorch/built-in/foundation_models/stable_diffusion/clip_score.py,2023-08-29T11:58:57Z,"!5419 [自研][PyTorch离线推理][Text-to-Image] StableDiffusion 添加精度验证、修改改图脚本
+* 修复atc参数
+* 修改main传参逻辑
+* 替换使用fdopen读取文件
+* 修复改图脚本
+* 添加精度计算相关内容
+* 添加精度计算脚本
+* 添加精度验证依赖
+* 添加支持读取Parti数据集"
+github.com/bentoml/CLIP-API-service,src/clip_api_service/models/openclip.py,2023-10-11T18:33:36Z,fix: serve not using defined model
+github.com/bentoml/CLIP-API-service,src/clip_api_service/models/openclip.py,2023-05-25T22:01:51Z,Added CLI
+github.com/bentoml/CLIP-API-service,src/clip_api_service/models/openclip.py,2023-05-23T05:16:39Z,"PDM, Ruff, Black - build WIP"
+github.com/KaiyuYue/nxtp,src/evals/engine.py,2023-12-04T19:15:15Z,first commit
+github.com/r0mar0ma/sd-webui-pez-dispenser,scripts/optim_utils.py,2023-09-18T19:35:23Z,missed file
+github.com/Ascend/ModelZoo-PyTorch,PyTorch/built-in/others/OpenCLIP_for_PyTorch/tests/util_test.py,2023-05-17T12:47:36Z,"!4706 [自研][PyTorch] [OpenClip For Pytorch] 初次提交
+* 提交open clip原始代码"
+github.com/Ascend/ModelZoo-PyTorch,PyTorch/built-in/others/OpenCLIP_for_PyTorch/tests/test_inference_simple.py,2023-05-17T12:47:36Z,"!4706 [自研][PyTorch] [OpenClip For Pytorch] 初次提交
+* 提交open clip原始代码"
+github.com/NVlabs/RADIO,radio/adaptors/open_clip_adaptor.py,2024-02-14T17:08:56Z,Refactoring in preparation for RADIOv2 release (#25)
+github.com/NVlabs/RADIO,radio/adaptors/open_clip_adaptor.py,2024-01-24T20:43:08Z,"Add support for OpenCLIP adaptor (#17)
+
+* Add support for OpenCLIP adaptor
+
+* Working on zero-shot example script
+
+* Fixed inference
+
+* Make non-square processing the default
+
+* Update README
+
+* Update headers
+
+* MR comments
+
+* PR comments
+
+* Improve tqdm logging"
+github.com/kyegomez/Gen1,gen1/clip.py,2023-10-14T19:12:05Z,clean up
+github.com/kyegomez/Gen1,gen1/clip.py,2023-09-24T01:07:35Z,clean upsss
+github.com/kyegomez/Gen1,gen1/clip.py,2023-09-24T01:07:05Z,clean up requirements.txt
+github.com/kyegomez/Gen1,gen1/clip.py,2023-09-23T23:53:59Z,"pipeline, image, text, => midas =>"
+github.com/kyegomez/Gen1,gen1/clip.py,2023-09-23T23:50:34Z,clip
+github.com/wangyu-ustc/LM4CV,cluster.py,2023-10-03T08:56:05Z,Add files via upload
+github.com/SKKU-ESLAB/Auto-Compression,pruning/UVP/Transformer/sparseml/integrations/clip/clip_onnx_export.py,2023-06-19T04:13:43Z,[UVP] Add sparseml library
+github.com/technion-cs-nlp/ReFACT,test_clip_score.py,2023-05-31T08:36:02Z,initial commit
+github.com/technion-cs-nlp/ReFACT,test_multiple_edits.py,2023-05-31T08:36:02Z,initial commit
+github.com/Max-Fu/tvl,tvl_enc/tvl.py,2024-02-20T21:25:56Z,first commit
+github.com/google/storybench,metrics/vtm_clip.py,2023-08-17T14:24:09Z,Initial version of StoryBench code.
+github.com/MadryLab/dataset-interfaces,dataset_interfaces/inference_utils.py,2023-02-24T20:28:10Z,add token download to notebook
+github.com/MadryLab/dataset-interfaces,dataset_interfaces/inference_utils.py,2023-02-16T22:23:08Z,Refactor to make imports cleaner
+github.com/MadryLab/dataset-interfaces,dataset_interfaces/inference_utils.py,2023-02-16T05:02:03Z,initial commit
+github.com/wusize/CLIM,tools/generate_text_embeddings.py,2023-12-18T16:08:09Z,init
+github.com/wusize/CLIM,ovdet/tools/generate_text_embeddings.py,2023-12-20T16:02:40Z,debug
+github.com/wusize/CLIM,ovdet/tools/generate_text_embeddings.py,2023-12-20T10:03:41Z,fvlm
+github.com/emu1729/GIST,caption_matching.py,2023-07-25T17:41:04Z,Fixed import
+github.com/emu1729/GIST,caption_matching.py,2023-07-19T19:39:59Z,Cleaned up caption matching
+github.com/emu1729/GIST,caption_matching.py,2023-07-19T19:06:41Z,Added caption matching script and example
+github.com/emu1729/GIST,caption_matching.py,2023-07-19T18:38:25Z,Added datasets and sample metadata files
+github.com/yasserben/CLOUDS,clouds/modeling/backbone/clip.py,2023-12-15T15:43:08Z,release CLOUDS
+github.com/yasserben/CLOUDS,clouds/modeling/backbone/trainable_clip.py,2023-12-15T15:43:08Z,release CLOUDS
+github.com/baaivision/MUSE-Pytorch,extract_empty_feature.py,2023-05-08T11:47:07Z,add cc ctx prepare
+github.com/baaivision/MUSE-Pytorch,extract_test_prompt_feature.py,2023-05-08T11:47:07Z,add cc ctx prepare
+github.com/sail-sg/MMCBench,text2image/evaluate.py,2024-01-23T02:53:44Z,update image2text
+github.com/sail-sg/MMCBench,text2image/evaluate.py,2024-01-23T00:45:43Z,add text2speech
+github.com/sail-sg/MMCBench,text2image/evaluate.py,2024-01-22T08:27:04Z,add text2image
+github.com/sail-sg/MMCBench,image2text/evaluate.py,2024-01-23T02:53:44Z,update image2text
+github.com/NVIDIA-AI-IOT/clip-distillation,compute_openclip_text_embeddings.py,2023-07-25T17:32:24Z,add license
+github.com/NVIDIA-AI-IOT/clip-distillation,compute_openclip_text_embeddings.py,2023-06-27T21:38:18Z,remove intro
+github.com/workforai/SCAN,open_clip_training/tests/util_test.py,2024-03-02T18:28:58Z,SCAN first commit
+github.com/workforai/SCAN,open_clip_training/tests/test_inference_simple.py,2024-03-02T18:28:58Z,SCAN first commit
+github.com/workforai/SCAN,open_clip_training/tests/test_download_pretrained.py,2024-03-02T18:28:58Z,SCAN first commit
+github.com/gregor-ge/mBLIP,data/pretrain/hard_examples.py,2023-09-22T09:15:00Z,Updated for version 2 on arxiv
+github.com/gregor-ge/mBLIP,data/pretrain/generate_match_train.py,2023-09-22T09:15:00Z,Updated for version 2 on arxiv
+github.com/VQAssessment/BVQI,prompt_tuning.py,2023-05-20T08:23:42Z,extension
+github.com/VQAssessment/BVQI,load_features.py,2023-05-20T08:23:42Z,extension
+github.com/VQAssessment/BVQI,semantic_affinity.py,2023-03-19T11:36:25Z,"Update, Reproduce, and ICME"
+github.com/VQAssessment/BVQI,semantic_affinity.py,2023-01-16T05:20:44Z,renew code
+github.com/VQAssessment/BVQI,semantic_affinity.py,2022-12-19T09:16:58Z,fix
+github.com/VQAssessment/BVQI,semantic_affinity.py,2022-12-19T09:06:47Z,initial
+github.com/zhang-tao-whu/DVIS_Plus,ov_dvis/backbones/clip.py,2023-12-22T03:02:11Z,init
+github.com/waterhorse1/ChessGPT,eval/eval_clip/eval_multi_choice.py,2023-06-24T15:03:14Z,all
+github.com/waterhorse1/ChessGPT,eval/eval_clip/eval_multi_choice.py,2023-06-13T04:56:08Z,add chessclip evaluation
+github.com/waterhorse1/ChessGPT,eval/eval_clip/eval_clip_checkmate_in_one.py,2023-06-24T15:03:14Z,all
+github.com/waterhorse1/ChessGPT,eval/eval_clip/eval_clip_checkmate_in_one.py,2023-06-13T04:56:08Z,add chessclip evaluation
+github.com/waterhorse1/ChessGPT,chessclip/tests/util_test.py,2023-06-13T02:00:33Z,first commit
+github.com/waterhorse1/ChessGPT,chessclip/tests/test_inference_simple.py,2023-06-13T02:00:33Z,first commit
+github.com/Vinayak-VG/GSN,tasks/segment_2d_text.py,2023-12-15T07:50:21Z,gsn
+github.com/Vinayak-VG/GSN,feature_extractor/langfeat_extract_dtu.py,2023-12-15T07:50:21Z,gsn
+github.com/Vinayak-VG/GSN,feature_extractor/langfeat_extract_llff.py,2023-12-15T07:50:21Z,gsn
+github.com/OPPO-Mente-Lab/PEA-Diffusion,train_sd_zh.py,2023-11-30T01:13:46Z,Add files via upload
+github.com/OPPO-Mente-Lab/PEA-Diffusion,train_sdxl_zh.py,2023-11-30T01:13:46Z,Add files via upload
+github.com/OPPO-Mente-Lab/PEA-Diffusion,utils/custom_dataset.py,2023-11-30T01:13:46Z,Add files via upload
+github.com/OPPO-Mente-Lab/PEA-Diffusion,utils/custom_dataset_sdxl.py,2023-11-30T01:13:46Z,Add files via upload
+github.com/OPPO-Mente-Lab/PEA-Diffusion,tests/test_sd_zh.py,2023-11-30T01:13:46Z,Add files via upload
+github.com/OPPO-Mente-Lab/PEA-Diffusion,tests/test_sdxl_zh.py,2023-11-30T01:13:46Z,Add files via upload
+github.com/OPPO-Mente-Lab/PEA-Diffusion,tests/test_sdxl_zh_lcm.py,2023-11-30T01:13:46Z,Add files via upload
+github.com/OPPO-Mente-Lab/PEA-Diffusion,tests/test_sdxl_zh_controlnet.py,2023-11-30T01:13:46Z,Add files via upload

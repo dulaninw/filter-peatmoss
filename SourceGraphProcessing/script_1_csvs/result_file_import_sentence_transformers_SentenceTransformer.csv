@@ -1,0 +1,382 @@
+✱ 95 results for "context:global select:file visibility:public count:all lang:Python content:'import sentence_transformers' AND SentenceTransformer\(" in 6.257s
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/langchain-ai/langchain/-/blob/libs/community/langchain_community/embeddings/huggingface.py)
+github.com/langchain-ai/langchain › huggingface.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mlflow/mlflow/-/blob/mlflow/sentence_transformers/__init__.py)
+github.com/mlflow/mlflow › __init__.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/langchain-ai/langchain/-/blob/libs/community/langchain_community/embeddings/self_hosted_hugging_face.py)
+github.com/langchain-ai/langchain › self_hosted_hugging_face.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/UKPLab/sentence-transformers/-/blob/examples/training/multilingual/make_multilingual.py)
+github.com/UKPLab/sentence-transformers › make_multilingual.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/eosphoros-ai/DB-GPT/-/blob/dbgpt/rag/embedding/embeddings.py)
+github.com/eosphoros-ai/DB-GPT › embeddings.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/microsoft/semantic-kernel/-/blob/python/semantic_kernel/connectors/ai/hugging_face/services/hf_text_embedding.py)
+github.com/microsoft/semantic-kernel › hf_text_embedding.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/oobabooga/text-generation-webui/-/blob/extensions/openai/cache_embedding_model.py)
+github.com/oobabooga/text-generation-webui › cache_embedding_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/wenda-LLM/wenda/-/blob/plugins/gen_data_st.py)
+github.com/wenda-LLM/wenda › gen_data_st.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/wenda-LLM/wenda/-/blob/plugins/zhishiku_rtst.py)
+github.com/wenda-LLM/wenda › zhishiku_rtst.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/X-D-Lab/LangChain-ChatGLM-Webui/-/blob/app.py)
+github.com/X-D-Lab/LangChain-ChatGLM-Webui › app.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/X-D-Lab/LangChain-ChatGLM-Webui/-/blob/jina_serving.py)
+github.com/X-D-Lab/LangChain-ChatGLM-Webui › jina_serving.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NVIDIA/NeMo-Guardrails/-/blob/nemoguardrails/eval/evaluate_topical.py)
+github.com/NVIDIA/NeMo-Guardrails › evaluate_topical.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/explodinggradients/ragas/-/blob/src/ragas/embeddings/base.py)
+github.com/explodinggradients/ragas › base.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/dot-agent/nextpy/-/blob/nextpy/ai/models/embedding/huggingface.py)
+github.com/dot-agent/nextpy › huggingface.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/intel/intel-extension-for-transformers/-/blob/intel_extension_for_transformers/langchain/embeddings/embeddings.py)
+github.com/intel/intel-extension-for-transformers › embeddings.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/amzn/pecos/-/blob/examples/MACLR/main.py)
+github.com/amzn/pecos › main.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/georgia-tech-db/evadb/-/blob/evadb/functions/sentence_feature_extractor.py)
+github.com/georgia-tech-db/evadb › sentence_feature_extractor.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/amzn/pecos/-/blob/examples/MACLR/model.py)
+github.com/amzn/pecos › model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/amzn/pecos/-/blob/examples/MACLR/evaluate.py)
+github.com/amzn/pecos › evaluate.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/FrostMiKu/ChatGLM-LangChain/-/blob/ui.py)
+github.com/FrostMiKu/ChatGLM-LangChain › ui.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/liangwq/Chatglm_lora_multi-gpu/-/blob/APP_example/chat_langchain/huggingface.py)
+github.com/liangwq/Chatglm_lora_multi-gpu › huggingface.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Azure/azure-sdk-for-python/-/blob/sdk/ai/azure-ai-resources/azure/ai/resources/_index/_langchain/vendor/embeddings/huggingface.py)
+github.com/Azure/azure-sdk-for-python › huggingface.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/microsoft/MM-REACT/-/blob/langchain/embeddings/huggingface.py)
+github.com/microsoft/MM-REACT › huggingface.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Azure/app-service-linux-docs/-/blob/HowTo/gRPC/Linux/OpenAI/LangChain/PyServer/venv/langchain/embeddings/huggingface.py)
+github.com/Azure/app-service-linux-docs › huggingface.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/MaartenGr/KeyBERT/-/blob/tests/test_backend.py)
+github.com/MaartenGr/KeyBERT › test_backend.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/liangwq/Chatglm_lora_multi-gpu/-/blob/APP_example/langchain_ChatGLM/chains/local_doc_qa.py)
+github.com/liangwq/Chatglm_lora_multi-gpu › local_doc_qa.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/BodhiSearch/bodhilib/-/blob/plugins/bodhiext.st/src/bodhiext/st/_st_embedder.py)
+github.com/BodhiSearch/bodhilib › _st_embedder.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/VoltaML/voltaML/-/blob/voltaml/transformer/backends/st_utils.py)
+github.com/VoltaML/voltaML › st_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Azure/app-service-linux-docs/-/blob/HowTo/gRPC/Linux/OpenAI/LangChain/PyServer/venv/Lib/langchain/embeddings/huggingface.py)
+github.com/Azure/app-service-linux-docs › huggingface.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/gh18l/CrawlGPT/-/blob/langchain/embeddings/huggingface.py)
+github.com/gh18l/CrawlGPT › huggingface.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/awa-ai/awadb/-/blob/awadb/awa_embedding/huggingface.py)
+github.com/awa-ai/awadb › huggingface.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/RCGAI/SimplyRetrieve/-/blob/chat/retrieval/retrieve.py)
+github.com/RCGAI/SimplyRetrieve › retrieve.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/836304831/langchain-anal/-/blob/langchain/embeddings/huggingface.py)
+github.com/836304831/langchain-anal › huggingface.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/836304831/langchain-anal/-/blob/langchain/embeddings/self_hosted_hugging_face.py)
+github.com/836304831/langchain-anal › self_hosted_hugging_face.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/microsoft/MM-REACT/-/blob/langchain/embeddings/self_hosted_hugging_face.py)
+github.com/microsoft/MM-REACT › self_hosted_hugging_face.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/KarelDO/xmc.dspy/-/blob/src/programs/retriever.py)
+github.com/KarelDO/xmc.dspy › retriever.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/liangwq/LLM_StableDiffusion_Studio/-/blob/langchain_ChatGLM/chains/local_doc_qa.py)
+github.com/liangwq/LLM_StableDiffusion_Studio › local_doc_qa.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/liangwq/LLM_StableDiffusion_Studio/-/blob/langchain_ChatGLM/chains/.ipynb_checkpoints/local_doc_qa-checkpoint.py)
+github.com/liangwq/LLM_StableDiffusion_Studio › local_doc_qa-checkpoint.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Azure/app-service-linux-docs/-/blob/HowTo/gRPC/Linux/OpenAI/LangChain/PyServer/venv/langchain/embeddings/self_hosted_hugging_face.py)
+github.com/Azure/app-service-linux-docs › self_hosted_hugging_face.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/gh18l/CrawlGPT/-/blob/langchain/embeddings/self_hosted_hugging_face.py)
+github.com/gh18l/CrawlGPT › self_hosted_hugging_face.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/liangwq/Chatglm_lora_multi-gpu/-/blob/APP_example/langchain_ChatGLM/chains/.ipynb_checkpoints/local_doc_qa-checkpoint.py)
+github.com/liangwq/Chatglm_lora_multi-gpu › local_doc_qa-checkpoint.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/e0397123/AM-FM/-/blob/engines/embedding_models/sbert/make_multilingual.py)
+github.com/e0397123/AM-FM › make_multilingual.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/night-chen/ToolQA/-/blob/benchmark/ReAct/code/tools/text/agenda_retriever.py)
+github.com/night-chen/ToolQA › agenda_retriever.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/night-chen/ToolQA/-/blob/benchmark/ReAct/code/tools/text/scirex_retriever.py)
+github.com/night-chen/ToolQA › scirex_retriever.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Azure/app-service-linux-docs/-/blob/HowTo/gRPC/Linux/OpenAI/LangChain/PyServer/venv/Lib/langchain/embeddings/self_hosted_hugging_face.py)
+github.com/Azure/app-service-linux-docs › self_hosted_hugging_face.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Koziev/chatbot/-/blob/ruchatbot/bot/sbert_relevancy_detector.py)
+github.com/Koziev/chatbot › sbert_relevancy_detector.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Koziev/chatbot/-/blob/ruchatbot/bot/sbert_paraphrase_detector.py)
+github.com/Koziev/chatbot › sbert_paraphrase_detector.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/zwhe99/X-SIR/-/blob/watermark.py)
+github.com/zwhe99/X-SIR › watermark.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/zeus-dev919/sentence-transformers/-/blob/examples/training/multilingual/make_multilingual.py)
+github.com/zeus-dev919/sentence-transformers › make_multilingual.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/databricks/databricks-ml-examples/-/blob/llm-models/embedding/bge/bge-large-v1.5/04_fine_tune_embedding.py)
+github.com/databricks/databricks-ml-examples › 04_fine_tune_embedding.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/night-chen/ToolQA/-/blob/benchmark/chameleon/run_toolqa/tools/text/agenda_retriever.py)
+github.com/night-chen/ToolQA › agenda_retriever.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/night-chen/ToolQA/-/blob/benchmark/chameleon/run_toolqa/tools/text/scirex_retriever.py)
+github.com/night-chen/ToolQA › scirex_retriever.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/SonarSource/python-test-sources/-/blob/pecos/examples/MACLR/main.py)
+github.com/SonarSource/python-test-sources › main.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/SonarSource/python-test-sources/-/blob/pecos/examples/MACLR/model.py)
+github.com/SonarSource/python-test-sources › model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/SonarSource/python-test-sources/-/blob/pecos/examples/MACLR/evaluate.py)
+github.com/SonarSource/python-test-sources › evaluate.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/LubyRuffy/cheatsheet/-/blob/ml/sentence_transformers_faiss_simplest_test.py)
+github.com/LubyRuffy/cheatsheet › sentence_transformers_faiss_simplest_test.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/greenplum-db/GreenplumPython/-/blob/greenplumpython/experimental/embedding.py)
+github.com/greenplum-db/GreenplumPython › embedding.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Exploration-Lab/Shapes-of-Emotion/-/blob/sentence-transformers/examples/training/multilingual/make_multilingual.py)
+github.com/Exploration-Lab/Shapes-of-Emotion › make_multilingual.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/liteli1987gmail/python_langchain-CN/-/blob/langchain/embeddings/huggingface.py)
+github.com/liteli1987gmail/python_langchain-CN › huggingface.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/liteli1987gmail/python_langchain-CN/-/blob/langchain/embeddings/self_hosted_hugging_face.py)
+github.com/liteli1987gmail/python_langchain-CN › self_hosted_hugging_face.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/thaddavis/python_flask_langchain_open_ai_example/-/blob/python/langchain/embeddings/huggingface.py)
+github.com/thaddavis/python_flask_langchain_open_ai_example › huggingface.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/thaddavis/python_flask_langchain_open_ai_example/-/blob/package/langchain/embeddings/huggingface.py)
+github.com/thaddavis/python_flask_langchain_open_ai_example › huggingface.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/thaddavis/python_flask_langchain_open_ai_example/-/blob/python/langchain/embeddings/self_hosted_hugging_face.py)
+github.com/thaddavis/python_flask_langchain_open_ai_example › self_hosted_hugging_face.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/thaddavis/python_flask_langchain_open_ai_example/-/blob/package/langchain/embeddings/self_hosted_hugging_face.py)
+github.com/thaddavis/python_flask_langchain_open_ai_example › self_hosted_hugging_face.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/worm128/AI-YinMei-backup/-/blob/text-generation-webui/extensions/openai/cache_embedding_model.py)
+github.com/worm128/AI-YinMei-backup › cache_embedding_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/GuyTevet/diversity-eval/-/blob/diversity_metrics.py)
+github.com/GuyTevet/diversity-eval › diversity_metrics.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/databricks-industry-solutions/product-search/-/blob/03_Fine_Tune_Model.py)
+github.com/databricks-industry-solutions/product-search › 03_Fine_Tune_Model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/databricks-industry-solutions/product-search/-/blob/02_Define_Basic_Search.py)
+github.com/databricks-industry-solutions/product-search › 02_Define_Basic_Search.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/nestauk/innovation_sweet_spots/-/blob/innovation_sweet_spots/utils/embeddings_utils.py)
+github.com/nestauk/innovation_sweet_spots › embeddings_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/nestauk/innovation_sweet_spots/-/blob/innovation_sweet_spots/analysis/notebooks/y2023_childcare/03_cb_embeddings.py)
+github.com/nestauk/innovation_sweet_spots › 03_cb_embeddings.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/nestauk/innovation_sweet_spots/-/blob/innovation_sweet_spots/analysis/notebooks/y2023_childcare/06_aligning_taxonomies.py)
+github.com/nestauk/innovation_sweet_spots › 06_aligning_taxonomies.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/dDua/succesive_prompting/-/blob/eluther_task/cot_drop.py)
+github.com/dDua/succesive_prompting › cot_drop.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/allenai/open-mds/-/blob/src/open_mds/perturbations.py)
+github.com/allenai/open-mds › perturbations.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/IAAR-Shanghai/CRUD_RAG/-/blob/src/embeddings/base.py)
+github.com/IAAR-Shanghai/CRUD_RAG › base.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/bentrevett/lexisearch/-/blob/query_index.py)
+github.com/bentrevett/lexisearch › query_index.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/bentrevett/lexisearch/-/blob/create_index.py)
+github.com/bentrevett/lexisearch › create_index.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/danilodiez/neo4j-llms/-/blob/api/llm-api/lib/python3.10/site-packages/langchain/embeddings/huggingface.py)
+github.com/danilodiez/neo4j-llms › huggingface.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/danilodiez/neo4j-llms/-/blob/api/llm-api/lib/python3.10/site-packages/langchain/embeddings/self_hosted_hugging_face.py)
+github.com/danilodiez/neo4j-llms › self_hosted_hugging_face.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/jasonacox/TinyLLM/-/blob/chatbot/server-flask.py)
+github.com/jasonacox/TinyLLM › server-flask.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/ML-Recipes/BERT-FAQ/-/blob/faq_bert.py)
+github.com/ML-Recipes/BERT-FAQ › faq_bert.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/prasaar/aiwhispr/-/blob/python/llm-service/libSbertLlmService.py)
+github.com/prasaar/aiwhispr › libSbertLlmService.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/aws-solutions-library-samples/guidance-for-custom-search-of-an-enterprise-knowledge-base-on-aws/-/blob/lambda/langchain_processor_layer/python/langchain/embeddings/huggingface.py)
+github.com/aws-solutions-library-samples/guidance-for-custom-search-of-an-enterprise-knowledge-base-on-aws › huggingface.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/aws-solutions-library-samples/guidance-for-custom-search-of-an-enterprise-knowledge-base-on-aws/-/blob/lambda/langchain_processor_layer/python/langchain/embeddings/self_hosted_hugging_face.py)
+github.com/aws-solutions-library-samples/guidance-for-custom-search-of-an-enterprise-knowledge-base-on-aws › self_hosted_hugging_face.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/gitlab.com/tangibleai/qary/-/blob/src/qary/chat/dialog_managers.py)
+gitlab.com/tangibleai/qary › dialog_managers.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Mickls/knowledge_with_chatglm/-/blob/knowledge_query.py)
+github.com/Mickls/knowledge_with_chatglm › knowledge_query.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/MoroccoAI/2023-GenAI-Hackathon/-/blob/Neural-Net-Ninjas/src/venv/Lib/site-packages/langchain_community/embeddings/huggingface.py)
+github.com/MoroccoAI/2023-GenAI-Hackathon › huggingface.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/MoroccoAI/2023-GenAI-Hackathon/-/blob/Neural-Net-Ninjas/src/venv/Lib/site-packages/langchain_community/embeddings/self_hosted_hugging_face.py)
+github.com/MoroccoAI/2023-GenAI-Hackathon › self_hosted_hugging_face.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/chiayewken/sutd-materials/-/blob/deep_learning/project/embedding.py)
+github.com/chiayewken/sutd-materials › embedding.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/casia22/npc-engine/-/blob/release/windows_ver/python_lib/python-3.9.6-embed-amd64/lib/site-packages/langchain/embeddings/huggingface.py)
+github.com/casia22/npc-engine › huggingface.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/casia22/npc-engine/-/blob/release/windows_ver/python_lib/python-3.9.6-embed-amd64/lib/site-packages/langchain/embeddings/self_hosted_hugging_face.py)
+github.com/casia22/npc-engine › self_hosted_hugging_face.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/VK-Ant/PDF_CSV_Based_ChatBot_With_Translator_Using_Streamlit/-/blob/pdfchatbot_streamlit/chatbot_env/lib/python3.9/site-packages/langchain/embeddings/huggingface.py)
+github.com/VK-Ant/PDF_CSV_Based_ChatBot_With_Translator_Using_Streamlit › huggingface.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/VK-Ant/PDF_CSV_Based_ChatBot_With_Translator_Using_Streamlit/-/blob/pdfchatbot_streamlit/chatbot_env/lib/python3.9/site-packages/langchain/embeddings/self_hosted_hugging_face.py)
+github.com/VK-Ant/PDF_CSV_Based_ChatBot_With_Translator_Using_Streamlit › self_hosted_hugging_face.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/bergos/embedding-server/-/blob/app/load_transformers.py)
+github.com/bergos/embedding-server › load_transformers.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/MichiganNLP/In-the-wild-QA/-/blob/src/src/closest_rtr/closest_rtr.py)
+github.com/MichiganNLP/In-the-wild-QA › closest_rtr.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Becomebright/GroundVQA/-/blob/eval.py)
+github.com/Becomebright/GroundVQA › eval.py (0 matches)
+--------------------------------------------------------------------------------
+

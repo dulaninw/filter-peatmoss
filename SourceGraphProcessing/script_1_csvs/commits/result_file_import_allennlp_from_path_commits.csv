@@ -1,0 +1,170 @@
+repo_url,filepath,commit_date,message
+github.com/allenai/RL4LMs,rl4lms/envs/text_generation/summ_metrics/summa_c.py,2022-10-03T21:10:03Z,Added code for the release
+github.com/Leezekun/Directional-Stimulus-Prompting,rl4lms/envs/text_generation/summ_metrics/summa_c.py,2023-03-31T03:34:01Z,first commit
+github.com/feyzaakyurek/rl4f,rl4lms/envs/text_generation/summ_metrics/summa_c.py,2023-05-15T22:20:31Z,add alphabetize
+github.com/jiacheng-xu/neu-compression-sum,depricated/allennlp_cont_parser.py,2019-11-01T00:52:02Z,init ci
+github.com/kajyuuen/allennlp-book,mlflow/scripts/train.py,2020-03-03T07:44:12Z,Init commit
+github.com/zhjohnchan/PTUnifier,ptunifier/metrics/jb_scorers/RadGraph/allennlp_models/rc/tools/transformer_qa.py,2023-08-10T06:54:38Z,init
+github.com/martiansideofthemoon/longeval-summarization,longeval/linkage/summac/model_summac.py,2023-01-26T17:58:37Z,Update
+github.com/basel-a/SMET,parse_class.py,2023-04-15T09:10:41Z,first
+github.com/archiki/ReCEval,evaluate_receval.py,2023-04-23T17:39:24Z,adding code files
+github.com/AidaAmini/DyGIE-MECHANIC,eval_utils.py,2020-09-26T01:24:11Z,dygiepp-cofie
+github.com/CharlotteJackson/DC_Crash_Bot,scripts/sentiment_class.py,2021-02-10T17:05:34Z,add moving violations analysis and geocoding script
+github.com/microsoft/compositional-generalization-span-level-attention,text2sql_experiments/text2sql/data/dataset_readers/dataset_utils/span_utils.py,2022-04-05T00:10:30Z,initial commit
+github.com/seq-to-mind/coref_dial_summ,dialogue_coreference/dialogue_coreference.py,2021-09-10T09:30:55Z,Add files via upload
+github.com/IreneZihuiLi/EHRKit-2022,allennlp/loader.py,2022-04-05T16:00:34Z,First Commit
+github.com/IreneZihuiLi/EHRKit-2022,allennlp/elmo-ner.py,2022-04-05T16:00:34Z,First Commit
+github.com/kasnerz/zeroshot-d2t-pipeline,wikifluent/generate_examples.py,2021-11-19T17:25:01Z,Update repository
+github.com/thongnt99/acl22-depression-phq9,prepare_data/filter_symptoms.py,2022-05-18T12:41:14Z,code to label data
+github.com/huggingface/api-inference-community,docker_images/allennlp/app/pipelines/question_answering.py,2023-04-07T10:08:31Z,Resolve numerous typos (#224)
+github.com/huggingface/api-inference-community,docker_images/allennlp/app/pipelines/question_answering.py,2022-03-16T10:53:41Z,MNT move api-inference-community to root of the repo
+github.com/georgetown-cset/ai-relevant-papers,predict_wos.py,2020-02-18T01:28:10Z,Initial commit
+github.com/georgetown-cset/ai-relevant-papers,evaluate_scibert.py,2020-02-18T01:28:10Z,Initial commit
+github.com/MTTeql/MT-Teql,nlp_utils.py,2021-09-14T11:54:46Z,revise
+github.com/Wendy-Xiao/chatgpt_editing_summ,RL4LMs/rl4lms/envs/text_generation/summ_metrics/summa_c.py,2023-05-03T23:35:06Z,add RL4LMs package
+github.com/sejaldua/IBM-research-challenge,NLP_models/identify_cancer.py,2020-02-01T22:00:44Z,commented code and cleaned up NLP functions
+github.com/sejaldua/IBM-research-challenge,NLP_models/identify_cancer.py,2020-02-01T15:47:44Z,"Update identify_cancer.py
+
+grammar"
+github.com/sejaldua/IBM-research-challenge,NLP_models/identify_cancer.py,2020-02-01T14:00:40Z,pushing NLP model for identifying cancer types
+github.com/sejaldua/IBM-research-challenge,NLP_models/classify_study_type.py,2020-02-01T22:00:44Z,commented code and cleaned up NLP functions
+github.com/sejaldua/IBM-research-challenge,NLP_models/classify_study_type.py,2020-02-01T21:35:28Z,organization
+github.com/Slash0BZ/speaker-identification,code/extraction/run_coref_gutenberg.py,2022-10-11T19:49:31Z,initial commit
+github.com/CogComp/Event_Process_Typing,utils/data.py,2020-09-28T07:10:02Z,
+github.com/CogComp/Event_Process_Typing,utils/data.py,2020-09-21T20:13:58Z,initial commit
+github.com/asyml/forte-wrappers,tests/wrappers/allennlp_processors_test.py,2021-11-10T19:59:33Z,"Ignore long sentences in the input fed to AllenNLP SRL (#81)
+
+* long sentences
+
+* pylint
+
+* for mypy
+
+* typo
+
+* remove debug
+
+* typo"
+github.com/asyml/forte-wrappers,tests/wrappers/allennlp_processors_test.py,2021-10-07T16:08:10Z,"Handle empty inputs in AllenNLP Processor (#77)
+
+* make sure srl is included in test
+
+* black
+
+* Ignore empty sentences in allennlp
+
+* Update config error.
+
+* Handle empty mentions.
+
+* Add tests for empty mentions.
+
+* Remove un-supported config in test.
+
+* Fix documentation."
+github.com/asyml/forte-wrappers,tests/wrappers/allennlp_processors_test.py,2021-09-08T14:31:02Z,"Change wrapper package from Forte to Fortex (#73)
+
+* Move to fortex
+
+* Fix import in test.
+
+* Rename package.
+
+* Fix examples.
+
+* Update init imports.
+
+* Update test strings.
+
+* Fix imports in elastics.
+
+* Fix imports in allennlp.
+
+* Typo
+
+* Fix class name in docs.
+
+* Clean up documentation.
+
+* Add docuemntation back.
+
+* Fixing documentation and gpu setups.
+
+* Black all setups.
+
+* Remove obsolete configs"
+github.com/asyml/forte-wrappers,tests/wrappers/allennlp_processors_test.py,2021-06-09T05:24:38Z,"Set up namespace packaging (#46)
+
+* Set up namespace packaging
+
+* Try workflow syntax.
+
+* Fix doc build and black.
+
+* check syntax.
+
+* Try string.
+
+* Use for loop
+
+* Typo
+
+* Typo
+
+* Skip spacy temporarily.
+
+* Use nltk for other test cases instead of spacy."
+github.com/asyml/forte-wrappers,tests/wrappers/allennlp_processors_test.py,2021-06-08T22:29:03Z,"Simplify package name. (#44)
+
+* Simplify package name.
+
+* Update formats to solve pylint issue after renaming.
+
+* Correct workflow paths.
+
+* Install black
+
+* Remove init, version, rename onto, and use namespace packages.
+
+* Rename in string.
+
+* Install project for doc build.
+
+* Exclude files in package."
+github.com/asyml/forte-wrappers,tests/wrappers/allennlp_processors_test.py,2021-06-02T21:59:37Z,"Moving indexer tests to wrapper (#36)
+
+* add indexer tests
+
+* wait for elastic to be ready"
+github.com/arthurdeschamps/question-generation-nus-ids,models/sg_dqg.py,2020-06-22T06:43:32Z,"Fix a few pieces of code for SQG to be able to train the model. Results are very bad, there has to be something wrong somewhere."
+github.com/arthurdeschamps/question-generation-nus-ids,models/sg_dqg.py,2020-06-15T16:06:51Z,"Modify ASs2s to replace all named entities with appropriate tokens during training, and use mappings to replace them back during inference. BLEU score went up 1 point."
+github.com/arthurdeschamps/question-generation-nus-ids,models/sg_dqg.py,2020-06-11T11:03:21Z,Successful migration from the Estimator API to the Keras paradigm.
+github.com/arthurdeschamps/question-generation-nus-ids,models/sg_dqg.py,2020-06-10T06:47:47Z,Multiple fixes  in eval mode of ASs2s.
+github.com/arthurdeschamps/question-generation-nus-ids,models/sg_dqg.py,2020-06-08T10:19:13Z,Fix eval mode for ASs2s. Implement multilayer keyword-net according to the paper.
+github.com/arthurdeschamps/question-generation-nus-ids,models/sg_dqg.py,2020-06-03T14:17:58Z,Add ASs2s project and transposed it to Python 3 and Tensorflow 2
+github.com/arthurdeschamps/question-generation-nus-ids,models/sg_dqg.py,2020-06-02T02:49:01Z,Add a few safe fallbacks for when the SG DQG data processing pipeline fails. Also improve answer span retrieval algorithm to cover more cases and some corner cases.
+github.com/arthurdeschamps/question-generation-nus-ids,models/sg_dqg.py,2020-06-01T08:13:59Z,Reduce amount of parsing when reading SQuAD.
+github.com/arthurdeschamps/question-generation-nus-ids,models/sg_dqg.py,2020-05-31T15:01:57Z,Integrate full data generation + training for SG DQG as only translating SQuAD with pre-trained HotpotQA didn't cut it.
+github.com/arthurdeschamps/question-generation-nus-ids,models/sg_dqg.py,2020-05-29T07:34:21Z,Predictions with SG-DQG using pre-trained models work. Results are poor. Will try to feed entire paragraphs instead of single sentences.
+github.com/arthurdeschamps/question-generation-nus-ids,models/sg_dqg.py,2020-05-28T10:58:18Z,Manage to make predictions for SQuAD using HotpotQA pretrained model. Answer zones seem to not be working.
+github.com/arthurdeschamps/question-generation-nus-ids,models/sg_dqg.py,2020-05-27T02:27:46Z,Integrate SG-Deep-Question-Generation project and reverse engineer initial graph construction steps
+github.com/airbert-vln/bnb-dataset,perturbate_dataset.py,2022-03-08T07:59:57Z,chore: cleaning
+github.com/isaacmg/ml_serving_flask,allen_simple.py,2019-01-08T21:31:32Z,fix url
+github.com/isaacmg/ml_serving_flask,allen_simple.py,2019-01-08T21:28:38Z,Update for Java call to simplfy and fix UT
+github.com/isaacmg/ml_serving_flask,allen_simple.py,2018-12-21T01:59:21Z,updated host
+github.com/isaacmg/ml_serving_flask,allen_simple.py,2018-12-20T23:48:56Z,added simple debug test
+github.com/isaacmg/ml_serving_flask,allen_simple.py,2018-12-20T21:47:01Z,refix por
+github.com/isaacmg/ml_serving_flask,allen_simple.py,2018-12-20T21:44:34Z,Swap port to standard 8080
+github.com/isaacmg/ml_serving_flask,allen_simple.py,2018-12-17T00:56:59Z,"Core works
+
+added tests"
+github.com/isaacmg/ml_serving_flask,allen_simple.py,2018-12-16T17:45:34Z,Refactor alllennlp serviing class
+github.com/isaacmg/ml_serving_flask,allen_simple.py,2018-12-16T04:58:37Z,Update code for site w
+github.com/isaacmg/ml_serving_flask,allen_simple.py,2018-12-16T04:44:09Z,add
+github.com/isaacmg/ml_serving_flask,allen_simple.py,2018-12-15T23:53:31Z,Add more files
+github.com/ihsgnef/pathologies,input_reduction.py,2020-05-09T11:15:11Z,update
+github.com/ihsgnef/pathologies,input_reduction.py,2020-05-09T04:53:16Z,update
+github.com/ihsgnef/pathologies,input_reduction.py,2020-05-08T18:57:14Z,update
+github.com/ihsgnef/pathologies,input_replacement.py,2020-05-09T11:15:11Z,update
+github.com/ihsgnef/pathologies,input_replacement.py,2020-05-09T04:53:16Z,update
+github.com/xbmxb/RAG-query-rewriting,rl/RL4LMs/rl4lms/envs/text_generation/summ_metrics/summa_c.py,2023-10-21T10:47:12Z,morecode

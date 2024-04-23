@@ -1,0 +1,998 @@
+[
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-11-24T12:15:57Z",
+    "message": "Create branch if missing in hugginface-cli upload (#1857)\n\n* Create branch if missing in hugginface-cli upload\n\n* make test more robust"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-11-22T16:13:37Z",
+    "message": "\u2728 Add filters to HfApi.get_repo_discussions (#1845)\n\n* \u2728 Add filters to HfApi.get_repo_discussions\n\n* \ud83d\udc84 make style\n\n* \u23ea Revert extraneous change\n\n* \ud83e\ude79 Mention filters in the documentation\n\n* \ud83d\udc4c Literal type annotation\n\n* \u2705 Add some tests\n\n* \ud83d\udc84 Code quality\n\n* Apply suggestions from code review\n\n---------\n\nCo-authored-by: Lucain <lucainp@gmail.com>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-11-13T17:23:45Z",
+    "message": "Add `include_pull_requests` to list_repo_refs (#1822)\n\n* Add  to list_repo_refs\n\n* switch to a not gated repo in test"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-11-13T16:00:51Z",
+    "message": "[FIX] Catch TypeError when parsing card data from ModelInfo (#1821)\n\n* [FIX] Catch TypeError when parsing card data from ModelInfo\n\n* fix tests\n\n* fix test"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-11-10T14:27:40Z",
+    "message": "Add support for createdAt field (#1816)"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-11-10T14:23:01Z",
+    "message": "Faster `HfFileSystem.find` (#1809)\n\n* Remove `HfFileSystem.exists` override\n\n* Add `list_repo_tree` to the API\n\n* Rename `BlobLastCommitInfo` to `LastCommitInfo`\n\n* Add `get_paths_info` to the API\n\n* Improve HfFileSystem tests\n\n* Faster `HfFileSystem.find`\n\n* Tests\n\n* Update src/huggingface_hub/hf_api.py\n\nCo-authored-by: Lucain <lucainp@gmail.com>\n\n* Address the rest of comments\n\n* Fix comment\n\n---------\n\nCo-authored-by: Lucain <lucainp@gmail.com>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-11-06T09:34:15Z",
+    "message": "Fix SpaceInfo initialization + add test (#1802)"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-11-02T14:11:25Z",
+    "message": "Replace `ReprMixin` with dataclasses (#1788)\n\n* Define dataclasses\n\n* Update docs\n\n* Update tests\n\n* Fixes\n\n* Remove InitVar\n\n* Style\n\n* Apply suggestions from code review\n\nCo-authored-by: Lucain <lucainp@gmail.com>\n\n---------\n\nCo-authored-by: Lucain <lucainp@gmail.com>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-10-26T07:55:20Z",
+    "message": "Removed GeneralTags, ModelTags and DatasetTags (#1761)\n\n* removed tags from endpoint tests\n\n* removed tags from endpoints\n\n* removed tags from hf_api\n\n* removed tags from docstrings in endpoint_helpers\n\n* removed tags from hf_api\n\n* removed model search argument from test_hf_api\n\n* removed ModelSearchArguments and DataSearchArguments\n\n* removed DatasetSearchArguments and ModelSearchArguments\n\n* removed DatasetSearchArguments and\n\n* removed ModelSearchArguments and DatasetSearchArguments from the docs\n\n* Revert \"removed DatasetSearchArguments and\"\n\nThis reverts commit ce6b91ba162ce75af86d42afc4985b4cbf0429a3.\n\n* removed tags from __init__.py\n\n* ran make style\n\n* Removed ## How to explore filter options ? section\n\n* Revert \"removed tags from __init__.py\"\n\nThis reverts commit ad1a31cbd05cb8d4e82d1d95b4eb464d327c3d92.\n\nReverting removal get_dataset_tags and get_model_tags for comment 2\n\n* Revert \"removed DatasetSearchArguments and ModelSearchArguments\"\n\nThis reverts commit fbf6dd040e0c6c4756c24d520157f978050d1da8.\n\n* Revert \"removed tags from __init__.py\"\n\nThis reverts commit ad1a31cbd05cb8d4e82d1d95b4eb464d327c3d92.\n\n* Revert \"removed tags from hf_api\"\n\nThis reverts commit 2cefee189f9b36530dfbd275c23a23b3a377ae1c.\n\n* Revert \"removed tags from hf_api\"\n\nThis reverts commit dd3b8f13c00a2ef1c056742a1c17fdbda4f25448.\n\n* Removed attribute dictionary from imports\nand removed model search argument class\n\n* Complete removed class AttributeDictionary(dict):\n\n* Removed attribute dictionary tests\n\n* Updating ModelTags and DatasetTags\nso that they just return the raw dictionary\n\n* Removed final DatasetTags import\n\n* Removed 'ModelTags' import\n\n* Ran make style\n\n* fix: remove useless token (#1765)\n\n* Retry on ConnectionError/ReadTimeout when streaming file from server (#1766)\n\n* Retry on ConnectionError/ReadTimeout when streaming file from server\n\n* add test\n\n* fix testing utils\n\n* Adding `InferenceClient.get_recommended_model` (#1770)\n\n* Moved logger info to InferenceClient, so get_recommended_model function can bypass that\n\n* Added get_recommended_model to InferenceClient\n\n* Ran make style to generate the async client\n\n* Added tests of get_recommended_model\n\n* Update src/huggingface_hub/inference/_client.py\n\nCo-authored-by: Lucain <lucainp@gmail.com>\n\n* Fixed ordering of logger info and _get_recommended_model, for model string to have been populated\n\n* Removed _get_recommended_model private function, in favor of get_recommended_model in InferenceClient\n\n* Fixed wording of ValueError to use 'model' not 'task'\n\n* Ran make style for AsyncInferenceClient\n\n---------\n\nCo-authored-by: Lucain <lucainp@gmail.com>\n\n* Fix document link for manage-cache (#1774)\n\n* Fix document link for manage-cache\n\n* Use redirects in _redirects.yml\n\n* Update docs/source/en/package_reference/file_download.md\n\n---------\n\nCo-authored-by: Lucain <lucainp@gmail.com>\n\n* Minor doc fixes (#1775)\n\n* Don't use `api` in `list_repo_refs` example.\n\n* Minor typo fssepc -> fsspec\n\n* Use `.item_object_id` instead of `._id`\n\n* Ran make style\n\n---------\n\nCo-authored-by: Remy <remy@huggingface.co>\nCo-authored-by: Lucain <lucainp@gmail.com>\nCo-authored-by: James Braza <jamesbraza@gmail.com>\nCo-authored-by: liuxueyang <liuxueyang457@gmail.com>\nCo-authored-by: Pedro Cuenca <pedro@huggingface.co>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-10-17T13:37:32Z",
+    "message": "Fix Space runtime on static Space (#1754)\n\n* Fix Space runtime on static Space\n\n* comment"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-10-12T15:36:48Z",
+    "message": "Make `@retry_endpoint` a default for all test (#1725)\n\n* Make @retry_endpoint a default for any test\n\n* simplificaiton\n\n* works"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-10-06T08:15:28Z",
+    "message": "Add list_repo_likers method to HfApi (#1715)\n\n* update list_repo_likers function\n\nSigned-off-by: Issam Arabi <issam@cs.toronto.edu>\n\n* add test for list_repo_likers\n\n* Update list_repo_likers description\n\nCo-authored-by: Lucain <lucainp@gmail.com>\n\n* optimize list_repo_likers implementation\n\nCo-authored-by: Lucain <lucainp@gmail.com>\n\n* make style + import at root\n\n---------\n\nSigned-off-by: Issam Arabi <issam@cs.toronto.edu>\nCo-authored-by: Lucain <lucainp@gmail.com>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-10-05T10:58:35Z",
+    "message": "Fix LFS tests after password auth deprecation (#1713)\n\n* fix LFS tests after password auth deprecation\n\n* fix import"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-10-04T09:07:26Z",
+    "message": "Preupload lfs files before commiting (#1699)\n\n* first draft for preupload lfs files\n\n* free up memory after upload\n\n* add tests\n\n* doc\n\n* doc\n\n* make private methods private\n\n* add example\n\n* Apply suggestions from code review\n\nCo-authored-by: Mario \u0160a\u0161ko <mario@huggingface.co>\n\n---------\n\nCo-authored-by: Mario \u0160a\u0161ko <mario@huggingface.co>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-09-25T11:47:00Z",
+    "message": "Add `url` attribute to Collection class (#1695)\n\n* Add url attribute to Collection class\n\n* Update src/huggingface_hub/hf_api.py\n\nCo-authored-by: Daniel van Strien <davanstrien@users.noreply.github.com>\n\n---------\n\nCo-authored-by: Daniel van Strien <davanstrien@users.noreply.github.com>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-09-25T08:30:07Z",
+    "message": "Add Collection API (#1687)\n\n* Add Collection API\n\n* add unit tests\n\n* collections\n\n* add guide (wip)\n\n* completed guide\n\n* fix collection tests\n\n* uncomment\n\n* document 500 limit\n\n* delete\n\n* tpyo\n\n* better formatting\n\n* docs\n\n* fix test\n\n* Apply suggestions from code review\n\nCo-authored-by: Steven Liu <59462357+stevhliu@users.noreply.github.com>\n\n* requested changes\n\n---------\n\nCo-authored-by: Steven Liu <59462357+stevhliu@users.noreply.github.com>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-09-19T11:32:47Z",
+    "message": "Fixes filtering by tags with list_models and adds test case (#1673)\n\n* Fix tags filter in list_models and add test case\n\n* Remove key tags in query dict\n\n---------\n\nCo-authored-by: Lucain <lucainp@gmail.com>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-09-05T16:43:40Z",
+    "message": "Implement `super_squash_history` in `HfApi` (#1639)\n\n* Implement super_squash_history endpoint\n\n* Add squash_history option to commit scheduler\n\n* add super squash to HfSummaryWriter as well\n\n* make quality\n\n* style doc\n\n* fix test"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-09-05T16:42:04Z",
+    "message": "Add `missing_ok` option in `delete_repo` (#1640)\n\n* Allow missing_ok in delete_repo\n\n* make style"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-09-04T14:12:59Z",
+    "message": "Fix fsspec tests in ci (#1635)\n\n* fix warnings + typoes\n\n* Raise on NotImplementedError in fsspec\n\n* unskip test"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-09-04T09:53:54Z",
+    "message": "Add settings for creating and duplicating spaces (#1625)\n\n* Add settings for creating and duplicating spaces\n\n* Add tests for create_repo\n\n* Address pr review points\n\n* Add duplicte_space test case\n\n---------\n\nCo-authored-by: Lucain <lucainp@gmail.com>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-08-30T12:59:02Z",
+    "message": "Added support for space variables (#1592)\n\n* Added support for space variables\n\n* Changed variable payload to be cond on description\n\n* Addressed PR review comments.\n\n* Addressed PR review comments\n\n* Update init and reference doc with dataclasses\n\n---------\n\nCo-authored-by: Lucain <lucainp@gmail.com>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-08-29T15:05:17Z",
+    "message": "Fix ci tests (#1630)\n\n* fix gated repo test\n\n* fix like repo test\n\n* fix VCR test text_to_image default\n\n* make quality\n\n* more robust test"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-08-28T14:18:02Z",
+    "message": "Check if repo or file exists (#1591)\n\n* Implemented check for existence of repo or file\n\n* Corrected doc string for file_exists\n\n* Performed contribution guide code formatting\n\n* Additional update to file_exists doc string\n\n* Addressed some PR review comments\n\n* token setting logic in file_exists\n\n* Updated test cases\n\n* Removed debug prints\n\n---------\n\nCo-authored-by: Lucain <lucainp@gmail.com>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-08-16T16:58:50Z",
+    "message": "Added support for secret description (#1594)\n\n* Added support for secret description\n\n* Changed secret payload to be cond on description\n\n---------\n\nCo-authored-by: Lucain <lucainp@gmail.com>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-08-11T10:07:41Z",
+    "message": "Support factory reboot when restarting a Space (#1586)\n\n* Implement factory reboot for Spaces\n\n* fix"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-08-11T09:40:45Z",
+    "message": "Revert \"Implement factory reboot for Spaces\"\n\nThis reverts commit 95c14666884a6fb1c78e0dcf35ab3388817d31c4."
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-08-08T07:36:18Z",
+    "message": "Add download alias for `hf_hub_download` to `HfApi` (#1580)\n\n* accept endpoint in hf_hub_download\n\n* Add download aliases + test"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-07-26T15:26:19Z",
+    "message": "Request Persistent Storage (#1571)\n\n* Implemet feature\n\n* Update src/huggingface_hub/hf_api.py\n\nCo-authored-by: Lucain <lucainp@gmail.com>\n\n* Update src/huggingface_hub/hf_api.py\n\nCo-authored-by: Lucain <lucainp@gmail.com>\n\n* Update src/huggingface_hub/hf_api.py\n\nCo-authored-by: Lucain <lucainp@gmail.com>\n\n* Add tests and guide\n\n* Style\n\n* typo\n\n---------\n\nCo-authored-by: Lucain <lucainp@gmail.com>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-07-21T09:43:36Z",
+    "message": "FIX style issues by pinning black version"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-06-06T15:08:00Z",
+    "message": "add CommitOperationCopy (#1495)\n\n* add CommitOperationCopy\n\n* Add support for CommitOperationCopy in _multi_commits\n\n* refacto test comments\n\n* update __init__.py\n\n* update test\n\n* docs and docstrings\n\n* Apply suggestions from code review\n\nCo-authored-by: Lucain <lucainp@gmail.com>\n\n* fix fetch_lfs_files_to_copy\n\n* style\n\n* fix test\n\n* style\n\n* fix test again\n\n* minor\n\n* minor\n\n* Apply suggestions from code review\n\n* do not support CommitOperationCopy in multicommit\n\n* do not support CommitOperationCopy in multicommit\n\n---------\n\nCo-authored-by: Lucain Pouget <lucainp@gmail.com>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-05-17T16:33:03Z",
+    "message": "Run `HfApi` methods in the background (`run_as_future`) (#1458)\n\n* POC to run HfApi methods in the background\n\n* Renamed detach to threaded + fix repr\n\n* Complete Refacto\n\n* fix python37\n\n* useless changes\n\n* add test\n\n* update CI\n\n* first step to revert to as_future=True flad\n\n* Make create_commit, upload_file and upload_folder future-compatible\n\n* Finally settle with a solution + tests + docs\n\n* add legacy script for reference\n\n* fix tests\n\n* fix typing in 3.7\n\n* fix typing for 3.7\n\n* minor changes\n\n* make style\n\n* ciode qualiryt"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-05-15T16:36:02Z",
+    "message": "Remove deprecated code + adapt tests (#1450)\n\n* Remove deprecated code + adapt tests\n\n* code quality\n\n* fix test"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-05-08T18:10:42Z",
+    "message": "Fix discussion URL on datasets and spaces (#1465)"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-05-08T09:56:13Z",
+    "message": "Add expand parameter to list_repo_files (#1451)"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-04-18T19:10:33Z",
+    "message": "Implement `list_files_info` + tests (#1435)\n\n* Implement get_files_info + tests\n\n* add list_repo_files test\n\n* fix docs?\n\n* remove lastCommit for now + rename to get_paths_infos\n\n* use expand=True in hffs\n\n* docs"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-04-17T15:10:12Z",
+    "message": "New endpoint: `create_commits_on_pr` (#1375)\n\n* Add delete_patterns option to upload_folder + tests + adapt mixins\n\n* adapt upload guide\n\n* fix test python3.7\n\n* First draft for a chunked commit endpoint\n\n* rename it\n\n* tpyo\n\n* big refacto\n\n* doc\n\n* documentation\n\n* fix docs"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-04-17T14:52:28Z",
+    "message": "[Feat] Add `sleep_time` for Spaces (#1438)\n\n* Implement Space sleep_time + docs + tests\n\n* document return values\n\n* make quality\n\n* remove useless -CPU_BASIC_SLEEP_TIME"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-04-06T12:48:47Z",
+    "message": "[hot-fix] Malicious repo can overwrite any file on disk (#1429)\n\n* Add regression test\n\n* add protections + fix tests\n\n* fix widnwso test\n\n* fix widnwso test\n\n* FIX resolving path without following symlinks\n\n* increase pause time in test\n\n* fix windows test\n\n* Update src/huggingface_hub/file_download.py"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-03-24T13:53:12Z",
+    "message": "Raise issue if trying to upload `.git/` folder + ignore `.git/` folder in `upload_folder` (#1408)\n\n* More constrained\n\n* error message\n\n* ignore .git folder\n\n* Add tests\n\n* add docstring\n\n* docs\n\n* Update docs/source/guides/upload.mdx\n\nCo-authored-by: lewtun <lewis.c.tunstall@gmail.com>\n\n* Update src/huggingface_hub/hf_api.py\n\n---------\n\nCo-authored-by: lewtun <lewis.c.tunstall@gmail.com>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-03-24T09:55:52Z",
+    "message": "feat: add `hf_transfer` upload (#1395)\n\n* feat: add `hf_transfer` upload\n\n* feat: update `hf_transfer.upload` function args\n\n* fix: wording `downloading` -> `uploading`\n\n* refacto: use kwargs for every function arg\n\nCo-authored-by: Lucain <lucainp@gmail.com>\n\n* fix: print warning and fallback to default upload\n\n* refacto: run `make style` & `make quality`\n\n* fix: do not use thread_map when using hf transfer\n\n* refacto: use normal assign for use_hf_transfer\n\nrather than using unnecessary compound assignment\n\nCo-authored-by: Lucain <lucainp@gmail.com>\n\n* refacto: update hf_transfer to support only multipart\n\n* docs: update doc string as lfs_upload was removed\n\n* refacto: update chunk size err msg\n\nCo-authored-by: Lucain <lucainp@gmail.com>\n\n* feat: update hf_transfer API\n\n* feat: move completion call here\n\n* refacto: run make style\n\n* feat: hf_transfer API update\n\n* refacto: extract common operations to functions\n\n* Moved LFS stuff to lfS.py\n\n* fix tests\n\n* small\n\n---------\n\nCo-authored-by: Lucain <lucainp@gmail.com>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-03-23T15:48:14Z",
+    "message": "Keep-alive connection between requests (#1394)\n\n* Configurable requests Sessions + tests\n\n* Use session everywhere\n\n* fix python3.7\n\n* fix telemetry tests\n\n* FIX http_backoff tests\n\n* FIX inference API mocked tests\n\n* FIX mocked http offline test\n\n* fix cached_download mocked test\n\n* fix mocked space api test\n\n* FIX mocked pagination tests\n\n* FIX tests\n\n* add documentation"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-03-23T14:46:01Z",
+    "message": "Prepare for 0.14 (#1381)\n\n* Bump version to 0.14.0.dev0\n\n* Start to remove set_access_token and git-credential-related helpers\n\n* fix tests\n\n* fix lfs tests\n\n* fix keras tests\n\n* fix repository shared tests\n\n* try without set access token\n\n* tmp no set_access_token in repositorytest\n\n* RepositoryTests completed\n\n* Definitely remove set_access_token from source_code\n\n* add paginate to utils\n\n* remove paginate from utils"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-03-09T13:59:28Z",
+    "message": "Fix `path_in_repo` validation when committing files (#1382)\n\n* Fix invalid path_in_repo in CommitOperationAdd\n\n* raise if absolute path_in_repo in CommitOperationAdd\n\n* Validate path_in_repo for CommitOperationDelete as well"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-03-08T11:36:34Z",
+    "message": "Fix ReprMixin for python3.7 + test (#1380)"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-03-08T08:42:56Z",
+    "message": "Add `delete_patterns` option to `upload_folder` (#1370)\n\n* Add delete_patterns option to upload_folder + tests + adapt mixins\n\n* adapt upload guide\n\n* fix test python3.7\n\n* Apply suggestions from code review\n\nCo-authored-by: Lysandre Debut <lysandre.debut@reseau.eseo.fr>\n\n---------\n\nCo-authored-by: Lysandre Debut <lysandre.debut@reseau.eseo.fr>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-03-07T20:32:45Z",
+    "message": "FIX `create_repo` with `exists_ok` but no permission (#1364)\n\n* FIX create_repo with exists_ok but no permission\n\n* add repo type\n\n* fix repo type\n\n* really fix repourl"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-03-07T10:50:14Z",
+    "message": "fix create_commit on lowercased repo_id + add regression test (#1376)"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-02-22T21:00:14Z",
+    "message": ":sparkles: add duplicate_space (#1353)\n\n* :sparkles: add duplicate_space\n\n* :lipstick: style\n\n* :lipstick: style\n\n* :lipstick: style\n\n* Add exist_ok param + refactor id parsing\n\n* make style\n\n* :white_check_mark: add tests\n\n* :white_check_mark: tests\n\n* Added some docs\n\n* docs\n\n---------\n\nCo-authored-by: Lucain Pouget <lucainp@gmail.com>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-02-22T11:09:27Z",
+    "message": ":ambulance: hotfix isHf test user permissions bug (#1357)\n\n* :ambulance: hotfix isHf test user permissions bug\n\n* compare only even ids\n\n* rephease skip\n\n---------\n\nCo-authored-by: Lucain Pouget <lucainp@gmail.com>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-02-16T08:41:54Z",
+    "message": "Add `list_repo_commits` to list git history of a repo (#1331)\n\n* Add list_repo_commits to list git history of a repo\n\n* code style\n\n* add docs\n\n* code quality\n\n* Update src/huggingface_hub/hf_api.py\n\nCo-authored-by: Julien Chaumond <julien@huggingface.co>\n\n---------\n\nCo-authored-by: Julien Chaumond <julien@huggingface.co>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-02-14T16:03:13Z",
+    "message": "Add `pause_space` and `restart_space` (#1332)\n\n* Add pause_space and restart_space helpers\n\n* typos\n\n* capitalize\n\n* docs"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-02-14T16:02:34Z",
+    "message": "Parse correctly canonical URLs in RepoUrl (#1337)"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-02-07T17:45:34Z",
+    "message": "Update formatting tooling (#1323)\n\n* First draft to update tooling\n\n* Fixed __init__.py generation\n\n* quiet make quality\n\n* update pre-commit and contributing guide\n\n* set back mypy config\n\n* FIX test due to moon-landing wording update"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-01-20T09:12:46Z",
+    "message": "Make tests more robust (no pre-existing repo on staging Hub) (#1302)\n\n* Create gated repo on the fly\n\n* create repo with awful filename on the fly\n\n* Create foreign repo on the fly to test PR creation\n\n* scan cache tests on production repo\n\n* make it work on windows\n\n* final adapt\n\n* make snapshot download tests faster\n\n* Fix test_list_liked_repos_no_auth"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-01-19T15:55:28Z",
+    "message": "Add windows machine for CI (#1112)\n\n* Add windows machine for CI\n\n* add simple windows test\n\n* run only windows tests in CI\n\n* remove apt get in windows ci\n\n* disable symlinks on windows machine in CI\n\n* env variale\n\n* fix disable_symlinks_on_windows_ci fixture\n\n* fix fixture ?\n\n* try to fix permission issues on windows ci\n\n* refacto Offline repository tests\n\n* Update use_tmp_repo behavior\n\n* tmp work\n\n* split between shared vs unique repo tests\n\n* working repository tests\n\n* use credential for repo tests\n\n* refacto dataset repository tests\n\n* run repo test concurrently\n\n* fix github workflow\n\n* fix ci\n\n* fix ci\n\n* echo ci\n\n* fix ci?\n\n* finally fix ci?g\n\n* make test_correct_helper more robust\n\n* delete test_correct_helper\n\n* fix commit context manager\n\n* robust tmp dir deletiong\n\n* Implement more robust TemporaryDirectory\n\n* adapt existing codebase\n\n* cleanup at last\n\n* code quality\n\n* Rename to softTemporaryDirectory\n\n* Skip test on windows + force str path in Repository\n\n* typing\n\n* skip symlink test on windows\n\n* always disable symlink on windows during tests\n\n* fix pytest conf\n\n* xfail_on_windows decorator\n\n* cleaner xfail_on_windows\n\n* deactivate more tests\n\n* another xfail\n\n* skip umask test\n\n* add pending questions\n\n* other xfail\n\n* longer but more robust test_backoff_sleep_time test\n\n* another xfail\n\n* Make windows-specific version of test_scan_cache_on_valid_cache\n\n* fix file size\n\n* 2 cache tests should fail\n\n* resolve path in test missing cache\n\n* test_scan_cache_last_modified_and_last_accessed should fail on Windows\n\n* string instead of path in test_init_from_existing_local_clone\n\n* fix \\r\\n issue in modelcards on windows\n\n* preserve newlines when saving Repocard\n\n* fix linebreak issue in test_updating_text_updates_content\n\n* add repocard test to ensure linebreaks are kept\n\n* fix for 3.7\n\n* fix flag when saving\n\n* document known issues on windows\n\n* requested change"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-01-19T15:49:06Z",
+    "message": "Handle hf:// urls + raise ValueError if repo type is unknown (#1298)"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-01-18T10:05:23Z",
+    "message": "Create branch from given revision (#1293)"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-01-16T15:25:38Z",
+    "message": "Update \"move_repo\" doc url + fix Bigcode test in CI (#1292)\n\n* update move repo doc url\n\n* FIX bigcode test in CI"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-01-12T12:07:33Z",
+    "message": "Refacto Repository tests (#1277)\n\n* refacto Offline repository tests\n\n* Update use_tmp_repo behavior\n\n* tmp work\n\n* split between shared vs unique repo tests\n\n* working repository tests\n\n* use credential for repo tests\n\n* refacto dataset repository tests\n\n* run repo test concurrently\n\n* fix github workflow\n\n* fix ci\n\n* fix ci\n\n* echo ci\n\n* fix ci?\n\n* finally fix ci?g"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2022-12-23T08:55:43Z",
+    "message": "1278 More robust temporary directory (#1279)\n\n* Implement more robust TemporaryDirectory\n\n* adapt existing codebase\n\n* cleanup at last\n\n* code quality\n\n* Rename to softTemporaryDirectory"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2022-12-21T14:57:17Z",
+    "message": "Fix list_liked_repos (only public likes are returned) (#1273)\n\n* Fix list_liked_repos (only public likes are returned)\n\n* prepare for next likes nedpoint (paginate)\n\n* mypy"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2022-12-21T10:46:44Z",
+    "message": "List branches and tags from a repo (#1276)\n\n* List branches and tags from a repo\n\n* lazy import RefIfno and RepoRefs\n\n* wrong type\n\n* docs\n\n* requested changes\n\n* code style"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2022-12-16T08:39:34Z",
+    "message": "Extend create_repo return value (#1268)\n\n* Extend create_repo return value\n\n* 1 more example\n\n* Add RepoUrl.url property\n\n* add docstring\n\n* add doc\n\n* docstring in main class not in __init__"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2022-12-14T15:33:49Z",
+    "message": "Add method to list liked repos (#1254)\n\n* first draft\n\n* list_liked_repos + add tests + add docs\n\n* add like/unlike endpoints + fix tests\n\n* fix unlike test + skip spaces tests\n\n* code style\n\n* Update src/huggingface_hub/_activity_api.py\n\nCo-authored-by: Lysandre Debut <lysandre.debut@reseau.eseo.fr>\n\n* removed  module\n\n* Remove total from UserLikes object\n\n* fix docs\n\nCo-authored-by: Lysandre Debut <lysandre.debut@reseau.eseo.fr>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2022-12-13T12:45:11Z",
+    "message": "Remove `get_space_secrets` endpoint (#1264)\n\n* Remove get_space_secrets endpoint\n\n* fix mock tests for python3.7"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2022-12-13T09:19:24Z",
+    "message": "Mock Space tests requiring GPUs (#1263)\n\n* Mock Space tests requiring GPUs\n\n* more robust space tests"
+},
+{
+    "repo_url": "github.com/SillyTavern/SillyTavern-extras",
+    "filepath": "modules/voice_conversion/rvc/custom_pitch_extraction.py",
+    "commit_date": "2023-08-09T01:38:13Z",
+    "message": "Add module managing RVC extension to convert audio sent by ST using voice model"
+},
+{
+    "repo_url": "github.com/Ascend/ModelZoo-PyTorch",
+    "filepath": "PyTorch/built-in/diffusion/diffusers0.17.0/scripts/convert_k_upscaler_to_diffusers.py",
+    "commit_date": "2023-08-15T11:09:43Z",
+    "message": "!5366 \u3010\u81ea\u7814\u3011[PyTorch] Diffusers0.18.1\u9002\u914d\n* adapter for diffusers 0.18.1"
+},
+{
+    "repo_url": "github.com/Ascend/ModelZoo-PyTorch",
+    "filepath": "PyTorch/built-in/diffusion/diffusers0.18.1/scripts/convert_k_upscaler_to_diffusers.py",
+    "commit_date": "2023-08-15T11:09:43Z",
+    "message": "!5366 \u3010\u81ea\u7814\u3011[PyTorch] Diffusers0.18.1\u9002\u914d\n* adapter for diffusers 0.18.1"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2024-01-24T15:24:01Z",
+    "message": "Fix download from private renamed repo (#1999)\n\n* Fix download from private renamed repo\n\n* link issue\n\n* style"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2023-11-22T17:35:20Z",
+    "message": "Send `user_agent` in HEAD calls (#1854)\n\n* Send user_agent in HEAD calls + add get_hf_file_metadata to HfApi + test\n\n* docstring"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2023-10-20T09:47:42Z",
+    "message": "Retry on ConnectionError/ReadTimeout when streaming file from server (#1766)\n\n* Retry on ConnectionError/ReadTimeout when streaming file from server\n\n* add test\n\n* fix testing utils"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2023-10-16T13:37:24Z",
+    "message": "Keep lock files in a `/locks` folder to prevent rare concurrency issue (#1659)\n\n* Keep lock files to prevent rare concurrency issue\n\nThe lock file could be removed when the 2nd process gets the lock.\nAnd then the 3rd process will lock on a different lock file handle.\nAlthough the lock path stays the same.\n\n1st proc gets the lock\n2nd proc waits for the lock\n1st proc releases the lock\n1st proc removes the lock file\n2nd proc gets the lock\n3rd proc creates a new lock file and gets the lock\n\nWindows doesn't have this problem.\n\nThis commit moves the lock files to a subdirectory of the hub cache,\nand don't remove it after downloading.\n\nThe lock files are named with their 'etag' and '.lock' extension, placed\nin the 'HUGGINGFACE_HUB_CACHE/.locks/repo_folder_name' directory. The\nrepo_folder_name is generated from 'repo_id' and 'repo_type', to avoid\nsame 'etag' in different repos.\n\nCo-authored-by: Lucain <lucainp@gmail.com>\n\n* Format code\n\n* skip .locks folder in scan cache\n\n---------\n\nCo-authored-by: Lucain <lucainp@gmail.com>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2023-10-13T07:36:03Z",
+    "message": "Fix a bug to respect the HF_HUB_ETAG_TIMEOUT. (#1728)\n\n* Fix a bug to respect the HF_HUB_ETAG_TIMEOUT.\n\n* style\n\n* add test\n\n---------\n\nCo-authored-by: Lucain <lucainp@gmail.com>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2023-09-26T08:19:57Z",
+    "message": "Address failing _check_disk_space() when path doesn't exist yet (#1692)\n\n* Add realpath to disk_usage to allow path-like obj\n\n* Add logic to address non-existent paths\n\n* Add test cased for non-existent paths\n\n* Update tests/test_file_download.py\n\n---------\n\nCo-authored-by: Lucain <lucainp@gmail.com>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2023-09-04T14:12:59Z",
+    "message": "Fix fsspec tests in ci (#1635)\n\n* fix warnings + typoes\n\n* Raise on NotImplementedError in fsspec\n\n* unskip test"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2023-08-30T09:29:12Z",
+    "message": "skip gated repo test on contrib"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2023-08-29T15:05:17Z",
+    "message": "Fix ci tests (#1630)\n\n* fix gated repo test\n\n* fix like repo test\n\n* fix VCR test text_to_image default\n\n* make quality\n\n* more robust test"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2023-08-28T14:26:09Z",
+    "message": "Implemented check_disk_space function (#1590)\n\n* Implemented check_disk_space function\n\n* Addressed PR review comments\n\n* Added test cases\n\n* Ran the code formatter\n\n* Addressed PR comments\n\n* removed function return and updated tests\n\n* Addressed code quality fail"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2023-08-08T07:36:18Z",
+    "message": "Add download alias for `hf_hub_download` to `HfApi` (#1580)\n\n* accept endpoint in hf_hub_download\n\n* Add download aliases + test"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2023-07-26T13:24:05Z",
+    "message": "Check local files if (RepoNotFound, GatedRepo, HTTPError) while downloading files (#1561)\n\n* Fix case where model exists locally but huggingface is not logged in.\n\n* raise on specific errors\n\n* add test\n\n* fix production token not set\n\n---------\n\nCo-authored-by: Jiaming Song <jiaming@lumalabs.ai>\nCo-authored-by: Lucain Pouget <lucainp@gmail.com>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2023-04-25T14:33:56Z",
+    "message": "Fix consistency check when downloading a file (#1449)\n\n* Check file consistency only for Hub files\n\n* Retrieve correct expected size\n\n* make style\n\n* remove comment\n\n* commments\n\n* fix cached_download consistency check if redirected\n\n* fix tests"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2023-04-17T16:06:27Z",
+    "message": "Normalize both possible variants of the Etag to remove potentially invalid path elements (#1428)\n\n* Normalize both possible variants of the Etag to remove potentially\nillegal characters\n\n* normalize-weak-etag-and-test\n\n* fix revision in etag tests\n\n---------\n\nCo-authored-by: Lucain Pouget <lucainp@gmail.com>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2023-04-06T12:48:47Z",
+    "message": "[hot-fix] Malicious repo can overwrite any file on disk (#1429)\n\n* Add regression test\n\n* add protections + fix tests\n\n* fix widnwso test\n\n* fix widnwso test\n\n* FIX resolving path without following symlinks\n\n* increase pause time in test\n\n* fix windows test\n\n* Update src/huggingface_hub/file_download.py"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2023-03-24T13:41:20Z",
+    "message": "Raise after download if file size is not consistent (#1403)\n\n* Raise after download if file size is not consistent\n\n* typo"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2023-03-20T12:17:27Z",
+    "message": "Hotfix - use relative symlinks whenever possible (#1399)\n\n* Hotfix - use relative symlinks whenever possible\n\n* renaming"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2023-03-13T17:41:26Z",
+    "message": "Fix relative symlinks in cache (#1390)\n\n* fix relative symlinks in cache\n\n* fix test\n\n* fix test on windows"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2023-03-08T08:38:20Z",
+    "message": "Download file to specific destination (#1360)\n\n* Add local_dir option to fhf_hub_download/snapshot_download + docstring + tests\n\n* add snapshot_download test + fix is subdirectory\n\n* return local_dir in snapshot_download + fix\n\n* adapt tests\n\n* refactor snapshot download test -remove duplicate tests\n\n* small\n\n* remove unrelated image\n\n* updated download.mdx\n\n* doc\n\n* Fix CI on windows\n\n* better fix for windows\n\n* warn about symlinks in doc\n\n* docs\n\n* fix readlink test\n\n* fix windows ci\n\n* Apply suggestions from code review\n\nCo-authored-by: Pedro Cuenca <pedro@huggingface.co>\n\n* Add auto local_dir_use_symlink\n\n* doc update\n\n* fix tests\n\n* style\n\n* broken doc\n\n* test files are overwritten if any\n\n* fix test\n\n* overview\n\n* Update src/huggingface_hub/file_download.py\n\nCo-authored-by: Lysandre Debut <lysandre.debut@reseau.eseo.fr>\n\n---------\n\nCo-authored-by: Pedro Cuenca <pedro@huggingface.co>\nCo-authored-by: Lysandre Debut <lysandre.debut@reseau.eseo.fr>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2023-02-07T17:45:34Z",
+    "message": "Update formatting tooling (#1323)\n\n* First draft to update tooling\n\n* Fixed __init__.py generation\n\n* quiet make quality\n\n* update pre-commit and contributing guide\n\n* set back mypy config\n\n* FIX test due to moon-landing wording update"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2023-01-31T10:47:14Z",
+    "message": "fix(utils): try_to_load_from_cache now correctly handles refs/pr revisions (#1316)\n\n* fix(utils): try_to_load_from_cache now correctly handles refs/pr type revisions\n\n* just read the file\n\n* formatting\n\n* add test\n\n* formatting\n\n* formatting\n\n* make style\n\n---------\n\nCo-authored-by: Lucain Pouget <lucainp@gmail.com>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2023-01-25T11:04:31Z",
+    "message": "Fix caching error when offline and no refs dir (#1307)"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2023-01-24T10:41:37Z",
+    "message": "fix: use cache for snapshots even if refs does not exist (#1306)\n\n* fix: use cache for snapshots even if refs does not exist\n\nIf one uses `hf_hub_download` only referencing specific commits the `refs` folder will not be created even though data will be cached via `snapshots` and `blobs`.  Subsequent calls to `try_to_load_from_cache` were returning None even though the desired data was in the cache.\n\nExample:\n\n```python\n# download something\nhf_hub_download(repo_id=repo, revision=commit_hash, filename=filepath, token=token)\n# returns None\ntry_to_load_from_cache(repo_id=repo, revision=commit_hash, filename=filepath)\n```\n\n* FIX in case .not_exists + add tests\n\nCo-authored-by: Lucain Pouget <lucainp@gmail.com>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2023-01-20T09:12:46Z",
+    "message": "Make tests more robust (no pre-existing repo on staging Hub) (#1302)\n\n* Create gated repo on the fly\n\n* create repo with awful filename on the fly\n\n* Create foreign repo on the fly to test PR creation\n\n* scan cache tests on production repo\n\n* make it work on windows\n\n* final adapt\n\n* make snapshot download tests faster\n\n* Fix test_list_liked_repos_no_auth"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2023-01-19T15:55:28Z",
+    "message": "Add windows machine for CI (#1112)\n\n* Add windows machine for CI\n\n* add simple windows test\n\n* run only windows tests in CI\n\n* remove apt get in windows ci\n\n* disable symlinks on windows machine in CI\n\n* env variale\n\n* fix disable_symlinks_on_windows_ci fixture\n\n* fix fixture ?\n\n* try to fix permission issues on windows ci\n\n* refacto Offline repository tests\n\n* Update use_tmp_repo behavior\n\n* tmp work\n\n* split between shared vs unique repo tests\n\n* working repository tests\n\n* use credential for repo tests\n\n* refacto dataset repository tests\n\n* run repo test concurrently\n\n* fix github workflow\n\n* fix ci\n\n* fix ci\n\n* echo ci\n\n* fix ci?\n\n* finally fix ci?g\n\n* make test_correct_helper more robust\n\n* delete test_correct_helper\n\n* fix commit context manager\n\n* robust tmp dir deletiong\n\n* Implement more robust TemporaryDirectory\n\n* adapt existing codebase\n\n* cleanup at last\n\n* code quality\n\n* Rename to softTemporaryDirectory\n\n* Skip test on windows + force str path in Repository\n\n* typing\n\n* skip symlink test on windows\n\n* always disable symlink on windows during tests\n\n* fix pytest conf\n\n* xfail_on_windows decorator\n\n* cleaner xfail_on_windows\n\n* deactivate more tests\n\n* another xfail\n\n* skip umask test\n\n* add pending questions\n\n* other xfail\n\n* longer but more robust test_backoff_sleep_time test\n\n* another xfail\n\n* Make windows-specific version of test_scan_cache_on_valid_cache\n\n* fix file size\n\n* 2 cache tests should fail\n\n* resolve path in test missing cache\n\n* test_scan_cache_last_modified_and_last_accessed should fail on Windows\n\n* string instead of path in test_init_from_existing_local_clone\n\n* fix \\r\\n issue in modelcards on windows\n\n* preserve newlines when saving Repocard\n\n* fix linebreak issue in test_updating_text_updates_content\n\n* add repocard test to ensure linebreaks are kept\n\n* fix for 3.7\n\n* fix flag when saving\n\n* document known issues on windows\n\n* requested change"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2022-12-23T08:55:43Z",
+    "message": "1278 More robust temporary directory (#1279)\n\n* Implement more robust TemporaryDirectory\n\n* adapt existing codebase\n\n* cleanup at last\n\n* code quality\n\n* Rename to softTemporaryDirectory"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2022-11-25T16:57:49Z",
+    "message": "Set correct permissions on blob file (#1220)\n\n* Set correct permissions on blob file\n\n* Hack to get current umask thread-safe"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2022-11-25T13:15:10Z",
+    "message": "Add custom GatedRepoError when trying to access gated repo (#1225)"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2022-11-24T09:10:16Z",
+    "message": "Fix caching reference if permission denied (#1219)\n\n* Fix caching reference if permission denied\n\n* fix cleanup tests"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2022-11-15T10:01:30Z",
+    "message": "Fix get file size on lfs (#1188)\n\n* Fix get file size on LFS\n\n* fix typos + add description"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2022-11-14T10:51:02Z",
+    "message": "Parse file size in get_hf_file_metadata (#1179)\n\n* Parse file size in get_hf_file_metadata\n\n* quality"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2022-11-07T17:30:43Z",
+    "message": "FIX url encoding in hf_hub_url (#1164)\n\n* FIX url encoding in hf_hub_url\n\n* tests on subfolders as well"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2022-10-21T06:07:39Z",
+    "message": "Add error message from `x-error-message` header if exists (#1121)\n\n* Add error message from x-error-message header if exists\n\n* add regression test on gated repo"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2022-10-12T13:20:15Z",
+    "message": "More robust create relative symlink in cache (#1109)\n\n* More robust create relative symlink in cache\n\n* Apply suggestions from code review\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2022-09-20T06:52:40Z",
+    "message": "Add get_hf_file_metadata to fetch metadata from the Hub (#1058)\n\n* Add get_hf_file_metadata to fetch metadata from the Hub\n\n* update doc\n\n* doc\n\n* test get_file metadata\n\n* add todo\n\n* Update src/huggingface_hub/file_download.py\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\n\n* Update src/huggingface_hub/file_download.py\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2022-09-05T12:49:56Z",
+    "message": "Clearer HTTP error messages in `huggingface_hub` (#1019)\n\n* draft\n\n* refactored error handling\n\n* fix regexes in tetss\n\n* add tests for HfHubHttpErrors and helpers\n\n* fix test\n\n* fix test_model_info regex\n\n* renamed to hf_raise_for_status + new attributes\n\n* Add documentation\n\n* isort fix\n\n* FIX mock test\n\n* Add BadRequestError reference to doc\n\n* doc\n\n* no deprecation for _raise_for_status\n\n* Update docs/source/package_reference/utilities.mdx\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\n\n* sphinx to new doc\n\n* relative imports for doc\n\n* exmaple instead of usage\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2022-09-05T07:46:12Z",
+    "message": "Add validator for repo id + decorator to validate arguments in `huggingface_hub` (#1029)\n\n* implement repo_id validator\n\n* Add documentation\n\n* Add validate_hf_hub_args decorator everywhere\n\n* prefixing 'datasets' should not be supported\n\n* try to fix doc\n\n* update example\n\n* Fix loading of config file from model_id in from_pretrained\n\n* Apply suggestions from code review\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\n\n* docstring from code review\n\n* Update docs/source/package_reference/utilities.mdx\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\n\n* FIX doc builder\n\n* Update src/huggingface_hub/utils/_validators.py\n\n* Update src/huggingface_hub/utils/_validators.py\n\nCo-authored-by: Lysandre Debut <lysandre.debut@reseau.eseo.fr>\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\nCo-authored-by: Lysandre Debut <lysandre.debut@reseau.eseo.fr>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2022-08-31T10:16:32Z",
+    "message": "Consider empty subfolder as None in  and (#1021)"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2022-08-16T11:23:07Z",
+    "message": "Handle redirections in `hf_hub_download` for a renamed repo (#983)\n\n* Handle internal redirection when dowloading\n\n* expect warning on deprecated cached_download\n\n* ensure backward compatibility\n\n* clearer parameter name + docstring"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2022-08-11T07:11:57Z",
+    "message": "Use a finer exception when local_files_only=True and a file is missing in cache (#985)\n\n* Add LocalEntryNotFoundError + adapt + tests\n\n* update comments\n\n* add suggested comment"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2022-08-10T15:05:11Z",
+    "message": "Add utility to load files from cache (#980)\n\n* Add utility to load files from cache\n\n* Deal with repo type\n\n* Apply suggestions from code review\n\nCo-authored-by: Lucain <lucainp@gmail.com>\n\n* Address review comments\n\nCo-authored-by: Lucain <lucainp@gmail.com>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2022-06-13T08:54:26Z",
+    "message": "Refine 404 errors (#878)\n\n* Add errors\n\n* Style\n\n* Review\n\n* hf_hub_download support\n\n* Errors for hf_hub_download\n\n* Typo\n\n* Handle 401 error\n\n* Tests for 401 error\n\n* Typo\n\n* Review comments"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2022-05-25T14:52:04Z",
+    "message": "New git-aware cache file layout (#801)\n\n* light typing\n\n(cherry picked from commit b2c8f9b970c505cdf2c685e645e9e36cc472b0d3)\n\n* remove this seminal comment\n\n(cherry picked from commit 12a841a605c94733154f3b22e812c0f5e69ef37b)\n\n* I don't understand why we don't early return here\n\ncc @patrickvonplaten care to take a look? cc @LysandreJik\n\n(cherry picked from commit 259ab36f03ab3eed6eeb4fc4984bc259619b442f)\n\n* following last commit, unnest this\n\n(cherry picked from commit 54957f3f049d887af21dd8f6950873a2823c4247)\n\n* [BIG] This should work for all repo_types not just models!\n\n(cherry picked from commit 9a3f96ccb2de6663cf4cf2d9a60dd7f415227c1b)\n\n* one more\n\n(cherry picked from commit b74871250616c44a2125b26d5de29b1189e82e12)\n\n* forgot a repo_type and reorder code\n\n(cherry picked from commit 3ef7d79a44087e971e10e35d3b9f5bea3474f297)\n\n* also rename this cache folder\n\n(cherry picked from commit 4c518b861723a6d28d59108403c37edf5208f2fe)\n\n* Use `hf_hub_download`, will be simpler later\n\n(cherry picked from commit c7478d58fe62da02625b8ca17796ad1419a048b1)\n\n* in this new version, `force_filename` does not make sense anymore\n\n(cherry picked from commit 9a674bc795d5c8a26aecf5429d391fff92e47e8d)\n\n* Just inline everything inside `hf_hub_download` for now\n\n(cherry picked from commit ee49f8f57ba4e7e66f237df8f64c804862fe3ee8)\n\n* Big prototype! it works! :tada:\n\n(cherry picked from commit 7fe19ec66a2c5a7386a956cb9b65616cb209608a)\n\n* wip wip\n\n* do not touch `cached_download`\n\n* Prompt user to upgrade to `hf_hub_download`\n\n* Add a `legacy_cache_layout=True` to preserve old behavior, just in case\n\n* Create `relative symlinks` + add some doc\n\n* Fix behavior when no network\n\n* This test now is legacy\n\n* Fix-ish conflict-ish\n\n* minimize diff\n\n* refactor `repo_folder_name`\n\n* windows support + shortcut if user passes a commit hash\n\n* Rewrite `snapshot_download` and make it more robust\n\n* OOops\n\n* Create example-transformers-tf.py\n\n* Fix + add a way more complete example (running on Ubuntu)\n\n* Apply suggestions from code review\n\nCo-authored-by: Lysandre Debut <lysandre.debut@reseau.eseo.fr>\nCo-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>\n\n* Update src/huggingface_hub/file_download.py\n\nCo-authored-by: Lysandre Debut <lysandre.debut@reseau.eseo.fr>\n\n* Update src/huggingface_hub/file_download.py\n\nCo-authored-by: Lysandre Debut <lysandre.debut@reseau.eseo.fr>\n\n* Only allow full revision hashes otherwise the `revision != commit_hash` test is not reliable\n\n* add a little bit more doc + consistency\n\n* Update src/huggingface_hub/snapshot_download.py\n\nCo-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>\n\n* Update snapshot download\n\n* First pass on tests\n\n* Wrap up tests\n\n* :wolf: Fix for bug reported by @thomwolf\n\nsee https://github.com/huggingface/huggingface_hub/pull/801#issuecomment-1134576435\n\n* Special case for Windows\n\n* Address comments and docs\n\n* Clean up with ternary cc @julien-c\n\n* Add argument to `cached_download`\n\n* Opt-in for filename_to-url\n\n* Opt-in for filename_to-url\n\n* Pass the flag\n\n* Update docs/source/package_reference/file_download.mdx\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\n\n* Update src/huggingface_hub/file_download.py\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\n\n* Address review comments\n\nCo-authored-by: Lysandre Debut <lysandre.debut@reseau.eseo.fr>\nCo-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>\nCo-authored-by: Lysandre Debut <lysandre@huggingface.co>\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2021-07-01T13:10:36Z",
+    "message": "Robust endpoint (#148), Only model ID to clone (#150), Enable dataset repositories (#151)\n\n* More robust endpoint with toggled staging endpoint\n\n* Rework snapshot download to use Staging\n\n* Design the URL template according to the environment variable\n\n* Add decorator for production testing\n\n* Add git user/email for Repository\n\n* Allow passing only model ID to clone when authenticated (#150)\n\n* Allow passing only model ID to clone when authenticated\n\n* Enable dataset repositories (#151)\n\n* Enable dataset repositories\n\n* Address Julien's review\n\n* Better API"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2021-06-22T18:13:44Z",
+    "message": "HF Hub download (#137)\n\n* HF Hub download\n\n* Update src/huggingface_hub/file_download.py\n\nCo-authored-by: Julien Chaumond <chaumond@gmail.com>\n\nCo-authored-by: Julien Chaumond <chaumond@gmail.com>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2021-04-07T23:03:11Z",
+    "message": "Expose more hf.co API surface, and ability to download a snapshot of a repo to a local folder (#25)\n\n* [ci] Slim down the matrix quite a bit\n\n* Expose more hf.co API surface\n\n- Expose the `filter` param on the list of models to only list models with a specific tag (method renamed to list_models, don't think it's too breaking, feedback welcome)\n\n- Expose a `model_info` method that gives you slightly more detailed info on a specific model, at a specific revision\n\n* Add `snapshot_download`: Download a whole snapshot of a repo's files at the specified revision\n\n* Docs, tests, lockfiles & metadata\n\n* In `force_filename` mode do not even store metadata file\n\n* Update README.md\n\nCo-authored-by: Julien Chaumond <julien@huggingface.co>\n\nCo-authored-by: Lysandre <lysandre.debut@reseau.eseo.fr>\nCo-authored-by: Lysandre Debut <lysandre@huggingface.co>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2021-03-18T16:55:44Z",
+    "message": "Add HF_HUB_OFFLINE env var (#22)\n\n* offline mode simulator\n\n* add HF_HUB_OFFLINE env var\n\n* add tests\n\n* doc tweak\n\n* Re-align from transformers and @aaugustin\n\ncc @lhoestq\n\nCo-authored-by: Julien Chaumond <julien@huggingface.co>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2021-02-12T18:56:44Z",
+    "message": "Support for git-based dataset repos (#14)\n\n* Export more constants\n\n* unrelated change= do not gobble certain kinds of requests.ConnectionError\n\n* datasets: file_download\n\ncc @lhoestq\n\n* Exposing this as a constant\n\n* Implement hf_api for datasets + Split constants into their own file\n\n* integration test + CLI"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_file_download.py",
+    "commit_date": "2020-12-22T21:43:53Z",
+    "message": "Initial import (#1)\n\n* Scaffolding + ~ import from transformers\n\n* move more things around\n\n* Fixes/deletes from copy/pastes\n\n* GH Actions"
+},
+{
+    "repo_url": "github.com/Preemo-Inc/text-generation-inference",
+    "filepath": "server/text_generation_server/utils/hub.py",
+    "commit_date": "2023-06-23T10:41:13Z",
+    "message": "feat(server): Adding new ignore_rule for conversion. (#485)"
+},
+{
+    "repo_url": "github.com/Preemo-Inc/text-generation-inference",
+    "filepath": "server/text_generation_server/utils/hub.py",
+    "commit_date": "2023-06-19T07:53:45Z",
+    "message": "feat(server): improve flash attention import errors (#465)\n\n@lewtun, is this enough?\n\nCloses #458\nCloses #456"
+},
+{
+    "repo_url": "github.com/Preemo-Inc/text-generation-inference",
+    "filepath": "server/text_generation_server/utils/hub.py",
+    "commit_date": "2023-06-05T14:09:41Z",
+    "message": "feat(server): batch tokenization for flash causal lm (#411)"
+},
+{
+    "repo_url": "github.com/Preemo-Inc/text-generation-inference",
+    "filepath": "server/text_generation_server/utils/hub.py",
+    "commit_date": "2023-05-31T08:57:53Z",
+    "message": "feat(server): add retry on download (#384)"
+},
+{
+    "repo_url": "github.com/Preemo-Inc/text-generation-inference",
+    "filepath": "server/text_generation_server/utils/hub.py",
+    "commit_date": "2023-05-03T09:36:24Z",
+    "message": "feat(server): support hf endpoint weight layout (#266)"
+},
+{
+    "repo_url": "github.com/Preemo-Inc/text-generation-inference",
+    "filepath": "server/text_generation_server/utils/hub.py",
+    "commit_date": "2023-04-11T17:16:41Z",
+    "message": "feat(server): support OPT models (#55)\n\nOPT models do not all have a `tokenizer.json` file on the hub at the\nmoment. Can't merge for now."
+},
+{
+    "repo_url": "github.com/Ascend/ModelZoo-PyTorch",
+    "filepath": "PyTorch/built-in/diffusion/diffusers0.21.0/src/diffusers/commands/fp16_safetensors.py",
+    "commit_date": "2023-10-30T11:08:30Z",
+    "message": "!5688 \u3010built-in\u3011[PyTorch] Diffusers 0.21.0 Original Code Upload\n* original code from Diffusers 0.21.0"
+},
+{
+    "repo_url": "github.com/haotian-liu/transformers_llava",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2023-03-09T21:58:03Z",
+    "message": "Add a progress bar for the total download of shards (#22062)\n\n* Add a progress bar for the total download of shards\n\n* Check for no cache at all\n\n* Fix check"
+},
+{
+    "repo_url": "github.com/haotian-liu/transformers_llava",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2023-03-02T08:45:42Z",
+    "message": "[Refactor] Relative imports wherever we can (#21880)\n\n* initial commit\n\n* update\n\n* second batch\n\n* style\n\n* fix imports\n\n* fix relative import on pipeline"
+},
+{
+    "repo_url": "github.com/haotian-liu/transformers_llava",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2023-02-06T23:10:56Z",
+    "message": "Update quality tooling for formatting (#21480)\n\n* Result of black 23.1\n\n* Update target to Python 3.7\n\n* Switch flake8 to ruff\n\n* Configure isort\n\n* Configure isort\n\n* Apply isort with line limit\n\n* Put the right black version\n\n* adapt black in check copies\n\n* Fix copies"
+},
+{
+    "repo_url": "github.com/haotian-liu/transformers_llava",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2023-01-27T17:09:49Z",
+    "message": "Little cleanup: let huggingface_hub manage token retrieval (#21333)\n\n* Let huggingface_hub manage token retrieval\n\n* flake8\n\n* code quality\n\n* adapt in every PushToHubMixin children\n\n* add explicit return type"
+},
+{
+    "repo_url": "github.com/haotian-liu/transformers_llava",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2023-01-24T15:37:10Z",
+    "message": "Use `logger.info` instead of `print` to emit a logging message in `hub.py` (#21273)\n\nuse logger.info() instead of print() to emit a debug message"
+},
+{
+    "repo_url": "github.com/haotian-liu/transformers_llava",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-11-28T15:35:52Z",
+    "message": "Safetensors offload (#20321)\n\n* INtegrate safetensos in weight offloading\n\n* Use safetensors checkpoint for offload when available\n\n* Make naming consistent\n\n* Make load faster\n\n* Quality\n\n* Add default"
+},
+{
+    "repo_url": "github.com/haotian-liu/transformers_llava",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-10-19T14:55:57Z",
+    "message": "Fix cache version file creation (#19750)"
+},
+{
+    "repo_url": "github.com/haotian-liu/transformers_llava",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-10-10T13:19:33Z",
+    "message": "Stop relying on huggingface_hub's private methods (#19392)\n\n* Leverage hfh for move cache\n\n* Style"
+},
+{
+    "repo_url": "github.com/haotian-liu/transformers_llava",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-09-30T19:13:39Z",
+    "message": "Fix cached lookup filepath on windows for hub (#19178)\n\n* Update hub.py commit_hash extraction\n\nAdd safety mechanism for windows systems to unify logic (replace double backslashes with /)\n\n* Fix string quotetype\n\n* Aaaa circleci is messing with me.\n\n* Switch to using as_posix() method from pathlib\n\n* Update src/transformers/utils/hub.py\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\n\n* Update src/transformers/utils/hub.py\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>"
+},
+{
+    "repo_url": "github.com/haotian-liu/transformers_llava",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-09-29T12:58:39Z",
+    "message": "Use `hf_raise_for_status` instead of deprecated `_raise_for_status` (#19244)\n\n* Use  instead of  from huggingface_hub\n\n* bump huggingface_hub to 0.10.0 + make deps_table_update"
+},
+{
+    "repo_url": "github.com/haotian-liu/transformers_llava",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-09-26T22:01:00Z",
+    "message": "Fix cached_file in offline mode for cached non-existing files (#19206)\n\n* Fix cached_file in offline mode for cached non-existing files\n\n* Add tests\n\n* Test with offline mode"
+},
+{
+    "repo_url": "github.com/haotian-liu/transformers_llava",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-09-19T19:27:18Z",
+    "message": "Don't warn of move if cache is empty (#19109)"
+},
+{
+    "repo_url": "github.com/haotian-liu/transformers_llava",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-09-15T13:39:59Z",
+    "message": "Move cache: expand error message (#19051)"
+},
+{
+    "repo_url": "github.com/haotian-liu/transformers_llava",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-09-13T17:11:24Z",
+    "message": "Re-add support for single url files in objects download (#19014)"
+},
+{
+    "repo_url": "github.com/haotian-liu/transformers_llava",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-09-12T16:09:37Z",
+    "message": "Align try_to_load_from_cache with huggingface_hub (#18966)\n\n* Align try_to_load_from_cache with huggingface_hub\n\n* Fix tests"
+},
+{
+    "repo_url": "github.com/haotian-liu/transformers_llava",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-09-06T16:34:37Z",
+    "message": "Further reduce the number of alls to head for cached objects (#18871)\n\n* Further reduce the number of alls to head for cached models/tokenizers/pipelines\n\n* Fix tests\n\n* Address review comments"
+},
+{
+    "repo_url": "github.com/haotian-liu/transformers_llava",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-09-02T14:30:06Z",
+    "message": "Clean up utils.hub using the latest from hf_hub (#18857)\n\n* Clean up utils.hub using the latest from hf_hub\n\n* Adapt test\n\n* Address review comment\n\n* Fix test"
+},
+{
+    "repo_url": "github.com/haotian-liu/transformers_llava",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-08-10T19:46:03Z",
+    "message": "Properly move cache when it is not in default path (#18563)"
+},
+{
+    "repo_url": "github.com/haotian-liu/transformers_llava",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-08-10T15:55:18Z",
+    "message": "Use commit hash to look in cache instead of calling head (#18534)\n\n* Use commit hash to look in cache instead of calling head\n\n* Add tests\n\n* Add attr for local configs too\n\n* Stupid typos\n\n* Fix tests\n\n* Update src/transformers/utils/hub.py\n\nCo-authored-by: Julien Chaumond <julien@huggingface.co>\n\n* Address Julien's comments\n\nCo-authored-by: Julien Chaumond <julien@huggingface.co>"
+},
+{
+    "repo_url": "github.com/haotian-liu/transformers_llava",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-08-08T14:22:27Z",
+    "message": "New cache fixes: add safeguard before looking in folders (#18522)"
+},
+{
+    "repo_url": "github.com/haotian-liu/transformers_llava",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-08-08T12:48:10Z",
+    "message": "Clean up hub (#18497)\n\n* Clean up utils.hub\n\n* Remove imports\n\n* More fixes\n\n* Last fix"
+},
+{
+    "repo_url": "github.com/haotian-liu/transformers_llava",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-08-06T07:42:55Z",
+    "message": "`transformers-cli login` => `huggingface-cli login` (#18490)\n\n* zero chance anyone's using that constant no?\n\n* `transformers-cli login` => `huggingface-cli login`\n\n* `transformers-cli repo create` => `huggingface-cli repo create`\n\n* `make style`"
+},
+{
+    "repo_url": "github.com/haotian-liu/transformers_llava",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-08-05T17:29:38Z",
+    "message": "Typo reported by Joel Grus on TWTR (#18493)"
+},
+{
+    "repo_url": "github.com/haotian-liu/transformers_llava",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-08-05T17:24:53Z",
+    "message": "Forgot one new_ for cache migration"
+},
+{
+    "repo_url": "github.com/haotian-liu/transformers_llava",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-08-05T17:14:00Z",
+    "message": "Move cache folder to huggingface/hub for consistency with hf_hub (#18492)\n\n* Move cache folder to just huggingface\n\n* Thank you VsCode for this needless import\n\n* Move to hub\n\n* Forgot one"
+},
+{
+    "repo_url": "github.com/haotian-liu/transformers_llava",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-08-05T14:12:40Z",
+    "message": "Use new huggingface_hub tools for download models (#18438)\n\n* Draft new cached_file\n\n* Initial draft for config and model\n\n* Small fixes\n\n* Fix first batch of tests\n\n* Look in cache when internet is down\n\n* Fix last tests\n\n* Bad black, not fixing all quality errors\n\n* Make diff less\n\n* Implement change for TF and Flax models\n\n* Add tokenizer and feature extractor\n\n* For compatibility with main\n\n* Add utils to move the cache and auto-do it at first use.\n\n* Quality\n\n* Deal with empty commit shas\n\n* Deal with empty etag\n\n* Address review comments"
+},
+{
+    "repo_url": "github.com/haotian-liu/transformers_llava",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-08-01T16:07:30Z",
+    "message": "Rewrite push_to_hub to use upload_files (#18366)\n\n* Rewrite push_to_hub to use upload_files\n\n* Adapt the doc a bit\n\n* Address review comments and clean doc"
+},
+{
+    "repo_url": "github.com/haotian-liu/transformers_llava",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-07-19T09:53:53Z",
+    "message": "[From pretrained] Allow download from subfolder inside model repo (#18184)\n\n* add first generation tutorial\n\n* [from_pretrained] Allow loading models from subfolders\n\n* remove gen file\n\n* add doc strings\n\n* allow download from subfolder\n\n* add tests\n\n* Apply suggestions from code review\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\n\n* apply comments\n\n* correct doc string\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>"
+},
+{
+    "repo_url": "github.com/haotian-liu/transformers_llava",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-07-13T16:43:08Z",
+    "message": "Make sharded checkpoints work in offline mode (#18125)\n\n* Make sharded checkpoints work in offline mode\n\n* Add test"
+},
+{
+    "repo_url": "github.com/haotian-liu/transformers_llava",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-07-13T14:53:25Z",
+    "message": "Revert \"Make sharded checkpoints work in offline mode\"\n\nThis reverts commit 3564c6578630a3bef29d2c7c36c7d29b68acd874."
+},
+{
+    "repo_url": "github.com/haotian-liu/transformers_llava",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-07-13T14:51:56Z",
+    "message": "Make sharded checkpoints work in offline mode"
+},
+{
+    "repo_url": "github.com/haotian-liu/transformers_llava",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-07-11T16:45:06Z",
+    "message": "Add filename to info diaplyed when downloading things in from_pretrained (#18099)"
+},
+{
+    "repo_url": "github.com/haotian-liu/transformers_llava",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-06-21T16:01:08Z",
+    "message": "TF Sharded (#17713)\n\n* initial commit\n\n* update modeeling tf utils\n\n* quality\n\n* clean and update args\n\n* update\n\n* remove potential bug\n\n* code quality\n\n* update\n\n* update max shard\n\n* update tests for sharding from pretrained\n\n* fix remaining test\n\n* make style\n\n* h5py if tf available\n\n* update and fix test\n\n* fix test\n\n* style\n\n* modified push to hub to support shard for TF\n\n* quick fix\n\n* update code\n\n* merge branch main and style\n\n* Apply suggestions from code review\n\nCo-authored-by: Joao Gante <joaofranciscocardosogante@gmail.com>\nCo-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>\n\n* update based on reviews\n\n* update doc\n\n* update and style\n\n* Apply suggestions from code review\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\n\n* Update based on reviews\n\n* fix typo\n\n* style\n\nCo-authored-by: Joao Gante <joaofranciscocardosogante@gmail.com>\nCo-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>"
+},
+{
+    "repo_url": "github.com/haotian-liu/transformers_llava",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-06-21T15:51:18Z",
+    "message": "Prepare transformers for v0.8.0 huggingface-hub release (#17716)\n\n* Prepare CI for v0.8.0\n\n* pin hfh (revert before merge)\n\n* Revert \"pin hfh (revert before merge)\"\n\nThis reverts commit a0103140e1c77b810ffcb735192968bc03be3e1f.\n\n* Test rc3\n\n* Test latest rc\n\n* Unpin to the RC\n\nCo-authored-by: Sylvain Gugger <Sylvain.gugger@gmail.com>"
+},
+{
+    "repo_url": "github.com/haotian-liu/transformers_llava",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-06-10T13:41:53Z",
+    "message": "\ud83d\udc1b Properly raise `RepoNotFoundError` when not authenticated (#17651)\n\n* Raise RepoNotFoundError in case of 401\n\n* Include changes from revert-17646-skip_repo_not_found\n\n* Add a comment\n\n* \ud83d\udc84 Code quality\n\n* \ud83d\udc9a Update `get_from_cache` test\n\n* \ud83d\udc9a Code quality & skip failing test"
+},
+{
+    "repo_url": "github.com/haotian-liu/transformers_llava",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-06-07T15:57:52Z",
+    "message": "Add examples telemetry (#17552)\n\n* Add examples telemetry\n\n* Alternative approach\n\n* Add to all other examples\n\n* Add to templates as well\n\n* Put framework separately\n\n* Same for TensorFlow"
+},
+{
+    "repo_url": "github.com/haotian-liu/transformers_llava",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-05-12T20:25:55Z",
+    "message": "Black preview (#17217)\n\n* Black preview\n\n* Fixup too!\n\n* Fix check copies\n\n* Use the same version as the CI\n\n* Bump black"
+},
+{
+    "repo_url": "github.com/haotian-liu/transformers_llava",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-04-29T16:26:45Z",
+    "message": "Revert \"Updating variable names. (#16445)\" (#17011)\n\nThis reverts commit 4f3a14e3c235c8b6b8cd2f5bc448a0cffacddf61."
+},
+{
+    "repo_url": "github.com/haotian-liu/transformers_llava",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-04-25T19:15:00Z",
+    "message": " Fix issue probably-meant-fstring found at https://codereview.doctor (#16913)"
+},
+{
+    "repo_url": "github.com/haotian-liu/transformers_llava",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-03-23T19:56:49Z",
+    "message": "Make Transformers use cache files when hf.co is down (#16362)\n\n* Make Transformers use cache files when hf.co is down\n\n* Fix tests\n\n* Was there a random circleCI failure?\n\n* Isolate patches\n\n* Style\n\n* Comment out the failure since it doesn't fail anymore\n\n* Better comment"
+}
+]

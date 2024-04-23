@@ -1,0 +1,234 @@
+✱ 58 results for "context:global select:file visibility:public count:all lang:Python content:'import nemo' AND from_pretrained\(" in 3.799s
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NVIDIA/NeMo/-/blob/nemo/core/classes/common.py)
+github.com/NVIDIA/NeMo › common.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NVIDIA/NeMo/-/blob/nemo/core/classes/modelPT.py)
+github.com/NVIDIA/NeMo › modelPT.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NVIDIA/NeMo/-/blob/tools/nmt_webapp/nmt_service.py)
+github.com/NVIDIA/NeMo › nmt_service.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NVIDIA/NeMo/-/blob/nemo/collections/tts/models/mixer_tts.py)
+github.com/NVIDIA/NeMo › mixer_tts.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NVIDIA/NeMo/-/blob/nemo/core/config/templates/model_card.py)
+github.com/NVIDIA/NeMo › model_card.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NVIDIA/NeMo/-/blob/nemo/collections/nlp/modules/common/lm_utils.py)
+github.com/NVIDIA/NeMo › lm_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NVIDIA/NeMo/-/blob/nemo/collections/asr/parts/utils/transcribe_utils.py)
+github.com/NVIDIA/NeMo › transcribe_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NVIDIA/NeMo/-/blob/nemo/collections/multimodal/data/neva/neva_dataset.py)
+github.com/NVIDIA/NeMo › neva_dataset.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NVIDIA/NeMo/-/blob/scripts/asr_language_modeling/ngram_lm/ngram_merge.py)
+github.com/NVIDIA/NeMo › ngram_merge.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NVIDIA/NeMo/-/blob/scripts/asr_language_modeling/ngram_lm/kenlm_utils.py)
+github.com/NVIDIA/NeMo › kenlm_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NVIDIA/NeMo/-/blob/tools/ctc_segmentation/scripts/run_ctc_segmentation.py)
+github.com/NVIDIA/NeMo › run_ctc_segmentation.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NVIDIA/NeMo/-/blob/nemo/collections/asr/parts/utils/decoder_timestamps_utils.py)
+github.com/NVIDIA/NeMo › decoder_timestamps_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NVIDIA/NeMo/-/blob/scripts/asr_language_modeling/ngram_lm/eval_beamsearch_ngram_ctc.py)
+github.com/NVIDIA/NeMo › eval_beamsearch_ngram_ctc.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NVIDIA/NeMo/-/blob/examples/nlp/duplex_text_normalization/data/create_tarred_dataset.py)
+github.com/NVIDIA/NeMo › create_tarred_dataset.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NVIDIA/NeMo/-/blob/nemo/collections/nlp/models/duplex_text_normalization/duplex_decoder.py)
+github.com/NVIDIA/NeMo › duplex_decoder.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NVIDIA/NeMo/-/blob/scripts/asr_context_biasing/eval_greedy_decoding_with_context_biasing.py)
+github.com/NVIDIA/NeMo › eval_greedy_decoding_with_context_biasing.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NVIDIA/NeMo/-/blob/scripts/asr_language_modeling/ngram_lm/eval_beamsearch_ngram_transducer.py)
+github.com/NVIDIA/NeMo › eval_beamsearch_ngram_transducer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NVIDIA/NeMo/-/blob/examples/asr/asr_cache_aware_streaming/speech_to_text_cache_aware_streaming_infer.py)
+github.com/NVIDIA/NeMo › speech_to_text_cache_aware_streaming_infer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NVIDIA/NeMo/-/blob/nemo/collections/nlp/models/token_classification/punctuation_capitalization_lexical_audio_model.py)
+github.com/NVIDIA/NeMo › punctuation_capitalization_lexical_audio_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NVIDIA/NeMo/-/blob/tests/core/test_save_restore.py)
+github.com/NVIDIA/NeMo › test_save_restore.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NVIDIA/NeMo/-/blob/tests/manualtest_model_downloads.py)
+github.com/NVIDIA/NeMo › manualtest_model_downloads.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NVIDIA/NeMo/-/blob/tests/collections/nlp/test_pretrained_models_performance.py)
+github.com/NVIDIA/NeMo › test_pretrained_models_performance.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/HumanSignal/label-studio-ml-backend/-/blob/label_studio_ml/examples/nemo/asr.py)
+github.com/HumanSignal/label-studio-ml-backend › asr.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/nvidia-riva/riva-asrlib-decoder/-/blob/src/riva/asrlib/decoder/test_graph_construction.py)
+github.com/nvidia-riva/riva-asrlib-decoder › test_graph_construction.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/dusty-nv/jetson-voice/-/blob/scripts/nemo_export_onnx.py)
+github.com/dusty-nv/jetson-voice › nemo_export_onnx.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/k2-fsa/sherpa-onnx/-/blob/scripts/nemo/speaker-verification/export-onnx.py)
+github.com/k2-fsa/sherpa-onnx › export-onnx.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/wefantasy/label-studio-demo/-/blob/backend/examples/nemo/asr.py)
+github.com/wefantasy/label-studio-demo › asr.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/audio-df-ucb/ClonedVoiceDetection/-/blob/src/packages/ExperimentPipeline.py)
+github.com/audio-df-ucb/ClonedVoiceDetection › ExperimentPipeline.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/dusty-nv/jetson-containers/-/blob/packages/nemo/test_qa.py)
+github.com/dusty-nv/jetson-containers › test_qa.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/jsvir/vad/-/blob/nemo/core/classes/common.py)
+github.com/jsvir/vad › common.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/jsvir/vad/-/blob/nemo/collections/nlp/modules/common/lm_utils.py)
+github.com/jsvir/vad › lm_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/jsvir/vad/-/blob/nemo/collections/asr/parts/utils/decoder_timestamps_utils.py)
+github.com/jsvir/vad › decoder_timestamps_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/jsvir/vad/-/blob/nemo/collections/nlp/models/duplex_text_normalization/duplex_decoder.py)
+github.com/jsvir/vad › duplex_decoder.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/daddydrac/NVIDIA-Rapids-NeMo-PyTorch-Tensorboard/-/blob/examples/nlp/intent_detection_slot_tagging/joint_intent_slot_infer.py)
+github.com/daddydrac/NVIDIA-Rapids-NeMo-PyTorch-Tensorboard › joint_intent_slot_infer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/daddydrac/NVIDIA-Rapids-NeMo-PyTorch-Tensorboard/-/blob/examples/nlp/intent_detection_slot_tagging/joint_intent_slot_infer_b1.py)
+github.com/daddydrac/NVIDIA-Rapids-NeMo-PyTorch-Tensorboard › joint_intent_slot_infer_b1.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/daddydrac/NVIDIA-Rapids-NeMo-PyTorch-Tensorboard/-/blob/examples/nlp/intent_detection_slot_tagging/joint_intent_slot_with_bert.py)
+github.com/daddydrac/NVIDIA-Rapids-NeMo-PyTorch-Tensorboard › joint_intent_slot_with_bert.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/webaverse/tiktalknet/-/blob/core/extract.py)
+github.com/webaverse/tiktalknet › extract.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Eric3911/OpenAGI/-/blob/NeMo-master/nemo/core/classes/common.py)
+github.com/Eric3911/OpenAGI › common.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Eric3911/OpenAGI/-/blob/NeMo-master/nemo/core/classes/modelPT.py)
+github.com/Eric3911/OpenAGI › modelPT.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Eric3911/OpenAGI/-/blob/NeMo-master/tools/asr_webapp/model_api.py)
+github.com/Eric3911/OpenAGI › model_api.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Eric3911/OpenAGI/-/blob/NeMo-master/tools/nmt_webapp/nmt_service.py)
+github.com/Eric3911/OpenAGI › nmt_service.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Eric3911/OpenAGI/-/blob/NeMo-master/nemo/collections/tts/models/mixer_tts.py)
+github.com/Eric3911/OpenAGI › mixer_tts.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Eric3911/OpenAGI/-/blob/NeMo-master/nemo/collections/nlp/modules/common/lm_utils.py)
+github.com/Eric3911/OpenAGI › lm_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Eric3911/OpenAGI/-/blob/NeMo-master/nemo/collections/asr/parts/utils/transcribe_utils.py)
+github.com/Eric3911/OpenAGI › transcribe_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Eric3911/OpenAGI/-/blob/NeMo-master/scripts/asr_language_modeling/ngram_lm/train_kenlm.py)
+github.com/Eric3911/OpenAGI › train_kenlm.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Eric3911/OpenAGI/-/blob/NeMo-master/tools/ctc_segmentation/scripts/run_ctc_segmentation.py)
+github.com/Eric3911/OpenAGI › run_ctc_segmentation.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Eric3911/OpenAGI/-/blob/NeMo-master/nemo/collections/asr/parts/utils/decoder_timestamps_utils.py)
+github.com/Eric3911/OpenAGI › decoder_timestamps_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Eric3911/OpenAGI/-/blob/NeMo-master/scripts/asr_language_modeling/ngram_lm/eval_beamsearch_ngram.py)
+github.com/Eric3911/OpenAGI › eval_beamsearch_ngram.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Eric3911/OpenAGI/-/blob/NeMo-master/examples/nlp/duplex_text_normalization/data/create_tarred_dataset.py)
+github.com/Eric3911/OpenAGI › create_tarred_dataset.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Eric3911/OpenAGI/-/blob/NeMo-master/nemo/collections/nlp/models/duplex_text_normalization/duplex_decoder.py)
+github.com/Eric3911/OpenAGI › duplex_decoder.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Eric3911/OpenAGI/-/blob/NeMo-master/scripts/asr_language_modeling/ngram_lm/eval_beamsearch_ngram_transducer.py)
+github.com/Eric3911/OpenAGI › eval_beamsearch_ngram_transducer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Eric3911/OpenAGI/-/blob/NeMo-master/examples/asr/asr_cache_aware_streaming/speech_to_text_cache_aware_streaming_infer.py)
+github.com/Eric3911/OpenAGI › speech_to_text_cache_aware_streaming_infer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Eric3911/OpenAGI/-/blob/NeMo-master/nemo/collections/nlp/models/token_classification/punctuation_capitalization_lexical_audio_model.py)
+github.com/Eric3911/OpenAGI › punctuation_capitalization_lexical_audio_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Eric3911/OpenAGI/-/blob/NeMo-master/tests/core/test_save_restore.py)
+github.com/Eric3911/OpenAGI › test_save_restore.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Eric3911/OpenAGI/-/blob/NeMo-master/tests/manualtest_model_downloads.py)
+github.com/Eric3911/OpenAGI › manualtest_model_downloads.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Eric3911/OpenAGI/-/blob/NeMo-master/tests/collections/nlp/test_pretrained_models_performance.py)
+github.com/Eric3911/OpenAGI › test_pretrained_models_performance.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/sangwook236/SWDT/-/blob/sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py)
+github.com/sangwook236/SWDT › hugging_face_transformers_test.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/nvidia-riva/nemo2riva/-/blob/tests/test_cli.py)
+github.com/nvidia-riva/nemo2riva › test_cli.py (0 matches)
+--------------------------------------------------------------------------------
+

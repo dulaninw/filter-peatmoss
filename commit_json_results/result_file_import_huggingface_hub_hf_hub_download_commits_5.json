@@ -1,0 +1,446 @@
+{
+    "0": {
+        "repository": "github.com/huggingface/optimum-neuron",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/optimum-neuron",
+                "filepath": "tests/test_cache_utils.py",
+                "commit_date": "2023-11-14T10:40:37Z",
+                "message_summary": "Fix broken tests",
+                "update_details": "Remove support for old neuron compilation cache naming"
+            }
+        ]
+    },
+    "9": {
+        "repository": "github.com/UncleTensor/AudioSubnet",
+        "text": [
+            {
+                "repo_url": "github.com/UncleTensor/AudioSubnet",
+                "filepath": "models/bark_voice_clone.py",
+                "commit_date": "2024-01-16T20:55:35Z",
+                "message_summary": "Implemented Bark/VoiceClone model for voice cloning capabilities",
+                "ptm_addition_details": {
+                    "name": "Bark/VoiceClone",
+                    "version": "not specified",
+                    "problem_addressed": "enhanced voice cloning capabilities"
+                }
+            }
+        ]
+    },
+    "10": {
+        "repository": "github.com/sangwook236/SWDT",
+        "text": [
+            {
+                "repo_url": "github.com/sangwook236/SWDT",
+                "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+                "commit_date": "2024-02-27T11:11:47Z",
+                "message_summary": "Two examples added for Gemma model and Transformer Reinforcement Learning (TRL) library",
+                "ptm_addition_details": {
+                    "name": "Gemma model",
+                    "version": "not specified",
+                    "problem_addressed": "not specified"
+                }
+            }
+        ]
+    },
+    "11": {
+        "repository": "github.com/sangwook236/SWDT",
+        "text": [
+            {
+                "repo_url": "github.com/sangwook236/SWDT",
+                "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+                "commit_date": "2024-02-21T12:45:57Z",
+                "message_summary": "Examples for DINO and DPT models implemented",
+                "ptm_addition_details": {
+                    "name": "DINO",
+                    "version": "not specified",
+                    "problem_addressed": "not specified"
+                }
+            },
+            {
+                "tasks": [
+                    "language_processing"
+                ]
+            }
+        ]
+    },
+    "16": {
+        "repository": "github.com/sangwook236/SWDT",
+        "text": [
+            {
+                "repo_url": "github.com/sangwook236/SWDT",
+                "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+                "commit_date": "2024-01-11T04:04:23Z",
+                "message_summary": "An example for retrieval-augmented generation (RAG) was added in hugging_face_transformers_test.py.",
+                "ptm_addition_details": {
+                    "name": "Retrieval-Augmented Generation (RAG)",
+                    "version": "N/A",
+                    "problem_addressed": "N/A"
+                }
+            },
+            {
+                "repo_url": "github.com/sangwook236/SWDT",
+                "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+                "commit_date": "2024-01-11T04:04:23Z",
+                "message_summary": "Information about TableMASTER-mmocr was removed from mmocr_usage_guide.txt."
+            }
+        ]
+    },
+    "17": {
+        "repository": "github.com/sangwook236/SWDT",
+        "text": [
+            {
+                "repo_url": "github.com/sangwook236/SWDT",
+                "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+                "commit_date": "2023-12-24T02:40:32Z",
+                "message_summary": "A few examples for Mistral-7B and Mixtral-8x7B models were added.",
+                "update_details": "The installation of TensorFlow 2 were updated."
+            }
+        ]
+    },
+    "18": {
+        "repository": "github.com/sangwook236/SWDT",
+        "text": [
+            {
+                "repo_url": "github.com/sangwook236/SWDT",
+                "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+                "commit_date": "2023-12-23T12:07:02Z",
+                "message_summary": "Multiple updates related to various models and information",
+                "ptm_addition_details": {
+                    "name": "ORCA-2",
+                    "version": "unknown",
+                    "problem_addressed": "not specified"
+                },
+                "update_details": "Examples for ViT, ViLT, BEiT, LayoutLM, and Donut models were merged. Information about data preparation, training, evaluation, visualization, and model export were supplemented in paddle_ocr_usage_guide.txt."
+            }
+        ]
+    },
+    "26": {
+        "repository": "github.com/sangwook236/SWDT",
+        "text": [
+            {
+                "repo_url": "github.com/sangwook236/SWDT",
+                "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+                "commit_date": "2023-09-26T10:56:44Z",
+                "message_summary": "A simple example for Code Llama model was initially added.",
+                "update_details": "A few commands were explained to profile Python scripts."
+            }
+        ]
+    },
+    "29": {
+        "repository": "github.com/sangwook236/SWDT",
+        "text": [
+            {
+                "repo_url": "github.com/sangwook236/SWDT",
+                "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+                "commit_date": "2023-09-02T12:30:02Z",
+                "message_summary": "An example for model predictive control (MPC) was initially committed.",
+                "update_details": "A test for CodeParrot model was initially implemented in hugging_face_transformers_test.py."
+            }
+        ]
+    },
+    "32": {
+        "repository": "github.com/sangwook236/SWDT",
+        "text": [
+            {
+                "repo_url": "github.com/sangwook236/SWDT",
+                "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+                "commit_date": "2023-07-25T12:07:07Z",
+                "message_summary": "Updates related to Hugging Face Transformers and Accelerate library",
+                "update_details": "A few examples for Llama 2 model were added. Model parallelism was tested using Hugging Face Accelerate library. Information about Hugging Face Accelerate library was reinforced."
+            }
+        ]
+    },
+    "33": {
+        "repository": "github.com/sangwook236/SWDT",
+        "text": [
+            {
+                "repo_url": "github.com/sangwook236/SWDT",
+                "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+                "commit_date": "2023-07-22T06:48:12Z",
+                "message_summary": "Reinforced cross references about transformer and ViT models.",
+                "update_details": "Reinforced cross references about transformer and ViT models."
+            }
+        ]
+    },
+    "35": {
+        "repository": "github.com/sangwook236/SWDT",
+        "text": [
+            {
+                "repo_url": "github.com/sangwook236/SWDT",
+                "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+                "commit_date": "2023-07-12T07:54:25Z",
+                "message_summary": "Multiple updates to Pre-Trained Models implementations.",
+                "ptm_addition_details": {
+                    "name": "NVIDIA Megatron-LM, ASR, TTS models"
+                },
+                "update_details": "Examples for Decision Transformer, NVIDIA Megatron-LM, ASR, TTS models, and SegFormer were added."
+            }
+        ]
+    },
+    "44": {
+        "repository": "github.com/sangwook236/SWDT",
+        "text": [
+            {
+                "repo_url": "github.com/sangwook236/SWDT",
+                "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+                "commit_date": "2023-04-04T11:52:41Z",
+                "message_summary": "Several examples for CodeT5, CodeGen, GIT, BLIP, and TaPEx models were implemented for various tasks.",
+                "update_details": "Several examples for CodeT5 and CodeGen models were implemented to generate code. Several examples for GIT and BLIP models for vision-and-language modeling models were implemented. A few examples for TaPEx model were implemented to understand tables."
+            }
+        ]
+    },
+    "45": {
+        "repository": "github.com/sangwook236/SWDT",
+        "text": [
+            {
+                "repo_url": "github.com/sangwook236/SWDT",
+                "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+                "commit_date": "2023-04-01T14:10:48Z",
+                "message_summary": "A couple of examples for GPT4All models were added, but they were not correctly working.",
+                "ptm_addition_details": {
+                    "name": "GPT4All"
+                }
+            }
+        ]
+    },
+    "46": {
+        "repository": "github.com/sangwook236/SWDT",
+        "text": [
+            {
+                "repo_url": "github.com/sangwook236/SWDT",
+                "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+                "commit_date": "2023-04-01T06:26:08Z",
+                "message_summary": "Two simple examples for PaLM and PaLM+RLHF models were implemented",
+                "ptm_addition_details": {
+                    "name": "PaLM",
+                    "version": "Not specified",
+                    "problem_addressed": "Not specified"
+                }
+            }
+        ]
+    },
+    "47": {
+        "repository": "github.com/sangwook236/SWDT",
+        "text": [
+            {
+                "repo_url": "github.com/sangwook236/SWDT",
+                "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+                "commit_date": "2023-03-30T08:06:47Z",
+                "message_summary": "Several examples for Table Transformer (TATR), TrOCR, and SpeechT5 were added.",
+                "ptm_addition_details": [
+                    {
+                        "name": "Table Transformer (TATR)"
+                    },
+                    {
+                        "name": "TrOCR"
+                    },
+                    {
+                        "name": "SpeechT5"
+                    }
+                ]
+            }
+        ]
+    },
+    "49": {
+        "repository": "github.com/sangwook236/SWDT",
+        "text": [
+            {
+                "repo_url": "github.com/sangwook236/SWDT",
+                "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+                "commit_date": "2023-03-26T07:02:13Z",
+                "message_summary": "New examples for ALIGN model and updated examples for CLIP model in hugging_face_transformers_test.py",
+                "ptm_addition_details": {
+                    "name": "ALIGN",
+                    "problem_addressed": "N/A"
+                }
+            },
+            {
+                "update_details": "Useful information about Transformer architectures was described."
+            }
+        ]
+    },
+    "51": {
+        "repository": "github.com/sangwook236/SWDT",
+        "text": [
+            {
+                "repo_url": "github.com/sangwook236/SWDT",
+                "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+                "commit_date": "2023-03-22T14:48:31Z",
+                "message_summary": "A couple of examples of seq-to-seq models for LoRA & Prefix Tuning, CLIP model, and Whisper model were implemented.",
+                "ptm_addition_details": {
+                    "name": "Hugging Face library",
+                    "version": "latest",
+                    "problem_addressed": "N/A"
+                }
+            }
+        ]
+    },
+    "56": {
+        "repository": "github.com/sangwook236/SWDT",
+        "text": [
+            {
+                "repo_url": "github.com/sangwook236/SWDT",
+                "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+                "commit_date": "2023-03-15T12:08:24Z",
+                "message_summary": "An example for question answering using GPT-neo was added.",
+                "ptm_addition_details": {
+                    "name": "GPT-neo"
+                }
+            }
+        ]
+    },
+    "59": {
+        "repository": "github.com/sangwook236/SWDT",
+        "text": [
+            {
+                "repo_url": "github.com/sangwook236/SWDT",
+                "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+                "commit_date": "2023-03-09T01:49:32Z",
+                "message_summary": "A few examples for T5 model were added",
+                "ptm_addition_details": {
+                    "name": "T5"
+                }
+            }
+        ]
+    },
+    "66": {
+        "repository": "github.com/kssteven418/SqueezeLLM-gradients",
+        "text": [
+            {
+                "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+                "filepath": "src/transformers/utils/hub.py",
+                "commit_date": "2023-11-21T17:36:26Z",
+                "message_summary": "Harmonize HF environment variables + other cleaning",
+                "update_details": "Switch from HUGGINGFACE_HUB_CACHE to HF_HUB_CACHE"
+            }
+        ]
+    },
+    "78": {
+        "repository": "github.com/kssteven418/SqueezeLLM-gradients",
+        "text": [
+            {
+                "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+                "filepath": "src/transformers/utils/hub.py",
+                "commit_date": "2023-06-07T13:07:33Z",
+                "message_summary": "Add `safe_serialization` in push_to_hub",
+                "ptm_addition_details": {
+                    "name": "Hub",
+                    "version": "not specified",
+                    "problem_addressed": "safe_serialization"
+                }
+            }
+        ]
+    },
+    "79": {
+        "repository": "github.com/kssteven418/SqueezeLLM-gradients",
+        "text": [
+            {
+                "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+                "filepath": "src/transformers/utils/hub.py",
+                "commit_date": "2023-05-31T19:31:28Z",
+                "message_summary": "Make it possible to upload folders",
+                "ptm_addition_details": {
+                    "name": "SqueezeLLM",
+                    "version": "first draft"
+                }
+            }
+        ]
+    },
+    "80": {
+        "repository": "github.com/kssteven418/SqueezeLLM-gradients",
+        "text": [
+            {
+                "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+                "filepath": "src/transformers/utils/hub.py",
+                "commit_date": "2023-05-16T10:10:54Z",
+                "message_summary": "Use `mkstemp` to replace deprecated `mktemp`",
+                "update_details": "Use `mkstemp` to replace deprecated `mktemp`. The `tempfile.mktemp` function is deprecated due to security issues."
+            }
+        ]
+    },
+    "81": {
+        "repository": "github.com/kssteven418/SqueezeLLM-gradients",
+        "text": [
+            {
+                "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+                "filepath": "src/transformers/utils/hub.py",
+                "commit_date": "2023-05-10T00:37:57Z",
+                "message_summary": "Change summarization model",
+                "ptm_addition_details": {
+                    "name": "summarization model",
+                    "version": "unknown",
+                    "problem_addressed": "not specified"
+                }
+            }
+        ]
+    },
+    "85": {
+        "repository": "github.com/kssteven418/SqueezeLLM-gradients",
+        "text": [
+            {
+                "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+                "filepath": "src/transformers/utils/hub.py",
+                "commit_date": "2023-02-06T23:10:56Z",
+                "message_summary": "Update quality tooling for formatting",
+                "update_details": "Quality tooling for formatting was updated, including black version, Python target version, flake8 to ruff switch, isort configuration, and black adaptation in check copies."
+            }
+        ]
+    },
+    "92": {
+        "repository": "github.com/kssteven418/SqueezeLLM-gradients",
+        "text": [
+            {
+                "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+                "filepath": "src/transformers/utils/hub.py",
+                "commit_date": "2022-09-29T12:58:39Z",
+                "message_summary": "Update to huggingface_hub 0.10.0",
+                "update_details": "Updated huggingface_hub to version 0.10.0"
+            }
+        ]
+    },
+    "104": {
+        "repository": "github.com/kssteven418/SqueezeLLM-gradients",
+        "text": [
+            {
+                "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+                "filepath": "src/transformers/utils/hub.py",
+                "commit_date": "2022-08-06T07:42:55Z",
+                "message_summary": "Update CLI commands",
+                "update_details": "CLI commands `transformers-cli login` and `transformers-cli repo create` were updated to `huggingface-cli login` and `huggingface-cli repo create` respectively."
+            }
+        ]
+    },
+    "116": {
+        "repository": "github.com/kssteven418/SqueezeLLM-gradients",
+        "text": [
+            {
+                "repo_url": "github.com/kssteven418/SqueezeLLM-gradients",
+                "filepath": "src/transformers/utils/hub.py",
+                "commit_date": "2022-06-21T15:51:18Z",
+                "message_summary": "Prepare transformers for v0.8.0 huggingface-hub release",
+                "ptm_addition_details": {
+                    "version": "v0.8.0",
+                    "name": "transformers",
+                    "problem_addressed": "Preparing for huggingface-hub release"
+                }
+            }
+        ]
+    },
+    "129": {
+        "repository": "github.com/toshiaki1729/stable-diffusion-webui-dataset-tag-editor",
+        "text": [
+            {
+                "repo_url": "github.com/toshiaki1729/stable-diffusion-webui-dataset-tag-editor",
+                "filepath": "scripts/dataset_tag_editor/interrogators/waifu_diffusion_tagger.py",
+                "commit_date": "2023-02-26T03:24:27Z",
+                "message_summary": "Enable wd-v14-tagger for AMD GPU users",
+                "ptm_addition_details": {
+                    "name": "wd-v14-tagger",
+                    "version": "14",
+                    "problem_addressed": "Support for AMD GPU users"
+                }
+            }
+        ]
+    }
+}

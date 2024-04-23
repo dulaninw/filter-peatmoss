@@ -1,0 +1,878 @@
+[
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2024-02-28T19:41:36Z",
+        "message": "Spelling corrections (#1801)"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2024-02-26T07:16:48Z",
+        "message": "Fix #1688 (#1762)"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2024-02-14T09:31:53Z",
+        "message": "Remove spurious warning about missing embedding model. (#1774)"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2024-02-14T09:16:41Z",
+        "message": "Fix #1797 and #1798 (#1804)"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2024-02-08T14:25:19Z",
+        "message": "remove RuntimeWarning from logger.warning() (#1740)"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2024-01-20T10:35:46Z",
+        "message": "Add optional datamapplot visualization (#1750)"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2024-01-03T10:00:35Z",
+        "message": "Many docstring fixes (#1719)"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2024-01-03T08:41:25Z",
+        "message": "Remove unused `cluster_df` variable (#1701)"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2023-11-27T07:38:09Z",
+        "message": "v0.16 (#1572)\n\n* Zeroshot Topic Modeling\n* Seed (domain-specific) words\n* More LLM documentation, including Zephyr example\n* Add support for Cohere's Embed v3\n* Added llama.cpp\n* Added HUGE changelog and up version for upcoming release"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2023-11-20T07:12:33Z",
+        "message": "Correct TopicMapper doc example (#1637)"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2023-11-01T07:26:25Z",
+        "message": "Fix several typos (#1590)"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2023-09-21T12:47:03Z",
+        "message": "Add `.merge_models` to merge pre-trained BERTopic models (#1516)"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2023-09-05T07:26:41Z",
+        "message": "Fix TypeError on reduce_outliers \"probabilities\" (#1501)"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2023-08-30T09:16:41Z",
+        "message": "Fix IndexError when all outliers are removed by reduce_outliers() (#1466)"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2023-08-30T08:18:45Z",
+        "message": "Fix #1487"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2023-08-07T12:20:35Z",
+        "message": "Fixed typing issue with treshold parameter in reduce_outliers. (#1380)"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2023-07-11T08:01:44Z",
+        "message": "Fix guided topic modeling in cuML's UMAP (#1326)"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2023-06-27T06:41:24Z",
+        "message": "Fixed typing in hierarchical_topics (#1364)"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2023-06-01T09:28:56Z",
+        "message": "Fix several typos (#1307)"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2023-05-30T16:39:22Z",
+        "message": "v0.15 (#1291)\n\nPrepare for v0.15 release by including changelog and many documentation updates."
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2023-05-23T15:42:31Z",
+        "message": "Default saving embedding model to True"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2023-05-23T15:24:57Z",
+        "message": "Fix not saving embedding model using .push_to_hf_hub"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2023-05-20T07:17:29Z",
+        "message": "Multimodal and Multi-Aspect Topic Modeling (#1232)"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2023-05-04T07:15:12Z",
+        "message": "Efficient, faster, and safer serialization with HuggingFace (#1205)"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2023-04-17T18:26:52Z",
+        "message": "Add cuML support for approximate_predict"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2023-04-15T11:10:59Z",
+        "message": "Fix hierarchy visualization and handle any form of distance matrix (#1173)"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2023-03-28T13:25:42Z",
+        "message": "Added 'nr_docs' and 'diversity' params to openai, cohere, and textgeneration models"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2023-03-24T09:54:45Z",
+        "message": "Added options for level scaling when visualizing hierarchical documents (#1106)\n\nCo-authored-by: Tadro Abbott <zilch42@hotmail.com>"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2023-03-07T07:13:46Z",
+        "message": "Fix inconsistent naming - get_topic_labels to generate_topic_labels (#1073)"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2023-03-02T13:15:14Z",
+        "message": "v0.14.1 - ChatGPT support and improved Prompting (#1057)"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2023-02-14T13:23:20Z",
+        "message": "v0.14 (#977)\n\n* Add representation models\n  * bertopic.representation.KeyBERTInspired\n  * bertopic.representation.PartOfSpeech\n  * bertopic.representation.MaximalMarginalRelevance\n  * bertopic.representation.Cohere\n  * bertopic.representation.OpenAI\n  * bertopic.representation.TextGeneration\n  * bertopic.representation.LangChain\n  * bertopic.representation.ZeroShotClassification\n* Fix topic selection when extracting repr docs\n* Improve documentation, #769, #954, #912\n* Add wordcloud example to documentation\n* Add title param for each graph, #800\n* Improved nr_topics procedure\n* Fix #952, #903, #911, #965. Add #976"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2023-01-04T10:55:25Z",
+        "message": "v0.13 (#840)\n\n* Calculate topic distributions with .approximate_distribution regardless of the cluster model used\n* Fully supervised topic modeling with BERTopic\n* Manual topic modeling with BERTopic\n* Reduce outliers with 4 different strategies using .reduce_outliers\n* Install BERTopic without SentenceTransformers for a lightweight package\n* Get metadata of trained documents such as topics and probabilities using .get_document_info(docs)\n* Added more support for cuML's HDBSCAN\n* More images to the documentation and a lot of changes/updates/clarifications\n* Get representative documents for non-HDBSCAN models by comparing document and topic c-TF-IDF representations\n* Sklearn Pipeline Embedder"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2022-12-20T13:00:57Z",
+        "message": "Added top_n_words parameter to update_topics() function (#888)"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2022-12-19T07:05:34Z",
+        "message": "Added diversity parameter to update_topics() function (#887)"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2022-11-01T12:36:41Z",
+        "message": "Correcting iframe urls API documentation(#798)"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2022-09-11T10:22:15Z",
+        "message": "v0.12 (#668)\n\n* Online/incremental topic modeling with .partial_fit\n* Expose c-TF-IDF model for customization with bertopic.vectorizers.ClassTfidfTransformer\n* Expose attributes for easier access to internal data\n* Major changes to the Algorithm page of the documentation, which now contains three overviews of the algorithm\n* Added an example of combining BERTopic with KeyBERT\n* Added many tests with the intention of making development a bit more stable\n* Fix #632, #648, #673, #682, #667, #664"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2022-08-31T08:45:31Z",
+        "message": "Add custom labels & title options to barchart (#694)"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2022-08-05T06:16:38Z",
+        "message": "Fix #660"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2022-07-11T09:16:48Z",
+        "message": "v0.11.0 (#578)\n\n* Perform hierarchical topic modeling with `.hierarchical_topics`\n* Visualize hierarchical topic representations with `.visualize_hierarchy`\n* Extract a text-based hierarchical topic representation with `.get_topic_tree`\n* Visualize 2D documents with `.visualize_documents()`\n* Visualize 2D hierarchical documents with `.visualize_hierarchical_documents()`\n* Create custom labels to the topics throughout most visualizations with `.generate_topic_labels` and `.set_topic_labels`\n* Manually merge topics with `.merge_topics()`\n* Added example for finding similar topics between two models in the tips & tricks page\n* Add multi-modal example in the tips & tricks page\n* Added native Hugging Face transformers support"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2022-06-16T05:48:04Z",
+        "message": "fix typo (#549)\n\n`bertopic.backends.languages` -> `bertopic.backend.languages`"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2022-06-16T05:24:29Z",
+        "message": "Add optimal_ordering parameter to .visualize_hierarchy (#390)"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2022-04-30T06:48:41Z",
+        "message": "v0.10.0 (#492)\n\n* Use any dimensionality reduction technique instead of UMAP\n* Use any clustering technique instead of HDBSCAN\n* Add a CountVectorizer page with tips and tricks on how to create topic representations that fit your use case\n* Added pages on how to use other dimensionality reduction and clustering algorithms\n* Additional instructions on how to reduce outliers in the FAQ\n* Fixed `None` being returned for probabilities when transforming unseen documents\n* Replaced all instances of `arg:` with `Arguments:` for consistency\n* Before saving a fitted BERTopic instance, we remove the stopwords in the fitted CountVectorizer model as it can get quite large due to the number of words that end in stopwords if `min_df` is set to a value larger than 1\n* Set `\"hdbscan>=0.8.28\"` to prevent numpy issues\n* Update gensim dependency to `>=4.0.0` (#371)\n* Fix topic 0 not appearing in visualizations (#472)\n* Fix #506\n* Fix #429"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2021-12-14T10:53:30Z",
+        "message": "v0.9.4 (#335)\n\n* Expose diversity parameter\n* Improve stability of topic reduction \n* Added property to c-TF-IDF that all IDF values are positive (#351)\n* Improve stability of `.visualize_barchart()` and `.visualize_hierarchy()`\n* Major documentation overhaul (including #330)\n* Drop python 3.6 (#333)\n* Relax plotly dependency (#88)\n* Additional logging for `.transform` (#356)"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2021-10-17T06:26:59Z",
+        "message": "v0.9.3 - Quickfix (#284)\n\n* Fix #282, #285, #288"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2021-10-12T08:20:51Z",
+        "message": "v0.9.2 (#239)\n\n* Update default embedding model from 'paraphrase' to 'all'\n* Fix probability mapping\n* Optimize cTFIDF topic extraction\n* Fix algorithm image, update documentation, fix spelling, etc.\n* Fix #258\n* Update README with visualization example"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2021-09-01T06:01:04Z",
+        "message": "v0.9.1 (#211)\n\nFix #210, #208, #205, and #213"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2021-08-07T12:50:36Z",
+        "message": "v0.9 (#176)\n\n* Get most representative documents per topic: `topic_model.get_representative_docs(topic=1)`\n* Added `normalize_frequency` parameter to `visualize_topics_per_class` and `visualize_topics_over_time` \n* Return flat probabilities as default, only calculate the probabilities of all topics per document if `calculate_probabilities` is True\n* Implemented a guided BERTopic by defining seed topics: `BERTopic(seed_topic_list=seed_topic_list)`\n* Fix loading embedding model\n* Fix probability mapping\n* Improve accuracy of probabilities\n* Additional FAQs"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2021-06-08T07:29:13Z",
+        "message": "v0.8.1 (#138)\n\n* Fix tests\n* Add Kaggle example\n* Add interactive visualizations to API documentation\n* Set transformers in Flair"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2021-06-07T05:40:45Z",
+        "message": "Update SentenceTransformers model (#136)\n\nUpdate default sentence-transformers model to the MiniLM models which have shown greater general performance"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2021-05-31T08:35:12Z",
+        "message": "v0.8 (#120)\n\nVisualization Update:\n* Topic Hierarchy: topic_model.visualize_hierarchy()\n* Topic Similarity Heatmap: topic_model.visualize_heatmap()\n* Topic Representation Barchart: topic_model.visualize_barchart()\n* Term Score Decline: topic_model.visualize_term_rank()\n\nImprovements:  \n* Created bertopic.plotting library to easily extend visualizations\n* Improved automatic topic reduction by using HDBSCAN to detect similar topics\n* Sort topic ids by their frequency. -1 is the outlier class and contains typically the most documents. After that 0 is the largest topic, 1 the second largest, etc.\n* Update MKDOCS with new visualizations\n\nFixes:\n* Fix typo #113, #117\n* Fix #121 \n* Fix mapping of topics after reduction (it now excludes 0) (#103)"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2021-04-26T07:53:29Z",
+        "message": "v0.7 (#87)\n\nHighlights:  \n\n* (semi-)supervised topic modeling\n* Added Spacy, Gensim, USE (TFHub)\n* Use a different backend for document embeddings and word embeddings\n* Create your own backends with `bertopic.backend.BaseEmbedder`\n* Calculate and visualize topics per class\n\nFixes:\n\n* Fixed issues with Torch req\n* Prevent saving term frequency matrix in CTFIDF class\n* Fixed DTM not working when reducing topics (#96)\n* Moved visualization dependencies to base BERTopic\n* `pip install bertopic[visualization]` becomes `pip install bertopic`\n* Allow precomputed embeddings in bertopic.find_topics() (#79)"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2021-03-01T14:15:03Z",
+        "message": "v0.6 (#60)\n\n* Add dynamic topic modeling\n* Add evolutionary topic modeling\n* Add self.topic_names and get_topic_info()\n* Add visualize_topics_over_time()\n* Improve cTFIDF stability + performance\n* Add binning to topics_over_time\n* Fix mapping of probs (#63, #64)"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2021-02-08T13:20:50Z",
+        "message": "v0.5 (#46)\n\n* Add Flair to allow for more (custom) token/document embeddings\n* Option to use custom UMAP, HDBSCAN, and CountVectorizer\n* Added low_memory parameter to reduce memory during computation\n* Improved verbosity (shows progress bar)\n* Improved testing\n* Use the newest version of sentence-transformers as it speeds ups encoding significantly\n* Return the figure of visualize_topics()\n* Expose all parameters with a single function: get_params()\n* Option to disable the saving of embedding_model, should reduce BERTopic size significantly\n* Add FAQ page"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2021-01-10T07:52:41Z",
+        "message": "Fixed embedding parameter not working (#36)"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_bertopic.py",
+        "commit_date": "2020-12-21T09:13:28Z",
+        "message": "v0.4.0 (#22)\n\nHighlights:\n\n* Visualize Topics similar to LDAvis\n* Added option to reduce topics after training\n* Added option to update topic representation after training\n* Added option to search topics using a search term\n* Significantly improved the stability of generating clusters\n* Finetune the topic words by selecting the most coherent words with the highest c-TF-IDF values\n* More extensive tutorials in the documentation"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_save_utils.py",
+        "commit_date": "2023-05-30T16:39:22Z",
+        "message": "v0.15 (#1291)\n\nPrepare for v0.15 release by including changelog and many documentation updates."
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_save_utils.py",
+        "commit_date": "2023-05-23T16:02:25Z",
+        "message": "Add pipeline_tag to model card  (#1287)"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_save_utils.py",
+        "commit_date": "2023-05-23T15:24:57Z",
+        "message": "Fix not saving embedding model using .push_to_hf_hub"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_save_utils.py",
+        "commit_date": "2023-05-20T07:17:29Z",
+        "message": "Multimodal and Multi-Aspect Topic Modeling (#1232)"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/_save_utils.py",
+        "commit_date": "2023-05-04T07:15:12Z",
+        "message": "Efficient, faster, and safer serialization with HuggingFace (#1205)"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/representation/_pos.py",
+        "commit_date": "2023-03-31T14:22:24Z",
+        "message": "Fix #1142"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "bertopic/representation/_pos.py",
+        "commit_date": "2023-02-14T13:23:20Z",
+        "message": "v0.14 (#977)\n\n* Add representation models\n  * bertopic.representation.KeyBERTInspired\n  * bertopic.representation.PartOfSpeech\n  * bertopic.representation.MaximalMarginalRelevance\n  * bertopic.representation.Cohere\n  * bertopic.representation.OpenAI\n  * bertopic.representation.TextGeneration\n  * bertopic.representation.LangChain\n  * bertopic.representation.ZeroShotClassification\n* Fix topic selection when extracting repr docs\n* Improve documentation, #769, #954, #912\n* Add wordcloud example to documentation\n* Add title param for each graph, #800\n* Improved nr_topics procedure\n* Fix #952, #903, #911, #965. Add #976"
+    },
+    {
+        "repo_url": "github.com/aws/amazon-sagemaker-examples",
+        "filepath": "advanced_functionality/pytorch_extend_container_train_deploy_bertopic/container/bert-topic/bert-topic-inference.py",
+        "commit_date": "2023-03-27T18:15:47Z",
+        "message": "Train and deploy BERTopic by extending pytorch containers or adding requirements.txt (#3819)\n\n* add notebook and apply comments\n\n* use AWS source for data"
+    },
+    {
+        "repo_url": "github.com/aws/amazon-sagemaker-examples",
+        "filepath": "advanced_functionality/pytorch_extend_container_train_deploy_bertopic/container/bert-topic-byoreq/bert-topic-inference.py",
+        "commit_date": "2023-03-27T18:15:47Z",
+        "message": "Train and deploy BERTopic by extending pytorch containers or adding requirements.txt (#3819)\n\n* add notebook and apply comments\n\n* use AWS source for data"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "tests/test_other.py",
+        "commit_date": "2023-05-04T07:15:12Z",
+        "message": "Efficient, faster, and safer serialization with HuggingFace (#1205)"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "tests/test_other.py",
+        "commit_date": "2022-09-11T10:22:15Z",
+        "message": "v0.12 (#668)\n\n* Online/incremental topic modeling with .partial_fit\n* Expose c-TF-IDF model for customization with bertopic.vectorizers.ClassTfidfTransformer\n* Expose attributes for easier access to internal data\n* Major changes to the Algorithm page of the documentation, which now contains three overviews of the algorithm\n* Added an example of combining BERTopic with KeyBERT\n* Added many tests with the intention of making development a bit more stable\n* Fix #632, #648, #673, #682, #667, #664"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "tests/test_other.py",
+        "commit_date": "2021-02-08T13:20:50Z",
+        "message": "v0.5 (#46)\n\n* Add Flair to allow for more (custom) token/document embeddings\n* Option to use custom UMAP, HDBSCAN, and CountVectorizer\n* Added low_memory parameter to reduce memory during computation\n* Improved verbosity (shows progress bar)\n* Improved testing\n* Use the newest version of sentence-transformers as it speeds ups encoding significantly\n* Return the figure of visualize_topics()\n* Expose all parameters with a single function: get_params()\n* Option to disable the saving of embedding_model, should reduce BERTopic size significantly\n* Add FAQ page"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "tests/test_bertopic.py",
+        "commit_date": "2023-11-27T07:38:09Z",
+        "message": "v0.16 (#1572)\n\n* Zeroshot Topic Modeling\n* Seed (domain-specific) words\n* More LLM documentation, including Zephyr example\n* Add support for Cohere's Embed v3\n* Added llama.cpp\n* Added HUGE changelog and up version for upcoming release"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "tests/test_bertopic.py",
+        "commit_date": "2023-09-21T12:47:03Z",
+        "message": "Add `.merge_models` to merge pre-trained BERTopic models (#1516)"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "tests/test_bertopic.py",
+        "commit_date": "2023-05-04T07:15:12Z",
+        "message": "Efficient, faster, and safer serialization with HuggingFace (#1205)"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "tests/test_bertopic.py",
+        "commit_date": "2023-02-14T13:23:20Z",
+        "message": "v0.14 (#977)\n\n* Add representation models\n  * bertopic.representation.KeyBERTInspired\n  * bertopic.representation.PartOfSpeech\n  * bertopic.representation.MaximalMarginalRelevance\n  * bertopic.representation.Cohere\n  * bertopic.representation.OpenAI\n  * bertopic.representation.TextGeneration\n  * bertopic.representation.LangChain\n  * bertopic.representation.ZeroShotClassification\n* Fix topic selection when extracting repr docs\n* Improve documentation, #769, #954, #912\n* Add wordcloud example to documentation\n* Add title param for each graph, #800\n* Improved nr_topics procedure\n* Fix #952, #903, #911, #965. Add #976"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "tests/test_bertopic.py",
+        "commit_date": "2023-01-04T10:55:25Z",
+        "message": "v0.13 (#840)\n\n* Calculate topic distributions with .approximate_distribution regardless of the cluster model used\n* Fully supervised topic modeling with BERTopic\n* Manual topic modeling with BERTopic\n* Reduce outliers with 4 different strategies using .reduce_outliers\n* Install BERTopic without SentenceTransformers for a lightweight package\n* Get metadata of trained documents such as topics and probabilities using .get_document_info(docs)\n* Added more support for cuML's HDBSCAN\n* More images to the documentation and a lot of changes/updates/clarifications\n* Get representative documents for non-HDBSCAN models by comparing document and topic c-TF-IDF representations\n* Sklearn Pipeline Embedder"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "tests/test_bertopic.py",
+        "commit_date": "2022-09-11T10:22:15Z",
+        "message": "v0.12 (#668)\n\n* Online/incremental topic modeling with .partial_fit\n* Expose c-TF-IDF model for customization with bertopic.vectorizers.ClassTfidfTransformer\n* Expose attributes for easier access to internal data\n* Major changes to the Algorithm page of the documentation, which now contains three overviews of the algorithm\n* Added an example of combining BERTopic with KeyBERT\n* Added many tests with the intention of making development a bit more stable\n* Fix #632, #648, #673, #682, #667, #664"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "tests/test_bertopic.py",
+        "commit_date": "2022-07-11T09:16:48Z",
+        "message": "v0.11.0 (#578)\n\n* Perform hierarchical topic modeling with `.hierarchical_topics`\n* Visualize hierarchical topic representations with `.visualize_hierarchy`\n* Extract a text-based hierarchical topic representation with `.get_topic_tree`\n* Visualize 2D documents with `.visualize_documents()`\n* Visualize 2D hierarchical documents with `.visualize_hierarchical_documents()`\n* Create custom labels to the topics throughout most visualizations with `.generate_topic_labels` and `.set_topic_labels`\n* Manually merge topics with `.merge_topics()`\n* Added example for finding similar topics between two models in the tips & tricks page\n* Add multi-modal example in the tips & tricks page\n* Added native Hugging Face transformers support"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "tests/test_bertopic.py",
+        "commit_date": "2022-04-30T06:48:41Z",
+        "message": "v0.10.0 (#492)\n\n* Use any dimensionality reduction technique instead of UMAP\n* Use any clustering technique instead of HDBSCAN\n* Add a CountVectorizer page with tips and tricks on how to create topic representations that fit your use case\n* Added pages on how to use other dimensionality reduction and clustering algorithms\n* Additional instructions on how to reduce outliers in the FAQ\n* Fixed `None` being returned for probabilities when transforming unseen documents\n* Replaced all instances of `arg:` with `Arguments:` for consistency\n* Before saving a fitted BERTopic instance, we remove the stopwords in the fitted CountVectorizer model as it can get quite large due to the number of words that end in stopwords if `min_df` is set to a value larger than 1\n* Set `\"hdbscan>=0.8.28\"` to prevent numpy issues\n* Update gensim dependency to `>=4.0.0` (#371)\n* Fix topic 0 not appearing in visualizations (#472)\n* Fix #506\n* Fix #429"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "tests/test_bertopic.py",
+        "commit_date": "2021-04-26T07:53:29Z",
+        "message": "v0.7 (#87)\n\nHighlights:  \n\n* (semi-)supervised topic modeling\n* Added Spacy, Gensim, USE (TFHub)\n* Use a different backend for document embeddings and word embeddings\n* Create your own backends with `bertopic.backend.BaseEmbedder`\n* Calculate and visualize topics per class\n\nFixes:\n\n* Fixed issues with Torch req\n* Prevent saving term frequency matrix in CTFIDF class\n* Fixed DTM not working when reducing topics (#96)\n* Moved visualization dependencies to base BERTopic\n* `pip install bertopic[visualization]` becomes `pip install bertopic`\n* Allow precomputed embeddings in bertopic.find_topics() (#79)"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "tests/test_bertopic.py",
+        "commit_date": "2021-03-01T14:15:03Z",
+        "message": "v0.6 (#60)\n\n* Add dynamic topic modeling\n* Add evolutionary topic modeling\n* Add self.topic_names and get_topic_info()\n* Add visualize_topics_over_time()\n* Improve cTFIDF stability + performance\n* Add binning to topics_over_time\n* Fix mapping of probs (#63, #64)"
+    },
+    {
+        "repo_url": "github.com/MaartenGr/BERTopic",
+        "filepath": "tests/test_bertopic.py",
+        "commit_date": "2021-02-08T13:20:50Z",
+        "message": "v0.5 (#46)\n\n* Add Flair to allow for more (custom) token/document embeddings\n* Option to use custom UMAP, HDBSCAN, and CountVectorizer\n* Added low_memory parameter to reduce memory during computation\n* Improved verbosity (shows progress bar)\n* Improved testing\n* Use the newest version of sentence-transformers as it speeds ups encoding significantly\n* Return the figure of visualize_topics()\n* Expose all parameters with a single function: get_params()\n* Option to disable the saving of embedding_model, should reduce BERTopic size significantly\n* Add FAQ page"
+    },
+    {
+        "repo_url": "github.com/saeeddhqan/Maryam",
+        "filepath": "maryam/core/util/iris/topic.py",
+        "commit_date": "2023-06-22T09:48:38Z",
+        "message": "Version 2.5.2 release"
+    },
+    {
+        "repo_url": "github.com/saeeddhqan/Maryam",
+        "filepath": "maryam/core/util/iris/topic.py",
+        "commit_date": "2022-11-26T19:47:32Z",
+        "message": "Add license header to topic"
+    },
+    {
+        "repo_url": "github.com/saeeddhqan/Maryam",
+        "filepath": "maryam/core/util/iris/topic.py",
+        "commit_date": "2022-09-07T07:08:58Z",
+        "message": "To answer Mr. Saeed's comments =\n- imports are heavy and decrease the speed of the framework. So, try to import them in the class.\n- also, add them all to the requirements file."
+    },
+    {
+        "repo_url": "github.com/saeeddhqan/Maryam",
+        "filepath": "maryam/core/util/iris/topic.py",
+        "commit_date": "2022-08-21T07:40:16Z",
+        "message": "Adding Function: Search Topics Using a Keyword (Top2Vec)"
+    },
+    {
+        "repo_url": "github.com/saeeddhqan/Maryam",
+        "filepath": "maryam/core/util/iris/topic.py",
+        "commit_date": "2022-07-25T06:53:18Z",
+        "message": "Adding the --output and --api functionality. Tested by using =\ntopicmodeling -i mixed.json -t json -m all-distilroberta-v1  --output\nreport json testreport iris/topicmodeling\ntopicmodeling -i mixed.json -t json -m all-distilroberta-v1  --api"
+    },
+    {
+        "repo_url": "github.com/saeeddhqan/Maryam",
+        "filepath": "maryam/core/util/iris/topic.py",
+        "commit_date": "2022-07-08T13:06:44Z",
+        "message": "The initial version of the Topic Modeling modules (v0.1.0), contributed by Hatma Suryotrisongko, consists of:\n- maryam/core/util/iris/topic.py\n- maryam/modules/iris/topicmodeling.py"
+    },
+    {
+        "repo_url": "github.com/hyintell/topicx",
+        "filepath": "baselines/bertopic/_bertopic.py",
+        "commit_date": "2022-04-19T08:59:12Z",
+        "message": "fix bertopic"
+    },
+    {
+        "repo_url": "github.com/hyintell/topicx",
+        "filepath": "baselines/bertopic/_bertopic.py",
+        "commit_date": "2022-04-14T09:44:09Z",
+        "message": "initial commit"
+    },
+    {
+        "repo_url": "github.com/atoti/notebooks",
+        "filepath": "notebooks/01-use-cases/other-industries/influencers-analysis/bertopic_local/bertopic_custom/_bertopic.py",
+        "commit_date": "2023-02-24T17:51:11Z",
+        "message": "Upgrade to 0.7.3 (#402)\n\n* Update table joins to conditional join\n\n* Update real-time risk on Bitnami kafka repo url, quantlib calendar for USA and Atoti's mapping to condition\n\n* Update customer 360 use case from Atoti mapping to condition\n\n* Update SA-CCR to switch join mapping to conditions\n\n* Update XVA to switch join mapping to conditions\n\n* Update join mapping to condition for CCF\n\n* Fixed tsfresh and protobuf conflict issue for collateral shortfall forecast notebook. Update mapping to condition\n\n* Update mapping to condition for collateral shortfall monitoring\n\n* Update mapping to condition for intraday liquidity\n\n* Update mappings to condition for airline industry use case\n\n* Update mappings to conditions for baseball notebook\n\n* Update mapping to conditions for ca-solar\n\n* Update mapping to conditions for digital marketing\n\n* remove mapping for drug efficacy\n\n* Update mapping to conditions for food processing notebook\n\n* Update mapping to conditions for F1\n\n* update mapping to condition for election nb\n\n* Update mapping to condition for global covid nb\n\n* Update object detection to download data and model, mapping to conditions.\n\n* Update mappings to conditions for pokemon nb\n\n* Update mapping to conditions for pricing simulation nb\n\n* Update mapping from mapping to conditions for sales-commission nb\n\n* Update mapping to conditions for twitter nb\n\n* Update mapping to condition for conditional-function nb\n\n* Update mapping to conditions for curr-cov-weighted-avg nb\n\n* Update mapping to condition for curr-coversion nb\n\n* Update mappings to conditions for introductory-tutorial nb\n\n* Update mappings to conditions for rollup-hierarchies nb\n\n* Reorg pandas chart\n\n* Update `user.roles` to user_service_client.individual_roles instead\n\n* Formatting and update cell metadata for notebooks\n\n* Upgrade Atoti CE to v0.7.3\n\n* Workaround for https://github.com/atoti/atoti/issues/758\n\n* Format notebook"
+    },
+    {
+        "repo_url": "github.com/atoti/notebooks",
+        "filepath": "notebooks/01-use-cases/other-industries/influencers-analysis/bertopic_local/bertopic_custom/_bertopic.py",
+        "commit_date": "2022-10-04T00:32:23Z",
+        "message": "Restructuring of notebook gallery (#367)\n\n* Restructuring of notebook gallery\n\n* Update nbviewer link to Github\n\n* Upgrade pandas-profiling and updated customer-churn pickle files\n\n* fixed broken testing due to path slash\n\n* Fixed broken customer churn"
+    },
+    {
+        "repo_url": "github.com/atoti/notebooks",
+        "filepath": "notebooks/01-use-cases/other-industries/influencers-analysis/bertopic_local/bertopic_custom/_bertopic.py",
+        "commit_date": "2022-09-23T13:07:38Z",
+        "message": "Revert \"Gallery content restructuring\"\n\nThis reverts commit 851e0076ca832cf63aa601ec0b9331c43331fba5."
+    },
+    {
+        "repo_url": "github.com/atoti/notebooks",
+        "filepath": "notebooks/01-use-cases/other-industries/influencers-analysis/bertopic_local/bertopic_custom/_bertopic.py",
+        "commit_date": "2022-09-23T12:50:19Z",
+        "message": "Gallery content restructuring"
+    },
+    {
+        "repo_url": "github.com/huggingface/api-inference-community",
+        "filepath": "docker_images/bertopic/app/pipelines/text_classification.py",
+        "commit_date": "2023-05-30T22:33:42Z",
+        "message": "BERTopic inference API  (#276)\n\n* Initial bertopic API\n\n* formatting\n\n* isort\n\n* small fixes\n\n* add docker test\n\n* add test workflow\n\n* Update .github/workflows/python-api-bertopic.yaml\n\nCo-authored-by: Nicolas Patry <patry.nicolas@protonmail.com>\n\n* remove unused imports\n\n* remove newline\n\n* cast numpy to float\n\n* add safetensors dependency\n\n* add second test model\n\n* fix types\n\n* parameterize tests\n\n* fix type hints for call return value\n\nCo-authored-by: Omar Sanseviero <osanseviero@gmail.com>\n\n* Update docker_images/bertopic/app/pipelines/text_classification.py\n\nCo-authored-by: Omar Sanseviero <osanseviero@gmail.com>\n\n* update types in docstring for call method\n\n* add cd workflow\n\n* Update docker_images/bertopic/app/pipelines/text_classification.py\n\nCo-authored-by: Maarten Grootendorst <maartengrootendorst@gmail.com>\n\n* formatting\n\n* formatting\n\n* Update docker_images/bertopic/app/pipelines/text_classification.py\n\nCo-authored-by: Maarten Grootendorst <maartengrootendorst@gmail.com>\n\n* Update requirements.txt to use PyPI release\n\n---------\n\nCo-authored-by: Nicolas Patry <patry.nicolas@protonmail.com>\nCo-authored-by: Omar Sanseviero <osanseviero@gmail.com>\nCo-authored-by: Maarten Grootendorst <maartengrootendorst@gmail.com>"
+    },
+    {
+        "repo_url": "github.com/lgarma/research-assistant",
+        "filepath": "app/utils/topic_model.py",
+        "commit_date": "2023-10-03T05:44:26Z",
+        "message": "feat: better control on how a topic model is build"
+    },
+    {
+        "repo_url": "github.com/lgarma/research-assistant",
+        "filepath": "app/utils/topic_model.py",
+        "commit_date": "2023-10-03T04:44:45Z",
+        "message": "chore: removed unused files"
+    },
+    {
+        "repo_url": "github.com/lgarma/research-assistant",
+        "filepath": "app/utils/topic_model.py",
+        "commit_date": "2023-10-03T01:44:06Z",
+        "message": "feat: topics_over_time uses keyBERTInspired representation model"
+    },
+    {
+        "repo_url": "github.com/lgarma/research-assistant",
+        "filepath": "app/utils/topic_model.py",
+        "commit_date": "2023-10-02T08:39:09Z",
+        "message": "feat: long list of authors are better visualized"
+    },
+    {
+        "repo_url": "github.com/lgarma/research-assistant",
+        "filepath": "app/utils/topic_model.py",
+        "commit_date": "2023-10-02T03:53:43Z",
+        "message": "feat: Better control when a topic model has already been fitted. Added more info boxes"
+    },
+    {
+        "repo_url": "github.com/lgarma/research-assistant",
+        "filepath": "app/utils/topic_model.py",
+        "commit_date": "2023-09-28T08:10:46Z",
+        "message": "feat: use custom labels to optimze space in figures"
+    },
+    {
+        "repo_url": "github.com/lgarma/research-assistant",
+        "filepath": "app/utils/topic_model.py",
+        "commit_date": "2023-09-27T16:40:51Z",
+        "message": "fix: changes in some parameters"
+    },
+    {
+        "repo_url": "github.com/lgarma/research-assistant",
+        "filepath": "app/utils/topic_model.py",
+        "commit_date": "2023-09-27T08:26:46Z",
+        "message": "feat: functions for topic info and topic visualiazations"
+    },
+    {
+        "repo_url": "github.com/lgarma/research-assistant",
+        "filepath": "app/utils/topic_model.py",
+        "commit_date": "2023-09-23T08:29:47Z",
+        "message": "feat: topic modelling with bertopic using pre-existing collections"
+    },
+    {
+        "repo_url": "github.com/nestauk/innovation_sweet_spots",
+        "filepath": "innovation_sweet_spots/utils/pd/pd_analysis_utils.py",
+        "commit_date": "2023-07-24T10:39:16Z",
+        "message": "function for total counts"
+    },
+    {
+        "repo_url": "github.com/nestauk/innovation_sweet_spots",
+        "filepath": "innovation_sweet_spots/utils/pd/pd_analysis_utils.py",
+        "commit_date": "2023-07-21T16:28:41Z",
+        "message": "adjusting documentation"
+    },
+    {
+        "repo_url": "github.com/nestauk/innovation_sweet_spots",
+        "filepath": "innovation_sweet_spots/utils/pd/pd_analysis_utils.py",
+        "commit_date": "2023-01-30T14:47:42Z",
+        "message": "fixing bug in discourse utils"
+    },
+    {
+        "repo_url": "github.com/nestauk/innovation_sweet_spots",
+        "filepath": "innovation_sweet_spots/utils/pd/pd_analysis_utils.py",
+        "commit_date": "2023-01-30T14:41:00Z",
+        "message": "updated tutorial and analysis utils (#217)"
+    },
+    {
+        "repo_url": "github.com/nestauk/innovation_sweet_spots",
+        "filepath": "innovation_sweet_spots/utils/pd/pd_analysis_utils.py",
+        "commit_date": "2022-11-29T05:12:33Z",
+        "message": "[192] Generalise public discourse analysis  (#195)\n\nCloses #192.\n\nFor the `DiscourseAnalysis` class and related files, this:\n  * Splits `load_documents` function into `load_documents` and `load_metadata`\n  * Updates functions to work without metadata\n  * Removes `view_mentions` and related functions as they perform the same function as `view_collocations`\n  * Fixes function `noun_chunks_all_years` by changing instances of `_self_noun_chunks_all_years` to `_noun_chunks_all_years`\n  * Fixes function `get_flat_sentences` by removing not needed for loop\n  * Adds functionality to make general phrase patterns dictionary using the search terms (function `make_phrase_patterns`)\n  * Adds functionality to create a BERTopic model\n  * Fixes `subset_documents` function and makes `document_text` first subset on the search terms before required and banned terms\n  * Updates `plot_document_mentions` function to `plot_mentions` which can now plot both document and sentence mentions"
+    },
+    {
+        "repo_url": "github.com/nestauk/innovation_sweet_spots",
+        "filepath": "innovation_sweet_spots/utils/pd/pd_analysis_utils.py",
+        "commit_date": "2022-08-09T16:58:32Z",
+        "message": "[127] Adding details on accessing Guardian API (#128)\n\n* added readme text and tests\n\n* start a tutorial notebook\n\n* refactored discourse analysis utils\n\n* adjusted pd_analysis_utils"
+    },
+    {
+        "repo_url": "github.com/Shkaolin/BERTopic-as-service",
+        "filepath": "service/api/utils.py",
+        "commit_date": "2022-10-05T17:15:28Z",
+        "message": "API refactoring (#20)\n\n* Add reduce topics endpoint\n\n* Reduce topics endpoing\n\n* Testing\n\n* Apply on_start event before test run\n\n* CRUD for model and topics\n\n* Fix\n\n* Fix reduce topics function\n\n* Developed the first draft\n\n* Created utils script\n\n* Developed the second draft\n\n* Moved auxiliary functions to utils\n\n* Add init.py and relative imports, fix mypy issues, add validation in visualization input\n\n* Update poetry.lock\n\n* Fix dependencies\n\n* Fix\n\n* API refactoring, pagination in crud\n\n* Add created_at column to topic model\n\n* Fix\n\n* Rename endpoints\n\n* Updated dependencies\n\n* Got rid of mypy exceptions\n\n* Fixed dependencies\n\n* Update dependencies\n\nCo-authored-by: Shkarin Sergey <kouki.sergey@gmail.com>"
+    },
+    {
+        "repo_url": "github.com/Shkaolin/BERTopic-as-service",
+        "filepath": "service/api/utils.py",
+        "commit_date": "2022-01-25T05:41:56Z",
+        "message": "Relative imports, visualization refactoring (#19)\n\n* Add init.py and relative imports, fix mypy issues, add validation in visualization input\n\n* Update poetry.lock\n\n* Fix dependencies\n\n* Fix"
+    },
+    {
+        "repo_url": "github.com/Shkaolin/BERTopic-as-service",
+        "filepath": "service/api/utils.py",
+        "commit_date": "2021-12-30T09:34:43Z",
+        "message": "Add visualization endpoints (#17)\n\n* Developed the first draft\n\n* Created utils script\n\n* Developed the second draft\n\n* Moved auxiliary functions to utils\n\n* Fixed issues\n\n* Fix #1"
+    },
+    {
+        "repo_url": "github.com/Shkaolin/BERTopic-as-service",
+        "filepath": "tests/conftest.py",
+        "commit_date": "2022-11-04T10:54:51Z",
+        "message": "Visualizations endpoints tests fix (#21)\n\n* Updated pyproject\n\n* Added visualization tests\n\n* Updated poetry.lock\n\n* Fix unit tests, add typing\n\nCo-authored-by: Shkarin Sergey <kouki.sergey@gmail.com>"
+    },
+    {
+        "repo_url": "github.com/Shkaolin/BERTopic-as-service",
+        "filepath": "tests/conftest.py",
+        "commit_date": "2022-01-25T05:41:56Z",
+        "message": "Relative imports, visualization refactoring (#19)\n\n* Add init.py and relative imports, fix mypy issues, add validation in visualization input\n\n* Update poetry.lock\n\n* Fix dependencies\n\n* Fix"
+    },
+    {
+        "repo_url": "github.com/Shkaolin/BERTopic-as-service",
+        "filepath": "tests/conftest.py",
+        "commit_date": "2021-11-12T17:26:37Z",
+        "message": "Reduce topics (#11)\n\n* Add reduce topics endpoint\n\n* Reduce topics endpoing\n\n* Testing\n\n* Apply on_start event before test run"
+    },
+    {
+        "repo_url": "github.com/rbiswasfc/kaggle-feedback-effectiveness-3rd-place-solution",
+        "filepath": "code/predict_ensemble.py",
+        "commit_date": "2022-09-06T15:33:47Z",
+        "message": "3rd place solution bulk commit"
+    },
+    {
+        "repo_url": "github.com/rbiswasfc/kaggle-feedback-effectiveness-3rd-place-solution",
+        "filepath": "code/predict_efficiency.py",
+        "commit_date": "2022-09-06T15:33:47Z",
+        "message": "3rd place solution bulk commit"
+    },
+    {
+        "repo_url": "github.com/drob-xx/TopicTuner",
+        "filepath": "topictuner/topictuner.py",
+        "commit_date": "2023-02-01T22:52:21Z",
+        "message": "Update topictuner.py"
+    },
+    {
+        "repo_url": "github.com/drob-xx/TopicTuner",
+        "filepath": "topictuner/topictuner.py",
+        "commit_date": "2023-01-28T20:04:38Z",
+        "message": "Abstract out the creation of UMAP and HDBSCAN models"
+    },
+    {
+        "repo_url": "github.com/drob-xx/TopicTuner",
+        "filepath": "topictuner/topictuner.py",
+        "commit_date": "2023-01-26T19:01:53Z",
+        "message": "v0.2.2 candidate"
+    },
+    {
+        "repo_url": "github.com/drob-xx/TopicTuner",
+        "filepath": "topictuner/topictuner.py",
+        "commit_date": "2023-01-25T23:57:26Z",
+        "message": "Clean up with black"
+    },
+    {
+        "repo_url": "github.com/drob-xx/TopicTuner",
+        "filepath": "topictuner/topictuner.py",
+        "commit_date": "2023-01-25T19:38:07Z",
+        "message": "Update topictuner.py"
+    },
+    {
+        "repo_url": "github.com/drob-xx/TopicTuner",
+        "filepath": "topictuner/topictuner.py",
+        "commit_date": "2023-01-25T19:24:46Z",
+        "message": "update docs, split BaseHDBSCANTuner"
+    },
+    {
+        "repo_url": "github.com/drob-xx/TopicTuner",
+        "filepath": "topictuner/topictuner.py",
+        "commit_date": "2023-01-25T01:11:59Z",
+        "message": "gen doc"
+    },
+    {
+        "repo_url": "github.com/drob-xx/TopicTuner",
+        "filepath": "topictuner/topictuner.py",
+        "commit_date": "2023-01-24T06:21:14Z",
+        "message": "Update topictuner.py"
+    },
+    {
+        "repo_url": "github.com/drob-xx/TopicTuner",
+        "filepath": "topictuner/topictuner.py",
+        "commit_date": "2023-01-24T06:18:20Z",
+        "message": "Update topictuner.py"
+    },
+    {
+        "repo_url": "github.com/drob-xx/TopicTuner",
+        "filepath": "topictuner/topictuner.py",
+        "commit_date": "2023-01-24T06:07:07Z",
+        "message": "Update topictuner.py"
+    },
+    {
+        "repo_url": "github.com/drob-xx/TopicTuner",
+        "filepath": "topictuner/topictuner.py",
+        "commit_date": "2023-01-24T05:59:20Z",
+        "message": "Update topictuner.py"
+    },
+    {
+        "repo_url": "github.com/drob-xx/TopicTuner",
+        "filepath": "topictuner/topictuner.py",
+        "commit_date": "2023-01-24T05:50:41Z",
+        "message": "Update topictuner.py"
+    },
+    {
+        "repo_url": "github.com/drob-xx/TopicTuner",
+        "filepath": "topictuner/topictuner.py",
+        "commit_date": "2023-01-24T05:44:47Z",
+        "message": "Update topictuner.py"
+    },
+    {
+        "repo_url": "github.com/drob-xx/TopicTuner",
+        "filepath": "topictuner/topictuner.py",
+        "commit_date": "2023-01-24T05:41:49Z",
+        "message": "Update topictuner.py"
+    },
+    {
+        "repo_url": "github.com/drob-xx/TopicTuner",
+        "filepath": "topictuner/topictuner.py",
+        "commit_date": "2023-01-24T05:32:33Z",
+        "message": "fix reducer_random_state"
+    },
+    {
+        "repo_url": "github.com/drob-xx/TopicTuner",
+        "filepath": "topictuner/topictuner.py",
+        "commit_date": "2023-01-24T05:06:49Z",
+        "message": "fix random_state param passing between tmt and bt, add tests"
+    },
+    {
+        "repo_url": "github.com/drob-xx/TopicTuner",
+        "filepath": "topictuner/topictuner.py",
+        "commit_date": "2023-01-22T23:54:46Z",
+        "message": "reducer_random_state"
+    },
+    {
+        "repo_url": "github.com/drob-xx/TopicTuner",
+        "filepath": "topictuner/topictuner.py",
+        "commit_date": "2023-01-22T23:44:44Z",
+        "message": "reducer_random_state"
+    },
+    {
+        "repo_url": "github.com/drob-xx/TopicTuner",
+        "filepath": "topictuner/topictuner.py",
+        "commit_date": "2023-01-22T23:22:46Z",
+        "message": "add reduer_random_state setter/getter"
+    },
+    {
+        "repo_url": "github.com/drob-xx/TopicTuner",
+        "filepath": "topictuner/topictuner.py",
+        "commit_date": "2023-01-20T20:53:37Z",
+        "message": "Update topictuner.py"
+    },
+    {
+        "repo_url": "github.com/drob-xx/TopicTuner",
+        "filepath": "topictuner/topictuner.py",
+        "commit_date": "2023-01-19T23:23:14Z",
+        "message": "Fixes, re-work some code, add tests, add condition to cuML loads."
+    },
+    {
+        "repo_url": "github.com/drob-xx/TopicTuner",
+        "filepath": "topictuner/topictuner.py",
+        "commit_date": "2023-01-17T18:32:09Z",
+        "message": "added getBERTopicModel to cumlTopicModelTuner"
+    },
+    {
+        "repo_url": "github.com/drob-xx/TopicTuner",
+        "filepath": "topictuner/topictuner.py",
+        "commit_date": "2023-01-17T04:57:34Z",
+        "message": "Update topictuner.py"
+    },
+    {
+        "repo_url": "github.com/drob-xx/TopicTuner",
+        "filepath": "topictuner/topictuner.py",
+        "commit_date": "2023-01-16T18:56:26Z",
+        "message": "Update topictuner.py"
+    },
+    {
+        "repo_url": "github.com/drob-xx/TopicTuner",
+        "filepath": "topictuner/topictuner.py",
+        "commit_date": "2023-01-15T18:41:38Z",
+        "message": "added tests, added cuml TMT"
+    },
+    {
+        "repo_url": "github.com/drob-xx/TopicTuner",
+        "filepath": "topictuner/topictuner.py",
+        "commit_date": "2023-01-12T01:16:40Z",
+        "message": "Prep for release"
+    },
+    {
+        "repo_url": "github.com/drob-xx/TopicTuner",
+        "filepath": "topictuner/topictuner.py",
+        "commit_date": "2023-01-11T15:41:54Z",
+        "message": "Update topictuner.py\n\nCleaned up code, comments and added getHDBSCAN."
+    },
+    {
+        "repo_url": "github.com/drob-xx/TopicTuner",
+        "filepath": "topictuner/topictuner.py",
+        "commit_date": "2023-01-10T17:36:47Z",
+        "message": "re-structure directories"
+    },
+    {
+        "repo_url": "github.com/Aidenzich/HelloBERTopic",
+        "filepath": "main.py",
+        "commit_date": "2022-05-03T15:21:08Z",
+        "message": "add notes & fix mistake argument"
+    },
+    {
+        "repo_url": "github.com/Aidenzich/HelloBERTopic",
+        "filepath": "main.py",
+        "commit_date": "2022-04-14T07:17:24Z",
+        "message": "update doc"
+    },
+    {
+        "repo_url": "github.com/Aidenzich/HelloBERTopic",
+        "filepath": "main.py",
+        "commit_date": "2022-03-30T07:53:11Z",
+        "message": "init"
+    },
+    {
+        "repo_url": "github.com/OmdenaAI/omdena-pennsylvania-startup",
+        "filepath": "src/tasks/task-6-model-deployment/webapp/apps/topic_model.py",
+        "commit_date": "2021-07-28T13:29:47Z",
+        "message": "Update web app"
+    }
+]

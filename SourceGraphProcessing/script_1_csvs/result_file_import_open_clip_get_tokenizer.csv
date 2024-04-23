@@ -1,0 +1,786 @@
+✱ 196 results for "context:global select:file visibility:public count:all lang:Python content:'import open_clip' AND get_tokenizer\(" in 5.202s
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/google-research/google-research/-/blob/agile_modeling/load_clip.py)
+github.com/google-research/google-research › load_clip.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/langchain-ai/langchain/-/blob/libs/experimental/langchain_experimental/open_clip/open_clip.py)
+github.com/langchain-ai/langchain › open_clip.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/chroma-core/chroma/-/blob/chromadb/utils/embedding_functions.py)
+github.com/chroma-core/chroma › embedding_functions.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/open-mmlab/mmsegmentation/-/blob/projects/CAT-Seg/cat_seg/models/clip_ovseg.py)
+github.com/open-mmlab/mmsegmentation › clip_ovseg.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/marqo-ai/marqo/-/blob/src/marqo/s2_inference/clip_utils.py)
+github.com/marqo-ai/marqo › clip_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/modelscope/modelscope/-/blob/modelscope/models/multi_modal/clip_interrogator/model.py)
+github.com/modelscope/modelscope › model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Docta-ai/docta/-/blob/docta/core/preprocess.py)
+github.com/Docta-ai/docta › preprocess.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/marqo-ai/marqo/-/blob/src/marqo/s2_inference/onnx_clip_utils.py)
+github.com/marqo-ai/marqo › onnx_clip_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/microsoft/Cream/-/blob/TinyCLIP/inference.py)
+github.com/microsoft/Cream › inference.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mlfoundations/open_clip/-/blob/tests/util_test.py)
+github.com/mlfoundations/open_clip › util_test.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mlfoundations/open_clip/-/blob/tests/test_inference_simple.py)
+github.com/mlfoundations/open_clip › test_inference_simple.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mlfoundations/open_clip/-/blob/tests/test_download_pretrained.py)
+github.com/mlfoundations/open_clip › test_download_pretrained.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/eric-ai-lab/MiniGPT-5/-/blob/metric.py)
+github.com/eric-ai-lab/MiniGPT-5 › metric.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/GoogleCloudPlatform/vertex-ai-samples/-/blob/community-content/vertex_model_garden/model_oss/open_clip/handler.py)
+github.com/GoogleCloudPlatform/vertex-ai-samples › handler.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/YuxinWenRick/hard-prompts-made-easy/-/blob/optim_utils.py)
+github.com/YuxinWenRick/hard-prompts-made-easy › optim_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Algolzw/daclip-uir/-/blob/da-clip/src/evaluate.py)
+github.com/Algolzw/daclip-uir › evaluate.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/UMass-Foundation-Model/3D-LLM/-/blob/three_steps_3d_feature/second_step/clip_sam.py)
+github.com/UMass-Foundation-Model/3D-LLM › clip_sam.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/zideliu/StyleDrop-PyTorch/-/blob/predict.py)
+github.com/zideliu/StyleDrop-PyTorch › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/alaamaalouf/FollowAnything/-/blob/follow_anything.py)
+github.com/alaamaalouf/FollowAnything › follow_anything.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/roatienza/Deep-Learning-Experiments/-/blob/versions/2023/model_serving/demo/triton/server.py)
+github.com/roatienza/Deep-Learning-Experiments › server.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/zideliu/StyleDrop-PyTorch/-/blob/gradio_demo.py)
+github.com/zideliu/StyleDrop-PyTorch › gradio_demo.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/UMass-Foundation-Model/3D-LLM/-/blob/three_steps_3d_feature/second_step/clip_maskformer.py)
+github.com/UMass-Foundation-Model/3D-LLM › clip_maskformer.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/AnyLoc/AnyLoc/-/blob/clip_wrapper.py)
+github.com/AnyLoc/AnyLoc › clip_wrapper.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/VoltaML/voltaML-fast-stable-diffusion/-/blob/core/interrogation/clip.py)
+github.com/VoltaML/voltaML-fast-stable-diffusion › clip.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/lancedb/vectordb-recipes/-/blob/examples/arxiv-recommender/main.py)
+github.com/lancedb/vectordb-recipes › main.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/ByChelsea/VAND-APRIL-GAN/-/blob/train.py)
+github.com/ByChelsea/VAND-APRIL-GAN › train.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/altndrr/vic/-/blob/src/models/clip.py)
+github.com/altndrr/vic › clip.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/UMass-Foundation-Model/3D-LLM/-/blob/3DLanguage_data/ChatCaptioner_based/gen_features/clip_oa.py)
+github.com/UMass-Foundation-Model/3D-LLM › clip_oa.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Newbeeer/diffusion_restart_sampling/-/blob/diffuser/clip_score.py)
+github.com/Newbeeer/diffusion_restart_sampling › clip_score.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/diffusion-classifier/diffusion-classifier/-/blob/run_winoground.py)
+github.com/diffusion-classifier/diffusion-classifier › run_winoground.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NVIDIA/tao_pytorch_backend/-/blob/nvidia_tao_pytorch/cv/odise/modeling/backbone/clip.py)
+github.com/NVIDIA/tao_pytorch_backend › clip.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/3DTopia/3DTopia/-/blob/ldm/modules/encoders/modules.py)
+github.com/3DTopia/3DTopia › modules.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/OpenGVLab/Instruct2Act/-/blob/engine_robotic.py)
+github.com/OpenGVLab/Instruct2Act › engine_robotic.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/aim-uofa/StyleDrop-PyTorch/-/blob/predict.py)
+github.com/aim-uofa/StyleDrop-PyTorch › predict.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/roatienza/Deep-Learning-Experiments/-/blob/versions/2023/model_serving/demo/triton/openclip/server.py)
+github.com/roatienza/Deep-Learning-Experiments › server.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Newbeeer/diffusion_restart_sampling/-/blob/diffuser/eval_clip_score.py)
+github.com/Newbeeer/diffusion_restart_sampling › eval_clip_score.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Nerogar/OneTrainer/-/blob/modules/module/HPSv2ScoreModel.py)
+github.com/Nerogar/OneTrainer › HPSv2ScoreModel.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/aim-uofa/StyleDrop-PyTorch/-/blob/gradio_demo.py)
+github.com/aim-uofa/StyleDrop-PyTorch › gradio_demo.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Newbeeer/diffusion_restart_sampling/-/blob/diffuser/coco_data_loader.py)
+github.com/Newbeeer/diffusion_restart_sampling › coco_data_loader.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/WalBouss/GEM/-/blob/gem/gem.py)
+github.com/WalBouss/GEM › gem.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/gersteinlab/ML-Bench/-/blob/MLAgent/repo/open_clip/tests/util_test.py)
+github.com/gersteinlab/ML-Bench › util_test.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/gersteinlab/ML-Bench/-/blob/MLAgent/repo/open_clip/tests/test_inference_simple.py)
+github.com/gersteinlab/ML-Bench › test_inference_simple.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/gersteinlab/ML-Bench/-/blob/MLAgent/repo/open_clip/tests/test_download_pretrained.py)
+github.com/gersteinlab/ML-Bench › test_download_pretrained.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/achao2013/deep3dmap/-/blob/deep3dmap/models/modulars/ns_encoders/openclip_encoder.py)
+github.com/achao2013/deep3dmap › openclip_encoder.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/minghanqin/LangSplat/-/blob/preprocess.py)
+github.com/minghanqin/LangSplat › preprocess.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/wkcn/TinyCLIP/-/blob/inference.py)
+github.com/wkcn/TinyCLIP › inference.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/shenyunhang/APE/-/blob/ape/modeling/text/clip_wrapper_open.py)
+github.com/shenyunhang/APE › clip_wrapper_open.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Algolzw/daclip-uir/-/blob/universal-image-restoration/config/daclip-sde/train.py)
+github.com/Algolzw/daclip-uir › train.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/jianzhnie/GigaGAN/-/blob/gigagan/open_clip.py)
+github.com/jianzhnie/GigaGAN › open_clip.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/bytedance/fc-clip/-/blob/fcclip/modeling/backbone/clip.py)
+github.com/bytedance/fc-clip › clip.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/ThereforeGames/unprompted/-/blob/lib_unprompted/stable_diffusion/hard_prompts_made_easy.py)
+github.com/ThereforeGames/unprompted › hard_prompts_made_easy.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/zideliu/StyleDrop-PyTorch/-/blob/train_t2i_colab_v2.py)
+github.com/zideliu/StyleDrop-PyTorch › train_t2i_colab_v2.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NVIDIA-AI-IOT/jetson-intro-to-distillation/-/blob/openclip_utils.py)
+github.com/NVIDIA-AI-IOT/jetson-intro-to-distillation › openclip_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/daveredrum/SceneTex/-/blob/models/pipeline/texture_pipeline.py)
+github.com/daveredrum/SceneTex › texture_pipeline.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/lucidrains/gigagan-pytorch/-/blob/gigagan_pytorch/open_clip.py)
+github.com/lucidrains/gigagan-pytorch › open_clip.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Understanding-Visual-Datasets/VisDiff/-/blob/serve/clip_server.py)
+github.com/Understanding-Visual-Datasets/VisDiff › clip_server.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Nota-NetsPresso/BK-SDM/-/blob/src/eval_clip_score.py)
+github.com/Nota-NetsPresso/BK-SDM › eval_clip_score.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/zideliu/StyleDrop-PyTorch/-/blob/train_t2i_custom_v2.py)
+github.com/zideliu/StyleDrop-PyTorch › train_t2i_custom_v2.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/YuxinWenRick/tree-ring-watermark/-/blob/run_tree_ring_watermark.py)
+github.com/YuxinWenRick/tree-ring-watermark › run_tree_ring_watermark.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/LAION-AI/CLIP_benchmark/-/blob/clip_benchmark/models/open_clip.py)
+github.com/LAION-AI/CLIP_benchmark › open_clip.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/CuriseJia/FreeStyleRet/-/blob/src/models/style_retrieval.py)
+github.com/CuriseJia/FreeStyleRet › style_retrieval.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/CuriseJia/FreeStyleRet/-/blob/imagenet_test/clip_test.py)
+github.com/CuriseJia/FreeStyleRet › clip_test.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/CuriseJia/FreeStyleRet/-/blob/comparison_test/clip_test.py)
+github.com/CuriseJia/FreeStyleRet › clip_test.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/CuriseJia/FreeStyleRet/-/blob/comparison_test/prompt_model.py)
+github.com/CuriseJia/FreeStyleRet › prompt_model.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/CuriseJia/FreeStyleRet/-/blob/imagenet_test/languagebind_test.py)
+github.com/CuriseJia/FreeStyleRet › languagebind_test.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/CuriseJia/FreeStyleRet/-/blob/comparison_test/languagebind_test.py)
+github.com/CuriseJia/FreeStyleRet › languagebind_test.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/wusize/CLIPSelf/-/blob/tools/generate_text_embeddings.py)
+github.com/wusize/CLIPSelf › generate_text_embeddings.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/OpenGVLab/InternVL/-/blob/clip_benchmark/clip_benchmark/models/open_clip.py)
+github.com/OpenGVLab/InternVL › open_clip.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/taesiri/ZoomIsAllYouNeed/-/blob/src/ImageNet_Hard/benchmark-openclip.py)
+github.com/taesiri/ZoomIsAllYouNeed › benchmark-openclip.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/taesiri/ZoomIsAllYouNeed/-/blob/src/ImageNet_Hard/benchmark_openclip.py)
+github.com/taesiri/ZoomIsAllYouNeed › benchmark_openclip.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/taesiri/ZoomIsAllYouNeed/-/blob/src/ImageNet_Hard/benchmark_openclip_datacomp.py)
+github.com/taesiri/ZoomIsAllYouNeed › benchmark_openclip_datacomp.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/aim-uofa/StyleDrop-PyTorch/-/blob/train_t2i_colab_v2.py)
+github.com/aim-uofa/StyleDrop-PyTorch › train_t2i_colab_v2.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/leptonai/examples/-/blob/advanced/open-clip/open-clip.py)
+github.com/leptonai/examples › open-clip.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/haoshao-nku/medical_seg/-/blob/mmsegmentation/projects/CAT-Seg/cat_seg/models/clip_ovseg.py)
+github.com/haoshao-nku/medical_seg › clip_ovseg.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/zideliu/StyleDrop-PyTorch/-/blob/extract_empty_feature.py)
+github.com/zideliu/StyleDrop-PyTorch › extract_empty_feature.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/pharmapsychotic/clip-interrogator/-/blob/clip_interrogator/clip_interrogator.py)
+github.com/pharmapsychotic/clip-interrogator › clip_interrogator.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/data2ml/all-clip/-/blob/all_clip/open_clip.py)
+github.com/data2ml/all-clip › open_clip.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/tgxs002/align_sd/-/blob/process_diffusiondb.py)
+github.com/tgxs002/align_sd › process_diffusiondb.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/aim-uofa/StyleDrop-PyTorch/-/blob/train_t2i_custom_v2.py)
+github.com/aim-uofa/StyleDrop-PyTorch › train_t2i_custom_v2.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Vision-CAIR/ChatCaptioner/-/blob/ChatCaptioner/chatcaptioner/clip.py)
+github.com/Vision-CAIR/ChatCaptioner › clip.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/matsui528/scs/-/blob/search.py)
+github.com/matsui528/scs › search.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/matsui528/scs/-/blob/search_streamlit.py)
+github.com/matsui528/scs › search_streamlit.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Algolzw/daclip-uir/-/blob/universal-image-restoration/config/daclip-sde/test.py)
+github.com/Algolzw/daclip-uir › test.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/naamiinepal/medvlsm/-/blob/src/datamodules/datasets/image_text_mask.py)
+github.com/naamiinepal/medvlsm › image_text_mask.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/AnyLoc/AnyLoc/-/blob/examples/trivial_vpr_with_clip.py)
+github.com/AnyLoc/AnyLoc › trivial_vpr_with_clip.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/djghosh13/geneval/-/blob/evaluation/evaluate_images.py)
+github.com/djghosh13/geneval › evaluate_images.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mlfoundations/datacomp/-/blob/eval_utils/wds_eval.py)
+github.com/mlfoundations/datacomp › wds_eval.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/dome272/Paella/-/blob/src_distributed/utils.py)
+github.com/dome272/Paella › utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/kerrj/lerf/-/blob/lerf/encoders/openclip_encoder.py)
+github.com/kerrj/lerf › openclip_encoder.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/carefree0910/carefree-learn/-/blob/examples/reproduce/clip/run_open_clip.py)
+github.com/carefree0910/carefree-learn › run_open_clip.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/concept-graphs/concept-graphs/-/blob/conceptgraph/scripts/eval_replica_semseg.py)
+github.com/concept-graphs/concept-graphs › eval_replica_semseg.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/huggingface/api-inference-community/-/blob/docker_images/open_clip/app/pipelines/zero_shot_image_classification.py)
+github.com/huggingface/api-inference-community › zero_shot_image_classification.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mlfoundations/datacomp/-/blob/eval_utils/wino_eval.py)
+github.com/mlfoundations/datacomp › wino_eval.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/concept-graphs/concept-graphs/-/blob/conceptgraph/scripts/generate_gsa_results.py)
+github.com/concept-graphs/concept-graphs › generate_gsa_results.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/aim-uofa/StyleDrop-PyTorch/-/blob/extract_empty_feature.py)
+github.com/aim-uofa/StyleDrop-PyTorch › extract_empty_feature.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/frank-xwang/InstanceDiffusion/-/blob/eval/eval_attribute_binding.py)
+github.com/frank-xwang/InstanceDiffusion › eval_attribute_binding.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/mlfoundations/datacomp/-/blob/eval_utils/retr_eval.py)
+github.com/mlfoundations/datacomp › retr_eval.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/lucidrains/perfusion-pytorch/-/blob/perfusion_pytorch/open_clip.py)
+github.com/lucidrains/perfusion-pytorch › open_clip.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/facebookresearch/PUG/-/blob/PUG_SPAR/run_eval_vlms_on_spar.py)
+github.com/facebookresearch/PUG › run_eval_vlms_on_spar.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/zzc-1998/SJTU-H3D/-/blob/quality_measure_utils/semantic_affinity_quality_measure.py)
+github.com/zzc-1998/SJTU-H3D › semantic_affinity_quality_measure.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/concept-graphs/concept-graphs/-/blob/conceptgraph/scripts/streamlined_detections.py)
+github.com/concept-graphs/concept-graphs › streamlined_detections.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/KU-CVLAB/CAT-Seg/-/blob/cat_seg/modeling/transformer/cat_seg_predictor.py)
+github.com/KU-CVLAB/CAT-Seg › cat_seg_predictor.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/chs20/RobustVLM/-/blob/CLIP_benchmark/clip_benchmark/models/open_clip.py)
+github.com/chs20/RobustVLM › open_clip.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/concept-graphs/concept-graphs/-/blob/conceptgraph/scripts/visualize_cfslam_results.py)
+github.com/concept-graphs/concept-graphs › visualize_cfslam_results.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Vision-CAIR/ChatCaptioner/-/blob/Video_ChatCaptioner/chatcaptioner/clip.py)
+github.com/Vision-CAIR/ChatCaptioner › clip.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Computer-Vision-in-the-Wild/UniCL-OpenCLIP/-/blob/tests/util_test.py)
+github.com/Computer-Vision-in-the-Wild/UniCL-OpenCLIP › util_test.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Computer-Vision-in-the-Wild/UniCL-OpenCLIP/-/blob/tests/test_inference_simple.py)
+github.com/Computer-Vision-in-the-Wild/UniCL-OpenCLIP › test_inference_simple.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/tgxs002/HPSv2/-/blob/hpsv2/tests/util_test.py)
+github.com/tgxs002/HPSv2 › util_test.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/ParisNeo/lollms/-/blob/lollms/image_gen_modules/clip_interrogator.py)
+github.com/ParisNeo/lollms › clip_interrogator.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/tgxs002/HPSv2/-/blob/hpsv2/tests/test_inference_simple.py)
+github.com/tgxs002/HPSv2 › test_inference_simple.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/abhishekkrthakur/diffuzers/-/blob/diffuzers/clip_interrogator.py)
+github.com/abhishekkrthakur/diffuzers › clip_interrogator.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/tgxs002/HPSv2/-/blob/hpsv2/tests/test_download_pretrained.py)
+github.com/tgxs002/HPSv2 › test_download_pretrained.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/facebookresearch/SIEVE/-/blob/eval_utils/wds_eval.py)
+github.com/facebookresearch/SIEVE › wds_eval.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/facebookresearch/SIEVE/-/blob/eval_utils/wino_eval.py)
+github.com/facebookresearch/SIEVE › wino_eval.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/facebookresearch/SIEVE/-/blob/eval_utils/retr_eval.py)
+github.com/facebookresearch/SIEVE › retr_eval.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/d8ahazard/sd_smartprocess/-/blob/clipinterrogator.py)
+github.com/d8ahazard/sd_smartprocess › clipinterrogator.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/zideliu/StyleDrop-PyTorch/-/blob/extract_test_prompt_feature.py)
+github.com/zideliu/StyleDrop-PyTorch › extract_test_prompt_feature.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/unum-cloud/coco-sm/-/blob/modules/open_clip.py)
+github.com/unum-cloud/coco-sm › open_clip.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/ByChelsea/VAND-APRIL-GAN/-/blob/test.py)
+github.com/ByChelsea/VAND-APRIL-GAN › test.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/KU-CVLAB/CAT-Seg/-/blob/open_clip/tests/util_test.py)
+github.com/KU-CVLAB/CAT-Seg › util_test.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/KU-CVLAB/CAT-Seg/-/blob/open_clip/tests/test_inference_simple.py)
+github.com/KU-CVLAB/CAT-Seg › test_inference_simple.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/KU-CVLAB/CAT-Seg/-/blob/open_clip/tests/test_download_pretrained.py)
+github.com/KU-CVLAB/CAT-Seg › test_download_pretrained.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/aim-uofa/StyleDrop-PyTorch/-/blob/extract_test_prompt_feature.py)
+github.com/aim-uofa/StyleDrop-PyTorch › extract_test_prompt_feature.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/aimagelab/open-fashion-clip/-/blob/quick_start.py)
+github.com/aimagelab/open-fashion-clip › quick_start.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/UCSC-VLAA/vllm-safety-benchmark/-/blob/safety_evaluations/redteaming/misleading_vision_attack/misleading_vis_attack.py)
+github.com/UCSC-VLAA/vllm-safety-benchmark › misleading_vis_attack.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/modelscope/normal-depth-diffusion/-/blob/tools/compute_metric.py)
+github.com/modelscope/normal-depth-diffusion › compute_metric.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/modelscope/normal-depth-diffusion/-/blob/tools/compute_metric_curves.py)
+github.com/modelscope/normal-depth-diffusion › compute_metric_curves.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/modelscope/normal-depth-diffusion/-/blob/tools/compute_clip_metric_curves.py)
+github.com/modelscope/normal-depth-diffusion › compute_clip_metric_curves.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/modelscope/normal-depth-diffusion/-/blob/tools/compute_objaverse_clipscore.py)
+github.com/modelscope/normal-depth-diffusion › compute_objaverse_clipscore.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/modelscope/normal-depth-diffusion/-/blob/tools/compute_cfg_clip_metric_curves.py)
+github.com/modelscope/normal-depth-diffusion › compute_cfg_clip_metric_curves.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NeuralRealm/StableFusion/-/blob/stablefusion/scripts/clip_interrogator.py)
+github.com/NeuralRealm/StableFusion › clip_interrogator.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/waltonfuture/InstructionGPT-4/-/blob/cluster/kmeans++/kmeans_pp.py)
+github.com/waltonfuture/InstructionGPT-4 › kmeans_pp.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/waltonfuture/InstructionGPT-4/-/blob/cluster/spectral/spectral_clustering.py)
+github.com/waltonfuture/InstructionGPT-4 › spectral_clustering.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/waltonfuture/InstructionGPT-4/-/blob/cc_sbu_align_test/full_score.py)
+github.com/waltonfuture/InstructionGPT-4 › full_score.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/orrzohar/LOVM/-/blob/modelGPT/create_models.py)
+github.com/orrzohar/LOVM › create_models.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/orrzohar/LOVM/-/blob/modelGPT/encode_dataset.py)
+github.com/orrzohar/LOVM › encode_dataset.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/orrzohar/LOVM/-/blob/modelGPT/encode_syn_dataset.py)
+github.com/orrzohar/LOVM › encode_syn_dataset.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/yeongjoonJu/NeuroInspect/-/blob/clip_illusion.py)
+github.com/yeongjoonJu/NeuroInspect › clip_illusion.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/yandex-research/adaptive-diffusion/-/blob/consistency_models_sd/evaluations/clip_score.py)
+github.com/yandex-research/adaptive-diffusion › clip_score.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/crystallee-ai/controlGIF/-/blob/clip_interrogator/clip_interrogator.py)
+github.com/crystallee-ai/controlGIF › clip_interrogator.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/hq-deng/AnoVL/-/blob/vl_test.py)
+github.com/hq-deng/AnoVL › vl_test.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/hq-deng/AnoVL/-/blob/vis_test.py)
+github.com/hq-deng/AnoVL › vis_test.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/huzeyann/MemoryEncodingModel/-/blob/mem/backbone.py)
+github.com/huzeyann/MemoryEncodingModel › backbone.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/iejMac/clip-video-encode/-/blob/clip_video_encode/simplemapper.py)
+github.com/iejMac/clip-video-encode › simplemapper.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/TIGER-AI-Lab/ImagenHub/-/blob/src/imagen_hub/depend/clip_retrieval/load_clip.py)
+github.com/TIGER-AI-Lab/ImagenHub › load_clip.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Zhiyuan-R/ChatGPT-Powered-Hierarchical-Comparisons-for-Image-Classification/-/blob/main.py)
+github.com/Zhiyuan-R/ChatGPT-Powered-Hierarchical-Comparisons-for-Image-Classification › main.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Ascend/ModelZoo-PyTorch/-/blob/AscendIE/AscendIE/StableDiffusion/clip_score.py)
+github.com/Ascend/ModelZoo-PyTorch › clip_score.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Ascend/ModelZoo-PyTorch/-/blob/ACL_PyTorch/built-in/foundation_models/stable_diffusion/clip_score.py)
+github.com/Ascend/ModelZoo-PyTorch › clip_score.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/bentoml/CLIP-API-service/-/blob/src/clip_api_service/models/openclip.py)
+github.com/bentoml/CLIP-API-service › openclip.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/KaiyuYue/nxtp/-/blob/src/evals/engine.py)
+github.com/KaiyuYue/nxtp › engine.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/r0mar0ma/sd-webui-pez-dispenser/-/blob/scripts/optim_utils.py)
+github.com/r0mar0ma/sd-webui-pez-dispenser › optim_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Ascend/ModelZoo-PyTorch/-/blob/PyTorch/built-in/others/OpenCLIP_for_PyTorch/tests/util_test.py)
+github.com/Ascend/ModelZoo-PyTorch › util_test.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Ascend/ModelZoo-PyTorch/-/blob/PyTorch/built-in/others/OpenCLIP_for_PyTorch/tests/test_inference_simple.py)
+github.com/Ascend/ModelZoo-PyTorch › test_inference_simple.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NVlabs/RADIO/-/blob/radio/adaptors/open_clip_adaptor.py)
+github.com/NVlabs/RADIO › open_clip_adaptor.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/kyegomez/Gen1/-/blob/gen1/clip.py)
+github.com/kyegomez/Gen1 › clip.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/wangyu-ustc/LM4CV/-/blob/cluster.py)
+github.com/wangyu-ustc/LM4CV › cluster.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/SKKU-ESLAB/Auto-Compression/-/blob/pruning/UVP/Transformer/sparseml/integrations/clip/clip_onnx_export.py)
+github.com/SKKU-ESLAB/Auto-Compression › clip_onnx_export.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/technion-cs-nlp/ReFACT/-/blob/test_clip_score.py)
+github.com/technion-cs-nlp/ReFACT › test_clip_score.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/technion-cs-nlp/ReFACT/-/blob/test_multiple_edits.py)
+github.com/technion-cs-nlp/ReFACT › test_multiple_edits.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Max-Fu/tvl/-/blob/tvl_enc/tvl.py)
+github.com/Max-Fu/tvl › tvl.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/google/storybench/-/blob/metrics/vtm_clip.py)
+github.com/google/storybench › vtm_clip.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/MadryLab/dataset-interfaces/-/blob/dataset_interfaces/inference_utils.py)
+github.com/MadryLab/dataset-interfaces › inference_utils.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/wusize/CLIM/-/blob/tools/generate_text_embeddings.py)
+github.com/wusize/CLIM › generate_text_embeddings.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/wusize/CLIM/-/blob/ovdet/tools/generate_text_embeddings.py)
+github.com/wusize/CLIM › generate_text_embeddings.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/emu1729/GIST/-/blob/caption_matching.py)
+github.com/emu1729/GIST › caption_matching.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/yasserben/CLOUDS/-/blob/clouds/modeling/backbone/clip.py)
+github.com/yasserben/CLOUDS › clip.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/yasserben/CLOUDS/-/blob/clouds/modeling/backbone/trainable_clip.py)
+github.com/yasserben/CLOUDS › trainable_clip.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/baaivision/MUSE-Pytorch/-/blob/extract_empty_feature.py)
+github.com/baaivision/MUSE-Pytorch › extract_empty_feature.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/baaivision/MUSE-Pytorch/-/blob/extract_test_prompt_feature.py)
+github.com/baaivision/MUSE-Pytorch › extract_test_prompt_feature.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/sail-sg/MMCBench/-/blob/text2image/evaluate.py)
+github.com/sail-sg/MMCBench › evaluate.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/sail-sg/MMCBench/-/blob/image2text/evaluate.py)
+github.com/sail-sg/MMCBench › evaluate.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/NVIDIA-AI-IOT/clip-distillation/-/blob/compute_openclip_text_embeddings.py)
+github.com/NVIDIA-AI-IOT/clip-distillation › compute_openclip_text_embeddings.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/workforai/SCAN/-/blob/open_clip_training/tests/util_test.py)
+github.com/workforai/SCAN › util_test.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/workforai/SCAN/-/blob/open_clip_training/tests/test_inference_simple.py)
+github.com/workforai/SCAN › test_inference_simple.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/workforai/SCAN/-/blob/open_clip_training/tests/test_download_pretrained.py)
+github.com/workforai/SCAN › test_download_pretrained.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/gregor-ge/mBLIP/-/blob/data/pretrain/hard_examples.py)
+github.com/gregor-ge/mBLIP › hard_examples.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/gregor-ge/mBLIP/-/blob/data/pretrain/generate_match_train.py)
+github.com/gregor-ge/mBLIP › generate_match_train.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/VQAssessment/BVQI/-/blob/prompt_tuning.py)
+github.com/VQAssessment/BVQI › prompt_tuning.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/VQAssessment/BVQI/-/blob/load_features.py)
+github.com/VQAssessment/BVQI › load_features.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/VQAssessment/BVQI/-/blob/semantic_affinity.py)
+github.com/VQAssessment/BVQI › semantic_affinity.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/zhang-tao-whu/DVIS_Plus/-/blob/ov_dvis/backbones/clip.py)
+github.com/zhang-tao-whu/DVIS_Plus › clip.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/waterhorse1/ChessGPT/-/blob/eval/eval_clip/eval_multi_choice.py)
+github.com/waterhorse1/ChessGPT › eval_multi_choice.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/waterhorse1/ChessGPT/-/blob/eval/eval_clip/eval_clip_checkmate_in_one.py)
+github.com/waterhorse1/ChessGPT › eval_clip_checkmate_in_one.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/waterhorse1/ChessGPT/-/blob/chessclip/tests/util_test.py)
+github.com/waterhorse1/ChessGPT › util_test.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/waterhorse1/ChessGPT/-/blob/chessclip/tests/test_inference_simple.py)
+github.com/waterhorse1/ChessGPT › test_inference_simple.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Vinayak-VG/GSN/-/blob/tasks/segment_2d_text.py)
+github.com/Vinayak-VG/GSN › segment_2d_text.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Vinayak-VG/GSN/-/blob/feature_extractor/langfeat_extract_dtu.py)
+github.com/Vinayak-VG/GSN › langfeat_extract_dtu.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/Vinayak-VG/GSN/-/blob/feature_extractor/langfeat_extract_llff.py)
+github.com/Vinayak-VG/GSN › langfeat_extract_llff.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/OPPO-Mente-Lab/PEA-Diffusion/-/blob/train_sd_zh.py)
+github.com/OPPO-Mente-Lab/PEA-Diffusion › train_sd_zh.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/OPPO-Mente-Lab/PEA-Diffusion/-/blob/train_sdxl_zh.py)
+github.com/OPPO-Mente-Lab/PEA-Diffusion › train_sdxl_zh.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/OPPO-Mente-Lab/PEA-Diffusion/-/blob/utils/custom_dataset.py)
+github.com/OPPO-Mente-Lab/PEA-Diffusion › custom_dataset.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/OPPO-Mente-Lab/PEA-Diffusion/-/blob/utils/custom_dataset_sdxl.py)
+github.com/OPPO-Mente-Lab/PEA-Diffusion › custom_dataset_sdxl.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/OPPO-Mente-Lab/PEA-Diffusion/-/blob/tests/test_sd_zh.py)
+github.com/OPPO-Mente-Lab/PEA-Diffusion › test_sd_zh.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/OPPO-Mente-Lab/PEA-Diffusion/-/blob/tests/test_sdxl_zh.py)
+github.com/OPPO-Mente-Lab/PEA-Diffusion › test_sdxl_zh.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/OPPO-Mente-Lab/PEA-Diffusion/-/blob/tests/test_sdxl_zh_lcm.py)
+github.com/OPPO-Mente-Lab/PEA-Diffusion › test_sdxl_zh_lcm.py (0 matches)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(https://sourcegraph.com/github.com/OPPO-Mente-Lab/PEA-Diffusion/-/blob/tests/test_sdxl_zh_controlnet.py)
+github.com/OPPO-Mente-Lab/PEA-Diffusion › test_sdxl_zh_controlnet.py (0 matches)
+--------------------------------------------------------------------------------
+
