@@ -1,0 +1,589 @@
+{
+    "1": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "scripts/convert_k_upscaler_to_diffusers.py",
+                "commit_date": "2023-02-07T22:46:23Z",
+                "message_summary": "Replace flake8 with ruff and update black",
+                "update_details": "Updated tools from flake8 to ruff and black"
+            }
+        ]
+    },
+    "5": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "src/diffusers/commands/fp16_safetensors.py",
+                "commit_date": "2023-08-11T05:35:22Z",
+                "message_summary": "Remove code snippets containing `is_safetensors_available()`",
+                "removal_details": "Code snippets containing `is_safetensors_available()` were removed."
+            }
+        ]
+    },
+    "6": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "src/diffusers/commands/fp16_safetensors.py",
+                "commit_date": "2023-07-11T03:00:09Z",
+                "message_summary": "Add a CLI command to run FP16 and safetensors conversions",
+                "ptm_addition_details": {
+                    "name": "FP16 and safetensors",
+                    "version": "Not specified",
+                    "problem_addressed": "Conversion and format handling"
+                }
+            }
+        ]
+    },
+    "7": {
+        "repository": "github.com/coqui-ai/TTS",
+        "text": [
+            {
+                "repo_url": "github.com/coqui-ai/TTS",
+                "filepath": "TTS/tts/layers/bark/hubert/hubert_manager.py",
+                "commit_date": "2023-06-28T09:55:27Z",
+                "message_summary": "Inference API for \nBark (#2685)",
+                "ptm_addition_details": {
+                    "name": "Bark",
+                    "version": "Not specified",
+                    "problem_addressed": "Inference API implementation"
+                }
+            }
+        ]
+    },
+    "9": {
+        "repository": "github.com/speechbrain/speechbrain",
+        "text": [
+            {
+                "repo_url": "github.com/speechbrain/speechbrain",
+                "filepath": "speechbrain/utils/fetching.py",
+                "commit_date": "2024-01-07T20:42:33Z",
+                "message_summary": "Add wrappers for Encodec and Vocos vocoders",
+                "ptm_addition_details": {
+                    "name": "Encodec and Vocos",
+                    "version": "Huggingface",
+                    "problem_addressed": "Added wrappers for Encodec and Vocos from Huggingface"
+                }
+            },
+            {
+                "repo_url": "github.com/speechbrain/speechbrain",
+                "filepath": "speechbrain/utils/fetching.py",
+                "commit_date": "2024-01-07T20:42:33Z",
+                "message_summary": "Semantically-Aligned Multimodal Utterance-level (SAMU) pre-training",
+                "ptm_addition_details": {
+                    "name": "SAMU",
+                    "version": "Not specified",
+                    "problem_addressed": "Added SAMU pre-training model"
+                }
+            }
+        ]
+    },
+    "11": {
+        "repository": "github.com/OpenNMT/OpenNMT-py",
+        "text": [
+            {
+                "repo_url": "github.com/OpenNMT/OpenNMT-py",
+                "filepath": "tools/convert_HF.py",
+                "commit_date": "2024-01-11T17:14:14Z",
+                "message_summary": "Support for Microsoft's Phi-2 model",
+                "ptm_addition_details": {
+                    "name": "Phi-2",
+                    "version": "unknown",
+                    "problem_addressed": "not specified"
+                }
+            }
+        ]
+    },
+    "13": {
+        "repository": "github.com/neuml/txtai",
+        "text": [
+            {
+                "repo_url": "github.com/neuml/txtai",
+                "filepath": "src/python/txtai/cloud/hub.py",
+                "commit_date": "2023-02-19T18:45:52Z",
+                "message_summary": "Add huggingface-hub integration, cloud object storage support, custom cloud providers, and JSON embeddings config support.",
+                "ptm_addition_details": {
+                    "name": "huggingface-hub",
+                    "problem_addressed": "Integration with Hugging Face Hub"
+                }
+            }
+        ]
+    },
+    "17": {
+        "repository": "github.com/huggingface/text-generation-inference",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/text-generation-inference",
+                "filepath": "server/text_generation_server/utils/hub.py",
+                "commit_date": "2023-12-20T14:37:14Z",
+                "message_summary": "Peft safetensors.",
+                "ptm_addition_details": {
+                    "name": "adapter_model.safetensors",
+                    "version": "N/A",
+                    "problem_addressed": "Detection issue"
+                }
+            }
+        ]
+    },
+    "24": {
+        "repository": "github.com/huggingface/text-generation-inference",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/text-generation-inference",
+                "filepath": "server/text_generation_server/utils/hub.py",
+                "commit_date": "2023-04-11T17:16:41Z",
+                "message_summary": "Added support for OPT models",
+                "ptm_addition_details": {
+                    "name": "OPT models",
+                    "version": "not specified",
+                    "problem_addressed": "Support for models without `tokenizer.json` file on the hub"
+                }
+            }
+        ]
+    },
+    "25": {
+        "repository": "github.com/OpenNMT/OpenNMT-py",
+        "text": [
+            {
+                "repo_url": "github.com/OpenNMT/OpenNMT-py",
+                "filepath": "tools/convert_HF_llamalike.py",
+                "commit_date": "2023-12-29T15:48:17Z",
+                "message_summary": "Removed llm-awq dependency and added awq mixtral conversion from HF hub",
+                "removal_details": "Conflict with autoawq"
+            }
+        ]
+    },
+    "26": {
+        "repository": "github.com/OpenNMT/OpenNMT-py",
+        "text": [
+            {
+                "repo_url": "github.com/OpenNMT/OpenNMT-py",
+                "filepath": "tools/convert_HF_llamalike.py",
+                "commit_date": "2023-12-26T10:08:55Z",
+                "message_summary": "Use flash_attn_with_kvcache for faster inference",
+                "ptm_addition_details": {
+                    "name": "flash_attn_with_kvcache",
+                    "version": "not specified",
+                    "problem_addressed": "faster inference"
+                }
+            }
+        ]
+    },
+    "27": {
+        "repository": "github.com/OpenNMT/OpenNMT-py",
+        "text": [
+            {
+                "repo_url": "github.com/OpenNMT/OpenNMT-py",
+                "filepath": "tools/convert_HF_llamalike.py",
+                "commit_date": "2023-12-14T13:00:55Z",
+                "message_summary": "Extend llamalike-converter",
+                "ptm_addition_details": {
+                    "name": "llamalike-converter",
+                    "version": "extended",
+                    "problem_addressed": "various cases added"
+                }
+            }
+        ]
+    },
+    "28": {
+        "repository": "github.com/OpenNMT/OpenNMT-py",
+        "text": [
+            {
+                "repo_url": "github.com/OpenNMT/OpenNMT-py",
+                "filepath": "tools/convert_HF_llamalike.py",
+                "commit_date": "2023-12-04T10:51:41Z",
+                "message_summary": "Distributed inference of 70B awq model",
+                "ptm_addition_details": {
+                    "name": "70B awq model",
+                    "version": "not specified",
+                    "problem_addressed": "not specified"
+                }
+            }
+        ]
+    },
+    "30": {
+        "repository": "github.com/OpenNMT/OpenNMT-py",
+        "text": [
+            {
+                "repo_url": "github.com/OpenNMT/OpenNMT-py",
+                "filepath": "tools/convert_HF_llamalike.py",
+                "commit_date": "2023-11-23T14:02:03Z",
+                "message_summary": "Added support for 4-bit quantization",
+                "ptm_addition_details": {
+                    "name": "AutoAWQ",
+                    "version": "unknown",
+                    "problem_addressed": "4-bit quantization"
+                }
+            }
+        ]
+    },
+    "32": {
+        "repository": "github.com/marqo-ai/marqo",
+        "text": [
+            {
+                "repo_url": "github.com/marqo-ai/marqo",
+                "filepath": "src/marqo/s2_inference/processing/yolox_utils.py",
+                "commit_date": "2022-12-13T22:45:12Z",
+                "message_summary": "Visual search update release",
+                "ptm_addition_details": {
+                    "name": "YOLOX",
+                    "version": "latest",
+                    "problem_addressed": "Object detection and visual search"
+                }
+            },
+            {
+                "repo_url": "github.com/marqo-ai/marqo",
+                "filepath": "src/marqo/s2_inference/processing/yolox_utils.py",
+                "commit_date": "2022-12-13T22:45:12Z",
+                "message_summary": "Update to use YOLOX model",
+                "update_details": "Update YOLOX model cache, add logging, fix model caching and device selection, add attention-based bounding box generation, refactor for attention-based ViT for bounding box determination, create DINO specific utils file for ViT attention, update YOLOX utils to download the proper model, add YOLOX specific tests, update requirements and setup to the latest version, bump model version, clean up, add example and app, update file locations, update demo, improve error handling, update tests, remove models, clean up doc strings and formatting, update function names, pin tox CI, set MQ_API_TEST_BRANCH to current branch, move to headless OpenCV, fix PR feedback, add more descriptions in docstrings, use literal type, make names more descriptive, change logging level to debug for some messages"
+            }
+        ]
+    },
+    "46": {
+        "repository": "github.com/deforum-art/sd-webui-deforum",
+        "text": [
+            {
+                "repo_url": "github.com/deforum-art/sd-webui-deforum",
+                "filepath": "scripts/deforum_helpers/vid2depth.py",
+                "commit_date": "2023-02-14T10:43:15Z",
+                "message_summary": "Added vid2depth model",
+                "ptm_addition_details": {
+                    "name": "vid2depth",
+                    "version": "not specified",
+                    "problem_addressed": "not specified"
+                }
+            }
+        ]
+    },
+    "47": {
+        "repository": "github.com/argilla-io/argilla",
+        "text": [
+            {
+                "repo_url": "github.com/argilla-io/argilla",
+                "filepath": "src/argilla/client/feedback/integrations/huggingface/dataset.py",
+                "commit_date": "2023-11-11T14:38:10Z",
+                "message_summary": "Fixed safer dump of `vectors` in the HuggingFace Hub",
+                "ptm_addition_details": {
+                    "name": "HuggingFace Hub",
+                    "version": "not specified",
+                    "problem_addressed": "Naming conflicts in dataset columns"
+                }
+            }
+        ]
+    },
+    "48": {
+        "repository": "github.com/argilla-io/argilla",
+        "text": [
+            {
+                "repo_url": "github.com/argilla-io/argilla",
+                "filepath": "src/argilla/client/feedback/integrations/huggingface/dataset.py",
+                "commit_date": "2023-11-07T13:57:32Z",
+                "message_summary": "Added feature: Similarity search in Feedback Datasets",
+                "ptm_addition_details": {
+                    "name": "Hugging Face",
+                    "version": "latest",
+                    "problem_addressed": "Similarity search in Feedback Datasets"
+                }
+            }
+        ]
+    },
+    "49": {
+        "repository": "github.com/argilla-io/argilla",
+        "text": [
+            {
+                "repo_url": "github.com/argilla-io/argilla",
+                "filepath": "src/argilla/client/feedback/integrations/huggingface/dataset.py",
+                "commit_date": "2023-11-07T08:30:58Z",
+                "message_summary": "Implement status bar with tqdm when parsing records in from_huggingface",
+                "ptm_addition_details": {
+                    "name": "Hugging Face",
+                    "version": "not specified",
+                    "problem_addressed": "Progress bar implementation for records parsing"
+                }
+            }
+        ]
+    },
+    "50": {
+        "repository": "github.com/argilla-io/argilla",
+        "text": [
+            {
+                "repo_url": "github.com/argilla-io/argilla",
+                "filepath": "src/argilla/client/feedback/integrations/huggingface/dataset.py",
+                "commit_date": "2023-11-06T17:03:36Z",
+                "message_summary": "Add metadata properties to dataset card",
+                "ptm_addition_details": {
+                    "name": "Hugging Face Hub",
+                    "version": "not specified",
+                    "problem_addressed": "Adding metadata properties to FeedbackDataset"
+                }
+            }
+        ]
+    },
+    "51": {
+        "repository": "github.com/argilla-io/argilla",
+        "text": [
+            {
+                "repo_url": "github.com/argilla-io/argilla",
+                "filepath": "src/argilla/client/feedback/integrations/huggingface/dataset.py",
+                "commit_date": "2023-10-25T14:12:04Z",
+                "message_summary": "Added loading the Text Descriptives Metadata dataset from Hugging Face",
+                "ptm_addition_details": {
+                    "name": "Text Descriptives Metadata",
+                    "problem_addressed": "Dataset loading"
+                }
+            }
+        ]
+    },
+    "58": {
+        "repository": "github.com/argilla-io/argilla",
+        "text": [
+            {
+                "repo_url": "github.com/argilla-io/argilla",
+                "filepath": "src/argilla/client/feedback/integrations/huggingface/dataset.py",
+                "commit_date": "2023-08-21T17:16:10Z",
+                "message_summary": "Refactored code by moving `AllowedFieldTypes` and `AllowedQuestionTypes` to `argilla/client/feedback/schemas/types.py`",
+                "tasks": [
+                    "Refactor"
+                ],
+                "update_details": "Moved `AllowedFieldTypes` and `AllowedQuestionTypes` from `argilla/client/feedback/types.py` to `argilla/client/feedback/schemas/types.py`"
+            }
+        ]
+    },
+    "61": {
+        "repository": "github.com/argilla-io/argilla",
+        "text": [
+            {
+                "repo_url": "github.com/argilla-io/argilla",
+                "filepath": "src/argilla/client/feedback/integrations/huggingface/dataset.py",
+                "commit_date": "2023-07-16T06:20:40Z",
+                "message_summary": "Added `RankingQuestionStrategy` and `RankingQuestionUnification` for `RankingQuestion` support in the `.for_text_classification` method for the `TrainingTaskMapping`",
+                "ptm_addition_details": {
+                    "name": "Hugging Face",
+                    "version": "not specified",
+                    "problem_addressed": "Support for RankingQuestion in text classification"
+                }
+            }
+        ]
+    },
+    "62": {
+        "repository": "github.com/argilla-io/argilla",
+        "text": [
+            {
+                "repo_url": "github.com/argilla-io/argilla",
+                "filepath": "src/argilla/client/feedback/integrations/huggingface/dataset.py",
+                "commit_date": "2023-07-14T13:40:09Z",
+                "message_summary": "Fixing bug by adding `DeprecatedDatasetConfig` for backwards compatibility and improving warnings",
+                "ptm_addition_details": {
+                    "name": "HuggingFace",
+                    "version": "N/A",
+                    "problem_addressed": "Bug fix and warning message improvement"
+                }
+            }
+        ]
+    },
+    "66": {
+        "repository": "github.com/argilla-io/argilla",
+        "text": [
+            {
+                "repo_url": "github.com/argilla-io/argilla",
+                "filepath": "src/argilla/client/feedback/integrations/huggingface/dataset.py",
+                "commit_date": "2023-07-04T12:10:53Z",
+                "message_summary": "Refactored and added `HuggingFaceDatasetMixIn` under `integrations`",
+                "ptm_addition_details": {
+                    "name": "Datasets",
+                    "problem_addressed": "Integration with HuggingFace Hub"
+                }
+            }
+        ]
+    },
+    "67": {
+        "repository": "github.com/asteroid-team/asteroid",
+        "text": [
+            {
+                "repo_url": "github.com/asteroid-team/asteroid",
+                "filepath": "asteroid/utils/hub_utils.py",
+                "commit_date": "2023-05-21T10:58:05Z",
+                "message_summary": "Add a new pre-trained model (X-UMXL)",
+                "ptm_addition_details": {
+                    "name": "X-UMXL",
+                    "version": "unknown",
+                    "problem_addressed": "unknown"
+                }
+            }
+        ]
+    },
+    "68": {
+        "repository": "github.com/asteroid-team/asteroid",
+        "text": [
+            {
+                "repo_url": "github.com/asteroid-team/asteroid",
+                "filepath": "asteroid/utils/hub_utils.py",
+                "commit_date": "2022-10-24T15:54:12Z",
+                "message_summary": "Upgrade deprecated huggingface_hub.cached_download",
+                "update_details": "Replace huggingface_hub.cached_download with huggingface_hub.hf_hub_download. Reintroduce cache_dir"
+            }
+        ]
+    },
+    "71": {
+        "repository": "github.com/asteroid-team/asteroid",
+        "text": [
+            {
+                "repo_url": "github.com/asteroid-team/asteroid",
+                "filepath": "asteroid/utils/hub_utils.py",
+                "commit_date": "2021-02-13T09:59:29Z",
+                "message_summary": "Use huggingface_hub dependencies and remove inlined HF code",
+                "removal_details": "Inlined HF code removed"
+            }
+        ]
+    },
+    "74": {
+        "repository": "github.com/asteroid-team/asteroid",
+        "text": [
+            {
+                "repo_url": "github.com/asteroid-team/asteroid",
+                "filepath": "asteroid/utils/hub_utils.py",
+                "commit_date": "2020-12-07T17:56:12Z",
+                "message_summary": "Support for huggingface model hub",
+                "ptm_addition_details": {
+                    "name": "huggingface",
+                    "version": "not specified",
+                    "problem_addressed": "Model hub support"
+                }
+            }
+        ]
+    },
+    "79": {
+        "repository": "github.com/asteroid-team/asteroid",
+        "text": [
+            {
+                "repo_url": "github.com/asteroid-team/asteroid",
+                "filepath": "asteroid/utils/hub_utils.py",
+                "commit_date": "2020-09-25T11:00:02Z",
+                "message_summary": "Add tmirzaev's model in the string-retrievable ones.",
+                "ptm_addition_details": {
+                    "name": "tmirzaev's model"
+                }
+            }
+        ]
+    },
+    "81": {
+        "repository": "github.com/asteroid-team/asteroid",
+        "text": [
+            {
+                "repo_url": "github.com/asteroid-team/asteroid",
+                "filepath": "asteroid/utils/hub_utils.py",
+                "commit_date": "2020-08-21T14:49:32Z",
+                "message_summary": "Add groadabike's pretrained model's URL",
+                "ptm_addition_details": {
+                    "name": "groadabike",
+                    "version": "unknown",
+                    "problem_addressed": "unknown"
+                }
+            }
+        ]
+    },
+    "84": {
+        "repository": "github.com/asteroid-team/asteroid",
+        "text": [
+            {
+                "repo_url": "github.com/asteroid-team/asteroid",
+                "filepath": "asteroid/utils/hub_utils.py",
+                "commit_date": "2020-08-10T12:38:36Z",
+                "message_summary": "Add Brij's LibriMix enhancement model",
+                "ptm_addition_details": {
+                    "name": "Brij's LibriMix enhancement model"
+                }
+            }
+        ]
+    },
+    "97": {
+        "repository": "github.com/kssteven418/BigLittleDecoder",
+        "text": [
+            {
+                "repo_url": "github.com/kssteven418/BigLittleDecoder",
+                "filepath": "src/transformers/utils/hub.py",
+                "commit_date": "2022-09-29T12:58:39Z",
+                "message_summary": "Update huggingface_hub to 0.10.0",
+                "update_details": "Updated huggingface_hub to version 0.10.0"
+            }
+        ]
+    },
+    "109": {
+        "repository": "github.com/kssteven418/BigLittleDecoder",
+        "text": [
+            {
+                "repo_url": "github.com/kssteven418/BigLittleDecoder",
+                "filepath": "src/transformers/utils/hub.py",
+                "commit_date": "2022-08-06T07:42:55Z",
+                "message_summary": "Update CLI commands from `transformers-cli` to `huggingface-cli`",
+                "update_details": "CLI commands updated from `transformers-cli` to `huggingface-cli`"
+            }
+        ]
+    },
+    "113": {
+        "repository": "github.com/kssteven418/BigLittleDecoder",
+        "text": [
+            {
+                "repo_url": "github.com/kssteven418/BigLittleDecoder",
+                "filepath": "src/transformers/utils/hub.py",
+                "commit_date": "2022-08-05T14:12:40Z",
+                "message_summary": "Use new huggingface_hub tools for download models",
+                "ptm_addition_details": {
+                    "name": "huggingface_hub",
+                    "version": "latest",
+                    "problem_addressed": "Downloading models efficiently"
+                }
+            }
+        ]
+    },
+    "121": {
+        "repository": "github.com/kssteven418/BigLittleDecoder",
+        "text": [
+            {
+                "repo_url": "github.com/kssteven418/BigLittleDecoder",
+                "filepath": "src/transformers/utils/hub.py",
+                "commit_date": "2022-06-21T15:51:18Z",
+                "message_summary": "Prepare transformers for v0.8.0 huggingface-hub release",
+                "ptm_addition_details": {
+                    "name": "transformers",
+                    "version": "v0.8.0",
+                    "problem_addressed": "Preparing for huggingface-hub release"
+                }
+            }
+        ]
+    },
+    "132": {
+        "repository": "github.com/cure-lab/MagicDrive",
+        "text": [
+            {
+                "repo_url": "github.com/cure-lab/MagicDrive",
+                "filepath": "third_party/diffusers/scripts/convert_k_upscaler_to_diffusers.py",
+                "commit_date": "2024-01-25T06:28:16Z",
+                "message_summary": "Setup third-party to track changes",
+                "ptm_addition_details": {
+                    "name": "diffusers",
+                    "version": "v0.17.1",
+                    "problem_addressed": "N/A"
+                },
+                "update_details": "xformers updated to v0.0.19 (8bf59c9)"
+            }
+        ]
+    },
+    "155": {
+        "repository": "github.com/cedrickchee/transformers-llama",
+        "text": [
+            {
+                "repo_url": "github.com/cedrickchee/transformers-llama",
+                "filepath": "src/transformers/utils/hub.py",
+                "commit_date": "2022-09-29T12:58:39Z",
+                "message_summary": "Update to huggingface_hub 0.10.0",
+                "update_details": "bump huggingface_hub to 0.10.0 + make deps_table_update"
+            }
+        ]
+    }
+}

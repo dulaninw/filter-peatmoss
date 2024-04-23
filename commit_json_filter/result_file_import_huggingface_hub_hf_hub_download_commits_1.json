@@ -1,0 +1,998 @@
+[
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2024-02-16T07:16:58Z",
+        "message": "Update all references to canonical models (#29001)\n\n* Script & Manual edition\n\n* Update"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2024-02-06T17:45:20Z",
+        "message": "Explicit server error on gated model (#28894)"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2024-01-26T16:25:08Z",
+        "message": "fix: suppress `GatedRepoError` to use cache file (fix #28558). (#28566)\n\n* fix: suppress `GatedRepoError` to use cache file (fix #28558).\n\n* move condition_to_return parameter back to outside."
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2024-01-15T13:48:07Z",
+        "message": "[`core`/ FEAT] Add the possibility to push custom tags using `PreTrainedModel` itself (#28405)\n\n* v1 tags\n\n* remove unneeded conversion\n\n* v2\n\n* rm unneeded warning\n\n* add more utility methods\n\n* Update src/transformers/utils/hub.py\n\nCo-authored-by: amyeroberts <22614925+amyeroberts@users.noreply.github.com>\n\n* Update src/transformers/utils/hub.py\n\nCo-authored-by: Lucain <lucainp@gmail.com>\n\n* Update src/transformers/utils/hub.py\n\nCo-authored-by: Lucain <lucainp@gmail.com>\n\n* more enhancements\n\n* oops\n\n* merge tags\n\n* clean up\n\n* revert unneeded change\n\n* add extensive docs\n\n* more docs\n\n* more kwargs\n\n* add test\n\n* oops\n\n* fix test\n\n* Update src/transformers/modeling_utils.py\n\nCo-authored-by: Omar Sanseviero <osanseviero@gmail.com>\n\n* Update src/transformers/utils/hub.py\n\nCo-authored-by: Lucain <lucainp@gmail.com>\n\n* Update src/transformers/modeling_utils.py\n\n* Update src/transformers/trainer.py\n\nCo-authored-by: amyeroberts <22614925+amyeroberts@users.noreply.github.com>\n\n* Update src/transformers/modeling_utils.py\n\nCo-authored-by: amyeroberts <22614925+amyeroberts@users.noreply.github.com>\n\n* add more conditions\n\n* more logic\n\n---------\n\nCo-authored-by: amyeroberts <22614925+amyeroberts@users.noreply.github.com>\nCo-authored-by: Lucain <lucainp@gmail.com>\nCo-authored-by: Omar Sanseviero <osanseviero@gmail.com>"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2023-12-18T15:18:01Z",
+        "message": "Remove warning if `DISABLE_TELEMETRY` is used (#28113)\n\nremove warning if DISABLE_TELEMETRY is used"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2023-11-24T11:24:04Z",
+        "message": "Fix typo in warning message (#27055)\n\n* Fix typo in warning message\n\nThe path of `default_cache_path` is hf_cache_home/hub. There is no\ndirectory named transformers under hf_cache_home\n\n* Fix a typo in comment\n\n* Update the version number\n\nv4.22.0 is the earlist version that contains those changes in PR #18492"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2023-11-21T17:36:26Z",
+        "message": "Harmonize HF environment variables + other cleaning (#27564)\n\n* Harmonize HF environment variables + other cleaning\n\n* backward compat\n\n* switch from HUGGINGFACE_HUB_CACHE to HF_HUB_CACHE\n\n* revert"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2023-11-15T13:10:39Z",
+        "message": "[ `PretrainedConfig`] Improve messaging  (#27438)\n\n* import hf error\n\n* nits\n\n* fixup\n\n* catch the error at the correct place\n\n* style\n\n* improve message a tiny bit\n\n* Update src/transformers/utils/hub.py\n\nCo-authored-by: Lucain <lucainp@gmail.com>\n\n* add a test\n\n---------\n\nCo-authored-by: Lucain <lucainp@gmail.com>"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2023-10-31T18:16:49Z",
+        "message": "Safetensors serialization by default (#27064)\n\n* Safetensors serialization by default\n\n* First pass on the tests\n\n* Second pass on the tests\n\n* Third pass on the tests\n\n* Fix TF weight loading from TF-format safetensors\n\n* Specific encoder-decoder fixes for weight crossloading\n\n* Add VisionEncoderDecoder fixes for TF too\n\n* Change filename test for pt-to-tf\n\n* One missing fix for TFVisionEncoderDecoder\n\n* Fix the other crossload test\n\n* Support for flax + updated tests\n\n* Apply suggestions from code review\n\nCo-authored-by: Sanchit Gandhi <93869735+sanchit-gandhi@users.noreply.github.com>\n\n* Sanchit's comments\n\n* Sanchit's comments 2\n\n* Nico's comments\n\n* Fix tests\n\n* cleanup\n\n* Apply suggestions from code review\n\nCo-authored-by: amyeroberts <22614925+amyeroberts@users.noreply.github.com>\n\n---------\n\nCo-authored-by: Matt <rocketknight1@gmail.com>\nCo-authored-by: Sanchit Gandhi <93869735+sanchit-gandhi@users.noreply.github.com>\nCo-authored-by: amyeroberts <22614925+amyeroberts@users.noreply.github.com>"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2023-10-27T12:32:54Z",
+        "message": "Provide alternative when warning on use_auth_token (#27105)"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2023-10-26T10:37:09Z",
+        "message": "Add-support for commit description (#26704)\n\n* fix\n\n* update\n\n* revert\n\n* add dosctring\n\n* good to go\n\n* update\n\n* add a test"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2023-10-23T12:25:48Z",
+        "message": "Change default `max_shard_size` to smaller value (#26942)\n\n* Update modeling_utils.py\n\n* fixup\n\n* let's change it to 5GB\n\n* fix"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2023-08-22T05:55:35Z",
+        "message": "Support specifying revision in push_to_hub (#25578)\n\nSupport revision in push_to_hub"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2023-08-07T15:47:22Z",
+        "message": "Migrate Trainer from `Repository` to `upload_folder` (#25095)\n\n* First draft\n\n* Deal with progress bars\n\n* Update src/transformers/utils/hub.py\n\nCo-authored-by: Lucain <lucainp@gmail.com>\n\n* Address review comments\n\n* Forgot one\n\n* Pin hf_hub\n\n* Add argument for push all and fix tests\n\n* Fix tests\n\n* Address review comments\n\n---------\n\nCo-authored-by: Lucain <lucainp@gmail.com>"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2023-07-28T09:40:08Z",
+        "message": "Fix `.push_to_hub` and cleanup `get_full_repo_name` usage (#25120)\n\n* Fix .push_to_hub and cleanup get_full_repo_name usage\n\n* Do not rely on Python bool conversion magic\n\n* request changes"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2023-07-26T13:09:59Z",
+        "message": "update `use_auth_token` -> `token` (#25083)\n\n* update\n\n---------\n\nCo-authored-by: ydshieh <ydshieh@users.noreply.github.com>"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2023-07-24T13:12:39Z",
+        "message": "Support GatedRepoError + use raise from (#25034)\n\n* Support GatedRepoError + use raise from\n\n* Apply suggestions from code review\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\n\n* Use token instead of use_auth_token in error messages\n\n---------\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2023-06-12T12:51:09Z",
+        "message": "Fix push to hub (#24187)\n\nAdd fix"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2023-06-07T13:07:33Z",
+        "message": "[`Hub`] Add `safe_serialization` in push_to_hub (#24074)\n\nadd `safe_serialization` in push_to_hub"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2023-05-31T19:31:28Z",
+        "message": "[PushToHub] Make it possible to upload folders (#23920)\n\nAdd first draft"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2023-05-16T10:10:54Z",
+        "message": "Use `mkstemp` to replace deprecated `mktemp` (#23372)\n\n* Use `mkstemp` to replace deprecated `mktemp`\n\nThe `tempfile.mktemp` function is [deprecated](https://docs.python.org/3/library/tempfile.html#tempfile.mktemp) due to [security issues](https://cwe.mitre.org/data/definitions/377.html).\n\n* Update src/transformers/utils/hub.py\n\nCo-authored-by: amyeroberts <22614925+amyeroberts@users.noreply.github.com>\n\n---------\n\nCo-authored-by: amyeroberts <22614925+amyeroberts@users.noreply.github.com>"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2023-05-10T00:37:57Z",
+        "message": "Test composition (#23214)\n\n* Remove nestedness in tool config\n\n* Really do it\n\n* Use remote tools descriptions\n\n* Work\n\n* Clean up eval\n\n* Changes\n\n* Tools\n\n* Tools\n\n* tool\n\n* Fix everything\n\n* Use last result/assign for evaluation\n\n* Prompt\n\n* Remove hardcoded selection\n\n* Evaluation for chat agents\n\n* correct some spelling\n\n* Small fixes\n\n* Change summarization model (#23172)\n\n* Fix link displayed\n\n* Update description of the tool\n\n* Fixes in chat prompt\n\n* Custom tools, custom prompt\n\n* Tool clean up\n\n* save_pretrained and push_to_hub for tool\n\n* Fix init\n\n* Tests\n\n* Fix tests\n\n* Tool save/from_hub/push_to_hub and tool->load_tool\n\n* Clean push_to_hub and add app file\n\n* Custom inference API for endpoints too\n\n* Clean up\n\n* old remote tool and new remote tool\n\n* Make a requirements\n\n* return_code adds tool creation\n\n* Avoid redundancy between global variables\n\n* Remote tools can be loaded\n\n* Tests\n\n* Text summarization tests\n\n* Quality\n\n* Properly mark tests\n\n* Test the python interpreter\n\n* And the CI shall be green.\n\n* fix loading of additional tools\n\n* Work on RemoteTool and fix tests\n\n* General clean up\n\n* Guard imports\n\n* Fix tools\n\n* docs: Fix broken link in 'How to add a model...'  (#23216)\n\nfix link\n\n* Get default endpoint from the Hub\n\n* Add guide\n\n* Simplify tool config\n\n* Docs\n\n* Some fixes\n\n* Docs\n\n* Docs\n\n* Docs\n\n* Fix code returned by agent\n\n* Try this\n\n* Match args with signature in remote tool\n\n* Should fix python interpreter for Python 3.8\n\n* Fix push_to_hub for tools\n\n* Other fixes to push_to_hub\n\n* Add API doc page\n\n* Docs\n\n* Docs\n\n* Custom tools\n\n* Pin tensorflow-probability (#23220)\n\n* Pin tensorflow-probability\n\n* [all-test]\n\n* [all-test] Fix syntax for bash\n\n* PoC for some chaining API\n\n* Text to speech\n\n* J'ai pris des libert\u00e9s\n\n* Rename\n\n* Basic python interpreter\n\n* Add agents\n\n* Quality\n\n* Add translation tool\n\n* temp\n\n* GenQA + LID + S2T\n\n* Quality + word missing in translation\n\n* Add open assistance, support f-strings in evaluate\n\n* captioning + s2t fixes\n\n* Style\n\n* Refactor descriptions and remove chain\n\n* Support errors and rename OpenAssistantAgent\n\n* Add setup\n\n* Deal with typos + example of inference API\n\n* Some rename + README\n\n* Fixes\n\n* Update prompt\n\n* Unwanted change\n\n* Make sure everyone has a default\n\n* One prompt to rule them all.\n\n* SD\n\n* Description\n\n* Clean up remote tools\n\n* More remote tools\n\n* Add option to return code and update doc\n\n* Image segmentation\n\n* ControlNet\n\n* Gradio demo\n\n* Diffusers protection\n\n* Lib protection\n\n* ControlNet description\n\n* Cleanup\n\n* Style\n\n* Remove accelerate and try to be reproducible\n\n* No randomness\n\n* Male Basic optional in token\n\n* Clean description\n\n* Better prompts\n\n* Fix args eval in interpreter\n\n* Add tool wrapper\n\n* Tool on the Hub\n\n* Style post-rebase\n\n* Big refactor of descriptions, batch generation and evaluation for agents\n\n* Make problems easier - interface to debug\n\n* More problems, add python primitives\n\n* Back to one prompt\n\n* Remove dict for translation\n\n* Be consistent\n\n* Add prompts\n\n* New version of the agent\n\n* Evaluate new agents\n\n* New endpoints agents\n\n* Make all tools a dict variable\n\n* Typo\n\n* Add problems\n\n* Add to big prompt\n\n* Harmonize\n\n* Add tools\n\n* New evaluation\n\n* Add more tools\n\n* Build prompt with tools descriptions\n\n* Tools on the Hub\n\n* Let's chat!\n\n* Cleanup\n\n* Temporary bs4 safeguard\n\n* Cache agents and clean up\n\n* Blank init\n\n* Fix evaluation for agents\n\n* New format for tools on the Hub\n\n* Add method to reset state\n\n* Remove nestedness in tool config\n\n* Really do it\n\n* Use remote tools descriptions\n\n* Work\n\n* Clean up eval\n\n* Changes\n\n* Tools\n\n* Tools\n\n* tool\n\n* Fix everything\n\n* Use last result/assign for evaluation\n\n* Prompt\n\n* Remove hardcoded selection\n\n* Evaluation for chat agents\n\n* correct some spelling\n\n* Small fixes\n\n* Change summarization model (#23172)\n\n* Fix link displayed\n\n* Update description of the tool\n\n* Fixes in chat prompt\n\n* Custom tools, custom prompt\n\n* Tool clean up\n\n* save_pretrained and push_to_hub for tool\n\n* Fix init\n\n* Tests\n\n* Fix tests\n\n* Tool save/from_hub/push_to_hub and tool->load_tool\n\n* Clean push_to_hub and add app file\n\n* Custom inference API for endpoints too\n\n* Clean up\n\n* old remote tool and new remote tool\n\n* Make a requirements\n\n* return_code adds tool creation\n\n* Avoid redundancy between global variables\n\n* Remote tools can be loaded\n\n* Tests\n\n* Text summarization tests\n\n* Quality\n\n* Properly mark tests\n\n* Test the python interpreter\n\n* And the CI shall be green.\n\n* Work on RemoteTool and fix tests\n\n* fix loading of additional tools\n\n* General clean up\n\n* Guard imports\n\n* Fix tools\n\n* Get default endpoint from the Hub\n\n* Simplify tool config\n\n* Add guide\n\n* Docs\n\n* Some fixes\n\n* Docs\n\n* Docs\n\n* Fix code returned by agent\n\n* Try this\n\n* Docs\n\n* Match args with signature in remote tool\n\n* Should fix python interpreter for Python 3.8\n\n* Fix push_to_hub for tools\n\n* Other fixes to push_to_hub\n\n* Add API doc page\n\n* Fixes\n\n* Doc fixes\n\n* Docs\n\n* Fix audio\n\n* Custom tools\n\n* Audio fix\n\n* Improve custom tools docstring\n\n* Docstrings\n\n* Trigger CI\n\n* Mode docstrings\n\n* More docstrings\n\n* Improve custom tools\n\n* Fix for remote tools\n\n* Style\n\n* Fix repo consistency\n\n* Quality\n\n* Tip\n\n* Cleanup on doc\n\n* Cleanup toc\n\n* Add disclaimer for starcoder vs openai\n\n* Remove disclaimer\n\n* Small fixed in the prompts\n\n* 4.29\n\n* Update src/transformers/tools/agents.py\n\nCo-authored-by: Lysandre Debut <lysandre.debut@reseau.eseo.fr>\n\n* Complete documentation\n\n* Small fixes\n\n* Agent evaluation\n\n* Note about gradio-tools & LC\n\n* Clean up agents and prompt\n\n* Apply suggestions from code review\n\nCo-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>\n\n* Apply suggestions from code review\n\nCo-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>\n\n* Note about gradio-tools & LC\n\n* Add copyrights and address review comments\n\n* Quality\n\n* Add all language codes\n\n* Add remote tool tests\n\n* Move custom prompts to other docs\n\n* Apply suggestions from code review\n\nCo-authored-by: amyeroberts <22614925+amyeroberts@users.noreply.github.com>\n\n* TTS tests\n\n* Quality\n\n---------\n\nCo-authored-by: Lysandre <hi@lyand.re>\nCo-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>\nCo-authored-by: Philipp Schmid <32632186+philschmid@users.noreply.github.com>\nCo-authored-by: Connor Henderson <connor.henderson@talkiatry.com>\nCo-authored-by: Lysandre <lysandre.debut@reseau.eseo.fr>\nCo-authored-by: Lysandre <lysandre@huggingface.co>\nCo-authored-by: amyeroberts <22614925+amyeroberts@users.noreply.github.com>"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2023-03-29T13:46:30Z",
+        "message": "Don't hard error when cache version can't be converted to int (#22427)"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2023-03-09T21:58:03Z",
+        "message": "Add a progress bar for the total download of shards (#22062)\n\n* Add a progress bar for the total download of shards\n\n* Check for no cache at all\n\n* Fix check"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2023-03-02T08:45:42Z",
+        "message": "[Refactor] Relative imports wherever we can (#21880)\n\n* initial commit\n\n* update\n\n* second batch\n\n* style\n\n* fix imports\n\n* fix relative import on pipeline"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2023-02-06T23:10:56Z",
+        "message": "Update quality tooling for formatting (#21480)\n\n* Result of black 23.1\n\n* Update target to Python 3.7\n\n* Switch flake8 to ruff\n\n* Configure isort\n\n* Configure isort\n\n* Apply isort with line limit\n\n* Put the right black version\n\n* adapt black in check copies\n\n* Fix copies"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2023-01-27T17:09:49Z",
+        "message": "Little cleanup: let huggingface_hub manage token retrieval (#21333)\n\n* Let huggingface_hub manage token retrieval\n\n* flake8\n\n* code quality\n\n* adapt in every PushToHubMixin children\n\n* add explicit return type"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2023-01-24T15:37:10Z",
+        "message": "Use `logger.info` instead of `print` to emit a logging message in `hub.py` (#21273)\n\nuse logger.info() instead of print() to emit a debug message"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2022-11-28T15:35:52Z",
+        "message": "Safetensors offload (#20321)\n\n* INtegrate safetensos in weight offloading\n\n* Use safetensors checkpoint for offload when available\n\n* Make naming consistent\n\n* Make load faster\n\n* Quality\n\n* Add default"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2022-10-19T14:55:57Z",
+        "message": "Fix cache version file creation (#19750)"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2022-10-10T13:19:33Z",
+        "message": "Stop relying on huggingface_hub's private methods (#19392)\n\n* Leverage hfh for move cache\n\n* Style"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2022-09-30T19:13:39Z",
+        "message": "Fix cached lookup filepath on windows for hub (#19178)\n\n* Update hub.py commit_hash extraction\n\nAdd safety mechanism for windows systems to unify logic (replace double backslashes with /)\n\n* Fix string quotetype\n\n* Aaaa circleci is messing with me.\n\n* Switch to using as_posix() method from pathlib\n\n* Update src/transformers/utils/hub.py\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\n\n* Update src/transformers/utils/hub.py\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2022-09-29T12:58:39Z",
+        "message": "Use `hf_raise_for_status` instead of deprecated `_raise_for_status` (#19244)\n\n* Use  instead of  from huggingface_hub\n\n* bump huggingface_hub to 0.10.0 + make deps_table_update"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2022-09-26T22:01:00Z",
+        "message": "Fix cached_file in offline mode for cached non-existing files (#19206)\n\n* Fix cached_file in offline mode for cached non-existing files\n\n* Add tests\n\n* Test with offline mode"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2022-09-19T19:27:18Z",
+        "message": "Don't warn of move if cache is empty (#19109)"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2022-09-15T13:39:59Z",
+        "message": "Move cache: expand error message (#19051)"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2022-09-13T17:11:24Z",
+        "message": "Re-add support for single url files in objects download (#19014)"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2022-09-12T16:09:37Z",
+        "message": "Align try_to_load_from_cache with huggingface_hub (#18966)\n\n* Align try_to_load_from_cache with huggingface_hub\n\n* Fix tests"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2022-09-06T16:34:37Z",
+        "message": "Further reduce the number of alls to head for cached objects (#18871)\n\n* Further reduce the number of alls to head for cached models/tokenizers/pipelines\n\n* Fix tests\n\n* Address review comments"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2022-09-02T14:30:06Z",
+        "message": "Clean up utils.hub using the latest from hf_hub (#18857)\n\n* Clean up utils.hub using the latest from hf_hub\n\n* Adapt test\n\n* Address review comment\n\n* Fix test"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2022-08-10T19:46:03Z",
+        "message": "Properly move cache when it is not in default path (#18563)"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2022-08-10T15:55:18Z",
+        "message": "Use commit hash to look in cache instead of calling head (#18534)\n\n* Use commit hash to look in cache instead of calling head\n\n* Add tests\n\n* Add attr for local configs too\n\n* Stupid typos\n\n* Fix tests\n\n* Update src/transformers/utils/hub.py\n\nCo-authored-by: Julien Chaumond <julien@huggingface.co>\n\n* Address Julien's comments\n\nCo-authored-by: Julien Chaumond <julien@huggingface.co>"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2022-08-08T14:22:27Z",
+        "message": "New cache fixes: add safeguard before looking in folders (#18522)"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2022-08-08T12:48:10Z",
+        "message": "Clean up hub (#18497)\n\n* Clean up utils.hub\n\n* Remove imports\n\n* More fixes\n\n* Last fix"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2022-08-06T07:42:55Z",
+        "message": "`transformers-cli login` => `huggingface-cli login` (#18490)\n\n* zero chance anyone's using that constant no?\n\n* `transformers-cli login` => `huggingface-cli login`\n\n* `transformers-cli repo create` => `huggingface-cli repo create`\n\n* `make style`"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2022-08-05T17:29:38Z",
+        "message": "Typo reported by Joel Grus on TWTR (#18493)"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2022-08-05T17:24:53Z",
+        "message": "Forgot one new_ for cache migration"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2022-08-05T17:14:00Z",
+        "message": "Move cache folder to huggingface/hub for consistency with hf_hub (#18492)\n\n* Move cache folder to just huggingface\n\n* Thank you VsCode for this needless import\n\n* Move to hub\n\n* Forgot one"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2022-08-05T14:12:40Z",
+        "message": "Use new huggingface_hub tools for download models (#18438)\n\n* Draft new cached_file\n\n* Initial draft for config and model\n\n* Small fixes\n\n* Fix first batch of tests\n\n* Look in cache when internet is down\n\n* Fix last tests\n\n* Bad black, not fixing all quality errors\n\n* Make diff less\n\n* Implement change for TF and Flax models\n\n* Add tokenizer and feature extractor\n\n* For compatibility with main\n\n* Add utils to move the cache and auto-do it at first use.\n\n* Quality\n\n* Deal with empty commit shas\n\n* Deal with empty etag\n\n* Address review comments"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2022-08-01T16:07:30Z",
+        "message": "Rewrite push_to_hub to use upload_files (#18366)\n\n* Rewrite push_to_hub to use upload_files\n\n* Adapt the doc a bit\n\n* Address review comments and clean doc"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2022-07-19T09:53:53Z",
+        "message": "[From pretrained] Allow download from subfolder inside model repo (#18184)\n\n* add first generation tutorial\n\n* [from_pretrained] Allow loading models from subfolders\n\n* remove gen file\n\n* add doc strings\n\n* allow download from subfolder\n\n* add tests\n\n* Apply suggestions from code review\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\n\n* apply comments\n\n* correct doc string\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2022-07-13T16:43:08Z",
+        "message": "Make sharded checkpoints work in offline mode (#18125)\n\n* Make sharded checkpoints work in offline mode\n\n* Add test"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2022-07-13T14:53:25Z",
+        "message": "Revert \"Make sharded checkpoints work in offline mode\"\n\nThis reverts commit 3564c6578630a3bef29d2c7c36c7d29b68acd874."
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2022-07-13T14:51:56Z",
+        "message": "Make sharded checkpoints work in offline mode"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2022-07-11T16:45:06Z",
+        "message": "Add filename to info diaplyed when downloading things in from_pretrained (#18099)"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2022-06-21T16:01:08Z",
+        "message": "TF Sharded (#17713)\n\n* initial commit\n\n* update modeeling tf utils\n\n* quality\n\n* clean and update args\n\n* update\n\n* remove potential bug\n\n* code quality\n\n* update\n\n* update max shard\n\n* update tests for sharding from pretrained\n\n* fix remaining test\n\n* make style\n\n* h5py if tf available\n\n* update and fix test\n\n* fix test\n\n* style\n\n* modified push to hub to support shard for TF\n\n* quick fix\n\n* update code\n\n* merge branch main and style\n\n* Apply suggestions from code review\n\nCo-authored-by: Joao Gante <joaofranciscocardosogante@gmail.com>\nCo-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>\n\n* update based on reviews\n\n* update doc\n\n* update and style\n\n* Apply suggestions from code review\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\n\n* Update based on reviews\n\n* fix typo\n\n* style\n\nCo-authored-by: Joao Gante <joaofranciscocardosogante@gmail.com>\nCo-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2022-06-21T15:51:18Z",
+        "message": "Prepare transformers for v0.8.0 huggingface-hub release (#17716)\n\n* Prepare CI for v0.8.0\n\n* pin hfh (revert before merge)\n\n* Revert \"pin hfh (revert before merge)\"\n\nThis reverts commit a0103140e1c77b810ffcb735192968bc03be3e1f.\n\n* Test rc3\n\n* Test latest rc\n\n* Unpin to the RC\n\nCo-authored-by: Sylvain Gugger <Sylvain.gugger@gmail.com>"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2022-06-10T13:41:53Z",
+        "message": "\ud83d\udc1b Properly raise `RepoNotFoundError` when not authenticated (#17651)\n\n* Raise RepoNotFoundError in case of 401\n\n* Include changes from revert-17646-skip_repo_not_found\n\n* Add a comment\n\n* \ud83d\udc84 Code quality\n\n* \ud83d\udc9a Update `get_from_cache` test\n\n* \ud83d\udc9a Code quality & skip failing test"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2022-06-07T15:57:52Z",
+        "message": "Add examples telemetry (#17552)\n\n* Add examples telemetry\n\n* Alternative approach\n\n* Add to all other examples\n\n* Add to templates as well\n\n* Put framework separately\n\n* Same for TensorFlow"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2022-05-12T20:25:55Z",
+        "message": "Black preview (#17217)\n\n* Black preview\n\n* Fixup too!\n\n* Fix check copies\n\n* Use the same version as the CI\n\n* Bump black"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2022-04-29T16:26:45Z",
+        "message": "Revert \"Updating variable names. (#16445)\" (#17011)\n\nThis reverts commit 4f3a14e3c235c8b6b8cd2f5bc448a0cffacddf61."
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2022-04-25T19:15:00Z",
+        "message": " Fix issue probably-meant-fstring found at https://codereview.doctor (#16913)"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2022-03-23T19:56:49Z",
+        "message": "Make Transformers use cache files when hf.co is down (#16362)\n\n* Make Transformers use cache files when hf.co is down\n\n* Fix tests\n\n* Was there a random circleCI failure?\n\n* Isolate patches\n\n* Style\n\n* Comment out the failure since it doesn't fail anymore\n\n* Better comment"
+    },
+    {
+        "repo_url": "github.com/huggingface/transformers",
+        "filepath": "src/transformers/utils/hub.py",
+        "commit_date": "2022-03-23T14:26:33Z",
+        "message": "Reorganize file utils (#16264)\n\n* Split file_utils in several submodules\n\n* Fixes\n\n* Add back more objects\n\n* More fixes\n\n* Who exactly decided to import that from there?\n\n* Second suggestion to code with code review\n\n* Revert wront move\n\n* Fix imports\n\n* Adapt all imports\n\n* Adapt all imports everywhere\n\n* Revert this import, will fix in a separate commit"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2024-02-21T02:36:10Z",
+        "message": "Reverts the revert that dropped changes from 2 PRs (#7495)\n\n* Revert \"Revert \"changes\"\"\n\nThis reverts commit 032435368d8d8db7439da5ffa966987f80c58db3.\n\n* patch"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2024-02-20T22:21:27Z",
+        "message": "Revert \"changes\"\n\nThis reverts commit 19dd2218dcacfb55cf55979d06f4c9880c15e856, reversing\nchanges made to 6a936330543c1b989ac1c957b2572dcd44e9ab7f."
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2024-02-19T21:29:20Z",
+        "message": "Enable Ruff S101 (#7477)\n\n* Update to Ruff 0.2.2\n\n* Enable Ruff S101; don't use asserts in runtime code, or AssertionErrors for flow control"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2024-02-01T19:32:40Z",
+        "message": "Update ruff to 0.1.13, enable more rules, fix issues (#7061)\n\n* add changeset\n\n* Update ruff to version 0.1.13\n\n* Correct ruff target version\n\n* Enable more Ruff rules and fix issues\n\n* Enable ARG and fix issues\n\n* Enable PL lints, fix issues\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2024-01-08T02:57:07Z",
+        "message": "fixed typo (#6963)\n\n* fixed typo\n\nstored vs storied\n\n* add changeset\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2023-12-06T23:16:32Z",
+        "message": "switch from black to ruff formatter (#6543)\n\n* migrate from black to ruff\n\n* fix script and dependencies\n\n* applying ruff\n\n* add changeset\n\n* add changeset\n\n* address ruff feedback\n\n* replace linter\n\n* fixed typing\n\n* fix typing\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2023-11-02T19:28:38Z",
+        "message": "fix: avoid unnecessary folders creation when flagging (#6245)\n\n* fix: avoid unnecessary folders creation when flagging\n\n* test: flagging_does_not_create_unnecessary_directories\n\n---------\n\nCo-authored-by: Egon Ferri <egon.ferri@immobiliare.it>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2023-10-31T04:46:02Z",
+        "message": "Version 4 development branch (#5498)\n\n* squash commit\n\n* BugFix: Make FileExplorer Component Templateable (#5933)\n\n* Make FileExplorer templateable\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Fix notebooks (#5935)\n\n* V4: Update Component pyi file (#5937)\n\n* Add code\n\n* add changeset\n\n* delete\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* V4: Use beta release versions for '@gradio' packages (#5938)\n\n* Fix versions\n\n* add changeset\n\n* fix\n\n* add changeset\n\n* fix\n\n* add changeset\n\n* Fix\n\n* fix preview\n\n* add changeset\n\n* final fix\n\n* add changeset\n\n* fix\n\n* add changeset\n\n* fix\n\n* add changeset\n\n* revert change\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* maybe fix (#5946)\n\n* Merge main again (#5948)\n\n* maybe fix\n\n* fix\n\n* Merge main again (#5949)\n\n* maybe fix\n\n* fix\n\n* weird weird weird\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Merge main again (#5950)\n\n* maybe fix\n\n* fix\n\n* weird weird weird\n\n* fix\n\n* log\n\n* log\n\n* fix changesets\n\n* rererefactor frontend files (#5960)\n\n* do all the things\n\n* add changeset\n\n* remove codemod\n\n* fix\n\n* change casing\n\n* condense upload button\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Strip vite import warning (#5962)\n\n* Add code\n\n* Remove comment\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* chore: update versions (beta) (#5769)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\n\n* release wasm (#5963)\n\n* release wasm\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Wasm release (#5964)\n\n* release wasm\n\n* release wasm\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* chore: update versions (beta) (#5965)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\n\n* Add json schema unit tests (#5970)\n\n* Add tests\n\n* add changeset\n\n* Fix tests\n\n* api-info\n\n* Add test\n\n* Add test\n\n* Add email tests\n\n* 3.8 fix \ud83d\ude44\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* V4: Simple textbox (#5990)\n\n* Simple textbox\n\n* add changeset\n\n* Trim down events\n\n* Trim\n\n* Clean up change event\n\n* Add comment\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* File upload optimization (#5961)\n\n* Use custom multipart parser\n\n* add changeset\n\n* remove print\n\n* Add comment\n\n* Lint\n\n* fix code\n\n* remove print\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Removes deprecated arguments and parameters from v4 (#5968)\n\n* Removes deprecated arguments and methods for v4\n\n* remove update\n\n* style\n\n* add changeset\n\n* added params\n\n* typign\n\n* fixed all of the typing\n\n* tests\n\n* fix layouts\n\n* layout\n\n* fix config\n\n* fix\n\n* fix form\n\n* fix\n\n* fix blocks tests\n\n* fix some more tests\n\n* lint\n\n* fix test routes\n\n* doc\n\n* notebooks\n\n* remove doc\n\n* format\n\n* format\n\n* remove group\n\n* label docstring\n\n* remov test\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* V4: Simple dropdown (#5996)\n\n* Add code\n\n* lint\n\n* comment\n\n* add changeset\n\n* revert\n\n* Fix update + docstring cleanup\n\n* Add code\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* pass props to example components and to example outputs (#6014)\n\n* pass props to example components and to example outputs\n\n* add changeset\n\n* make util less egenric/ more useful\n\n* fix demo\n\n* fix demo\n\n* fix\n\n* fix test\n\n* Fix test\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\nCo-authored-by: freddyaboulton <alfonsoboulton@gmail.com>\n\n* Format js in v4 branch (#6016)\n\n* Format v4 branch js\n\n* add changeset\n\n* lint\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* V4: Fix component update bug  (#6027)\n\n* Fix tests + bugs\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* lockfile update\n\n* Fixing test\n\n* fix test\n\n* Add a cli command to list available templates (#6018)\n\n* Add code\n\n* dataset\n\n* Add test\n\n* add changeset\n\n* add changeset\n\n* add changeset\n\n* add changeset\n\n* Exclude FormComponent\n\n* Paginate the output\n\n* No colors but emojis:\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* fix tests (#6046)\n\n* fix storybook (#6065)\n\n* fix storybook\n\n* add changeset\n\n* fix\n\n* add changeset\n\n* fix\n\n* fix\n\n* fix components\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* remove dupe component (#6067)\n\n* remove dupe component\n\n* add changeset\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Simplify File Component (#6044)\n\n* Add code\n\n* Add code\n\n* Add code\n\n* Reuse code UploadButton\n\n* Use two files for UploadButton\n\n* Address feedback\n\n* Lint\n\n* add changeset\n\n* Update js/uploadbutton/shared/UploadButton.svelte\n\nCo-authored-by: pngwn <hello@pngwn.io>\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\nCo-authored-by: pngwn <hello@pngwn.io>\n\n* Clean up backend of `File` and `UploadButton` and change the return type of `preprocess()` from TemporaryFIle to string filepath (#6060)\n\n* changes\n\n* add changeset\n\n* upload button\n\n* file\n\n* add changeset\n\n* valid types\n\n* fix tests\n\n* address review\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Fix Dropdown Example component and example processing logic (#6075)\n\n* fix examples\n\n* helpers\n\n* dropdown\n\n* fix cc build (#6079)\n\n* fix cc build\n\n* add changeset\n\n* throw error if build fails\n\n* fix entry points\n\n* add changeset\n\n* fix lockfile\n\n* Add test\n\n* update workflow\n\n* try resolve\n\n* lint \ud83d\ude44\n\n* Use xfail\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\nCo-authored-by: freddyaboulton <alfonsoboulton@gmail.com>\n\n* Fixes markdown rendering in examples (#6071)\n\n* Fixes markdown rendering in examples\n\n* add changeset\n\n* update delimiters\n\n* format\n\n* format\n\n* docstrings\n\n* test\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Proposal: sample demo for custom components should be a `gr.Interface` (#6077)\n\n* update sample demo to interface\n\n* add changeset\n\n* modify\n\n* Update gradio/cli/commands/components/_create_utils.py\n\nCo-authored-by: Freddy Boulton <alfonsoboulton@gmail.com>\n\n* added layout and static\n\n* fix\n\n* refine\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\nCo-authored-by: Freddy Boulton <alfonsoboulton@gmail.com>\n\n* WIP: Fix docs (#6082)\n\n* Website fix\n\n* add changeset\n\n* Fix code\n\n* pin version\n\n* Add code\n\n* skip code\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Pending events behavior (#5826)\n\n* enter changesets pre-release mode\n\n* release first version (#5500)\n\n* release packages\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* fix changeset (#5502)\n\n* add changeset\n\n* release first version\n\n* Custom components (#5507)\n\n* Add flag\n\n* Copy front-end\n\n* Add backend code\n\n* Remove breakpoint\n\n* Fix init\n\n* Add code\n\n* File reorg\n\n* Fix types\n\n* Upload files\n\n* Fix code\n\n* Custom components\n\n* Add code\n\n* Client changes\n\n* More changes\n\n* Add code\n\n* Add code\n\n* Fix reversion\n\n* build hook integration\n\n* Add code\n\n* rm file\n\n* Add code\n\n* rename cli\n\n* Add code\n\n* Nicer cli\n\n* Add display class\n\n* Add backend devmide\n\n* Add code?\n\n* Add code\n\n* Add paths and fix reload mdoe\n\n* Fix .then\n\n* changes\n\n* fix\n\n* fix\n\n* changes\n\n* changes\n\n* changes\n\n* Fix versions\n\n* Fix wheel build from source\n\n* Add code\n\n* Get no template case working\n\n* Cc fe (#5509)\n\n* tweaks\n\n* fix 18n\n\n* fix 18n\n\n* tweaks\n\n* Change name\n\n---------\n\nCo-authored-by: freddyaboulton <alfonsoboulton@gmail.com>\n\n* Do not use live display for dev mode\n\n* Clean up front-end server print statements a little bit\n\n* Fix success event\n\n* Cc fe 2 (#5526)\n\n* tweaks\n\n* fix examples\n\n* fix backend port\n\n* fix things\n\n* fix\n\n* Fix json component flagging\n\n* fix\n\n* fuix\n\n---------\n\nCo-authored-by: freddyaboulton <alfonsoboulton@gmail.com>\n\n* Fix template (#5533)\n\n* Fix type hint (#5536)\n\n* fix custom components when installed from wheel (#5552)\n\n* Fix all demos custom components (#5555)\n\n* Fix all_demos\n\n* Fix issues\n\n* trigger ci\n\n* add changeset\n\n* Fix merge\n\n* lockfile\n\n* Add code\n\n* add code\n\n* Fix command\n\n* Add code\n\n* Fix highlighted text\n\n* fix interactive highlighted text\n\n* tweak ci\n\n* Disable example caching for load right now\n\n---------\n\nCo-authored-by: freddyaboulton <alfonsoboulton@gmail.com>\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* image fixes (#5589)\n\n* Add flag\n\n* Copy front-end\n\n* Add backend code\n\n* Remove breakpoint\n\n* Fix init\n\n* Add code\n\n* File reorg\n\n* Fix types\n\n* Upload files\n\n* Fix code\n\n* Custom components\n\n* Add code\n\n* Client changes\n\n* More changes\n\n* Add code\n\n* Add code\n\n* Fix reversion\n\n* build hook integration\n\n* Add code\n\n* rm file\n\n* Add code\n\n* rename cli\n\n* Add code\n\n* Nicer cli\n\n* Add display class\n\n* Add backend devmide\n\n* Add code?\n\n* Add code\n\n* Add paths and fix reload mdoe\n\n* Fix .then\n\n* changes\n\n* fix\n\n* fix\n\n* changes\n\n* changes\n\n* changes\n\n* Fix versions\n\n* Fix wheel build from source\n\n* Add code\n\n* Get no template case working\n\n* Cc fe (#5509)\n\n* tweaks\n\n* fix 18n\n\n* fix 18n\n\n* tweaks\n\n* Change name\n\n---------\n\nCo-authored-by: freddyaboulton <alfonsoboulton@gmail.com>\n\n* Do not use live display for dev mode\n\n* Clean up front-end server print statements a little bit\n\n* Fix success event\n\n* Cc fe 2 (#5526)\n\n* tweaks\n\n* fix examples\n\n* fix backend port\n\n* fix things\n\n* fix\n\n* Fix json component flagging\n\n* fix\n\n* fuix\n\n---------\n\nCo-authored-by: freddyaboulton <alfonsoboulton@gmail.com>\n\n* Fix template (#5533)\n\n* Fix type hint (#5536)\n\n* fix custom components when installed from wheel (#5552)\n\n* Fix all demos custom components (#5555)\n\n* Fix all_demos\n\n* Fix issues\n\n* trigger ci\n\n* add changeset\n\n* Fix merge\n\n* lockfile\n\n* Add code\n\n* add code\n\n* Fix command\n\n* Add code\n\n* Fix highlighted text\n\n* fix interactive highlighted text\n\n* tweak ci\n\n* fix image uploads\n\n* add changeset\n\n* remove changeset\n\n* add changeset\n\n---------\n\nCo-authored-by: freddyaboulton <alfonsoboulton@gmail.com>\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Support Literal Typehints (#5591)\n\n* Fix updateable\n\n* Deploy for failing actions\n\n* fix enum\n\n* Add code\n\n* remove gradio lite from publish ci\n\n* fix\n\n* fix\n\n* chore: update versions (beta) (#5501)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\n\n* Fix js deps in cli and add gradio-preview artifacts to build (#5610)\n\n* Fix js dependencies in cli\n\n* Add preview to build command\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* chore: update versions (beta) (#5612)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\n\n* backend linting (#5613)\n\n* backend linting\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Publish js theme (#5615)\n\n* Publish js theme\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* chore: update versions (beta) (#5614)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\n\n* Add code (#5617)\n\n* Add docstring to trigger release (#5618)\n\n* Add docstring\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* chore: update versions (beta) (#5619)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\n\n* fix build and broken imports (#5620)\n\n* fix broken import\n\n* fix build scripts\n\n* add changeset\n\n* Update js/statustracker/static/index.svelte\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* chore: update versions (beta) (#5621)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\n\n* Fix esbuild (#5624)\n\n* fix build\n\n* fix build\n\n* add changeset\n\n* fix build\n\n* fix\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* chore: update versions (beta) (#5626)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\n\n* Fix esbuild (#5629)\n\n* fix build\n\n* fix build\n\n* add changeset\n\n* fix build\n\n* fix\n\n* asd\n\n* more fix\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* asd (#5630)\n\n* chore: update versions (beta) (#5631)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\n\n* Some minor v4 fixes (#5637)\n\n* Add code\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Publish all components to npm (#5648)\n\n* Publish image component\n\n* publish components\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* chore: update versions (beta) (#5638)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\n\n* Fix front-end imports + other misc fixes (#5649)\n\n* Fix console error\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Add overwrite flag to create command (#5651)\n\n* Add overwrite flag to create command\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* chore: update versions (beta) (#5650)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\n\n* Make layout components templateable (#5665)\n\n* Split out layouts\n\n* Refactor cli\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Patch fixes (#5678)\n\n* Handle lowercase template name frontend\n\n* Lint\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Fix build and file route (#5680)\n\n* Add code\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* chore: update versions (beta) (#5662)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\n\n* V4 fix typing (#5686)\n\n* Add examples for series and parallel\n\n* v4 fix typing\n\n* add changeset\n\n* Fix\n\n* Fix\n\n* Fix 3.8\n\n* Fix typing 3.8\n\n* Lint\n\n* Add code\n\n* Add key\n\n* Fix typing\n\n* Add code\n\n* Fix deps\n\n* Fix fastapi\n\n* Fix version\n'\n:\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Use overrides (#5695)\n\n* Use overrides\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* ensure client is copied along with components (#5709)\n\n* ensure client is copied along with components\n\n* add changeset\n\n* add changeset\n\n* chore: update versions (beta) (#5688)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\n\n* fix build config (#5710)\n\n* Fix python unit tests for v4 (#5715)\n\n* Add code\n\n* Fix tests\n\n* Add ci\n\n* Add code\n\n* fix test_blocks\n\n* More fixes\n\n* Last changes\n\n* add changeset\n\n* Add code\n\n* Continue for the sake of some green ci\n\n* Proper api info\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Better test dir check (#5719)\n\n* FIx test-dir check\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Use path to npm executable in subprocess (#5736)\n\n* Use path to npm in subprocess\n\n* Fix dev mode too\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Add Error + test (#5738)\n\n* Add Error + test\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Fix component regex (#5739)\n\n* Add code\n\n* Fix component regex\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Fix layout templates (#5740)\n\n* Fix templates\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Fix template remaining components (#5743)\n\n* add code\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* --overwrite deletes previous content (#5744)\n\n* Add code\n\n* Add code\n\n* add changeset\n\n* Add test\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Support call method (#5751)\n\n* Support call method\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Fix windows ci build (#5752)\n\n* Try bash\n\n* Use cross-env\n\n* Trigger CI\n\n* Fix comma\n\n* add changeset\n\n* Modify lock file\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Fix windows paths (#5745)\n\n* Use posix path\n\n* add changeset\n\n* add changeset\n\n* Try normalize\n\n* to_posix v2\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* chore: update versions (beta) (#5717)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\n\n* Simplify how files are handled in components in 4.0 (#5768)\n\n* Client and upload route hash files\n\n* Refactor logic\n\n* add changeset\n\n* Add code\n\n* View API fix\n\n* Fix client tests\n\n* Dumb windows fix\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Fix deployed demos on v4 branch (#5770)\n\n* Template fixes\n\n* add changeset\n\n* add changeset\n\n* Fix streaming audio\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Name Endpoints if api_name is None (#5782)\n\n* Implementation and test\n\n* add changeset\n\n* fix lint\n\n* Fix nits\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* pending events\n\n* add changeset\n\n* Set api=False for cancel events (#5851)\n\n* Set api=False for cancel events\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* V4: Set cache dir for some component tests (#5852)\n\n* Add code\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* V4: Use async version of shutil in upload route (#5853)\n\n* Use async shutil copy\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* trigger_mode\n\n* changes\n\n* undo\n\n* undo\n\n* add changeset\n\n* undo\n\n* add changeset\n\n* image undo\n\n* add changeset\n\n* fix merge errors\n\n* remove prints\n\n* change\n\n* fix\n\n* fix error\n\n* change\n\n* quick fix\n\n* trigger_mode param\n\n* type\n\n* value error\n\n---------\n\nCo-authored-by: pngwn <hello@pngwn.io>\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\nCo-authored-by: freddyaboulton <alfonsoboulton@gmail.com>\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Fixes: slider bar are too thin on FireFox (#5984)\n\n* firefox slider fix\n\n* add changeset\n\n* fix\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Fix remaining xfail tests in backend (#6073)\n\n* Add code'\n\n* Add code\n\n* Add code\n\n* Fix dataset\n\n* add changeset\n\n* Add some comments\n\n* Add recover_kwargs\n\n* Remove from docstring\n\n* Audio-to-audio\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Fix dev mode model3D (#5955)\n\n* Fix dev mode\n\n* Lint\n\n* add changeset\n\n* Fix dev mode\n\n* Lint\n\n* remove console.log\n\n* add changeset\n\n* interactive fix\n\n* Fix tests\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\nCo-authored-by: Dawood <dawoodkhan82@gmail.com>\n\n* V4: Single-file implementation of form components (#6026)\n\n* Checkbox and number\n\n* Number, Checkboxgroup, Radio, and Slider\n\n* Format\n\n* remove range\n\n* Refactor checkbox\n\n* Forgot to add\n\n* Refactor\n\n* Lint\n\n* add changeset\n\n* use rich emoji markup\n\n* Fix ts\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Update logos for v4 (#6089)\n\n* update v4 logo\n\n* add changeset\n\n* size\n\n* fix on website\n\n* fix on demos\n\n* add changeset\n\n* favicon for demos\n\n* margin on footer logo\n\n* margin bottom to footer logo\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\nCo-authored-by: Ali Abdalla <ali.si3luwa@gmail.com>\n\n* Add a stand-alone install command and tidy-up the fallback template (#6092)\n\n* Add code\n\n* add changeset\n\n* Add test\n\n* Make install default\n\n* Better error message\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* V4: Fix constructor_args (#6093)\n\n* Fix\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Fix: Move to cache in init postprocess + Fallback Fixes (#6107)\n\n* Add code and test\n\n* restore\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* fix build (#6112)\n\n* fix build\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Update cold-lemons-roll.md\n\n* Revert \"Update cold-lemons-roll.md\" (#6113)\n\nThis reverts commit 20dbf908119b3a19b32f307a40158a9f3b4bf4eb.\n\n* Try to trigger a major beta release (#6114)\n\n* pyproject fix\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Delete bad changelog (#6115)\n\n* Delete bad changelog\n\n* Revert \"Delete bad changelog\"\n\nThis reverts commit a8ca614eaf0e9f980a146a2fe76c3e23581db6f1.\n\n* Delete bad\n\n* formatting\n\n* Revert \"formatting\"\n\nThis reverts commit 94f43859e7d1927ab38e9ac77baaa016deede5fc.\n\n* Improve Audio Component (#5966)\n\n* replace <audio> with wavesurfer: add recording, playing and trimming, playback\n\n* add changeset\n\n* merge cleanup\n\n* improving recording styling\n\n* add recording timer\n\n* add trim region duration\n\n* allow trimming recordings\n\n* clean up playing logic\n\n* add pause_recording event\n\n* remove crop min/max\n\n* add waveform options param\n\n* remove trimmingmode and use mode\n\n* streaming + cleanup\n\n* add changeset\n\n* clean up types\n\n* mobile adjustments\n\n* add min/max length  + trim accessibility\n\n* update pnpm lock\n\n* amend source to a list and allow source switching\n\n* fix no microphone found logic\n\n* change undo logic to reset trims\n\n* tweaks\n\n* tweak reset logic\n\n* ensure recording is sent to backend\n\n* fix audio duration reactivity\n\n* list tweak\n\n* clean up\n\n* change source -> sources + restore wasm changes\n\n* formatting\n\n* fix tests\n\n* fix test\n\n* add default sources value in fe + fix audio demos\n\n* fix audio file name test\n\n* add better sources typing\n\n* ui test tweaks\n\n* add default value in templates.py\n\n* formatting\n\n* remove unused prop\n\n* add audio story\n\n* add changeset\n\n* revert sources changes\n\n* remove story id\n\n* fix be test\n\n* fix be test\n\n* fix notebooks\n\n* formatting\n\n* fix test\n\n* fix test again\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\nCo-authored-by: pngwn <hello@pngwn.io>\n\n* Fix changesets 2 (#6116)\n\n* fix changesets\n\n* release major\n\n* Fix changesets 2 (#6117)\n\n* fix changesets\n\n* release major\n\n* asd\n\n* fix version\n\n* chore: update versions (beta) (#5973)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\n\n* v4\n\n* Open source FRP server and allow `gradio` to connect to custom share servers (#6091)\n\n* add param\n\n* add support for custom address\n\n* add changeset\n\n* share guide\n\n* guide\n\n* add params\n\n* add changeset\n\n* fix launch\n\n* add test\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Gradio custom component publish (#6098)\n\n* Add code\n\n* add changeset\n\n* F-string\n\n* Add pwd\n\n* Add source to space\n\n* Add template\n\n* Twine import\n\n* add changeset\n\n* ignore\n\n* restore\n\n* add changeset\n\n* Address feedback\n\n* Update gradio/cli/commands/components/publish.py\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Fix static issues with Lite on v4 (#6124)\n\n* fix missing props\n\n* fix path to types\n\n* add changeset\n\n* fix path to i18n\n\n* fix audio tests\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\nCo-authored-by: Ali Abid <aabid94@gmail.com>\n\n* Refactor `Blocks.load()` so that it is in the same style as the other listeners (#6126)\n\n* restore decorator\n\n* remove\n\n* refactor load\n\n* remove restriction\n\n* add changeset\n\n* add pyi\n\n* add test\n\n* add test\n\n* fix tests\n\n* metaclass\n\n* future\n\n* reduce'\n\n* docstring\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Small change to make `api_open=False` by default (#6138)\n\n* set api_open to False by default\n\n* add changeset\n\n* tests\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Image v4 (#6094)\n\n* simplify image interface\n\n* changes\n\n* asd\n\n* asd\n\n* more\n\n* add code (#6095)\n\n* more\n\n* fix tests\n\n* add changeset\n\n* fix client build\n\n* fix linting\n\n* fix test\n\n* lint\n\n* Fix tests + lint\n\n* asd\n\n* finish\n\n* webcam selection\n\n* fix backend\n\n* address comments\n\n* fix static checks\n\n* fix everything\n\n* add changeset\n\n* Apply suggestions from code review\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* fix examples\n\n* fix tests\n\n* fix tests\n\n---------\n\nCo-authored-by: Freddy Boulton <alfonsoboulton@gmail.com>\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Fix fallback demo app template code (#6129)\n\n* Add test\n\n* add changeset\n\n* Add JSON note\n\n* Fix test\n\n* Update gradio/cli/commands/components/_create_utils.py\n\n* Update test/test_gradio_component_cli.py\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* fix video path\n\n* Revert \"fix video path\"\n\nThis reverts commit 5916b3dc8a91d4b0c92e33c71ee02b36df611c35.\n\n* Fix selectable prop in the backend (#6135)\n\n* Add to init\n\n* Fix events\n\n* add changeset\n\n* Add code\n\n* add changeset\n\n* Fix typo\n\n* Add code\n\n* Fix highlighted text typo\n\n* remove from docs\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Fix video (#6140)\n\n* fix video\n\n* add changeset\n\n* fixes\n\n* fixes\n\n* lint\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* fix some tests on mac\n\n* fix circular dependency with client + upload (#6143)\n\n* fix circular dependency\n\n* add changeset\n\n* fix test\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Fix image double change bug (#6146)\n\n* fix test\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* make lite private (#6147)\n\n* make lite private\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* fix dropdown arrow size (#6148)\n\n* fix dropdown arrow size\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* swap `mode` on the frontned to `interactive` to match the backend (#6149)\n\n* JS READMEs and Storybook on Docs (#6142)\n\n* changes\n\n* changes\n\n* working\n\n* remove storybook path\n\n* add changeset\n\n* pin code\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Don't serve files in working directory by default (#6128)\n\n* don't serve files in working directory by default\n\n* add changeset\n\n* handle examples\n\n* remove dotfiles\n\n* guide\n\n* guide\n\n* fix tests\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Fix issues with website deploy (#6151)\n\n* fixes\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Swap websockets for SSE (#6069)\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* merge\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* add changeset\n\n* changes\n\n* changes\n\n* changes\n\n* add changeset\n\n* changes\n\n* changes\n\n* changes\n\n* add changeset\n\n* changes\n\n* changes\n\n* changes\n\n* add changeset\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* add changeset\n\n* Fix client tests sse branch (#6150)\n\n* Switch spaces\n\n* Fix tests\n\n* Add code\n\n* changes\n\n* changes\n\n---------\n\nCo-authored-by: Ali Abid <aabid94@gmail.com>\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\nCo-authored-by: Freddy Boulton <alfonsoboulton@gmail.com>\n\n* Remove duplicate `elem_ids` from components (#6152)\n\n* remove elem_ids from components\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Moves `gradio_cached_folder` inside the gradio temp direcotry (#6155)\n\n* cache -> temp\n\n* restore\n\n* add changeset\n\n* add exception for cached examples\n\n* security policy\n\n* join\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Remove `show_edit_button` param in Audio (#6153)\n\n* remove `show_edit_button` param\n\n* add changeset\n\n* hide overflow\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Remove interpretation for good (#6154)\n\n* interpretation\n\n* notebooks\n\n* add changeset\n\n* removed from readme\n\n* lint\n\n* fix demo\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Make output components not editable if they are being updated (#6157)\n\n* make outputs not editable\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* JS Component Documentation (#6136)\n\n* Simple template\n\n* More changes\n\n* Properly handle change event video\n\n* add changeset\n\n* Add code'\n\n* Fix play/pause bugs\n\n* add changeset\n\n* atoms doc\n\n* Chatbot\n\n* add changeset\n\n* Some more components\n\n* Add code\n\n* add changeset\n\n* Lint\n\n* add changeset\n\n* Simple template\n\n* More changes\n\n* Properly handle change event video\n\n* add changeset\n\n* Add code'\n\n* Fix play/pause bugs\n\n* add changeset\n\n* atoms doc\n\n* Chatbot\n\n* add changeset\n\n* Some more components\n\n* Add code\n\n* add changeset\n\n* Lint\n\n* Merge in latest changes\n\n* Fix typo\n\n* Fix build\n\n* Lockfile\n\n* Fix\n\n* Fix interactive\n\n* correct the title\n\n* add versions to readme\n\n* only document public\n\n* add changeset\n\n* Remove simplevideo and audio\n\n* add changeset\n\n* changes to readmes\n\n* add changeset\n\n* remove tootils and theme\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\nCo-authored-by: Ali Abdalla <ali.si3luwa@gmail.com>\n\n* Improve Video Component (#6118)\n\n* change source to sources + add length logic\n\n* add changeset\n\n* add min/max logic\n\n* tweak tests\n\n* change sources\n\n* formatting\n\n* fix test_components.py test\n\n* add trimming\n\n* add changeset\n\n* add keyboard events to trimming timeline\n\n* UX improvements\n\n* Add fix\n\n* add loading status\n\n* flip if webcam is only source\n\n* generate notebooks\n\n* remove scroll\n\n* add file extension\n\n* trim (#6156)\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* add loading indicator to video\n\n* ensure correct file ext is used\n\n* tweak\n\n* change where ffmpeg is loaded\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\nCo-authored-by: freddyaboulton <alfonsoboulton@gmail.com>\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* chore: update versions (beta) (#6122)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\n\n* V4 fixes (#6161)\n\n* changes\n\n* changes\n\n* Pin 8.9 (#6162)\n\n* Pending outputs fix (#6160)\n\n* fix\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* Clean root url (#6159)\n\n* clean\n\n* cleanup\n\n* formatting\n\n* add changeset\n\n* fe\n\n* add changeset\n\n* selectable\n\n* block\n\n* fix\n\n* fixes\n\n* fix update\n\n* gradio/events\n\n* configs\n\n* remove\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n* V4 fixes (#6167)\n\n* changes\n\n* changes\n\n* Fixes remaining backend tests (#6165)\n\n* fix backend tests\n\n* add changeset\n\n* changes\n\n* fix strings\n\n* lint\n\n* lint\n\n* fixes\n\n* delete test\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\n\n---------\n\nCo-authored-by: freddyaboulton <alfonsoboulton@gmail.com>\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\nCo-authored-by: Dawood Khan <dawoodkhan82@gmail.com>\nCo-authored-by: Ali Abdalla <ali.si3luwa@gmail.com>\nCo-authored-by: Hannah <hannahblair@users.noreply.github.com>\nCo-authored-by: Ali Abid <aabid94@gmail.com>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2023-10-11T18:51:16Z",
+        "message": "Remove deprecated `.update()` usage from Interface internals (#5862)\n\n* remove deprecated .update() usage from Interface\n\n* add changeset\n\n* add changeset\n\n* builder app\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2023-08-09T18:14:12Z",
+        "message": "Fix dataset features and dataset preview for HuggingFaceDatasetSaver (#5135)\n\n* Add tests\n\n* Use hf token\n\n* lint\n\n* add changeset\n\n* Add empty string for None\n\n* add changeset\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2023-08-01T16:26:02Z",
+        "message": "Use `importlib` in favor of deprecated `pkg_resources` (#5048)\n\n* fix(pkg_resources): use `importlib` in favor of `pkg_resources`\n\n* lint\n\n* import\n\n* removed unnecessary version check\n\n* fixes\n\n* pass lint and format\n\n* fix\n\n* requirements\n\n* fix all typing issues\n\n* fix routes\n\n* fix\n\n* Delete forty-rooms-arrive.md\n\n* add changeset\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2023-06-27T18:07:40Z",
+        "message": "More proper deprecation warnings (#4694)\n\n* Add GradioDeprecationWarning subclass\n\n* Add and use find_user_stack_level(); add warn_deprecation()\n\n* Deduplicate `.style()` deprecation warning\n\n* Deduplicate inputs deprecation warnings\n\n* Deduplicate outputs deprecation warnings\n\n* Use warn_deprecation for deprecation warnings\n\n* Changelog\n\n* formatting\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2023-05-10T19:49:49Z",
+        "message": "Record username when flagging (#4135)\n\n* record username\n\n* fix\n\n* changelog fix\n\n* format\n\n* fix hf saver\n\n* fix deserialization\n\n* fixes"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2023-05-05T02:54:23Z",
+        "message": "More Ruff rules (#4038)\n\n* Bump ruff to 0.0.264\n\n* Enable Ruff Naming rules and fix most errors\n\n* Move `clean_html` to utils (to fix an N lint error)\n\n* Changelog\n\n* Clean up possibly leaking file handles\n\n* Enable and autofix Ruff SIM\n\n* Fix remaining Ruff SIMs\n\n* Enable and autofix Ruff UP issues\n\n* Fix misordered import from #4048\n\n* Fix bare except from #4048\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2023-05-01T16:59:41Z",
+        "message": "Safer `HuggingFaceDatasetSaver` (and deprecate `HuggingFaceDatasetJsonSaver`) (#3973)\n\n* Draft for a safer HuggingFaceDatasetSaver\n\n* Rename (and replace) gr.SaferHuggingFaceDatasetSaver as gr.HuggingFaceDatasetSaver\n\n* update changelog\n\n* ruff\n\n* doc\n\n* tmp work\n\n* merge 2 classes\n\n* remove useless code\n\n* adapt tests\n\n* Update gradio/flagging.py\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update CHANGELOG.md\n\n* fix typing\n\n* code formatting\n\n* removed print from tests\n\n* removing imports\n\n* removing imports\n\n* fix paths\n\n* formatting\n\n* wording\n\n* formating\n\n* fix tests\n\n---------\n\nCo-authored-by: testbot <lucainp@hf.co>\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2023-04-28T21:59:42Z",
+        "message": "Ruff update + strictening (#3979)\n\n* Update ruff to 0.0.263\n\n* Get rid of bare except:s\n\n* Fix two Ruff E731s by moving expand_{color,size} to the relevant classes\n\n* Fix Ruff E731 and some variable shadowing in theme builder\n\n* Fix remaining Ruff E731s\n\n* Get rid of unused Ruff ignores\n\n* Fix ruff B904 issues (raise from)\n\n* Fix Ruff B007: loop-control variable not used\n\n* Fix Ruff B011 (do not assert false)\n\n* Remove unused args and kwargs from Progress.tqdm() (spotted via Ruff B026)\n\n* Fix mutable argument default in CheckboxGroup\n\n* Noqa ABC-related lint warnings for Interpretable\n\n* Add missed assert in test_queueing (ruff B015)\n\n* Enable ruff B\n\n* Enable ruff C and fix issues\n\n* Add changelog\n\n* Add UP03[012] after #3984\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2023-04-27T20:09:50Z",
+        "message": "Use f-strings where possible (#3984)\n\n* Use f-strings where possible\n\nSemi-automated using ikamensh/flynt\n\n* Update gradio/utils.py\n\n* Update gradio/interface.py\n\n* formatting\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2023-04-19T18:38:11Z",
+        "message": "Fix some documentation-related issues in Guides (#3903)\n\n* client doc fixes\n\n* simplify demo\n\n* added guides\n\n* chatbot guide\n\n* notebooks\n\n* format"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2023-04-06T19:58:42Z",
+        "message": "Document python client in gradio.app/docs (#3764)\n\n* document py client\n\n* more changes\n\n* update docs\n\n* changes\n\n* fix tests\n\n* formatting\n\n* stash\n\n* fix tests\n\n* documentation\n\n* more docs\n\n* gradio client\n\n* changes\n\n* rework documentation\n\n* add to docs\n\n* modify dockerfile\n\n* gradio client\n\n* address feedback\n\n* formatting\n\n* gradio client version\n\n* fix tests\n\n* tweaks to website\n\n---------\n\nCo-authored-by: aliabd <ali.si3luwa@gmail.com>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2023-03-27T14:40:07Z",
+        "message": "Add docs for HF Json saver (#3604)\n\n* Add docs for flagging\n\n* Fix params\n\n* CHANGELOG\n\n---------\n\nCo-authored-by: freddyaboulton <alfonsoboulton@gmail.com>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2023-03-23T22:33:44Z",
+        "message": "Sets up the Python `gradio` client (#3300)\n\n* placeholder\n\n* changelog\n\n* added to readme\n\n* client\n\n* implement futures\n\n* utils\n\n* scripts\n\n* lint\n\n* reorg\n\n* scripts\n\n* serialization\n\n* cleanup\n\n* fns\n\n* serialize\n\n* cache\n\n* callbacks\n\n* updates\n\n* formatting\n\n* packaging\n\n* requirements\n\n* remove changelog\n\n* client\n\n* access token\n\n* formatting\n\n* deprecate\n\n* format backend\n\n* client replace\n\n* updates\n\n* moving from utils\n\n* remove code duplication\n\n* rm duplicates\n\n* simplify\n\n* galleryserializer\n\n* serializable\n\n* load serializers\n\n* fixing errors\n\n* errors\n\n* typing\n\n* tests\n\n* changelog\n\n* lint\n\n* fix lint\n\n* fixing files\n\n* formatting\n\n* type\n\n* fix type checking\n\n* changelog\n\n* changelog\n\n* Update client/python/gradio_client/client.py\n\nCo-authored-by: Lucain <lucainp@gmail.com>\n\n* formatting, tests\n\n* formatting, tests\n\n* gr.load\n\n* refactoring\n\n* refactoring'\n\n* formatting\n\n* formatting\n\n* tests\n\n* tests\n\n* fix tests\n\n* cleanup\n\n* added tests\n\n* adding scripts\n\n* formatting\n\n* address review comments\n\n* readme\n\n* serialize info\n\n* remove from changelog\n\n* version 0.0.2 released\n\n* lint\n\n* type fix\n\n* check\n\n* type issues\n\n* hf_token\n\n* update hf token\n\n* telemetry\n\n* docs, circle dependency\n\n* hf token\n\n* formatting\n\n* updates\n\n* sort\n\n* script\n\n* external\n\n* docs\n\n* formatting\n\n* fixes\n\n* scripts\n\n* requirements\n\n* fix tests\n\n* context\n\n* changes\n\n* formatting\n\n* fixes\n\n* format fix\n\n---------\n\nCo-authored-by: Lucain <lucainp@gmail.com>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2023-03-06T23:06:23Z",
+        "message": "Remove everything related to encryption (#3396)\n\n* remove requirements\n\n* deprecate encrypt\n\n* remove flagging\n\n* deprecate\n\n* formatting\n\n* lint"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2023-02-28T18:29:34Z",
+        "message": "Some improvements to Flag (#3289)\n\n* Fixes to button disable\n\n* button\n\n* formatting\n\n* flagging fix\n\n* fixes\n\n* formatter\n\n* changelog\n\n* ormatting\n\n* tests\n\n* saving\n\n* adding optionality for flagging\n\n* updatest\n\n* error catching\n\n* updates\n\n* changelog\n\n* tests\n\n* typing\n\n* flag button\n\n* formatting\n\n* tests\n\n* tests\n\n* tests\n\n* increased latency\n\n* queue fix\n\n* clear\n\n* formatting\n\n* fix\n\n* fix tests"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2023-02-04T00:46:56Z",
+        "message": "Example caching now works with components without a label attribute (e.g. Column) (#3123)\n\n* add non io component support for example caching\n\n* chaneglog"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2023-01-21T04:15:45Z",
+        "message": "Fix to HuggingFaceDatasetSaver  (#3025)\n\n* hf flag fix\n\n* fixed huggingface hub params\n\n* formatting\n\n* fix flagging tests\n\n* add a try / catch"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2023-01-03T17:20:02Z",
+        "message": "Updating typing in `utils.py` and `templates.py` (#2904)\n\n* typing\n\n* typing\n\n* typing\n\n* updated CHANGELOG.md\n\n* typing\n\n* typing\n\n* typing\n\n* typing\n\n* Update max_args count to be -1 if positional param type\n\nmax_args would be set to the value of \"infinity\" when the param was of VAR_POSITIONAL type. That makes max_args hold both int and string values.\nUpdated the max_args to be set to -1 value.\n\n* Updated to use same response and not previous response for validation\n\n* Keep self._response uninitialized\n\n* Updated to use empty BaseModel when not validation_model not present\n\n* Reference `BlockContext` directly\n\n* initializing end as 0 in format_net_list\n\n* Updating docs for error_analytics\n\n* Update file version check in utils\n\n* Update gradio.strings import\n\n* typing\n\n* typing\n\n* typing\n\n* typing\n\n* typing\n\n* typing\n\n* typing\n\n* typing\n\n* typing\n\n* typing\n\n* Add utils.py and templates.py to type check script\n\n* fixed changelog\n\n* Update formatting of utils.py\n\n* rerun ci\n\n* flagging fix\n\n* fix typing\n\n* formatting\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2022-12-29T20:30:44Z",
+        "message": "Refactored `interface.py` (#2902)\n\n* started pathlib\n\n* blocks.py\n\n* more changes\n\n* fixes\n\n* typing\n\n* formatting\n\n* typing\n\n* renaming files\n\n* changelog\n\n* script\n\n* changelog\n\n* lint\n\n* routes\n\n* renamed\n\n* state\n\n* formatting\n\n* state\n\n* type check script\n\n* remove strictness\n\n* switched to pyright\n\n* switched to pyright\n\n* fixed flaky tests\n\n* fixed test xray\n\n* fixed load test\n\n* fixed blocks tests\n\n* formatting\n\n* fixed components test\n\n* uncomment tests\n\n* fixed interpretation tests\n\n* formatting\n\n* last tests hopefully\n\n* argh lint\n\n* component\n\n* fixed based on review\n\n* refactor\n\n* components.py t yping\n\n* components.py\n\n* formatting\n\n* lint script\n\n* merge\n\n* merge\n\n* lint\n\n* pathlib\n\n* lint\n\n* events too\n\n* lint script\n\n* fixing tests\n\n* lint\n\n* examples\n\n* serializing\n\n* more files\n\n* formatting\n\n* flagging.py\n\n* added to lint script\n\n* fixed tab\n\n* interface.py\n\n* attempt fix\n\n* refactoring interface\n\n* interface refactor\n\n* formatting\n\n* fix for live interfaces\n\n* lint\n\n* serialize fix\n\n* formatting\n\n* all demos queue\n\n* added type check\n\n* formatting"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2022-12-29T20:18:19Z",
+        "message": "Added typing to even more files  (#2900)\n\n* started pathlib\n\n* blocks.py\n\n* more changes\n\n* fixes\n\n* typing\n\n* formatting\n\n* typing\n\n* renaming files\n\n* changelog\n\n* script\n\n* changelog\n\n* lint\n\n* routes\n\n* renamed\n\n* state\n\n* formatting\n\n* state\n\n* type check script\n\n* remove strictness\n\n* switched to pyright\n\n* switched to pyright\n\n* fixed flaky tests\n\n* fixed test xray\n\n* fixed load test\n\n* fixed blocks tests\n\n* formatting\n\n* fixed components test\n\n* uncomment tests\n\n* fixed interpretation tests\n\n* formatting\n\n* last tests hopefully\n\n* argh lint\n\n* component\n\n* fixed based on review\n\n* refactor\n\n* components.py t yping\n\n* components.py\n\n* formatting\n\n* lint script\n\n* merge\n\n* merge\n\n* lint\n\n* pathlib\n\n* lint\n\n* events too\n\n* lint script\n\n* fixing tests\n\n* lint\n\n* examples\n\n* serializing\n\n* more files\n\n* formatting\n\n* flagging.py\n\n* added to lint script\n\n* fixed tab\n\n* attempt fix\n\n* serialize fix\n\n* formatting\n\n* all demos queue\n\n* addressed review comments\n\n* formatting"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2022-12-20T21:27:14Z",
+        "message": "Fixes flagging when `allow_flagging` is set to \"auto\" (#2695)\n\n* flagging fix\n\n* formatting\n\n* changelog\n\n* auto\n\n* auto"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2022-09-21T16:53:06Z",
+        "message": "Supports `gr.update()` in example caching (#2309)\n\n* support for update\n\n* formatting\n\n* testing\n\n* fixes to tests\n\n* fixes to tests\n\n* fix tests\n\n* fix review comments\n\n* Update blocks.py"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2022-08-23T23:01:37Z",
+        "message": "Add a flagging callback to save json files to a hugging face dataset (#1821)\n\n* work on saving flags in JSON format\n\n* explained what I did more clearly\n\n* final updates + added test case\n\n* reviews to flagging.py for HuggingFaceDatasetJSONSaver\n\n* formatted imports\n\n* used uuid for random ids\n\n* used uuid for random + function to get dataset infos\n\n* reformmated flagging.py\n\n* fix examples test\n\n* formatting\n\n* async examples\n\n* working on mix\n\n* comment out failing test\n\n* fixed interface problem\n\n* final updates to HuggingFaceDatasetJSONSaver flagging.py\n\n* final updates to HuggingFaceDatasetJSONSaver flagging.py\n\n* formatting\n\n* some tweaks\n\n* tweaks\n\n* tweaks\n\n* omar's fixes\n\n* added back test.init\n\n* restored test init\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2022-08-23T15:31:04Z",
+        "message": "Cleaning up the way data is processed for components (#1967)\n\n* remove preprocess_example\n\n* removing methods\n\n* added path support for images\n\n* fixes\n\n* video\n\n* formatting\n\n* fixing preprocess\n\n* fixes\n\n* removed from audio\n\n* fixed file\n\n* formatting\n\n* serialization\n\n* foramtting\n\n* formatting\n\n* removed save flag / restore flag\n\n* formatting\n\n* removed flagging\n\n* removed\n\n* load value\n\n* fixing typing\n\n* fixes, typing\n\n* fixes\n\n* file\n\n* handling images\n\n* formatting\n\n* fixed serializing for flagging\n\n* formatting\n\n* json\n\n* temp file\n\n* removed processing\n\n* changed processing\n\n* fixed temp FINALLY\n\n* flagging works\n\n* fix examples test\n\n* formatting\n\n* async examples\n\n* working on mix\n\n* comment out failing test\n\n* fixed interface problem\n\n* fix kitchen sink deprecation warning\n\n* gallery examples\n\n* fixes\n\n* fixes to serialization\n\n* fixing label serializing\n\n* fixed file serialization\n\n* kitchen sink restored\n\n* outbreak forecast updated\n\n* formatting\n\n* formatting and api mode\n\n* fix 1 test :/\n\n* fixing tests\n\n* fixed components tests\n\n* remvoed test files\n\n* formatting\n\n* fixed examples\n\n* fixes\n\n* formatting\n\n* restored certain files\n\n* added encryption\n\n* fixed syntax mistake\n\n* formatting\n\n* fixed 1 test\n\n* clean up interface\n\n* formatting\n\n* fixed route tests\n\n* more fixes\n\n* formatting\n\n* formatting\n\n* fixing pipeline\n\n* format frontend\n\n* format backend\n\n* tweaks\n\n* fix\n\n* fix final test?\n\n* merged\n\n* Sanitize for CSV (#2017)\n\n* sanitize for csv\n\n* added sanitization logic\n\n* fixed examples\n\n* turn cache off\n\n* fixed example caching with optional inputs\n\n* fixed review problems\n\n* fixed Interface.load\n\n* updating the tests\n\n* updating the tests\n\n* fix\n\n* fixed seriailizing\n\n* testing\n\n* rewrite run prediction\n\n* formatting\n\n* await\n\n* fixes\n\n* formatting\n\n* finally fixed mix\n\n* fixed tests\n\n* formatting\n\n* formatting\n\n* deserialize fix\n\n* formatting\n\n* fixes\n\n* fixes\n\n* fix\n\n* fix tests\n\n* fixes\n\nCo-authored-by: Freddy Boulton <alfonsoboulton@gmail.com>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2022-08-05T00:55:09Z",
+        "message": "Referencing guides in docstrings and other fixes (#1905)\n\n* tie guides to docs in docstrings\n\n* reference guides in more sections\n\n* fix missing guides in interface and blocks\n\n* fix broken html div\n\n* remove pinned metadata for ordering\n\n* fix annoying comma space in guide tags\n\n* retrigger codecov check\n\n* fix guides bug in flagging\n\n* add controlling layout guide to row, column, and tab"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2022-07-21T20:10:22Z",
+        "message": "Adding flagging callbacks to the docs (#1834)\n\n* added flagging documentation\n\n* formatting\n\n* added example usage\n\n* formatting\n\n* addressed comments"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2022-07-21T19:57:58Z",
+        "message": "Fixes cached examples (#1850)\n\n* examples fix\n\n* fix bug\n\n* formatting"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2022-07-11T22:39:44Z",
+        "message": "Fixes multiple people using `HuggingFaceDatasetSaver` simultaneously (#1744)\n\n* pull before updating repo\n\n* formatting\n\n* fix concurrency issue\n\n* formatting"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2022-07-06T18:23:35Z",
+        "message": "Exposing examples as a component for Blocks (#1639)\n\n* examples as component\n\n* renamed examples\n\n* simplify internal logic\n\n* fix tests\n\n* cleanup\n\n* fixed parallel and series\n\n* cleaning up examples\n\n* examples\n\n* formatting\n\n* fixes\n\n* added unique ids\n\n* added demo\n\n* formatting\n\n* fixed test_examples\n\n* fixed test_interfaces\n\n* fixed tests\n\n* removed test from now\n\n* raise ValueError for bad parameter values\n\n* fixing series\n\n* fixed series\n\n* formatting\n\n* speed up by preprocessing examples\n\n* fixed parameter validation logic"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2022-03-17T19:28:37Z",
+        "message": "Merge pull request #826 from gradio-app/comp-label\n\nComponent label fixes"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2022-03-17T17:30:51Z",
+        "message": "removed quoting for hf dataset saver"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2022-03-14T14:36:51Z",
+        "message": "sanitize flagging inputs before writing to csv\n\n\nFormer-commit-id: f2d9f808c79abec7f2c8ff4a94b17a9b1cdd5651"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2022-01-21T13:44:12Z",
+        "message": "Format The Codebase\n- black formatting\n- isort formatting"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2021-11-16T18:24:01Z",
+        "message": "reorganized flagging to make it easier to subclass"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/flagging.py",
+        "commit_date": "2021-11-01T16:40:51Z",
+        "message": "rewrote DefaultFlaggingHandler not to need app"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/themes/base.py",
+        "commit_date": "2024-01-30T21:30:27Z",
+        "message": "Fix test requirements to be compatible with python 3.11 (#7225)\n\n* stash pop\n\n* lint fix\n\n* add changeset\n\n* changes\n\n* add changeset\n\n* exclude\n\n* fix\n\n* tokenizers, transformers fix\n\n* changes\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/themes/base.py",
+        "commit_date": "2024-01-30T19:40:21Z",
+        "message": "add background color based on the OS mode (#7117)\n\n* add background color based on the OS mode\n\n* add changeset\n\n* use static css instead\n\n* format\n\n* changes\n\n* changes\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\nCo-authored-by: pngwn <hello@pngwn.io>\nCo-authored-by: Ali Abid <aliabid@Alis-MacBook-Pro.local>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/themes/base.py",
+        "commit_date": "2023-12-06T23:16:32Z",
+        "message": "switch from black to ruff formatter (#6543)\n\n* migrate from black to ruff\n\n* fix script and dependencies\n\n* applying ruff\n\n* add changeset\n\n* add changeset\n\n* address ruff feedback\n\n* replace linter\n\n* fixed typing\n\n* fix typing\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/themes/base.py",
+        "commit_date": "2023-12-05T22:18:09Z",
+        "message": "Issue 5245: consolidate usage of requests and httpx (#6598)\n\n* issue 5245 commit 1\n\n* formatted\n\n* add changeset\n\n* fixes\n\n* fixes\n\n* make changes in client too\n\n* remove requests from client\n\n* add changeset\n\n* add changeset\n\n* Fixes to test_utils.py in client\n\n* fixes in client utils.py and test_utils.py\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/themes/base.py",
+        "commit_date": "2023-10-31T11:30:18Z",
+        "message": "Cleanup theme vars (#6183)\n\n* changes\n\n* chaeneas\n\n* add changeset\n\n* lint\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/themes/base.py",
+        "commit_date": "2023-09-18T23:07:22Z",
+        "message": "Makes sliders consistent across all browsers (#5535)\n\n* slider changes\n\n* custom slider\n\n* add changeset\n\n* remove line\n\n* format\n\n* Custom slider changes\n\nCo-authored-by: Keldos-Li hi@keldos.me\n\n* style fixes\n\n* format\n\n* add changeset\n\n* slider\n\nCo-authored-by: Keldos <hi@keldos.me>\n\n* stories update\n\n* fix stories\n\n---------\n\nCo-authored-by: gradio-pr-bot <gradio-pr-bot@users.noreply.github.com>\nCo-authored-by: Keldos <hi@keldos.me>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/themes/base.py",
+        "commit_date": "2023-07-20T21:57:35Z",
+        "message": "Release 3.38 (#4991)\n\n* release\n\n* changelog\n\n* changelog\n\n* changelog\n\n* chatbot\n\n* remove test\n\n* Add code\n\n* add min width to submit button\n\n---------\n\nCo-authored-by: freddyaboulton <alfonsoboulton@gmail.com>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/themes/base.py",
+        "commit_date": "2023-07-20T20:47:01Z",
+        "message": "Add css variable for controlling chatbot user message border accent (#4989)\n\n* Add css variable\n\n* Fix var name\n\n* Add CHANGELOG"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/themes/base.py",
+        "commit_date": "2023-07-03T21:28:39Z",
+        "message": "Create Warning, Info modals (#4518)\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* Styling for error, warning and info toasts (#4603)\n\n* create abstract toast component for info/warning/error\n\n* add icons\n\n* add light mode theming\n\n* add theme mode check and dark mode styles\n\n* update theme_mode on update\n\n* clean up render of toast content\n\n* replace dynamic css vars with toast type css selectors\n\n* tweak colours\n\n* change error pill border colour to align with toasts\n\n* formatting\n\n* fix failed test\n\n* rename icon files and clean up css\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* chanegs\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\nCo-authored-by: Hannah <hannahblair@users.noreply.github.com>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/themes/base.py",
+        "commit_date": "2023-06-15T17:51:09Z",
+        "message": "Amend error toast and pill styling (#4454)\n\n* remove error gradient and add border to toast\n\n* changelog\n\n* tweak styling for light and dark error status and toast\n\n* run prettier\n\n* restore removed onclick\n\n* remove formatting\n\n* fix dracula test\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/themes/base.py",
+        "commit_date": "2023-06-11T01:12:11Z",
+        "message": "gr.Number() max/min limit (#3991)\n\n* Add min max handling for Number (#3871)\n\n* feat: add min max handling for Number\n\n* Update CHANGELOG.md\n\n* fix: Error when min or max is not specified\n\n* fix formatting\n\n* fix: error when nothing is specified\n\n* Just put infinity in min and max\n\n---------\n\nCo-authored-by: Dawood Khan <dawoodkhan82@gmail.com>\n\n* number limit\n\n* Update gradio/components.py\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* New Version Docs (#4027)\n\n* [create-pull-request] automated change\n\n* Trigger Build\n\n---------\n\nCo-authored-by: aliabd <aliabd@users.noreply.github.com>\nCo-authored-by: aliabd <ali.si3luwa@gmail.com>\n\n* Safer `HuggingFaceDatasetSaver` (and deprecate `HuggingFaceDatasetJsonSaver`) (#3973)\n\n* Draft for a safer HuggingFaceDatasetSaver\n\n* Rename (and replace) gr.SaferHuggingFaceDatasetSaver as gr.HuggingFaceDatasetSaver\n\n* update changelog\n\n* ruff\n\n* doc\n\n* tmp work\n\n* merge 2 classes\n\n* remove useless code\n\n* adapt tests\n\n* Update gradio/flagging.py\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update CHANGELOG.md\n\n* fix typing\n\n* code formatting\n\n* removed print from tests\n\n* removing imports\n\n* removing imports\n\n* fix paths\n\n* formatting\n\n* wording\n\n* formating\n\n* fix tests\n\n---------\n\nCo-authored-by: testbot <lucainp@hf.co>\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* merge\n\n* Allow state to be rendered multiple times (#4030)\n\n* state render\n\n* add test\n\n* formatting\n\n* changelog\n\n* Allow decoding b64 string without header in processing utils (#4031)\n\n* allow decoding b64 string without headers\n\n* install gradio-client in edittable mode\n\n* update GH actions\n\n* add test for decoding headerless b64\n\n* add test for decoding headerless b64 image\n\n* some linting\n\n* fix test\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Sets matplotlib backend to agg before rendering math (#4029)\n\n* matplotlib-agg\n\n* fix\n\n* context manager\n\n* Update CHANGELOG.md\n\n* update demos\n\n* linting\n\n* removed warning\n\n* fix test\n\n* fixes\n\n* fix tests\n\n* Upgrade pyright to 1.1.305 (#4042)\n\n* Fastapi Python Client Guide (#3892)\n\n* fastapi guide\n\n* changelog\n\n* writing\n\n* finish guide\n\n* fix\n\n* Update guides/06_client-libraries/fastapi-app-with-the-gradio-client.md\n\nCo-authored-by: Ali Abdalla <ali.si3luwa@gmail.com>\n\n* Update guides/06_client-libraries/fastapi-app-with-the-gradio-client.md\n\nCo-authored-by: Ali Abdalla <ali.si3luwa@gmail.com>\n\n* Update guides/06_client-libraries/fastapi-app-with-the-gradio-client.md\n\nCo-authored-by: Ali Abdalla <ali.si3luwa@gmail.com>\n\n* Update guides/06_client-libraries/fastapi-app-with-the-gradio-client.md\n\nCo-authored-by: Ali Abdalla <ali.si3luwa@gmail.com>\n\n* dependencies\n\n* html\n\n---------\n\nCo-authored-by: Ali Abdalla <ali.si3luwa@gmail.com>\n\n* fix overflowing gutter and dark mode base color (#4051)\n\n* Add ability to blocklist filepaths, ability to specify where gradio temp files are created (#4047)\n\n* temporary file\n\n* tests\n\n* formatting\n\n* rename\n\n* added another test\n\n* guide\n\n* formatting\n\n* changelog\n\n* added custom gradio temp directory (#4053)\n\n* added custom gradio temp directory\n\n* Update 03_sharing-your-app.md\n\n* rename test\n\n* address review\n\n* remove print\n\n* Chatbot code syntax highlighting (#4048)\n\n* first pass\n\n* fixes\n\n* more fixes\n\n* remove breaks\n\n* format\n\n* version\n\n* pr fixes\n\n* changelog\n\n* test fix\n\n* background color\n\n* format\n\n* revert test fix\n\n* changes\n\n* changes\n\n* test\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\nCo-authored-by: Ali Abid <aabid94@gmail.com>\n\n* Fixes issue with indentation in code field with streaming (#4043)\n\n* indent fix\n\n* fix\n\n* changelog\n\n* fix overflowing gutter and dark mode base color (#4051)\n\n* Add ability to blocklist filepaths, ability to specify where gradio temp files are created (#4047)\n\n* temporary file\n\n* tests\n\n* formatting\n\n* rename\n\n* added another test\n\n* guide\n\n* formatting\n\n* changelog\n\n* added custom gradio temp directory (#4053)\n\n* added custom gradio temp directory\n\n* Update 03_sharing-your-app.md\n\n* rename test\n\n* address review\n\n* remove print\n\n* Chatbot code syntax highlighting (#4048)\n\n* first pass\n\n* fixes\n\n* more fixes\n\n* remove breaks\n\n* format\n\n* version\n\n* pr fixes\n\n* changelog\n\n* test fix\n\n* background color\n\n* format\n\n* revert test fix\n\n* changes\n\n* changes\n\n* test\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\nCo-authored-by: Ali Abid <aabid94@gmail.com>\n\n* fix\n\n* fix test\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\nCo-authored-by: pngwn <hello@pngwn.io>\nCo-authored-by: Ali Abid <aabid94@gmail.com>\n\n* [create-pull-request] automated change (#4059)\n\nCo-authored-by: aliabid94 <aliabid94@users.noreply.github.com>\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* changelog (#4064)\n\n* New Version Docs (#4069)\n\n* [create-pull-request] automated change\n\n* Trigger Build\n\n---------\n\nCo-authored-by: aliabd <aliabd@users.noreply.github.com>\nCo-authored-by: aliabd <ali.si3luwa@gmail.com>\n\n* Soft theme fix (#4070)\n\n* fix\n\n* fix\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Empty gallery fix (#4072)\n\n* changes\n\n* changes\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Fix bug where functions with type hints caused errors (#4068)\n\n* Fix + test\n\n* CHANGELOG\n\n* Update test/test_utils.py\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update gradio/utils.py\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* More Ruff rules (#4038)\n\n* Bump ruff to 0.0.264\n\n* Enable Ruff Naming rules and fix most errors\n\n* Move `clean_html` to utils (to fix an N lint error)\n\n* Changelog\n\n* Clean up possibly leaking file handles\n\n* Enable and autofix Ruff SIM\n\n* Fix remaining Ruff SIMs\n\n* Enable and autofix Ruff UP issues\n\n* Fix misordered import from #4048\n\n* Fix bare except from #4048\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* [WIP] Language Agnostic Typing in `/info` route (#4039)\n\n* First commit\n\n* All serializers\n\n* Remove output type\n\n* Add route\n\n* Format json\n\n* Modify dropdown and slider choices\n\n* Fix impl\n\n* Lint\n\n* Add tests\n\n* Fix lint\n\n* remove breakpoint\n\n* Tests passing locally\n\n* Format code\n\n* Address comments\n\n* Use union + fix tests\n\n* handle multiple file case\n\n* Add serializer to info payload\n\n* lint\n\n* Add to CHANGELOG\n\n* grc version\n\n* requirements\n\n* fix test\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Keep hidden Accordion content in DOM (#4073)\n\n* changes\n\n* changes\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Theme builder fixes (#4080)\n\n* theme-builder-fixes\n\n* theme-builder-fixes\n\n* fix expand issue\n\n* changes\n\n* Update gradio/themes/builder_app.py\n\n* changelog\n\n---------\n\nCo-authored-by: Ali Abid <aabid94@gmail.com>\n\n* Misc file and docs fixes (#4086)\n\n* uvicorn version\n\n* uvicorn version\n\n* changes\n\n* guides\n\n* guide\n\n* changelog\n\n* typo\n\n* typo\n\n* Update guides/04_integrating-other-frameworks/01_using-hugging-face-integrations.md\n\n* chinese lang\n\n* rename\n\n* Update guides/04_integrating-other-frameworks/01_using-hugging-face-integrations.md\n\n* Update guides/03_building-with-blocks/04_custom-CSS-and-JS.md\n\nCo-authored-by: aliabid94 <aabid94@gmail.com>\n\n* address review\n\n* simplify section\n\n---------\n\nCo-authored-by: aliabid94 <aabid94@gmail.com>\n\n* Removing \"State\" from view API info (#4107)\n\n* wip pr\n\n* update client version\n\n* update space fetcher\n\n* changelog, workflow\n\n* fix not flaky tests\n\n* lint\n\n* v2\n\n* Dont send request to `/info` if version before 3.28.3 (#4109)\n\n* Add code\n\n* Lint\n\n* CHANGELOG\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Upload audio ios (#4071)\n\n* changes\n\n* changes\n\n* change\n\n* changes\n\n* changes\n\n* changes\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Allow textbox / number submits to trigger Interface submit (#4090)\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Fix slider released event not triggering when released on mobile (#4098)\n\n* Fix slider released event not triggering when released on mobile\n\n* Update CHANGELOG\n\n* fix range test\n\n* retrigger\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Fix then logic to work after failures (#4115)\n\n* change\n\n* changes\n\n* changes\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Fixes to view API page (#4112)\n\n* logo\n\n* fix for new info and logo path\n\n* changelog\n\n* remove example_input from returns\n\n---------\n\nCo-authored-by: Ali Abdalla <ali.si3luwa@gmail.com>\n\n* Add support for async generators (#3821)\n\n* Add impl + unit test\n\n* CHANGELOG\n\n* Lint\n\n* Type check\n\n* Remove print\n\n* Fix tests\n\n* revert change\n\n* Lint\n\n* formatting\n\n* Fix test\n\n* Lint\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\nCo-authored-by: Ali Abid <aabid94@gmail.com>\n\n* release (#4116)\n\n* Bumpt client version (#4125)\n\n* New Version Docs (#4131)\n\n* [create-pull-request] automated change\n\n* Trigger Build\n\n---------\n\nCo-authored-by: aliabd <aliabd@users.noreply.github.com>\nCo-authored-by: aliabd <ali.si3luwa@gmail.com>\n\n* Fix create version docs action (#4130)\n\n* define version instead of upgrading\n\n* add sleep\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Fix dev docs (#4132)\n\n* Move .config/README.md to js/README.md\n\n* Link js/README.md from CONTRIBUTING.md\n\n* Update CHANGELOG.md\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* changelog (#4136)\n\n* Fix website build issue (#4142)\n\n* upgrade pnpm\n\n* changelgo\n\n* Fix python client test (#4138)\n\n* Fix python client test\n\n* CHANGELOG\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Fix isssue with running with nginx (#4133)\n\n* nginx-root\n\n* fix\n\n* ability to set root path\n\n* removed root\n\n* removed root\n\n* fix\n\n* changelog\n\n* Update gradio/routes.py\n\nCo-authored-by: aliabid94 <aabid94@gmail.com>\n\n* Update gradio/routes.py\n\nCo-authored-by: aliabid94 <aabid94@gmail.com>\n\n---------\n\nCo-authored-by: aliabid94 <aabid94@gmail.com>\n\n* Record username when flagging (#4135)\n\n* record username\n\n* fix\n\n* changelog fix\n\n* format\n\n* fix hf saver\n\n* fix deserialization\n\n* fixes\n\n* Fix api info for File component (#4153)\n\n* Fix output file type info\n\n* Fix example inputs\n\n* CHANGELOG\n\n* Update client\n\n* Add test\n\n* Bump version\n\n* Bump min client version\n\n* Update .prettierignore adding client/js/dist and .venv (#4160)\n\n* Fix the prettier.ignorePath field in the VSCode workspace settings (#4164)\n\nCo-authored-by: pngwn <hello@pngwn.io>\n\n* simplify format of changelog (#4163)\n\n* Fix the wildcard in .editorconfig to match files in nested directories (#4165)\n\n* Fix the wildcard in .editorconfig to match files in nested directories\n\n* Remove a wrong whitespace in a brace expansion notation in .editorconfig\n\n---------\n\nCo-authored-by: pngwn <hello@pngwn.io>\n\n* Fix flaky interface test (#4168)\n\n* Fix test\n\n* Lint\n\n* Fix vs code lint\n\n* Adds missing components to gradio client serializing's component mapping (#4167)\n\n* add missing serialization\n\n* format\n\n* update release note format\n\n* update release note format\n\n* fix test\n\n* Release 3.30 (#4166)\n\n* release\n\n* requirements\n\n* [Docs] Resolve numerous typos (#4170)\n\n* Resolve numerous typos\n\n* Delete test.py\n\n* Run generate_notebooks\n\n* notebooks\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* New Version Docs (#4172)\n\n* [create-pull-request] automated change\n\n* Update v3.30.0_template.html\n\n---------\n\nCo-authored-by: abidlabs <abidlabs@users.noreply.github.com>\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Dispatch dropdown change on value change for any reason (#4128)\n\n* changes\n\n* changes\n\n* changes\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* hotfix for test (#4173)\n\n* hotfix for test\n\n* removed comment\n\n* 3712 js client (#3899)\n\n* update ci (#4184)\n\n* bump client version (#4185)\n\n* bump client version\n\n* ignore spaces-test\n\n* Fix (#4186)\n\n* bump client version\n\n* ignore spaces-test\n\n* fix\n\n* update token for npm action (#4187)\n\n* change (#4189)\n\n* ci typo (#4190)\n\n* Fix npm publish again again (#4191)\n\n* ci typo\n\n* fix\n\n* Fix npm publish again again (#4192)\n\n* ci typo\n\n* fix\n\n* again\n\n* Fix npm publish again again (#4193)\n\n* ci typo\n\n* fix\n\n* again\n\n* again\n\n* Add format argument to Audio (#4178)\n\n* experimental\n\n* Add test\n\n* Rename to format\n\n* Rename\n\n* CHANGELOG\n\n* Add to docstring\n\n* Update gradio/components.py\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* chore: update versions (#4188)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\n\n* Fix npm publish again again (#4195)\n\n* ci typo\n\n* fix\n\n* again\n\n* again\n\n* again\n\n* client docs tweaks (#4196)\n\n* ci typo\n\n* fix\n\n* again\n\n* again\n\n* again\n\n* ignore workbench\n\n* small tweaks for publish + docs\n\n* Fix \"TypeError: issubclass() arg 1 must be a class\" When Optional args  (#4200)\n\n* fix \"issubclass() arg 1 must be a class\" when args is Optional\n\n* Update CHANGELOG.md\n\nadd fix \"TypeError: issubclass() arg 1 must be a class\" when use Optional args\n\n* Update gradio/helpers.py\n\nCo-authored-by: Aarni Koskela <akx@iki.fi>\n\n* changelog\n\n* formatting\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\nCo-authored-by: Aarni Koskela <akx@iki.fi>\n\n* Fix semiver import (#4201)\n\n* fix token (#4208)\n\n* fix token\n\n* add label\n\n* Fix Explanation Regarding NumPy Image Component (#4204)\n\n* 20230513 swap np height and width in docs\n\n* changelog\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Correct stacklevel for check_deprecated_parameters (#4203)\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Programmatically launch reload to allow factories and arguments to be passed to the app (#4119)\n\n* Programmatically lauch reload to allow factories and arguments to be passed to the app\n\n* add warning\n\n* modify warning\n\n* guide fixes\n\n* formatting\n\n* changes\n\n* warning\n\n* import fix\n\n* fix tests\n\n* fix tests\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update CONTRIBUTING.md (#4220)\n\n* Input listener (#4157)\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* chnages\n\n* fix\n\n* changes\n\n* changes\n\n* merge\n\n* changes\n\n* restore\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Do not do any analytics requests if analytics are disabled (#4194)\n\n* Move analytics-related bits to gradio.analytics\n\n* Do not do any analytics requests if analytics are disabled\n\n* Remove unused log_feature_analytics\n\n* removed redundant analytics, rewrote\n\n* renamed\n\n* save\n\n* fixed test'\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Increase websocket messaging timeout (#4235)\n\n* increase websocket timeout\n\n* changelog\n\n* Fix for `typing.get_type_hints()` on Python 3.9 or lower (#4228)\n\n* fix\n\n* fix docstring\n\n* type hint fix\n\n* fix test\n\n* Update gradio/utils.py\n\nCo-authored-by: Aarni Koskela <akx@iki.fi>\n\n* fix indentation\n\n---------\n\nCo-authored-by: Aarni Koskela <akx@iki.fi>\n\n* Some tweaks to the Client (#4230)\n\n* parameter names\n\n* tweaks\n\n* separate out serialize\n\n* fix\n\n* changelog\n\n* fix\n\n* fix\n\n* improve test\n\n* Only allow messaging update if analytics is enabled (#4236)\n\n* Only allow messaging update if analytics are allowed\n\nFollows up on #4194\n\n* Remove duplicate changelog entry\n\n* remove circular import\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Fix client filepaths (#4202)\n\n* transform returned paths to useful URLs\n\n* changeset\n\n* update app\n\n* revert\n\n* revert\n\n* changelog\n\n* Update client/js/src/client.ts\n\nCo-authored-by: aliabid94 <aabid94@gmail.com>\n\n* format\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\nCo-authored-by: aliabid94 <aabid94@gmail.com>\n\n* fix cancels (#4225)\n\n* fix cancels\n\n* changelog\n\n* refactor to make it work\n\n* chore: update versions (#4207)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\n\n* Fix publish (#4240)\n\n* fix npm publish\n\n* fix npm publish\n\n* release (#4219)\n\nCo-authored-by: pngwn <hello@pngwn.io>\n\n* Fixes chatbot_dialogpt demo (#4238)\n\n* demo fix\n\n* changelog\n\n* fix\n\n* demo\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Fix JSONDecodeError (#4241)\n\n* Fix JSONDecodeError bug (#4237)\n\n* Remove unused import\n\n* Clean up code\n\n* Fix JSONDecodeError (#4241)\n\n* Accept all Exceptions\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* make workbench private (#4247)\n\n* Refactoring (#4223)\n\n* Replace var with const in js/app/src/main.ts\n\n* Remove unnecessary nullish coalescing in js/app/src/main.ts\n\n* Remove unnecessary white spaces in the NPM scripts in js/app/package.json\n\n* Use object key-value shorthand\n\n* changelog\n\n---------\n\nCo-authored-by: pngwn <hello@pngwn.io>\n\n* Move mount_css() from main.ts to css.ts (#4222)\n\n* Move mount_css() from main.ts to css.ts because these is a circular dependency between main.ts and Index.svelte (and it will help the development of the Wasm ver in the future)\n\n* changelog\n\n---------\n\nCo-authored-by: pngwn <hello@pngwn.io>\n\n* [create-pull-request] automated change (#4250)\n\nCo-authored-by: aliabd <aliabd@users.noreply.github.com>\n\n* Fix run on click (#4258)\n\n* fix run on click\n\n* changelog\n\n* Upgrade black to 23.3 (#4259)\n\n* Upgrade black\n\n* Conservatively upgrade packaging too since it's black's dependency\n\n* Using marked for chatbot markdown parsing (#4150)\n\n* fix info request in js client (#4271)\n\n* fix info request in js client\n\n* changelog\n\n* Temp file fixes (#4256)\n\n* Fix bug\n\n* Linting\n\n* CHANGELOG\n\n* Add tests\n\n* Update test\n\n* Fix remaining components + add tests\n\n* Fix tests\n\n* Fix tests\n\n* Address comments\n\n* Ensure error modal display as expected when using the queue (#4273)\n\n* Allow passing FastAPI app options (#4282)\n\n* App: don't force docs_url and redoc_url to None\n\n* App.create_app: allow passing in app_kwargs\n\n* start_server + launch: allow passing in app_kwargs\n\n* Changelog\n\n* Apply suggestions from code review\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Use .launch for tests\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Katex support in chatbot (#4285)\n\n* katex\n\n* katex support\n\n* changelog\n\n* fixes\n\n* pr fixes\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Release 3.32.0 (#4293)\n\n* release 3.32.0\n\n* changelog\n\n* New Version Docs (#4296)\n\n* [create-pull-request] automated change\n\n* Update v3.32.0_template.html\n\n---------\n\nCo-authored-by: abidlabs <abidlabs@users.noreply.github.com>\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Add overridden type annotations on `normalise_file()` to remove @ts-i\u2026 (#4315)\n\n* Add overridden type annotations on `normalise_file()` to remove @ts-ignore, and remove its unnecessary export\n\n* changeset\n\n---------\n\nCo-authored-by: pngwn <hello@pngwn.io>\n\n* typo (minor): extra newline puts the documentation of colums to grid (#4337)\n\n* typo (minor): extra newline puts the documentation of colums to grid\n\n* edited changelog\n\n* changelog\n\n---------\n\nCo-authored-by: thiswillbeyourgithub <github@32mail.33mail.com>\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* return a Dependency instance from Blocks.load event listener (#4304)\n\n* return a Dependency instance from Blocks.load event listener\n\n* a test case for chaining then from load event\n\n* update CHANGELOG\n\n* add test for load.then with blocks re-used\n\n* fixes\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Fix typo in client/js/README.md (#4310)\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* chore: update versions (#4283)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\n\n* Optimize frontend's is_dep calls (#4334)\n\n* Optimize is_dep (36 to 12 msec)\n\n* Call is_dep less (12 msec to 9 msec)\n\n* Changelog\n\n---------\n\nCo-authored-by: pngwn <hello@pngwn.io>\n\n* various client refactors + tweaks (#4357)\n\n* changeset\n\n* Add a type annotation on the `api` variable to which the return value of `view_config()` is assigned, and update the type annotation and exception handling on `view_config` as well (#4311)\n\n* Remove unnecessary @ts-ignore (#4314)\n\n* Remove unnecessary Promise wrapping another promise (#4313)\n\n* Remove unnecessary Promise wrapping another promise\n\n* Remove an error handeler that may remove detailed error stacks\n\n* changeset\n\n* remove changeset\n\n---------\n\nCo-authored-by: pngwn <hello@pngwn.io>\n\n* Stop using `let` for unchanged variables in `client.ts` (#4312)\n\n* Stop using `let` for unchanged variables in `client.ts`\n\n* fixes\n\n---------\n\nCo-authored-by: pngwn <hello@pngwn.io>\n\n---------\n\nCo-authored-by: Yuichiro Tachibana (Tsuchiya) <t.yic.yt@gmail.com>\n\n* Remove a bunch of unused frontend code (#4275)\n\nCo-authored-by: pngwn <hello@pngwn.io>\n\n* Respect `interactive=True` in output of `gr.Interface` (#4356)\n\n* tests\n\n* changelog\n\n* lint\n\n* Update gradio/interface.py\n\nCo-authored-by: Aarni Koskela <akx@iki.fi>\n\n* format\n\n---------\n\nCo-authored-by: Aarni Koskela <akx@iki.fi>\n\n* Don't allow dotfiles for /file= route (#4303)\n\n* Don't allow dotfiles or files in \"dot directories\" for /file=\n\n* update guide\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Push to spaces (#4033)\n\n* changes\n\n* first commit\n\n* Update gradio/upload.py\n\nCo-authored-by: Aarni Koskela <akx@iki.fi>\n\n* Update gradio/upload.py\n\nCo-authored-by: Aarni Koskela <akx@iki.fi>\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* chnages\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* Update 03_sharing-your-app.md\n\n* changes\n\n* changes\n\n* change\n\n* changes\n\n* changes\n\n* changes\n\n* Update gradio/deploy_space.py\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* changes\n\n* changes\n\n* changes\n\n---------\n\nCo-authored-by: Aarni Koskela <akx@iki.fi>\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Do not send HF token to other domains via `/proxy` (#4368)\n\n* test\n\n* fix\n\n* changelog\n\n* fix, add warnings\n\n* Make chatbot input fields non-interactive while bot is streaming (#4363)\n\n* Add demo impl\n\n* trigger then if generating\n\n* remove unused value\n\n* CHANGELOG\n\n* Fix code\n\n* Update guide\n\n* Update guides/07_other-tutorials/creating-a-chatbot.md\n\nCo-authored-by: pngwn <hello@pngwn.io>\n\n---------\n\nCo-authored-by: pngwn <hello@pngwn.io>\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Prevent path traversal in `/file` routes (#4370)\n\n* add tests\n\n* add tests\n\n* file route fix\n\n* update tests\n\n* formatting\n\n* file access\n\n* cleanup\n\n* cleaning\n\n* fix tests\n\n* Favicon fix for Windows (#4369)\n\n* favicon fix\n\n* changelog\n\n* svg\n\n* remove favicon\n\n* actual fix\n\n* Add pypi classifiers to pyproject.toml (#4383)\n\n* Add pypi classifiers to pyproject.toml\n\n* Add OS classifier\n\n---------\n\nCo-authored-by: Freddy Boulton <alfonsoboulton@gmail.com>\n\n* Use DOMPurify to sanitize html in chatbot (#4360)\n\n* dompurify\n\n* changelog\n\n* format\n\n* clean\n\n* changelog\n\n* Update run.py\n\n* update happy-dom\n\n---------\n\nCo-authored-by: pngwn <hello@pngwn.io>\n\n* fix copy button invalid & copy button (invisible) duplication bug in chatbot (#4350)\n\n* fix a copy button duplication bug in chatbot\n\n* fix copy button invalid issue\n\n* Update CHANGELOG.md: Fixed Copy Button\n\n* fix changelog typo\n\n* switch to static HTML + event delegation for copy button\n\n* fix\n\n* format + notebooks\n\n* format + notebooks\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\nCo-authored-by: pngwn <hello@pngwn.io>\n\n* release 3.33.0 (#4392)\n\nCo-authored-by: aliabid94 <aabid94@gmail.com>\n\n* Restore offline support (#4398)\n\n* changes\n\n* changes\n\n* changes\n\n* New Version Docs (#4397)\n\n* [create-pull-request] automated change\n\n* Update temporary_template.html\n\n---------\n\nCo-authored-by: abidlabs <abidlabs@users.noreply.github.com>\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Fix Base parent in Docs, add Group (#4391)\n\n* fix base parent\n\n* add group to docs\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Remove old versioned docs and fix repo classification  (#4362)\n\n* remove old versioned docs\n\n* delete versioned docs when new one is created\n\n* ignore website dir in linguist calc\n\n* upload and download versioned docs\n\n* modify github action\n\n* remove gitattributes file\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update message when share link binary is blocked (#4380)\n\n* update share link message\n\n* address suggestion\n\n* changelog\n\n* fix\n\n* formatting\n\n* Update utils.py for validate_url (#4388)\n\n* Update utils.py for validate_url\n\nAWS s3 presigned url cannot work for both HEAD and GET. So when HEAD the presigned url, it will return 403(Forbidden)\n\n* Update gradio/utils.py\n\n* changelog\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* v3.33.1 + Guide on setting up Gradio behind nginx... (#4379)\n\n* nginx guide\n\n* delete 3.33.0\n\n* version\n\n* unindent\n\n* Prevent label change event from triggering itself (#4371)\n\n* Fix the Node and pnpm setup actions (#4394)\n\n* Run `pnpm i` with pnpm@8.6.0 to re-generate the lock file (#4393)\n\n* fix indent (#4404)\n\n* Throttle scroll event  (#4158)\n\n* Throttle scroll event\n\nThis decreases the amount of function calls when scrolling through the documentation website.\n\n* fix themes base\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\nCo-authored-by: Ali Abdalla <ali.si3luwa@gmail.com>\n\n* merge\n\n* fixes\n\n* changes\n\n* more changes\n\n* notebook\n\n* changelog\n\n* error handle backend\n\n* Update gradio/components.py\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update gradio/components.py\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Adds `variant` and `interactive` props to `gr.UploadButton` (#4436)\n\n* upload button\n\n* fix index\n\n* changelog\n\n* formatting\n\n* cleanup\n\n* fix  get_continuous_fn bug when having every (#4434)\n\n* fix the bug for wrap continuous func with parameter every while origin func return generator\n\n* Update utils.py\n\n* Update CHANGELOG.md\n\n* Update test_utils.py\n\n* Update CHANGELOG.md\n\n* formatting\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Fix Safari video playback (#4433)\n\n* changes\n\n* changes\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* test fix\n\n* test\n\n* tests\n\n* fix ui test\n\n* format\n\n* Increase version gradio-client version/changelog (#4441)\n\n* Increase version gradio-client version/changelog\n\n* req\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* fixes\n\n* notebook\n\n* fixed tests finally\n\n* format\n\n* python test fix\n\n* test fix\n\n* remove style from test\n\n* Update CHANGELOG.md\n\n* theme test fix\n\n---------\n\nCo-authored-by: Artemy Egorov <artegoser@gmail.com>\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\nCo-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>\nCo-authored-by: aliabd <aliabd@users.noreply.github.com>\nCo-authored-by: aliabd <ali.si3luwa@gmail.com>\nCo-authored-by: Lucain <lucainp@gmail.com>\nCo-authored-by: testbot <lucainp@hf.co>\nCo-authored-by: 1lint <105617163+1lint@users.noreply.github.com>\nCo-authored-by: Aarni Koskela <akx@iki.fi>\nCo-authored-by: pngwn <hello@pngwn.io>\nCo-authored-by: Ali Abid <aabid94@gmail.com>\nCo-authored-by: aliabid94 <aliabid94@users.noreply.github.com>\nCo-authored-by: Freddy Boulton <alfonsoboulton@gmail.com>\nCo-authored-by: space-nuko <24979496+space-nuko@users.noreply.github.com>\nCo-authored-by: Yuichiro Tachibana (Tsuchiya) <t.yic.yt@gmail.com>\nCo-authored-by: Tom Aarsen <37621491+tomaarsen@users.noreply.github.com>\nCo-authored-by: abidlabs <abidlabs@users.noreply.github.com>\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\nCo-authored-by: LingFeng.Chen.Cn <lingfeng.chen.cn@gmail.com>\nCo-authored-by: Der Chien <b03902015@ntu.edu.tw>\nCo-authored-by: Micky Brunetti <micky2be@users.noreply.github.com>\nCo-authored-by: David Ai <davidai2018@gmail.com>\nCo-authored-by: thiswillbeyourgithub <26625900+thiswillbeyourgithub@users.noreply.github.com>\nCo-authored-by: thiswillbeyourgithub <github@32mail.33mail.com>\nCo-authored-by: Paul Garner <ego@anentropic.com>\nCo-authored-by: WilliamRoyNelson <william.roy.nelson@gmail.com>\nCo-authored-by: binary-husky <96192199+binary-husky@users.noreply.github.com>\nCo-authored-by: Yan <alvindaiyan@gmail.com>\nCo-authored-by: Shavit <shavit@users.noreply.github.com>\nCo-authored-by: dkjshk <xie0510@126.com>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/themes/base.py",
+        "commit_date": "2023-05-05T02:54:23Z",
+        "message": "More Ruff rules (#4038)\n\n* Bump ruff to 0.0.264\n\n* Enable Ruff Naming rules and fix most errors\n\n* Move `clean_html` to utils (to fix an N lint error)\n\n* Changelog\n\n* Clean up possibly leaking file handles\n\n* Enable and autofix Ruff SIM\n\n* Fix remaining Ruff SIMs\n\n* Enable and autofix Ruff UP issues\n\n* Fix misordered import from #4048\n\n* Fix bare except from #4048\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/themes/base.py",
+        "commit_date": "2023-05-04T08:28:39Z",
+        "message": "Chatbot code syntax highlighting (#4048)\n\n* first pass\n\n* fixes\n\n* more fixes\n\n* remove breaks\n\n* format\n\n* version\n\n* pr fixes\n\n* changelog\n\n* test fix\n\n* background color\n\n* format\n\n* revert test fix\n\n* changes\n\n* changes\n\n* test\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\nCo-authored-by: Ali Abid <aabid94@gmail.com>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/themes/base.py",
+        "commit_date": "2023-04-28T18:31:41Z",
+        "message": "UI fixes for themes (#3590)\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/themes/base.py",
+        "commit_date": "2023-04-27T20:09:50Z",
+        "message": "Use f-strings where possible (#3984)\n\n* Use f-strings where possible\n\nSemi-automated using ikamensh/flynt\n\n* Update gradio/utils.py\n\n* Update gradio/interface.py\n\n* formatting\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/themes/base.py",
+        "commit_date": "2023-04-25T01:08:55Z",
+        "message": "gradio.themes: get rid of useless re-exports + noqas (#3958)\n\n* gradio.themes.utils: remove star re-exports\n\n* gradio.themes: specify re-exports in __all__\n\n* gradio.themes.app: import create_theme_dropdown from full module path\n\n* Add changelog\n\n* Yeet theme_dropdown CommitOperationAdd\n\n* fixing broken theme path\n\n* version\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/themes/base.py",
+        "commit_date": "2023-04-06T19:58:42Z",
+        "message": "Document python client in gradio.app/docs (#3764)\n\n* document py client\n\n* more changes\n\n* update docs\n\n* changes\n\n* fix tests\n\n* formatting\n\n* stash\n\n* fix tests\n\n* documentation\n\n* more docs\n\n* gradio client\n\n* changes\n\n* rework documentation\n\n* add to docs\n\n* modify dockerfile\n\n* gradio client\n\n* address feedback\n\n* formatting\n\n* gradio client version\n\n* fix tests\n\n* tweaks to website\n\n---------\n\nCo-authored-by: aliabd <ali.si3luwa@gmail.com>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/themes/base.py",
+        "commit_date": "2023-03-30T18:20:34Z",
+        "message": "Theme builder (#3664)\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* Update CHANGELOG.md\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update gradio/themes/builder.py\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/themes/base.py",
+        "commit_date": "2023-03-23T21:27:16Z",
+        "message": "Set theme name from load (#3595)\n\n* Add name + test\n\n* Add theme names\n\n* CHANGELOG\n\n* Delete theme in interface"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/themes/base.py",
+        "commit_date": "2023-03-20T23:16:18Z",
+        "message": "Add missing demos for Code and Barplot (#3550)\n\n* Add missing demos\n\n* Add code\n\n* Linting\n\n* Format notebook\n\n* Remove extra print\n\n* Update demo/barplot_component/run.py\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Fix code component formatting\n\n* Fix barplot\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/themes/base.py",
+        "commit_date": "2023-03-19T03:15:02Z",
+        "message": "Sharing themes (#3428)\n\n* Rebase\n\n* Remove build hooks\n\n* Working implementation\n\n* Add semver + unit tests\n\n* CHANGELOG\n\n* Add to docs\n\n* Rename push_to_hub and fix typos\n\n* Fix gallery\n\n* Fix typo\n\n* Address comments + tests\n\n* Update gradio/themes/app.py\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Import Base as Theme. Use DefaultTheme() as fallback\n\n* Fix types\n\n* Make version and token truly optional\n\n* Add version dropdown + tests\n\n* trigger\n\n* Support private themes and org_names\n\n* Fix org_name typo\n\n* Update wheel\n\n* Fix font loading and dumping\n\n* fixing tests\n\n* fix tests\n\n* formatting\n\n* version\n\n* remove requirements\n\n* remove requirements\n\n* formatting\n\n* fix tests\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/themes/base.py",
+        "commit_date": "2023-03-19T00:30:52Z",
+        "message": "Theme label bar fix (#3507)\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* Update gradio/themes/base.py\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update gradio/themes/base.py\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* undo merge break\n\n* changes\n\n* changes\n\n* changes\n\n* fix\n\n* theme_to_soft\n\n* changes\n\n* restore_label_stat_bats\n\n* changes\n\n* changes\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/themes/base.py",
+        "commit_date": "2023-03-18T20:24:11Z",
+        "message": "Release v3.22.0 (#3489)\n\n* release 3.22.0\n\n* Add type hint\n\n---------\n\nCo-authored-by: freddyaboulton <alfonsoboulton@gmail.com>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/themes/base.py",
+        "commit_date": "2023-03-18T20:07:23Z",
+        "message": "Use soft theme instead of glass theme in demo (#3503)\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* Update gradio/themes/base.py\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update gradio/themes/base.py\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* undo merge break\n\n* changes\n\n* changes\n\n* changes\n\n* fix\n\n* theme_to_soft\n\n* changes\n\n* formatting\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/themes/base.py",
+        "commit_date": "2023-03-18T00:20:55Z",
+        "message": "More theme updates (#3497)\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* Update gradio/themes/base.py\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update gradio/themes/base.py\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* undo merge break\n\n* changes\n\n* changes\n\n* changes\n\n* fix\n\n---------\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/themes/base.py",
+        "commit_date": "2023-03-17T14:41:53Z",
+        "message": "Theme+release (#3494)\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* Update gradio/themes/base.py\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update gradio/themes/base.py\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* Update guides/03_building-with-blocks/06_theming-guide\n\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>\n\n* changes\n\n* changes\n\n* changes\n\n* save file\n\n* update changelog\n\n---------\n\nCo-authored-by: Ali Abid <aabid94@gmail.com>"
+    },
+    {
+        "repo_url": "github.com/gradio-app/gradio",
+        "filepath": "gradio/themes/base.py",
+        "commit_date": "2023-03-06T20:52:31Z",
+        "message": "Python backend to theming (#2931)\n\n* add theme + theme atoms\n\n* audio\n\n* buttons\n\n* chatbot\n\n* forms\n\n* start file\n\n* complete file\n\n* fixup workbench\n\n* gallery\n\n* highlighted text\n\n* label\n\n* json\n\n* upload\n\n* 3d model\n\n* atoms\n\n* chart\n\n* md + html\n\n* image\n\n* plot + build\n\n* table\n\n* tabs\n\n* tooltip\n\n* upload\n\n* tweaks\n\n* tweaks + more tooling\n\n* tweaks to padding/ lineheight\n\n* app components _ start api docs\n\n* format, more api docs\n\n* finish api docs\n\n* interpretation\n\n* todos\n\n* tweaks + cleanup\n\n* tweaks + cleanup\n\n* revert range tweaks\n\n* fix notebooks\n\n* fix test\n\n* remove tw\n\n* cleanup + login\n\n* fix gitignore\n\n* fix types\n\n* run css script\n\n* fix progress + tweaks\n\n* update demos\n\n* add css build to static check workflow\n\n* tweak ci\n\n* fix tests\n\n* tweak markdown\n\n* tweak chatbot + file\n\n* fix tabs\n\n* tweak tabs\n\n* cleanup\n\n* fix api docs\n\n* fix example gallery\n\n* add gradient to toast\n\n* fix min height for interfaces\n\n* revert tab changes\n\n* update notebooks\n\n* changes\n\n* changes\n\n* change\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* change\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* fix\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* undo radius\n\n* undo radius\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* changes\n\n* change\n\n* undo\n\n* Add absolute imports\n\n* mock theme in tests\n\n* clean\n\n* changes\n\n* changes\n\n---------\n\nCo-authored-by: pngwn <hello@pngwn.io>\nCo-authored-by: freddyaboulton <alfonsoboulton@gmail.com>\nCo-authored-by: Abubakar Abid <abubakar@huggingface.co>"
+    },
+    {
+        "repo_url": "github.com/mlflow/mlflow",
+        "filepath": "mlflow/transformers/__init__.py",
+        "commit_date": "2024-03-01T11:18:49Z",
+        "message": "Fix torch_dtype issue when specified via kwargs (#11297)\n\nSigned-off-by: B-Step62 <yuki.watanabe@databricks.com>"
+    },
+    {
+        "repo_url": "github.com/mlflow/mlflow",
+        "filepath": "mlflow/transformers/__init__.py",
+        "commit_date": "2024-02-29T00:24:11Z",
+        "message": "Merge PEFT feature branch (#11240)\n\nSigned-off-by: B-Step62 <yuki.watanabe@databricks.com>\nSigned-off-by: Yuki Watanabe <31463517+B-Step62@users.noreply.github.com>\nCo-authored-by: Ben Wilson <39283302+BenWilson2@users.noreply.github.com>"
+    },
+    {
+        "repo_url": "github.com/mlflow/mlflow",
+        "filepath": "mlflow/transformers/__init__.py",
+        "commit_date": "2024-02-21T11:52:54Z",
+        "message": "Remove `pylint: disable` comments (#11196)\n\nSigned-off-by: harupy <17039389+harupy@users.noreply.github.com>"
+    },
+    {
+        "repo_url": "github.com/mlflow/mlflow",
+        "filepath": "mlflow/transformers/__init__.py",
+        "commit_date": "2024-02-19T09:17:29Z",
+        "message": "Fix fixable `line-too-long` (#11175)\n\nSigned-off-by: harupy <17039389+harupy@users.noreply.github.com>"
+    },
+    {
+        "repo_url": "github.com/mlflow/mlflow",
+        "filepath": "mlflow/transformers/__init__.py",
+        "commit_date": "2024-02-19T01:45:46Z",
+        "message": "Clean tmp path instantly in Transformers CI test (#11148)\n\nSigned-off-by: B-Step62 <yuki.watanabe@databricks.com>"
+    },
+    {
+        "repo_url": "github.com/mlflow/mlflow",
+        "filepath": "mlflow/transformers/__init__.py",
+        "commit_date": "2024-02-16T07:35:47Z",
+        "message": "Remove global transformers import to fix autologging issue in MLR (#11165)\n\nSigned-off-by: B-Step62 <yuki.watanabe@databricks.com>"
+    },
+    {
+        "repo_url": "github.com/mlflow/mlflow",
+        "filepath": "mlflow/transformers/__init__.py",
+        "commit_date": "2024-02-13T21:27:36Z",
+        "message": "Remove extra validation for model types when constructing Transformers pipeline (#11099)\n\nSigned-off-by: B-Step62 <yuki.watanabe@databricks.com>"
+    },
+    {
+        "repo_url": "github.com/mlflow/mlflow",
+        "filepath": "mlflow/transformers/__init__.py",
+        "commit_date": "2024-02-13T07:47:10Z",
+        "message": "Support input and signature for text-generation models for Chat and Completions (#11027)\n\nSigned-off-by: Ying Chen <ying.chen@databricks.com>"
+    },
+    {
+        "repo_url": "github.com/mlflow/mlflow",
+        "filepath": "mlflow/transformers/__init__.py",
+        "commit_date": "2024-02-08T10:58:01Z",
+        "message": "Add timeout for signature/requirement inference during Transformer model logging. (#11037)\n\nSigned-off-by: B-Step62 <yuki.watanabe@databricks.com>"
+    },
+    {
+        "repo_url": "github.com/mlflow/mlflow",
+        "filepath": "mlflow/transformers/__init__.py",
+        "commit_date": "2024-02-06T02:51:52Z",
+        "message": "Fix missing dtype issue for transformer pipeline (#10979)\n\nSigned-off-by: B-Step62 <yuki.watanabe@databricks.com>\nSigned-off-by: Yuki Watanabe <31463517+B-Step62@users.noreply.github.com>"
+    },
+    {
+        "repo_url": "github.com/mlflow/mlflow",
+        "filepath": "mlflow/transformers/__init__.py",
+        "commit_date": "2024-02-06T01:50:14Z",
+        "message": "Fix non-idempotent prediction due to in-place update to model-config (#11014)\n\nSigned-off-by: B-Step62 <yuki.watanabe@databricks.com>\nSigned-off-by: Ben Wilson <39283302+BenWilson2@users.noreply.github.com>\nSigned-off-by: Yuki Watanabe <31463517+B-Step62@users.noreply.github.com>\nCo-authored-by: Ben Wilson <39283302+BenWilson2@users.noreply.github.com>"
+    },
+    {
+        "repo_url": "github.com/mlflow/mlflow",
+        "filepath": "mlflow/transformers/__init__.py",
+        "commit_date": "2024-02-01T17:10:53Z",
+        "message": "Support chat, completions task output for text-generation pipeline (#10872)\n\nSigned-off-by: Ying Chen <ying.chen@databricks.com>"
+    },
+    {
+        "repo_url": "github.com/mlflow/mlflow",
+        "filepath": "mlflow/transformers/__init__.py",
+        "commit_date": "2024-01-31T22:59:27Z",
+        "message": "Fix prompt templating bug with Text2TextGeneration pipeline (#10960)\n\nSigned-off-by: B-Step62 <yuki.watanabe@databricks.com>"
+    },
+    {
+        "repo_url": "github.com/mlflow/mlflow",
+        "filepath": "mlflow/transformers/__init__.py",
+        "commit_date": "2024-01-24T20:48:14Z",
+        "message": "Add support for retrieving license files for transformers models (#10871)\n\nSigned-off-by: Ben Wilson <benjamin.wilson@databricks.com>"
+    },
+    {
+        "repo_url": "github.com/mlflow/mlflow",
+        "filepath": "mlflow/transformers/__init__.py",
+        "commit_date": "2024-01-18T05:20:29Z",
+        "message": "Support saving prompt templates for transformers (#10791)\n\nSigned-off-by: Daniel Lok <daniel.lok@databricks.com>"
+    },
+    {
+        "repo_url": "github.com/mlflow/mlflow",
+        "filepath": "mlflow/transformers/__init__.py",
+        "commit_date": "2024-01-17T03:55:56Z",
+        "message": "Google docstring conversion batch 2 (#10826)\n\nSigned-off-by: Michael Berk <michael.berk@databricks.com>\nCo-authored-by: Michael Berk <michael.berk@databricks.com>"
+    },
+    {
+        "repo_url": "github.com/mlflow/mlflow",
+        "filepath": "mlflow/transformers/__init__.py",
+        "commit_date": "2024-01-09T01:25:50Z",
+        "message": "Remove the Redundant duplication check in transformers dependency validation (#10792)\n\nSigned-off-by: Ben Wilson <benjamin.wilson@databricks.com>"
+    },
+    {
+        "repo_url": "github.com/mlflow/mlflow",
+        "filepath": "mlflow/transformers/__init__.py",
+        "commit_date": "2024-01-04T02:49:00Z",
+        "message": "Support saving input_example with no conversion (#10741)\n\nSigned-off-by: Serena Ruan <serena.rxy@gmail.com>"
+    },
+    {
+        "repo_url": "github.com/mlflow/mlflow",
+        "filepath": "mlflow/transformers/__init__.py",
+        "commit_date": "2023-12-21T19:00:16Z",
+        "message": "initpy and test_transformers_model_export (#10538)\n\nSigned-off-by: swathi <konakanchi.swathi@gmail.com>\nSigned-off-by: Hankyeol Kyung <kghnkl0103@gmail.com>\nSigned-off-by: Prithvi Kannan <prithvi.kannan@databricks.com>\nSigned-off-by: Jerry Liang <jerry.liang@databricks.com>\nSigned-off-by: Jerry Liang <66143562+jerrylian-db@users.noreply.github.com>\nSigned-off-by: serena-ruan <serena.ruan@ip-10-110-25-32.us-west-2.compute.internal>\nSigned-off-by: Serena Ruan <serena.rxy@gmail.com>\nSigned-off-by: Gabriel Fu <hfu.gabriel@gmail.com>\nSigned-off-by: Madhu <madhukesav02@gmail.com>\nSigned-off-by: Konakanchi Swathi <98085410+KonakanchiSwathi@users.noreply.github.com>\nCo-authored-by: Marcus Kyung <kghnkl0103@gmail.com>\nCo-authored-by: Prithvi Kannan <46332835+prithvikannan@users.noreply.github.com>\nCo-authored-by: Jerry Liang <66143562+jerrylian-db@users.noreply.github.com>\nCo-authored-by: WeichenXu <weichen.xu@databricks.com>\nCo-authored-by: Siddharth Murching <sid.murching@databricks.com>\nCo-authored-by: Serena Ruan <82044803+serena-ruan@users.noreply.github.com>\nCo-authored-by: serena-ruan <serena.ruan@ip-10-110-25-32.us-west-2.compute.internal>\nCo-authored-by: Gabriel Fu <hfu.gabriel@gmail.com>\nCo-authored-by: madhumaddi <madhumaddi@microsoft.com>\nCo-authored-by: Madhu <madhukesav02@gmail.com>\nCo-authored-by: Ben Wilson <39283302+BenWilson2@users.noreply.github.com>"
+    },
+    {
+        "repo_url": "github.com/mlflow/mlflow",
+        "filepath": "mlflow/transformers/__init__.py",
+        "commit_date": "2023-12-19T07:32:01Z",
+        "message": "Objects and Array support in model signature (#9936)\n\nSigned-off-by: Serena Ruan <serena.rxy@gmail.com>\nSigned-off-by: harupy <hkawamura0130@gmail.com>\nSigned-off-by: Daniel Lok <daniel.lok@databricks.com>\nSigned-off-by: B-Step62 <yuki.watanabe@databricks.com>\nSigned-off-by: Serena Ruan <82044803+serena-ruan@users.noreply.github.com>\nSigned-off-by: mlflow-automation <mlflow-automation@users.noreply.github.com>\nSigned-off-by: Weichen Xu <weichen.xu@databricks.com>\nCo-authored-by: Harutaka Kawamura <hkawamura0130@gmail.com>\nCo-authored-by: Daniel Lok <daniel.lok@databricks.com>\nCo-authored-by: Yuki Watanabe <31463517+B-Step62@users.noreply.github.com>\nCo-authored-by: mlflow-automation <mlflow-automation@users.noreply.github.com>\nCo-authored-by: WeichenXu <weichen.xu@databricks.com>"
+    },
+    {
+        "repo_url": "github.com/mlflow/mlflow",
+        "filepath": "mlflow/transformers/__init__.py",
+        "commit_date": "2023-12-08T08:56:10Z",
+        "message": "Patch `setfit.Trainer` if `setfit >= 1.0` (#10652)\n\nSigned-off-by: harupy <17039389+harupy@users.noreply.github.com>"
+    },
+    {
+        "repo_url": "github.com/mlflow/mlflow",
+        "filepath": "mlflow/transformers/__init__.py",
+        "commit_date": "2023-12-05T01:40:20Z",
+        "message": "Support saving torch_dtype for transformers with components logging (#10586)\n\nSigned-off-by: Serena Ruan <serena.rxy@gmail.com>"
+    },
+    {
+        "repo_url": "github.com/mlflow/mlflow",
+        "filepath": "mlflow/transformers/__init__.py",
+        "commit_date": "2023-10-31T02:18:06Z",
+        "message": "Add MLflow typo checker (#10224)\n\nSigned-off-by: harupy <hkawamura0130@gmail.com>\nSigned-off-by: mlflow-automation <mlflow-automation@users.noreply.github.com>\nCo-authored-by: mlflow-automation <mlflow-automation@users.noreply.github.com>"
+    },
+    {
+        "repo_url": "github.com/mlflow/mlflow",
+        "filepath": "mlflow/transformers/__init__.py",
+        "commit_date": "2023-10-27T21:01:26Z",
+        "message": "Add model_size_bytes attribute when saving the model (#10110)\n\nSigned-off-by: wenfeiy-db <wenfei.yan@databricks.com>"
+    },
+    {
+        "repo_url": "github.com/mlflow/mlflow",
+        "filepath": "mlflow/transformers/__init__.py",
+        "commit_date": "2023-10-26T02:24:02Z",
+        "message": "Disallow heterogeneous memory configuration when saving transformers model (#10087)\n\nSigned-off-by: Ben Wilson <benjamin.wilson@databricks.com>"
+    },
+    {
+        "repo_url": "github.com/mlflow/mlflow",
+        "filepath": "mlflow/transformers/__init__.py",
+        "commit_date": "2023-10-20T15:43:36Z",
+        "message": "fix fill-mask with multiple masks (#10032)\n\nSigned-off-by: Serena Ruan <serena.rxy@gmail.com>"
+    },
+    {
+        "repo_url": "github.com/mlflow/mlflow",
+        "filepath": "mlflow/transformers/__init__.py",
+        "commit_date": "2023-10-14T14:37:02Z",
+        "message": "enable RUF013 (#9949) (#9950)\n\nSigned-off-by: Serhii Fedash <lightnessofbein@gmail.com>\nSigned-off-by: mlflow-automation <mlflow-automation@users.noreply.github.com>\nCo-authored-by: mlflow-automation <mlflow-automation@users.noreply.github.com>"
+    },
+    {
+        "repo_url": "github.com/mlflow/mlflow",
+        "filepath": "mlflow/transformers/__init__.py",
+        "commit_date": "2023-10-13T07:15:43Z",
+        "message": "Add SIM114 rule (#9922)\n\nSigned-off-by: TomeHirata <tomu.hirata@gmail.com>"
+    },
+    {
+        "repo_url": "github.com/mlflow/mlflow",
+        "filepath": "mlflow/transformers/__init__.py",
+        "commit_date": "2023-10-10T23:10:54Z",
+        "message": "Add SIM108 ruff rule (#9888)\n\nSigned-off-by: Tomu Hirata <tomu.hirata@gmail.com>\nSigned-off-by: TomuHirata <33407409+TomeHirata@users.noreply.github.com>"
+    },
+    {
+        "repo_url": "github.com/mlflow/mlflow",
+        "filepath": "mlflow/transformers/__init__.py",
+        "commit_date": "2023-10-06T00:46:39Z",
+        "message": "Model configuration for PyFunc flavor (#9251)\n\nSigned-off-by: santiagxf <santiagof@outlook.com>"
+    },
+    {
+        "repo_url": "github.com/mlflow/mlflow",
+        "filepath": "mlflow/transformers/__init__.py",
+        "commit_date": "2023-10-02T03:39:54Z",
+        "message": "Fix error message conversion for whisper (#9788)\n\nSigned-off-by: harupy <hkawamura0130@gmail.com>"
+    },
+    {
+        "repo_url": "github.com/mlflow/mlflow",
+        "filepath": "mlflow/transformers/__init__.py",
+        "commit_date": "2023-09-27T09:10:23Z",
+        "message": "Support saving params in input example (#9655)\n\nSigned-off-by: Serena Ruan <serena.rxy@gmail.com>\nSigned-off-by: Serena Ruan <82044803+serena-ruan@users.noreply.github.com>"
+    }
+]

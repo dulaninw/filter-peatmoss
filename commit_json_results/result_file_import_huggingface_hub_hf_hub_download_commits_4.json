@@ -1,0 +1,344 @@
+{
+    "7": {
+        "repository": "github.com/huggingface/huggingface_hub",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/huggingface_hub",
+                "filepath": "tests/test_hf_api.py",
+                "commit_date": "2023-11-02T14:11:25Z",
+                "message_summary": "Replace `ReprMixin` with dataclasses",
+                "replacement_info": "Replaced `ReprMixin` with dataclasses for better performance"
+            }
+        ]
+    },
+    "8": {
+        "repository": "github.com/huggingface/huggingface_hub",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/huggingface_hub",
+                "filepath": "tests/test_hf_api.py",
+                "commit_date": "2023-10-26T07:55:20Z",
+                "message_summary": "Removed GeneralTags, ModelTags, and DatasetTags",
+                "removal_details": "Removed GeneralTags, ModelTags, and DatasetTags from various parts of the codebase such as endpoint tests, endpoints, hf_api, docstrings, and more. Reverted some previous removals related to DatasetSearchArguments, ModelSearchArguments, and tags from __init__.py. Also, removed attribute dictionary, model search argument class, and related tests. Updated ModelTags and DatasetTags to return raw dictionaries, removed final DatasetTags import, 'ModelTags' import, and useless token. Added retry logic for ConnectionError/ReadTimeout when streaming files from the server. Added `InferenceClient.get_recommended_model` function with related changes in InferenceClient and tests. Fixed document links, minor doc fixes, and style updates.",
+                "tasks": [
+                    "Remove GeneralTags, ModelTags, and DatasetTags",
+                    "Revert removals related to DatasetSearchArguments and ModelSearchArguments",
+                    "Remove attribute dictionary and model search argument class",
+                    "Add retry logic for ConnectionError/ReadTimeout",
+                    "Add `InferenceClient.get_recommended_model` function",
+                    "Fix document links and minor doc issues",
+                    "Run make style"
+                ]
+            }
+        ]
+    },
+    "11": {
+        "repository": "github.com/huggingface/huggingface_hub",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/huggingface_hub",
+                "filepath": "tests/test_hf_api.py",
+                "commit_date": "2023-10-06T08:15:28Z",
+                "message_summary": "Add list_repo_likers method to HfApi",
+                "ptm_addition_details": {
+                    "name": "list_repo_likers",
+                    "version": "N/A",
+                    "problem_addressed": "N/A"
+                }
+            }
+        ]
+    },
+    "14": {
+        "repository": "github.com/huggingface/huggingface_hub",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/huggingface_hub",
+                "filepath": "tests/test_hf_api.py",
+                "commit_date": "2023-09-25T11:47:00Z",
+                "message_summary": "Add `url` attribute to Collection class",
+                "ptm_addition_details": {
+                    "name": "Collection",
+                    "version": "N/A",
+                    "problem_addressed": "N/A"
+                }
+            }
+        ]
+    },
+    "32": {
+        "repository": "github.com/huggingface/huggingface_hub",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/huggingface_hub",
+                "filepath": "tests/test_hf_api.py",
+                "commit_date": "2023-05-15T16:36:02Z",
+                "message_summary": "Remove deprecated code and adapt tests",
+                "removal_details": "Deprecated code removed and tests adapted"
+            }
+        ]
+    },
+    "35": {
+        "repository": "github.com/huggingface/huggingface_hub",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/huggingface_hub",
+                "filepath": "tests/test_hf_api.py",
+                "commit_date": "2023-04-18T19:10:33Z",
+                "message_summary": "Implement `list_files_info` + tests",
+                "update_details": "Implement get_files_info + tests\nadd list_repo_files test\nfix docs?\nremove lastCommit for now + rename to get_paths_infos\nuse expand=True in hffs\ndocs"
+            }
+        ]
+    },
+    "37": {
+        "repository": "github.com/huggingface/huggingface_hub",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/huggingface_hub",
+                "filepath": "tests/test_hf_api.py",
+                "commit_date": "2023-04-17T14:52:28Z",
+                "message_summary": "Add `sleep_time` for Spaces",
+                "ptm_addition_details": {
+                    "name": "Space",
+                    "problem_addressed": "Adding sleep_time feature"
+                }
+            },
+            {
+                "tasks": [
+                    "Implement Space sleep_time + docs + tests",
+                    "document return values",
+                    "make quality",
+                    "remove useless -CPU_BASIC_SLEEP_TIME"
+                ]
+            }
+        ]
+    },
+    "40": {
+        "repository": "github.com/huggingface/huggingface_hub",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/huggingface_hub",
+                "filepath": "tests/test_hf_api.py",
+                "commit_date": "2023-03-24T09:55:52Z",
+                "message_summary": "Added `hf_transfer` upload feature and updated API",
+                "ptm_addition_details": null,
+                "update_details": "Updated `hf_transfer` API and added upload feature",
+                "replacement_info": null,
+                "removal_details": null
+            }
+        ]
+    },
+    "42": {
+        "repository": "github.com/huggingface/huggingface_hub",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/huggingface_hub",
+                "filepath": "tests/test_hf_api.py",
+                "commit_date": "2023-03-23T14:46:01Z",
+                "message_summary": "Prepare for 0.14",
+                "removal_details": "Removal of set_access_token and git-credential-related helpers"
+            }
+        ]
+    },
+    "53": {
+        "repository": "github.com/huggingface/huggingface_hub",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/huggingface_hub",
+                "filepath": "tests/test_hf_api.py",
+                "commit_date": "2023-02-07T17:45:34Z",
+                "message_summary": "Update formatting tooling",
+                "update_details": "Tooling and configuration updates"
+            }
+        ]
+    },
+    "65": {
+        "repository": "github.com/huggingface/huggingface_hub",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/huggingface_hub",
+                "filepath": "tests/test_hf_api.py",
+                "commit_date": "2022-12-13T12:45:11Z",
+                "message_summary": "Remove `get_space_secrets` endpoint",
+                "removal_details": "The commit removes the `get_space_secrets` endpoint from the file."
+            }
+        ]
+    },
+    "75": {
+        "repository": "github.com/huggingface/huggingface_hub",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/huggingface_hub",
+                "filepath": "tests/test_file_download.py",
+                "commit_date": "2023-09-26T08:19:57Z",
+                "message_summary": "Address failing _check_disk_space() when path doesn't exist yet (#1692)",
+                "update_details": "Add realpath to disk_usage to allow path-like obj. Add logic to address non-existent paths. Add test cases for non-existent paths."
+            }
+        ]
+    },
+    "92": {
+        "repository": "github.com/huggingface/huggingface_hub",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/huggingface_hub",
+                "filepath": "tests/test_file_download.py",
+                "commit_date": "2023-01-24T10:41:37Z",
+                "message_summary": "Fix to use cache for snapshots even if refs do not exist",
+                "update_details": "Fix to use cache for snapshots even if refs do not exist. Subsequent calls to `try_to_load_from_cache` were returning None even though the desired data was in the cache.",
+                "tasks": [
+                    "fix"
+                ]
+            }
+        ]
+    },
+    "104": {
+        "repository": "github.com/huggingface/huggingface_hub",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/huggingface_hub",
+                "filepath": "tests/test_file_download.py",
+                "commit_date": "2022-09-20T06:52:40Z",
+                "message_summary": "Add get_hf_file_metadata to fetch metadata from the Hub",
+                "ptm_addition_details": {
+                    "name": "get_hf_file_metadata",
+                    "problem_addressed": "Fetching metadata from the Hub"
+                }
+            }
+        ]
+    },
+    "115": {
+        "repository": "github.com/huggingface/huggingface_hub",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/huggingface_hub",
+                "filepath": "tests/test_file_download.py",
+                "commit_date": "2021-04-07T23:03:11Z",
+                "message_summary": "Expose more hf.co API surface and ability to download a snapshot of a repo to a local folder",
+                "ptm_addition_details": {
+                    "name": "snapshot_download",
+                    "problem_addressed": "Ability to download a whole snapshot of a repo's files at the specified revision"
+                }
+            }
+        ]
+    },
+    "117": {
+        "repository": "github.com/huggingface/huggingface_hub",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/huggingface_hub",
+                "filepath": "tests/test_file_download.py",
+                "commit_date": "2021-02-12T18:56:44Z",
+                "message_summary": "Support for git-based dataset repos",
+                "ptm_addition_details": {
+                    "name": "datasets",
+                    "problem_addressed": "file_download"
+                }
+            }
+        ]
+    },
+    "121": {
+        "repository": "github.com/Preemo-Inc/text-generation-inference",
+        "text": [
+            {
+                "repo_url": "github.com/Preemo-Inc/text-generation-inference",
+                "filepath": "server/text_generation_server/utils/hub.py",
+                "commit_date": "2023-06-05T14:09:41Z",
+                "message_summary": "feat(server): batch tokenization for flash causal lm",
+                "ptm_addition_details": {
+                    "name": "flash causal lm",
+                    "version": "not specified",
+                    "problem_addressed": "batch tokenization"
+                }
+            }
+        ]
+    },
+    "124": {
+        "repository": "github.com/Preemo-Inc/text-generation-inference",
+        "text": [
+            {
+                "repo_url": "github.com/Preemo-Inc/text-generation-inference",
+                "filepath": "server/text_generation_server/utils/hub.py",
+                "commit_date": "2023-04-11T17:16:41Z",
+                "message_summary": "Added support for OPT models",
+                "ptm_addition_details": {
+                    "name": "OPT models",
+                    "problem_addressed": "Support for models without tokenizer.json file on the hub"
+                }
+            }
+        ]
+    },
+    "128": {
+        "repository": "github.com/haotian-liu/transformers_llava",
+        "text": [
+            {
+                "repo_url": "github.com/haotian-liu/transformers_llava",
+                "filepath": "src/transformers/utils/hub.py",
+                "commit_date": "2023-02-06T23:10:56Z",
+                "message_summary": "Update quality tooling for formatting",
+                "update_details": "Quality tooling for formatting was updated, including black version, Python target version, flake8 to ruff switch, isort configuration, and black adaptation in check copies."
+            }
+        ]
+    },
+    "135": {
+        "repository": "github.com/haotian-liu/transformers_llava",
+        "text": [
+            {
+                "repo_url": "github.com/haotian-liu/transformers_llava",
+                "filepath": "src/transformers/utils/hub.py",
+                "commit_date": "2022-09-29T12:58:39Z",
+                "message_summary": "Update to huggingface_hub 0.10.0",
+                "update_details": "Updated huggingface_hub to version 0.10.0"
+            }
+        ]
+    },
+    "144": {
+        "repository": "github.com/haotian-liu/transformers_llava",
+        "text": [
+            {
+                "repo_url": "github.com/haotian-liu/transformers_llava",
+                "filepath": "src/transformers/utils/hub.py",
+                "commit_date": "2022-08-10T15:55:18Z",
+                "message_summary": "Use commit hash to look in cache instead of calling head",
+                "update_details": "Update src/transformers/utils/hub.py"
+            }
+        ]
+    },
+    "147": {
+        "repository": "github.com/haotian-liu/transformers_llava",
+        "text": [
+            {
+                "repo_url": "github.com/haotian-liu/transformers_llava",
+                "filepath": "src/transformers/utils/hub.py",
+                "commit_date": "2022-08-06T07:42:55Z",
+                "message_summary": "Update CLI commands from `transformers-cli` to `huggingface-cli`",
+                "update_details": "CLI commands `transformers-cli login` and `transformers-cli repo create` have been updated to `huggingface-cli login` and `huggingface-cli repo create` respectively."
+            }
+        ]
+    },
+    "159": {
+        "repository": "github.com/haotian-liu/transformers_llava",
+        "text": [
+            {
+                "repo_url": "github.com/haotian-liu/transformers_llava",
+                "filepath": "src/transformers/utils/hub.py",
+                "commit_date": "2022-06-21T15:51:18Z",
+                "message_summary": "Prepare transformers for v0.8.0 huggingface-hub release",
+                "ptm_addition_details": {
+                    "version": "v0.8.0",
+                    "name": "transformers",
+                    "problem_addressed": "Preparing for huggingface-hub release"
+                }
+            }
+        ]
+    },
+    "165": {
+        "repository": "github.com/haotian-liu/transformers_llava",
+        "text": [
+            {
+                "repo_url": "github.com/haotian-liu/transformers_llava",
+                "filepath": "src/transformers/utils/hub.py",
+                "commit_date": "2022-03-23T19:56:49Z",
+                "message_summary": "Make Transformers use cache files when hf.co is down",
+                "update_details": "Transformers now uses cache files when hf.co is down"
+            }
+        ]
+    }
+}

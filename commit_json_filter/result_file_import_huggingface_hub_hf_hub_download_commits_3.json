@@ -1,0 +1,1005 @@
+[
+
+{
+    "repo_url": "github.com/cedrickchee/transformers-llama",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-08-06T07:42:55Z",
+    "message": "`transformers-cli login` => `huggingface-cli login` (#18490)\n\n* zero chance anyone's using that constant no?\n\n* `transformers-cli login` => `huggingface-cli login`\n\n* `transformers-cli repo create` => `huggingface-cli repo create`\n\n* `make style`"
+},
+{
+    "repo_url": "github.com/cedrickchee/transformers-llama",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-08-05T17:29:38Z",
+    "message": "Typo reported by Joel Grus on TWTR (#18493)"
+},
+{
+    "repo_url": "github.com/cedrickchee/transformers-llama",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-08-05T17:24:53Z",
+    "message": "Forgot one new_ for cache migration"
+},
+{
+    "repo_url": "github.com/cedrickchee/transformers-llama",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-08-05T17:14:00Z",
+    "message": "Move cache folder to huggingface/hub for consistency with hf_hub (#18492)\n\n* Move cache folder to just huggingface\n\n* Thank you VsCode for this needless import\n\n* Move to hub\n\n* Forgot one"
+},
+{
+    "repo_url": "github.com/cedrickchee/transformers-llama",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-08-05T14:12:40Z",
+    "message": "Use new huggingface_hub tools for download models (#18438)\n\n* Draft new cached_file\n\n* Initial draft for config and model\n\n* Small fixes\n\n* Fix first batch of tests\n\n* Look in cache when internet is down\n\n* Fix last tests\n\n* Bad black, not fixing all quality errors\n\n* Make diff less\n\n* Implement change for TF and Flax models\n\n* Add tokenizer and feature extractor\n\n* For compatibility with main\n\n* Add utils to move the cache and auto-do it at first use.\n\n* Quality\n\n* Deal with empty commit shas\n\n* Deal with empty etag\n\n* Address review comments"
+},
+{
+    "repo_url": "github.com/cedrickchee/transformers-llama",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-08-01T16:07:30Z",
+    "message": "Rewrite push_to_hub to use upload_files (#18366)\n\n* Rewrite push_to_hub to use upload_files\n\n* Adapt the doc a bit\n\n* Address review comments and clean doc"
+},
+{
+    "repo_url": "github.com/cedrickchee/transformers-llama",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-07-19T09:53:53Z",
+    "message": "[From pretrained] Allow download from subfolder inside model repo (#18184)\n\n* add first generation tutorial\n\n* [from_pretrained] Allow loading models from subfolders\n\n* remove gen file\n\n* add doc strings\n\n* allow download from subfolder\n\n* add tests\n\n* Apply suggestions from code review\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\n\n* apply comments\n\n* correct doc string\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>"
+},
+{
+    "repo_url": "github.com/cedrickchee/transformers-llama",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-07-13T16:43:08Z",
+    "message": "Make sharded checkpoints work in offline mode (#18125)\n\n* Make sharded checkpoints work in offline mode\n\n* Add test"
+},
+{
+    "repo_url": "github.com/cedrickchee/transformers-llama",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-07-13T14:53:25Z",
+    "message": "Revert \"Make sharded checkpoints work in offline mode\"\n\nThis reverts commit 3564c6578630a3bef29d2c7c36c7d29b68acd874."
+},
+{
+    "repo_url": "github.com/cedrickchee/transformers-llama",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-07-13T14:51:56Z",
+    "message": "Make sharded checkpoints work in offline mode"
+},
+{
+    "repo_url": "github.com/cedrickchee/transformers-llama",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-07-11T16:45:06Z",
+    "message": "Add filename to info diaplyed when downloading things in from_pretrained (#18099)"
+},
+{
+    "repo_url": "github.com/cedrickchee/transformers-llama",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-06-21T16:01:08Z",
+    "message": "TF Sharded (#17713)\n\n* initial commit\n\n* update modeeling tf utils\n\n* quality\n\n* clean and update args\n\n* update\n\n* remove potential bug\n\n* code quality\n\n* update\n\n* update max shard\n\n* update tests for sharding from pretrained\n\n* fix remaining test\n\n* make style\n\n* h5py if tf available\n\n* update and fix test\n\n* fix test\n\n* style\n\n* modified push to hub to support shard for TF\n\n* quick fix\n\n* update code\n\n* merge branch main and style\n\n* Apply suggestions from code review\n\nCo-authored-by: Joao Gante <joaofranciscocardosogante@gmail.com>\nCo-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>\n\n* update based on reviews\n\n* update doc\n\n* update and style\n\n* Apply suggestions from code review\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\n\n* Update based on reviews\n\n* fix typo\n\n* style\n\nCo-authored-by: Joao Gante <joaofranciscocardosogante@gmail.com>\nCo-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>"
+},
+{
+    "repo_url": "github.com/cedrickchee/transformers-llama",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-06-21T15:51:18Z",
+    "message": "Prepare transformers for v0.8.0 huggingface-hub release (#17716)\n\n* Prepare CI for v0.8.0\n\n* pin hfh (revert before merge)\n\n* Revert \"pin hfh (revert before merge)\"\n\nThis reverts commit a0103140e1c77b810ffcb735192968bc03be3e1f.\n\n* Test rc3\n\n* Test latest rc\n\n* Unpin to the RC\n\nCo-authored-by: Sylvain Gugger <Sylvain.gugger@gmail.com>"
+},
+{
+    "repo_url": "github.com/cedrickchee/transformers-llama",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-06-10T13:41:53Z",
+    "message": "\ud83d\udc1b Properly raise `RepoNotFoundError` when not authenticated (#17651)\n\n* Raise RepoNotFoundError in case of 401\n\n* Include changes from revert-17646-skip_repo_not_found\n\n* Add a comment\n\n* \ud83d\udc84 Code quality\n\n* \ud83d\udc9a Update `get_from_cache` test\n\n* \ud83d\udc9a Code quality & skip failing test"
+},
+{
+    "repo_url": "github.com/cedrickchee/transformers-llama",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-06-07T15:57:52Z",
+    "message": "Add examples telemetry (#17552)\n\n* Add examples telemetry\n\n* Alternative approach\n\n* Add to all other examples\n\n* Add to templates as well\n\n* Put framework separately\n\n* Same for TensorFlow"
+},
+{
+    "repo_url": "github.com/cedrickchee/transformers-llama",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-05-12T20:25:55Z",
+    "message": "Black preview (#17217)\n\n* Black preview\n\n* Fixup too!\n\n* Fix check copies\n\n* Use the same version as the CI\n\n* Bump black"
+},
+{
+    "repo_url": "github.com/cedrickchee/transformers-llama",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-04-29T16:26:45Z",
+    "message": "Revert \"Updating variable names. (#16445)\" (#17011)\n\nThis reverts commit 4f3a14e3c235c8b6b8cd2f5bc448a0cffacddf61."
+},
+{
+    "repo_url": "github.com/cedrickchee/transformers-llama",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-04-25T19:15:00Z",
+    "message": " Fix issue probably-meant-fstring found at https://codereview.doctor (#16913)"
+},
+{
+    "repo_url": "github.com/cedrickchee/transformers-llama",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-03-23T19:56:49Z",
+    "message": "Make Transformers use cache files when hf.co is down (#16362)\n\n* Make Transformers use cache files when hf.co is down\n\n* Fix tests\n\n* Was there a random circleCI failure?\n\n* Isolate patches\n\n* Style\n\n* Comment out the failure since it doesn't fail anymore\n\n* Better comment"
+},
+{
+    "repo_url": "github.com/cedrickchee/transformers-llama",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-03-23T14:26:33Z",
+    "message": "Reorganize file utils (#16264)\n\n* Split file_utils in several submodules\n\n* Fixes\n\n* Add back more objects\n\n* More fixes\n\n* Who exactly decided to import that from there?\n\n* Second suggestion to code with code review\n\n* Revert wront move\n\n* Fix imports\n\n* Adapt all imports\n\n* Adapt all imports everywhere\n\n* Revert this import, will fix in a separate commit"
+},
+{
+    "repo_url": "github.com/Nerogar/OneTrainer",
+    "filepath": "modules/module/HPSv2ScoreModel.py",
+    "commit_date": "2023-10-25T16:38:57Z",
+    "message": "load HPSv2 with the correct precision"
+},
+{
+    "repo_url": "github.com/linto-ai/linto-stt",
+    "filepath": "whisper/stt/processing/alignment_model.py",
+    "commit_date": "2023-11-29T17:49:00Z",
+    "message": "Isolate what is specific to Whisper in a folder"
+},
+{
+    "repo_url": "github.com/ArthurConmy/Automatic-Circuit-Discovery",
+    "filepath": "acdc/induction/utils.py",
+    "commit_date": "2023-09-18T14:41:31Z",
+    "message": "Remove some hook_mlp_in things based on new TL"
+},
+{
+    "repo_url": "github.com/ArthurConmy/Automatic-Circuit-Discovery",
+    "filepath": "acdc/induction/utils.py",
+    "commit_date": "2023-06-01T17:12:35Z",
+    "message": "Change back to transformer_lens install\n\nChange folder\n\nOh I forgot pyproject"
+},
+{
+    "repo_url": "github.com/ArthurConmy/Automatic-Circuit-Discovery",
+    "filepath": "acdc/induction/utils.py",
+    "commit_date": "2023-05-16T04:01:17Z",
+    "message": "Merge remote-tracking branch 'upstream/more-rocs' into other-code"
+},
+{
+    "repo_url": "github.com/ArthurConmy/Automatic-Circuit-Discovery",
+    "filepath": "acdc/induction/utils.py",
+    "commit_date": "2023-05-14T21:06:24Z",
+    "message": "Merge remote-tracking branch 'upstream/main' into other-code"
+},
+{
+    "repo_url": "github.com/ArthurConmy/Automatic-Circuit-Discovery",
+    "filepath": "acdc/induction/utils.py",
+    "commit_date": "2023-05-13T01:59:49Z",
+    "message": "Make a test out of this"
+},
+{
+    "repo_url": "github.com/ArthurConmy/Automatic-Circuit-Discovery",
+    "filepath": "acdc/induction/utils.py",
+    "commit_date": "2023-05-13T01:08:49Z",
+    "message": "All the things work but it is broken"
+},
+{
+    "repo_url": "github.com/ArthurConmy/Automatic-Circuit-Discovery",
+    "filepath": "acdc/induction/utils.py",
+    "commit_date": "2023-05-12T21:05:27Z",
+    "message": "Merge remote-tracking branch 'upstream/main' into fig-4-exp"
+},
+{
+    "repo_url": "github.com/ArthurConmy/Automatic-Circuit-Discovery",
+    "filepath": "acdc/induction/utils.py",
+    "commit_date": "2023-04-27T00:33:45Z",
+    "message": "Add stuff with layer 1 correct.."
+},
+{
+    "repo_url": "github.com/ArthurConmy/Automatic-Circuit-Discovery",
+    "filepath": "acdc/induction/utils.py",
+    "commit_date": "2023-04-26T12:23:06Z",
+    "message": "Changes to allow for 16 Heads"
+},
+{
+    "repo_url": "github.com/ArthurConmy/Automatic-Circuit-Discovery",
+    "filepath": "acdc/induction/utils.py",
+    "commit_date": "2023-04-22T16:02:34Z",
+    "message": "Fix somwe plotting and setup final train run"
+},
+{
+    "repo_url": "github.com/ArthurConmy/Automatic-Circuit-Discovery",
+    "filepath": "acdc/induction/utils.py",
+    "commit_date": "2023-04-16T23:10:24Z",
+    "message": "ACDC in process of getting more metrics"
+},
+{
+    "repo_url": "github.com/ArthurConmy/Automatic-Circuit-Discovery",
+    "filepath": "acdc/induction/utils.py",
+    "commit_date": "2023-04-16T05:25:29Z",
+    "message": "Update loading of data so it's nicer"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2024-02-28T14:00:35Z",
+    "message": "Support Gemma model (#1631)\n\n* support Gemma model\n\n* fix black\n\n* set layer_norm_use_residual as optional\n\n---------\n\nCo-authored-by: thucpham <minhthuc.pham@systrangroup.com>"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2024-02-12T17:37:28Z",
+    "message": "LLaMa: get tokens in the range of the vocab size (#1621)\n\nCo-authored-by: thucpham <minhthuc.pham@systrangroup.com>"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-11-29T18:01:51Z",
+    "message": "Adding PhiConfig (#1568)\n\n* adding phiconfig\n---------\n\nCo-authored-by: Michael Feil <michael.feil@michaelfeil.eu>"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-11-28T11:46:47Z",
+    "message": "check alignment_heads in gen config before using (#1565)\n\nCo-authored-by: thucpham <minhthuc.pham@systrangroup.com>"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-11-20T09:39:17Z",
+    "message": "Better HF-to-CT2 conversion for Whisper model (#1546)\n\n* Better HF-to-CT2 conversion for Whisper model\n* Use lang_ids from gen config if available\n* Fix the case when there is no lang_to_ids in gen config"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-11-17T12:22:49Z",
+    "message": "fixed decoder_start_token_id for T5 (#1552)\n\n* fixed decoder_start_token_id for T5, pad_token as default for decoder_start\n---------\n\nCo-authored-by: Ehsan Jahanbakhsh <ehsan.jahanbakhsh.bashirloo@gmail.com>"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-11-08T17:17:22Z",
+    "message": "whisper-large-v3 compatibility (#1530)\n\n* expose n_mels\nopenai whisper large-v3 introduces change from 80 to 128 in mel input feature.\nexposing n_mels is required to propagate the input size to the audio feature extractor\n* fix guessing is_multilingual for large-v3\n* alignement heads for large-v3\nsee https://github.com/OpenNMT/CTranslate2/pull/1530#issuecomment-1801243243\n* add num_languages property to whisper models\n* update comment documentation\n---------\n\nCo-authored-by: Valentin Berkes <vberkes@ubiqus.com>"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-11-07T12:39:59Z",
+    "message": "Support conversion for distil-whisper (#1529)\n\nPrevious code was assuming same number of encoder and decoder layer.\nRemoved this assumptions and obtain the number of layer separately."
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-11-07T07:52:40Z",
+    "message": "Minimal support for Mistral 7B model. (#1528)\n\n* minimal support for Mistral: loader and rotary length (no sliding so far)"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-11-03T11:29:00Z",
+    "message": "Support Transformers in the Wav2Vec2 Encoder for the ASR Inference (#1520)\n\n* Support Transformers in the Wav2Vec2 Encoder for the ASR Inference\n* change ONEAPI_VERSION to 2023.2.0\nCo-authored-by: hkwon <homin.kwon@sri.com>"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-09-15T13:19:02Z",
+    "message": "Added converter for MixFormerSequentialForCausalLM (#1485)\n\n* Added converter for MixFormerSequentialForCausalLM\n\n* Format code\n\n* Removed manual check from auto_map field\n\n* Set rotary_interleave to False"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-08-31T07:57:26Z",
+    "message": "Implement converter for FalconConfig (#1405) (#1449)\n\n* Implement converter for FalconConfig (#1405)\n\n* Apply black\n\n* Fix c++ Alibi test\n\n* Set rotary_dim to 0\n\nCo-authored-by: Guillaume Klein <guillaumekln@users.noreply.github.com>\n\n* Improve scale_alibi parameter description\n\nCo-authored-by: Guillaume Klein <guillaumekln@users.noreply.github.com>\n\n* Improve scale_alibi parameter description\n\nCo-authored-by: Guillaume Klein <guillaumekln@users.noreply.github.com>\n\n* Update src/layers/attention.cc\n\nCo-authored-by: Guillaume Klein <guillaumekln@users.noreply.github.com>\n\n* Fix c++ Alibi test\n\n* Remove Falcon test\n\n---------\n\nCo-authored-by: Guillaume Klein <guillaumekln@users.noreply.github.com>"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-08-29T10:19:41Z",
+    "message": "Make the RoPE base period configurable (#1445)"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-08-29T07:55:50Z",
+    "message": "Implement linear RoPE scaling (#1442)\n\n* Implement linear RoPE scaling\n\n* Fix black formatting"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-08-04T07:06:35Z",
+    "message": "Implement DistilBERT converter (#1399)\n\n* Implement DistilBERT converter\n\n* Update docs/guides/transformers.md\n\nCo-authored-by: Guillaume Klein <guillaumekln@users.noreply.github.com>\n\n---------\n\nCo-authored-by: Guillaume Klein <guillaumekln@users.noreply.github.com>"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-08-02T13:53:09Z",
+    "message": "By default, keep the same FP precision when converting models (#1389)\n\n* By default, keep the same FP precision when converting models\n\n* Update docstrings with int8_float32\n\n* Update function get_supported_compute_types\n\n* Load Transformers models in the correct dtype\n\n* Update quantization.md\n\n* Add compute_type property to model instances\n\n* Check quantization argument"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-07-31T15:24:10Z",
+    "message": "Update Llama converter to accept extra tokens in the vocabulary (#1380)"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-07-27T08:15:26Z",
+    "message": "Remove vocabulary workaround in the Llama converter (#1369)"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-07-20T14:33:26Z",
+    "message": "Set the RMS norm epsilon value in the configuration of Llama models (#1357)"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-07-19T13:40:24Z",
+    "message": "Update converter for meta-llama/Llama-2-*-hf models (#1354)\n\n* Update converter for meta-llama/Llama-2-*-hf models\n\n* Fix black formatting"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-07-17T12:18:04Z",
+    "message": "Revert \"Fix/falcon renaming (#1345)\" (#1346)\n\nThis reverts commit 16ac475c8ff107a1b9577e94bec726168068f97a."
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-07-17T08:39:23Z",
+    "message": "Support bfloat16 execution on the GPU (#1316)\n\n* Support bfloat16 execution on the GPU\n\n* Fix incorrect variable name\n\n* Update README\n\n* Remove unused str\n\n* Fix compilation of convert for older architectures\n\n* Fix check for BF16 support\n\n* Do not use __hmax function\n\n* Skip test on Windows\n\n* Register Torch tensors in the Transformers converter\n\n* Import optional modules at the top of the file\n\n* Fix tests\n\n* Remove unnecessary import\n\n* Fix the fallback table"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-07-13T12:08:01Z",
+    "message": "Fix/falcon renaming (#1345)\n\n* fix: rename RW to Falcon\n\n* fix: update all variable names\n\n* format: black"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-07-11T07:58:35Z",
+    "message": "Support Trust Remote Code for Tokenizer as well (#1336)\n\n* support_tokenizer_trust_remote_code\n\n* Match_Black_Styling\n\n* Review_fix\n\n* Black_styling_fix"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-06-21T10:20:56Z",
+    "message": "Unit test for llama gptbig codegen (#1298)\n\n* falcon: add additional vocab\n\n* add unit tests for llama, gptbig, and codegen\n\n* update test\n\n* format with black\n\n* also adding the vocab extension to Bert\n\n* reformat with black\n\n* llama test\n\n* update unittest\n\n* update\n\n* Remove diff\n\n---------\n\nCo-authored-by: michaelfeil <me@michaelfeil.eu>\nCo-authored-by: Guillaume Klein <guillaumekln@users.noreply.github.com>"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-06-15T10:02:38Z",
+    "message": "Add an XLMRoberta Config to the HF transformers converter (#1290)\n\n* Add an XLMRoberta Config to the HF transformers converter\n\n* Fix styling/formatting issues\n\n* Reformat transformers.py with Black\n\n---------\n\nCo-authored-by: Vasil Filipov <vasil.filipov@sensika.com>"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-06-15T09:04:42Z",
+    "message": "Support conversion of Falcon-40B (#1282)\n\n* Support conversion of Falcon-40B\n\n* Fix missing argument"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-06-06T11:18:39Z",
+    "message": "Initial support for encoder-only models (BERT) (#1256)\n\n* Initial support for encoder-only models (BERT)\n\n* Cleanup class comment\n\n* Make a synchronous copy of StorageView inputs"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-06-05T12:25:40Z",
+    "message": "remove use_fast arg for loading tokenizers (#1270)\n\nCo-authored-by: Caroline Dockes <carolined@speechmatics.com>"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-06-05T09:21:09Z",
+    "message": "Add conversion code for Falcon models (#1260)\n\n* Add conversion code for Falcon models\n\n* Update documentation"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-05-26T14:14:30Z",
+    "message": "Implement multi-query attention for GPTBigCode (#1246)\n\n* Implement multi-query attention for GPTBigCode\n\n* Increase the spec revision"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-05-26T12:30:30Z",
+    "message": "List supported configurations in alphabetical order in the error (#1247)"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-05-26T10:26:08Z",
+    "message": "Integrate the HF LLaMa converter (#1242)"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-05-26T09:59:27Z",
+    "message": "Add a converter for GPTBigCode (#1245)\n\n* initial conversion\n\n* refactor converter\n\n* rename class and reformat\n\n---------\n\nCo-authored-by: Michael Feil <michael.feil@michaelfeil.eu>"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-05-23T08:40:12Z",
+    "message": "Adding support for transformers - Salesforce/CodeGen architecture (#1230)\n\n* initial commit of converter\n\n* format code with flake8\n\n* update comments, formatting\n\n* reformat with black - just to make the CI happy V1\n\n* reformat with black - v2\n\n* add experimental config for codegen-2-2B\n\n* update code for ctranslate2\n\n* refactor difference between codegen2 and codegen1\n\n* Update transformers.py\n\n* reformat\n\n* resolve comments\n\n* format with black\n\n---------\n\nCo-authored-by: Michael Feil <michael.feil@michaelfeil.eu>"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-05-22T10:53:43Z",
+    "message": "Support the MPT model from MosaicML (#1228)"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-04-17T13:24:02Z",
+    "message": "Expose flag low_cpu_mem_usage of Transformers method from_pretrained (#1173)"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-04-17T13:23:28Z",
+    "message": "Also load weights as FP16 when converting to int8_float16 (#1172)"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-04-17T07:15:49Z",
+    "message": "Add alternative rotary implementation that slices the head dimensions (#1168)"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-04-06T13:13:05Z",
+    "message": "Implement rotary embeddings and support the GPT-J model (#1158)\n\n* Implement rotary embeddings and support the GPT-J model\n\n* Fix typo\n\n* Increment the TransformerDecoderSpec revision\n\n* Fix condition to recompute the sin/cos embeddings\n\n* Remove parameter rotate_every_two\n\n* Remove unrelated changes\n\n* Remove apply_residual attribute\n\n* Minimize diff"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-03-16T10:16:12Z",
+    "message": "Fix error when converting a Whisper model from a path (#1131)"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-03-14T18:06:23Z",
+    "message": "Add method Whisper.align to implement word-level timestamps (#1120)\n\n* Add method Whisper.align to implement word-level timestamps\n\n* Reword error message\n\n* Add comment about missing GPU operations\n\n* Move list of alignment heads at the end of the file\n\n* Move MedianFilter to dedicated file\n\n* Implement generalized LayerNorm on CPU"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-03-06T09:36:55Z",
+    "message": "Immediately load HF models in FP16 if it is the target conversion type (#1110)\n\n* Immediately load HF models in FP16 if it is the target conversion type\n\n* Exclude int8_float16"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-03-02T09:38:28Z",
+    "message": "Add option to copy any HF model files in the converted model directory (#1106)\n\n* Add option to copy any HF model files in the converted model directory\n\n* Check for existing files\n\n* Reformat file"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-02-28T10:02:10Z",
+    "message": "Add methods in TransformersConverter to customize from_pretrained call (#1102)"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-02-08T15:15:31Z",
+    "message": "Implement variants of the GELU activation (#1065)\n\n* Implement variants of the GELU activation\n\n* Fix clang error\n\n* Use FMA instruction in Tanh approximation"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-01-24T08:39:41Z",
+    "message": "Workaround the incorrect <unk> ID in M2M100Tokenizer.get_vocab (#1057)"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2023-01-02T10:42:42Z",
+    "message": "Apply SmoothQuant for OPT models (#1038)"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2022-12-28T16:31:43Z",
+    "message": "Read decoder_layers parameters for BART-like models (#1032)"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2022-12-07T11:27:08Z",
+    "message": "Generalize the TransformerSpec constructor (#1006)\n\n* Generalize the TransformerSpec constructor\n\n* Fix test"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2022-11-21T16:04:56Z",
+    "message": "Remove some unnecessary fields in the Whisper configuration (#986)\n\n* Remove some unnecessary fields in the Whisper configuration\n\n* Increase spec revision"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2022-11-17T14:30:21Z",
+    "message": "Fix timestamp tokens in the Whisper vocabulary (#984)"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2022-11-02T11:29:47Z",
+    "message": "Integrate the Whisper model from OpenAI (#956)\n\n* Integrate the Whisper model from OpenAI\n\n* Reformat test file\n\n* Install cuDNN devel package\n\n* Return Numpy tensors in example\n\n* Push missing __init__.py file\n\n* Add datasets module in test requirements\n\n* Add decoded audio test file in the repo\n\n* Enable REORDER primitive"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2022-10-28T15:51:13Z",
+    "message": "Move model-specific logic out of the base Transformers conversion class (#954)"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2022-10-26T14:33:05Z",
+    "message": "Add config.json file in the model directory (#948)"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2022-07-29T16:49:10Z",
+    "message": "Fix conversion of NLLB models without tokenizer_class in config (#889)"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2022-07-27T13:54:45Z",
+    "message": "Add support for NLLB multilingual models (#878)\n\n* Add support for NLLB multilingual models\n\n* Update requirements.txt\n\n* Fix tokenizer class check\n\n* Update Transformers version"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2022-07-27T10:39:33Z",
+    "message": "Add conversion for Pegasus summarization models (#883)\n\n* Add conversion for Pegasus summarization models\n\n* Fix formatting\n\n* Update README"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2022-07-06T13:56:23Z",
+    "message": "Remove <pad> token when converting MarianMT models (#865)\n\n* Remove <pad> token when converting MarianMT models\n\n* Reformat test file"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2022-06-23T08:11:53Z",
+    "message": "Add missing final layer norm in OPT model (#850)"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2022-06-21T14:23:53Z",
+    "message": "Keep verbose mode enabled for Transformers' tokenizer (#848)"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2022-06-13T13:38:46Z",
+    "message": "Add missing logits bias for some Transformers model (#833)"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2022-05-31T10:21:42Z",
+    "message": "Fix conversion of facebook/bart-large-cnn (#817)\n\n* Fix conversion of facebook/bart-large-cnn\n\n* Fix formatting"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2022-05-25T12:22:11Z",
+    "message": "Reorder Python imports with isort (#812)\n\n* Reorder Python imports with isort\n\n* Set working directory"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2022-05-17T15:56:17Z",
+    "message": "Support OPT models via the Transformers converter (#807)\n\n* Support OPT models via the Transformers converter\n\n* Update Python version in tests\n\n* Fix wheel name\n\n* Minor formatting"
+},
+{
+    "repo_url": "github.com/OpenNMT/CTranslate2",
+    "filepath": "python/ctranslate2/converters/transformers.py",
+    "commit_date": "2022-05-06T16:55:03Z",
+    "message": "Add a converter for Hugging Face Transformers (#797)\n\n* Add a converter for Hugging Face Transformers\n\n* Update README\n\n* Restrict testing to Linux runner"
+},
+{
+    "repo_url": "github.com/D8-Dreambooth/stable-diffusion-plus",
+    "filepath": "core/helpers/captioners/wolf.py",
+    "commit_date": "2023-05-19T22:24:57Z",
+    "message": "Fixes and changes and tagging, oh my."
+},
+{
+    "repo_url": "github.com/pravdomil/Rerender-A-Video",
+    "filepath": "app.py",
+    "commit_date": "2023-06-22T02:54:28Z",
+    "message": "set_max_key_frames_env (#10)\n\n\n- add midas depth and env for MAX_KEYFRAME (c962acd2ca442aebd3c83d20cc91ebabc2b1ab75)\n\n\nCo-authored-by: Radam\u00e9s Ajna <radames@users.noreply.huggingface.co>"
+},
+{
+    "repo_url": "github.com/pravdomil/Rerender-A-Video",
+    "filepath": "app.py",
+    "commit_date": "2023-06-20T04:16:17Z",
+    "message": "fix_enable_any_model_hf (#8)\n\n\n- simple update to enable download any model file from the hub (38bfc1d9aab9d3b64304fc00a8de540c5bc033c6)\n\n\nCo-authored-by: Radam\u00e9s Ajna <radames@users.noreply.huggingface.co>"
+},
+{
+    "repo_url": "github.com/pravdomil/Rerender-A-Video",
+    "filepath": "app.py",
+    "commit_date": "2023-06-16T08:15:01Z",
+    "message": "merge (#1)\n\n\n- first commit (eab2e368258e9e9b159c3ad6abbc89227cdf3976)"
+},
+{
+    "repo_url": "github.com/pravdomil/Rerender-A-Video",
+    "filepath": "flow/flow_utils.py",
+    "commit_date": "2023-06-16T08:15:01Z",
+    "message": "merge (#1)\n\n\n- first commit (eab2e368258e9e9b159c3ad6abbc89227cdf3976)"
+},
+{
+    "repo_url": "github.com/Ascend/ModelZoo-PyTorch",
+    "filepath": "PyTorch/contrib/audio/tdnn/speechbrain/pretrained/fetching.py",
+    "commit_date": "2023-07-10T07:05:29Z",
+    "message": "!5157 \u3010\u9700\u6c42\u3011\u3010PyTorch\u3011\u3010Tdnn\u3011\u8bad\u63a8\u4e00\u4f53\n* \u65b0\u589e\u8bad\u7ec3\u811a\u672c\uff0c\u4fee\u6539\u76f8\u5e94\u6587\u4ef6\n* \u4fee\u6539\u6587\u4ef6\uff0c\u6dfb\u52a0license\uff0c\u6dfb\u52a0readme\n* tdnn\u6a21\u578b\u4e0a\u4f20"
+},
+{
+    "repo_url": "github.com/triton-inference-server/pytriton",
+    "filepath": "examples/nemo_megatron_gpt_multinode/helpers.py",
+    "commit_date": "2023-09-05T19:37:03Z",
+    "message": "Update megatron example so that it would support latest changes in NeMo"
+},
+{
+    "repo_url": "github.com/triton-inference-server/pytriton",
+    "filepath": "examples/nemo_megatron_gpt_multinode/helpers.py",
+    "commit_date": "2023-08-03T10:03:30Z",
+    "message": "Introduce strict mode for validate inference callable outputs against model config"
+},
+{
+    "repo_url": "github.com/triton-inference-server/pytriton",
+    "filepath": "examples/nemo_megatron_gpt_multinode/helpers.py",
+    "commit_date": "2023-04-25T11:16:08Z",
+    "message": "Prompt learning added to NeMo example"
+},
+{
+    "repo_url": "github.com/triton-inference-server/pytriton",
+    "filepath": "examples/nemo_megatron_gpt_multinode/helpers.py",
+    "commit_date": "2023-03-14T12:07:07Z",
+    "message": "Fixes for cluster deployment of nemo_megatron_gpt_multinode example"
+},
+{
+    "repo_url": "github.com/triton-inference-server/pytriton",
+    "filepath": "examples/nemo_megatron_gpt_multinode/helpers.py",
+    "commit_date": "2023-03-13T11:48:47Z",
+    "message": "NeMo example with Kubernetes deployment on single and multi node"
+},
+{
+    "repo_url": "github.com/wandb/weave",
+    "filepath": "weave/ecosystem/huggingface/hfmodel.py",
+    "commit_date": "2023-05-29T22:19:47Z",
+    "message": "Timeseries fixes (#818)\n\n* Timeseries fixes\n\n* Fix assignment of function of union\n\n* Fixes for Time series\n\n* Fix tests\n\n* Update frontend\n\n* Update timeseries panel op names\n\n* Refactor how panels are defined. Much nicer (only distribution done)\n\n* Fix distribution and comments\n\n* Fix function quoting issues\n\n* Much simpler Panel API\n\n* Fix tests\n\n* Fix test\n\n* Fix lint\n\n* Update frontend\n\n* Update notebooks\n\n* Fix notebooks to use new panel style\n\n* Update frontend and fix tests\n\n* Fix tests\n\n* Commit monitor3 so I don't lose it\n\n* Use new API in PanelTimeSeries\n\n* Fix scenario compare notebook\n\n* Fix more\n\n* Update FE\n\n* Revert \"Update FE\"\n\nThis reverts commit ca972c3766cfb3743286bb9459c21d520046a005."
+},
+{
+    "repo_url": "github.com/wandb/weave",
+    "filepath": "weave/ecosystem/huggingface/hfmodel.py",
+    "commit_date": "2023-05-22T23:09:55Z",
+    "message": "Timeseries plot fixes, vectorization + some unrelated materialization fixes (#792)\n\n* Little stuff\n\n* Don't cache None results\n\n* use object context for non-async/lambda ops\n\n* Speed up PIL save with lower compress_level\n\n* Fix getting input refs from cached list output\n\n* Fixes TimeSeries plot and make it work with arrow\n\n* Update notebook for arrow\n\n* More vectorization fixes for timeseries plot\n\n* Fix tests\n\n* More updates"
+},
+{
+    "repo_url": "github.com/wandb/weave",
+    "filepath": "weave/ecosystem/huggingface/hfmodel.py",
+    "commit_date": "2022-08-22T22:06:20Z",
+    "message": "Untangle all circular deps (#118)\n\n* Add object attribute access op\n\n* Serialize all ObjectType attr types\n\n* Inference logs for HF model (with bug)\n\n* Make used_by and inference logs work with new __getattr__, and more!\n\n* Move geom into ecosystem\n\n* Make all const nodes to_json() work, remove redundancy in to_json\n\nWe no longer store Const types in Op arguments in the graph. Instead just\ncreate the Const types right before calling a callable output type. WeaveJS\nwill need to do the same.\n\n* Type system changes for performance.\n\n- Don't include object_type in RefType, this results in type explosion\n- Add type merging back for TypedDict\n\n* Run._inputs -> Run.inputs\n\n* Run._history -> Run.history\n\n* Run._prints -> Run.prints\n\n* Run._state -> Run.state\n\n* Run._op_name -> Run.op_name\n\n* Run._id -> Run.id\n\n* Remove more boilerplate from run_obj\n\n* Get rid of inline import in async_demo.py\n\n* A notebook to visualize the DAG of Weave module deps\n\n* Reorgnize some imports\n\n* Clean up a couple more imports\n\n* Clean up weave_internal a bit\n\n* Remove inline import in OpDef\n\n* Remove inline import\n\n* Factor out engine ops\n\n* Move to_arrow* out of storage, into ops_primitives/arrow.py\n\n* Move read_path into ops\n\n* Remove inline import of ops_domain\n\n* Remove inline imports\n\n* Remove inline show imports\n\n* Get rid of relative imports in ops_*\n\n* Remove inline import\n\n* Refactor context to remove circular dependencies.\n\n* Remove inline refs in execute and run_obj\n\n* Move capture_weave_server_logs\n\n* use_internal -> use\n\n* Add some type information.\n\n* Remove dependencies on graph so it can depend on storage\n\n* Remove uri -> ref dependency\n\n* Fix weave_types -> mappers_python dep (last one!)\n\n* Fix lint\n\n* Fix lint\n\n* Split up ops\n\n* Move used_by into trace.py\n\n* Split run into ops/object, removing cycle\n\n* Include description in module deps viz\n\n* Start moving stuff from execute to trace interface\n\n* Remove storage references from execute\n\n* Remove artifacts_local references from execute\n\n* Put trace behind class interface\n\n* Remove unused stuff\n\n* Fix notebook crash\n\n* Fix a notebook, remove engine dependency on ops/decorators\n\n* Fix huggingface datasets notebook\n\n* Fix tests\n\n* Remove use_frontend_devmode from notebooks\n\n* Fix huggingface_datasets"
+},
+{
+    "repo_url": "github.com/wandb/weave",
+    "filepath": "weave/ecosystem/huggingface/hfmodel.py",
+    "commit_date": "2022-07-15T04:46:53Z",
+    "message": "MVP model card readme (#81)\n\nadding a basic model card from the README.md on HF as the default model view\ntry to parse out and drop the header/metadata, otherwise return full markdown contents\n\nCo-authored-by: Anastasia Svetlichnaya <stacey@Anastasias-MacBook-Pro.local>"
+},
+{
+    "repo_url": "github.com/wandb/weave",
+    "filepath": "weave/ecosystem/huggingface/hfmodel.py",
+    "commit_date": "2022-07-14T00:00:26Z",
+    "message": "Speed up hugginface models, use chart for classifier output (#72)\n\n* Speed up hugginface models, use chart for classifier output\n\n* A couple fixes"
+},
+{
+    "repo_url": "github.com/wandb/weave",
+    "filepath": "weave/ecosystem/huggingface/hfmodel.py",
+    "commit_date": "2022-07-11T22:34:05Z",
+    "message": "Deeper HuggingFace integration (#62)\n\n* Add HuggingFace datasets, and shap text model visualization\n\n* Move shap transformers pipeline construction to shap\n\n* Improve model types\n\n* Switch to using pipelines in huggingface\n\n* Split huggingface module up\n\n* Refactor hf models into separate files, setup for different model kinds\n\n* Use type refine in Python + nominal subtyping\n\n* Add huggingface text generation model\n\n* Use ops as accessors for model attributes\n\n* Make all attributes private + fixes\n\n* Add working huggingface notebooks\n\n* Change mnist.py to torchvision/datasets\n\n* Throw exception when trying to use unsupported hf model type\n\n* Update frontend bundle"
+},
+{
+    "repo_url": "github.com/huggingface/optimum-neuron",
+    "filepath": "optimum/neuron/utils/cache_utils.py",
+    "commit_date": "2024-02-16T13:59:39Z",
+    "message": "Integrate new cache system for training (#472)\n\n* Integrate new cache system for training\n\n* ci: reduce export and pipelines test frequency\n\nThis runs export and pipelines tests in dedicated pipelines with\nstricter path filters to avoid running them on every change.\n\n---------\n\nCo-authored-by: David Corvoysier <david@huggingface.co>"
+},
+{
+    "repo_url": "github.com/huggingface/optimum-neuron",
+    "filepath": "optimum/neuron/utils/cache_utils.py",
+    "commit_date": "2024-01-23T16:05:50Z",
+    "message": "Initial support for Pipeline Parallelism (#279)"
+},
+{
+    "repo_url": "github.com/huggingface/optimum-neuron",
+    "filepath": "optimum/neuron/utils/cache_utils.py",
+    "commit_date": "2023-12-18T16:04:23Z",
+    "message": "Save function fix (#329)\n\n* Add a safetensors  function compatible with\n\n* Add custom _maybe_move_to_cpu\n\n* Fix\n\n* Add docstring\n\n* Fix test\n\n* Fix test\n\n* Apply suggestions"
+},
+{
+    "repo_url": "github.com/huggingface/optimum-neuron",
+    "filepath": "optimum/neuron/utils/cache_utils.py",
+    "commit_date": "2023-11-24T17:23:00Z",
+    "message": "Push after running `neuron_parallel_compile` (#354)\n\n* Cleanup after precompilation\n\n* Apply suggestions\n\n* Use the same default as the Neuron compiler\n\n* Adding support for pushing after doing neuron_parallel_compile"
+},
+{
+    "repo_url": "github.com/huggingface/optimum-neuron",
+    "filepath": "optimum/neuron/utils/cache_utils.py",
+    "commit_date": "2023-11-24T13:45:31Z",
+    "message": "Fix `neuron_parallel_compile` compatibility with the cache system (#352)\n\n* Cleanup after precompilation\n\n* Apply suggestions\n\n* Use the same default as the Neuron compiler\n\n* Reformat comment"
+},
+{
+    "repo_url": "github.com/huggingface/optimum-neuron",
+    "filepath": "optimum/neuron/utils/cache_utils.py",
+    "commit_date": "2023-11-14T10:40:37Z",
+    "message": "Fix broken tests (#274)\n\n* Fix tests\n\n* Fixes test_runner\n\n* Skip generate tests as long as #262 has not been merged\n\n* Wont fail if secondary caches dont not have write access\n\n* Remove support for old neuron compilation cache naming\n\n* Update test_trainium_common.yml\n\n* Add cleanups to CI\n\n* Experiment with new mixin class\n\n* Remove comment in workflow\n\n* Skipping GPTNeoX test as it is flaky\n\n---------\n\nCo-authored-by: Guillaume LEGENDRE <glegendre01@gmail.com>"
+},
+{
+    "repo_url": "github.com/huggingface/optimum-neuron",
+    "filepath": "optimum/neuron/utils/cache_utils.py",
+    "commit_date": "2023-09-22T17:05:55Z",
+    "message": "Update `tests/test_examples.py` for AWS team (#242)\n\n* Minor changes to test examples\n\n* Update example\n\n* Update default value for USE_VENV\n\n* Add llama\n\n* Remove comment"
+},
+{
+    "repo_url": "github.com/huggingface/optimum-neuron",
+    "filepath": "optimum/neuron/utils/cache_utils.py",
+    "commit_date": "2023-09-08T14:21:22Z",
+    "message": "Llama V2 support (#211)\n\n* Add support for GQA in ParallelSelfAttention\n\n* Add test\n\n* Fix\n\n* Rework on tests and workflows\n\n* Make test parallel\n\n* Fix pushing to the cache issue when doing neuron parallel compile\n\n* Remove symlink fix since it might hide a bigger bug\n\n* Add neuron tools installation\n\n* Test for neuron-ls issue\n\n* Add docstring\n\n* Fix test\n\n* Ignore T5ForSequenceClassification\n\n* Apply suggestions"
+},
+{
+    "repo_url": "github.com/huggingface/optimum-neuron",
+    "filepath": "optimum/neuron/utils/cache_utils.py",
+    "commit_date": "2023-09-04T16:27:41Z",
+    "message": "flan-t5 fix: `T5Parallelizer`, `NeuronCacheCallback` and `NeuronHash` refactors (#207)\n\n* Shard relative attention bias\n\n* Fix T5 parallelization\n\n* Remove unused code\n\n* Refactor NeuronCacheCallback and NeuronHash\n\n* Fix\n\n* Remove train_batch_size and eval_batch_size properties\n\n* Restoring key to its initial value\n\n* Change setup.py"
+},
+{
+    "repo_url": "github.com/huggingface/optimum-neuron",
+    "filepath": "optimum/neuron/utils/cache_utils.py",
+    "commit_date": "2023-07-21T16:12:01Z",
+    "message": "Multiple fixes related to TP and Zero-1 + Tests (#146)\n\n* Fix\n\n* [WIP] tests\n\n* Tests for parallelization utils\n\n* Add tests"
+},
+{
+    "repo_url": "github.com/huggingface/optimum-neuron",
+    "filepath": "optimum/neuron/utils/cache_utils.py",
+    "commit_date": "2023-07-13T14:05:10Z",
+    "message": "Tensor Parallelism fix (#125)\n\n* Fix gradient clipping\n\n* Fix data loader preparation\n\n* Should work with Transformers <= 4.31\n\n* [WIP] LLama training\n\n* [WIP] Lazy loading of model when doing TP\n\n* TP is working\n\n* Add docstring\n\n* Add missing file\n\n* Reformatting\n\n* Fix model saving\n\n* Fix regex"
+},
+{
+    "repo_url": "github.com/huggingface/optimum-neuron",
+    "filepath": "optimum/neuron/utils/cache_utils.py",
+    "commit_date": "2023-07-05T16:17:06Z",
+    "message": "Rename to Trainium references to Neuron (#122)\n\n* Rename code\n\n* Rename docstrings and prints\n\n* Rename tests\n\n* Rename docs\n\n* Rename tools\n\n* Update examples"
+},
+{
+    "repo_url": "github.com/huggingface/optimum-neuron",
+    "filepath": "optimum/neuron/utils/cache_utils.py",
+    "commit_date": "2023-07-04T16:44:35Z",
+    "message": "Fixes the cache after update (#119)\n\n* Fix cache for new versions\n\n* Unspecified attributes for NeuronHash\n\n* Make trainium test"
+},
+{
+    "repo_url": "github.com/huggingface/optimum-neuron",
+    "filepath": "optimum/neuron/utils/cache_utils.py",
+    "commit_date": "2023-07-04T11:47:36Z",
+    "message": "Tensor Parallelism training with `neuronx_distributed` (#104)\n\n* [WIP] TP integration\n\n* Styling\n\n* Tiny fixes\n\n* [WIP] TP integration\n\n* TP with openllama_3b\n\n* Saving works\n\n* [WIP] Not training\n\n* Cleanup\n\n* Add gating to prevent TP training for now\n\n* Apply suggestions"
+},
+{
+    "repo_url": "github.com/huggingface/optimum-neuron",
+    "filepath": "optimum/neuron/utils/cache_utils.py",
+    "commit_date": "2023-06-23T15:37:05Z",
+    "message": "Prepare release (#106)\n\n* Disable FSDP for now\n\n* Update docs\n\n* Tiny change"
+},
+{
+    "repo_url": "github.com/huggingface/optimum-neuron",
+    "filepath": "optimum/neuron/utils/cache_utils.py",
+    "commit_date": "2023-06-20T10:23:39Z",
+    "message": "`accelerate` integration and FSDP (#98)\n\n* [WIP] add accelerate subpackage\n\n* [WIP] NeuronAccelerator\n\n* Extend the NeuronAccelerator\n\n* Styling\n\n* [WIP] refactoring the TrainiumTrainer\n\n* Cleanup\n\n* Further refactorization\n\n* Docstrings and cleanup\n\n* Refactor patching mechanism\n\n* Ignore if Accelerator is not defined in trainer\n\n* Fix import\n\n* Fix training with accelerate\n\n* [WIP] evaluation with FSDP\n\n* Fix test"
+},
+{
+    "repo_url": "github.com/huggingface/optimum-neuron",
+    "filepath": "optimum/neuron/utils/cache_utils.py",
+    "commit_date": "2023-05-31T16:42:15Z",
+    "message": "`optimum-cli neuron cache list` command (#85)\n\n* optimum-cli neuron cache list command\n\n* Update help\n\n* Styling\n\n* Add test\n\n* Styling\n\n* Add staging tests"
+},
+{
+    "repo_url": "github.com/huggingface/optimum-neuron",
+    "filepath": "optimum/neuron/utils/cache_utils.py",
+    "commit_date": "2023-05-30T08:47:58Z",
+    "message": "Cache registry (#72)\n\n* [WIP] registry file\n\n* Add test\n\n* Styling\n\n* Handle concurrency on the registry\n\n* Styling\n\n* Fix tests"
+},
+{
+    "repo_url": "github.com/huggingface/optimum-neuron",
+    "filepath": "optimum/neuron/utils/cache_utils.py",
+    "commit_date": "2023-05-25T08:47:45Z",
+    "message": "Log push warning once (#71)\n\nFix logging issue"
+},
+{
+    "repo_url": "github.com/huggingface/optimum-neuron",
+    "filepath": "optimum/neuron/utils/cache_utils.py",
+    "commit_date": "2023-05-23T16:08:22Z",
+    "message": "Add last line for licenses (#69)\n\nadd last lin"
+},
+{
+    "repo_url": "github.com/huggingface/optimum-neuron",
+    "filepath": "optimum/neuron/utils/cache_utils.py",
+    "commit_date": "2023-05-14T17:10:00Z",
+    "message": "optimum-cli neuron cache add command (#51)\n\n* [WIP] optimum-cli neuron cache add command\n\n* [WIP] compilation utils\n\n* Add tests\n\n* Actually add tests\n\n* Trigger CI\n\n* Fix setup\n\n* Test\n\n* Test\n\n* Update pip\n\n* Add repository variables\n\n* Make run example a trainium test\n\n* Remove staging test from run example\n\n* Install python3.8-venv\n\n* Install python3.8-venv\n\n* Add test\n\n* Fix test\n\n* Remove print\n\n* Commented tests\n\n* Styling\n\n* Fix\n\n* Fix tests\n\n* Styling\n\n* Fix\n\n* Fix image classification\n\n* Use cache repo for compilation tests\n\n* Fix\n\n* Add None check"
+},
+{
+    "repo_url": "github.com/huggingface/optimum-neuron",
+    "filepath": "optimum/neuron/utils/cache_utils.py",
+    "commit_date": "2023-04-28T16:05:01Z",
+    "message": "`optimum-cli` Trainium cache (#49)\n\n* optimum-cli neuron cache commands\n\n* Add tests\n\n* Add tests\n\n* Fix issues\n\n* Add documentation\n\n* Fix tests and workflow\n\n* Add login\n\n* Change doc\n\n* Fix tests\n\n* Fix import\n\n* Fix tests\n\n* Styling\n\n* Fix tests\n\n* Apply suggestions"
+},
+{
+    "repo_url": "github.com/huggingface/optimum-neuron",
+    "filepath": "optimum/neuron/utils/cache_utils.py",
+    "commit_date": "2023-04-28T12:41:39Z",
+    "message": "Auto load cache tool (#26)\n\n* Refactor test_examples.py to use it\n\n* [WIP] CLI\n\n* Tool to fill cache\n\n* [WIP] caching filling tool\n\n* [WIP] tool\n\n* Fixed issue with HF_HOME\n\n* Styling\n\n* Apply minor changes\n\n* Fix login in test_examples\n\n* Make test examples trainium tests\n\n* Update workflow\n\n* Update workflow to add token\n\n* Add logging to files\n\n* Fix secret usage\n\n* debug\n\n* Styling"
+},
+{
+    "repo_url": "github.com/huggingface/optimum-neuron",
+    "filepath": "optimum/neuron/utils/cache_utils.py",
+    "commit_date": "2023-04-14T15:51:24Z",
+    "message": "Change the Hub cache repo (#35)"
+},
+{
+    "repo_url": "github.com/huggingface/optimum-neuron",
+    "filepath": "optimum/neuron/utils/cache_utils.py",
+    "commit_date": "2023-04-14T13:36:22Z",
+    "message": "Compilation caching system connected to the HF Hub (#24)\n\n* [WIP] caching system\n\n* caching system\n\n* Styling\n\n* Handle cache_stats\n\n* Caching system working\n\n* [WIP] tests\n\n* Update\n\n* Update test_common.yml\n\n* [WIP] tests\n\n* test_cache_utils.py done\n\n* [WIP] test_trainers.py\n\n* Move xm import inside compute_hash\n\n* Cleaning\n\n* Add workflows on Tranium instances\n\n* Add tests that checks if writing rights are there\n\n* Rename workflow\n\n* Trigger CI\n\n* Fix for CI\n\n* Trigger CI\n\n* Fix for CI\n\n* Remove print\n\n* Fix for CI\n\n* Test something\n\n* Not including the exporters tests\n\n* Apply suggestions\n\n* Disable python installation since we use the AMI\n\n* New hashing approach, without saving any file to disk\n\n* Small fix\n\n* Fix for the multiple worker setup\n\n* Add tests\n\n* Fix issues with multiple workers\n\n* Working for multiple workers\n\n* Finalizing tests\n\n* Cleaning\n\n* Trigger CI\n\n* Make tests inferentia tests\n\n* Add requires helper functions\n\n* Add dummy compiler version\n\n* Styling\n\n* Fix bf16 patching\n\n* Fix tests\n\n* Fix teardown"
+},
+{
+    "repo_url": "github.com/EricLBuehler/xlora",
+    "filepath": "src/xlora/xlora_utils.py",
+    "commit_date": "2024-02-10T20:40:15Z",
+    "message": "Add method to override and specify adapters"
+},
+{
+    "repo_url": "github.com/EricLBuehler/xlora",
+    "filepath": "src/xlora/xlora_utils.py",
+    "commit_date": "2024-02-09T19:39:57Z",
+    "message": "Add scaling pass value to config, default is now 0"
+},
+{
+    "repo_url": "github.com/EricLBuehler/xlora",
+    "filepath": "src/xlora/xlora_utils.py",
+    "commit_date": "2024-02-03T23:18:20Z",
+    "message": "Add some examples and add a convenience fn"
+},
+{
+    "repo_url": "github.com/kevin-meng/HuggingfaceDownloadShare",
+    "filepath": "app.py",
+    "commit_date": "2023-11-19T15:36:33Z",
+    "message": "Update app.py\n\nadd download by filename"
+},
+{
+    "repo_url": "github.com/SillyTavern/SillyTavern-extras",
+    "filepath": "modules/voice_conversion/rvc/hubert/hubert_manager.py",
+    "commit_date": "2023-08-09T01:38:13Z",
+    "message": "Add module managing RVC extension to convert audio sent by ST using voice model"
+},
+{
+    "repo_url": "github.com/GoogleCloudPlatform/localllm",
+    "filepath": "llm-tool/modeldownload.py",
+    "commit_date": "2023-12-07T18:10:43Z",
+    "message": "Remove the auto-added python header below licenses"
+},
+{
+    "repo_url": "github.com/GoogleCloudPlatform/localllm",
+    "filepath": "llm-tool/modeldownload.py",
+    "commit_date": "2023-11-27T08:27:22Z",
+    "message": "Add support for starting and stopping models\n\nHaving already figured out how to manage the process in the test\ndefinitely came in handy here \ud83d\ude02"
+},
+{
+    "repo_url": "github.com/GoogleCloudPlatform/localllm",
+    "filepath": "llm-tool/modeldownload.py",
+    "commit_date": "2023-11-26T20:22:05Z",
+    "message": "Use the hugging face cache instead of /model\n\nNow that we're using the huggingface hub library, we can use the user's\nlocal cache instead of a file in the root dir.\n\nAlso added the script required to setup the files properly for the\ndefault user when using the built image with cloud workstations.\n\nThe image test output is pretty verbose now but it feels impossible to\ndebug otherwise."
+},
+{
+    "repo_url": "github.com/GoogleCloudPlatform/localllm",
+    "filepath": "llm-tool/modeldownload.py",
+    "commit_date": "2023-11-26T20:22:05Z",
+    "message": "Add support for download command\n\nUsing library from hugging face that I discovered while investigating\nhow FastChat interacts with hugging face. Comes with a nice progress\nbar! Also does it's own caching in the user's directory which makes a\nlot more sense than making a directory at /. Could eventually make this\ncache configurable if we wanted to.\n\nFell down a rabbit hole for a while trying to see if we could just use\nhttps://github.com/huggingface/transformers which FastChat uses and\nseems to manage quite a bit more for us. For now just going to stick to\nthe simple version but might be worth investigating later."
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2024-02-29T15:02:23Z",
+    "message": "do not list all models (#2061)"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2024-02-22T18:21:39Z",
+    "message": "Add `revision_exists` helper (#2042)\n\n* Add revision_exists helper\n\n* add to main"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2024-02-22T14:12:19Z",
+    "message": "Fix getting widget_data from model_info (#2041)"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2024-02-20T12:11:52Z",
+    "message": "Deprecate `ModelFilter/DatasetFilter` (#2028)\n\n* Deprecate DatasetFilter and ModelFilter classes + modify list_models method\n\nMoved all attributes from ModelFilter class to list_models arguments and added a filter query builder to build a query.\nUpdated list_models to take both filter as an Iterable and also update the filter list based on other arguments in the method\n\n* Reformat code\n\n* Reformat Code\n\n* Update checks in  to be consistent\n\n* Add build_dataset_filter method and modified list_dataset\n\n* Update list_models and list_dataset methods to use set for filters to avoid duplication\n\n* Update warning to use FutureWarning instead of DeprecatedWarning\n\n* Update search helper classes docstrings to follow HF doc-builder syntax\n\n* Modify warnings to be consistent\n\n* Move comments to inline to fix mypy issues\n\n* Move model filter builder to\n\n* Move dataset filter builder to list_datasets\n\n* Address comments and remove stacklevel argument from warnings\n\n* Apply suggestions from code review\n\nFix warning docstring\n\nCo-authored-by: Lucain <lucainp@gmail.com>\n\n* Update warnings and add deprecation decorator to tests\n\n* Apply suggestions from code review\n\n---------\n\nCo-authored-by: Lucain <lucainp@gmail.com>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2024-02-15T15:49:24Z",
+    "message": "[HfFileSystem] Copy non lfs files (#1996)\n\n* copy non lfs files\n\n* mypy\n\n* add test\n\n* fix test\n\n* Apply suggestions from code review\n\nCo-authored-by: Lucain <lucainp@gmail.com>\n\n* fix import\n\n---------\n\nCo-authored-by: Lucain <lucainp@gmail.com>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2024-02-07T15:39:14Z",
+    "message": "update name of dummy dataset user (#2019)"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2024-01-15T14:54:01Z",
+    "message": "Fix inconstent `warnings.warn`  in repocard.py (#1980)\n\n* replace warnings.warn by logger.warn in repocard.py\n\n* fix tests"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2024-01-09T09:33:40Z",
+    "message": "Fail early on invalid metadata (#1934)"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2024-01-09T09:32:51Z",
+    "message": "Fix pagination when listing discussions (#1962)"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-12-15T14:07:42Z",
+    "message": "Deprecate `HfApi.list_files_info` (#1910)\n\n* Deprecate `HfApi.list_files_info`\n\n* Style\n\n* Fix test\n\n* Mypy fix\n\n* Add missing import\n\n* Last fix :)\n\n* Apply suggestions from code review\n\nCo-authored-by: Lucain <lucainp@gmail.com>\n\n* Style\n\n---------\n\nCo-authored-by: Lucain <lucainp@gmail.com>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-12-15T09:48:08Z",
+    "message": "Manage access requests programmatically (#1905)\n\n* first draft + docstrings\n\n* add tests\n\n* add AccessRequest to docs\n\n* feedback\n\n* document 403 error if not a write or admin role\n\n* refacto raises sections in docstrings"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-12-12T11:26:08Z",
+    "message": "Login/authentication enhancements (#1895)\n\n* Login enhancements\n\n* Apply suggestions from code review\n\nCo-authored-by: Steven Liu <59462357+stevhliu@users.noreply.github.com>\n\n* example\n\n* handle google colab errors\n\n* fix contrib test\n\n* fix 1 test\n\n* fix tetst\n\n* fix test\n\n---------\n\nCo-authored-by: Steven Liu <59462357+stevhliu@users.noreply.github.com>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-11-28T15:39:53Z",
+    "message": "Fix git credential parsing regex (#1870)\n\n* fix git credential parsing regex\n\n* retry on timeouts in tests\n\n* fix list_collections test\n\n* test in test\n\n* style\n\n* remove print"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-11-28T10:56:04Z",
+    "message": "Respect `.gitignore` file in commits (#1868)\n\n* Respect .gitignore file in commits\n\n* add tests\n\n* do not respect gitignore in\n\n* add param in upload_fike"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-11-27T10:19:46Z",
+    "message": "add list_collections endpoint, solves #1835 (#1856)\n\n* add list_collections function, solves #1835\n\n* update the collections guide for list_collections function\n\n* add unit tests for list_collections\n\n* finalize the pr for list_collections\n\n* fix style + test\n\n---------\n\nCo-authored-by: Lucain Pouget <lucainp@gmail.com>"
+},
+{
+    "repo_url": "github.com/huggingface/huggingface_hub",
+    "filepath": "tests/test_hf_api.py",
+    "commit_date": "2023-11-24T15:06:07Z",
+    "message": "Parse safetensors metadata (#1855)\n\n* first draft\n\n* make quality\n\n* docs\n\n* tests + better errors\n\n* add parameter count\n\n* Use file_exists instead of list_repo_files\n\n* fix optional __metadata__ + fix __metadata__ type + fix scalar tensors\n\n* fix file_exists and repo_exists on gated repos\n\n* add comment\n\n* more robust"
+}
+]

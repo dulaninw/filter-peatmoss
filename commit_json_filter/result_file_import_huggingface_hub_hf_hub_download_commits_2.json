@@ -1,0 +1,1004 @@
+[
+{
+    "repo_url": "github.com/mlflow/mlflow",
+    "filepath": "mlflow/transformers/__init__.py",
+    "commit_date": "2023-09-25T23:43:48Z",
+    "message": "move transformers module to its directory (#9692)\n\nSigned-off-by: chenmoneygithub <chen.qian@databricks.com>"
+},
+{
+    "repo_url": "github.com/huggingface/diffusers",
+    "filepath": "scripts/convert_k_upscaler_to_diffusers.py",
+    "commit_date": "2023-02-07T22:46:23Z",
+    "message": "Replace flake8 with ruff and update black (#2279)\n\n* before running make style\n\n* remove left overs from flake8\n\n* finish\n\n* make fix-copies\n\n* final fix\n\n* more fixes"
+},
+{
+    "repo_url": "github.com/huggingface/diffusers",
+    "filepath": "scripts/convert_k_upscaler_to_diffusers.py",
+    "commit_date": "2023-02-07T08:11:57Z",
+    "message": "Stable Diffusion Latent Upscaler (#2059)\n\n* Modify UNet2DConditionModel\n\n- allow skipping mid_block\n\n- adding a norm_group_size argument so that we can set the `num_groups` for group norm using `num_channels//norm_group_size`\n\n- allow user to set dimension for the timestep embedding (`time_embed_dim`)\n\n- the kernel_size for `conv_in` and `conv_out` is now configurable\n\n- add random fourier feature layer (`GaussianFourierProjection`) for `time_proj`\n\n- allow user to add the time and class embeddings before passing through the projection layer together - `time_embedding(t_emb + class_label))`\n\n- added 2 arguments `attn1_types` and `attn2_types`\n\n  * currently we have argument `only_cross_attention`: when it's set to `True`, we will have a to the\n`BasicTransformerBlock` block with 2 cross-attention , otherwise we\nget a self-attention followed by a cross-attention; in k-upscaler, we need to have blocks that include just one cross-attention, or self-attention -> cross-attention;\nso I added `attn1_types` and `attn2_types` to the unet's argument list to allow user specify the attention types for the 2 positions in each block;  note that I stil kept\nthe `only_cross_attention` argument for unet for easy configuration, but it will be converted to `attn1_type` and `attn2_type` when passing down to the down blocks\n\n- the position of downsample layer and upsample layer is now configurable\n\n- in k-upscaler unet, there is only one skip connection per each up/down block (instead of each layer in stable diffusion unet), added `skip_freq = \"block\"` to support\nthis use case\n\n- if user passes attention_mask to unet, it will prepare the mask and pass a flag to cross attention processer to skip the `prepare_attention_mask` step\ninside cross attention block\n\nadd up/down blocks for k-upscaler\n\nmodify CrossAttention class\n\n- make the `dropout` layer in `to_out` optional\n\n- `use_conv_proj` - use conv instead of linear for all projection layers (i.e. `to_q`, `to_k`, `to_v`, `to_out`) whenever possible. note that when it's used to do cross\nattention, to_k, to_v has to be linear because the `encoder_hidden_states` is not 2d\n\n- `cross_attention_norm` - add an optional layernorm on encoder_hidden_states\n\n- `attention_dropout`: add an optional dropout on attention score\n\nadapt BasicTransformerBlock\n\n- add an ada groupnorm layer  to conditioning attention input with timestep embedding\n\n- allow skipping the FeedForward layer in between the attentions\n\n- replaced the only_cross_attention argument with attn1_type and attn2_type for more flexible configuration\n\nupdate timestep embedding: add new act_fn  gelu and an optional act_2\n\nmodified ResnetBlock2D\n\n- refactored with AdaGroupNorm class (the timestep scale shift normalization)\n\n- add `mid_channel` argument - allow the first conv to have a different output dimension from the second conv\n\n- add option to use input AdaGroupNorm on the input instead of groupnorm\n\n- add options to add a dropout layer after each conv\n\n- allow user to set the bias in conv_shortcut (needed for k-upscaler)\n\n- add gelu\n\nadding conversion script for k-upscaler unet\n\nadd pipeline\n\n* fix attention mask\n\n* fix a typo\n\n* fix a bug\n\n* make sure model can be used with GPU\n\n* make pipeline work with fp16\n\n* fix an error in BasicTransfomerBlock\n\n* make style\n\n* fix typo\n\n* some more fixes\n\n* uP\n\n* up\n\n* correct more\n\n* some clean-up\n\n* clean time proj\n\n* up\n\n* uP\n\n* more changes\n\n* remove the upcast_attention=True from unet config\n\n* remove attn1_types, attn2_types etc\n\n* fix\n\n* revert incorrect changes up/down samplers\n\n* make style\n\n* remove outdated files\n\n* Apply suggestions from code review\n\n* attention refactor\n\n* refactor cross attention\n\n* Apply suggestions from code review\n\n* update\n\n* up\n\n* update\n\n* Apply suggestions from code review\n\n* finish\n\n* Update src/diffusers/models/cross_attention.py\n\n* more fixes\n\n* up\n\n* up\n\n* up\n\n* finish\n\n* more corrections of conversion state\n\n* act_2 -> act_2_fn\n\n* remove dropout_after_conv from ResnetBlock2D\n\n* make style\n\n* simplify KAttentionBlock\n\n* add fast test for latent upscaler pipeline\n\n* add slow test\n\n* slow test fp16\n\n* make style\n\n* add doc string for pipeline_stable_diffusion_latent_upscale\n\n* add api doc page for latent upscaler pipeline\n\n* deprecate attention mask\n\n* clean up embeddings\n\n* simplify resnet\n\n* up\n\n* clean up resnet\n\n* up\n\n* correct more\n\n* up\n\n* up\n\n* improve a bit more\n\n* correct more\n\n* more clean-ups\n\n* Update docs/source/en/api/pipelines/stable_diffusion/latent_upscale.mdx\n\nCo-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>\n\n* Update docs/source/en/api/pipelines/stable_diffusion/latent_upscale.mdx\n\nCo-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>\n\n* add docstrings for new unet config\n\n* Update src/diffusers/pipelines/stable_diffusion/pipeline_stable_diffusion_latent_upscale.py\n\nCo-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>\n\n* Update src/diffusers/pipelines/stable_diffusion/pipeline_stable_diffusion_latent_upscale.py\n\nCo-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>\n\n* # Copied from\n\n* encode the image if not latent\n\n* remove force casting vae to fp32\n\n* fix\n\n* add comments about preconditioning parameters from k-diffusion paper\n\n* attn1_type, attn2_type -> add_self_attention\n\n* clean up get_down_block and get_up_block\n\n* fix\n\n* fixed a typo(?) in ada group norm\n\n* update slice attention processer for cross attention\n\n* update slice\n\n* fix fast test\n\n* update the checkpoint\n\n* finish tests\n\n* fix-copies\n\n* fix-copy for modeling_text_unet.py\n\n* make style\n\n* make style\n\n* fix f-string\n\n* Update src/diffusers/pipelines/stable_diffusion/pipeline_stable_diffusion_latent_upscale.py\n\nCo-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>\n\n* fix import\n\n* correct changes\n\n* fix resnet\n\n* make fix-copies\n\n* correct euler scheduler\n\n* add missing #copied from for preprocess\n\n* revert\n\n* fix\n\n* fix copies\n\n* Update docs/source/en/api/pipelines/stable_diffusion/latent_upscale.mdx\n\nCo-authored-by: Pedro Cuenca <pedro@huggingface.co>\n\n* Update docs/source/en/api/pipelines/stable_diffusion/latent_upscale.mdx\n\nCo-authored-by: Pedro Cuenca <pedro@huggingface.co>\n\n* Update docs/source/en/api/pipelines/stable_diffusion/latent_upscale.mdx\n\nCo-authored-by: Pedro Cuenca <pedro@huggingface.co>\n\n* Update docs/source/en/api/pipelines/stable_diffusion/latent_upscale.mdx\n\nCo-authored-by: Pedro Cuenca <pedro@huggingface.co>\n\n* Update src/diffusers/models/cross_attention.py\n\nCo-authored-by: Pedro Cuenca <pedro@huggingface.co>\n\n* Update src/diffusers/pipelines/stable_diffusion/pipeline_stable_diffusion_latent_upscale.py\n\nCo-authored-by: Pedro Cuenca <pedro@huggingface.co>\n\n* Update src/diffusers/pipelines/stable_diffusion/pipeline_stable_diffusion_latent_upscale.py\n\nCo-authored-by: Pedro Cuenca <pedro@huggingface.co>\n\n* clean up conversion script\n\n* KDownsample2d,KUpsample2d -> KDownsample2D,KUpsample2D\n\n* more\n\n* Update src/diffusers/models/unet_2d_condition.py\n\nCo-authored-by: Pedro Cuenca <pedro@huggingface.co>\n\n* remove prepare_extra_step_kwargs\n\n* Update src/diffusers/pipelines/stable_diffusion/pipeline_stable_diffusion_latent_upscale.py\n\nCo-authored-by: Pedro Cuenca <pedro@huggingface.co>\n\n* Update src/diffusers/pipelines/stable_diffusion/pipeline_stable_diffusion_latent_upscale.py\n\nCo-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>\n\n* fix a typo in timestep embedding\n\n* remove num_image_per_prompt\n\n* fix fasttest\n\n* make style + fix-copies\n\n* fix\n\n* fix xformer test\n\n* fix style\n\n* doc string\n\n* make style\n\n* fix-copies\n\n* docstring for time_embedding_norm\n\n* make style\n\n* final finishes\n\n* make fix-copies\n\n* fix tests\n\n---------\n\nCo-authored-by: yiyixuxu <yixu@yis-macbook-pro.lan>\nCo-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>\nCo-authored-by: Pedro Cuenca <pedro@huggingface.co>"
+},
+{
+    "repo_url": "github.com/huggingface/diffusers",
+    "filepath": "src/diffusers/commands/fp16_safetensors.py",
+    "commit_date": "2024-02-08T18:19:31Z",
+    "message": "change to 2024 in the license (#6902)\n\nchange to 2024"
+},
+{
+    "repo_url": "github.com/huggingface/diffusers",
+    "filepath": "src/diffusers/commands/fp16_safetensors.py",
+    "commit_date": "2023-12-06T21:22:31Z",
+    "message": "Harmonize HF environment variables + deprecate use_auth_token (#6066)\n\n* Harmonize HF environment variables + deprecate use_auth_token\n\n* fix import\n\n* fix"
+},
+{
+    "repo_url": "github.com/huggingface/diffusers",
+    "filepath": "src/diffusers/commands/fp16_safetensors.py",
+    "commit_date": "2023-08-11T05:35:22Z",
+    "message": "Remove code snippets containing `is_safetensors_available()` (#4521)\n\n* [WIP] Remove code snippets containing `is_safetensors_available()`\n\n* Modifying `import_utils.py`\n\n* update pipeline tests for safetensor default\n\n* fix test related to cached requests\n\n* address import nits\n\n---------\n\nCo-authored-by: Dhruv Nair <dhruv.nair@gmail.com>"
+},
+{
+    "repo_url": "github.com/huggingface/diffusers",
+    "filepath": "src/diffusers/commands/fp16_safetensors.py",
+    "commit_date": "2023-07-11T03:00:09Z",
+    "message": "[diffusers-cli] Add a CLI command to run FP16 and safetensors conversions and opening PRs (#3982)\n\n* feat: add a cli util for fp16 and safetensors format.\n\n* fix: commit_description.\n\n* add: usage example."
+},
+{
+    "repo_url": "github.com/coqui-ai/TTS",
+    "filepath": "TTS/tts/layers/bark/hubert/hubert_manager.py",
+    "commit_date": "2023-06-28T09:55:27Z",
+    "message": "Inference API for \ud83d\udc36Bark (#2685)\n\n* Add bark requirements\n\n* Draft Bark implementation\n\n* Download HF models\n\n* Update synthesizer\n\n* Add bark model\n\n* Make style\n\n* Update pylintrc\n\n* Update model URLs\n\n* Update Bark Config\n\n* Fix here and ther\n\n* Make style\n\n* Make lint\n\n* Update requirements\n\n* Update requirements"
+},
+{
+    "repo_url": "github.com/FMInference/FlexGen",
+    "filepath": "benchmark/third_party/transformers/src/transformers/utils/hub.py",
+    "commit_date": "2023-02-21T02:38:10Z",
+    "message": "Release and merge commits\n\nCo-authored-by: Ying Sheng <sqy1415@gmail.com>\nCo-authored-by: Lianmin Zheng <lianminzheng@gmail.com>\nCo-authored-by: Zhuohan Li <zhuohan123@gmail.com>\nCo-authored-by: Beidi Chen <beidic@fb.com>"
+},
+{
+    "repo_url": "github.com/speechbrain/speechbrain",
+    "filepath": "speechbrain/utils/fetching.py",
+    "commit_date": "2024-01-07T20:42:33Z",
+    "message": "Merge Unstable v0.6 into Dev (#2305)\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* rename HF's files\n\n* fix docstrings\n\n* fix args docstrings\n\n* fix docstrings\n\n* change classes' names\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Refactor HF interface, adapt recipes\n\n* Fix docstrings\n\n* commonvoice\n\n* switchboard\n\n* update readme\n\n* update readme\n\n* update lionk in test file\n\n* remove unused space token\n\n* update torchaudio\n\n* remove deprecated language model path\n\n* fix merge\n\n* fix vocab\n\n* fix switchboard\n\n* commit\n\n* fix test\n\n* fix style\n\n* remove unsued hparam\n\n* fix consistancy blank_skip_threshold\n\n* text frames\n\n* CTCPrefixBeamSearcher timestamps\n\n* pre-commit\n\n* test\n\n* test 2\n\n* fix prints\n\n* update ctcprefixbeamsearch timestamps\n\n* remove frames from prefix bs\n\n* \u2248Revert \"remove frames from prefix bs\"\n\nThis reverts commit 30900d9fb2fc16871c103c2e1b3a755e1765e85d.\n\n* remove prefix bs\n\n* \u2248Revert \"remove prefix bs\"\n\nThis reverts commit 2f0c3cd930826c8b23143012bf18c5f76d9198b5.\n\n* Revert \"update ctcprefixbeamsearch timestamps\"\n\nThis reverts commit ce09e193dc34f2ca65a0ca306230276aeacc599f.\n\n* Revert \"fix prints\"\n\nThis reverts commit bf360373555855329355c982a80be33eaae41cf6.\n\n* Revert \"test 2\"\n\nThis reverts commit 84cda948f33936e8fa9199a1c5c09af0c0f80ef8.\n\n* Revert \"test\"\n\nThis reverts commit f17349fb8255d8123e01fa110d8e1a40807e1bbd.\n\n* Revert \"pre-commit\"\n\nThis reverts commit 4e1cf0da7b70c7316db5ce10bb72ff0593c7d89b.\n\n* Revert \"CTCPrefixBeamSearcher timestamps\"\n\nThis reverts commit c3d3cf756b1c099b1919f3f28d42bab819ebfe4b.\n\n* Revert \"text frames\"\n\nThis reverts commit e67c7619d3b1bc64d087f2e2f8c69d452e82a2d2.\n\n* Revert \"fix consistancy blank_skip_threshold\"\n\nThis reverts commit f97a391f3574337f968135d41a9c2316014cb885.\n\n* Update ctc.py\n\n* arg / timestamps\n\n* precommit\n\n* timesteps -> text_frames\n\n* ls seq2seq\n\n* transformer ls\n\n* fix naming\n\n* librispeech\n\n* aishell\n\n* fix linter\n\n* precommit\n\n* switchboard\n\n* timit\n\n* Dynamic batching fixed\n\n* authors\n\n* fix conformer large\n\n* indent\n\n* Revert \"Fix dynamic batching\" (#2173)\n\n* update doctest skip\n\n* Fix dynamic batching (#2174)\n\n* Revert \"Revert \"Fix dynamic batching\" (#2173)\"\n\nThis reverts commit faa5e76c66c54192a46f21d569a87c1aa8e439a3.\n\n* Update interfaces.py\n\n* Update interfaces.py\n\n* Update text_to_sequence.py\n\n* fix w2v\n\n* aishell\n\n* cv\n\n* ls transformer\n\n* ls ssl\n\n* switchboard\n\n* timit\n\n* precommit\n\n* fix indent\n\n* fix arg\n\n* unit test sorting\n\n* unittests\n\n* remove if main\n\n* Small fixes in averaging checkpoints (#2181)\n\n* add ckpt avg unittest\n\n* avoid hard-coding number of averages\n\n* last fixes\n\n* fix recipe test\n\n* fix recipe test\n\n* convert print into logger\n\n* fix transducer recipe\n\n* remove typing\n\n* fix merge\n\n* precommit\n\n* Update LibriSpeech.csv\n\n* update to new dynamic batching args\n\n* Update unstable branch with new commits  (#2196)\n\n* hyper branch/conf -former fixes\n\n* remove ctc.py from doctest\n\n* get back ctc.py\n\n* remove doctest for torchaudio\n\n* adapt gpt recipe\n\n* adapt gpt recipe\n\n* small follow up fix on openrir\n\n* remove doc test (for now)\n\n* fix issue greedy search\n\n* docstring\n\n* pre-commit\n\n* Fix issues unstable (#2216)\n\nThank you @Adel-Moumen! I did the tests again and everything works now. As for your points on the recipe tests, I agree. We can eventually do that in another PR.\n\n* Fix missing file / import in huggingface_transformers (#2224)\n\n* init/imports\n\n* comment\n\n* add partial import\n\n* wav2vec -> wav2vec2\n\n* fix ci\n\n* Text based HF (#2214)\n\n* add mbart\n\n* Add tristage scheduler\n\n* Add mbart beam search\n\n* Add IWLST recipes\n\n* Add new models' inteference interface\n\n* Add info of new models\n\n* Add nllb scores\n\n* Add new models' info\n\n* Add test info IWSLT recipe\n\n* Add test info IWSLT recipe\n\n* add docstrings for S2STransformerBeamSearcher\n\n* Update IWSLT recipes\n\n* Update IWSLT recipes\n\n* fix doctest\n\n* add requirements\n\n* add protobuf\n\n* fix doctest\n\n* small fixes\n\n* Add protobuf install\n\n* Minor reform\n\n* Remove protobuf\n\n* Fix docstings\n\n* Fix docstrings\n\n* minor reform\n\n* remove labse\n\n* change authorship\n\n* remove comments\n\n* minor changes\n\n* change authorship\n\n* Fix recipe test\n\n* add info\n\n* Update README.md\n\n* Update README.md\n\n* change recipe structure\n\n---------\n\nCo-authored-by: Mirco Ravanelli <mirco.ravanelli@gmail.com>\nCo-authored-by: Adel Moumen <88119391+Adel-Moumen@users.noreply.github.com>\n\n* Neural LM Rescoring (#2187)\n\n* baserescorerinterface\n\n* add rescorers\n\n* first attempt\n\n* update code\n\n* 1.57 wer\n\n* update\n\n* update code\n\n* update code\n\n* docstring example rnn\n\n* updata loader\n\n* docstring example\n\n* tests\n\n* docstring example\n\n* update\n\n* tmpdir\n\n* change path\n\n* update doc\n\n* docstring\n\n* docstring args\n\n* doctest\n\n* fix docstring example\n\n* unnittest\n\n* interface\n\n* yamls update\n\n* full_infernece tests\n\n* model link\n\n* readme\n\n* yaml/inference tests\n\n* update res\n\n* fix wav2vec with wav2vec2\n\n---------\n\nCo-authored-by: Mirco Ravanelli <mirco.ravanelli@gmail.com>\n\n* Add wrappers for Encodec and Vocos vocoders (#2231)\n\n* Add wrappers for Encodec and Vocos from Huggingface\n\n* Encodec: Add a comment\n\n* Encodec/Vocos: Add examples, restructure, fix masks\n\n* Vocos: Add a comment about the open pull request\n\n* Encodec/Vocos: Add the ability to customize save_path, fix a log message\n\n* Encodec/Vocos: Cosmetic changes\n\n* Vocos: Cosmetic changes\n\n* Encodec/Vocos: Remove the mandatory Vocos requirement\n\n* Vocos: Remove vocos from __init__.py\n\n* fix init\n\n* Vocos: Add a check for vocos in conftest.py\n\n* Vocos/Encodec: Update documentation, add bandwidth control\n\n* Fix old path in conftest.py\n\n* Cosmetic changes\n\n* Encodec/Vocos: Add support for embedding vectors\n\n* Encodec: Update example\n\n* Encodec/Vocodec: Add automatic reshaping, minor cosmetic changes\n\n---------\n\nCo-authored-by: flexthink <flexthink@users.noreply.github.com>\nCo-authored-by: Mirco Ravanelli <mirco.ravanelli@gmail.com>\n\n* Semantically-Aligned Multimodal Utterance-level (SAMU) pre-training (#2223)\n\n* add mbart\n\n* Add tristage scheduler\n\n* Add mbart beam search\n\n* Add IWLST recipes\n\n* Add new models' inteference interface\n\n* Add info of new models\n\n* Add nllb scores\n\n* Add new models' info\n\n* Add test info IWSLT recipe\n\n* Add test info IWSLT recipe\n\n* add docstrings for S2STransformerBeamSearcher\n\n* Update IWSLT recipes\n\n* Update IWSLT recipes\n\n* fix doctest\n\n* add requirements\n\n* add protobuf\n\n* fix doctest\n\n* small fixes\n\n* Add protobuf install\n\n* Minor reform\n\n* Remove protobuf\n\n* Fix docstings\n\n* Fix docstrings\n\n* minor reform\n\n* remove labse\n\n* Add attention pooling\n\n* Add labse\n\n* Add info about SAMU\n\n* add iwslt recipes with samu\n\n* fix recipe test\n\n* fix comments\n\n* fix recipe test\n\n* change recipe structure\n\n* fix test recipe\n\n* Add new recipes\n\n* minor doctest change\n\n* minor doctest change\n\n* small changes\n\n* add dropbox links\n\n---------\n\nCo-authored-by: Mirco Ravanelli <mirco.ravanelli@gmail.com>\n\n* fix norm (#2237)\n\n* Discrete SSL (#2233)\n\n* clustering training recipies for LibriSpeech for different SSL model\n\n* add Discrete Hubert Model\n\n* load from HF, fix minor issues\n\n* fix hyper-param value\n\n* fix precommit\n\n* fix flake8\n\n* fix batch_size and n_clus values in hyperparams\n\n* fix typos\n\n* fix typo and some cleaning\n\n* fix precommit\n\n* fix device incompatibility and memroty issue\n\n* use fit instead of partial fit\n\n* add README file\n\n* add test recipies\n\n* remove unused fields from hparams\n\n* fix precommmit-yamllint - extra whitespace\n\n* add docstring for load_kmeans for Discrete_hubert.py\n\n* add discrete wavlm, wav2vec\n\n* avoid docstring testing for discrete_ssl models\n\n* fix docstring failed issue\n\n* add discrete_interface to conftest.py\n\n* fix precommit\n\n* Fixes for Encodec (#2240)\n\n* Add wrappers for Encodec and Vocos from Huggingface\n\n* Encodec: Add a comment\n\n* Encodec/Vocos: Add examples, restructure, fix masks\n\n* Vocos: Add a comment about the open pull request\n\n* Encodec/Vocos: Add the ability to customize save_path, fix a log message\n\n* Encodec/Vocos: Cosmetic changes\n\n* Vocos: Cosmetic changes\n\n* Encodec/Vocos: Remove the mandatory Vocos requirement\n\n* Vocos: Remove vocos from __init__.py\n\n* fix init\n\n* Vocos: Add a check for vocos in conftest.py\n\n* Vocos/Encodec: Update documentation, add bandwidth control\n\n* Fix old path in conftest.py\n\n* Cosmetic changes\n\n* Encodec/Vocos: Add support for embedding vectors\n\n* Encodec: Update example\n\n* Encodec/Vocodec: Add automatic reshaping, minor cosmetic changes\n\n* Encodec: Decoupled token extraction, fixed CPU/GPU issues\n\n* Encodec: Add renormalization\n\n---------\n\nCo-authored-by: flexthink <flexthink@users.noreply.github.com>\nCo-authored-by: Mirco Ravanelli <mirco.ravanelli@gmail.com>\n\n* Refactoring of the 'fit_batch' function (#2010)\n\n* add dataclass\n\n* turn False\n\n* remove valid_step\n\n* update core.py\n\n* update core.py\n\n* update core.py\n\n* precommit\n\n* self.autocast + GradScaler enabled\n\n* freeze opt\n\n* naming\n\n* update core.py\n\n* comments\n\n* example transducer conformer\n\n* update core.py\n\n* small changes\n\n* naming + skip_grad_nans\n\n* doc\n\n* check\n\n* support cpu training\n\n* precision + doctrsting\n\n* name\n\n* change w2v\n\n* restore ckpt\n\n* remove file\n\n* remove casting\n\n* tests\n\n* whisper + fix tests\n\n* seq2seq ls\n\n* update transducer / transformer\n\n* remove on_optimizers_step_end + comments\n\n* update check yaml\n\n* remove default arg\n\n* add precision in yamls\n\n* add precision inside of the yamls\n\n* ckpt and scaler\n\n* run_opt outside brain + test\n\n* several recipe updates\n\n* improve w2v fit_batch fn\n\n* add arg\n\n* update name\n\n* timit\n\n* context manager\n\n* on_fit_batch_start\n\n* update CV\n\n* should_step with noam\n\n* add flag precision\n\n* naming\n\n* aishell\n\n* aishell\n\n* update recipes\n\n* so many recipes 0.0\n\n* update recipes\n\n* last recipes\n\n* zero_grad\n\n* fix grad_accumulation_factor\n\n* update recipes\n\n* update auto_mix_prec flag\n\n* remove opt flag test\n\n* librispeech\n\n* cv ssl\n\n* audio mnist / realm\n\n* voicebank\n\n* fix rescuespeech\n\n* fix lr annealing\n\n* libritts\n\n* multiwoz\n\n* slurp nlu\n\n* should_step\n\n* update yamls\n\n* update yaml\n\n* update batch smpler tedlium\n\n* remove fit batch\n\n* precision flag\n\n* update sampler\n\n* add precision inside of the yamls\n\n* run_opt outside brain + test\n\n* fix auto_mix_prec flag\n\n* docstring\n\n* grad acc\n\n* failing test\n\n* update unittests\n\n* update jarod's pr\n\n* fix removed avg_checkpoint param\n\n* update path\n\n* fix some recipe tests\n\n* update samu recipe\n\n* fix hifigan/IWSLT\n\n* tedlium\n\n---------\n\nCo-authored-by: Mirco Ravanelli <mirco.ravanelli@gmail.com>\n\n* Refactor Augmentation (#2206)\n\n* update\n\n* update\n\n* change folder\n\n* remove unnecesary file\n\n* update folder structure\n\n* add noise, add rev\n\n* augmenter refactor\n\n* refactor augment + example in templace\n\n* fix tests + linters\n\n* address comments\n\n* supporting variable-length augmentations in augmenter (e.g., speed change)\n\n* lib refactor (splitting time and freq augmentations)\n\n* fine tune freq drop\n\n* refactor of specaugment (freq-domain) - part 1\n\n* converted specaument (freq domain)\n\n* refactor random shift\n\n* implemented cutcat, swap, and random selection\n\n* extended unittests + small fixes\n\n* improvements and fixes in augment\n\n* plugged feature augmentation + various fixes and improvements\n\n* add sum_batch noise (similat to babble) + various fixes\n\n* add drop bit resolution\n\n* added coded augmentation\n\n* added more unittests\n\n* restore all augmentations\n\n* making AddReveb more similar to AddNoise\n\n* fix device mismatch + fix last batch management\n\n* add workes to speed up AddNoise and AddRev\n\n* improve comments in template yaml\n\n* speed up template (sorting dev and test)\n\n* extend augmenter by adding activation provability\n\n* implemented enable augmentation flag (useful of hparam tuning) + other improvements\n\n* plugged coded augment\n\n* fixed coded augment\n\n* remove old files\n\n* fix integration test\n\n* remove knowledge distill TIMIT reicpes. Too many yaml files to maintain\n\n* convert TIMIT\n\n* fix recipe\n\n* converted templates using EnvCorr\n\n* converted voxceleb\n\n* converted GSC + fixes on voxceleb\n\n* convrted UrbanSound8k\n\n* converted voicebank\n\n* converted other recipes\n\n* converted CommonLanguage, VoxLingua, timers-and-such\n\n* converted all recipes using envcorr\n\n* CommonVoice\n\n* REAL-M\n\n* Aishell1Mix\n\n* LibriMix\n\n* converted all recipes!\n\n* fix linters - part1\n\n* fix linters - part2\n\n* add a note in the template regarding augmentation\n\n* fix docstring tests\n\n* fix yamls\n\n* remove coded tests from docstring\n\n* revised coded tests\n\n* fix identation in codec.py\n\n* try to fix doc issue\n\n* revise lib header in codec.oy\n\n* fix doc\n\n* fix doc attempt\n\n* rename sections\n\n* fix doc\n\n* fix (most) recipe tests\n\n* fix other recipe tests\n\n* address comments\n\n* fix yaml\n\n* fix\n\n* convert recipe\n\n* fix recipes\n\n* fix aug in rescoring recipes\n\n* Delete tmpdir_vocoder directory\n\n* Refactor Inference (files and folders) (#2252)\n\n* refactor inference files and folders\n\n* fix some tests\n\n* fix some tests\n\n* fix doctest\n\n* import lib\n\n* small fixes\n\n* Fix beam search (#2253)\n\n* fix starting pos prefix_length\n\n* block path ctc + fix default value to the old one\n\n* fix issue with score being -inf\n\n* remoev print\n\n* precommit\n\n* Fix ctc beam search (#2263)\n\n* fix logprobs / space_token / warnings\n\n* fix space_token\n\n* pre-commit\n\n* space_token\n\n* simplify parameters\n\n* simplify yamls\n\n* remove comma\n\n* update beam search\n\n* fix vocab/str (#2265)\n\n* Fix blank index ctc (#2266)\n\n* update blank_index\n\n* whisper\n\n* revert change\n\n* mistake\n\n* Cv unstable merge (#2254)\n\n* add fr preproccesing to Common_voice_prepare.py\n\n* add CV , CTC, new languages\n\n* fix precommit and test\n\n* add transducer recipie\n\n* add transformer recipies\n\n* update augmentation of CTC recipies\n\n* update seq-to-seq recipies\n\n* fix whisper HF interface bug. (return str insted of list)\n\n* fix recipe tests\n\n* add fr preproccesing to Common_voice_prepare.py\n\n* add CV , CTC, new languages\n\n* fix precommit and test\n\n* add transducer recipie\n\n* add transformer recipies\n\n* update augmentation of CTC recipies\n\n* update seq-to-seq recipies\n\n* fix whisper HF interface bug. (return str insted of list)\n\n* fix recipe tests\n\n* modify beamsearch for CTC: ar.es.pt and zh-CN\n\n* fix interface conflict\n\n* fix transducer interface bug\n\n---------\n\nCo-authored-by: Mirco Ravanelli <mirco.ravanelli@gmail.com>\n\n* Add warnings and fix numba (#2271)\n\n* upperbound torch/tochaudio + remove opt dependancy\n\n* add back automix/bf flags\n\n* linters\n\n* oops\n\n* transformers back\n\n* test requirements\n\n* Fix Bug: CommonVoice Transformer Bug loading correct optimizer (#2278)\n\n* fix trnsfrm bug to load correct opt:adam vs sgd\n\n* add  data_root to the path of common_voice_prepare.py\n\n* add epoch/_counter pretrainer to fr and it recepie\n\n* revert releative path change\n\n* fix opt bug without the need to add epoch_ckpt\n\n* add log and delete launch file\n\n* update the log message\n\n* update WeightedSSLModel (#2272)\n\n* update WeightedSSLModel\n\n* requirements.txt\n\n* fix pre-commit\n\n* Sg/dac (#2246)\n\n* introducing DAC\n\n* lint errors\n\n* black\n\n* documenttion\n\n* remove unused init file\n\n* Fixing tests\n\n* More doc strings\n\n* More doc strings\n\n* PR review\n\n* PR review\n\n* PR review\n\n* Update dac.py\n\n* Update dac.py\n\n* Update dac.py\n\n* make doctests smaller to avoid memory issues in CI\n\n* even smaller tests\n\n---------\n\nCo-authored-by: Shubham Gupta <shubhamgupta@Shubhams-MacBook-Pro-2.local>\nCo-authored-by: Mirco Ravanelli <mirco.ravanelli@gmail.com>\n\n* add quantization recipies fro IEMCAP, CV, LibriSpeech and LJSpeech (#2255)\n\n* add quantization recipies fro IEMCAP, CV, LibriSpeech and LJSpeech\n\n* update discrete_ssl models\n\n* add iemocap_prepare to main folder + add test\n\n* ix test for iemocap\n\n* fik typos\n\n* fix test recepies,  minor dormat editting\n\n* fix typo in coomonvoice.csv\n\n* fix typo in yaml file\n\n* fix doctests (those that we do not run in the CI)\n\n---------\n\nCo-authored-by: Mirco Ravanelli <mirco.ravanelli@gmail.com>\n\n* change emdedding type from long to float to vaoid getting al zeros embedding (#2292)\n\n* Update CVSS (#2285)\n\n* Update CVSS\n\n* Update train_fr-en.yaml\n\n* Update train_fr-en.yaml\n\n* Update HF interface (#2293)\n\n* RNN Tranducer Numba Loss: Add FP16 and BF16 support (code from Samsung AI Cambridge) (#2296)\n\n* Make lobes use fp32 when AMP is active (#2295)\n\n* Added utils.autocast with a fwd_default_precision function\n\n* Decorate all lobes to require float32 precision in AMP\n\n* Fix trailing space in docstring\n\n* Less confusing doc for fwd_default_precision\n\n* Be explicit that only fp inputs are affected by fwd_default_precision\n\n* Typo in docstring\n\n* Remove dtype annotation that is broken for some reason\n\n* Precommit checks will be the end of me\n\n* Fix tests\n\n* Add docstring to precision wrapper function\n\n* Fix style check again..\n\n* adding support for fp16 transducer loss numba\n\n* adding support for fp16 transducer loss numba\n\n* fix fp16 transducer recipe\n\n* add note on half precision\n\n---------\n\nCo-authored-by: asu <sdelang@sdelang.fr>\nCo-authored-by: Titouan Parcollet/Embedded AI /SRUK/Engineer/Samsung Electronics <t.parcollet@sruk-ccn4.eu.corp.samsungelectronics.net>\nCo-authored-by: Mirco Ravanelli <mirco.ravanelli@gmail.com>\n\n* Fix recipe tests for TransformerASR (#2282)\n\n* fix position embedding (#2283)\n\n* fix position embedding\n\n* use speechbrain internal postional encoding and generate mask from sequence lengths\n\n* call mask function from core for tacotron\n\n* minor fix\n\n* fix device\n\n* reduce training epochs\n\n* update links\n\n---------\n\nCo-authored-by: Mirco Ravanelli <mirco.ravanelli@gmail.com>\n\n* Gradscaler flags (#2281)\n\n* add flags for gradscaler\n\n* add check_loss_isfinite\n\n* update dict\n\n* typo\n\n* remove default\n\n* better message\n\n* fix pre-commit\n\n* remove checks\n\n* remove new arguments\n\n---------\n\nCo-authored-by: Mirco Ravanelli <mirco.ravanelli@gmail.com>\n\n* add llama2 recipies (#2299)\n\n* add llama2 recipies\n\n* fix symbolic links\n\n* fix  bug\n\n* remove unneccary input in docstring\n\n* fix typo\n\n* cleaning llama2 recepies\n\n* update readme\n\n* update interface and add licence to readme\n\n* fic doc string\n\n* fix precommit\n\n* fix extra-dependency\n\n* remove  commented lines\n\n* inter epoch checkpoint\n\n* minor fixes\n\n* add extra req info in llama.py\n\n* fix linters\n\n---------\n\nCo-authored-by: Mirco Ravanelli <mirco.ravanelli@gmail.com>\n\n* small fixes\n\n* make all recipes cpu-compliant + make recipe tests passing on both cpu and gpu\n\n* fix some broken links\n\n* remove link to private HF repo\n\n* remove link to private HF repo\n\n* fix libritts recipe test\n\n* fix ljspeech recipe test\n\n* Streamable Conformer-Transducer ASR model for LibriSpeech (#2140)\n\n* Introduce DCT+DCConv logic\n\n* DDP fix?\n\n* Batch of changes and things brought back\n\n* Streaming fixes (successfully trains)\n\n* WIP streaming code\n\n* WIP functional streaming code\n\n* Fix left context\n\n* Fix formatting\n\n* Cleanups and docs in streaming utils\n\n* Better comment hparams, change seed back to orig, improve naming\n\n* uncomment averaging stuff; it was some ipython issue\n\n* Remove pin_memory as it was not beneficial\n\n* More cleanups, comments on context stuff\n\n* More comments and TODOs\n\n* encode_streaming docstring\n\n* Dirty TransducerBeamSearcher change for streaming GS\n\n* Fix precommit\n\n* Fix encoders that do not support chunk_size\n\n* Pre-commit again\n\n* Make chunk_size type consistent\n\n* Fix formatting of doctest in split_wav_lens\n\n* Remove outdated TODO\n\n* Add hasattr streaming to retain model backcompat\n\n* Cleanup doc and naming for transducer_greedy_decode\n\n* Cite paper for chunked attention\n\n* Remove lost comment\n\n* Update comment in self-attention\n\n* Don't apply masked fill fix in the non-bool mask case\n\n* Added TODO README update\n\n* Revert change to custom_tgt_module; patching model instead\n\n* Remove added entry in README\n\n* Fix streaming conformer conv mismatch\n\n* More conformer conv adjustments\n\n* Adjust context size\n\n* Remove outdated comment\n\n* Fixed causal conformer decoder\n\n* Fix linting\n\n* Gate `custom_tgt_module` creation behind the presence of decoder layers\n\n* Re-enable checkpoint averaging\n\n* Change averaged ckpt count to 10\n\n* Add new model results to README\n\n* WIP refactor: Introduce DCTConfig dataclass\n\n* Improved notice in README\n\n* Formatting and linting fixes\n\n* Attempt at fixing circular import?\n\n* utils can't depend on core it seems; move dct\n\n* Whoops, missed file\n\n* Add DCT test, fix issues\n\n* Remove now obsolete yaml variables for streaming\n\n* Formatting\n\n* Add dummy dct_config parameter to keep unsupported encoders working\n\n* Linting fix\n\n* Fix typo\n\n* Add note on runtime autocast accuracy\n\n* Fix very bad typo from refactor in YAML\n\n* Fix hasattr streaming check\n\n* Remove legacy comment\n\n* Fix left context size calculation in new mask code\n\n* Fix causal models in TransformerASR\n\n* Remove comment on high-level inference code\n\n* YAML formatting + commenting dynchunktrain stuff\n\n* Remove outdated comment about DCConv left contexts\n\n* Remove commented out debug prints from TransformerASR\n\n* Move DCT into utils again\n\n* Rename all(?) mentions of DCT to explicit dynamic chunk training\n\n* Clarify padding logic\n\n* Remove now-useless _do_conv, fix horrible formatting\n\n* Slightly fix formatting further\n\n* Add docstrings to forward_streaming methods\n\n* Add a reference on Dynamic Chunk Training\n\n* Rework conformer docstring docs\n\n* Update conformer author list, fix doc formatting for authors\n\n* Fix trailing whitespace in conformer\n\n* Improved comments in Conformer.forward\n\n* Added random dynchunktrain sampler example\n\n* More explicit names for mask functions in TransformerASR\n\n* Added docstring example on encode_streaming\n\n* Pre-commit fix\n\n* Fix typo in conformer\n\n* Initial streaming integration test\n\n* Precommit fix\n\n* Fix indent in YAML\n\n* More consistent spelling in streaming integration test\n\n* Update CommonVoice.csv\n\n* Add KenLM n-gram training recepie (#2304)\n\n* add kenlm training\n\n* fix precommit\n\n* update readmefile with new result\n\n* fix pre-commit\n\n* fix typo\n\n* fix commit reviews\n\n* fix bug in testing\n\n* add docstring and fix indentation\n\n* fix bug in ASR interface\n\n* change encoderasr interface to support ctc beam\n\n* add suppourt fro kenlm in enoderasr interface\n\n* fix typo\n\n* little changes in REAMDE files to improve clarity)\n\n* use binaries sources in bashrc\n\n* fix trailing-whitespace\n\n---------\n\nCo-authored-by: Mirco Ravanelli <mirco.ravanelli@gmail.com>\n\n* Create Performance file (automatically) (#2314)\n\n* add performance readme builder\n\n* update recipe csv files\n\n* update README files\n\n* add not in prerelease test\n\n* added performance.md\n\n* fix linters\n\n* update info in README\n\n* Llama2 interface bug (#2318)\n\n* fix llama2 interface bug\n\n* fix minor bug\n\n* update multiwox.csv with correct db and HF link\n\n* New README file (#2315)\n\n* Update README.md\n\n* Update README.md\n\n* Update README.md\n\n* Update README.md\n\n* Update README.md\n\n* Update README.md\n\n* Update README.md\n\n* Update README.md\n\n* Update README.md\n\n* Update README.md\n\n* Update README.md\n\n* Optimize masked Dynamic Chunk Convolution (#2308)\n\n* Reorganized some conformer convolution module to be faster\n\n* Completely get rid of the list of slices in the conformer conv module\n\n* Fix linter check\n\n* Remove unused variable\n\n* More unused variables..\n\n* Remove unused import\n\n* Add conformer streaming code path test\n\n* Fix test formatting\n\n* small fixes in tests\n\n* Update RNNLM.yaml\n\n* BayesSpeech (#2326)\n\n* Create train_bayesspeech.py\n\n* Create bayesspeech.yaml\n\n* Update README.md\n\n* Update LibriSpeech.csv\n\n* add extra-req\n\n---------\n\nCo-authored-by: Mirco Ravanelli <mirco.ravanelli@gmail.com>\n\n* adding new controllable exp scheduler\n\n* adding new controllable exp scheduler\n\n* update performance file\n\n* Update PERFORMANCE.md\n\n* Update README.md\n\n---------\n\nCo-authored-by: mhn226 <mhn.22692@gmail.com>\nCo-authored-by: Adel Moumen <88119391+Adel-Moumen@users.noreply.github.com>\nCo-authored-by: Adel Moumen <adelmoumen.pro@gmail.com>\nCo-authored-by: Ha Nguyen <43038599+mhn226@users.noreply.github.com>\nCo-authored-by: flexthink <1496671+flexthink@users.noreply.github.com>\nCo-authored-by: flexthink <flexthink@users.noreply.github.com>\nCo-authored-by: Pooneh Mousavi <moosavi.pooneh@gmail.com>\nCo-authored-by: shubham-gupta-30 <127571426+shubham-gupta-30@users.noreply.github.com>\nCo-authored-by: Shubham Gupta <shubhamgupta@Shubhams-MacBook-Pro-2.local>\nCo-authored-by: Parcollet Titouan <parcollet.titouan@gmail.com>\nCo-authored-by: asu <sdelang@sdelang.fr>\nCo-authored-by: Titouan Parcollet/Embedded AI /SRUK/Engineer/Samsung Electronics <t.parcollet@sruk-ccn4.eu.corp.samsungelectronics.net>\nCo-authored-by: Luca Della Libera <34525085+lucadellalib@users.noreply.github.com>\nCo-authored-by: Yingzhi WANG <41187612+BenoitWang@users.noreply.github.com>\nCo-authored-by: BenoitWang <wangyingzhi666@gmail.com>"
+},
+{
+    "repo_url": "github.com/OpenNMT/OpenNMT-py",
+    "filepath": "tools/convert_HF.py",
+    "commit_date": "2024-01-18T09:01:37Z",
+    "message": "fix \"\\n\" tokenization + phi-2 new layer names (#2552)"
+},
+{
+    "repo_url": "github.com/OpenNMT/OpenNMT-py",
+    "filepath": "tools/convert_HF.py",
+    "commit_date": "2024-01-11T17:14:14Z",
+    "message": "Support for Microsoft's Phi-2 model (#2548)\n\n* phi-2 support"
+},
+{
+    "repo_url": "github.com/neuml/txtai",
+    "filepath": "src/python/txtai/cloud/hub.py",
+    "commit_date": "2023-03-03T16:21:03Z",
+    "message": "Add lfs tracking for embeddings files, closes #450"
+},
+{
+    "repo_url": "github.com/neuml/txtai",
+    "filepath": "src/python/txtai/cloud/hub.py",
+    "commit_date": "2023-02-19T18:45:52Z",
+    "message": "Add huggingface-hub integration, closes #430. Add cloud object storage support for standard embeddings indexes, closes #431. Add support for custom cloud providers, closes #432. Add support for storing embeddings config as JSON, closes #433."
+},
+{
+    "repo_url": "github.com/huggingface/text-generation-inference",
+    "filepath": "server/text_generation_server/utils/hub.py",
+    "commit_date": "2024-02-26T18:49:28Z",
+    "message": "Revamp medusa implementation so that every model can benefit. (#1588)\n\n# What does this PR do?\n\n<!--\nCongratulations! You've made it this far! You're not quite done yet\nthough.\n\nOnce merged, your PR is going to appear in the release notes with the\ntitle you set, so make sure it's a great title that fully reflects the\nextent of your awesome contribution.\n\nThen, please replace this with a description of the change and which\nissue is fixed (if applicable). Please also include relevant motivation\nand context. List any dependencies (if any) that are required for this\nchange.\n\nOnce you're done, someone will review your PR shortly (see the section\n\"Who can review?\" below to tag some potential reviewers). They may\nsuggest changes to make the code even better. If no one reviewed your PR\nafter a week has passed, don't hesitate to post a new comment\n@-mentioning the same persons---sometimes notifications get lost.\n-->\n\n<!-- Remove if not applicable -->\n\nFixes # (issue)\n\n\n## Before submitting\n- [ ] This PR fixes a typo or improves the docs (you can dismiss the\nother checks if that's the case).\n- [ ] Did you read the [contributor\nguideline](https://github.com/huggingface/transformers/blob/main/CONTRIBUTING.md#start-contributing-pull-requests),\n      Pull Request section?\n- [ ] Was this discussed/approved via a Github issue or the\n[forum](https://discuss.huggingface.co/)? Please add a link\n      to it if that's the case.\n- [ ] Did you make sure to update the documentation with your changes?\nHere are the\n[documentation\nguidelines](https://github.com/huggingface/transformers/tree/main/docs),\nand\n[here are tips on formatting\ndocstrings](https://github.com/huggingface/transformers/tree/main/docs#writing-source-documentation).\n- [ ] Did you write any new necessary tests?\n\n\n## Who can review?\n\nAnyone in the community is free to review the PR once the tests have\npassed. Feel free to tag\nmembers/contributors who may be interested in your PR.\n\n<!-- Your PR will be replied to more quickly if you can figure out the\nright person to tag with @\n\n\n@OlivierDehaene OR @Narsil\n\n -->"
+},
+{
+    "repo_url": "github.com/huggingface/text-generation-inference",
+    "filepath": "server/text_generation_server/utils/hub.py",
+    "commit_date": "2023-12-21T16:29:23Z",
+    "message": "Fix local load for peft (#1373)\n\nlocal directory overloaded still needs the directory to locate the\nweights files correctly.\n\n# What does this PR do?\n\n<!--\nCongratulations! You've made it this far! You're not quite done yet\nthough.\n\nOnce merged, your PR is going to appear in the release notes with the\ntitle you set, so make sure it's a great title that fully reflects the\nextent of your awesome contribution.\n\nThen, please replace this with a description of the change and which\nissue is fixed (if applicable). Please also include relevant motivation\nand context. List any dependencies (if any) that are required for this\nchange.\n\nOnce you're done, someone will review your PR shortly (see the section\n\"Who can review?\" below to tag some potential reviewers). They may\nsuggest changes to make the code even better. If no one reviewed your PR\nafter a week has passed, don't hesitate to post a new comment\n@-mentioning the same persons---sometimes notifications get lost.\n-->\n\n<!-- Remove if not applicable -->\n\nFixes # (issue)\n\n\n## Before submitting\n- [ ] This PR fixes a typo or improves the docs (you can dismiss the\nother checks if that's the case).\n- [ ] Did you read the [contributor\nguideline](https://github.com/huggingface/transformers/blob/main/CONTRIBUTING.md#start-contributing-pull-requests),\n      Pull Request section?\n- [ ] Was this discussed/approved via a Github issue or the\n[forum](https://discuss.huggingface.co/)? Please add a link\n      to it if that's the case.\n- [ ] Did you make sure to update the documentation with your changes?\nHere are the\n[documentation\nguidelines](https://github.com/huggingface/transformers/tree/main/docs),\nand\n[here are tips on formatting\ndocstrings](https://github.com/huggingface/transformers/tree/main/docs#writing-source-documentation).\n- [ ] Did you write any new necessary tests?\n\n\n## Who can review?\n\nAnyone in the community is free to review the PR once the tests have\npassed. Feel free to tag\nmembers/contributors who may be interested in your PR.\n\n<!-- Your PR will be replied to more quickly if you can figure out the\nright person to tag with @\n\n\n@OlivierDehaene OR @Narsil\n\n -->"
+},
+{
+    "repo_url": "github.com/huggingface/text-generation-inference",
+    "filepath": "server/text_generation_server/utils/hub.py",
+    "commit_date": "2023-12-21T16:25:22Z",
+    "message": "feat: update exllamav2 kernels (#1370)\n\nCo-authored-by: Nicolas Patry <patry.nicolas@protonmail.com>"
+},
+{
+    "repo_url": "github.com/huggingface/text-generation-inference",
+    "filepath": "server/text_generation_server/utils/hub.py",
+    "commit_date": "2023-12-20T14:37:14Z",
+    "message": "Peft safetensors. (#1364)\n\nWorks by removing adapter_model.safetensors from being detected as the\ncore model file (which skips the real peft detection).\n\n# What does this PR do?\n\n<!--\nCongratulations! You've made it this far! You're not quite done yet\nthough.\n\nOnce merged, your PR is going to appear in the release notes with the\ntitle you set, so make sure it's a great title that fully reflects the\nextent of your awesome contribution.\n\nThen, please replace this with a description of the change and which\nissue is fixed (if applicable). Please also include relevant motivation\nand context. List any dependencies (if any) that are required for this\nchange.\n\nOnce you're done, someone will review your PR shortly (see the section\n\"Who can review?\" below to tag some potential reviewers). They may\nsuggest changes to make the code even better. If no one reviewed your PR\nafter a week has passed, don't hesitate to post a new comment\n@-mentioning the same persons---sometimes notifications get lost.\n-->\n\n<!-- Remove if not applicable -->\n\nFixes # (issue)\n\n\n## Before submitting\n- [ ] This PR fixes a typo or improves the docs (you can dismiss the\nother checks if that's the case).\n- [ ] Did you read the [contributor\nguideline](https://github.com/huggingface/transformers/blob/main/CONTRIBUTING.md#start-contributing-pull-requests),\n      Pull Request section?\n- [ ] Was this discussed/approved via a Github issue or the\n[forum](https://discuss.huggingface.co/)? Please add a link\n      to it if that's the case.\n- [ ] Did you make sure to update the documentation with your changes?\nHere are the\n[documentation\nguidelines](https://github.com/huggingface/transformers/tree/main/docs),\nand\n[here are tips on formatting\ndocstrings](https://github.com/huggingface/transformers/tree/main/docs#writing-source-documentation).\n- [ ] Did you write any new necessary tests?\n\n\n## Who can review?\n\nAnyone in the community is free to review the PR once the tests have\npassed. Feel free to tag\nmembers/contributors who may be interested in your PR.\n\n<!-- Your PR will be replied to more quickly if you can figure out the\nright person to tag with @\n\n\n@OlivierDehaene OR @Narsil\n\n -->"
+},
+{
+    "repo_url": "github.com/huggingface/text-generation-inference",
+    "filepath": "server/text_generation_server/utils/hub.py",
+    "commit_date": "2023-12-18T09:20:08Z",
+    "message": "fix: fix offline (#1341) (#1347)\n\n@oOraph\n\n---------\n\nSigned-off-by: Raphael Glon <oOraph@users.noreply.github.com>\nCo-authored-by: Raphael Glon <oOraph@users.noreply.github.com>"
+},
+{
+    "repo_url": "github.com/huggingface/text-generation-inference",
+    "filepath": "server/text_generation_server/utils/hub.py",
+    "commit_date": "2023-06-23T10:41:13Z",
+    "message": "feat(server): Adding new ignore_rule for conversion. (#485)"
+},
+{
+    "repo_url": "github.com/huggingface/text-generation-inference",
+    "filepath": "server/text_generation_server/utils/hub.py",
+    "commit_date": "2023-06-19T07:53:45Z",
+    "message": "feat(server): improve flash attention import errors (#465)\n\n@lewtun, is this enough?\n\nCloses #458\nCloses #456"
+},
+{
+    "repo_url": "github.com/huggingface/text-generation-inference",
+    "filepath": "server/text_generation_server/utils/hub.py",
+    "commit_date": "2023-06-05T14:09:41Z",
+    "message": "feat(server): batch tokenization for flash causal lm (#411)"
+},
+{
+    "repo_url": "github.com/huggingface/text-generation-inference",
+    "filepath": "server/text_generation_server/utils/hub.py",
+    "commit_date": "2023-05-31T08:57:53Z",
+    "message": "feat(server): add retry on download (#384)"
+},
+{
+    "repo_url": "github.com/huggingface/text-generation-inference",
+    "filepath": "server/text_generation_server/utils/hub.py",
+    "commit_date": "2023-05-03T09:36:24Z",
+    "message": "feat(server): support hf endpoint weight layout (#266)"
+},
+{
+    "repo_url": "github.com/huggingface/text-generation-inference",
+    "filepath": "server/text_generation_server/utils/hub.py",
+    "commit_date": "2023-04-11T17:16:41Z",
+    "message": "feat(server): support OPT models (#55)\n\nOPT models do not all have a `tokenizer.json` file on the hub at the\nmoment. Can't merge for now."
+},
+{
+    "repo_url": "github.com/OpenNMT/OpenNMT-py",
+    "filepath": "tools/convert_HF_llamalike.py",
+    "commit_date": "2023-12-29T15:48:17Z",
+    "message": "remove llm-awq dependancy (conflict with autoawq) (#2540)\n\n* remove llm-awq dependancy (conflict with autoawq)\n* set cuda 12.1 for docker\n* awq mixtral conversion from HF hub"
+},
+{
+    "repo_url": "github.com/OpenNMT/OpenNMT-py",
+    "filepath": "tools/convert_HF_llamalike.py",
+    "commit_date": "2023-12-26T10:08:55Z",
+    "message": "use flash_attn_with_kvcache for faster inference (#2539)\n\n* use flash_attn_with_kvcache\n* patch rmsnorm for multiexperts\n* rope theta as an option"
+},
+{
+    "repo_url": "github.com/OpenNMT/OpenNMT-py",
+    "filepath": "tools/convert_HF_llamalike.py",
+    "commit_date": "2023-12-14T13:00:55Z",
+    "message": "Extend llamalike-converter (#2536)\n\n* add various cases to the converter"
+},
+{
+    "repo_url": "github.com/OpenNMT/OpenNMT-py",
+    "filepath": "tools/convert_HF_llamalike.py",
+    "commit_date": "2023-12-04T10:51:41Z",
+    "message": "Distributed inference of 70B awq model (#2531)\n\n* Distributed inference of 70B awq model\n* fix overflow"
+},
+{
+    "repo_url": "github.com/OpenNMT/OpenNMT-py",
+    "filepath": "tools/convert_HF_llamalike.py",
+    "commit_date": "2023-11-24T08:50:24Z",
+    "message": "Fixconv (#2527)\n\n* fix converter\n* remove openllama"
+},
+{
+    "repo_url": "github.com/OpenNMT/OpenNMT-py",
+    "filepath": "tools/convert_HF_llamalike.py",
+    "commit_date": "2023-11-23T14:02:03Z",
+    "message": "Awq 4 bit quantization support (#2508)\n\n* add awq linear from AutoAWQ and/or llm-awq\n* add generic converter for llama-like models from HF with or without awq quantization"
+},
+{
+    "repo_url": "github.com/williamyang1991/VToonify",
+    "filepath": "vtoonify_model.py",
+    "commit_date": "2022-10-03T01:31:23Z",
+    "message": "vtoonify_model.py for web demo in colab notebook"
+},
+{
+    "repo_url": "github.com/marqo-ai/marqo",
+    "filepath": "src/marqo/s2_inference/processing/yolox_utils.py",
+    "commit_date": "2022-12-13T22:45:12Z",
+    "message": "Visual search update release (#214)\n\n* Visual search update (#210)\n\n* add parametrisation for chunking, overlapping boxes and combined model+boxes\n\n* add more tests\n\n* integrate yolox and simple grid changes\n\n* helper functions for opencv and yolox\n\n* add yolox patch class and helper functions\n\n* update to use opencv\n\n* update model cache and add logging\n\n* fix model caching and device selection\n\n* device conflicts\n\n* add attention based bb generation\n\n* update bboxes and test yolo\n\n* refactor and add attention based ViT for bb determination\n\n* create dino specific utils file for vit attention\n\n* include dino files\n\n* split the image file into seperate utils\n\n* refactor, split into seperate files and use a proper base class\n\n* add more tests\n\n* update and add more tests\n\n* refactor and clean up\n\n* add more packages\n\n* clean up and refactor\n\n* update tests\n\n* docker and cloud versions\n\n* change\n\n* fix device for owl\n\n* update types and dco strings\n\n* rename file\n\n* rename file\n\n* move tests\n\n* pytorch utils test\n\n* add another error for model loading\n\n* update functions to handle some edge cases and update types\n\n* add more tests\n\n* update the yolox utils to download the proper model\n\n* add yolox specific tests\n\n* update reqs and setup to be on the latest\n\n* update dockerfile to be same as new one\n\n* clean up\n\n* add the example and app\n\n* update file locations\n\n* update demo\n\n* bump model version\n\n* update demo\n\n* minor text edits\n\n* update demo\n\n* update demo\n\n* better error handling\n\n* update tests\n\n* change to PIL error\n\n* add more error types\n\n* small fixes for errors\n\n* error handling\n\n* update tests\n\n* remove models\n\n* clean up, doc strings and formatting\n\n* update tests\n\n* minor formatting\n\nCo-authored-by: Jesse Clark <jesse@s2search.io>\n\n* update some function names after merge\n\n* clean up and rename\n\n* Pinning tox ci (#211)\n\n* Branch aware ci tests (#209)\n\n* set the MQ_API_TEST_BRANCH to the current branch\n\n* setting github ref to just branch name\n\n* Adding quotes around env var\n\n* fixed syntax error\n\n* parsing the github.ref string\n\n* exporting just before running\n\n* added image_to_test input\n\n* fix: typo\n\n* default image to test is now explicit\n\n* updated documentation for image_to_test var\n\n* Update unit_test_CI.yml\n\n* tox pinned to 3.26\n\nCo-authored-by: pandu-k <107458762+pandu-k@users.noreply.github.com>\nCo-authored-by: Pandu Oliver Kerr <pandu@s2search.io>\n\n* Update Dockerfile\n\nremove space\n\n* clean up\n\n* move to headless opencv\n\n* tidying up\n\n* update error\n\n* minor edits\n\n* fix PR feedback and add more descriptions in the docstrings\n\n* use literal type\n\n* clean up, make the names more descriptive\n\n* change logging level to debug for some messages\n\nCo-authored-by: Jesse Clark <jesse@s2search.io>\nCo-authored-by: pandu-k <107458762+pandu-k@users.noreply.github.com>\nCo-authored-by: Pandu Oliver Kerr <pandu@s2search.io>"
+},
+{
+    "repo_url": "github.com/deforum-art/sd-webui-deforum",
+    "filepath": "scripts/deforum_helpers/vid2depth.py",
+    "commit_date": "2023-05-20T08:46:21Z",
+    "message": "Revert \"add license notices\"\n\nThis reverts commit 37504733b4b6be9baf8f6e6e9711873da3e46b7e."
+},
+{
+    "repo_url": "github.com/deforum-art/sd-webui-deforum",
+    "filepath": "scripts/deforum_helpers/vid2depth.py",
+    "commit_date": "2023-05-20T08:46:16Z",
+    "message": "Revert \"change contact notices the discord server\"\n\nThis reverts commit dc0031e1acb1bec29e421f399fefd2623de486e8."
+},
+{
+    "repo_url": "github.com/deforum-art/sd-webui-deforum",
+    "filepath": "scripts/deforum_helpers/vid2depth.py",
+    "commit_date": "2023-05-19T22:26:40Z",
+    "message": "change contact notices the discord server"
+},
+{
+    "repo_url": "github.com/deforum-art/sd-webui-deforum",
+    "filepath": "scripts/deforum_helpers/vid2depth.py",
+    "commit_date": "2023-04-14T06:14:22Z",
+    "message": "fix file name length to 09d instead of 07d"
+},
+{
+    "repo_url": "github.com/deforum-art/sd-webui-deforum",
+    "filepath": "scripts/deforum_helpers/vid2depth.py",
+    "commit_date": "2023-03-18T18:53:00Z",
+    "message": "add option to keep 3d models in vram between runs"
+},
+{
+    "repo_url": "github.com/deforum-art/sd-webui-deforum",
+    "filepath": "scripts/deforum_helpers/vid2depth.py",
+    "commit_date": "2023-03-05T20:30:22Z",
+    "message": "align img filenames to be of length 09.extension"
+},
+{
+    "repo_url": "github.com/deforum-art/sd-webui-deforum",
+    "filepath": "scripts/deforum_helpers/vid2depth.py",
+    "commit_date": "2023-02-27T08:56:23Z",
+    "message": "Revert \"Revert \"Merge pull request #339 from deforum-art/bad_apple!!\"\"\n\nThis reverts commit 483a973e0a9fc4197fe0a824598786fef52646ee."
+},
+{
+    "repo_url": "github.com/deforum-art/sd-webui-deforum",
+    "filepath": "scripts/deforum_helpers/vid2depth.py",
+    "commit_date": "2023-02-26T22:58:47Z",
+    "message": "Revert \"Merge pull request #339 from deforum-art/bad_apple!!\"\n\nThis reverts commit 6215a44d793ebc9a2915135e6c6dc0fee7712471, reversing\nchanges made to 27b508bd42b2b62fe7ee4f049303144861c6ca52."
+},
+{
+    "repo_url": "github.com/deforum-art/sd-webui-deforum",
+    "filepath": "scripts/deforum_helpers/vid2depth.py",
+    "commit_date": "2023-02-26T12:59:06Z",
+    "message": "don't load models on None mode"
+},
+{
+    "repo_url": "github.com/deforum-art/sd-webui-deforum",
+    "filepath": "scripts/deforum_helpers/vid2depth.py",
+    "commit_date": "2023-02-26T12:07:24Z",
+    "message": "add 'None' mode to just threshold grayscale"
+},
+{
+    "repo_url": "github.com/deforum-art/sd-webui-deforum",
+    "filepath": "scripts/deforum_helpers/vid2depth.py",
+    "commit_date": "2023-02-15T22:14:28Z",
+    "message": "don't threshold segmentation output\n\nit's already pretty well defined, and the depth cutoff settings definitely shouldn't apply to it"
+},
+{
+    "repo_url": "github.com/deforum-art/sd-webui-deforum",
+    "filepath": "scripts/deforum_helpers/vid2depth.py",
+    "commit_date": "2023-02-14T20:15:54Z",
+    "message": "mixed mode: combine char. silh. + env. depth"
+},
+{
+    "repo_url": "github.com/deforum-art/sd-webui-deforum",
+    "filepath": "scripts/deforum_helpers/vid2depth.py",
+    "commit_date": "2023-02-14T12:20:15Z",
+    "message": "ARB: batch size of 1 for now"
+},
+{
+    "repo_url": "github.com/deforum-art/sd-webui-deforum",
+    "filepath": "scripts/deforum_helpers/vid2depth.py",
+    "commit_date": "2023-02-14T10:43:15Z",
+    "message": "add vid2depth\n\nneed fixing some thresh modes"
+},
+{
+    "repo_url": "github.com/argilla-io/argilla",
+    "filepath": "src/argilla/client/feedback/integrations/huggingface/dataset.py",
+    "commit_date": "2023-11-11T14:38:10Z",
+    "message": "fix: safer dump of `vectors` in the HuggingFace Hub (#4203)\n\n# Description\n\nThis PR solves an issue that was happening (and is still happening)\nrelated to the naming we're using for the columns in the HuggingFace Hub\ndataset, as we're exporting each of the fields and responses using their\nnames in Argilla, and appending `-suggestion` or whatever feels\nnecessary, but we can run into conflicts in any `field` is name as any\nother `question`, named `metadata` or named `external_id`, as well as\nthe other way around for `question`.\n\nSo on, this PR fixes that for the upcoming `vectors`, as those are\nusually named after the field that those refer to, so instead of dumping\nthose under the same name, we're dumping a Python dict in a column named\n`vectors` where each key-value pair is a vector name and its value.\nSimilarly to what was done previously for the former Argilla datasets.\n\n**Type of change**\n\n- [x] Bug fix (non-breaking change which fixes an issue)\n\n**How Has This Been Tested**\n\n- [x] Add integration tests for duplicated name on `vectors_settings`\nfor a given vector and ensured that it's dumped and restored properly\n\n**Checklist**\n\n- [x] I followed the style guidelines of this project\n- [x] I did a self-review of my code\n- [x] My changes generate no new warnings\n- [x] I have added tests that prove my fix is effective or that my\nfeature works\n- [x] I filled out [the contributor form](https://tally.so/r/n9XrxK)\n(see text above)\n- [x] I have added relevant notes to the `CHANGELOG.md` file (See\nhttps://keepachangelog.com/)\n\n---------\n\nCo-authored-by: Paco Aranda <francis@argilla.io>\nCo-authored-by: Jose Francisco Calvo <jose@argilla.io>"
+},
+{
+    "repo_url": "github.com/argilla-io/argilla",
+    "filepath": "src/argilla/client/feedback/integrations/huggingface/dataset.py",
+    "commit_date": "2023-11-07T13:57:32Z",
+    "message": "feature: Similarity search in Feedback Datasets (#3815)\n\n<!-- Thanks for your contribution! As part of our Community Growers\ninitiative \ud83c\udf31, we're donating Justdiggit bunds in your name to reforest\nsub-Saharan Africa. To claim your Community Growers certificate, please\ncontact David Berenstein in our Slack community or fill in this form\nhttps://tally.so/r/n9XrxK once your PR has been merged. -->\n\n# Description\n\nPlease include a summary of the changes and the related issue. Please\nalso include relevant motivation and context. List any dependencies that\nare required for this change.\n\nCloses https://github.com/argilla-io/argilla/issues/3028\n\n**Type of change**\n\n(Please delete options that are not relevant. Remember to title the PR\naccording to the type of change)\n\n- [ ] New feature (non-breaking change which adds functionality)\n- [ ] Refactor (change restructuring the codebase without changing\nfunctionality)\n- [ ] Improvement (change adding some improvement to an existing\nfunctionality)\n\n**How Has This Been Tested**\n\n(Please describe the tests that you ran to verify your changes. And\nideally, reference `tests`)\n\n- [ ] Test A\n- [ ] Test B\n\n**Checklist**\n\n- [ ] I added relevant documentation\n- [ ] I followed the style guidelines of this project\n- [ ] I did a self-review of my code\n- [ ] I made corresponding changes to the documentation\n- [ ] My changes generate no new warnings\n- [ ] I have added tests that prove my fix is effective or that my\nfeature works\n- [ ] I filled out [the contributor form](https://tally.so/r/n9XrxK)\n(see text above)\n- [ ] I have added relevant notes to the `CHANGELOG.md` file (See\nhttps://keepachangelog.com/)\n\n---------\n\nCo-authored-by: Gabriel Mart\u00edn Bl\u00e1zquez <gmartinbdev@gmail.com>\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>\nCo-authored-by: Jos\u00e9 Francisco Calvo <josefranciscocalvo@gmail.com>\nCo-authored-by: Jos\u00e9 Francisco Calvo <jose@argilla.io>\nCo-authored-by: Alvaro Bartolome <alvaro@argilla.io>\nCo-authored-by: Dami\u00e1n Pumar <damianpumar@gmail.com>\nCo-authored-by: leiyre <leire@argilla.io>\nCo-authored-by: Gabriel Martin <gabriel@argilla.io>\nCo-authored-by: David Berenstein <david.m.berenstein@gmail.com>\nCo-authored-by: frascuchon <paco@argilla.io>\nCo-authored-by: Natalia Elvira <126158523+nataliaElv@users.noreply.github.com>\nCo-authored-by: Daniel Vila Suero <daniel@argilla.io>\nCo-authored-by: Sara Han <127759186+sdiazlor@users.noreply.github.com>\nCo-authored-by: leire <leire@recogn.ai>"
+},
+{
+    "repo_url": "github.com/argilla-io/argilla",
+    "filepath": "src/argilla/client/feedback/integrations/huggingface/dataset.py",
+    "commit_date": "2023-11-07T08:30:58Z",
+    "message": "feat: Implement status bar with tqdm  when parsing records in from_huggingface (#4132)\n\n# Description\n\nIt is a new feature for function from_huggingface. I implement a\nprogress bar with tqdm for the records parsing process.\n\nCloses #3888 \n\n**Type of change**\n\n(Please delete options that are not relevant. Remember to title the PR\naccording to the type of change)\n\n- [x] New feature (non-breaking change which adds functionality)\n- [ ] Refactor (change restructuring the codebase without changing\nfunctionality)\n- [ ] Improvement (change adding some improvement to an existing\nfunctionality)\n\n**How Has This Been Tested**\n\n1. Run `pip install -e .` in the repo after making changes.\n2. Run from_huggingface in a ipynb file.\n3. The progress bar of parsing record is shown.\n\n**Checklist**\n\n- [ ] I added relevant documentation\n- [ ] I followed the style guidelines of this project\n- [x] I did a self-review of my code\n- [ ] I made corresponding changes to the documentation\n- [x] My changes generate no new warnings\n- [ ] I have added tests that prove my fix is effective or that my\nfeature works\n- [x] I filled out [the contributor form](https://tally.so/r/n9XrxK)\n(see text above)\n- [x] I have added relevant notes to the `CHANGELOG.md` file (See\nhttps://keepachangelog.com/)\n\n---------\n\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>\nCo-authored-by: David Berenstein <david.m.berenstein@gmail.com>"
+},
+{
+    "repo_url": "github.com/argilla-io/argilla",
+    "filepath": "src/argilla/client/feedback/integrations/huggingface/dataset.py",
+    "commit_date": "2023-11-06T17:03:36Z",
+    "message": "feat: Add metadata properties to dataset card (#4044)\n\n<!-- Thanks for your contribution! As part of our Community Growers\ninitiative \ud83c\udf31, we're donating Justdiggit bunds in your name to reforest\nsub-Saharan Africa. To claim your Community Growers certificate, please\ncontact David Berenstein in our Slack community or fill in this form\nhttps://tally.so/r/n9XrxK once your PR has been merged. -->\n\n# Description\n\nAdds the metadata_properties of a FeedbackDataset to the dataset card\nwhen pushed to the Hugging Face Hub\n\nCloses #4007 \n\n**Type of change**\n\n(Please delete options that are not relevant. Remember to title the PR\naccording to the type of change)\n\n- [x] Improvement (change adding some improvement to an existing\nfunctionality)\n\n**How Has This Been Tested**\n\n(Please describe the tests that you ran to verify your changes. And\nideally, reference `tests`)\n\n- [x]\ntests/unit/client/feedback/integrations/huggingface/card/test__dataset_card.py\n\n**Checklist**\n\n- [x] I added relevant documentation\n- [x] I followed the style guidelines of this project\n- [x] I did a self-review of my code\n- [x] I made corresponding changes to the documentation\n- [x] My changes generate no new warnings\n- [x] I have added tests that prove my fix is effective or that my\nfeature works\n- [x] I filled out [the contributor form](https://tally.so/r/n9XrxK)\n(see text above)\n- [ ] I have added relevant notes to the `CHANGELOG.md` file (See\nhttps://keepachangelog.com/)\n\n---------\n\nCo-authored-by: David Berenstein <david.m.berenstein@gmail.com>\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>"
+},
+{
+    "repo_url": "github.com/argilla-io/argilla",
+    "filepath": "src/argilla/client/feedback/integrations/huggingface/dataset.py",
+    "commit_date": "2023-10-25T14:12:04Z",
+    "message": "feat: update quickstart loaded datasets (#4038)\n\n# Description\n\nThis PR removes loading the error analysis datasets from the\n`load_data.py` script used by the Docker quickstart image and adds\nloading the [Text Descriptives\nMetadata](https://huggingface.co/datasets/argilla/text-descriptives-metadata)\ndataset from Hugging Face.\n\nCloses #<issue_number>\n\n**Type of change**\n\n- [x] New feature (non-breaking change which adds functionality)\n\n**How Has This Been Tested**\n\n(Please describe the tests that you ran to verify your changes. And\nideally, reference `tests`)\n\n- [ ] Test A\n- [ ] Test B\n\n**Checklist**\n\n- [ ] I added relevant documentation\n- [x] I followed the style guidelines of this project\n- [x] I did a self-review of my code\n- [ ] I made corresponding changes to the documentation\n- [x] My changes generate no new warnings\n- [x] I have added tests that prove my fix is effective or that my\nfeature works\n- [ ] I filled out [the contributor form](https://tally.so/r/n9XrxK)\n(see text above)\n- [ ] I have added relevant notes to the `CHANGELOG.md` file (See\nhttps://keepachangelog.com/)\n\n---------\n\nCo-authored-by: Francisco Aranda <francis@argilla.io>"
+},
+{
+    "repo_url": "github.com/argilla-io/argilla",
+    "filepath": "src/argilla/client/feedback/integrations/huggingface/dataset.py",
+    "commit_date": "2023-10-20T14:49:04Z",
+    "message": "fix: `FeedbackDataset` fields with `required=False` failing on `push_to_huggingface` (#4006)\n\n# Description\n\nThis PR addresses an issue reported by @dvsrepo, that was preventing\nfrom uploading a `FeedbackDataset` to the Hugging Face Hub via\n`push_to_huggingface` when there were any optional fields not provided.\n\n**Type of change**\n\n- [x] Bug fix (non-breaking change which fixes an issue)\n\n**How Has This Been Tested**\n\n- [x] Add unit tests for `FeedbackDataset` with optional i.e.\n`required=False` fields\n\n**Checklist**\n\n- [x] I followed the style guidelines of this project\n- [x] I did a self-review of my code\n- [x] My changes generate no new warnings\n- [x] I have added tests that prove my fix is effective or that my\nfeature works\n- [ ] I filled out [the contributor form](https://tally.so/r/n9XrxK)\n(see text above)\n- [ ] I have added relevant notes to the `CHANGELOG.md` file (See\nhttps://keepachangelog.com/)\n\n---------\n\nCo-authored-by: Francisco Aranda <francis@argilla.io>"
+},
+{
+    "repo_url": "github.com/argilla-io/argilla",
+    "filepath": "src/argilla/client/feedback/integrations/huggingface/dataset.py",
+    "commit_date": "2023-10-19T12:50:17Z",
+    "message": "feat: support for metadata filtering and sorting (#3830)\n\n# Description\n\nThis PR adds a new feature to the `FeedbackDataset`s that allows to\ncreate metadata properties that enables filtering the records based on\ntheir metadata. Also, the option to sort the records based on\n'inserted_at', 'updated_at' and metadata properties has been added.\n\nCloses #3748 \n\n**Type of change**\n\n- [x] New feature (non-breaking change which adds functionality)\n\n**How Has This Been Tested**\n\nThe awesome Argilla team has been testing this very hard :) \n\n**Checklist**\n\n- [ ] I added relevant documentation\n- [x] I followed the style guidelines of this project\n- [x] I did a self-review of my code\n- [ ] I made corresponding changes to the documentation\n- [x] My changes generate no new warnings\n- [x] I have added tests that prove my fix is effective or that my\nfeature works\n- [ ] I filled out [the contributor form](https://tally.so/r/n9XrxK)\n(see text above)\n- [x] I have added relevant notes to the `CHANGELOG.md` file (See\nhttps://keepachangelog.com/)\n\n---------\n\nCo-authored-by: Francisco Aranda <francis@argilla.io>\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>\nCo-authored-by: leiyre <leire@argilla.io>\nCo-authored-by: Dami\u00e1n Pumar <damianpumar@gmail.com>\nCo-authored-by: leire <leire@recogn.ai>\nCo-authored-by: Alvaro Bartolome <alvaro@argilla.io>\nCo-authored-by: Jos\u00e9 Francisco Calvo <jose@argilla.io>\nCo-authored-by: Jos\u00e9 Francisco Calvo <josefranciscocalvo@gmail.com>\nCo-authored-by: David Berenstein <david.m.berenstein@gmail.com>\nCo-authored-by: frascuchon <paco@argilla.io>\nCo-authored-by: Natalia Elvira <126158523+nataliaElv@users.noreply.github.com>"
+},
+{
+    "repo_url": "github.com/argilla-io/argilla",
+    "filepath": "src/argilla/client/feedback/integrations/huggingface/dataset.py",
+    "commit_date": "2023-09-25T08:55:55Z",
+    "message": "refactor: detach remote `pydantic.BaseModel` schemas (#3784)\n\n# Description\n\nThis PR detaches the Argilla-oriented aka remote `pydantic.BaseModel`\nschemas from the local ones, this way there's no need to maintain\ncombined schemas for both local and remote which may be confusing, as we\ncan now maintain separate schemas.\n\nBesides that, in this PR we'll also tackle the automatic parsing from\nPython dictionaries into each respective `pydantic.BaseModel` schema to\nallow the users to either import and use those schemas or just use\nPython dictionaries.\n\n**Type of change**\n\n- [X] Refactor (change restructuring the codebase without changing\nfunctionality)\n- [X] Improvement (change adding some improvement to an existing\nfunctionality)\n\n**How Has This Been Tested**\n\n- [x] Add unit tests for the newly introduced schemas i.e.\n`RemoteFeedbackRecord`, `RemoteSuggestionSchema`, and\n`RemoteResponseSchema`; and methods i.e. `to_local`, `from_api`, and\n`to_server_payload`\n- [ ] Add integration tests for the newly introduced schemas i.e.\n`RemoteFeedbackRecord`, `RemoteSuggestionSchema`, and\n`RemoteResponseSchema`\n\n**Checklist**\n\n- [ ] I added relevant documentation\n- [X] follows the style guidelines of this project\n- [X] I did a self-review of my code\n- [ ] I made corresponding changes to the documentation\n- [X] My changes generate no new warnings\n- [X] I have added tests that prove my fix is effective or that my\nfeature works\n- [ ] I filled out [the contributor form](https://tally.so/r/n9XrxK)\n(see text above)\n- [ ] I have added relevant notes to the CHANGELOG.md file (See\nhttps://keepachangelog.com/)\n\n---------\n\nCo-authored-by: Gabriel Mart\u00edn Bl\u00e1zquez <gmartinbdev@gmail.com>"
+},
+{
+    "repo_url": "github.com/argilla-io/argilla",
+    "filepath": "src/argilla/client/feedback/integrations/huggingface/dataset.py",
+    "commit_date": "2023-09-14T09:45:13Z",
+    "message": "fix: add `draft` status for responses in the Python SDK (#3749)\n\n# Description\n\nThis PR replaces the pre-defined `Literal`s for the response status in\nboth the Python SDK and the Python client, so as to use an `Enum`\ninstead. Besides that, also the `draft` status has been included as it\nwas previously missing, but as of\nhttps://github.com/argilla-io/argilla/pull/3033 it was included in the\nAPI and as of https://github.com/argilla-io/argilla/pull/3541 it was\nalso included in the UI.\n\nCloses #3745 \n\n**Type of change**\n\n- [X] Bug fix (non-breaking change which fixes an issue)\n- [X] Improvement (change adding some improvement to an existing\nfunctionality)\n\n**How Has This Been Tested**\n\n(Please describe the tests that you ran to verify your changes. And\nideally, reference `tests`)\n\n- [X] Added `draft` as another use-case of the `ResponseSchema` unit\ntests\n- [x] Added responses with `draft` status in `from_argilla` integration\ntests\n\n**Checklist**\n\n- [ ] I added relevant documentation\n- [X] follows the style guidelines of this project\n- [X] I did a self-review of my code\n- [ ] I made corresponding changes to the documentation\n- [X] My changes generate no new warnings\n- [x] I have added tests that prove my fix is effective or that my\nfeature works\n- [ ] I filled out [the contributor form](https://tally.so/r/n9XrxK)\n(see text above)\n- [x] I have added relevant notes to the CHANGELOG.md file (See\nhttps://keepachangelog.com/)"
+},
+{
+    "repo_url": "github.com/argilla-io/argilla",
+    "filepath": "src/argilla/client/feedback/integrations/huggingface/dataset.py",
+    "commit_date": "2023-09-13T15:50:21Z",
+    "message": "feat: allow `require_version` and `requires_version` to also accept list of requirements (#3555)\n\n# Description\n\nThis feature extends the functionality of `require_version` and\n`requires_version` to also accept list of requirements.\n\nCloses #3554.\n\n**Type of change**\n\n(Please delete options that are not relevant. Remember to title the PR\naccording to the type of change)\n\n- [x] Improvement (change adding some improvement to an existing\nfunctionality)\n\n**How Has This Been Tested**\n\n(Please describe the tests that you ran to verify your changes. And\nideally, reference `tests`)\n\nTwo new unit tests were added to check that both the function and the\ndecorator work as expected with the new addition.\n\n**Checklist**\n\n- [ ] I added relevant documentation\n- [x] I followed the style guidelines of this project\n- [x] I did a self-review of my code\n- [ ] I made corresponding changes to the documentation\n- [x] My changes generate no new warnings\n- [x] I have added tests that prove my fix is effective or that my\nfeature works\n- [ ] I filled out [the contributor form](https://tally.so/r/n9XrxK)\n(see text above)\n- [ ] I have added relevant notes to the `CHANGELOG.md` file (See\nhttps://keepachangelog.com/)\n\n---------\n\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>\nCo-authored-by: Alvaro Bartolome <alvarobartt@gmail.com>"
+},
+{
+    "repo_url": "github.com/argilla-io/argilla",
+    "filepath": "src/argilla/client/feedback/integrations/huggingface/dataset.py",
+    "commit_date": "2023-09-06T15:42:29Z",
+    "message": "fix: exclude `id` and `client` from `suggestions` in `DatasetCard` (#3718)\n\n# Description\n\nThis PR addressed a bug internally reported by @gabrielmbmb, that was\nhappening when calling `argilla datasets push-to-huggingface` on a\n`FeedbackDataset` from Argilla with suggestions, since recently we\nincluded the `id` and `client` fields in the `RemoteSuggestionSchema` so\nthose were not properly serialised when generating a random dataset\nentry for the `DatasetCard` to be uploaded to HuggingFace. This is\nalready patched, and the `DatasetCard` is properly generated.\n\n**Type of change**\n\n- [X] Bug fix (non-breaking change which fixes an issue)\n\n**Checklist**\n\n- [ ] I added relevant documentation\n- [X] follows the style guidelines of this project\n- [X] I did a self-review of my code\n- [ ] I made corresponding changes to the documentation\n- [ ] My changes generate no new warnings\n- [ ] I have added tests that prove my fix is effective or that my\nfeature works\n- [ ] I filled out [the contributor form](https://tally.so/r/n9XrxK)\n(see text above)\n- [X] I have added relevant notes to the CHANGELOG.md file (See\nhttps://keepachangelog.com/)"
+},
+{
+    "repo_url": "github.com/argilla-io/argilla",
+    "filepath": "src/argilla/client/feedback/integrations/huggingface/dataset.py",
+    "commit_date": "2023-08-21T17:16:10Z",
+    "message": "refactor: move `AllowedFieldTypes` and `AllowedQuestionTypes` to `argilla/client/feedback/schemas/types.py` (#3603)\n\n# Description\n\nThis is a small PR that moves both `AllowedFieldTypes` and\n`AllowedQuestionTypes` from `argilla/client/feedback/types.py` to\n`argilla/client/feedback/schemas/types.py`, as it makes more sense to\ndefine those under `schemas` rather than under `feedback`.\n\n**Type of change**\n\n- [X] Refactor (change restructuring the codebase without changing\nfunctionality)\n\n**Checklist**\n\n- [ ] I added relevant documentation\n- [X] follows the style guidelines of this project\n- [X] I did a self-review of my code\n- [ ] I made corresponding changes to the documentation\n- [X] My changes generate no new warnings\n- [ ] I have added tests that prove my fix is effective or that my\nfeature works\n- [ ] I filled out [the contributor form](https://tally.so/r/n9XrxK)\n(see text above)\n- [ ] I have added relevant notes to the CHANGELOG.md file (See\nhttps://keepachangelog.com/)"
+},
+{
+    "repo_url": "github.com/argilla-io/argilla",
+    "filepath": "src/argilla/client/feedback/integrations/huggingface/dataset.py",
+    "commit_date": "2023-08-10T09:16:00Z",
+    "message": "fix: restore `suggestions` and `responses` as rows in `HuggingFaceDatasetMixin` (#3539)\n\n# Description\n\nThis PR addresses the feature mentioned by @tomaarsen at\nhttps://github.com/argilla-io/argilla/pull/3467, to basically export the\n`responses` for the existing questions in the `FeedbackDataset` when\ncalling `push_to_huggingface` in a row-based format instead of using the\n`Sequence` from \ud83e\udd17`datasets`. This makes the dataset from the HuggingFace\nHub more readable, and also easier to use with other frameworks and/or\nlibraries.\n\n```diff\n- {\"user_id\": [\"A\", \"B\"], \"value\": [1, 2], \"status\": [\"C\", \"D\"]}\n+ [{\"user_id\": \"A\", \"value\": 1, \"status\": \"C\"}, {\"user_id\": \"B\", \"value\": 2, \"status\": \"D\"}]\n```\n\nAdditionally, this PR also ensure that the backwards compatibility is\npreserved with the previous versions, and assumes the new format as the\ndefault one when calling `format_as(\"datasets\")`.\n\nFinally, this PR also solves an issue reported by @nataliaelv recently\nthat was affecting the `suggestions` when calling\n`FeedbackDataset.from_argilla`, as those were just kept when there were\n`responses`, otherwise, a `continue` statement was being called so the\n`suggestions` were completely ignored.\n\n**Type of change**\n\n- [X] Bug fix (non-breaking change which fixes an issue)\n- [X] New feature (non-breaking change which adds functionality)\n\n**How Has This Been Tested**\n\n(Please describe the tests that you ran to verify your changes. And\nideally, reference `tests`)\n\n- [X] Ran the following script and tested different combinations as the\nconnection to HuggingFace is mocked, but we should create a fake/testing\nuser at some point to avoid overloading `argilla-io`\n\n```python\nimport argilla as rg\n\ndataset = rg.FeedbackDataset(\n    fields=[\n        rg.TextField(\n            name=\"prompt\",\n            required=True,\n        ),\n    ],\n    questions=[\n        rg.TextQuestion(\n            name=\"response-edit\",\n            title=\"Add or edit the response if necessary\",\n            required=True,\n        ),\n    ],\n)\ndataset.add_records(\n    rg.FeedbackRecord(\n        fields={\n            \"prompt\": \"This is the prompt!\",\n        },\n        suggestions=[\n            {\n                \"question_name\": \"response-edit\",\n                \"value\": \"This is the suggestion!\"\n            }\n        ],\n    )\n)\ndataset.push_to_huggingface(\"<REPO_ID>\")\ndataset = rg.FeedbackDataset.from_huggingface(\"<REPO_ID>\")\nassert dataset.records[0].suggestions is not None\n```\n\n**Checklist**\n\n- [ ] I added relevant documentation\n- [X] follows the style guidelines of this project\n- [X] I did a self-review of my code\n- [ ] I made corresponding changes to the documentation\n- [X] My changes generate no new warnings\n- [ ] I have added tests that prove my fix is effective or that my\nfeature works\n- [ ] I filled out [the contributor form](https://tally.so/r/n9XrxK)\n(see text above)\n- [X] I have added relevant notes to the CHANGELOG.md file (See\nhttps://keepachangelog.com/)\n\n---------\n\nCo-authored-by: Gabriel Martin <gabriel@argilla.io>"
+},
+{
+    "repo_url": "github.com/argilla-io/argilla",
+    "filepath": "src/argilla/client/feedback/integrations/huggingface/dataset.py",
+    "commit_date": "2023-07-27T14:48:09Z",
+    "message": "fix: import errors when importing from `argilla.feedback` (#3471)\n\n# Description\n\nThis PRs fixes the `ModuleNotFoundError` and `ImportError` that occurred\nwhen trying to import something from `argilla.feedback` module.\n\nThe first error was caused because in #3336 the telemetry was included\nin the `ArgillaTrainer`, but in the `argilla.utils.telemetry` module\nsome optional dependencies used by the server were being imported.\n\nThe second one was caused because the module in which\n`HuggingFaceDatasetMixin` (and from which `FeedbackDataset` is\ninheriting) class lives was importing classes from the\n`argilla.client.feedback.config` module, which was importing `pyyaml` in\nits root causing the `ImportError`.\n\nCloses #3468 \n\n**Type of change**\n\n- [x] Bug fix (non-breaking change which fixes an issue)\n\n**How Has This Been Tested**\n\nI've created a wheel of this branch, installed in a new virtual\nenvironment and I was able to import something `argilla.feedback` module\nwithout errors.\n\n**Checklist**\n\n- [ ] I added relevant documentation\n- [x] follows the style guidelines of this project\n- [x] I did a self-review of my code\n- [ ] I made corresponding changes to the documentation\n- [x] My changes generate no new warnings\n- [x] I have added tests that prove my fix is effective or that my\nfeature works\n- [ ] I filled out [the contributor form](https://tally.so/r/n9XrxK)\n(see text above)\n- [x] I have added relevant notes to the CHANGELOG.md file (See\nhttps://keepachangelog.com/)\n\n---------\n\nCo-authored-by: Francisco Aranda <francis@argilla.io>"
+},
+{
+    "repo_url": "github.com/argilla-io/argilla",
+    "filepath": "src/argilla/client/feedback/integrations/huggingface/dataset.py",
+    "commit_date": "2023-07-16T06:20:40Z",
+    "message": "Feat/3347 feature add unification support for the rankingquestion (#3364)\n\n<!-- Thanks for your contribution! As part of our Community Growers\ninitiative \ud83c\udf31, we're donating Justdiggit bunds in your name to reforest\nsub-Saharan Africa. To claim your Community Growers certificate, please\ncontact David Berenstein in our Slack community or fill in this form\nhttps://tally.so/r/n9XrxK once your PR has been merged. -->\n\n# Description\n\n- renamed `typing.py` to `types.py` to avoid import errors\n- added `RankingQuestionStrategy`\n- added `RankingQuestionUnification`\n- added `RankingQuestion`support for the `.for_text_classification`\nmethod for the `TrainingTaskMapping`\n\nCloses #3347 \n\n**Type of change**\n\n(Please delete options that are not relevant. Remember to title the PR\naccording to the type of change)\n\n- [X] New feature (non-breaking change which adds functionality)\n- [X] Improvement (change adding some improvement to an existing\nfunctionality)\n\n**How Has This Been Tested**\n\n(Please describe the tests that you ran to verify your changes. And\nideally, reference `tests`)\n\n- [x]\n`tests/client/feedback/test_schemas.py:test_ranking_question_strategy`\n- [x]\n`tests/client/feedback/training/test_schemas.py:test_task_mapping_for_text_classification`\n\n**Checklist**\n\n- [X] I added relevant documentation\n- [X] follows the style guidelines of this project\n- [X] I did a self-review of my code\n- [X] I made corresponding changes to the documentation\n- [X] My changes generate no new warnings\n- [X] I have added tests that prove my fix is effective or that my\nfeature works\n- [X] I have added relevant notes to the CHANGELOG.md file (See\nhttps://keepachangelog.com/)\n\n---------\n\nCo-authored-by: Alvaro Bartolome <alvaro@argilla.io>"
+},
+{
+    "repo_url": "github.com/argilla-io/argilla",
+    "filepath": "src/argilla/client/feedback/integrations/huggingface/dataset.py",
+    "commit_date": "2023-07-14T13:40:09Z",
+    "message": "fix: add `DeprecatedDatasetConfig` for backwards compatibility & improve `warnings` (#3416)\n\n<!-- Thanks for your contribution! As part of our Community Growers\ninitiative \ud83c\udf31, we're donating Justdiggit bunds in your name to reforest\nsub-Saharan Africa. To claim your Community Growers certificate, please\ncontact David Berenstein in our Slack community or fill in this form\nhttps://tally.so/r/n9XrxK once your PR has been merged. -->\n\n# Description\n\nThis PR addresses the bug fix reported by @tomaarsen at #3414, so that\nwe use `DeprecatedDatasetConfig` instead of `DatasetConfig` and to make\n`from_json` a `classmethod`, to make sure that previously uploaded\n`FeedbackDataset`s to the HuggingFace Hub can still be loaded with\n`FeedbackDataset.from_huggingface`.\n\nAdditionally, as reported by @nataliaElv the warning messages when\nadding `suggestions` to a `FeedbackRecord` could be improved, so we've\nkept just the necessary and adding an `Ignore this exception ...` in\ncases where warning is not needed.\n\nCloses #3414\n\n**Type of change**\n\n- [X] Bug fix (non-breaking change which fixes an issue)\n\n**How Has This Been Tested**\n\n(Please describe the tests that you ran to verify your changes. And\nideally, reference `tests`)\n\n- [X] Run\n`FeedbackDataset.from_huggingface(\"argilla/stackoverflow_feedback_demo\")\n- [X] Update unit tests to catch updated warnings\n\n**Checklist**\n\n- [ ] I added relevant documentation\n- [X] follows the style guidelines of this project\n- [X] I did a self-review of my code\n- [ ] I made corresponding changes to the documentation\n- [ ] My changes generate no new warnings\n- [X] I have added tests that prove my fix is effective or that my\nfeature works\n- [ ] I filled out [the contributor form](https://tally.so/r/n9XrxK)\n(see text above)\n- [ ] I have added relevant notes to the CHANGELOG.md file (See\nhttps://keepachangelog.com/)\n\n---------\n\nCo-authored-by: Gabriel Martin <gabriel@argilla.io>"
+},
+{
+    "repo_url": "github.com/argilla-io/argilla",
+    "filepath": "src/argilla/client/feedback/integrations/huggingface/dataset.py",
+    "commit_date": "2023-07-14T09:27:27Z",
+    "message": "feat: add `suggestions` in `FeedbackRecord` (#3370)\n\n# Description\n\nAs of the recent addition of the `suggestions` in the Argilla API at\nhttps://github.com/argilla-io/argilla/issues/3277, we make sure that's\ncovered in both the SDK and the Python client.\n\nSo on, this PR adds the following:\n\n* `suggestions` included in `FeedbackRecord`\n* Update `FeedbackRecord` to \"listen\" for updates (for the moment just\napplies to `suggestions`, but may eventually be extended to\n`external_id`, `metadata`, and `responses`)\n* Add `add_suggestions` function in the SDK\n* Add `include=responses` and `include=suggestions` as default in\n`get_records`\n* `add_question` and `add_field` now return the schema, `QuestionSchema`\nand `FieldSchema`, respectively (to get the Argilla ID of those,\nrequired to log `suggestions` as we use the Argilla Question ID)\n* Extend `pydantic.BaseModel`s to add the `id` attribute for anything\nArgilla-related\n* Constrain `pydantic.BaseModel`s to disallow extra fields and have more\ncontrol over those\n* Handle `suggestions` on both pull and push from Argilla\n* Handle `suggestions` on both pull and push from HuggingFace\n\nAdditionally, I've also included some missing type-hints, improved\n`question_by_name` and `field_by_name` methods, fix some return\ntype-hints, rename \"`FeedbackTask` dataset\" occurrences to\n\"`FeedbackDataset`\", and some other minor fixes.\n\nCloses https://github.com/argilla-io/Team/issues/115\n\n**Type of change**\n\n- [X] New feature (non-breaking change which adds functionality)\n\n**How Has This Been Tested**\n\n- [X] Add unit tests for the newly included `suggestions` attribute in\n`FeedbackRecord`\n- [X] Add unit tests for the `add_suggestions` function in the SDK\n- [X] Add unit tests for `FeedbackDataset.records` related\nfunctions/methods\n\n**Checklist**\n\n- [ ] I added relevant documentation\n- [X] follows the style guidelines of this project\n- [X] I did a self-review of my code\n- [ ] I made corresponding changes to the documentation\n- [ ] My changes generate no new warnings\n- [X] I have added tests that prove my fix is effective or that my\nfeature works\n- [ ] I filled out [the contributor form](https://tally.so/r/n9XrxK)\n(see text above)\n- [x] I have added relevant notes to the CHANGELOG.md file (See\nhttps://keepachangelog.com/)\n\n---------\n\nCo-authored-by: gabrielmbmb <gmartinbdev@gmail.com>\nCo-authored-by: Gabriel Martin <gabriel@argilla.io>\nCo-authored-by: Francisco Aranda <francis@argilla.io>"
+},
+{
+    "repo_url": "github.com/argilla-io/argilla",
+    "filepath": "src/argilla/client/feedback/integrations/huggingface/dataset.py",
+    "commit_date": "2023-07-12T07:50:20Z",
+    "message": "style: rename `MixIn` to `Mixin` (#3386)\n\n# Description\n\nThis PR aligns the defined `Mixin` classes to follow the same naming\nconvention, since for some we were appending `MixIn` while for some\nothers `Mixin`, even though both work equally, we've (@gabrielmbmb and\nmyself) internally decided to use `Mixin` instead. So now all the\noccurrences of `MixIn` are renamed to `Mixin`.\n\n**Type of change**\n\n- [X] Refactor (change restructuring the codebase without changing\nfunctionality)"
+},
+{
+    "repo_url": "github.com/argilla-io/argilla",
+    "filepath": "src/argilla/client/feedback/integrations/huggingface/dataset.py",
+    "commit_date": "2023-07-12T07:17:50Z",
+    "message": "fix: `HuggingFaceDatasetMixIn` dependencies and usage (#3381)\n\n# Description\n\nThis PR fixes some issues recently found in the\n`HuggingFaceDatasetMixIn` as described below:\n\n* Records with more than one response with an empty `user_id` i.e.\n`user_id=None` could be pushed to the HuggingFace Hub, and when pulling\nit we were assuming that all the users had a valid `user_id`, so now we\nare just keeping the first `user_id=None` for each question, joining\nthem and discarding the rest\n* `HuggingFaceDatasetMixIn` dependencies were being imported in the top\nof the file, which was leading to conflicts, as `datasets` and\n`huggingface_hub` are optional dependencies, and as the\n`HuggingFaceDatasetMixIn` was being used as part of `FeedbackDataset`,\nan `ImportError` was being automatically raised if `datasets` and/or\n`huggingface_hub` were not installed, even though those were not used\n* `HuggingFaceDatasetMixIn` is now properly used, without defining\nwrapping methods, and directly using the methods defined in the MixIn\nitself\n* Add `Config` to manage the configuration for the available\nintegrations (for the moment just HuggingFace), and check the\ndependencies once, not on every function call (similar approach to what\n\ud83e\udd17`datasets` does)\n\n**Type of change**\n\n- [X] Bug fix (non-breaking change which fixes an issue)\n- [X] Improvement (change adding some improvement to an existing\nfunctionality)\n\n**How Has This Been Tested**\n\n- [X] Add unit tests to catch the warnings raised, and to make sure\neverything's working as expected\n\n**Checklist**\n\n- [ ] I added relevant documentation\n- [X] follows the style guidelines of this project\n- [X] I did a self-review of my code\n- [ ] I made corresponding changes to the documentation\n- [ ] My changes generate no new warnings\n- [X] I have added tests that prove my fix is effective or that my\nfeature works\n- [ ] I filled out [the contributor form](https://tally.so/r/n9XrxK)\n(see text above)\n- [ ] I have added relevant notes to the CHANGELOG.md file (See\nhttps://keepachangelog.com/)\n\n---------\n\nCo-authored-by: Gabriel Martin <gabriel@argilla.io>"
+},
+{
+    "repo_url": "github.com/argilla-io/argilla",
+    "filepath": "src/argilla/client/feedback/integrations/huggingface/dataset.py",
+    "commit_date": "2023-07-04T12:10:53Z",
+    "message": "refactor: add `HuggingFaceDatasetMixIn` under `integrations` (#3326)\n\n# Description\n\nTo avoid the increasing size of `argilla/client/feedback/dataset.py`,\nI've decided to detach the integrations from the `FeedbackDataset` class\nand create a MixIn class to contain all those methods specific to the\nintegrations within the `FeedbackDataset`, in this case for \ud83e\udd17\n`Datasets`.\n\nBesides that, I've also renamed the `FeedbackDatasetConfig` to\n`DatasetConfig`, and included some methods to dump a YAML file from now\non, instead of a JSON file, since the YAML file is more readable. So now\nwe upload `argilla.yaml` when pushing a `FeedbackDataset` to the\nHuggingFace Hub via `push_to_huggingface`.\n\n**Type of change**\n\n- [X] Refactor (change restructuring the codebase without changing\nfunctionality)\n- [X] Improvement (change adding some improvement to an existing\nfunctionality)\n\n**How Has This Been Tested**\n\n- [X] Re-run unit tests\n- [x] Catch `DeprecationWarning`s\n\n**Checklist**\n\n- [X] I added relevant documentation\n- [X] follows the style guidelines of this project\n- [X] I did a self-review of my code\n- [X] I made corresponding changes to the documentation\n- [ ] My changes generate no new warnings\n- [x] I have added tests that prove my fix is effective or that my\nfeature works\n- [ ] I filled out [the contributor form](https://tally.so/r/n9XrxK)\n(see text above)\n- [X] I have added relevant notes to the CHANGELOG.md file (See\nhttps://keepachangelog.com/)\n\n---------\n\nCo-authored-by: Gabriel Martin <gabriel@argilla.io>"
+},
+{
+    "repo_url": "github.com/asteroid-team/asteroid",
+    "filepath": "asteroid/utils/hub_utils.py",
+    "commit_date": "2023-05-21T10:58:05Z",
+    "message": "[egs] Add a new pre-trained model (X-UMXL) (#665)\n\n* [Fix] Update \"egs/musdb18/X-UMX/requirements.txt\"\n\n* [Fix] Bug of X-UMX and README.md\n\n* [egs] Add X-UMX Large (X-UMXL) to the list of pretrained models\n\n* Apply black"
+},
+{
+    "repo_url": "github.com/asteroid-team/asteroid",
+    "filepath": "asteroid/utils/hub_utils.py",
+    "commit_date": "2022-10-24T15:54:12Z",
+    "message": "[hub] Upgrade deprecated huggingface_hub.cached_download (#645)\n\n* Replace huggingface_hub.cached_download with huggingface_hub.hf_hub_download\n\n* Reintroduce cache_dir"
+},
+{
+    "repo_url": "github.com/asteroid-team/asteroid",
+    "filepath": "asteroid/utils/hub_utils.py",
+    "commit_date": "2021-07-01T16:29:26Z",
+    "message": "[hub] Add library version and name for Hugging Face download stats (#524)"
+},
+{
+    "repo_url": "github.com/asteroid-team/asteroid",
+    "filepath": "asteroid/utils/hub_utils.py",
+    "commit_date": "2021-05-06T20:11:17Z",
+    "message": "[src&egs] X-UMX Official baseline for Music Demixing Challenge (#490)\n\nCo-authored-by: Pariente Manuel <pariente.mnl@gmail.com>\n\nCo-authored-by: Manuel Pariente <pariente.mnl@gmail.com>"
+},
+{
+    "repo_url": "github.com/asteroid-team/asteroid",
+    "filepath": "asteroid/utils/hub_utils.py",
+    "commit_date": "2021-02-13T09:59:29Z",
+    "message": "hub] Use huggingface_hub deps, remove inlined HF code (#409)\n\nCo-authored-by: Julien Chaumond <julien@huggingface.co>"
+},
+{
+    "repo_url": "github.com/asteroid-team/asteroid",
+    "filepath": "asteroid/utils/hub_utils.py",
+    "commit_date": "2020-12-11T19:50:45Z",
+    "message": "[hub] Use API filter for faster model list (#390)"
+},
+{
+    "repo_url": "github.com/asteroid-team/asteroid",
+    "filepath": "asteroid/utils/hub_utils.py",
+    "commit_date": "2020-12-08T10:40:48Z",
+    "message": "[hub] List asteroid models HF's hub (#382)"
+},
+{
+    "repo_url": "github.com/asteroid-team/asteroid",
+    "filepath": "asteroid/utils/hub_utils.py",
+    "commit_date": "2020-12-07T17:56:12Z",
+    "message": "[hub] Support for huggingface model hub :tada: (#377)\n\nCo-authored-by: Pariente Manuel <pariente.mnl@gmail.com>"
+},
+{
+    "repo_url": "github.com/asteroid-team/asteroid",
+    "filepath": "asteroid/utils/hub_utils.py",
+    "commit_date": "2020-11-30T14:03:32Z",
+    "message": "[docs] Fix docstrings (#365)\n\nCo-authored-by: Jonas Haag <jonas@lophus.org>\n\nCo-authored-by: Jonas Haag <jonas@lophus.org>"
+},
+{
+    "repo_url": "github.com/asteroid-team/asteroid",
+    "filepath": "asteroid/utils/hub_utils.py",
+    "commit_date": "2020-10-22T09:03:29Z",
+    "message": "[src] BC-breaking: Load models without sample_rate (#285)"
+},
+{
+    "repo_url": "github.com/asteroid-team/asteroid",
+    "filepath": "asteroid/utils/hub_utils.py",
+    "commit_date": "2020-10-02T15:40:48Z",
+    "message": "[black] Fix black 20.8b1 update (#267)"
+},
+{
+    "repo_url": "github.com/asteroid-team/asteroid",
+    "filepath": "asteroid/utils/hub_utils.py",
+    "commit_date": "2020-10-01T10:11:28Z",
+    "message": "[black] Update black to 20.8b1 (#265)"
+},
+{
+    "repo_url": "github.com/asteroid-team/asteroid",
+    "filepath": "asteroid/utils/hub_utils.py",
+    "commit_date": "2020-09-25T11:00:02Z",
+    "message": "[hub] Add tmirzaev's model in the string-retrievable ones."
+},
+{
+    "repo_url": "github.com/asteroid-team/asteroid",
+    "filepath": "asteroid/utils/hub_utils.py",
+    "commit_date": "2020-08-24T08:27:26Z",
+    "message": "[models] Add pretrained DeMask name to URL mapping"
+},
+{
+    "repo_url": "github.com/asteroid-team/asteroid",
+    "filepath": "asteroid/utils/hub_utils.py",
+    "commit_date": "2020-08-21T14:49:32Z",
+    "message": "[models] Add groadabike's pretrained model's URL (#228)\n\nSigned-off-by: Gerardo Roa Dabike <gerardo.roa@gmail.com>\n(cherry picked from commit d81dec76d5eb99e9635e0c5ce237b5820606e306)\n\nCo-authored-by: Gerardo Roa Dabike <gerardo.roa@gmail.com>"
+},
+{
+    "repo_url": "github.com/asteroid-team/asteroid",
+    "filepath": "asteroid/utils/hub_utils.py",
+    "commit_date": "2020-08-13T07:21:11Z",
+    "message": "[black] Flake8 compatibility + Black strings (#198)"
+},
+{
+    "repo_url": "github.com/asteroid-team/asteroid",
+    "filepath": "asteroid/utils/hub_utils.py",
+    "commit_date": "2020-08-12T13:47:18Z",
+    "message": "[black] Change formatting with black using default config and line-length 100 (#197)"
+},
+{
+    "repo_url": "github.com/asteroid-team/asteroid",
+    "filepath": "asteroid/utils/hub_utils.py",
+    "commit_date": "2020-08-10T12:38:36Z",
+    "message": "[hub] Add Brij's LibriMix enhancement model"
+},
+{
+    "repo_url": "github.com/Nerogar/OneTrainer",
+    "filepath": "modules/module/WDModel.py",
+    "commit_date": "2024-01-20T22:48:52Z",
+    "message": "add option to add generated captions as new line"
+},
+{
+    "repo_url": "github.com/Nerogar/OneTrainer",
+    "filepath": "modules/module/WDModel.py",
+    "commit_date": "2024-01-12T11:31:28Z",
+    "message": "Update WDModel to support GPU execution"
+},
+{
+    "repo_url": "github.com/Toni-SM/skrl",
+    "filepath": "skrl/utils/huggingface.py",
+    "commit_date": "2023-07-16T20:58:59Z",
+    "message": "Remove unused imports and apply isort"
+},
+{
+    "repo_url": "github.com/Toni-SM/skrl",
+    "filepath": "skrl/utils/huggingface.py",
+    "commit_date": "2023-07-09T11:47:36Z",
+    "message": "Log info when downloading model from Hugging Face Hub"
+},
+{
+    "repo_url": "github.com/Toni-SM/skrl",
+    "filepath": "skrl/utils/huggingface.py",
+    "commit_date": "2023-01-16T21:54:54Z",
+    "message": "Add utility for download models from Hugging Face"
+},
+{
+    "repo_url": "github.com/tgxs002/HPSv2",
+    "filepath": "hpsv2/utils.py",
+    "commit_date": "2023-08-22T07:50:41Z",
+    "message": "Fix some bugs\nFix proxy bug and load the model to the specified device."
+},
+{
+    "repo_url": "github.com/tgxs002/HPSv2",
+    "filepath": "hpsv2/utils.py",
+    "commit_date": "2023-08-13T17:18:05Z",
+    "message": "Improve score and simplify import of package"
+},
+{
+    "repo_url": "github.com/aihao2000/stable-diffusion-reference-only",
+    "filepath": "scripts/stable_diffusion_reference_only_on_tab.py",
+    "commit_date": "2023-11-09T15:15:18Z",
+    "message": "Add plugin support for A1111 SD-WebUI"
+},
+{
+    "repo_url": "github.com/aihao2000/stable-diffusion-reference-only",
+    "filepath": "scripts/stable_diffusion_reference_only_on_tab.py",
+    "commit_date": "2023-11-09T14:42:46Z",
+    "message": "add A1111 web ui  extension script"
+},
+{
+    "repo_url": "github.com/kssteven418/BigLittleDecoder",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-10-19T14:55:57Z",
+    "message": "Fix cache version file creation (#19750)"
+},
+{
+    "repo_url": "github.com/kssteven418/BigLittleDecoder",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-10-10T13:19:33Z",
+    "message": "Stop relying on huggingface_hub's private methods (#19392)\n\n* Leverage hfh for move cache\n\n* Style"
+},
+{
+    "repo_url": "github.com/kssteven418/BigLittleDecoder",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-09-30T19:13:39Z",
+    "message": "Fix cached lookup filepath on windows for hub (#19178)\n\n* Update hub.py commit_hash extraction\n\nAdd safety mechanism for windows systems to unify logic (replace double backslashes with /)\n\n* Fix string quotetype\n\n* Aaaa circleci is messing with me.\n\n* Switch to using as_posix() method from pathlib\n\n* Update src/transformers/utils/hub.py\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\n\n* Update src/transformers/utils/hub.py\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>"
+},
+{
+    "repo_url": "github.com/kssteven418/BigLittleDecoder",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-09-29T12:58:39Z",
+    "message": "Use `hf_raise_for_status` instead of deprecated `_raise_for_status` (#19244)\n\n* Use  instead of  from huggingface_hub\n\n* bump huggingface_hub to 0.10.0 + make deps_table_update"
+},
+{
+    "repo_url": "github.com/kssteven418/BigLittleDecoder",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-09-26T22:01:00Z",
+    "message": "Fix cached_file in offline mode for cached non-existing files (#19206)\n\n* Fix cached_file in offline mode for cached non-existing files\n\n* Add tests\n\n* Test with offline mode"
+},
+{
+    "repo_url": "github.com/kssteven418/BigLittleDecoder",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-09-19T19:27:18Z",
+    "message": "Don't warn of move if cache is empty (#19109)"
+},
+{
+    "repo_url": "github.com/kssteven418/BigLittleDecoder",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-09-15T13:39:59Z",
+    "message": "Move cache: expand error message (#19051)"
+},
+{
+    "repo_url": "github.com/kssteven418/BigLittleDecoder",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-09-13T17:11:24Z",
+    "message": "Re-add support for single url files in objects download (#19014)"
+},
+{
+    "repo_url": "github.com/kssteven418/BigLittleDecoder",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-09-12T16:09:37Z",
+    "message": "Align try_to_load_from_cache with huggingface_hub (#18966)\n\n* Align try_to_load_from_cache with huggingface_hub\n\n* Fix tests"
+},
+{
+    "repo_url": "github.com/kssteven418/BigLittleDecoder",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-09-06T16:34:37Z",
+    "message": "Further reduce the number of alls to head for cached objects (#18871)\n\n* Further reduce the number of alls to head for cached models/tokenizers/pipelines\n\n* Fix tests\n\n* Address review comments"
+},
+{
+    "repo_url": "github.com/kssteven418/BigLittleDecoder",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-09-02T14:30:06Z",
+    "message": "Clean up utils.hub using the latest from hf_hub (#18857)\n\n* Clean up utils.hub using the latest from hf_hub\n\n* Adapt test\n\n* Address review comment\n\n* Fix test"
+},
+{
+    "repo_url": "github.com/kssteven418/BigLittleDecoder",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-08-10T19:46:03Z",
+    "message": "Properly move cache when it is not in default path (#18563)"
+},
+{
+    "repo_url": "github.com/kssteven418/BigLittleDecoder",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-08-10T15:55:18Z",
+    "message": "Use commit hash to look in cache instead of calling head (#18534)\n\n* Use commit hash to look in cache instead of calling head\n\n* Add tests\n\n* Add attr for local configs too\n\n* Stupid typos\n\n* Fix tests\n\n* Update src/transformers/utils/hub.py\n\nCo-authored-by: Julien Chaumond <julien@huggingface.co>\n\n* Address Julien's comments\n\nCo-authored-by: Julien Chaumond <julien@huggingface.co>"
+},
+{
+    "repo_url": "github.com/kssteven418/BigLittleDecoder",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-08-08T14:22:27Z",
+    "message": "New cache fixes: add safeguard before looking in folders (#18522)"
+},
+{
+    "repo_url": "github.com/kssteven418/BigLittleDecoder",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-08-08T12:48:10Z",
+    "message": "Clean up hub (#18497)\n\n* Clean up utils.hub\n\n* Remove imports\n\n* More fixes\n\n* Last fix"
+},
+{
+    "repo_url": "github.com/kssteven418/BigLittleDecoder",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-08-06T07:42:55Z",
+    "message": "`transformers-cli login` => `huggingface-cli login` (#18490)\n\n* zero chance anyone's using that constant no?\n\n* `transformers-cli login` => `huggingface-cli login`\n\n* `transformers-cli repo create` => `huggingface-cli repo create`\n\n* `make style`"
+},
+{
+    "repo_url": "github.com/kssteven418/BigLittleDecoder",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-08-05T17:29:38Z",
+    "message": "Typo reported by Joel Grus on TWTR (#18493)"
+},
+{
+    "repo_url": "github.com/kssteven418/BigLittleDecoder",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-08-05T17:24:53Z",
+    "message": "Forgot one new_ for cache migration"
+},
+{
+    "repo_url": "github.com/kssteven418/BigLittleDecoder",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-08-05T17:14:00Z",
+    "message": "Move cache folder to huggingface/hub for consistency with hf_hub (#18492)\n\n* Move cache folder to just huggingface\n\n* Thank you VsCode for this needless import\n\n* Move to hub\n\n* Forgot one"
+},
+{
+    "repo_url": "github.com/kssteven418/BigLittleDecoder",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-08-05T14:12:40Z",
+    "message": "Use new huggingface_hub tools for download models (#18438)\n\n* Draft new cached_file\n\n* Initial draft for config and model\n\n* Small fixes\n\n* Fix first batch of tests\n\n* Look in cache when internet is down\n\n* Fix last tests\n\n* Bad black, not fixing all quality errors\n\n* Make diff less\n\n* Implement change for TF and Flax models\n\n* Add tokenizer and feature extractor\n\n* For compatibility with main\n\n* Add utils to move the cache and auto-do it at first use.\n\n* Quality\n\n* Deal with empty commit shas\n\n* Deal with empty etag\n\n* Address review comments"
+},
+{
+    "repo_url": "github.com/kssteven418/BigLittleDecoder",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-08-01T16:07:30Z",
+    "message": "Rewrite push_to_hub to use upload_files (#18366)\n\n* Rewrite push_to_hub to use upload_files\n\n* Adapt the doc a bit\n\n* Address review comments and clean doc"
+},
+{
+    "repo_url": "github.com/kssteven418/BigLittleDecoder",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-07-19T09:53:53Z",
+    "message": "[From pretrained] Allow download from subfolder inside model repo (#18184)\n\n* add first generation tutorial\n\n* [from_pretrained] Allow loading models from subfolders\n\n* remove gen file\n\n* add doc strings\n\n* allow download from subfolder\n\n* add tests\n\n* Apply suggestions from code review\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\n\n* apply comments\n\n* correct doc string\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>"
+},
+{
+    "repo_url": "github.com/kssteven418/BigLittleDecoder",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-07-13T16:43:08Z",
+    "message": "Make sharded checkpoints work in offline mode (#18125)\n\n* Make sharded checkpoints work in offline mode\n\n* Add test"
+},
+{
+    "repo_url": "github.com/kssteven418/BigLittleDecoder",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-07-13T14:53:25Z",
+    "message": "Revert \"Make sharded checkpoints work in offline mode\"\n\nThis reverts commit 3564c6578630a3bef29d2c7c36c7d29b68acd874."
+},
+{
+    "repo_url": "github.com/kssteven418/BigLittleDecoder",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-07-13T14:51:56Z",
+    "message": "Make sharded checkpoints work in offline mode"
+},
+{
+    "repo_url": "github.com/kssteven418/BigLittleDecoder",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-07-11T16:45:06Z",
+    "message": "Add filename to info diaplyed when downloading things in from_pretrained (#18099)"
+},
+{
+    "repo_url": "github.com/kssteven418/BigLittleDecoder",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-06-21T16:01:08Z",
+    "message": "TF Sharded (#17713)\n\n* initial commit\n\n* update modeeling tf utils\n\n* quality\n\n* clean and update args\n\n* update\n\n* remove potential bug\n\n* code quality\n\n* update\n\n* update max shard\n\n* update tests for sharding from pretrained\n\n* fix remaining test\n\n* make style\n\n* h5py if tf available\n\n* update and fix test\n\n* fix test\n\n* style\n\n* modified push to hub to support shard for TF\n\n* quick fix\n\n* update code\n\n* merge branch main and style\n\n* Apply suggestions from code review\n\nCo-authored-by: Joao Gante <joaofranciscocardosogante@gmail.com>\nCo-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>\n\n* update based on reviews\n\n* update doc\n\n* update and style\n\n* Apply suggestions from code review\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\n\n* Update based on reviews\n\n* fix typo\n\n* style\n\nCo-authored-by: Joao Gante <joaofranciscocardosogante@gmail.com>\nCo-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>"
+},
+{
+    "repo_url": "github.com/kssteven418/BigLittleDecoder",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-06-21T15:51:18Z",
+    "message": "Prepare transformers for v0.8.0 huggingface-hub release (#17716)\n\n* Prepare CI for v0.8.0\n\n* pin hfh (revert before merge)\n\n* Revert \"pin hfh (revert before merge)\"\n\nThis reverts commit a0103140e1c77b810ffcb735192968bc03be3e1f.\n\n* Test rc3\n\n* Test latest rc\n\n* Unpin to the RC\n\nCo-authored-by: Sylvain Gugger <Sylvain.gugger@gmail.com>"
+},
+{
+    "repo_url": "github.com/kssteven418/BigLittleDecoder",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-06-10T13:41:53Z",
+    "message": "\ud83d\udc1b Properly raise `RepoNotFoundError` when not authenticated (#17651)\n\n* Raise RepoNotFoundError in case of 401\n\n* Include changes from revert-17646-skip_repo_not_found\n\n* Add a comment\n\n* \ud83d\udc84 Code quality\n\n* \ud83d\udc9a Update `get_from_cache` test\n\n* \ud83d\udc9a Code quality & skip failing test"
+},
+{
+    "repo_url": "github.com/kssteven418/BigLittleDecoder",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-06-07T15:57:52Z",
+    "message": "Add examples telemetry (#17552)\n\n* Add examples telemetry\n\n* Alternative approach\n\n* Add to all other examples\n\n* Add to templates as well\n\n* Put framework separately\n\n* Same for TensorFlow"
+},
+{
+    "repo_url": "github.com/kssteven418/BigLittleDecoder",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-05-12T20:25:55Z",
+    "message": "Black preview (#17217)\n\n* Black preview\n\n* Fixup too!\n\n* Fix check copies\n\n* Use the same version as the CI\n\n* Bump black"
+},
+{
+    "repo_url": "github.com/kssteven418/BigLittleDecoder",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-04-29T16:26:45Z",
+    "message": "Revert \"Updating variable names. (#16445)\" (#17011)\n\nThis reverts commit 4f3a14e3c235c8b6b8cd2f5bc448a0cffacddf61."
+},
+{
+    "repo_url": "github.com/kssteven418/BigLittleDecoder",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-04-25T19:15:00Z",
+    "message": " Fix issue probably-meant-fstring found at https://codereview.doctor (#16913)"
+},
+{
+    "repo_url": "github.com/kssteven418/BigLittleDecoder",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-03-23T19:56:49Z",
+    "message": "Make Transformers use cache files when hf.co is down (#16362)\n\n* Make Transformers use cache files when hf.co is down\n\n* Fix tests\n\n* Was there a random circleCI failure?\n\n* Isolate patches\n\n* Style\n\n* Comment out the failure since it doesn't fail anymore\n\n* Better comment"
+},
+{
+    "repo_url": "github.com/kssteven418/BigLittleDecoder",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-03-23T14:26:33Z",
+    "message": "Reorganize file utils (#16264)\n\n* Split file_utils in several submodules\n\n* Fixes\n\n* Add back more objects\n\n* More fixes\n\n* Who exactly decided to import that from there?\n\n* Second suggestion to code with code review\n\n* Revert wront move\n\n* Fix imports\n\n* Adapt all imports\n\n* Adapt all imports everywhere\n\n* Revert this import, will fix in a separate commit"
+},
+{
+    "repo_url": "github.com/wxjiao/ParroT",
+    "filepath": "transformers/src/transformers/utils/hub.py",
+    "commit_date": "2023-04-14T05:54:56Z",
+    "message": "training scripts of full model and lora"
+},
+{
+    "repo_url": "github.com/predibase/lorax",
+    "filepath": "server/lorax_server/utils/sources/hub.py",
+    "commit_date": "2024-01-17T20:45:09Z",
+    "message": "Added pbase adapter_source and expose api_token in client (#181)"
+},
+{
+    "repo_url": "github.com/predibase/lorax",
+    "filepath": "server/lorax_server/utils/sources/hub.py",
+    "commit_date": "2023-11-16T01:20:58Z",
+    "message": "Rename tgi and text-generation to lorax in rust (#19)"
+},
+{
+    "repo_url": "github.com/cure-lab/MagicDrive",
+    "filepath": "third_party/diffusers/scripts/convert_k_upscaler_to_diffusers.py",
+    "commit_date": "2024-01-25T06:28:16Z",
+    "message": "setup third-party to track changes\n\ndiffusers from v0.17.1 (afcca39)\nxformers from v0.0.19 (8bf59c9)"
+},
+{
+    "repo_url": "github.com/interactiveaudiolab/ppgs",
+    "filepath": "ppgs/load.py",
+    "commit_date": "2024-02-27T17:07:35Z",
+    "message": "mamba and dual representation infer\n\n\nFormer-commit-id: 316553da45af92255853072397930d0c33c7ab34\nFormer-commit-id: 8cb294d046d4e208732f1ee55235b662c92b10cb"
+},
+{
+    "repo_url": "github.com/interactiveaudiolab/ppgs",
+    "filepath": "ppgs/load.py",
+    "commit_date": "2023-12-21T14:15:30Z",
+    "message": "Gradient clipping experiments\n\n\nFormer-commit-id: 62383edd1f7cb272ff4f18980d709b93ce53155a\nFormer-commit-id: ddc112cf292f72cbbafd91e678ab99a382a1ee7b"
+},
+{
+    "repo_url": "github.com/interactiveaudiolab/ppgs",
+    "filepath": "ppgs/load.py",
+    "commit_date": "2023-12-10T22:45:06Z",
+    "message": "Editing API\n\n\nFormer-commit-id: 935b569db634911befd1e4b93515024e8264bbe5\nFormer-commit-id: d7b525c929b056cdc864e417e961910ed1bdf45b"
+},
+{
+    "repo_url": "github.com/interactiveaudiolab/ppgs",
+    "filepath": "ppgs/load.py",
+    "commit_date": "2023-11-14T21:06:54Z",
+    "message": "torchutil + bucketing\n\n\nFormer-commit-id: 67e788f2458ed505e76fdf4dd10236b0410fb290\nFormer-commit-id: a75fc3ad172e49dffde13e614527c4a22bc42991"
+},
+{
+    "repo_url": "github.com/interactiveaudiolab/ppgs",
+    "filepath": "ppgs/load.py",
+    "commit_date": "2023-11-03T18:02:58Z",
+    "message": "representation utilities and local checkpoints\n\n\nFormer-commit-id: b9f4f392850f6fa095874c90efd744f99d6f614e\nFormer-commit-id: c4c4431a657e3ff27a821a8fcaba69d9cb74ed06"
+},
+{
+    "repo_url": "github.com/interactiveaudiolab/ppgs",
+    "filepath": "ppgs/load.py",
+    "commit_date": "2023-10-11T03:44:54Z",
+    "message": "torchutil integration\n\n\nFormer-commit-id: 494907fe7fa0c4525ad7ea7c16fb70381164e0e3\nFormer-commit-id: 05051ad69297311cc21918ac8fc7f65a10d04e1d"
+},
+{
+    "repo_url": "github.com/interactiveaudiolab/ppgs",
+    "filepath": "ppgs/load.py",
+    "commit_date": "2023-10-08T18:37:23Z",
+    "message": "move models to huggingface\n\n\nFormer-commit-id: dbf811e7f7b14865804ea610d476e7e622785292\nFormer-commit-id: 85dfec684698a9ae917671bc89af586c1721451d"
+},
+{
+    "repo_url": "github.com/interactiveaudiolab/ppgs",
+    "filepath": "ppgs/load.py",
+    "commit_date": "2023-10-05T13:58:24Z",
+    "message": "Class-balanced integration\n\n\nFormer-commit-id: 84181f70673398fb0a08f5f9349a388806cd491c\nFormer-commit-id: 34b9dc2939bcf0e53e79bb35fc0d16975f36e7bc"
+},
+{
+    "repo_url": "github.com/interactiveaudiolab/ppgs",
+    "filepath": "ppgs/load.py",
+    "commit_date": "2023-09-25T14:21:55Z",
+    "message": "Code-complete refactor\n\n\nFormer-commit-id: 839b17dfdd70a68ddaf99736e252b83e42048e03\nFormer-commit-id: ee11644d523ecf020d7cb21a5b482b89b7474e10"
+},
+{
+    "repo_url": "github.com/interactiveaudiolab/ppgs",
+    "filepath": "ppgs/load.py",
+    "commit_date": "2023-08-14T13:07:04Z",
+    "message": "Bugfixes and Charsiu\n\n\nFormer-commit-id: 9c784d7b660d3b300c9f2262b3b4f0bcc486398c\nFormer-commit-id: 955b227c47be709582f8fab06fa3a3061bd1a74b"
+},
+{
+    "repo_url": "github.com/interactiveaudiolab/ppgs",
+    "filepath": "ppgs/load.py",
+    "commit_date": "2023-07-30T04:51:08Z",
+    "message": "import sorting\n\n\nFormer-commit-id: 2ce4a5027e66f0d04a049cc3ef45163f3052203f [formerly e904c8605a55bddf70f9d3cbef06f7b6d679b355]\nFormer-commit-id: 17c624144b17faa9e55ef30f5f369a08d2d31ff2"
+},
+{
+    "repo_url": "github.com/interactiveaudiolab/ppgs",
+    "filepath": "ppgs/load.py",
+    "commit_date": "2023-07-29T06:29:09Z",
+    "message": "the great refactorening 2\n\n\nFormer-commit-id: 26f2af3c805366b3a2eb2190ee3b39e60e93df2f [formerly b07cc099fd0b1884ef2eb6d79df6cf4519f3c484]\nFormer-commit-id: 12915305735842ee60799ecc8e5e6f64cf0593ca"
+},
+{
+    "repo_url": "github.com/interactiveaudiolab/ppgs",
+    "filepath": "ppgs/load.py",
+    "commit_date": "2023-03-01T15:52:20Z",
+    "message": "model refactor and eval debugging\n\n\nFormer-commit-id: 5a1465e401743757125f1f7610b24b4e2689a886 [formerly ee424a509bee38b9e0be7b592cecffb06b218f56]\nFormer-commit-id: c8ba82e8b9286934cdbabc050d5cf5db7bc71331"
+},
+{
+    "repo_url": "github.com/interactiveaudiolab/ppgs",
+    "filepath": "ppgs/load.py",
+    "commit_date": "2022-11-17T01:07:21Z",
+    "message": "bug fixes in pipeline, download charsiu labels\n\n\nFormer-commit-id: 18f1a86164f56dec0aac3a760c5ecfdd09129fe9"
+},
+{
+    "repo_url": "github.com/cedrickchee/transformers-llama",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2023-03-02T08:45:42Z",
+    "message": "[Refactor] Relative imports wherever we can (#21880)\n\n* initial commit\n\n* update\n\n* second batch\n\n* style\n\n* fix imports\n\n* fix relative import on pipeline"
+},
+{
+    "repo_url": "github.com/cedrickchee/transformers-llama",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2023-02-06T23:10:56Z",
+    "message": "Update quality tooling for formatting (#21480)\n\n* Result of black 23.1\n\n* Update target to Python 3.7\n\n* Switch flake8 to ruff\n\n* Configure isort\n\n* Configure isort\n\n* Apply isort with line limit\n\n* Put the right black version\n\n* adapt black in check copies\n\n* Fix copies"
+},
+{
+    "repo_url": "github.com/cedrickchee/transformers-llama",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2023-01-27T17:09:49Z",
+    "message": "Little cleanup: let huggingface_hub manage token retrieval (#21333)\n\n* Let huggingface_hub manage token retrieval\n\n* flake8\n\n* code quality\n\n* adapt in every PushToHubMixin children\n\n* add explicit return type"
+},
+{
+    "repo_url": "github.com/cedrickchee/transformers-llama",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2023-01-24T15:37:10Z",
+    "message": "Use `logger.info` instead of `print` to emit a logging message in `hub.py` (#21273)\n\nuse logger.info() instead of print() to emit a debug message"
+},
+{
+    "repo_url": "github.com/cedrickchee/transformers-llama",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-11-28T15:35:52Z",
+    "message": "Safetensors offload (#20321)\n\n* INtegrate safetensos in weight offloading\n\n* Use safetensors checkpoint for offload when available\n\n* Make naming consistent\n\n* Make load faster\n\n* Quality\n\n* Add default"
+},
+{
+    "repo_url": "github.com/cedrickchee/transformers-llama",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-10-19T14:55:57Z",
+    "message": "Fix cache version file creation (#19750)"
+},
+{
+    "repo_url": "github.com/cedrickchee/transformers-llama",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-10-10T13:19:33Z",
+    "message": "Stop relying on huggingface_hub's private methods (#19392)\n\n* Leverage hfh for move cache\n\n* Style"
+},
+{
+    "repo_url": "github.com/cedrickchee/transformers-llama",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-09-30T19:13:39Z",
+    "message": "Fix cached lookup filepath on windows for hub (#19178)\n\n* Update hub.py commit_hash extraction\n\nAdd safety mechanism for windows systems to unify logic (replace double backslashes with /)\n\n* Fix string quotetype\n\n* Aaaa circleci is messing with me.\n\n* Switch to using as_posix() method from pathlib\n\n* Update src/transformers/utils/hub.py\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\n\n* Update src/transformers/utils/hub.py\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>"
+},
+{
+    "repo_url": "github.com/cedrickchee/transformers-llama",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-09-29T12:58:39Z",
+    "message": "Use `hf_raise_for_status` instead of deprecated `_raise_for_status` (#19244)\n\n* Use  instead of  from huggingface_hub\n\n* bump huggingface_hub to 0.10.0 + make deps_table_update"
+},
+{
+    "repo_url": "github.com/cedrickchee/transformers-llama",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-09-26T22:01:00Z",
+    "message": "Fix cached_file in offline mode for cached non-existing files (#19206)\n\n* Fix cached_file in offline mode for cached non-existing files\n\n* Add tests\n\n* Test with offline mode"
+},
+{
+    "repo_url": "github.com/cedrickchee/transformers-llama",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-09-19T19:27:18Z",
+    "message": "Don't warn of move if cache is empty (#19109)"
+},
+{
+    "repo_url": "github.com/cedrickchee/transformers-llama",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-09-15T13:39:59Z",
+    "message": "Move cache: expand error message (#19051)"
+},
+{
+    "repo_url": "github.com/cedrickchee/transformers-llama",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-09-13T17:11:24Z",
+    "message": "Re-add support for single url files in objects download (#19014)"
+},
+{
+    "repo_url": "github.com/cedrickchee/transformers-llama",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-09-12T16:09:37Z",
+    "message": "Align try_to_load_from_cache with huggingface_hub (#18966)\n\n* Align try_to_load_from_cache with huggingface_hub\n\n* Fix tests"
+},
+{
+    "repo_url": "github.com/cedrickchee/transformers-llama",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-09-06T16:34:37Z",
+    "message": "Further reduce the number of alls to head for cached objects (#18871)\n\n* Further reduce the number of alls to head for cached models/tokenizers/pipelines\n\n* Fix tests\n\n* Address review comments"
+},
+{
+    "repo_url": "github.com/cedrickchee/transformers-llama",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-09-02T14:30:06Z",
+    "message": "Clean up utils.hub using the latest from hf_hub (#18857)\n\n* Clean up utils.hub using the latest from hf_hub\n\n* Adapt test\n\n* Address review comment\n\n* Fix test"
+},
+{
+    "repo_url": "github.com/cedrickchee/transformers-llama",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-08-10T19:46:03Z",
+    "message": "Properly move cache when it is not in default path (#18563)"
+},
+{
+    "repo_url": "github.com/cedrickchee/transformers-llama",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-08-10T15:55:18Z",
+    "message": "Use commit hash to look in cache instead of calling head (#18534)\n\n* Use commit hash to look in cache instead of calling head\n\n* Add tests\n\n* Add attr for local configs too\n\n* Stupid typos\n\n* Fix tests\n\n* Update src/transformers/utils/hub.py\n\nCo-authored-by: Julien Chaumond <julien@huggingface.co>\n\n* Address Julien's comments\n\nCo-authored-by: Julien Chaumond <julien@huggingface.co>"
+},
+{
+    "repo_url": "github.com/cedrickchee/transformers-llama",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-08-08T14:22:27Z",
+    "message": "New cache fixes: add safeguard before looking in folders (#18522)"
+},
+{
+    "repo_url": "github.com/cedrickchee/transformers-llama",
+    "filepath": "src/transformers/utils/hub.py",
+    "commit_date": "2022-08-08T12:48:10Z",
+    "message": "Clean up hub (#18497)\n\n* Clean up utils.hub\n\n* Remove imports\n\n* More fixes\n\n* Last fix"
+}
+]
