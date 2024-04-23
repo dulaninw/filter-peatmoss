@@ -1,0 +1,2336 @@
+{
+    "0": {
+        "repository": "github.com/google-research/google-research",
+        "text": [
+            {
+                "repo_url": "github.com/google-research/google-research",
+                "filepath": "dpok/train_online_pg.py",
+                "commit_date": "2024-01-23T00:22:24Z",
+                "message_summary": "Open-sourcing the code for \"CLIP as RNN: Segment Countless Visual Concepts without Training Endeavor\".",
+                "ptm_addition_details": {
+                    "name": "CLIP as RNN",
+                    "version": "not specified",
+                    "problem_addressed": "Segment Countless Visual Concepts without Training Endeavor"
+                }
+            }
+        ]
+    },
+    "3": {
+        "repository": "github.com/google-research/google-research",
+        "text": [
+            {
+                "repo_url": "github.com/google-research/google-research",
+                "filepath": "conceptor/one_step_reconstruction.py",
+                "commit_date": "2024-01-23T00:22:24Z",
+                "message_summary": "Open-sourcing the code for \"CLIP as RNN: Segment Countless Visual Concepts without Training Endeavor\".",
+                "ptm_addition_details": {
+                    "name": "CLIP as RNN",
+                    "version": "Not specified",
+                    "problem_addressed": "Segmenting countless visual concepts without training"
+                },
+                "tasks": [
+                    "Open-sourcing code"
+                ]
+            }
+        ]
+    },
+    "9": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth.py",
+                "commit_date": "2024-01-12T07:20:15Z",
+                "message_summary": "Make Dreambooth SD Training Script `torch.compile` compatible",
+                "tasks": [
+                    "support compile",
+                    "make style",
+                    "move unwrap_model inside function",
+                    "change unwrap call",
+                    "run make style"
+                ],
+                "update_details": "Update examples/dreambooth/train_dreambooth.py"
+            }
+        ]
+    },
+    "12": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth.py",
+                "commit_date": "2023-11-29T14:47:16Z",
+                "message_summary": "Rename output_dir argument",
+                "tasks": [
+                    "Rename output_dir argument"
+                ],
+                "update_details": "Fix typo in output_dir argument: \"text-inversion-model\" \\\\u2192 \"dreambooth-model\""
+            }
+        ]
+    },
+    "13": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth.py",
+                "commit_date": "2023-11-27T05:13:20Z",
+                "message_summary": "Allow downloading variant model files",
+                "ptm_addition_details": {
+                    "name": "variant",
+                    "version": "not specified",
+                    "problem_addressed": "not specified"
+                }
+            }
+        ]
+    },
+    "14": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth.py",
+                "commit_date": "2023-11-17T13:56:58Z",
+                "message_summary": "Set `usedforsecurity=False` in hashlib methods (FIPS compliance)",
+                "update_details": "Update version dependency and bump hfh version"
+            }
+        ]
+    },
+    "21": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth.py",
+                "commit_date": "2023-09-21T21:53:06Z",
+                "message_summary": "Min-SNR gamma support for Dreambooth training",
+                "ptm_addition_details": {
+                    "name": "Min-SNR gamma",
+                    "problem_addressed": "Support for Dreambooth training"
+                }
+            }
+        ]
+    },
+    "37": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth.py",
+                "commit_date": "2023-05-31T16:39:31Z",
+                "message_summary": "Full Dreambooth IF stage II upscaling",
+                "update_details": "Update dreambooth lora to work with IF stage II. Update dreambooth script for IF stage II upscaler"
+            }
+        ]
+    },
+    "39": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth.py",
+                "commit_date": "2023-05-22T14:49:35Z",
+                "message_summary": "DataLoader respecting EXIF data in Training Images",
+                "tasks": [
+                    "DataLoader will now bake in any transforms or image manipulations contained in the EXIF",
+                    "Fixed the Dataloading EXIF issue in main DreamBooth training"
+                ],
+                "update_details": "DataLoader now respects EXIF data in training images to ensure that transforms or image manipulations stored in the EXIF are applied during training, preventing unexpected results."
+            }
+        ]
+    },
+    "47": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth.py",
+                "commit_date": "2023-03-10T13:15:16Z",
+                "message_summary": "[Dreambooth] Editable number of class images",
+                "ptm_addition_details": {
+                    "name": "Dreambooth",
+                    "version": "Not specified",
+                    "problem_addressed": "Editable number of class images"
+                }
+            }
+        ]
+    },
+    "50": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth.py",
+                "commit_date": "2023-02-17T21:25:46Z",
+                "message_summary": "Added xformers 0.0.16 warning message",
+                "ptm_addition_details": {
+                    "name": "xformers",
+                    "version": "0.0.16",
+                    "problem_addressed": "N/A"
+                }
+            }
+        ]
+    },
+    "56": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth.py",
+                "commit_date": "2023-02-07T10:55:34Z",
+                "message_summary": "Remove unnecessary datasets",
+                "removal_details": "Datasets marked as not needed were removed from the project."
+            }
+        ]
+    },
+    "57": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth.py",
+                "commit_date": "2023-01-26T13:37:19Z",
+                "message_summary": "Make scaling factor a config arg of vae/vqvae",
+                "tasks": [
+                    "make scaling factor a config arg of vae",
+                    "fix",
+                    "make flake happy",
+                    "fix ldm",
+                    "fix upscaler",
+                    "quality",
+                    "solve conflicts, address some comments",
+                    "examples",
+                    "examples min version",
+                    "doc",
+                    "fix type",
+                    "typo",
+                    "remove duplicate line"
+                ],
+                "update_details": "Make scaling factor a config arg of vae/vqvae"
+            }
+        ]
+    },
+    "59": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth.py",
+                "commit_date": "2023-01-25T16:59:02Z",
+                "message_summary": "Bump version to 0.13.0dev0 & Deprecate `predict_epsilon`",
+                "update_details": "Bump model up"
+            }
+        ]
+    },
+    "61": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth.py",
+                "commit_date": "2023-01-24T12:23:56Z",
+                "message_summary": "Fix multi on GPU for dreambooth",
+                "tasks": [
+                    "fix multi on GPU"
+                ],
+                "update_details": "Unwrap model on multi GPU"
+            }
+        ]
+    },
+    "63": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth.py",
+                "commit_date": "2023-01-23T11:21:03Z",
+                "message_summary": "Reduced VRAM usage in Dreambooth by using `optimizer.zero_grad(set_to_none=True)`",
+                "tasks": [
+                    "reduce VRAM usage"
+                ],
+                "update_details": "Updated Dreambooth to use `optimizer.zero_grad(set_to_none=True)` for reducing VRAM usage"
+            }
+        ]
+    },
+    "66": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth.py",
+                "commit_date": "2023-01-18T17:05:51Z",
+                "message_summary": "Add LoRA training script",
+                "ptm_addition_details": {
+                    "name": "LoRA",
+                    "version": "first version"
+                }
+            }
+        ]
+    },
+    "71": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth.py",
+                "commit_date": "2022-12-27T18:51:32Z",
+                "message_summary": "Allow selecting precision to make Dreambooth class images",
+                "ptm_addition_details": {
+                    "name": "Dreambooth",
+                    "version": "Not specified",
+                    "problem_addressed": "Allow selecting precision for generating images"
+                }
+            }
+        ]
+    },
+    "72": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth.py",
+                "commit_date": "2022-12-27T18:47:50Z",
+                "message_summary": "Make xformers optional even if it is available",
+                "update_details": "Make xformers optional even if it is available. Raise exception if xformers is used but not available. Rename use_xformers to enable_xformers_memory_efficient_attention. Add a note about xformers in README. Reformat code style"
+            }
+        ]
+    },
+    "73": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth.py",
+                "commit_date": "2022-12-20T00:41:37Z",
+                "message_summary": "Expose polynomial:power and cosine_with_restarts:num_cycles params",
+                "ptm_addition_details": {
+                    "name": "Not specified",
+                    "version": "Not specified",
+                    "problem_addressed": "Not specified"
+                }
+            }
+        ]
+    },
+    "80": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth.py",
+                "commit_date": "2022-12-07T20:39:48Z",
+                "message_summary": "Trivial fix for undefined symbol in train_dreambooth.py",
+                "update_details": "Modified import_model_class_from_model_name_or_path function to take revision as an argument and pass it from args to fix an undefined name issue in train_dreambooth.py"
+            }
+        ]
+    },
+    "86": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth.py",
+                "commit_date": "2022-11-28T16:46:54Z",
+                "message_summary": "Added v-prediction training support",
+                "ptm_addition_details": {
+                    "name": "v-prediction",
+                    "problem_addressed": "Training support"
+                }
+            }
+        ]
+    },
+    "93": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/controlnet/train_controlnet.py",
+                "commit_date": "2024-01-12T03:57:26Z",
+                "message_summary": "Make ControlNet SD Training Script `torch.compile` compatible",
+                "update_details": "Make controlnet script torch compile compatible, correct earlier mistakes for compilation, and fix code style issues."
+            }
+        ]
+    },
+    "95": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/controlnet/train_controlnet.py",
+                "commit_date": "2023-12-01T17:43:44Z",
+                "message_summary": "Post Release: v0.24.0",
+                "ptm_addition_details": {
+                    "name": "model_index.json"
+                }
+            }
+        ]
+    },
+    "96": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/controlnet/train_controlnet.py",
+                "commit_date": "2023-11-27T05:13:20Z",
+                "message_summary": "Allow downloading variant model files",
+                "ptm_addition_details": {
+                    "name": "variant",
+                    "version": "not specified",
+                    "problem_addressed": "not specified"
+                }
+            }
+        ]
+    },
+    "107": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/controlnet/train_controlnet.py",
+                "commit_date": "2023-04-27T11:29:18Z",
+                "message_summary": "Remove required from tracker_project_name",
+                "removal_details": "As observed by https://github.com/off99555 in https://github.com/huggingface/diffusers/issues/2695#issuecomment-1470755050, it already has a default value."
+            }
+        ]
+    },
+    "110": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/controlnet/train_controlnet.py",
+                "commit_date": "2023-04-19T17:46:51Z",
+                "message_summary": "ControlNet training script update for resizing inputs to multiples of 8",
+                "update_details": "The training script for ControlNet has been updated to resize and center crop inputs to multiples of 8. This change ensures consistency in image dimensions and resolution across the batch, addressing issues with encoded images having different dimensions. Additionally, the initial resolution is now required to be a multiple of 8."
+            }
+        ]
+    },
+    "113": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/controlnet/train_controlnet.py",
+                "commit_date": "2023-04-04T17:37:47Z",
+                "message_summary": "Allow the use of a custom local dataset for controlnet training scripts.",
+                "ptm_addition_details": {
+                    "name": "Not specified",
+                    "version": "Not specified",
+                    "problem_addressed": "Not specified"
+                }
+            }
+        ]
+    },
+    "122": {
+        "repository": "github.com/invoke-ai/InvokeAI",
+        "text": [
+            {
+                "repo_url": "github.com/invoke-ai/InvokeAI",
+                "filepath": "invokeai/backend/training/textual_inversion_training.py",
+                "commit_date": "2023-05-18T14:48:23Z",
+                "message_summary": "Fixes to env parsing, textual inversion & help text",
+                "update_details": "Updated textual_inversion_training to use new config system."
+            }
+        ]
+    },
+    "123": {
+        "repository": "github.com/invoke-ai/InvokeAI",
+        "text": [
+            {
+                "repo_url": "github.com/invoke-ai/InvokeAI",
+                "filepath": "invokeai/backend/training/textual_inversion_training.py",
+                "commit_date": "2023-05-17T18:13:27Z",
+                "message_summary": "Several steps completed to make 3.0 installable",
+                "update_details": "- invokeai-configure updated to work with new config system\n- migrate invokeai.init to invokeai.yaml during configure\n- replace legacy invokeai with invokeai-node-cli\n- add ability to run an invocation directly from invokeai-node-cli command line\n- update CI tests to work with new invokeai syntax"
+            }
+        ]
+    },
+    "130": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth_lora.py",
+                "commit_date": "2024-01-16T01:57:06Z",
+                "message_summary": "Fix training resuming problem for fp16 (SD LoRA DreamBooth)",
+                "tasks": [
+                    "training"
+                ],
+                "update_details": "Fix training resume"
+            }
+        ]
+    },
+    "131": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth_lora.py",
+                "commit_date": "2024-01-12T03:54:03Z",
+                "message_summary": "Make Dreambooth SD LoRA Training Script torch.compile compatible",
+                "ptm_addition_details": {
+                    "name": "Dreambooth SD LoRA",
+                    "version": "Not specified",
+                    "problem_addressed": "Support for torch.compile"
+                }
+            },
+            {
+                "tasks": [
+                    "support compile"
+                ]
+            }
+        ]
+    },
+    "133": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth_lora.py",
+                "commit_date": "2023-12-28T02:07:50Z",
+                "message_summary": "Follow up of #6306 (#6346)",
+                "ptm_addition_details": {
+                    "name": "t2i lora",
+                    "version": "unknown",
+                    "problem_addressed": "Text-to-Image generation"
+                },
+                "tasks": [
+                    "add to dreambooth lora",
+                    "add: t2i lora",
+                    "add: sdxl t2i lora",
+                    "lcm lora sdxl",
+                    "unwrap",
+                    "fix: enable_adapters()"
+                ]
+            }
+        ]
+    },
+    "134": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth_lora.py",
+                "commit_date": "2023-12-24T04:29:41Z",
+                "message_summary": "Fix LoRA loading for correct alphas parsing",
+                "ptm_addition_details": {
+                    "name": "LoRA PEFT"
+                }
+            }
+        ]
+    },
+    "136": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth_lora.py",
+                "commit_date": "2023-12-07T04:09:29Z",
+                "message_summary": "Adapt example scripts to use PEFT",
+                "ptm_addition_details": {
+                    "name": "PEFT",
+                    "version": "latest",
+                    "problem_addressed": "Text-to-Image generation"
+                }
+            }
+        ]
+    },
+    "137": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth_lora.py",
+                "commit_date": "2023-12-01T17:43:44Z",
+                "message_summary": "Post Release: v0.24.0 (#5985",
+                "ptm_addition_details": {
+                    "name": "model_index.json"
+                }
+            }
+        ]
+    },
+    "138": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth_lora.py",
+                "commit_date": "2023-11-27T05:13:20Z",
+                "message_summary": "Allow downloading variant model files",
+                "ptm_addition_details": {
+                    "name": "variant",
+                    "version": "not specified",
+                    "problem_addressed": "not specified"
+                }
+            }
+        ]
+    },
+    "140": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth_lora.py",
+                "commit_date": "2023-11-17T13:56:58Z",
+                "message_summary": "Set `usedforsecurity=False` in hashlib methods (FIPS compliance)",
+                "update_details": "update version dependency\nbump hfh version\nbump hfh version"
+            }
+        ]
+    },
+    "145": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth_lora.py",
+                "commit_date": "2023-10-11T11:02:42Z",
+                "message_summary": "Use loralinear instead of deprecated lora attn procs.",
+                "update_details": "The commit updates the code to use loralinear instead of deprecated lora attention processors."
+            }
+        ]
+    },
+    "151": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth_lora.py",
+                "commit_date": "2023-08-04T18:06:38Z",
+                "message_summary": "Allow SDXL LoRA to be run with less than 16GB of VRAM",
+                "ptm_addition_details": {
+                    "name": "SDXL LoRA",
+                    "version": "Not specified",
+                    "problem_addressed": "Running with less than 16GB of VRAM"
+                }
+            }
+        ]
+    },
+    "153": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth_lora.py",
+                "commit_date": "2023-07-28T17:49:49Z",
+                "message_summary": "Support SDXL Kohya-style LoRA",
+                "ptm_addition_details": {
+                    "name": "SDXL Kohya-style LoRA",
+                    "version": "1.0",
+                    "problem_addressed": "Text encoding and attention processing"
+                }
+            },
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth_lora.py",
+                "commit_date": "2023-07-28T17:49:49Z",
+                "update_details": "Improvements and debugging for SDXL Kohya-style LoRA model"
+            }
+        ]
+    },
+    "165": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth_lora.py",
+                "commit_date": "2023-06-06T09:26:05Z",
+                "message_summary": "Added LoRA attention processor for PT 2.0",
+                "ptm_addition_details": {
+                    "name": "LoRAAttnProcessor2_0",
+                    "version": "2.0",
+                    "problem_addressed": "Attention processing"
+                }
+            }
+        ]
+    },
+    "168": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth_lora.py",
+                "commit_date": "2023-06-02T12:10:24Z",
+                "message_summary": "Support Kohya-ss style LoRA file format (in a limited capacity)",
+                "ptm_addition_details": {
+                    "name": "LoRAAttnProcessor",
+                    "version": "Kohya-ss style",
+                    "problem_addressed": "Limited capacity support for LoRA file format"
+                }
+            },
+            {
+                "update_details": "Fix to reuse utility functions, make LoRAAttnProcessor targets to self_attn, fix LoRAAttnProcessor target, fix split key, remove TEXT_ENCODER_TARGET_MODULES loop, add print memory usage, remove test_kohya_loras_scaffold.py, add doc on LoRA civitai, remove print statement and refactor in the doc, fix state_dict test for kohya-ss style lora"
+            }
+        ]
+    },
+    "174": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth_lora.py",
+                "commit_date": "2023-05-09T17:24:36Z",
+                "message_summary": "Updates and additions related to dreambooth lora",
+                "ptm_addition_details": {
+                    "name": "T5",
+                    "version": "latest",
+                    "problem_addressed": "Text generation"
+                }
+            }
+        ]
+    },
+    "179": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth_lora.py",
+                "commit_date": "2023-04-20T11:55:17Z",
+                "message_summary": "Added LoRA text encoder support for DreamBooth training script.",
+                "ptm_addition_details": {
+                    "name": "LoRA",
+                    "problem_addressed": "Text encoding"
+                }
+            },
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth_lora.py",
+                "commit_date": "2023-04-20T11:55:17Z",
+                "message_summary": "Fix initialization and modification call, update readme, use dog dataset from hub, fix params, add entry to LoRA doc, add tests for LoRA, remove unnecessary list comprehension."
+            }
+        ]
+    },
+    "182": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth_lora.py",
+                "commit_date": "2023-03-10T13:15:16Z",
+                "message_summary": "Editable number of class images",
+                "ptm_addition_details": {
+                    "name": "Dreambooth",
+                    "version": "Lora",
+                    "problem_addressed": "Editable number of class images"
+                }
+            }
+        ]
+    },
+    "184": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth_lora.py",
+                "commit_date": "2023-02-17T21:25:46Z",
+                "message_summary": "Added xformers 0.0.16 warning message",
+                "ptm_addition_details": {
+                    "name": "xformers",
+                    "version": "0.0.16",
+                    "problem_addressed": "N/A"
+                }
+            }
+        ]
+    },
+    "192": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth_lora.py",
+                "commit_date": "2023-01-26T13:37:19Z",
+                "message_summary": "Make scaling factor a config arg of vae/vqvae",
+                "ptm_addition_details": {
+                    "name": "vae/vqvae",
+                    "problem_addressed": "Adding scaling factor as a config argument"
+                }
+            },
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth_lora.py",
+                "commit_date": "2023-01-26T13:37:19Z",
+                "update_details": "Fixing and updating code, resolving conflicts, addressing comments, and removing duplicate lines"
+            }
+        ]
+    },
+    "195": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth_lora.py",
+                "commit_date": "2023-01-25T11:17:59Z",
+                "message_summary": "Add `lora` tag to the model tags",
+                "ptm_addition_details": {
+                    "name": "lora",
+                    "problem_addressed": "For lora training"
+                }
+            }
+        ]
+    },
+    "198": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth_lora.py",
+                "commit_date": "2023-01-24T09:26:39Z",
+                "message_summary": "[lora] Log images when using tensorboard",
+                "ptm_addition_details": {
+                    "name": "lora",
+                    "problem_addressed": "Logging images when using tensorboard"
+                }
+            }
+        ]
+    },
+    "201": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth_lora.py",
+                "commit_date": "2023-01-19T08:44:02Z",
+                "message_summary": "[Lora] Model card",
+                "ptm_addition_details": {
+                    "name": "Lora",
+                    "version": "unknown",
+                    "problem_addressed": "not specified"
+                }
+            }
+        ]
+    },
+    "202": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth_lora.py",
+                "commit_date": "2023-01-18T17:05:51Z",
+                "message_summary": "Add LoRA training script",
+                "ptm_addition_details": {
+                    "name": "LoRA",
+                    "version": "first version"
+                }
+            }
+        ]
+    },
+    "211": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/controlnet/train_controlnet_sdxl.py",
+                "commit_date": "2023-11-27T05:13:20Z",
+                "message_summary": "Allow downloading variant model files",
+                "ptm_addition_details": {
+                    "name": "variant",
+                    "version": "not specified",
+                    "problem_addressed": "not specified"
+                }
+            }
+        ]
+    },
+    "225": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image.py",
+                "commit_date": "2024-02-22T00:40:45Z",
+                "message_summary": "Fix typos in text_to_image examples",
+                "update_details": "Update copyright information and fix typos in text_to_image examples"
+            }
+        ]
+    },
+    "234": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image.py",
+                "commit_date": "2023-12-01T17:43:44Z",
+                "message_summary": "Post Release: v0.24.0 (#5985",
+                "ptm_addition_details": {
+                    "name": "model_index.json"
+                }
+            }
+        ]
+    },
+    "235": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image.py",
+                "commit_date": "2023-11-27T05:13:20Z",
+                "message_summary": "Allow downloading variant model files",
+                "ptm_addition_details": {
+                    "name": "variant",
+                    "problem_addressed": "Text to Image generation"
+                }
+            }
+        ]
+    },
+    "238": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image.py",
+                "commit_date": "2023-10-05T18:52:27Z",
+                "message_summary": "Correct the fix for SNR weighted loss in v-prediction",
+                "ptm_addition_details": {
+                    "name": "Min-SNR Gamma",
+                    "version": "not specified",
+                    "problem_addressed": "SNR weighted loss in v-prediction"
+                }
+            }
+        ]
+    },
+    "258": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image.py",
+                "commit_date": "2023-05-04T12:42:32Z",
+                "message_summary": "Added input pretubation",
+                "ptm_addition_details": {
+                    "name": "input pretubation"
+                }
+            }
+        ]
+    },
+    "262": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image.py",
+                "commit_date": "2023-04-06T13:38:40Z",
+                "message_summary": "Add support for Min-SNR weighting strategy for better convergence",
+                "ptm_addition_details": {
+                    "name": "Min-SNR weighting",
+                    "problem_addressed": "Faster convergence"
+                }
+            }
+        ]
+    },
+    "266": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image.py",
+                "commit_date": "2023-02-17T21:25:46Z",
+                "message_summary": "Added xformers 0.0.16 warning message",
+                "ptm_addition_details": {
+                    "name": "xformers",
+                    "version": "0.0.16",
+                    "problem_addressed": "N/A"
+                }
+            }
+        ]
+    },
+    "272": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image.py",
+                "commit_date": "2023-01-26T13:37:19Z",
+                "message_summary": "Make scaling factor a config arg of vae/vqvae",
+                "ptm_addition_details": {
+                    "name": "vae/vqvae",
+                    "version": "not specified",
+                    "problem_addressed": "Scaling factor as a config argument"
+                }
+            },
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image.py",
+                "commit_date": "2023-01-26T13:37:19Z",
+                "message_summary": "Remove duplicate line"
+            }
+        ]
+    },
+    "273": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image.py",
+                "commit_date": "2023-01-25T16:59:02Z",
+                "message_summary": "Bump version to 0.13.0dev0 and deprecate `predict_epsilon`. Model version bumped up.",
+                "update_details": "Model version bumped up."
+            }
+        ]
+    },
+    "278": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image.py",
+                "commit_date": "2023-01-18T17:05:51Z",
+                "message_summary": "Add LoRA training script",
+                "ptm_addition_details": {
+                    "name": "LoRA",
+                    "version": "first version"
+                },
+                "update_details": "Finish loaders and inference"
+            }
+        ]
+    },
+    "284": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image.py",
+                "commit_date": "2022-12-27T18:47:50Z",
+                "message_summary": "Make xformers optional and handle availability",
+                "update_details": "Make xformers optional even if it is available. Raise an exception if xformers is used but not available. Rename use_xformers to enable_xformers_memory_efficient_attention. Add a note about xformers in README. Reformat code style"
+            }
+        ]
+    },
+    "291": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image.py",
+                "commit_date": "2022-11-28T16:46:54Z",
+                "message_summary": "Added v-prediction training support",
+                "ptm_addition_details": {
+                    "name": "v-prediction",
+                    "problem_addressed": "Training support"
+                }
+            }
+        ]
+    },
+    "292": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image.py",
+                "commit_date": "2022-11-22T12:35:23Z",
+                "message_summary": "Fix mixed_precision argument handling",
+                "tasks": [
+                    "fix mixed_precision argument"
+                ],
+                "update_details": "Fixed the handling of the mixed_precision argument by using the accelerator to check mixed_precision, defaulting it to None, and passing it to accelerate launch."
+            }
+        ]
+    },
+    "294": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image.py",
+                "commit_date": "2022-10-31T16:26:30Z",
+                "message_summary": "Improved scheduler documentation with usage examples",
+                "replacement_info": "More replacements made in the code"
+            }
+        ]
+    },
+    "303": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/t2i_adapter/train_t2i_adapter_sdxl.py",
+                "commit_date": "2024-01-15T14:12:56Z",
+                "message_summary": "Make T2I Adapter SDXL Training Script torch.compile compatible",
+                "update_details": "update for t2i_adapter"
+            }
+        ]
+    },
+    "305": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/t2i_adapter/train_t2i_adapter_sdxl.py",
+                "commit_date": "2023-12-01T17:43:44Z",
+                "message_summary": "Post Release: v0.24.0",
+                "ptm_addition_details": {
+                    "name": "model_index.json",
+                    "version": "N/A",
+                    "problem_addressed": "N/A"
+                }
+            }
+        ]
+    },
+    "306": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/t2i_adapter/train_t2i_adapter_sdxl.py",
+                "commit_date": "2023-11-27T05:13:20Z",
+                "message_summary": "Allow downloading variant model files",
+                "ptm_addition_details": {
+                    "name": "variant",
+                    "version": "not specified",
+                    "problem_addressed": "not specified"
+                }
+            }
+        ]
+    },
+    "321": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/textual_inversion/textual_inversion.py",
+                "commit_date": "2023-11-27T05:13:20Z",
+                "message_summary": "Allow downloading variant model files",
+                "ptm_addition_details": {
+                    "name": "variant",
+                    "problem_addressed": "Textual inversion"
+                }
+            }
+        ]
+    },
+    "326": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/textual_inversion/textual_inversion.py",
+                "commit_date": "2023-08-28T07:17:08Z",
+                "message_summary": "Fixed save_path bug in textual inversion training script",
+                "update_details": "Fixed safe_path bug in textual inversion training"
+            }
+        ]
+    },
+    "327": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/textual_inversion/textual_inversion.py",
+                "commit_date": "2023-08-17T05:24:28Z",
+                "message_summary": "Make safetensors the default way of saving weights",
+                "ptm_addition_details": {
+                    "name": "safetensors",
+                    "version": "default",
+                    "problem_addressed": "saving weights"
+                }
+            }
+        ]
+    },
+    "331": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/textual_inversion/textual_inversion.py",
+                "commit_date": "2023-06-15T22:38:54Z",
+                "message_summary": "Manual check for checkpoints_total_limit instead of using accelerate",
+                "removal_details": "Remove controlnet_conditioning_embedding_out_channels"
+            }
+        ]
+    },
+    "334": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/textual_inversion/textual_inversion.py",
+                "commit_date": "2023-06-08T14:44:22Z",
+                "message_summary": "Apply deprecations from Accelerate",
+                "update_details": "Apply deprecations"
+            }
+        ]
+    },
+    "336": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/textual_inversion/textual_inversion.py",
+                "commit_date": "2023-05-06T11:00:30Z",
+                "message_summary": "Rename --only_save_embeds to --save_as_full_pipeline",
+                "update_details": "Refactor only_save_embeds to save_as_full_pipeline"
+            }
+        ]
+    },
+    "344": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/textual_inversion/textual_inversion.py",
+                "commit_date": "2023-02-17T21:25:46Z",
+                "message_summary": "Added xformers 0.0.16 warning message",
+                "ptm_addition_details": {
+                    "name": "xformers",
+                    "version": "0.0.16",
+                    "problem_addressed": "N/A"
+                }
+            }
+        ]
+    },
+    "350": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/textual_inversion/textual_inversion.py",
+                "commit_date": "2023-02-07T08:10:34Z",
+                "message_summary": "Added a script to convert VAE.pt files to diffusers format",
+                "ptm_addition_details": {
+                    "name": "VAE",
+                    "version": "N/A",
+                    "problem_addressed": "Conversion to diffusers format"
+                }
+            }
+        ]
+    },
+    "353": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/textual_inversion/textual_inversion.py",
+                "commit_date": "2023-01-25T16:59:02Z",
+                "message_summary": "Bump version to 0.13.0dev0 and deprecate `predict_epsilon`",
+                "update_details": "Bump model up"
+            }
+        ]
+    },
+    "357": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/textual_inversion/textual_inversion.py",
+                "commit_date": "2023-01-18T17:05:51Z",
+                "message_summary": "Add LoRA training script",
+                "ptm_addition_details": {
+                    "name": "LoRA",
+                    "version": "first upload"
+                }
+            }
+        ]
+    },
+    "364": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/textual_inversion/textual_inversion.py",
+                "commit_date": "2022-12-27T18:47:50Z",
+                "message_summary": "Make xformers optional and raise exception if not available",
+                "update_details": "Make xformers optional even if available, raise exception if xformers is used but not available, rename use_xformers to enable_xformers_memory_efficient_attention, add note about xformers in README, reformat code style"
+            }
+        ]
+    },
+    "367": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/textual_inversion/textual_inversion.py",
+                "commit_date": "2022-12-15T20:15:23Z",
+                "message_summary": "Apply amp bf16 on textual inversion",
+                "ptm_addition_details": {
+                    "name": "bf16",
+                    "version": "full",
+                    "problem_addressed": "Textual inversion"
+                }
+            },
+            {
+                "tasks": [
+                    "enable bf16",
+                    "enable amp bf16 for unet forward",
+                    "fix style",
+                    "fix readme",
+                    "remove useless file",
+                    "change amp to full bf16",
+                    "align",
+                    "make stype",
+                    "fix format"
+                ]
+            }
+        ]
+    },
+    "374": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/textual_inversion/textual_inversion.py",
+                "commit_date": "2022-12-05T13:45:13Z",
+                "message_summary": "Add an option for only saving the embeddings",
+                "ptm_addition_details": {
+                    "name": "Not specified",
+                    "version": "Not specified",
+                    "problem_addressed": "Not specified"
+                }
+            }
+        ]
+    },
+    "378": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/textual_inversion/textual_inversion.py",
+                "commit_date": "2022-11-16T14:58:22Z",
+                "message_summary": "Add improved handling of pil",
+                "ptm_addition_details": {
+                    "name": "PIL",
+                    "version": "Unknown",
+                    "problem_addressed": "Improved handling"
+                }
+            },
+            {
+                "tasks": [
+                    "Better error message for transformers dummy",
+                    "[PIL] Better deprecation functionality",
+                    "up"
+                ]
+            }
+        ]
+    },
+    "379": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/textual_inversion/textual_inversion.py",
+                "commit_date": "2022-10-31T16:26:30Z",
+                "message_summary": "Improvement in scheduler documentation with usage examples",
+                "replacement_info": "More replacements"
+            }
+        ]
+    },
+    "381": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/textual_inversion/textual_inversion.py",
+                "commit_date": "2022-10-05T15:40:49Z",
+                "message_summary": "Remove use_auth_token from remaining places",
+                "removal_details": "The commit removes use_auth_token from the codebase."
+            }
+        ]
+    },
+    "385": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/textual_inversion/textual_inversion.py",
+                "commit_date": "2022-09-15T13:55:48Z",
+                "message_summary": "Added flax schedulers for Karras VE, DDIM, DDPM, and lms_discrete",
+                "ptm_addition_details": {
+                    "name": "flax schedulers",
+                    "version": "not specified",
+                    "problem_addressed": "Scheduling for Karras VE, DDIM, DDPM, and lms_discrete"
+                }
+            }
+        ]
+    },
+    "388": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/textual_inversion/textual_inversion.py",
+                "commit_date": "2022-09-05T12:49:26Z",
+                "message_summary": "Replace dict outputs with Dict/Dataclass and allow to return tuples",
+                "update_details": "Adapt model outputs"
+            }
+        ]
+    },
+    "389": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/textual_inversion/textual_inversion.py",
+                "commit_date": "2022-09-05T07:42:49Z",
+                "message_summary": "Use tokenizer.add_tokens to add placeholder_token",
+                "ptm_addition_details": {
+                    "name": "tokenizer",
+                    "version": "not specified",
+                    "problem_addressed": "Adding placeholder_token"
+                }
+            }
+        ]
+    },
+    "390": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/textual_inversion/textual_inversion.py",
+                "commit_date": "2022-09-02T08:53:52Z",
+                "message_summary": "Textual inversion (#266)",
+                "ptm_addition_details": {
+                    "name": "CLIPTextModel",
+                    "version": "latest",
+                    "problem_addressed": "Textual inversion"
+                }
+            }
+        ]
+    },
+    "401": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth_lora_sdxl.py",
+                "commit_date": "2024-02-04T14:00:09Z",
+                "message_summary": "Added sdxl micro conditioning to dreambooth lora sdxl",
+                "ptm_addition_details": {
+                    "name": "sdxl",
+                    "problem_addressed": "Micro conditioning"
+                }
+            }
+        ]
+    },
+    "402": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth_lora_sdxl.py",
+                "commit_date": "2024-02-03T04:16:32Z",
+                "message_summary": "Fixes LoRA SDXL training script with DDP + PEFT",
+                "update_details": "Update train_dreambooth_lora_sdxl.py"
+            }
+        ]
+    },
+    "408": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth_lora_sdxl.py",
+                "commit_date": "2023-12-27T02:31:10Z",
+                "message_summary": "Make LoRAs trained with `peft` loadable when `peft` isn't installed",
+                "ptm_addition_details": {
+                    "name": "LoRA"
+                }
+            }
+        ]
+    },
+    "413": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth_lora_sdxl.py",
+                "commit_date": "2023-12-07T04:09:29Z",
+                "message_summary": "Adapt example scripts to use PEFT",
+                "ptm_addition_details": {
+                    "name": "PEFT",
+                    "version": "latest",
+                    "problem_addressed": "Text-to-Image generation"
+                }
+            }
+        ]
+    },
+    "414": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth_lora_sdxl.py",
+                "commit_date": "2023-12-01T17:43:44Z",
+                "message_summary": "Post Release: v0.24.0 (#5985",
+                "ptm_addition_details": {
+                    "name": "model_index.json"
+                }
+            }
+        ]
+    },
+    "415": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth_lora_sdxl.py",
+                "commit_date": "2023-11-27T05:13:20Z",
+                "message_summary": "Allow downloading variant model files",
+                "ptm_addition_details": {
+                    "name": "variant",
+                    "version": "not specified",
+                    "problem_addressed": "not specified"
+                }
+            }
+        ]
+    },
+    "419": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth_lora_sdxl.py",
+                "commit_date": "2023-11-21T16:38:43Z",
+                "message_summary": "Add features to the Dreambooth LoRA SDXL training script",
+                "ptm_addition_details": {
+                    "name": "Prodigy",
+                    "problem_addressed": "Support for Prodigy optimizer"
+                }
+            }
+        ]
+    },
+    "420": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth_lora_sdxl.py",
+                "commit_date": "2023-11-17T13:56:58Z",
+                "message_summary": "Set `usedforsecurity=False` in hashlib methods (FIPS compliance)",
+                "update_details": "Update version dependency and bump hfh version"
+            }
+        ]
+    },
+    "427": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth_lora_sdxl.py",
+                "commit_date": "2023-10-11T11:02:42Z",
+                "message_summary": "Switched to using loralinear instead of deprecated lora attention processors.",
+                "update_details": "Updated the code to use loralinear instead of deprecated lora attention processors."
+            }
+        ]
+    },
+    "435": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth_lora_sdxl.py",
+                "commit_date": "2023-08-04T18:06:38Z",
+                "message_summary": "Allow SDXL LoRA to be run with less than 16GB of VRAM",
+                "ptm_addition_details": {
+                    "name": "SDXL LoRA",
+                    "version": "Unknown",
+                    "problem_addressed": "Running with less than 16GB of VRAM"
+                }
+            }
+        ]
+    },
+    "437": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth_lora_sdxl.py",
+                "commit_date": "2023-07-28T17:49:49Z",
+                "message_summary": "Support SDXL Kohya-style LoRA",
+                "ptm_addition_details": {
+                    "name": "SDXL Kohya-style LoRA",
+                    "version": "1.0",
+                    "problem_addressed": "Text encoding and attention processing"
+                }
+            },
+            {
+                "update_details": "Improvements and debugging related to SDXL Kohya-style LoRA model"
+            }
+        ]
+    },
+    "438": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth_lora_sdxl.py",
+                "commit_date": "2023-07-27T19:58:36Z",
+                "message_summary": "Update training script to honor SDXL 1.0 licensing",
+                "update_details": "Model name changed from train_instruct_pix2pix_xl to train_instruct_pix2pix_sdxl"
+            }
+        ]
+    },
+    "442": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth_lora_sdxl.py",
+                "commit_date": "2023-07-25T00:05:48Z",
+                "message_summary": "Add support for text encoder fine-tuning for SDXL DreamBooth",
+                "ptm_addition_details": {
+                    "name": "LoRA",
+                    "problem_addressed": "Text encoder fine-tuning"
+                }
+            }
+        ]
+    },
+    "443": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/dreambooth/train_dreambooth_lora_sdxl.py",
+                "commit_date": "2023-07-11T02:08:41Z",
+                "message_summary": "Add a training script for SDXL DreamBooth LoRA",
+                "ptm_addition_details": {
+                    "name": "StableDiffusionXLImg2ImgPipeline",
+                    "version": "SDXL",
+                    "problem_addressed": "Training script for SDXL DreamBooth LoRA"
+                }
+            }
+        ]
+    },
+    "447": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image_sdxl.py",
+                "commit_date": "2024-02-23T15:27:37Z",
+                "message_summary": "Refactor save_model_card function in text_to_image examples",
+                "tasks": [
+                    "Refactor"
+                ],
+                "update_details": "Update train_text_to_image_sdxl.py"
+            }
+        ]
+    },
+    "450": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image_sdxl.py",
+                "commit_date": "2024-02-12T04:31:20Z",
+                "message_summary": "Standardize T2I Sdxl model card template",
+                "ptm_addition_details": {
+                    "name": "T2I Sdxl",
+                    "version": "N/A",
+                    "problem_addressed": "N/A"
+                }
+            }
+        ]
+    },
+    "455": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image_sdxl.py",
+                "commit_date": "2024-01-15T14:28:04Z",
+                "message_summary": "Fix a bug of flip in SDXL training script",
+                "tasks": [
+                    "Fix bug"
+                ],
+                "update_details": "Update train_text_to_image_sdxl.py\nUpdate train_text_to_image_lora_sdxl.py"
+            }
+        ]
+    },
+    "458": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image_sdxl.py",
+                "commit_date": "2023-12-01T17:43:44Z",
+                "message_summary": "Post Release: v0.24.0 (#5985",
+                "ptm_addition_details": {
+                    "name": "model_index.json"
+                }
+            }
+        ]
+    },
+    "459": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image_sdxl.py",
+                "commit_date": "2023-11-27T05:13:20Z",
+                "message_summary": "Allow downloading variant model files",
+                "ptm_addition_details": {
+                    "name": "variant",
+                    "problem_addressed": "Downloading variant model files"
+                }
+            }
+        ]
+    },
+    "464": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image_sdxl.py",
+                "commit_date": "2023-10-05T18:52:27Z",
+                "message_summary": "Correct the fix for SNR weighted loss in v-prediction",
+                "ptm_addition_details": {
+                    "name": "Min-SNR Gamma",
+                    "version": "not specified",
+                    "problem_addressed": "SNR weighted loss in v-prediction"
+                }
+            }
+        ]
+    },
+    "468": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image_sdxl.py",
+                "commit_date": "2023-09-26T08:15:37Z",
+                "message_summary": "Timestep bias for fine-tuning SDXL",
+                "ptm_addition_details": {
+                    "name": "SDXL",
+                    "version": "not specified",
+                    "problem_addressed": "Fine-tuning"
+                },
+                "update_details": "Adjust parameter choices to include \"range\" and reword the help statements. Condition the use of weighted timesteps on the value of timestep_bias_strategy.",
+                "tasks": [
+                    "fine-tuning"
+                ]
+            }
+        ]
+    },
+    "473": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image_sdxl.py",
+                "commit_date": "2023-08-16T03:32:49Z",
+                "message_summary": "Added training script for text to image with SDXL",
+                "ptm_addition_details": {
+                    "name": "SDXL",
+                    "version": "not specified",
+                    "problem_addressed": "Text to Image Generation"
+                }
+            }
+        ]
+    },
+    "474": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image_lora.py",
+                "commit_date": "2024-02-23T15:27:37Z",
+                "message_summary": "Refactor save_model_card function in text_to_image examples",
+                "tasks": [
+                    "Refactor"
+                ],
+                "update_details": "Update train_text_to_image_lora.py"
+            }
+        ]
+    },
+    "477": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image_lora.py",
+                "commit_date": "2024-02-12T04:31:13Z",
+                "message_summary": "Standardize T2I Lora model card",
+                "ptm_addition_details": {
+                    "name": "T2I Lora",
+                    "version": "not specified",
+                    "problem_addressed": "not specified"
+                }
+            }
+        ]
+    },
+    "485": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image_lora.py",
+                "commit_date": "2024-01-01T03:21:04Z",
+                "message_summary": "Fix gradient-checkpointing option is ignored in SDXL+LoRA training.",
+                "ptm_addition_details": {
+                    "name": "SDXL+LoRA",
+                    "version": "unknown",
+                    "problem_addressed": "Fixing gradient-checkpointing option being ignored in training"
+                },
+                "update_details": "Fix gradient-checkpointing option is ignored in SD+LoRA training. Fix gradient checkpoint is not applied to text encoders in SDXL+LoRA."
+            }
+        ]
+    },
+    "486": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image_lora.py",
+                "commit_date": "2023-12-28T02:07:50Z",
+                "message_summary": "Follow up of #6306",
+                "ptm_addition_details": {
+                    "name": "lora",
+                    "problem_addressed": "Text to Image Generation"
+                }
+            }
+        ]
+    },
+    "488": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image_lora.py",
+                "commit_date": "2023-12-24T04:29:41Z",
+                "message_summary": "Fix LoRA loading for correct alphas parsing",
+                "ptm_addition_details": {
+                    "name": "LoRA PEFT"
+                }
+            }
+        ]
+    },
+    "490": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image_lora.py",
+                "commit_date": "2023-12-18T18:33:05Z",
+                "message_summary": "Update train_text_to_image_lora.py",
+                "update_details": "Update train_text_to_image_lora.py"
+            }
+        ]
+    },
+    "492": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image_lora.py",
+                "commit_date": "2023-12-07T04:09:29Z",
+                "message_summary": "Adapt example scripts to use PEFT",
+                "ptm_addition_details": {
+                    "name": "PEFT",
+                    "version": "latest",
+                    "problem_addressed": "Text to Image Generation"
+                }
+            }
+        ]
+    },
+    "493": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image_lora.py",
+                "commit_date": "2023-12-01T17:43:44Z",
+                "message_summary": "Post Release: v0.24.0 (#5985",
+                "ptm_addition_details": {
+                    "name": "model_index.json"
+                }
+            }
+        ]
+    },
+    "494": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image_lora.py",
+                "commit_date": "2023-11-27T05:13:20Z",
+                "message_summary": "Allow downloading variant model files",
+                "ptm_addition_details": {
+                    "name": "variant",
+                    "version": "not specified",
+                    "problem_addressed": "not specified"
+                }
+            }
+        ]
+    },
+    "506": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image_lora.py",
+                "commit_date": "2023-07-13T12:20:25Z",
+                "message_summary": "Multiply lr scheduler steps by `num_processes`.",
+                "update_details": "Stop multiplying steps by gradient accumulation."
+            }
+        ]
+    },
+    "507": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image_lora.py",
+                "commit_date": "2023-06-29T11:39:59Z",
+                "message_summary": "Enhance: Add LoRA rank args in train_text_to_image_lora",
+                "ptm_addition_details": {
+                    "name": "LoRA",
+                    "problem_addressed": "Rank args in text to image training"
+                }
+            }
+        ]
+    },
+    "523": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image_lora.py",
+                "commit_date": "2023-02-17T21:25:46Z",
+                "message_summary": "Added xformers 0.0.16 warning message",
+                "ptm_addition_details": {
+                    "name": "xformers",
+                    "version": "0.0.16",
+                    "problem_addressed": "Warning message"
+                }
+            }
+        ]
+    },
+    "526": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image_lora.py",
+                "commit_date": "2023-02-09T10:45:11Z",
+                "message_summary": "Freezing the model weights",
+                "ptm_addition_details": {
+                    "name": "LoRA",
+                    "version": "not specified",
+                    "problem_addressed": "Freezing model weights"
+                }
+            },
+            {
+                "tasks": [
+                    "Freezing model weights"
+                ]
+            }
+        ]
+    },
+    "530": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image_lora.py",
+                "commit_date": "2023-01-26T13:37:19Z",
+                "message_summary": "Make scaling factor a config arg of VAE/VQVAE",
+                "ptm_addition_details": {
+                    "name": "VAE/VQVAE",
+                    "version": "not specified",
+                    "problem_addressed": "Scaling factor as a config argument"
+                }
+            },
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image_lora.py",
+                "commit_date": "2023-01-26T13:37:19Z",
+                "message_summary": "Fixing and updating code",
+                "update_details": "Fixing code issues, addressing comments, and updating documentation"
+            }
+        ]
+    },
+    "531": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image_lora.py",
+                "commit_date": "2023-01-25T16:59:02Z",
+                "message_summary": "Bump version to 0.13.0dev0 and deprecate `predict_epsilon`",
+                "ptm_addition_details": {
+                    "name": "Bump model",
+                    "version": "0.13",
+                    "problem_addressed": "N/A"
+                }
+            }
+        ]
+    },
+    "532": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image_lora.py",
+                "commit_date": "2023-01-25T11:17:59Z",
+                "message_summary": "Add `lora` tag to the model tags",
+                "ptm_addition_details": {
+                    "name": "lora",
+                    "problem_addressed": "For lora training"
+                }
+            }
+        ]
+    },
+    "536": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image_lora.py",
+                "commit_date": "2023-01-23T07:31:07Z",
+                "message_summary": "Adds example on text2image fine-tuning with LoRA",
+                "ptm_addition_details": {
+                    "name": "LoRA",
+                    "problem_addressed": "Fine-tuning for text-to-image generation"
+                }
+            }
+        ]
+    },
+    "544": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/custom_diffusion/train_custom_diffusion.py",
+                "commit_date": "2023-11-27T05:13:20Z",
+                "message_summary": "Allow downloading variant model files",
+                "ptm_addition_details": {
+                    "name": "variant",
+                    "problem_addressed": "Downloading variant model files"
+                }
+            }
+        ]
+    },
+    "545": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/custom_diffusion/train_custom_diffusion.py",
+                "commit_date": "2023-11-17T13:56:58Z",
+                "message_summary": "Set `usedforsecurity=False` in hashlib methods (FIPS compliance)",
+                "update_details": "Update version dependency and bump hfh version"
+            }
+        ]
+    },
+    "551": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/custom_diffusion/train_custom_diffusion.py",
+                "commit_date": "2023-09-18T12:49:00Z",
+                "message_summary": "Implement `CustomDiffusionAttnProcessor2_0`.",
+                "ptm_addition_details": {
+                    "name": "CustomDiffusionAttnProcessor2_0"
+                }
+            }
+        ]
+    },
+    "554": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/custom_diffusion/train_custom_diffusion.py",
+                "commit_date": "2023-08-17T05:24:28Z",
+                "message_summary": "Make safetensors the default way of saving weights",
+                "update_details": "Set safetensors as the default save method, update tests, examples, and fix failing tests to support safetensors."
+            }
+        ]
+    },
+    "562": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/custom_diffusion/train_custom_diffusion.py",
+                "commit_date": "2023-04-20T07:31:42Z",
+                "message_summary": "Adding custom diffusion training to diffusers examples",
+                "ptm_addition_details": {
+                    "name": "custom diffusion",
+                    "version": "unknown",
+                    "problem_addressed": "custom diffusion training"
+                }
+            }
+        ]
+    },
+    "566": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/instruct_pix2pix/train_instruct_pix2pix.py",
+                "commit_date": "2024-01-15T11:33:22Z",
+                "message_summary": "Make InstructPix2Pix Training Script torch.compile compatible",
+                "ptm_addition_details": {
+                    "name": "pix2pix"
+                }
+            }
+        ]
+    },
+    "568": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/instruct_pix2pix/train_instruct_pix2pix.py",
+                "commit_date": "2023-12-01T17:43:44Z",
+                "message_summary": "Post Release: v0.24.0 (#5985",
+                "ptm_addition_details": {
+                    "name": "model_index.json"
+                }
+            }
+        ]
+    },
+    "569": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/instruct_pix2pix/train_instruct_pix2pix.py",
+                "commit_date": "2023-11-27T05:13:20Z",
+                "message_summary": "Allow downloading variant model files",
+                "ptm_addition_details": {
+                    "name": "variant",
+                    "version": "not specified",
+                    "problem_addressed": "not specified"
+                }
+            }
+        ]
+    },
+    "584": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/instruct_pix2pix/train_instruct_pix2pix.py",
+                "commit_date": "2023-03-23T04:45:01Z",
+                "message_summary": "Initial implementation of the pix2pix instruct training script",
+                "ptm_addition_details": {
+                    "name": "Pix2Pix",
+                    "version": "instruct",
+                    "problem_addressed": "Training script for Pix2Pix with instructions"
+                }
+            }
+        ]
+    },
+    "589": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/textual_inversion/textual_inversion_sdxl.py",
+                "commit_date": "2024-02-08T19:46:06Z",
+                "message_summary": "Remove <cat-toy> validation prompt from textual_inversion_sdxl.py",
+                "removal_details": "The `<cat-toy>` validation prompt is removed from textual_inversion_sdxl.py to align it with textual_inversion.py, which uses a default validation prompt of `None`. The cat toy reference was not used elsewhere in the file."
+            }
+        ]
+    },
+    "591": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/textual_inversion/textual_inversion_sdxl.py",
+                "commit_date": "2024-01-09T09:42:33Z",
+                "message_summary": "Enabled stable-xl textual inversion for sdxl",
+                "ptm_addition_details": {
+                    "name": "sdxl",
+                    "version": "stable-xl",
+                    "problem_addressed": "Textual inversion"
+                }
+            },
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/textual_inversion/textual_inversion_sdxl.py",
+                "commit_date": "2024-01-09T09:42:33Z",
+                "message_summary": "Fixed style, spelling errors, and added README for sdxl",
+                "update_details": "Style fixes, spelling corrections, README addition, and adjustments for 8-bit optimizer",
+                "removal_details": "Removed the second center crop"
+            }
+        ]
+    },
+    "592": {
+        "repository": "github.com/bmaltais/kohya_ss",
+        "text": [
+            {
+                "repo_url": "github.com/bmaltais/kohya_ss",
+                "filepath": "sdxl_gen_img.py",
+                "commit_date": "2024-02-04T09:14:34Z",
+                "message_summary": "Replace print statements with logger for logging",
+                "update_details": "Added get_my_logger() function, used logger instead of print, fixed log level, removed line-breaks for readability, used setup_logging(), added rich to requirements.txt, made simple, and continued using logger instead of print"
+            }
+        ]
+    },
+    "618": {
+        "repository": "github.com/modelscope/facechain",
+        "text": [
+            {
+                "repo_url": "github.com/modelscope/facechain",
+                "filepath": "facechain/train_text_to_image_lora.py",
+                "commit_date": "2023-12-19T17:17:25Z",
+                "message_summary": "Fix load_dataset and set modelscope==1.10.0",
+                "update_details": "Updated modelscope to version 1.10.0"
+            }
+        ]
+    },
+    "619": {
+        "repository": "github.com/modelscope/facechain",
+        "text": [
+            {
+                "repo_url": "github.com/modelscope/facechain",
+                "filepath": "facechain/train_text_to_image_lora.py",
+                "commit_date": "2023-11-25T00:17:40Z",
+                "message_summary": "Formatting and updating sdxl base model version",
+                "update_details": "Formatting and updating sdxl base model version"
+            }
+        ]
+    },
+    "622": {
+        "repository": "github.com/modelscope/facechain",
+        "text": [
+            {
+                "repo_url": "github.com/modelscope/facechain",
+                "filepath": "facechain/train_text_to_image_lora.py",
+                "commit_date": "2023-10-07T03:25:15Z",
+                "message_summary": "Added sadtalker as a new tab",
+                "ptm_addition_details": {
+                    "name": "sadtalker"
+                },
+                "update_details": "Updated gfpgan-patch name, README, def get_previous_image_result, gr.Markdown, video save dir, and added TTS"
+            }
+        ]
+    },
+    "623": {
+        "repository": "github.com/modelscope/facechain",
+        "text": [
+            {
+                "repo_url": "github.com/modelscope/facechain",
+                "filepath": "facechain/train_text_to_image_lora.py",
+                "commit_date": "2023-09-19T14:07:15Z",
+                "message_summary": "Memory optimization operation for the Unet model",
+                "update_details": "unet.enable_xformers_memory_efficient_attention() is a memory optimization operation for the Unet model. lora_layers = AttnProcsLayers(unet.attn_processors) is to create a new attention processor instance.",
+                "tasks": [
+                    "potential training memory optimization by xformers"
+                ]
+            }
+        ]
+    },
+    "630": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image_lora_sdxl.py",
+                "commit_date": "2024-02-12T06:15:40Z",
+                "message_summary": "Standardize T2I Sdxl Lora model card template",
+                "ptm_addition_details": {
+                    "name": "T2I Sdxl Lora",
+                    "version": "not specified",
+                    "problem_addressed": "not specified"
+                }
+            }
+        ]
+    },
+    "642": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image_lora_sdxl.py",
+                "commit_date": "2023-12-28T02:07:50Z",
+                "message_summary": "Follow up of #6306",
+                "ptm_addition_details": {
+                    "name": "lora",
+                    "problem_addressed": "Text to Image Generation"
+                }
+            }
+        ]
+    },
+    "643": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image_lora_sdxl.py",
+                "commit_date": "2023-12-24T04:29:41Z",
+                "message_summary": "Fix LoRA loading for correct alphas parsing",
+                "ptm_addition_details": {
+                    "name": "LoRA PEFT"
+                }
+            }
+        ]
+    },
+    "647": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image_lora_sdxl.py",
+                "commit_date": "2023-12-07T04:09:29Z",
+                "message_summary": "Adapt example scripts to use PEFT",
+                "ptm_addition_details": {
+                    "name": "PEFT",
+                    "version": "latest",
+                    "problem_addressed": "Text to Image Generation"
+                }
+            }
+        ]
+    },
+    "648": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image_lora_sdxl.py",
+                "commit_date": "2023-12-01T17:43:44Z",
+                "message_summary": "Post Release: v0.24.0 (#5985",
+                "ptm_addition_details": {
+                    "name": "model_index.json"
+                }
+            }
+        ]
+    },
+    "649": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image_lora_sdxl.py",
+                "commit_date": "2023-11-27T05:13:20Z",
+                "message_summary": "Allow downloading variant model files",
+                "ptm_addition_details": {
+                    "name": "variant",
+                    "version": "not specified",
+                    "problem_addressed": "not specified"
+                }
+            }
+        ]
+    },
+    "658": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image_lora_sdxl.py",
+                "commit_date": "2023-10-11T11:02:42Z",
+                "message_summary": "Use loralinear instead of deprecated lora attn procs.",
+                "update_details": "Switched to using loralinear instead of deprecated lora attention processors for text to image training.",
+                "tasks": [
+                    "use loralinear instead of deprecated lora attn procs",
+                    "fix parameters",
+                    "fix saving",
+                    "add back support for add kv proj",
+                    "fix param accumulation",
+                    "propagate the changes"
+                ]
+            }
+        ]
+    },
+    "659": {
+        "repository": "github.com/huggingface/diffusers",
+        "text": [
+            {
+                "repo_url": "github.com/huggingface/diffusers",
+                "filepath": "examples/text_to_image/train_text_to_image_lora_sdxl.py",
+                "commit_date": "2023-10-05T18:52:27Z",
+                "message_summary": "Corrected the fix for SNR weighted loss in v-prediction",
+                "update_details": "Corrected the fix for SNR weighted loss in v-prediction by adding 1 to SNR rather than the resulting loss weights"
+            }
+        ]
+    }
+}
