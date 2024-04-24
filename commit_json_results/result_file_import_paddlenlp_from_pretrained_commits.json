@@ -1,0 +1,503 @@
+{
+    "5": {
+        "repository": "github.com/PaddlePaddle/PaddleHub",
+        "text": [
+            {
+                "repo_url": "github.com/PaddlePaddle/PaddleHub",
+                "filepath": "paddlehub/module/nlp_module.py",
+                "commit_date": "2021-01-05T13:04:08Z",
+                "message_summary": "Remove arg \"max_seq_len\" in get_embedding method (#1168)",
+                "update_details": "The commit removed the argument \"max_seq_len\" from the get_embedding method."
+            }
+        ]
+    },
+    "15": {
+        "repository": "github.com/PaddlePaddle/PaddleHub",
+        "text": [
+            {
+                "repo_url": "github.com/PaddlePaddle/PaddleHub",
+                "filepath": "paddlehub/module/nlp_module.py",
+                "commit_date": "2020-05-29T07:39:50Z",
+                "message_summary": "add ernie-skep (chnsenticorp)",
+                "ptm_addition_details": {
+                    "name": "ernie-skep",
+                    "version": "chnsenticorp"
+                }
+            }
+        ]
+    },
+    "23": {
+        "repository": "github.com/PaddlePaddle/PaddleHub",
+        "text": [
+            {
+                "repo_url": "github.com/PaddlePaddle/PaddleHub",
+                "filepath": "paddlehub/module/nlp_module.py",
+                "commit_date": "2020-03-12T09:12:22Z",
+                "message_summary": "surport ernie module v2",
+                "ptm_addition_details": {
+                    "name": "ernie module v2"
+                }
+            }
+        ]
+    },
+    "26": {
+        "repository": "github.com/PaddlePaddle/PaddleHub",
+        "text": [
+            {
+                "repo_url": "github.com/PaddlePaddle/PaddleHub",
+                "filepath": "paddlehub/module/nlp_module.py",
+                "commit_date": "2020-03-10T03:09:47Z",
+                "message_summary": "add BERTEmbeddingTask and BERTModule",
+                "ptm_addition_details": {
+                    "name": "BERTModule"
+                }
+            }
+        ]
+    },
+    "35": {
+        "repository": "github.com/PaddlePaddle/PaddleNLP",
+        "text": [
+            {
+                "repo_url": "github.com/PaddlePaddle/PaddleNLP",
+                "filepath": "paddlenlp/trainer/trainer.py",
+                "commit_date": "2023-12-08T06:13:03Z",
+                "message_summary": "[Trainer] Add memory info in log (#7587) (#7607)",
+                "ptm_addition_details": null,
+                "update_details": "Added memory info to the log for the Trainer module.",
+                "replacement_info": null,
+                "removal_details": null
+            }
+        ]
+    },
+    "44": {
+        "repository": "github.com/PaddlePaddle/PaddleNLP",
+        "text": [
+            {
+                "repo_url": "github.com/PaddlePaddle/PaddleNLP",
+                "filepath": "paddlenlp/trainer/trainer.py",
+                "commit_date": "2023-10-31T04:03:16Z",
+                "message_summary": "[CI] Add qwen pretrain test (#7330)",
+                "update_details": "Added qwen pretrain test",
+                "removal_details": "Removed model_type"
+            }
+        ]
+    },
+    "48": {
+        "repository": "github.com/PaddlePaddle/PaddleNLP",
+        "text": [
+            {
+                "repo_url": "github.com/PaddlePaddle/PaddleNLP",
+                "filepath": "paddlenlp/trainer/trainer.py",
+                "commit_date": "2023-10-11T09:47:28Z",
+                "message_summary": "[PEFT]support pp + lora (#7198)",
+                "update_details": "Support for pp lora added and updated."
+            }
+        ]
+    },
+    "86": {
+        "repository": "github.com/PaddlePaddle/PaddleNLP",
+        "text": [
+            {
+                "repo_url": "github.com/PaddlePaddle/PaddleNLP",
+                "filepath": "model_zoo/ernie-3.0/run_qa.py",
+                "commit_date": "2023-02-16T13:23:36Z",
+                "message_summary": "Support npu for ernie-3.0 run_qa",
+                "ptm_addition_details": {
+                    "name": "ernie-3.0",
+                    "version": "3.0",
+                    "problem_addressed": "Support for npu"
+                }
+            }
+        ]
+    },
+    "97": {
+        "repository": "github.com/PaddlePaddle/PaddleNLP",
+        "text": [
+            {
+                "repo_url": "github.com/PaddlePaddle/PaddleNLP",
+                "filepath": "model_zoo/ernie-m/run_classifier.py",
+                "commit_date": "2023-02-15T11:52:38Z",
+                "message_summary": "Deprecate Distutils",
+                "update_details": "styles\n\n* fix lint"
+            }
+        ]
+    },
+    "108": {
+        "repository": "github.com/PaddlePaddle/PaddleNLP",
+        "text": [
+            {
+                "repo_url": "github.com/PaddlePaddle/PaddleNLP",
+                "filepath": "paddlenlp/transformers/model_utils.py",
+                "commit_date": "2024-01-10T03:48:17Z",
+                "message_summary": "[llm]support qlora pp (#7801)",
+                "update_details": "Added support for qlora pp and fixed scale dtype."
+            }
+        ]
+    },
+    "111": {
+        "repository": "github.com/PaddlePaddle/PaddleNLP",
+        "text": [
+            {
+                "repo_url": "github.com/PaddlePaddle/PaddleNLP",
+                "filepath": "paddlenlp/transformers/model_utils.py",
+                "commit_date": "2023-10-23T11:46:54Z",
+                "message_summary": "[llm]fix weight only quantization (#7252)",
+                "ptm_addition_details": null,
+                "update_details": "Fix weight only quantization in the model_utils.py file.",
+                "replacement_info": null,
+                "removal_details": null
+            }
+        ]
+    },
+    "120": {
+        "repository": "github.com/PaddlePaddle/PaddleNLP",
+        "text": [
+            {
+                "repo_url": "github.com/PaddlePaddle/PaddleNLP",
+                "filepath": "paddlenlp/transformers/model_utils.py",
+                "commit_date": "2023-08-24T13:19:31Z",
+                "message_summary": "Remove llm-awq dependency",
+                "removal_details": "Removed llm-awq dependency due to project requirements"
+            }
+        ]
+    },
+    "129": {
+        "repository": "github.com/PaddlePaddle/PaddleNLP",
+        "text": [
+            {
+                "repo_url": "github.com/PaddlePaddle/PaddleNLP",
+                "filepath": "paddlenlp/transformers/model_utils.py",
+                "commit_date": "2023-05-12T02:55:47Z",
+                "message_summary": "[lora prefix tuning]unify dtype (#5894)",
+                "ptm_addition_details": null,
+                "update_details": "Unify dtype and fix dtype"
+            }
+        ]
+    },
+    "132": {
+        "repository": "github.com/PaddlePaddle/PaddleNLP",
+        "text": [
+            {
+                "repo_url": "github.com/PaddlePaddle/PaddleNLP",
+                "filepath": "paddlenlp/transformers/model_utils.py",
+                "commit_date": "2023-04-13T10:50:04Z",
+                "message_summary": "Transformers upgrade: deprecate legacy from_pretrained and save_pretrained (#5307)",
+                "update_details": "Deprecation of legacy from_pretrained and save_pretrained functions."
+            }
+        ]
+    },
+    "142": {
+        "repository": "github.com/PaddlePaddle/PaddleNLP",
+        "text": [
+            {
+                "repo_url": "github.com/PaddlePaddle/PaddleNLP",
+                "filepath": "paddlenlp/transformers/model_utils.py",
+                "commit_date": "2022-11-02T12:27:12Z",
+                "message_summary": "[BugFix] fix typo",
+                "update_details": "Fixed a typo in the code.",
+                "tasks": [
+                    "BugFix"
+                ]
+            }
+        ]
+    },
+    "143": {
+        "repository": "github.com/PaddlePaddle/PaddleNLP",
+        "text": [
+            {
+                "repo_url": "github.com/PaddlePaddle/PaddleNLP",
+                "filepath": "model_zoo/ernie-1.0/finetune/run_qa.py",
+                "commit_date": "2023-02-15T11:52:38Z",
+                "message_summary": "Deprecate Distutils",
+                "update_details": "Styles fixed and lint issues resolved."
+            }
+        ]
+    },
+    "152": {
+        "repository": "github.com/PaddlePaddle/PaddleNLP",
+        "text": [
+            {
+                "repo_url": "github.com/PaddlePaddle/PaddleNLP",
+                "filepath": "paddlenlp/transformers/processing_utils.py",
+                "commit_date": "2022-10-13T11:33:31Z",
+                "message_summary": "[NEW Features] feature_extraction and processor support from_pretrained (#3453)",
+                "ptm_addition_details": {
+                    "name": "feature_extraction and processor support",
+                    "version": "from_pretrained"
+                }
+            }
+        ]
+    },
+    "153": {
+        "repository": "github.com/PaddlePaddle/PaddleNLP",
+        "text": [
+            {
+                "repo_url": "github.com/PaddlePaddle/PaddleNLP",
+                "filepath": "model_zoo/ernie-1.0/finetune/run_seq_cls.py",
+                "commit_date": "2022-12-28T07:10:29Z",
+                "message_summary": "[Trainer] Add Memory Tracer (#4181)",
+                "ptm_addition_details": {
+                    "name": "Memory Tracer"
+                }
+            }
+        ]
+    },
+    "166": {
+        "repository": "github.com/PaddlePaddle/PaddleNLP",
+        "text": [
+            {
+                "repo_url": "github.com/PaddlePaddle/PaddleNLP",
+                "filepath": "model_zoo/ernie-1.0/preprocess/create_pretraining_data.py",
+                "commit_date": "2024-02-29T04:42:12Z",
+                "message_summary": "[DATA] Remove repeated chars during preprocessing (#7739)",
+                "update_details": "Added functionality to remove repeated characters during preprocessing. Updated the maximum length of repeated characters."
+            }
+        ]
+    },
+    "193": {
+        "repository": "github.com/PaddlePaddle/PaddleNLP",
+        "text": [
+            {
+                "repo_url": "github.com/PaddlePaddle/PaddleNLP",
+                "filepath": "tests/transformers/gpt/test_modeling.py",
+                "commit_date": "2023-02-01T07:05:46Z",
+                "message_summary": "Fix tqdm in downloader",
+                "update_details": "Fixed tqdm in downloader by adjusting rtol to atol"
+            }
+        ]
+    },
+    "218": {
+        "repository": "github.com/PaddlePaddle/PaddleSlim",
+        "text": [
+            {
+                "repo_url": "github.com/PaddlePaddle/PaddleSlim",
+                "filepath": "demo/dygraph/dist/bert/task_distill.py",
+                "commit_date": "2021-09-17T08:07:22Z",
+                "message_summary": "update distill",
+                "ptm_addition_details": null,
+                "update_details": "Polished the distillation process for BERT model"
+            }
+        ]
+    },
+    "227": {
+        "repository": "github.com/PaddlePaddle/PaddleFleetX",
+        "text": [
+            {
+                "repo_url": "github.com/PaddlePaddle/PaddleFleetX",
+                "filepath": "ppfleetx/data/dataset/gpt_dataset.py",
+                "commit_date": "2022-09-15T08:30:54Z",
+                "message_summary": "move auto_parallel to ppfleetx (#715",
+                "update_details": "mv auto\n\n* fix bug of auto"
+            }
+        ]
+    },
+    "287": {
+        "repository": "github.com/PaddlePaddle/PaddleFleetX",
+        "text": [
+            {
+                "repo_url": "github.com/PaddlePaddle/PaddleFleetX",
+                "filepath": "ppfleetx/models/language_model/language_module.py",
+                "commit_date": "2022-09-15T14:53:41Z",
+                "message_summary": "[GPT] Fix quantization of GPT mp (#728)",
+                "update_details": "Fix quantization"
+            }
+        ]
+    },
+    "311": {
+        "repository": "github.com/PaddlePaddle/InterpretDL",
+        "text": [
+            {
+                "repo_url": "github.com/PaddlePaddle/InterpretDL",
+                "filepath": "tests/interpreter/test_nlp.py",
+                "commit_date": "2022-06-09T09:09:26Z",
+                "message_summary": "nlp for 2.3.3 and later: changed to ernie-2.0-base-en",
+                "ptm_addition_details": {
+                    "name": "ernie-2.0-base-en"
+                }
+            }
+        ]
+    },
+    "326": {
+        "repository": "github.com/PaddlePaddle/PaddleMIX",
+        "text": [
+            {
+                "repo_url": "github.com/PaddlePaddle/PaddleMIX",
+                "filepath": "ppdiffusers/ppdiffusers/pipelines/stable_diffusion_xl/pipeline_stable_diffusion_xl.py",
+                "commit_date": "2023-12-12T06:03:11Z",
+                "message_summary": "feat: add sdxl fastdeploy support (#338)",
+                "ptm_addition_details": {
+                    "name": "sdxl",
+                    "version": "unknown",
+                    "problem_addressed": "fastdeploy"
+                }
+            }
+        ]
+    },
+    "381": {
+        "repository": "github.com/PaddlePaddle/PaddleMIX",
+        "text": [
+            {
+                "repo_url": "github.com/PaddlePaddle/PaddleMIX",
+                "filepath": "ppdiffusers/ppdiffusers/pipelines/stable_diffusion_xl/pipeline_fastdeploy_stable_diffusion_xl.py",
+                "commit_date": "2023-12-12T06:03:11Z",
+                "message_summary": "feat: add sdxl fastdeploy support (#338)",
+                "ptm_addition_details": {
+                    "name": "sdxl",
+                    "version": "not specified",
+                    "problem_addressed": "fastdeploy"
+                }
+            }
+        ]
+    },
+    "382": {
+        "repository": "github.com/PaddlePaddle/PaddleMIX",
+        "text": [
+            {
+                "repo_url": "github.com/PaddlePaddle/PaddleMIX",
+                "filepath": "ppdiffusers/ppdiffusers/pipelines/stable_diffusion_xl/pipeline_fastdeploy_stable_diffusion_xl_inpaint.py",
+                "commit_date": "2023-12-12T06:03:11Z",
+                "message_summary": "feat: add sdxl fastdeploy support (#338)",
+                "ptm_addition_details": {
+                    "name": "sdxl",
+                    "version": "not specified",
+                    "problem_addressed": "fastdeploy"
+                }
+            }
+        ]
+    },
+    "383": {
+        "repository": "github.com/PaddlePaddle/PaddleMIX",
+        "text": [
+            {
+                "repo_url": "github.com/PaddlePaddle/PaddleMIX",
+                "filepath": "ppdiffusers/ppdiffusers/pipelines/stable_diffusion_xl/pipeline_fastdeploy_stable_diffusion_xl_img2img.py",
+                "commit_date": "2023-12-12T06:03:11Z",
+                "message_summary": "feat: add sdxl fastdeploy support (#338)",
+                "ptm_addition_details": {
+                    "name": "sdxl",
+                    "version": "N/A",
+                    "problem_addressed": "Fastdeploy support"
+                }
+            }
+        ]
+    },
+    "434": {
+        "repository": "github.com/isLinXu/PaddleNavigation",
+        "text": [
+            {
+                "repo_url": "github.com/isLinXu/PaddleNavigation",
+                "filepath": "PaddleNLP/examples/few_shot/efl/train.py",
+                "commit_date": "2022-08-17T06:57:25Z",
+                "message_summary": "Added PaddleNLP-2.3.5",
+                "ptm_addition_details": {
+                    "name": "PaddleNLP",
+                    "version": "2.3.5"
+                }
+            }
+        ]
+    },
+    "437": {
+        "repository": "github.com/isLinXu/PaddleNavigation",
+        "text": [
+            {
+                "repo_url": "github.com/isLinXu/PaddleNavigation",
+                "filepath": "PaddleNLP/paddlenlp/transformers/model_utils.py",
+                "commit_date": "2022-08-17T06:57:25Z",
+                "message_summary": "Add PaddleNLP-2.3.5",
+                "ptm_addition_details": {
+                    "name": "PaddleNLP",
+                    "version": "2.3.5"
+                }
+            }
+        ]
+    },
+    "441": {
+        "repository": "github.com/isLinXu/PaddleNavigation",
+        "text": [
+            {
+                "repo_url": "github.com/isLinXu/PaddleNavigation",
+                "filepath": "PaddleNLP/examples/language_model/bert/run_glue.py",
+                "commit_date": "2022-08-17T06:57:25Z",
+                "message_summary": "Added PaddleNLP-2.3.5",
+                "ptm_addition_details": {
+                    "name": "PaddleNLP",
+                    "version": "2.3.5"
+                }
+            }
+        ]
+    },
+    "445": {
+        "repository": "github.com/isLinXu/PaddleNavigation",
+        "text": [
+            {
+                "repo_url": "github.com/isLinXu/PaddleNavigation",
+                "filepath": "PaddleNLP/model_zoo/ernie-1.0/finetune/run_seq_cls.py",
+                "commit_date": "2022-08-17T06:57:25Z",
+                "message_summary": "1.add PaddleNLP-2.3.5",
+                "ptm_addition_details": {
+                    "name": "PaddleNLP-2.3.5"
+                }
+            }
+        ]
+    },
+    "447": {
+        "repository": "github.com/isLinXu/PaddleNavigation",
+        "text": [
+            {
+                "repo_url": "github.com/isLinXu/PaddleNavigation",
+                "filepath": "PaddleNLP/examples/language_model/gpt/run_pretrain_static.py",
+                "commit_date": "2022-08-17T06:57:25Z",
+                "message_summary": "Add PaddleNLP-2.3.5",
+                "ptm_addition_details": {
+                    "name": "PaddleNLP",
+                    "version": "2.3.5"
+                }
+            }
+        ]
+    },
+    "448": {
+        "repository": "github.com/isLinXu/PaddleNavigation",
+        "text": [
+            {
+                "repo_url": "github.com/isLinXu/PaddleNavigation",
+                "filepath": "PaddleNLP/model_zoo/gpt/data_tools/create_pretraining_data.py",
+                "commit_date": "2022-08-17T06:57:25Z",
+                "message_summary": "Add PaddleNLP-2.3.5",
+                "ptm_addition_details": {
+                    "name": "PaddleNLP",
+                    "version": "2.3.5"
+                }
+            }
+        ]
+    },
+    "453": {
+        "repository": "github.com/isLinXu/PaddleNavigation",
+        "text": [
+            {
+                "repo_url": "github.com/isLinXu/PaddleNavigation",
+                "filepath": "PaddleNLP/examples/language_model/gpt/data_tools/create_pretraining_data.py",
+                "commit_date": "2022-08-17T06:57:25Z",
+                "message_summary": "Add PaddleNLP-2.3.5",
+                "ptm_addition_details": {
+                    "name": "PaddleNLP",
+                    "version": "2.3.5"
+                }
+            }
+        ]
+    },
+    "454": {
+        "repository": "github.com/isLinXu/PaddleNavigation",
+        "text": [
+            {
+                "repo_url": "github.com/isLinXu/PaddleNavigation",
+                "filepath": "PaddleNLP/examples/language_model/moe/data_tools/create_pretraining_data.py",
+                "commit_date": "2022-08-17T06:57:25Z",
+                "message_summary": "Add PaddleNLP-2.3.5",
+                "ptm_addition_details": {
+                    "name": "PaddleNLP",
+                    "version": "2.3.5"
+                }
+            }
+        ]
+    }
+}

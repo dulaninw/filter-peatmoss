@@ -1,0 +1,54 @@
+{
+    "2": {
+        "repository": "github.com/langchain-ai/langchain",
+        "text": [
+            {
+                "repo_url": "github.com/langchain-ai/langchain",
+                "filepath": "libs/experimental/langchain_experimental/open_clip/open_clip.py",
+                "commit_date": "2023-12-05T21:36:38Z",
+                "message_summary": "Multi-modal RAG template",
+                "ptm_addition_details": {
+                    "name": "OpenCLIP, GPT-4V"
+                }
+            }
+        ]
+    },
+    "3": {
+        "repository": "github.com/chroma-core/chroma",
+        "text": [
+            {
+                "repo_url": "github.com/chroma-core/chroma",
+                "filepath": "chromadb/utils/embedding_functions.py",
+                "commit_date": "2023-11-07T18:00:00Z",
+                "message_summary": "Revert \"[ENH] Multimodal Embeddings\" (#1344)",
+                "update_details": "Reverts chroma-core/chroma#1293"
+            }
+        ]
+    },
+    "72": {
+        "repository": "github.com/mlfoundations/open_clip",
+        "text": [
+            {
+                "repo_url": "github.com/mlfoundations/open_clip",
+                "filepath": "tests/util_test.py",
+                "commit_date": "2022-11-20T00:03:34Z",
+                "message_summary": "create HF models without pretrained weights",
+                "update_details": "HF model inference tests on random models"
+            }
+        ]
+    },
+    "225": {
+        "repository": "github.com/pharmapsychotic/clip-interrogator",
+        "text": [
+            {
+                "repo_url": "github.com/pharmapsychotic/clip-interrogator",
+                "filepath": "clip_interrogator/clip_interrogator.py",
+                "commit_date": "2023-03-20T03:43:46Z",
+                "message_summary": "Support for many different caption models",
+                "ptm_addition_details": {
+                    "name": "blip-base, blip-large, blip2-2.7b, blip2-flan-t5-xl, git-large-coco"
+                }
+            }
+        ]
+    }
+}
