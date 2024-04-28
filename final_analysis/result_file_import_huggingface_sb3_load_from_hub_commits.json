@@ -1,0 +1,121 @@
+[
+    {
+        "message_summary": "Use black for code formatting",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Remove deprecated policies",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "Remove deprecated policy format",
+        "text": [
+            {
+                "Deprecation and Replacement": "Remove deprecated policies"
+            }
+        ]
+    },
+    {
+        "message_summary": "Hotfix: check for null model",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "HardCodedPolicy: return NumPy arrays",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "Create a registry for policies",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "Work around Stable Baselines bug",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Work around Stable Baselines bug"
+            }
+        ]
+    },
+    {
+        "message_summary": "Consistent interface for loading/saving policies",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Consistent interface for loading/saving policies"
+            }
+        ]
+    }
+]

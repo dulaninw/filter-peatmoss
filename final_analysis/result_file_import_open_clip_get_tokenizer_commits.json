@@ -1,0 +1,2211 @@
+[
+    {
+        "message_summary": "Open-sourcing the code for \"CLIP as RNN: Segment Countless Visual Concepts without Training Endeavor\".",
+        "ptm_name": "CLIP as RNN",
+        "ptm_version": "N/A",
+        "ptm_problem_addressed": "Segment Countless Visual Concepts without Training Endeavor",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Multi-modal RAG template (#14186)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": {
+                    "repo_url": "github.com/langchain-ai/langchain",
+                    "filepath": "libs/experimental/langchain_experimental/open_clip/open_clip.py",
+                    "commit_date": "2023-12-05T21:36:38Z",
+                    "message_summary": "Multi-modal RAG template (#14186)",
+                    "ptm_addition_details": [
+                        {
+                            "name": "OpenCLIP",
+                            "version": "N/A",
+                            "problem_addressed": "Multi-modal embeddings"
+                        },
+                        {
+                            "name": "GPT-4V",
+                            "version": "N/A",
+                            "problem_addressed": "N/A"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "message_summary": "Update Open CLIP embd (#14155)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Prior default model required a large amount of RAM and often crashed Jupyter notebook kernel",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Performance Improvements": "Prior default model required a large amount of RAM and often crashed Jupyter notebook kernel"
+            },
+            {
+                "Deprecation and Replacement": "Replacement of a Pre Trained Model:"
+            },
+            {
+                "Deprecation and Replacement": "Removal of a Pre Trained model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add Chroma multimodal cookbook (#12952)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": {},
+                "Task Specificity": {},
+                "Community and Collaboration": {},
+                "Maintenance": {},
+                "Compliance and Standards": {},
+                "Performance Improvements": {},
+                "Compatibility": {},
+                "Deprecation and Replacement": {},
+                "Project Evolution": {},
+                "Technical Debt and Simplification": {}
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Gemini (#1520)",
+        "ptm_name": "Google Gemini",
+        "ptm_version": "N/A",
+        "ptm_problem_addressed": "Embedding function",
+        "update_details": "An embedding function for Google Gemini and an RAG chat example were added.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "Remove redundant check for \"requests\" module",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Remove redundant check for \"requests\" module"
+            }
+        ]
+    },
+    {
+        "message_summary": "Revert \"[ENH] Multimodal Embeddings\" (#1344)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Reverts chroma-core/chroma#1293",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Deprecation and Replacement": "Removal of a Pre Trained model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add Text2VecEmbeddingFunction for Chinese sentence embedding.",
+        "ptm_name": "Text2VecEmbeddingFunction",
+        "ptm_version": "",
+        "ptm_problem_addressed": "Chinese sentence embedding",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of a Text2VecEmbeddingFunction for Chinese sentence embedding."
+            }
+        ]
+    },
+    {
+        "message_summary": "Add Google PaLM embedding function.",
+        "ptm_name": "Google PaLM",
+        "ptm_version": "N/A",
+        "ptm_problem_addressed": "N/A",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "N/A"
+            },
+            {
+                "Task Specificity": "N/A"
+            },
+            {
+                "Community and Collaboration": "N/A"
+            },
+            {
+                "Maintenance": "N/A"
+            },
+            {
+                "Compliance and Standards": "N/A"
+            },
+            {
+                "Performance Improvements": "N/A"
+            },
+            {
+                "Compatibility": "N/A"
+            },
+            {
+                "Deprecation and Replacement": "N/A"
+            },
+            {
+                "Project Evolution": "N/A"
+            },
+            {
+                "Technical Debt and Simplification": "N/A"
+            }
+        ]
+    },
+    {
+        "message_summary": "Adds a robust property-based testing suite to Chroma.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "Make api_key in OpenAIEmbeddingFunction optional",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "The commit makes the api_key in OpenAIEmbeddingFunction optional and ensures that the optional api_key functionality works correctly. Early error handling was also implemented.",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Early error handling was implemented."
+            }
+        ]
+    },
+    {
+        "message_summary": "[bugfix] Ensure Openai batch embeddings are sorted by index (#344)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Ensure openai batch embeddings are sorted by index. Use lambda",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "Adds option to pass compute device like cpu, cuda, cuda:1 to SentenceTransformerEmbeddingFunction",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Adds option to pass compute device like cpu, cuda, cuda:1 to SentenceTransformerEmbeddingFunction"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add flake8 linter, address linter issues",
+        "ptm_name": "flake8",
+        "ptm_version": "configured to run with black in vscode",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "added embedding function for the Instructor models.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Task Specificity": "added embedding function for the Instructor models."
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "add wrapper for hugging faces embedding api",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "addition to the repository"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add T5 as an option in comments",
+        "ptm_name": "T5",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Add T5 as an option in comments"
+            }
+        ]
+    },
+    {
+        "message_summary": "Unified error messages (#199)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Unified error messages"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add support for cohere embeddings",
+        "ptm_name": "cohere",
+        "ptm_version": "unknown",
+        "ptm_problem_addressed": "Support for cohere embeddings",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": {
+                    "repo_url": "github.com/chroma-core/chroma",
+                    "filepath": "chromadb/utils/embedding_functions.py",
+                    "commit_date": "2023-02-17T18:06:08Z",
+                    "message_summary": "Add support for cohere embeddings",
+                    "ptm_addition_details": {
+                        "name": "cohere",
+                        "version": "unknown",
+                        "problem_addressed": "Support for cohere embeddings"
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "message_summary": "Remove newlines to improve performance",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Performance Improvements": "Remove newlines to improve performance"
+            }
+        ]
+    },
+    {
+        "message_summary": "Adding OpenAI embedding functions",
+        "ptm_name": "OpenAI",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Adding OpenAI embedding functions"
+            }
+        ]
+    },
+    {
+        "message_summary": "Improve error handling and API error codes",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "Improve image download validation and resource management",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Improve image download validation and resource management"
+            }
+        ]
+    },
+    {
+        "message_summary": "Remove autocast for CPU",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "Autocast for CPU was removed from the codebase.",
+        "text": [
+            {
+                "Maintenance": "Autocast for CPU was removed from the codebase."
+            }
+        ]
+    },
+    {
+        "message_summary": "Update clip_utils.py",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Custom open_clip models were updated to use open_clip base tokenizer instead of clip.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "Fp16 clip update",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Fp16 model was updated and tests were added.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Performance Improvements": "Fp16 clip update and tests added"
+            }
+        ]
+    },
+    {
+        "message_summary": "Broaden catch download error",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "RequestException is excepted, which is the super class of all requests errors. Fixed unit tests",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fixed unit tests"
+            }
+        ]
+    },
+    {
+        "message_summary": "change downloading path for clip",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Separate clip and open_clip load",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Separate clip and open_clip load"
+            }
+        ]
+    },
+    {
+        "message_summary": "Separate clip and open_clip load",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Separate clip and open_clip load"
+            }
+        ]
+    },
+    {
+        "message_summary": "add generic clip model tests",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition to the repository"
+            }
+        ]
+    },
+    {
+        "message_summary": "only load visual in clip",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Involves adapting pre-trained models to function optimally with newer systems or software versions, ensuring forward compatibility."
+            }
+        ]
+    },
+    {
+        "message_summary": "only load visual in clip",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Involves integrating new pre-trained models into existing systems, focusing on seamless incorporation and initial feature enhancement for these models."
+            }
+        ]
+    },
+    {
+        "message_summary": "add unit test for multilingual clip",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Task Specificity": "add unit test for multilingual clip"
+            }
+        ]
+    },
+    {
+        "message_summary": "use UnidentifiedImageError if it cannot be loaded from URL source",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Use UnidentifiedImageError if it cannot be loaded from URL source"
+            }
+        ]
+    },
+    {
+        "message_summary": "Check HTTP status for remote image paths",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Check HTTP status for remote image paths"
+            }
+        ]
+    },
+    {
+        "message_summary": "using clip model from open_clip",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "using clip model from open_clip"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Fix word pubicly -> publicly",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to fixing a word in the codebase."
+            }
+        ]
+    },
+    {
+        "message_summary": "Improve error handling and API error codes",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "[TinyCLIP] Inference Example (#196)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "create HF models without pretrained weights",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "HF model inference tests on random models",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Commit involves maintenance activities such as parallelizing CI tests, disabling slow macOS testing, fixing a typo, and updating util_test.py to only import argparse if called as a script."
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Task Specificity": "inference testing using pre-generated data"
+            }
+        ]
+    },
+    {
+        "message_summary": "None",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Implement simple training test.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "Fetch from Hugging Face Hub using hf_hub: prefix",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Fetch from Hugging Face Hub using hf_hub: prefix"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add checksum verification for pretrained model weights downloaded from mlfoundations github releases url",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to adding checksum verification for pretrained model weights downloaded from mlfoundations github releases URL."
+            }
+        ]
+    },
+    {
+        "message_summary": "Unify the model name as MODEL_ID in related containers and notebooks.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Unify the model name as MODEL_ID in related containers and notebooks."
+            }
+        ]
+    },
+    {
+        "message_summary": "copy vertex_vision_model_garden as vertex_model_garden",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "follow_anything stop once it finishes reading offline video",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Code for detect, track, and follow + code for creating query features using DINO",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Code for detect, track, and follow + code for creating query features using DINO"
+            }
+        ]
+    },
+    {
+        "message_summary": "Redo imports from diffusers to satisfy Pylance",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Redo imports from diffusers to satisfy Pylance"
+            }
+        ]
+    },
+    {
+        "message_summary": "Purge rich.progress and replace it with tqdm, queue progress added",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Purge rich.progress and replace it with tqdm, queue progress added"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Improve metrics compute",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Compute metrics once. Compute semantic iou and similarity on step. Ensure batch dim in `SentenceScore`",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Performance Improvements": "Improve metrics compute"
+            }
+        ]
+    },
+    {
+        "message_summary": "TAO 5.2 Release - PyTorch",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Update of a Pre Trained Model:"
+            },
+            {
+                "Deprecation and Replacement": "Replacement of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "load HPSv2 with the correct precision",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add lerf and related dependency",
+        "ptm_name": "lerf",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of lerf and related dependency"
+            }
+        ]
+    },
+    {
+        "message_summary": "[TinyCLIP] inference auto weight inheritance",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "This is the 1st commit",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Update of a Pre Trained Model:"
+            },
+            {
+                "Integration Patterns": "Replacement of a Pre Trained Model:"
+            },
+            {
+                "Integration Patterns": "Removal of a Pre Trained model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "for conditional training, complete the auxiliary clip contrastive loss",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Task Specificity": "Complete the auxiliary clip contrastive loss"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "clean solution to reconstruction loss from any fmap resolution in the discriminator",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "clean solution to reconstruction loss from any fmap resolution in the discriminator"
+            }
+        ]
+    },
+    {
+        "message_summary": "make some headway into vision-aided gan loss",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "initial release",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "initial release"
+            }
+        ]
+    },
+    {
+        "message_summary": "#51 update package and copyright info",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Merge the clip model code from leptonai/lepton to the current repository.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Merge the clip model code from leptonai/lepton to the current repository."
+            }
+        ]
+    },
+    {
+        "message_summary": "Add clip as an example",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Support for many different caption models",
+        "ptm_name": "blip-base, blip-large, blip2-2.7b, blip2-flan-t5-xl, git-large-coco",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Support for many different caption models"
+            }
+        ]
+    },
+    {
+        "message_summary": "Expose LabelTable and load_list and give example in README how they can be used to rank your own list of terms.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Expose LabelTable and load_list in clip_interrogator.py",
+                "Task Specificity": "Provide example in README on how to rank a list of terms using LabelTable and load_list"
+            }
+        ]
+    },
+    {
+        "message_summary": "Move definition of clip_model_name",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Move definition of clip_model_name"
+            }
+        ]
+    },
+    {
+        "message_summary": "Minor fix to BLIP offloading",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Minor fix to BLIP offloading"
+            }
+        ]
+    },
+    {
+        "message_summary": "More safetensor, download, and VRAM improvements",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Performance Improvements": "More safetensor, download, and VRAM improvements"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Add the negative cache URL",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of a new integration pattern"
+            }
+        ]
+    },
+    {
+        "message_summary": "Updates related to Hugging Face CI-Preprocess repository",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Stored cached embeddings in safetensor format. Updated Hugging Face CI-Preprocess repository. Version bumped to 0.5.0",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Stored cached embeddings in safetensor format. Updated Hugging Face CI-Preprocess repository. Version bumped to 0.5.0"
+            }
+        ]
+    },
+    {
+        "message_summary": "Bunch of updates! (#40)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Auto download the cache files from Hugging Face, experimental negative prompt mode, slight quality and performance improvement to best mode, analyze tab in Colab, and run_gradio to get a table of ranked terms",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Auto download the cache files from Hugging Face"
+            },
+            {
+                "Task Specificity": "Experimental negative prompt mode, slight quality and performance improvement to best mode, analyze tab in Colab, and run_gradio to get a table of ranked terms"
+            }
+        ]
+    },
+    {
+        "message_summary": "Make the BLIP model configurable, can set config.blip_model_type now to 'base' or 'large'",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Addresses the adaptation of pre-trained models to function optimally with newer systems or software versions, ensuring forward compatibility."
+            }
+        ]
+    },
+    {
+        "message_summary": "Update to nicer BLIP packaging",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update to nicer BLIP packaging"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix for running on CPU",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix for running on CPU"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Default to ViT-L, lower intermediate count for Colab with ViT-H",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Default to ViT-L, lower intermediate count for Colab with ViT-H"
+            }
+        ]
+    },
+    {
+        "message_summary": "Ability to swap CLIP models (takes about 5s for ViTL and 10s for ViTH), update Replicate cog",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Update of a Pre Trained Model:"
+            },
+            {
+                "Maintenance": "Replacement of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "More fixes, improvement and cleanup.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "More fixes, improvement and cleanup."
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Shuffle BLIP back to system RAM to help with 16GB Colab",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Performance Improvements": "Shuffle BLIP back to system RAM to help with 16GB Colab"
+            }
+        ]
+    },
+    {
+        "message_summary": "First test version with OpenCLIP and ViTH!",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "First test version with OpenCLIP and ViTH!"
+            }
+        ]
+    },
+    {
+        "message_summary": "Update notebook batch processing with option to rename files so can be used with [filewords] in Dreambooth!",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "New `quiet` config option added so CLIP Interrogator doesn't print and tqdm. Added `max_flavors` option to each interrogate method.",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "Gradio version plus classic and fast modes",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Split in one file per model.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Split in one file per model."
+            }
+        ]
+    },
+    {
+        "message_summary": "highlight updates, fix typo, add regularization images",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "highlight updates, fix typo, add regularization images"
+            }
+        ]
+    },
+    {
+        "message_summary": "test: packages, cfgs, and integrity of the repo",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "Integrated the ZS-Ref implementation",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": {},
+                "Task Specificity": {},
+                "Community and Collaboration": {},
+                "Maintenance": {},
+                "Compliance and Standards": {},
+                "Performance Improvements": {},
+                "Compatibility": {},
+                "Deprecation and Replacement": {},
+                "Project Evolution": {},
+                "Technical Debt and Simplification": {}
+            }
+        ]
+    },
+    {
+        "message_summary": "feat!: new configurable framework for vlsm",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fixed model download and path",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fixed model download and path"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Style fix"
+            }
+        ]
+    },
+    {
+        "message_summary": "Update paths+configs to nerfstudio 1.0 version",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "code for using new viewer with custom ViewerText",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Move `reproduce` to `examples` root",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Move `reproduce` to `examples` root"
+            }
+        ]
+    },
+    {
+        "message_summary": "add sem seg evaluation script on replica",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Addition of a new script for semantic segmentation evaluation on a replica system."
+            }
+        ]
+    },
+    {
+        "message_summary": "Missed the exp() on logit scale for OpenCLIP update (#349)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Performance Improvements": "Missed the exp() on logit scale for OpenCLIP update (#349)"
+            }
+        ]
+    },
+    {
+        "message_summary": "Update OpenCLIP to latest version, bump other reqs",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Added support for sigmoid scores for SigLIP models",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to updating OpenCLIP to the latest version and adding support for sigmoid scores for SigLIP models."
+            }
+        ]
+    },
+    {
+        "message_summary": "Initial open_clip zero-shot support",
+        "ptm_name": "OpenAI CLIP",
+        "ptm_version": "Zero-shot",
+        "ptm_problem_addressed": "",
+        "update_details": "Test working locally but docker failing",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": {
+                    "repo_url": "github.com/huggingface/api-inference-community",
+                    "filepath": "docker_images/open_clip/app/pipelines/zero_shot_image_classification.py",
+                    "commit_date": "2023-04-18T15:17:20Z",
+                    "message_summary": "Initial open_clip zero-shot support",
+                    "ptm_addition_details": {
+                        "name": "OpenAI CLIP",
+                        "version": "Zero-shot"
+                    }
+                }
+            },
+            {
+                "Maintenance": {
+                    "update_details": "Test working locally but docker failing"
+                }
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Unrelated": "No significant Pre-Trained Models activities mentioned."
+            }
+        ]
+    },
+    {
+        "message_summary": "Update HF evalset cache dir and download script",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "HF evalset cache and download script were updated. Cache directory was fixed.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Cache directory was fixed."
+            }
+        ]
+    },
+    {
+        "message_summary": "refactor get clip feature function to be batched",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Refactor get clip feature function to be batched"
+            }
+        ]
+    },
+    {
+        "message_summary": "added yolo world detection option",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Unrelated": "No significant Pre-Trained Models activities mentioned."
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Update HF evalset cache dir and download script",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "HF evalset cache and download script were updated. Cache directory was fixed.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Cache directory was fixed."
+            }
+        ]
+    },
+    {
+        "message_summary": "Add a function that can accept OpenAI's OpenAI CLIP model and a list of prompts as strings, returning the C covariance matrix.",
+        "ptm_name": "OpenAI CLIP",
+        "ptm_version": "N/A",
+        "ptm_problem_addressed": "Calculating the C covariance matrix",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of a function to accept OpenAI's OpenAI CLIP model and prompts for calculating the C covariance matrix."
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "added vision to all models",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "added vision to all models"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Super Update",
+        "ptm_name": "CLIP v2.1 interrogator",
+        "ptm_version": "2.1",
+        "ptm_problem_addressed": "Image and text processing",
+        "update_details": "Added WD14 tagger, CLIP v2.1 interrogator, filtering options for tags, don't rename option. Updated ReallySafe and possibly bumped BLIP version. Removed split image options. Completely overhauled smartprocess.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Initial update",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Initial update"
+            }
+        ]
+    },
+    {
+        "message_summary": "captioning: allow setting params",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "Add CLIP similarity if caption exists + add autocast in FrameMapper",
+        "ptm_name": "CLIP",
+        "ptm_version": "latest",
+        "ptm_problem_addressed": "Adding similarity if caption exists",
+        "update_details": "Batch normalization of caption embeddings",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of CLIP model for similarity calculation if caption exists and autocast in FrameMapper."
+            },
+            {
+                "Maintenance": "Batch normalization of caption embeddings."
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Add CoCa captioning"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add unet_onnx_parser, clip score, and README",
+        "ptm_name": "AIE-SD",
+        "ptm_version": "unspecified",
+        "ptm_problem_addressed": "Text-to-Image",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of unet_onnx_parser, clip score, and README"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "PDM, Ruff, Black - build WIP",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Initial submission of OpenCLIP for PyTorch original source code",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Initial submission of OpenCLIP for PyTorch original source code"
+            }
+        ]
+    },
+    {
+        "message_summary": "Initial submission of OpenCLIP for PyTorch",
+        "ptm_name": "OpenCLIP",
+        "ptm_version": "Not specified",
+        "ptm_problem_addressed": "Integration of OpenCLIP for PyTorch",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Commit log is related to the addition of new integration patterns."
+            }
+        ]
+    },
+    {
+        "message_summary": "Refactoring in preparation for RADIOv2 release (#25)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Refactoring"
+            }
+        ]
+    },
+    {
+        "message_summary": "pipeline, image, text, => midas =>",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "pipeline, image, text, => midas =>"
+            }
+        ]
+    },
+    {
+        "message_summary": "Initial version of StoryBench code.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Initial version of StoryBench code."
+            }
+        ]
+    },
+    {
+        "message_summary": "add token download to notebook",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "add token download to notebook"
+            }
+        ]
+    },
+    {
+        "message_summary": "Refactor to make imports cleaner",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Refactor to make imports cleaner"
+            }
+        ]
+    },
+    {
+        "message_summary": "Added caption matching script and example",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Added caption matching script and example"
+            }
+        ]
+    },
+    {
+        "message_summary": "Added datasets and sample metadata files",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Added datasets and sample metadata files"
+            }
+        ]
+    },
+    {
+        "message_summary": "Updated for version 2 on arxiv",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Updated for version 2 on arxiv"
+            }
+        ]
+    },
+    {
+        "message_summary": "Updated for version 2 on arxiv",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Updated for version 2 on arxiv"
+            }
+        ]
+    }
+]

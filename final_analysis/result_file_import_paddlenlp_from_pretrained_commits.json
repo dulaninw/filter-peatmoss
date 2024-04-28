@@ -1,0 +1,5164 @@
+[
+    {
+        "message_summary": "Cache tokenizer in TransformerModule",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Cache tokenizer in TransformerModule"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add return_prob in text classification module",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition to the repository"
+            }
+        ]
+    },
+    {
+        "message_summary": "Improve the model export interface.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Improve the model export interface."
+            }
+        ]
+    },
+    {
+        "message_summary": "Add dataset, module task, and demo of text-matching",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Integration Patterns": "Add dataset, module task, and demo of text-matching"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix the compatibility error caused by the upgrade of PretrainedTokenizer",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Fix the compatibility error caused by the upgrade of PretrainedTokenizer"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add compatible code for paddlehub.module.nlp_module.DataFormatError",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Add compatible code for paddlehub.module.nlp_module.DataFormatError"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add embedding finetune demo",
+        "ptm_name": "embedding seq-cls finetune demo",
+        "ptm_version": "N/A",
+        "ptm_problem_addressed": "N/A",
+        "update_details": "Update api and documentation for pad_sequence and trunc_sequence",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of a new pre-trained model demo for embedding finetune."
+            },
+            {
+                "Maintenance": "Update of API and documentation for pad_sequence and trunc_sequence."
+            }
+        ]
+    },
+    {
+        "message_summary": "Add text processing of token-cls task in predict method",
+        "ptm_name": "N/A",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Reset metric value at training and validation step. Added text processing of token-cls task in the predict method.",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Task Specificity": "Dedicated to developing and deploying task-specific enhancements or capabilities that exploit the unique strengths of pre-trained models."
+            }
+        ]
+    },
+    {
+        "message_summary": "Remove arg \"max_seq_len\" in get_embedding method",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Update get_embedding method by removing the argument \"max_seq_len\"",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update get_embedding method by removing the argument \"max_seq_len\""
+            }
+        ]
+    },
+    {
+        "message_summary": "Remove arg \"batch_size\" in get_embedding method",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "The commit removed the argument \"batch_size\" in the get_embedding method.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "The commit removed the argument \"batch_size\" in the get_embedding method."
+            }
+        ]
+    },
+    {
+        "message_summary": "Add predict_method for predict serving",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Add predict_method for predict serving"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add token-cls task and sequence labeling demo",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition to the repository"
+            }
+        ]
+    },
+    {
+        "message_summary": "add sequence classification with ernie/bert/roberta finetuned in dygraph",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition to the repository"
+            },
+            {
+                "Maintenance": "Update of a Pre-Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix the compatibility problem of text generation module",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Fix the compatibility problem of text generation module"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add text matching task (#735)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Task Specificity": "Dedicated to developing and deploying task-specific enhancements or capabilities that exploit the unique strengths of pre-trained models."
+            }
+        ]
+    },
+    {
+        "message_summary": "Update get embedding API for transformer module",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "surport ernie module v2",
+        "ptm_name": "ernie module v2",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Involves integrating new pre-trained models into existing systems, focusing on seamless incorporation and initial feature enhancement for these models."
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Add nlp module",
+        "ptm_name": "nlpmodule",
+        "ptm_version": "base",
+        "ptm_problem_addressed": "N/A",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of a new NLP module"
+            }
+        ]
+    },
+    {
+        "message_summary": "add BERTEmbeddingTask and BERTModule",
+        "ptm_name": "BERTModule",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of BERTModule and BERTEmbeddingTask"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix _cache_founf_inf (#7997)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix _cache_founf_inf (#7997)"
+            }
+        ]
+    },
+    {
+        "message_summary": "[Trainer] ignore_save_lr_and_optim (#7978)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "RuntimeTimer for the toolkit (#7913)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "RuntimeTimer for the toolkit"
+            }
+        ]
+    },
+    {
+        "message_summary": "[Improvement] fix logger level",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Logger level was fixed in the training arguments for better functionality.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Logger level was fixed in the training arguments for better functionality."
+            }
+        ]
+    },
+    {
+        "message_summary": "[CustomDevice] fix loading rng state on custom device",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "fix loading rng state on custom device"
+            }
+        ]
+    },
+    {
+        "message_summary": "[Bug Fix] fix allreduce tensor dtype",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Update int8 to int32",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fixing a bug related to tensor data type conversion."
+            },
+            {
+                "Compatibility": "Updating data type from int8 to int32 for compatibility with the system."
+            }
+        ]
+    },
+    {
+        "message_summary": "[unified checkpoint] Fix last checkpoint save (#7854)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Fixed the last checkpoint save and unified the config format.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fixed the last checkpoint save and unified the config format."
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Fix unified_checkpoint bug (#7770)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Fixed the use_unified_checkpoint definition. Added n1c2 test to ci_case.sh. Moved test_unified_checkpoint to tests. Added tests/trainer to testpaths. Removed unifiedcheckpoint case from ci_case.sh",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fixed the use_unified_checkpoint definition. Moved test_unified_checkpoint to tests."
+            },
+            {
+                "Compatibility": "Added n1c2 test to ci_case.sh. Added tests/trainer to testpaths. Removed unifiedcheckpoint case from ci_case.sh."
+            }
+        ]
+    },
+    {
+        "message_summary": "[llm]support lora merge (#7733)",
+        "ptm_name": "lora",
+        "ptm_version": "merge",
+        "ptm_problem_addressed": "Support for lora merge",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "Add mp delay_scale_loss function",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "A function for delay scaling loss in multi-processing was added. Useless code was removed.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "A function for delay scaling loss in multi-processing was added. Useless code was removed."
+            }
+        ]
+    },
+    {
+        "message_summary": "[Unified Checkpoint] Add unified checkpoint config",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Add unified checkpoint config"
+            }
+        ]
+    },
+    {
+        "message_summary": "Support release gradients for develop branch",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            },
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            },
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "PaddleNLP model integration for static conversion in training functionality",
+        "ptm_name": "PaddleNLP",
+        "ptm_version": "Unknown",
+        "ptm_problem_addressed": "Static conversion in training functionality",
+        "update_details": "Added to_static function for Trainer module to enable static conversion during training.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "PaddleNLP model integration for static conversion in training functionality"
+            },
+            {
+                "Maintenance": "Added to_static function for Trainer module to enable static conversion during training."
+            }
+        ]
+    },
+    {
+        "message_summary": "[Trainer] Remove args in set_seed function",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "[Trainer] Add memory info in log (#7587) (#7607)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Add memory info",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to adding memory info in log."
+            }
+        ]
+    },
+    {
+        "message_summary": "[Trainer] Remove dp group with group_sharded_parallel checks.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "[Dist Dataloader] Fix dist dataloader sampler (#7579)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to fixing the distributed dataloader sampler."
+            }
+        ]
+    },
+    {
+        "message_summary": "Add unified optimizer loader",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Integration Patterns": "Add unified optimizer loader"
+            }
+        ]
+    },
+    {
+        "message_summary": "[Trainer] Fix pp config usage.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix pp config usage."
+            }
+        ]
+    },
+    {
+        "message_summary": "[Trainer] Support sharding stage 3 for main grad (#7319)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Support sharding stage 3 for main grad"
+            }
+        ]
+    },
+    {
+        "message_summary": "[Trainer] Support dp for main_grad (#7293)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Support dp for main_grad"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Develop sharding reshard (#7399)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            },
+            {
+                "Deprecation and Replacement": "Replacement of a Pre Trained Model:"
+            },
+            {
+                "Deprecation and Replacement": "Removal of a Pre Trained model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Add qwen pretrain test",
+        "ptm_name": "qwen",
+        "ptm_version": "not specified",
+        "ptm_problem_addressed": "not specified",
+        "update_details": "Removed model_type",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Add unified checkpoint for hybrid parallel.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Add unified checkpoint for hybrid parallel."
+            }
+        ]
+    },
+    {
+        "message_summary": "[Trainer] Support iterable dataset with dist dataloader (#7208)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Support iterable dataset with dist dataloader"
+            }
+        ]
+    },
+    {
+        "message_summary": "[PEFT]support pp + lora (#7198)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Support for pp lora added and updated.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Support for pp lora added and updated."
+            }
+        ]
+    },
+    {
+        "message_summary": "[llm]support lora for quantizationlinear (#7138)",
+        "ptm_name": "lora",
+        "ptm_version": "quantizationloralinear",
+        "ptm_problem_addressed": "Support for quantization using lora",
+        "update_details": "Version compatibility improvements, addition of comments, inclusion of mp quantization lora, and various fixes",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Version compatibility improvements, addition of comments, inclusion of mp quantization lora, and various fixes"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition to the repository"
+            }
+        ]
+    },
+    {
+        "message_summary": "[Trainer] Support master grad for sharding stage 2. (#7075)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Support master grad for sharding stage 2"
+            }
+        ]
+    },
+    {
+        "message_summary": "[LLM] Fix synchronized memcpy in GPT",
+        "ptm_name": "GPT",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix synchronized memcpy in GPT"
+            }
+        ]
+    },
+    {
+        "message_summary": "Support show paddlenlp commit id",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Support install with git commit. Support trainer for paddlenlp commit id.",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "[BugFix] Fix load shard state_dict log",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix load shard state_dict log"
+            }
+        ]
+    },
+    {
+        "message_summary": "[Trainer] Fix save model for sharding stage3. (#6966)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix save model for sharding stage3"
+            }
+        ]
+    },
+    {
+        "message_summary": "[Trainer] Support master grad for sharding stage1 (#6916)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            },
+            {
+                "Deprecation and Replacement": "Replacement of a Pre Trained Model:"
+            },
+            {
+                "Deprecation and Replacement": "Removal of a Pre Trained model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "[Trainer] Fix load opt, since load opt to cpu tensor many leak mem.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Fix load opt, since load opt to cpu tensor many leak mem."
+            }
+        ]
+    },
+    {
+        "message_summary": "[Trainer] Fix timer _git_commit__ (#6833)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix timer issue in Trainer"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Unrelated": "No significant Pre-Trained Models activities mentioned."
+            }
+        ]
+    },
+    {
+        "message_summary": "[Trainer] Support load sharded ckpt (#6787)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Support load sharded ckpt"
+            }
+        ]
+    },
+    {
+        "message_summary": "[LLM]fix peft in trainer & llm readme (#6785)",
+        "ptm_name": "LLM",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Fixing peft in trainer and LLM readme, merging lora & pt code, updating readmeA, fixing intokens",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fixing peft in trainer and LLM readme, merging lora & pt code, updating readmeA, fixing intokens"
+            },
+            {
+                "Deprecation and Replacement": "Removal of a Pre Trained model"
+            }
+        ]
+    },
+    {
+        "message_summary": "[Trainer] Support reshard save/load for sharding stage1 (#6633)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Support reshard save/load for sharding stage1"
+            }
+        ]
+    },
+    {
+        "message_summary": "[Trainer] Fix try import (#6691)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fixing try import"
+            }
+        ]
+    },
+    {
+        "message_summary": "Update trainer for more timer info",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "[Trainer] Fix for compatibility",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Compatibility": "Addresses the adaptation of pre-trained models to function optimally with newer systems or software versions, ensuring forward compatibility."
+            }
+        ]
+    },
+    {
+        "message_summary": "Updates related to PaddlePaddle Pre-Trained Models",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Added support for pp delay_scale_loss and dp_comm_overlap. Added distributed support for dp/sharding overlap in pipeline. Added support for pipelineparallel in accumulation_steps. Fixed trainer.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": true,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Remove most of fluid usage",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "Most of fluid usage removed",
+        "text": [
+            {
+                "Maintenance": "Most of fluid usage removed"
+            }
+        ]
+    },
+    {
+        "message_summary": "Support pp sharding stage 1 overlap",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Added support for pp sharding stage 1 overlap. Removed hack prepare_training",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Removed hack prepare_training"
+            }
+        ]
+    },
+    {
+        "message_summary": "Update trainer.py by deleting c_embedding",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "Add ernie-3.5-se",
+        "ptm_name": "ernie-3.5-se",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of a Pre Trained Model"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add llm gpt3",
+        "ptm_name": "llm gpt3",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of a new pre-trained model to the repository."
+            }
+        ]
+    },
+    {
+        "message_summary": "Upgrade sharding stage1 for new develop paddle",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Upgrade sharding stage1 for new develop paddle"
+            }
+        ]
+    },
+    {
+        "message_summary": "support more argument settings for scheduler",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "[Trainer] Fix rng_state for custom_device (#6332)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fixing rng_state for custom_device"
+            }
+        ]
+    },
+    {
+        "message_summary": "[Trainer] Add custom_black/white_list (#6032)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Add custom_black/white_list, update docstring, add docs, update max_evaluate_steps, remove recompute_granularity, add amp_white/black list, update",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Add custom_black/white_list"
+            },
+            {
+                "Maintenance": "Update docstring, add docs, update max_evaluate_steps, remove recompute_granularity, add amp_white/black list, update"
+            }
+        ]
+    },
+    {
+        "message_summary": "Support chatglm for npu",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Support chatglm for npu"
+            }
+        ]
+    },
+    {
+        "message_summary": "[Trainer] Add optimizer-step and read data hooks (#6179)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Addition of `on-optimizer-step` and `on-read-data` hooks for Trainer module.",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "Update trainer.py",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Trainer.py was updated with additional documentation and fixes for stage3.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Trainer.py was updated with additional documentation and fixes for stage3."
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix llama pretrain init.",
+        "ptm_name": "llama",
+        "ptm_version": "pretrain",
+        "ptm_problem_addressed": "Initialization fix",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix llama pretrain init."
+            }
+        ]
+    },
+    {
+        "message_summary": "[LLM] llama fix pad, support pp with attn_mask.",
+        "ptm_name": "LLM",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fixing issues with the LLM model"
+            }
+        ]
+    },
+    {
+        "message_summary": "[Trainer] pipline remove extra accumulate (#6017)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "remove extra pp stage + main-grad, use main grad to amp_master_grad, optimize some pipeline parallel usage",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "remove extra pp stage + main-grad, use main grad to amp_master_grad, optimize some pipeline parallel usage"
+            }
+        ]
+    },
+    {
+        "message_summary": "Support lora prefix tuning for load_best_model_at_end and resume",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Support lora prefix tuning for load_best_model_at_end and resume"
+            }
+        ]
+    },
+    {
+        "message_summary": "[Trainer] fix stage3 (#5937)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to fixing stage3 in the Trainer module."
+            }
+        ]
+    },
+    {
+        "message_summary": "[Trainer] Fix amp usage for lookup_table.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "[LLM] Fix 0d concat, fix pp config, add _from_config. (#5858)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Fixes related to LLM (Language Model) including 0d concat, pp config, and addition of _from_config method.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fixes related to LLM (Language Model) including 0d concat, pp config, and addition of _from_config method."
+            }
+        ]
+    },
+    {
+        "message_summary": "Add load save prefix",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Add load save prefix"
+            }
+        ]
+    },
+    {
+        "message_summary": "[LLM] Support pipeline parallel for llama model.",
+        "ptm_name": "llama",
+        "ptm_version": "not specified",
+        "ptm_problem_addressed": "Supporting pipeline parallel processing for the llama model.",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Supporting pipeline parallel processing for the llama model."
+            }
+        ]
+    },
+    {
+        "message_summary": "[bug-fix] trainer inf detection (#5758)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Bug fix in trainer inf detection"
+            }
+        ]
+    },
+    {
+        "message_summary": "[BugFix] fix resume rng-state file check",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to fixing a bug in the resume rng-state file check."
+            }
+        ]
+    },
+    {
+        "message_summary": "[LLM] Fix GLM amp useage.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Fixed bugs, added support for merge_tensor_parallel in predict_generation.py, and addressed loading issues with dtype.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fixed bugs, addressed loading issues with dtype."
+            }
+        ]
+    },
+    {
+        "message_summary": "Support npu for ernie-3.0 run_qa",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Added support for NPU (Neural Processing Unit) for ernie-3.0 run_qa",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": {
+                    "repo_url": "github.com/PaddlePaddle/PaddleNLP",
+                    "filepath": "model_zoo/ernie-3.0/run_qa.py",
+                    "commit_date": "2023-02-16T13:23:36Z",
+                    "message_summary": "Support npu for ernie-3.0 run_qa",
+                    "update_details": "Added support for NPU (Neural Processing Unit) for ernie-3.0 run_qa"
+                }
+            }
+        ]
+    },
+    {
+        "message_summary": "Support MLU training",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Added support for MLU training. MLU configuration was included in the README files for RNN and ERNIE-1.0.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Added support for MLU training."
+            },
+            {
+                "Maintenance": "MLU configuration was included in the README files for RNN and ERNIE-1.0."
+            }
+        ]
+    },
+    {
+        "message_summary": "run_qa.py add xpu chioce of device,*test=kunlun (#3046)",
+        "ptm_name": "xpu",
+        "ptm_version": "unknown",
+        "ptm_problem_addressed": "Choice of device for xpu",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "move selected model to model zoo",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "move selected model to model zoo"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add xpu to choices",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Add xpu to choices"
+            }
+        ]
+    },
+    {
+        "message_summary": "support mlu training",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Added support for mlu training. Included mlu config in rnn and ernie-1.0 README.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Added support for mlu training. Included mlu config in rnn and ernie-1.0 README."
+            }
+        ]
+    },
+    {
+        "message_summary": "move selected model to model zoo",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "move selected model to model zoo"
+            }
+        ]
+    },
+    {
+        "message_summary": "[ERNIE-M] Fix layerwise decay ratio to model_zoo/ernie-m (#4892)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix layerwise decay ratio"
+            }
+        ]
+    },
+    {
+        "message_summary": "Deprecate Distutils",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Deprecation and Replacement": "Deprecate Distutils"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add Hugging Face Dataset and upgrade example",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of a Hugging Face Dataset"
+            },
+            {
+                "Maintenance": "Upgrade of example"
+            }
+        ]
+    },
+    {
+        "message_summary": "Use AdamW with lr_ratio setting instead of AdamWDL",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "AdamW with lr_ratio setting was implemented instead of AdamWDL. AdamWDL was removed along with its documentation. AdamWDL was added and then removed again due to a bug. The 'fluid' component was removed.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Deprecation and Replacement": "Replacement of a Pre Trained Model"
+            },
+            {
+                "Maintenance": "Removal of a Pre Trained model"
+            }
+        ]
+    },
+    {
+        "message_summary": "move selected model to model zoo",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Deprecation and Replacement": "move selected model to model zoo"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "move selected model to model zoo",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "move selected model to model zoo"
+            }
+        ]
+    },
+    {
+        "message_summary": "[Improvement] fix logger level",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Logger level and training args logger level were fixed.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Logger level and training args logger level were fixed."
+            }
+        ]
+    },
+    {
+        "message_summary": "[llm]support qlora pp (#7801)",
+        "ptm_name": "qlora pp",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Fixed scale dtype",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": {
+                    "repo_url": "github.com/PaddlePaddle/PaddleNLP",
+                    "filepath": "paddlenlp/transformers/model_utils.py",
+                    "commit_date": "2024-01-10T03:48:17Z",
+                    "message_summary": "[llm]support qlora pp (#7801)",
+                    "ptm_addition_details": {
+                        "name": "qlora pp"
+                    },
+                    "update_details": "Fixed scale dtype"
+                }
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix shared weights sync for PipelineLayer",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Shared weights synchronization for PipelineLayer was fixed. Typo was corrected.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Shared weights synchronization for PipelineLayer was fixed. Typo was corrected."
+            }
+        ]
+    },
+    {
+        "message_summary": "Support for Lora merge",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Added support for Lora merge, finetune, bf16, and version adaptation. Updates and fixes were made in the code.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Added support for Lora merge, finetune, bf16, and version adaptation. Updates and fixes were made in the code."
+            }
+        ]
+    },
+    {
+        "message_summary": "Support SharedLayer with different prefixes for pipeline parallel",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Support SharedLayer with different prefixes for pipeline parallel"
+            }
+        ]
+    },
+    {
+        "message_summary": "[PEFT]add qlora (#7416)",
+        "ptm_name": "qlora",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of a new pre-trained model named qlora"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add load multi torch bin slices logic",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Added logic for loading multi torch bin slices in the model_utils.py file.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "Support torch safe tensor convert",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Code refinement, adjustment of if statements, skipping clip & bart unit tests, closing bart serialization save, gradio-fix",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Code refinement, adjustment of if statements, skipping clip & bart unit tests, closing bart serialization save, gradio-fix"
+            }
+        ]
+    },
+    {
+        "message_summary": "[aistudio] add save to aistudio hub (#7338)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "[quant] add QuantizationConfig (#7314)",
+        "ptm_name": "QuantizationConfig",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of a new pre-trained model"
+            }
+        ]
+    },
+    {
+        "message_summary": "Support qwen pretrain.",
+        "ptm_name": "qwen pretrain",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "[llm]fix weight only quantization (#7252)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Fix weight-only quantization in the model_utils.py file.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix weight-only quantization in the model_utils.py file."
+            }
+        ]
+    },
+    {
+        "message_summary": "[Trainer] Add unified checkpoint for hybrid parallel.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Add unified checkpoint for hybrid parallel."
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix subfolder default argument in model download",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "Add max_shard_size arg (#6835)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Addition to the repository"
+            }
+        ]
+    },
+    {
+        "message_summary": "Support AI Studio download (#7146)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Support AI Studio download"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model"
+            }
+        ]
+    },
+    {
+        "message_summary": "[BugFix] Fix tp load and gpt pp model (#7129)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Fixes made to the gpt pp model and tp load functionality.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fixes made to the gpt pp model and tp load functionality."
+            }
+        ]
+    },
+    {
+        "message_summary": "[LLM] Unify pipeline model with PretrainModelPipe (#7095)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Deprecation and Replacement": "Replacement of a Pre Trained Model"
+            }
+        ]
+    },
+    {
+        "message_summary": "[TensorParallel] Support naive split for lazy safetensors",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Support naive split for lazy safetensors"
+            }
+        ]
+    },
+    {
+        "message_summary": "[GPT-3]fix fluid for stride_check (#6999)",
+        "ptm_name": "GPT-3",
+        "ptm_version": "not specified",
+        "ptm_problem_addressed": "Fixing fluid for stride_check",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to fixing fluid for stride_check"
+            }
+        ]
+    },
+    {
+        "message_summary": "[BugFix] Fix load shard state_dict log (#6991)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix load shard state_dict log"
+            }
+        ]
+    },
+    {
+        "message_summary": "Change .numpy to cpu().numpy()",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "pretrainedModel add gconfig",
+        "ptm_name": "gconfig",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "max/min_new_token bug fix, deprecate generation_utils, code refinement",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": {
+                    "PTM Name": "gconfig",
+                    "Action": "Addition"
+                }
+            },
+            {
+                "Deprecation and Replacement": {
+                    "Features Deprecated": [
+                        "generation_utils"
+                    ],
+                    "Code Refinement": true
+                }
+            }
+        ]
+    },
+    {
+        "message_summary": "[Trainer] Support load sharded ckpt (#6787)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Support load sharded ckpt"
+            }
+        ]
+    },
+    {
+        "message_summary": "[Trainer] Support reshard save/load for sharding stage1 (#6633)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Support reshard save/load for sharding stage1"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "Consolidate Recompute usage",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Consolidate Recompute usage"
+            }
+        ]
+    },
+    {
+        "message_summary": "[LLM] Fix miss matched size for tie weights.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Fix miss matched size for tie weights.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix miss matched size for tie weights."
+            }
+        ]
+    },
+    {
+        "message_summary": "[LLM] fix low cpu mem device.",
+        "ptm_name": "LLM",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "fix low cpu mem device."
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix bfloat16 weight loading",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix bfloat16 weight loading"
+            }
+        ]
+    },
+    {
+        "message_summary": "[BUG Fix] Fix resize embeddings",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Updates related to T5 model",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix resize embeddings"
+            },
+            {
+                "Compatibility": "Updates related to T5 model"
+            }
+        ]
+    },
+    {
+        "message_summary": "[New Features] sync model_utils & generation_utils (#6150)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Sync model_utils & generation_utils, update generation_utils, update get_scale by dtype, update beam_score, update beam_search params, fix client, fix conflict",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Sync model_utils & generation_utils, update generation_utils, update get_scale by dtype, update beam_score, update beam_search params, fix client, fix conflict"
+            }
+        ]
+    },
+    {
+        "message_summary": "[Bug fixes] Fix dtype convert bugs.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Fixed dtype convert bugs in the model_utils.py file.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fixed dtype convert bugs in the model_utils.py file."
+            }
+        ]
+    },
+    {
+        "message_summary": "[LLM] llama fix pad, support pp with attn_mask.",
+        "ptm_name": "LLM",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fixing bugs or issues in the codebase."
+            }
+        ]
+    },
+    {
+        "message_summary": "[lora prefix tuning]unify dtype (#5894)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Unify dtype. Fix dtype",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix HF-related subfolder download issues",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Fixed issues related to subfolder download",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fixed issues related to subfolder download"
+            }
+        ]
+    },
+    {
+        "message_summary": "[LLM] Fix 0d concat, fix pp config, add _from_config. (#5858)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Fix trainer pp bugs, fix 0d concat",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix trainer pp bugs, fix 0d concat"
+            }
+        ]
+    },
+    {
+        "message_summary": "[LLM] Support pipeline parallel for llama model.",
+        "ptm_name": "llama",
+        "ptm_version": "not specified",
+        "ptm_problem_addressed": "Supporting pipeline parallel for llama model.",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Supporting pipeline parallel for llama model."
+            }
+        ]
+    },
+    {
+        "message_summary": "[New features] enable bf16 dtype in paddlenlp (#5708)",
+        "ptm_name": "bf16",
+        "ptm_version": "Not specified",
+        "ptm_problem_addressed": "Enabling bf16 dtype in PaddleNLP",
+        "update_details": "Enabling bf16 dtype in PaddleNLP for improved functionality.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "New features added to enable bf16 dtype in PaddleNLP."
+            }
+        ]
+    },
+    {
+        "message_summary": "[Bug fixes] update inherited function checking",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Inherited function checking was updated. All init_weights were reconstructed. The function init_weights was changed to _init_weights. The tie_weights function was updated and lint issues were fixed.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Inherited function checking was updated. All init_weights were reconstructed. The function init_weights was changed to _init_weights. The tie_weights function was updated and lint issues were fixed."
+            }
+        ]
+    },
+    {
+        "message_summary": "Transformers upgrade: deprecate legacy from_pretrained and save_pretrained (#5307)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Deprecation of legacy from_pretrained and save_pretrained functions.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Deprecation and Replacement": "Deprecation of legacy from_pretrained and save_pretrained functions."
+            }
+        ]
+    },
+    {
+        "message_summary": "[Bug fixes] update dtype variable init",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Bug fixes related to updating dtype variable initialization, checking, and guard. Low_cpu_mem_usage removed.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Bug fixes related to updating dtype variable initialization, checking, and guard. Low_cpu_mem_usage removed."
+            }
+        ]
+    },
+    {
+        "message_summary": "[New Features] disable init-weights when lazy-init float16&bfloat16 (#5545)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "New features added to disable init-weights when lazy-init float16&bfloat16. Model utils were updated to accommodate this change.",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Task Specificity": "New features added to disable init-weights when lazy-init float16&bfloat16. Model utils were updated to accommodate this change."
+            }
+        ]
+    },
+    {
+        "message_summary": "fix loading numpy ndarray",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "fix loading numpy ndarray"
+            }
+        ]
+    },
+    {
+        "message_summary": "[LLM] Fix GLM amp useage.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Fixed bugs, added support for merge_tensor_parallel in predict_generation.py, and resolved loading issues with dtype.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fixed bugs, resolved loading issues with dtype."
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix prompt head shape due to tie weights",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "[Generation] Remove __get_attr__ shortcut that gets attribute from config (#5527)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "[LLM] low_cpu_mem_usage enable dtype guard",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Performance Improvements": "low_cpu_mem_usage enable dtype guard"
+            }
+        ]
+    },
+    {
+        "message_summary": "[LLM] Support GLM for Tensor Parallel (#5198)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Support added for GLM with Tensor Parallel. Initial version includes support for model parallelism (mp) for GLM and trainer.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "Support Lazy init from pre-trained model",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Support Lazy init from pre-trained model"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix cache dir issue for Model, Config and Tokenizer (#5013)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix cache dir issue for Model, Config and Tokenizer"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix cache_dir logic",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "[PPDiffusers] implement `save_to_hf_hub` for pipelines, models, and Preprocessor (#4640)",
+        "ptm_name": "PPDiffusers",
+        "ptm_version": "unknown",
+        "ptm_problem_addressed": "Implementing `save_to_hf_hub` for pipelines, models, and Preprocessor",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "[PPDiffusers] add from_hf_hub to from_pretrained (#4625)",
+        "ptm_name": "PPDiffusers",
+        "ptm_version": "unknown",
+        "ptm_problem_addressed": "Integration of from_hf_hub to from_pretrained",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Integration of from_hf_hub to from_pretrained"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix download error for multi-GPU or multi-node setup.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Fixed the download error for multi-GPU or multi-node setup.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fixed the download error for multi-GPU or multi-node setup."
+            }
+        ]
+    },
+    {
+        "message_summary": "Bug fixes and updates related to Pre-Trained Models conversion",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Improvements made to the converter command and unit tests. Fixed importing issues, removed unused imports, corrected typos, updated descriptions and boolean environment, updated conversion from Hugging Face Hub, updated tests, and added logger information for conversion.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Bug fixes and updates related to Pre-Trained Models conversion"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "[Bug fixes] fix config attributes backward compatibility",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Bug fixes for config attributes backward compatibility",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Bug fixes for config attributes backward compatibility"
+            }
+        ]
+    },
+    {
+        "message_summary": "[NEW Model] Add BIT DPT Model (#4202)",
+        "ptm_name": "BIT DPT",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of a new pre-trained model"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Ernie Pretrained Config (#4118)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Ernie config, removed comments, style adjustments, fixed ernie gram, prompt model, and pretraining. Updated run_pretrain.py",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Code refactoring and maintenance for Ernie pretrained model configuration, including comment removal and style adjustments."
+            }
+        ]
+    },
+    {
+        "message_summary": "Implement save_to_hf_hub for Model and Tokenizer",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Integration Patterns": "None",
+                "Task Specificity": "None",
+                "Community and Collaboration": "None",
+                "Maintenance": "None",
+                "Compliance and Standards": "None",
+                "Performance Improvements": "None",
+                "Compatibility": "None",
+                "Deprecation and Replacement": "None",
+                "Project Evolution": "None",
+                "Technical Debt and Simplification": "None"
+            }
+        ]
+    },
+    {
+        "message_summary": "BugFix: Fixed tokenizer multi-download and updated model utils",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "The commit fixed an issue with tokenizer multi-download and updated the model utils by using 'paddlenlp get_path_from_url' function.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "The commit fixed an issue with tokenizer multi-download and updated the model utils by using 'paddlenlp get_path_from_url' function."
+            }
+        ]
+    },
+    {
+        "message_summary": "Support HUGGINGFACE_HUB_CACHE in HF hub download through os env",
+        "ptm_name": "HUGGINGFACE_HUB_CACHE",
+        "ptm_version": "",
+        "ptm_problem_addressed": "Support for Hugging Face Hub cache",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Support for Hugging Face Hub cache"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add library name and version to hf_hub_download for better analytics",
+        "ptm_name": "hf hub",
+        "ptm_version": "latest",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Add library name and version to hf_hub_download for better analytics"
+            }
+        ]
+    },
+    {
+        "message_summary": "fix load_fp16 model",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "fix load_fp16 model"
+            }
+        ]
+    },
+    {
+        "message_summary": "[Bugfix]: add file checking before os.remove (#3843)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "Updates related to Trainer and T5 model with sharding support, addition of T5-3B model and bf16 support, fixes for sharding stage2 and save strategy, and support for iterable dataset.",
+        "ptm_name": "T5-3B",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Sharding support added for Trainer and T5 models, bf16 support included, fixes for sharding stage2 and save strategy implemented, and support for iterable dataset added.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "No",
+                "Task Specificity": "Yes",
+                "Community and Collaboration": "No",
+                "Maintenance": "No",
+                "Compliance and Standards": "No",
+                "Performance Improvements": "No",
+                "Compatibility": "No",
+                "Deprecation and Replacement": "No",
+                "Project Evolution": "No",
+                "Technical Debt and Simplification": "No"
+            }
+        ]
+    },
+    {
+        "message_summary": "[BugFix] fix value cast in model-utils",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Fixed value cast, updated tensor type, and fixed the format in model-utils.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fixed value cast, updated tensor type, and fixed the format in model-utils."
+            }
+        ]
+    },
+    {
+        "message_summary": "[BugFix] fix astype error when dynamic-to-static mode (#3701)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Model_utils updated for dynamic-to-static mode. Added comments and improved Makefile.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Model_utils updated for dynamic-to-static mode. Added comments and improved Makefile."
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "Deprecate Distutils",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Deprecation and Replacement": "Deprecate Distutils"
+            }
+        ]
+    },
+    {
+        "message_summary": "move selected model to model zoo",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Deprecation and Replacement": "move selected model to model zoo"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Deprecation and Replacement": "Deprecation of Distutils"
+            }
+        ]
+    },
+    {
+        "message_summary": "move selected model to model zoo",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "move selected model to model zoo"
+            }
+        ]
+    },
+    {
+        "message_summary": "Refactor CLIP&ErnieViL model and Add ChineseCLIP Model (#4270)",
+        "ptm_name": "ChineseCLIP",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Refactor CLIP&ErnieViL model"
+            },
+            {
+                "Integration Patterns": "Add ChineseCLIP Model"
+            }
+        ]
+    },
+    {
+        "message_summary": "[NEW Features] feature_extraction and processor support from_pretrained (#3453)",
+        "ptm_name": "feature_extraction and processor",
+        "ptm_version": "from_pretrained",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": {
+                    "repo_url": "github.com/PaddlePaddle/PaddleNLP",
+                    "filepath": "paddlenlp/transformers/processing_utils.py",
+                    "commit_date": "2022-10-13T11:33:31Z",
+                    "message_summary": "[NEW Features] feature_extraction and processor support from_pretrained (#3453)",
+                    "ptm_addition_details": {
+                        "name": "feature_extraction and processor",
+                        "version": "from_pretrained"
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "message_summary": "[FastDeploy] Add ernie 1.0 fd (#5004)",
+        "ptm_name": "ernie 1.0",
+        "ptm_version": "fd",
+        "ptm_problem_addressed": "FastDeploy",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Involves integrating new pre-trained models into existing systems, focusing on seamless incorporation and initial feature enhancement for these models."
+            }
+        ]
+    },
+    {
+        "message_summary": "[Trainer] Add Memory Tracer (#4181)",
+        "ptm_name": "Memory Tracer",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of a new integration pattern"
+            }
+        ]
+    },
+    {
+        "message_summary": "move selected model to model zoo",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "move selected model to model zoo"
+            }
+        ]
+    },
+    {
+        "message_summary": "init model using float32",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "init model using float32"
+            }
+        ]
+    },
+    {
+        "message_summary": "rename files and add readme for llama auto_parallel",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Files were renamed and a readme was added for llama auto_parallel.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Files were renamed and a readme was added for llama auto_parallel."
+            }
+        ]
+    },
+    {
+        "message_summary": "support bf16 loss in static",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "support bf16 loss in static"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "[Llama2] Fix setting seeds of distributed training for Llama model with Auto Parallel",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Seeds of distributed training for the Llama model with Auto Parallel were fixed. Loss of CI cases was updated.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Seeds of distributed training for the Llama model with Auto Parallel were fixed. Loss of CI cases was updated."
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "[Llama2] Add uts for llama in semi-auto mode (#7588)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Add uts for llama in semi-auto mode",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "rename files and add readme for llama auto_parallel",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "[CodeStyles] fix gpt3 fleetx (#5358)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "fix gpt3 fleetx"
+            }
+        ]
+    },
+    {
+        "message_summary": "[GPT3] Migrate gpt3 from fleetx into paddlenlp (#5292)",
+        "ptm_name": "GPT3",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Migrate fleetx gpt3",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Deprecation and Replacement": "Replacement of a Pre Trained Model: Migrate fleetx gpt3"
+            }
+        ]
+    },
+    {
+        "message_summary": "[CodeStyles] fix gpt3 fleetx (#5358)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "CodeStyles fix for gpt3 fleetx"
+            }
+        ]
+    },
+    {
+        "message_summary": "Migrate GPT-3 from FleetX into PaddleNLP",
+        "ptm_name": "GPT-3",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Migrated GPT-3 model from FleetX into PaddleNLP.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Migrated GPT-3 model from FleetX into PaddleNLP."
+            }
+        ]
+    },
+    {
+        "message_summary": "[DATA] Remove repeated chars during preprocessing",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Added remove_repeated_chars function and updated max_repeated_len",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Remove repeated characters during preprocessing, Added remove_repeated_chars function, Updated max_repeated_len"
+            }
+        ]
+    },
+    {
+        "message_summary": "[Megatron dataset] Support creating megatron dataset (#6512)",
+        "ptm_name": "Megatron dataset",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Support creating Megatron dataset in the preprocessing script.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": {
+                    "PTM Name": "Megatron dataset",
+                    "Action": "Support creating Megatron dataset in the preprocessing script."
+                }
+            }
+        ]
+    },
+    {
+        "message_summary": "[LLM] support trainer for gpt and llama pre-training. (#6053)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Support trainer for GPT and LLAMA pre-training. Added support for LLAMA pre-train and post-train. Fixed issues related to using flash and virtual PP degree.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "Add t5 Pre-training and support tensor parallel",
+        "ptm_name": "t5",
+        "ptm_version": "",
+        "ptm_problem_addressed": "Pre-training and tensor parallel support",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of a new pre-trained model"
+            },
+            {
+                "Performance Improvements": "Support for tensor parallel processing"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Code review and maintenance"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Update of a Pre Trained Model"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "[LLM] Fix gpt3 finetune",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix gpt3 finetune"
+            }
+        ]
+    },
+    {
+        "message_summary": "[CodeStyles] fix gpt3 fleetx (#5358)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Fixing code styles"
+            }
+        ]
+    },
+    {
+        "message_summary": "Migrate GPT-3 from FleetX into PaddleNLP",
+        "ptm_name": "GPT-3",
+        "ptm_version": "N/A",
+        "ptm_problem_addressed": "Migration from FleetX to PaddleNLP",
+        "update_details": "N/A",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Deprecation and Replacement": "Migrate GPT-3 from FleetX into PaddleNLP"
+            }
+        ]
+    },
+    {
+        "message_summary": "[CodeStyle] fix `applications/text_classification` (#5356)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "Add Retrieval based multi class classification",
+        "ptm_name": "Retrieval based multi class classification",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of a new integration pattern"
+            }
+        ]
+    },
+    {
+        "message_summary": "[CodeStyle] fix `applications/text_classification` (#5356)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "[CodeStyle] fix `applications/text_classification` (#5356)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "Add retrieval based classification",
+        "ptm_name": "retrieval base classification",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Add retrieval based classification"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix bugs in GPT model",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "GPT-3 model was fixed and refined. GPT-3 model was removed due to issues. Continuous integration related to GPT was fixed.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix bugs in GPT model"
+            },
+            {
+                "Deprecation and Replacement": "GPT-3 model was fixed and refined. GPT-3 model was removed due to issues."
+            },
+            {
+                "Maintenance": "Continuous integration related to GPT was fixed."
+            }
+        ]
+    },
+    {
+        "message_summary": "[Bug fix]fix breaking tests due to loss item change (#5740)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Fix breaking tests due to loss item change",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix breaking tests due to loss item change"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix tqdm in downloader (#4603)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to fixing an issue with tqdm in the downloader."
+            }
+        ]
+    },
+    {
+        "message_summary": "[Bug fixes] fix logit compare in autoconverter models (#4568)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Model logit comparer was updated to reduce rtol for test pass.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Model logit comparer was updated to reduce rtol for test pass."
+            }
+        ]
+    },
+    {
+        "message_summary": "[Function optimization] Add test for autoconverter of Bert/GPT models (#4537)",
+        "ptm_name": "Bert/GPT models",
+        "ptm_version": "auto-converter",
+        "ptm_problem_addressed": "Function optimization",
+        "update_details": "Complete Bert test for auto-converter. Complete GPT test for converter",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "[New features] add roberta & gpt conversion (#4407)",
+        "ptm_name": "roberta & gpt",
+        "ptm_version": "not specified",
+        "ptm_problem_addressed": "Conversion and model loading",
+        "update_details": "Updated gpt model loading and requirements. Fixed input_ids.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix gpt inputs embeds",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix gpt inputs embeds"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add unit tests for T5",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Task Specificity": "Add unit tests for T5"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix import issues in gpt/test_modeling",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to fixing import issues in gpt/test_modeling."
+            }
+        ]
+    },
+    {
+        "message_summary": "[Bug fix]fix breaking tests due to loss item change (#5740)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to fixing breaking tests due to loss item change."
+            }
+        ]
+    },
+    {
+        "message_summary": "[OPT P1] add return_dict, labels and so on. (#5222)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Support labels, return_dict, output_hidden_states, output_attentions in opt. Add annotations for opt. Remove unuseful print. Refine code style.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "[LLM] GLM fix 0-dim tensor",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to fixing a 0-dim tensor issue in GLM."
+            }
+        ]
+    },
+    {
+        "message_summary": "[glm] support skip_special_tokens in decode (#5703)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Added support for skip_special_tokens in decode function for glm model. Fixed slow test_modeling. Removed duplicate special tokens.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fixed slow test_modeling. Removed duplicate special tokens."
+            }
+        ]
+    },
+    {
+        "message_summary": "[LLM] Support GLM for Tensor Parallel (#5198)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Support added for GLM with Tensor Parallel. Initial version created. Added support for model parallelism (mp) for GLM and trainer.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "[GLM] update default model name",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Revert \"[Benchmark]Benchmark cpp for YOLOv5\" (#1250)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Revert \"[Benchmark]Benchmark cpp for YOLOv5 (#1224)\"",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Deprecation and Replacement": "Revert of a benchmark for YOLOv5"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add inputs_embeds to Bart/MBart/Unified_Transformer/Unimo/CodeGen",
+        "ptm_name": "Bart/MBart/Unified_Transformer/Unimo/CodeGen",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Add inputs_embeds to Bart/MBart/Unified_Transformer/Unimo/CodeGen"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix some unit tests' issue"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add MBart unit tests",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition to the repository"
+            }
+        ]
+    },
+    {
+        "message_summary": "Bloom generative test (#6630)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Added generative test for Bloom model. Fixed cache shape bug and data type mismatch bug.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Task Specificity": "Added generative test for Bloom model. Fixed cache shape bug and data type mismatch bug."
+            }
+        ]
+    },
+    {
+        "message_summary": "Standardize Bloom attention mask (#6579)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "update trainer for bloom",
+        "ptm_name": "bloom",
+        "ptm_version": "not specified",
+        "ptm_problem_addressed": "not specified",
+        "update_details": "Added the trainer for bloom and updated the code",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Added the trainer for bloom and updated the code"
+            }
+        ]
+    },
+    {
+        "message_summary": "[UnitTest]add bloom testing (#5483)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Complete bloom test-modeling. Fix variable assignment. Update paralle_matmul method",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Complete bloom test-modeling. Fix variable assignment. Update paralle_matmul method"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix cache dir issue for Model, Config and Tokenizer (#5013)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix cache dir issue for Model, Config and Tokenizer"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix cache_dir logic",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Fixes and updates related to cache_dir logic",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fixes and updates related to cache_dir logic"
+            }
+        ]
+    },
+    {
+        "message_summary": "[Tokenizer] Fix error when loading tokenizer from hf hub (#4570)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Fix load tokenizer from hf hub, remove slow test",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix error when loading tokenizer from hf hub, remove slow test"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix fast_tokenizer import",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Fixed the import of fast_tokenizer and used import_module instead of importlib.import_module. Added auto tokenizer unittest and updated to __internal_testing__. Added test",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fixed the import of fast_tokenizer and used import_module instead of importlib.import_module. Added auto tokenizer unittest and updated to __internal_testing__. Added test"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add t5 Pre-training and support tensor parallel",
+        "ptm_name": "t5",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Add t5 Pre-training and support tensor parallel"
+            }
+        ]
+    },
+    {
+        "message_summary": "PaddleFSL updates to v1.1.0 (add support for bioinformatics and FewNLU tasks, change License to Apache 2.0 etc.)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "PaddleFSL updated to version 1.1.0 with added support for bioinformatics and FewNLU tasks. License changed to Apache 2.0.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Task Specificity": "Added support for bioinformatics and FewNLU tasks"
+            },
+            {
+                "Compliance and Standards": "License changed to Apache 2.0"
+            }
+        ]
+    },
+    {
+        "message_summary": "add implementation of BiBERT",
+        "ptm_name": "BiBERT",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "addition to the repository"
+            }
+        ]
+    },
+    {
+        "message_summary": "PaddleFSL updates to v1.1.0 (add support for bioinformatics and FewNLU tasks, change License to Apache 2.0 etc.)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Updates include adding support for bioinformatics and FewNLU tasks, changing the License to Apache 2.0, and other enhancements.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Task Specificity": "Updates include adding support for bioinformatics and FewNLU tasks, changing the License to Apache 2.0, and other enhancements."
+            }
+        ]
+    },
+    {
+        "message_summary": "[distill] support wrap functional with class",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Task Specificity": "Commit log is related to adding features or functions with specific tasks in mind."
+            }
+        ]
+    },
+    {
+        "message_summary": "update distill",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Polished the distill process",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Polished the distill process"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add ner model.",
+        "ptm_name": "NER model",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition to the repository"
+            }
+        ]
+    },
+    {
+        "message_summary": "[GPT-3] Fix bugs of GPTDataset and Modeling in GPT model",
+        "ptm_name": "GPT-3",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix bugs in GPTDataset and Modeling in GPT model"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add MoE codes on a single card (experimental version for dy2sta)",
+        "ptm_name": "MoE",
+        "ptm_version": "experimental",
+        "ptm_problem_addressed": "Support for dy2sta",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Add MoE codes on a single card (experimental version for dy2sta)"
+            }
+        ]
+    },
+    {
+        "message_summary": "Update hcg settings by supporting get_hcg and set_hcg",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update hcg settings by supporting get_hcg and set_hcg"
+            }
+        ]
+    },
+    {
+        "message_summary": "[MoE] Support moe layer in ppfleetx (#840)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Support moe layer in ppfleetx"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix bugs of PR-814 for auto parallel training in GPT model",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Bug fixes related to auto parallel training in GPT model",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Bug fixes related to auto parallel training in GPT model"
+            }
+        ]
+    },
+    {
+        "message_summary": "Support gpt-cn training",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Support gpt-cn training"
+            }
+        ]
+    },
+    {
+        "message_summary": "[bug fix]fix logger for fleetx (#753)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to fixing a bug in the logger for fleetx."
+            }
+        ]
+    },
+    {
+        "message_summary": "[GPT] Fix docs of GPT (#726)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to fixing documentation for GPT."
+            }
+        ]
+    },
+    {
+        "message_summary": "Add generation, eval and inference of GPT into ppfleetx",
+        "ptm_name": "GPT",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of GPT into ppfleetx"
+            }
+        ]
+    },
+    {
+        "message_summary": "Move auto_parallel to ppfleetx",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Auto_parallel functionality was moved to ppfleetx. Bug fixes related to auto_parallel were implemented.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Bug fixes related to auto_parallel were implemented."
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "add ernie",
+        "ptm_name": "ERNIE",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of a Pre Trained Model"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix defalut, infernece, etc.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "Add hypernym discovery model",
+        "ptm_name": "Hypernym Discovery Model",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of a new pre-trained model to the repository."
+            }
+        ]
+    },
+    {
+        "message_summary": "Add GPT pretrain examples for transformer models",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of GPT pretrain examples for transformer models"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "add MNLI, CoLA dataset gpt finetune",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition to the repository"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "add gpt glue finetune code",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition to the repository"
+            }
+        ]
+    },
+    {
+        "message_summary": "[GPT] Reconstruct dataset of ppfleetx (#697)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Reconstruct dataset and engine",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "add the function of generation of writing",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "add the function of generation of writing"
+            }
+        ]
+    },
+    {
+        "message_summary": "Upgrade ppdiffusers0193",
+        "ptm_name": "ppdiffusers0193",
+        "ptm_version": "N/A",
+        "ptm_problem_addressed": "N/A",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Upgrade ppdiffusers0193"
+            }
+        ]
+    },
+    {
+        "message_summary": "Enhancement of set_state_dict when load_state_dict_pre_hooks is none",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Enhancement of set_state_dict when load_state_dict_pre_hooks is none"
+            }
+        ]
+    },
+    {
+        "message_summary": "Update sd use flash attn2",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Update sd use flash attn2"
+            }
+        ]
+    },
+    {
+        "message_summary": "[GPT-3] Support Grad Merge with FP32 main grad for BF16 training of GPT-3 model",
+        "ptm_name": "GPT-3",
+        "ptm_version": "N/A",
+        "ptm_problem_addressed": "Support Grad Merge with FP32 main grad for BF16 training",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix bugs of GPTDataset and Modeling in GPT model",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix bugs of GPTDataset and Modeling in GPT model"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add the yaml files of distributed pretrain for GPT3 13B model",
+        "ptm_name": "GPT3 13B",
+        "ptm_version": "13B",
+        "ptm_problem_addressed": "Distributed pretraining",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": {
+                    "repo_url": "github.com/PaddlePaddle/PaddleFleetX",
+                    "filepath": "ppfleetx/models/language_model/language_module.py",
+                    "commit_date": "2023-02-27T08:37:07Z",
+                    "message_summary": "Add the yaml files of distributed pretrain for GPT3 13B model",
+                    "ptm_addition_details": {
+                        "name": "GPT3 13B",
+                        "version": "13B",
+                        "problem_addressed": "Distributed pretraining"
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "message_summary": "Add MoE codes on a single card (experimental version for dy2sta)",
+        "ptm_name": "MoE",
+        "ptm_version": "experimental",
+        "ptm_problem_addressed": "Support for dy2sta",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Add MoE codes on a single card (experimental version for dy2sta)"
+            }
+        ]
+    },
+    {
+        "message_summary": "Support structured pruning on FC layers and demo in GPT (#829)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Support structured pruning on FC layers and demo in GPT"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add Skip Quant in GPT Model",
+        "ptm_name": "Skip Quant",
+        "ptm_version": "N/A",
+        "ptm_problem_addressed": "Enhancing GPT Model performance",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Performance Improvements": "Enhancing GPT Model performance"
+            }
+        ]
+    },
+    {
+        "message_summary": "Move QAT to Engine & Add More Docs",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Move QAT to Engine"
+            },
+            {
+                "Maintenance": "Add More Docs"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add QAT for GTP&VIT",
+        "ptm_name": "QAT for GTP&VIT",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of a Pre Trained Model"
+            }
+        ]
+    },
+    {
+        "message_summary": "Update hcg settings by supporting get_hcg and set_hcg",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Polish sequence parallel to improve performance",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Performance Improvements": "Polish sequence parallel to improve performance"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix bug when combining sequence parallel and gradient merge",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix bug when combining sequence parallel and gradient merge"
+            }
+        ]
+    },
+    {
+        "message_summary": "[MoE] Support moe layer in ppfleetx (#840)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Support moe layer in ppfleetx"
+            }
+        ]
+    },
+    {
+        "message_summary": "Support gpt-cn training",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Support gpt-cn training"
+            }
+        ]
+    },
+    {
+        "message_summary": "Bugfix of GPT finetune for fuse_attn_qkv",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Bugfix"
+            }
+        ]
+    },
+    {
+        "message_summary": "None",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "add MNLI, CoLA dataset gpt finetune",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition to the repository"
+            }
+        ]
+    },
+    {
+        "message_summary": "add gpt glue benchmark finetune code",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "addition to the repository"
+            }
+        ]
+    },
+    {
+        "message_summary": "[bug fix]fix logger for fleetx (#753)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "fix logger for fleetx"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "add gpt glue finetune code",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition to the repository"
+            }
+        ]
+    },
+    {
+        "message_summary": "[GPT] Fix bugs of config and log",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Fixed quantization and configuration bugs in the GPT model.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fixed quantization and configuration bugs in the GPT model."
+            }
+        ]
+    },
+    {
+        "message_summary": "[GPT] Fix quantization of GPT mp",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Quantization fix for GPT model",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Quantization fix for GPT model"
+            }
+        ]
+    },
+    {
+        "message_summary": "[GPT] Fix docs of GPT (#726)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Documentation for GPT model was fixed and updated.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Documentation for GPT model was fixed and updated."
+            }
+        ]
+    },
+    {
+        "message_summary": "Add generation, eval and inference of GPT into ppfleetx",
+        "ptm_name": "GPT",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of GPT into ppfleetx"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add ViT for PaddleFleetX",
+        "ptm_name": "ViT",
+        "ptm_version": "",
+        "ptm_problem_addressed": "Integration of Vision Transformer (ViT) into PaddleFleetX",
+        "update_details": "Added validation_epoch_end for basic_module, changed fleetx to ppfleetx, fixed memory leak, and addressed adamw weight decay",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": {
+                    "name": "ViT",
+                    "problem_addressed": "Integration of Vision Transformer (ViT) into PaddleFleetX"
+                }
+            },
+            {
+                "Maintenance": {
+                    "update_details": "Added validation_epoch_end for basic_module, changed fleetx to ppfleetx, fixed memory leak, and addressed adamw weight decay"
+                }
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix bugs in GPT model implementation",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Several updates and bug fixes were made to the GPT model implementation in the language_module.py file.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Several updates and bug fixes were made to the GPT model implementation in the language_module.py file."
+            }
+        ]
+    },
+    {
+        "message_summary": "[GPT] Support epoch engine and fix bugs of optim",
+        "ptm_name": "GPT",
+        "ptm_version": "not specified",
+        "ptm_problem_addressed": "Supporting epoch engine and fixing optimization bugs",
+        "update_details": "Added support for epoch engine and fixed optimization bugs in GPT model.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "[GPT] Reconstruct dataset of ppfleetx (#697)",
+        "ptm_name": "GPT",
+        "ptm_version": "not specified",
+        "ptm_problem_addressed": "Reconstructing dataset and engine",
+        "update_details": "Reconstruct dataset and engine",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Deprecation and Replacement": "Replacement of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "add checker",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Addition to the repository"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add module for fleetx",
+        "ptm_name": "Not specified",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of a new module for fleetx."
+            }
+        ]
+    },
+    {
+        "message_summary": "Data map commit with image and README update",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Data map commit with image and README update"
+            }
+        ]
+    },
+    {
+        "message_summary": "Upgrade ppdiffusers0193",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to upgrading ppdiffusers0193."
+            }
+        ]
+    },
+    {
+        "message_summary": "Add Ernie Indexing Example",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition to the repository"
+            }
+        ]
+    },
+    {
+        "message_summary": "Upgrade ppdiffusers0193",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Upgrade ppdiffusers0193"
+            }
+        ]
+    },
+    {
+        "message_summary": "Upgrade ppdiffusers0193",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "add the function of generation of writing",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "add the function of generation of writing"
+            }
+        ]
+    },
+    {
+        "message_summary": "big change for nlp interpreters",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "nlp for 2.3.3 and later: changed to ernie-2.0-base-en",
+        "ptm_name": "ernie-2.0-base-en",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Replacement of a Pre Trained Model": "ernie-2.0-base-en"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add Ernie Indexing Example",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition to the repository"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add Ernie Indexing Example",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition to the repository"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add Ernie Indexing Example",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition to the repository"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add Ernie Indexing Example",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition to the repository"
+            }
+        ]
+    },
+    {
+        "message_summary": "add the function of generation of writing",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of a new function for generating writing"
+            }
+        ]
+    },
+    {
+        "message_summary": "Upgrade ppdiffusers0193",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to the upgrade of ppdiffusers0193"
+            }
+        ]
+    },
+    {
+        "message_summary": "Upgrade ppdiffusers0193",
+        "ptm_name": "ppdiffusers0193",
+        "ptm_version": "Unknown",
+        "ptm_problem_addressed": "Not specified",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Upgrade ppdiffusers0193"
+            }
+        ]
+    },
+    {
+        "message_summary": "Upgrade ppdiffusers0193",
+        "ptm_name": "ppdiffusers0193",
+        "ptm_version": "Unknown",
+        "ptm_problem_addressed": "Not specified",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Upgrade ppdiffusers0193"
+            }
+        ]
+    },
+    {
+        "message_summary": "big change for nlp interpreters",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "update test files for ga and bt",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Unrelated": "No significant Pre-Trained Models activities mentioned."
+            }
+        ]
+    },
+    {
+        "message_summary": "add nlp test for ga and bt",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Task Specificity": "Dedicated to developing and deploying task-specific enhancements or capabilities that exploit the unique strengths of pre-trained models."
+            }
+        ]
+    },
+    {
+        "message_summary": "add ernie docs/ci",
+        "ptm_name": "ERNIE",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Documentation and continuous integration setup for ERNIE added.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Documentation and continuous integration setup for ERNIE added."
+            }
+        ]
+    },
+    {
+        "message_summary": "Upgrade ppdiffusers0193",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "Upgrade ppdiffusers0193",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to upgrading ppdiffusers0193."
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "feat: add sdxl fastdeploy support (#338)",
+        "ptm_name": "sdxl",
+        "ptm_version": "unknown",
+        "ptm_problem_addressed": "Fastdeploy support",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": {
+                    "repo_url": "github.com/PaddlePaddle/PaddleMIX",
+                    "filepath": "ppdiffusers/ppdiffusers/pipelines/stable_diffusion_xl/pipeline_stable_diffusion_xl.py",
+                    "commit_date": "2023-12-12T06:03:11Z",
+                    "message_summary": "feat: add sdxl fastdeploy support (#338)",
+                    "ptm_addition_details": {
+                        "name": "sdxl",
+                        "version": "unknown",
+                        "problem_addressed": "Fastdeploy support"
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "message_summary": "upgrade ppdiffusers0193",
+        "ptm_name": "ppdiffusers0193",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Upgrade of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Upgrade ppdiffusers0193",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to upgrading ppdiffusers0193."
+            }
+        ]
+    },
+    {
+        "message_summary": "Upgrade ppdiffusers0193",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to upgrading ppdiffusers0193."
+            }
+        ]
+    },
+    {
+        "message_summary": "Upgrade ppdiffusers0193",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to upgrading ppdiffusers0193."
+            }
+        ]
+    },
+    {
+        "message_summary": "Upgrade ppdiffusers0193",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "Upgrade ppdiffusers0193",
+        "ptm_name": "ppdiffusers0193",
+        "ptm_version": "Unknown",
+        "ptm_problem_addressed": "Not specified",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Upgrade ppdiffusers0193"
+            }
+        ]
+    },
+    {
+        "message_summary": "Upgrade ppdiffusers0193",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to upgrading ppdiffusers0193."
+            }
+        ]
+    },
+    {
+        "message_summary": "feat: add sdxl fastdeploy support",
+        "ptm_name": "sdxl",
+        "ptm_version": "N/A",
+        "ptm_problem_addressed": "Fastdeploy support",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "No",
+                "Task Specificity": "Yes",
+                "Community and Collaboration": "No",
+                "Maintenance": "No",
+                "Compliance and Standards": "No",
+                "Performance Improvements": "No",
+                "Compatibility": "No",
+                "Deprecation and Replacement": "No",
+                "Project Evolution": "No",
+                "Technical Debt and Simplification": "No"
+            }
+        ]
+    },
+    {
+        "message_summary": "None",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "feat: add sdxl fastdeploy support",
+        "ptm_name": "sdxl",
+        "ptm_version": "not specified",
+        "ptm_problem_addressed": "fastdeploy",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "No",
+                "Task Specificity": "Yes",
+                "Community and Collaboration": "No",
+                "Maintenance": "No",
+                "Compliance and Standards": "No",
+                "Performance Improvements": "No",
+                "Compatibility": "No",
+                "Deprecation and Replacement": "No",
+                "Project Evolution": "No",
+                "Technical Debt and Simplification": "No"
+            }
+        ]
+    },
+    {
+        "message_summary": "feat: add sdxl fastdeploy support",
+        "ptm_name": "sdxl",
+        "ptm_version": "not specified",
+        "ptm_problem_addressed": "fastdeploy",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": {
+                    "repo_url": "github.com/PaddlePaddle/PaddleMIX",
+                    "filepath": "ppdiffusers/ppdiffusers/pipelines/stable_diffusion_xl/pipeline_fastdeploy_stable_diffusion_xl_img2img.py",
+                    "commit_date": "2023-12-12T06:03:11Z",
+                    "message_summary": "feat: add sdxl fastdeploy support",
+                    "ptm_addition_details": {
+                        "name": "sdxl",
+                        "version": "not specified",
+                        "problem_addressed": "fastdeploy"
+                    }
+                }
+            }
+        ]
+    }
+]

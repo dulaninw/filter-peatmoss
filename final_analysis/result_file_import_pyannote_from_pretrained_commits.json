@@ -1,0 +1,117 @@
+[
+    {
+        "message_summary": "Add WeSpeaker embedding wrapper based on PyTorch",
+        "ptm_name": "WeSpeaker",
+        "ptm_version": "Not specified",
+        "ptm_problem_addressed": "Embedding wrapper based on PyTorch",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of a new pre-trained model"
+            }
+        ]
+    },
+    {
+        "message_summary": "Downmix and downsample audio and send as waveform to pipeline to avoid slowdown",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Downmix and downsample audio and send as waveform to pipeline to avoid slowdown"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix json string and dict issues",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix json string and dict issues"
+            }
+        ]
+    },
+    {
+        "message_summary": "Only correct if in the initial prompt",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Unrelated": "Only correct if in the initial prompt"
+            }
+        ]
+    },
+    {
+        "message_summary": "Some fixes. Added audacity labels",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Some fixes"
+            },
+            {
+                "Integration Patterns": "Added audacity labels"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add whisperx based fusion method. Fixed the package structure.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition to the repository"
+            }
+        ]
+    },
+    {
+        "message_summary": "Update default serialization to the new `json` method.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add audio processing example",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition to the repository"
+            }
+        ]
+    }
+]

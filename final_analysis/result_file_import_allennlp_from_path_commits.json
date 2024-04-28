@@ -1,0 +1,333 @@
+[
+    {
+        "message_summary": "Added code for the release",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Added code for the release"
+            }
+        ]
+    },
+    {
+        "message_summary": "add moving violations analysis and geocoding script",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition to the repository"
+            }
+        ]
+    },
+    {
+        "message_summary": "MNT move api-inference-community to root of the repo",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "move api-inference-community to root of the repo"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "pushing NLP model for identifying cancer types",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Task Specificity": "Dedicated to developing and deploying task-specific enhancements or capabilities that exploit the unique strengths of pre-trained models."
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Ignore long sentences in the input fed to AllenNLP SRL (#81)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Ignore long sentences in the input fed to AllenNLP SRL"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Refactoring of tests"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Modify ASs2s to replace all named entities with appropriate tokens during training, and use mappings to replace them back during inference. BLEU score went up 1 point.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to modifying the ASs2s model for named entity replacement during training and inference."
+            }
+        ]
+    },
+    {
+        "message_summary": "Successful migration from the Estimator API to the Keras paradigm.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Successful migration from the Estimator API to the Keras paradigm."
+            }
+        ]
+    },
+    {
+        "message_summary": "Multiple fixes in eval mode of ASs2s.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Multiple fixes in eval mode of ASs2s."
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix eval mode for ASs2s. Implement multilayer keyword-net according to the paper.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix eval mode for ASs2s"
+            },
+            {
+                "Integration Patterns": "Implement multilayer keyword-net according to the paper."
+            }
+        ]
+    },
+    {
+        "message_summary": "Add ASs2s project and transposed it to Python 3 and Tensorflow 2",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of a new project and transposing it to Python 3 and Tensorflow 2"
+            }
+        ]
+    },
+    {
+        "message_summary": "Improvements to SG DQG data processing pipeline and answer span retrieval algorithm",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Added safe fallbacks for SG DQG data processing pipeline failures. Enhanced answer span retrieval algorithm to handle more cases and corner cases.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "Reduce amount of parsing when reading SQuAD.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Reduce amount of parsing when reading SQuAD."
+            }
+        ]
+    },
+    {
+        "message_summary": "Integrate full data generation + training for SG DQG as only translating SQuAD with pre-trained HotpotQA didn't cut it.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Integrate full data generation + training for SG DQG as only translating SQuAD with pre-trained HotpotQA didn't cut it."
+            }
+        ]
+    },
+    {
+        "message_summary": "Predictions with SG-DQG using pre-trained models work. Results are poor. Will try to feed entire paragraphs instead of single sentences.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Performance Improvements": "Results are poor. Will try to feed entire paragraphs instead of single sentences."
+            }
+        ]
+    },
+    {
+        "message_summary": "Manage to make predictions for SQuAD using HotpotQA pretrained model.",
+        "ptm_name": "HotpotQA",
+        "ptm_version": "",
+        "ptm_problem_addressed": "Making predictions for SQuAD",
+        "update_details": "Answer zones seem to not be working.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "No",
+                "Task Specificity": "Yes",
+                "Community and Collaboration": "No",
+                "Maintenance": "No",
+                "Compliance and Standards": "No",
+                "Performance Improvements": "No",
+                "Compatibility": "No",
+                "Deprecation and Replacement": "No",
+                "Project Evolution": "No",
+                "Technical Debt and Simplification": "No"
+            }
+        ]
+    },
+    {
+        "message_summary": "Integrate SG-Deep-Question-Generation project and reverse engineer initial graph construction steps",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Integrate SG-Deep-Question-Generation project"
+            },
+            {
+                "Maintenance": "Reverse engineer initial graph construction steps"
+            }
+        ]
+    },
+    {
+        "message_summary": "Update for Java call to simplfy and fix UT",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update for Java call to simplify and fix UT"
+            }
+        ]
+    },
+    {
+        "message_summary": "Swap port to standard 8080",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Swap port to standard 8080"
+            }
+        ]
+    },
+    {
+        "message_summary": "Update code for site w",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update code for site w"
+            }
+        ]
+    }
+]

@@ -1,0 +1,1568 @@
+[
+    {
+        "message_summary": "Add Progress bar to HuggingFaceEmbeddings",
+        "ptm_name": "HuggingFaceEmbeddings",
+        "ptm_version": "not specified",
+        "ptm_problem_addressed": "Added a function parameter called `show_progress` to enable a `tqdm` progress bar if enabled.",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Add Progress bar to HuggingFaceEmbeddings"
+            }
+        ]
+    },
+    {
+        "message_summary": "Community[patch]use secret str in Tavily and HuggingFaceInferenceEmbeddings (#16109)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "So the api keys don't show up in repr's. Still need to do tests",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Community and Collaboration": "Commit log is related to improving community engagement or collaborative features."
+            }
+        ]
+    },
+    {
+        "message_summary": "Google docstring conversion batch 6 (#10879)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            },
+            {
+                "Replacement of a Pre Trained Model:": "Google docstring conversion batch 6 (#10879)"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix `sentence_transformers` failure",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to fixing 'sentence_transformers' failure."
+            }
+        ]
+    },
+    {
+        "message_summary": "Add log_model example to sentence_transformers",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of a new integration pattern for log_model example in sentence_transformers"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Deprecation and Replacement": "Replacement of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Update model names to v2 models",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "per-file logger for all examples",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "per-file logger for all examples"
+            }
+        ]
+    },
+    {
+        "message_summary": "feat: add Jina Embeddings",
+        "ptm_name": "Jina Embeddings",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of a new pre-trained model: Jina Embeddings"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Make /v1/embeddings functional, add request/response types",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            },
+            {
+                "Maintenance": "Replacement of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "ExLlama with long context (#2875)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Deprecation and Replacement": "Replacement of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "[FIX] Fix bug in gen_data_st.py",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix bug in gen_data_st.py"
+            }
+        ]
+    },
+    {
+        "message_summary": "Revert \"fix(gen_data_st.py): exit if txt dir is empty\"",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Deprecation and Replacement": "Removal of a Pre Trained model"
+            }
+        ]
+    },
+    {
+        "message_summary": "Update gen_data_st.py",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix issue related to empty txt directory",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix issue related to empty txt directory"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Update of a Pre Trained Model"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Update of a Pre Trained Model"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Update of a Pre Trained Model"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Update of a Pre Trained Model"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Update of a Pre Trained Model"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Fix import problems related to SentenceTransformers.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix import problems related to SentenceTransformers."
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix `config` parameter for evaluation scripts.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Rename `user_intent` to UMIM event `UserIntent`",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Unrelated": "Rename `user_intent` to UMIM event `UserIntent`"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Added output predictions helper function for topical rails.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Task Specificity": "Added output predictions helper function for topical rails."
+            }
+        ]
+    },
+    {
+        "message_summary": "Main change is adding similarity matching for intents in topical rails. Other changes: added random seed, fixed a bug on selecting a balanced test set.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "No",
+                "Task Specificity": "Yes",
+                "Community and Collaboration": "No",
+                "Maintenance": "Yes",
+                "Compliance and Standards": "No",
+                "Performance Improvements": "No",
+                "Compatibility": "No",
+                "Deprecation and Replacement": "No",
+                "Project Evolution": "No",
+                "Technical Debt and Simplification": "No"
+            }
+        ]
+    },
+    {
+        "message_summary": "Moved the sync_wrapper outside the class definition.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Moved the sync_wrapper outside the class definition."
+            }
+        ]
+    },
+    {
+        "message_summary": "Some refactoring and improvements for the topical rails evaluation.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Some refactoring and improvements for the topical rails evaluation."
+            }
+        ]
+    },
+    {
+        "message_summary": "Refactored code to use nemoguardrails.eval package that also includes an evaluation typer CLI that is also added to the nemoguardrails CLI.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Refactored code to use nemoguardrails.eval package"
+            },
+            {
+                "Compatibility": "Added evaluation typer CLI to the nemoguardrails CLI"
+            }
+        ]
+    },
+    {
+        "message_summary": "Feat: prompt adaptation for test data generation (#530)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "feat: configure retries and timeouts with evaluations and testset generators",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix: Clean up embeddings for ragas and add docs for Azure embeddings",
+        "ptm_name": "AzureOpenAI",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Cleanup `RagasBaseEmbeddings` classes. Added documentation for AzureOpenAI",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Cleanup `RagasBaseEmbeddings` classes. Added documentation for AzureOpenAI"
+            }
+        ]
+    },
+    {
+        "message_summary": "added class for FastEmbed (#379)",
+        "ptm_name": "FastEmbed",
+        "ptm_version": "N/A",
+        "ptm_problem_addressed": "Embeddings",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": {
+                    "status": "Not Present"
+                },
+                "Task Specificity": {
+                    "status": "Not Present"
+                },
+                "Community and Collaboration": {
+                    "status": "Not Present"
+                },
+                "Maintenance": {
+                    "status": "Not Present"
+                },
+                "Compliance and Standards": {
+                    "status": "Not Present"
+                },
+                "Performance Improvements": {
+                    "status": "Not Present"
+                },
+                "Compatibility": {
+                    "status": "Not Present"
+                },
+                "Deprecation and Replacement": {
+                    "status": "Not Present"
+                },
+                "Project Evolution": {
+                    "status": "Not Present"
+                },
+                "Technical Debt and Simplification": {
+                    "status": "Not Present"
+                }
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "feat: add native support for OpenAI and AzureOpenAI",
+        "ptm_name": "OpenAI and AzureOpenAI",
+        "ptm_version": "latest",
+        "ptm_problem_addressed": "Support for embeddings and LLMs",
+        "update_details": "Rework `RagasLLM` with an async version of generate, added checks for API_KEYs, and tests to ensure functionality",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Commit log is related to the addition of new integration patterns."
+            }
+        ]
+    },
+    {
+        "message_summary": "feat: RagasEmbeddings (#232)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Update of a Pre Trained Model:"
+            },
+            {
+                "Deprecation and Replacement": "Replacement of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Extend langchain embedding API",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Extended langchain embeddings",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "N/A",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Refactor some loops into list comprehensions",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Refactor some loops into list comprehensions"
+            }
+        ]
+    },
+    {
+        "message_summary": "RFC: Instruct embeddings",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Instruct embeddings"
+            }
+        ]
+    },
+    {
+        "message_summary": "Convert numpy arrays to lists in HuggingFaceEmbeddings",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "`SentenceTransformer` returns a NumPy array, not a `List[List[float]]` or `List[float]` as specified in the interface of `Embeddings`. That PR makes it consistent with the interface.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "The commit involves maintenance by converting numpy arrays to lists in HuggingFaceEmbeddings."
+            }
+        ]
+    },
+    {
+        "message_summary": "Add HuggingFace Hub Embeddings (#125)",
+        "ptm_name": "HuggingFace Hub",
+        "ptm_version": "",
+        "ptm_problem_addressed": "Support for calling HuggingFace embedding models using the HuggingFaceHub Inference API. Currently supports 'sentence-transformers' models.",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of HuggingFace Hub Embeddings for calling embedding models using the HuggingFaceHub Inference API."
+            }
+        ]
+    },
+    {
+        "message_summary": "Add support of HuggingFace embedding models",
+        "ptm_name": "HuggingFace embedding models",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of a new pre-trained model"
+            }
+        ]
+    },
+    {
+        "message_summary": "Use batch_size parameter with keybert.backend.SentenceTransformerBackend",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Use batch_size parameter with keybert.backend.SentenceTransformerBackend"
+            }
+        ]
+    },
+    {
+        "message_summary": "Moving back sentence transformers to plugins directory",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Resolving mock failures by renaming project for the time being",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Moving back sentence transformers to plugins directory"
+            },
+            {
+                "Maintenance": "Resolving mock failures by renaming project for the time being"
+            }
+        ]
+    },
+    {
+        "message_summary": "Support embedding by importing AwaEmbedding",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Support embedding by importing AwaEmbedding"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add AwaEmbedding and LLMEmbedding for users",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Add AwaEmbedding and LLMEmbedding for users"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "add tool implementations and ReAct",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "add tool implementations"
+            },
+            {
+                "Task Specificity": "ReAct"
+            }
+        ]
+    },
+    {
+        "message_summary": "add tool implementations and ReAct",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "add tool implementations"
+            },
+            {
+                "Task Specificity": "ReAct"
+            }
+        ]
+    },
+    {
+        "message_summary": "Replacing text-question relevancy model with sentence transformer based one",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "Text-question relevancy model replaced with a sentence transformer based model",
+        "removal_details": "",
+        "text": [
+            {
+                "Deprecation and Replacement": "Text-question relevancy model replaced with a sentence transformer based model"
+            }
+        ]
+    },
+    {
+        "message_summary": "enabling new sentence transformer-based paraphrase detection model in chatbot pipeline",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "enabling new sentence transformer-based paraphrase detection model in chatbot pipeline"
+            }
+        ]
+    },
+    {
+        "message_summary": "update model names to v2 models",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "per-file logger for all examples",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "per-file logger for all examples"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add fine-tuning example for bge-v1.5 from marketplace",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition to the repository"
+            }
+        ]
+    },
+    {
+        "message_summary": "N/A",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "N/A",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "First release - data, run_metrics, run_experiments (only a placeholder)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "No",
+                "Task Specificity": "No",
+                "Community and Collaboration": "No",
+                "Maintenance": "No",
+                "Compliance and Standards": "No",
+                "Performance Improvements": "No",
+                "Compatibility": "No",
+                "Deprecation and Replacement": "No",
+                "Project Evolution": "No",
+                "Technical Debt and Simplification": "No"
+            }
+        ]
+    },
+    {
+        "message_summary": "Update Chroma.from_documents call's parameter names",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add sentence_transformers into logged model's packages",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of a new pre-trained model"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add typing related dependency and versions",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Add typing related dependency and versions"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Update notebook with repo links",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update notebook with repo links"
+            }
+        ]
+    },
+    {
+        "message_summary": "Update cluster config in RUNME to unblock it in Azure",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update cluster config in RUNME to unblock it in Azure"
+            }
+        ]
+    },
+    {
+        "message_summary": "Update Chroma.from_documents call's parameter names",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add sentence_transformers into logged model's packages",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of a new pre-trained model"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add typing related dependency and versions",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Add typing related dependency and versions"
+            }
+        ]
+    },
+    {
+        "message_summary": "None",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Update notebook with repo links",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update notebook with repo links"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Remove remaining reference to \"worst-case\"",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Unrelated": "Remove remaining reference to \"worst-case\""
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "added file for querying index",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "added file for querying index"
+            }
+        ]
+    },
+    {
+        "message_summary": "added file for creating faiss index",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Added file for creating faiss index"
+            }
+        ]
+    },
+    {
+        "message_summary": "connect neo4j and retrieve info with the LLM",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "connect neo4j and retrieve info with the LLM"
+            }
+        ]
+    },
+    {
+        "message_summary": "connect neo4j and retrieve info with the LLM",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "connect neo4j and retrieve info with the LLM"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Update import CrossEncoder class from sentence-transformers",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Refactor checking loss type in FAQ_BERT model prediction",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Refactor checking loss type in FAQ_BERT model prediction"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add scripts to generate Elasticsearch, BERT and top-k reranked results",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Add scripts to generate Elasticsearch, BERT and top-k reranked results"
+            }
+        ]
+    },
+    {
+        "message_summary": "Support for testConnect (First Batch)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Support for testConnect (First Batch)"
+            }
+        ]
+    },
+    {
+        "message_summary": "Support llm_service_config passes as a dict",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Support llm_service_config passes as a dict"
+            }
+        ]
+    },
+    {
+        "message_summary": "Support for spawning multiple processes for indexing",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Support for spawning multiple processes for indexing"
+            }
+        ]
+    },
+    {
+        "message_summary": "added libary for LLM Sbert Model",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Added library for LLM Sbert Model"
+            }
+        ]
+    },
+    {
+        "message_summary": "Update for AI, NLP, DL, CV coursework",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix answer field name for some baselines",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix answer field name for some baselines"
+            }
+        ]
+    },
+    {
+        "message_summary": "Make IoUF1 return the result for multiple IoU thresholds and add Average Precision",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Performance Improvements": "Make IoUF1 return the result for multiple IoU thresholds and add Average Precision"
+            }
+        ]
+    },
+    {
+        "message_summary": "Reuse the PL module and metrics for the simple baselines",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Reuse the PL module and metrics for the simple baselines"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix the closest question baseline",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix the closest question baseline"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add the metrics to be computed during training",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition to the repository"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Updated script to work with modified version of the collected data",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Updated script to work with modified version of the collected data"
+            }
+        ]
+    }
+]

@@ -1,0 +1,1218 @@
+[
+    {
+        "message_summary": "[cli] Add --device to asteroid-infer (#375)",
+        "ptm_name": "asteroid-infer",
+        "ptm_version": "not specified",
+        "ptm_problem_addressed": "Device selection for inference",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": {
+                    "name": "asteroid-infer",
+                    "version": "not specified",
+                    "problem_addressed": "Device selection for inference"
+                }
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix #279 OLA support for separate() and asteroid-infer",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to fixing issues and improving functionality."
+            }
+        ]
+    },
+    {
+        "message_summary": "BC-breaking: Load models without sample_rate",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Deprecation and Replacement": "Load models without sample_rate"
+            }
+        ]
+    },
+    {
+        "message_summary": "Automatic resampling in separate + CLI.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Automatic resampling in separate + CLI."
+            }
+        ]
+    },
+    {
+        "message_summary": "Update black to version 20.8b1",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update black to version 20.8b1"
+            }
+        ]
+    },
+    {
+        "message_summary": "[CLI] Refactor `separate` method (future torch.script compat) (#245)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Refactor `separate` method for future torch.script compatibility"
+            }
+        ]
+    },
+    {
+        "message_summary": "[CLI] Add asteroid-infer CLI to enhance/separate from the command line",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Integration Patterns": "Add asteroid-infer CLI to enhance/separate from the command line"
+            }
+        ]
+    },
+    {
+        "message_summary": "[black] Flake8 compatibility + Black strings (#198)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Flake8 compatibility + Black strings"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "[docs] Brand new docs ! (#192)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            },
+            {
+                "Deprecation and Replacement": "Replacement of a Pre Trained Model:"
+            },
+            {
+                "Deprecation and Replacement": "Removal of a Pre Trained model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "[model_cards] Add message to create model card after publishing",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Community and Collaboration": "Add message to create model card after publishing"
+            }
+        ]
+    },
+    {
+        "message_summary": "Publishing pretrained models (wham/ConvTasNet)",
+        "ptm_name": "ConvTasNet",
+        "ptm_version": "",
+        "ptm_problem_addressed": "Source separation",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Publishing pretrained models (wham/ConvTasNet)"
+            }
+        ]
+    },
+    {
+        "message_summary": "Remove deprecated code",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Deprecation and Replacement": "Remove deprecated code"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add mulcat option to DPRNN",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Add mulcat option to DPRNN"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add FasNetTAC model, dataset, and recipe",
+        "ptm_name": "FasNetTAC",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of a new pre-trained model, dataset, and recipe"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "[src] Make sample_rate positional in BaseModel (#431)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Make sample_rate positional in BaseModel"
+            }
+        ]
+    },
+    {
+        "message_summary": "Support Multichannel models",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Added support for multichannel models by including n_channels parameter in BaseModel, Separatable, and LambdaOverlapAdd. Load/save tests for multichannel models were also added.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Added support for multichannel models by including n_channels parameter in BaseModel, Separatable, and LambdaOverlapAdd. Load/save tests for multichannel models were also added."
+            }
+        ]
+    },
+    {
+        "message_summary": "Add stft_n_filters to BaseDCUNet",
+        "ptm_name": "stft_n_filters",
+        "ptm_version": "N/A",
+        "ptm_problem_addressed": "Backward breaking: change default parameter to match DCUNet paper",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix Large-DCUNet-20 arch (#405) and add tests for the bigger architectures",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            },
+            {
+                "Maintenance": "Replacement of a Pre Trained Model:"
+            },
+            {
+                "Maintenance": "Removal of a Pre Trained model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Support for huggingface model hub",
+        "ptm_name": "huggingface model hub",
+        "ptm_version": "",
+        "ptm_problem_addressed": "Integration with Hugging Face Model Hub",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": {
+                    "name": "huggingface model hub",
+                    "problem_addressed": "Integration with Hugging Face Model Hub"
+                }
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix complex and add tests",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Fix complex"
+            },
+            {
+                "Maintenance": "Add tests"
+            }
+        ]
+    },
+    {
+        "message_summary": "[CI] Catch warnings we expect",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Catch warnings we expect"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix DCCRN and DCUNet-Large",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Fix the architectures. JIT-able DCCRN and DCUNet. Automatic reshaping in DCUNet",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix the architectures. JIT-able DCCRN and DCUNet. Automatic reshaping in DCUNet"
+            }
+        ]
+    },
+    {
+        "message_summary": "[src] BaseModel takes sample_rate argument (#336)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Added an optional sample_rate argument to BaseModel with a property getter and setter.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Added an optional sample_rate argument to BaseModel with a property getter and setter."
+            }
+        ]
+    },
+    {
+        "message_summary": "BC-breaking: Load models without sample_rate",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Deprecation and Replacement": "Load models without sample_rate"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model"
+            }
+        ]
+    },
+    {
+        "message_summary": "New complex ops + Add DCUNet and DCCRNet",
+        "ptm_name": "DCUNet, DCCRNet",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "New complex ops"
+            },
+            {
+                "Task Specificity": "Add DCUNet and DCCRNet"
+            }
+        ]
+    },
+    {
+        "message_summary": "BaseTasNet renamed to BaseEncoderMaskerDecoder with model hooks added",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "BaseTasNet was renamed to BaseEncoderMaskerDecoder, and model hooks were added.",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to renaming BaseTasNet to BaseEncoderMaskerDecoder and adding model hooks."
+            }
+        ]
+    },
+    {
+        "message_summary": "Add DeMask: Surgical mask speech enhancement recipes",
+        "ptm_name": "DeMask",
+        "ptm_version": "",
+        "ptm_problem_addressed": "Surgical mask speech enhancement",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of a new pre-trained model: DeMask for surgical mask speech enhancement recipes"
+            }
+        ]
+    },
+    {
+        "message_summary": "[tests] Fix wrong `separate` method in model tests (#241)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix wrong `separate` method in model tests"
+            }
+        ]
+    },
+    {
+        "message_summary": "Improve tests for new model interface",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Improve tests for new model interface"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "[src & tests] Split SuDORMRF architectures in encoder/masker/decoder (#208)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Split SuDORMRF architectures in encoder/masker/decoder"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add LSTMTasNet to serializable models",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of a new pre-trained model to the repository."
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix serialization issues introduced in previous PR + some docs",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix serialization issues introduced in previous PR"
+            },
+            {
+                "Unrelated": "some docs"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add SuDoRM-RF model & online mixing collate function",
+        "ptm_name": "SuDoRM-RF",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of a new pre-trained model"
+            },
+            {
+                "Compatibility": "Ensuring compatibility with new systems or versions"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Commit log is related to updates ensuring compatibility with new systems or versions."
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "[src & tests] Support filenames at the input of `separate` (#154)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Support filenames at the input of `separate`"
+            }
+        ]
+    },
+    {
+        "message_summary": "Importable models: ConvTasNet and DPRNNTasNet",
+        "ptm_name": "ConvTasNet, DPRNNTasNet",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Importable models: ConvTasNet and DPRNNTasNet"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of a new feature to the CLI tool"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix #279 OLA support for separate() and asteroid-infer",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Task Specificity": "OLA support"
+            }
+        ]
+    },
+    {
+        "message_summary": "BC-breaking: Load models without sample_rate",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Load models without sample_rate"
+            }
+        ]
+    },
+    {
+        "message_summary": "Automatic resampling in separate + CLI.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Automatic resampling in separate + CLI."
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model"
+            }
+        ]
+    },
+    {
+        "message_summary": "[CLI] Refactor `separate` method (future torch.script compat) (#245)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Refactor `separate` method for future torch.script compatibility"
+            }
+        ]
+    },
+    {
+        "message_summary": "[CLI] Add asteroid-infer CLI to enhance/separate from the command line",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of a new CLI tool"
+            }
+        ]
+    },
+    {
+        "message_summary": "[black] Flake8 compatibility + Black strings (#198)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Adaptation of pre-trained models to function optimally with newer systems or software versions, ensuring forward compatibility."
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "[docs] Brand new docs ! (#192)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            },
+            {
+                "Deprecation and Replacement": "Replacement of a Pre Trained Model:"
+            },
+            {
+                "Deprecation and Replacement": "Removal of a Pre Trained model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "[model_cards] Add message to create model card after publishing",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Community and Collaboration": "Add message to create model card after publishing"
+            }
+        ]
+    },
+    {
+        "message_summary": "Publishing pretrained models (wham/ConvTasNet)",
+        "ptm_name": "wham/ConvTasNet",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Deprecation and Replacement": "Remove deprecated code"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of a new integration pattern"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add FasNetTAC model, dataset, and recipe",
+        "ptm_name": "FasNetTAC",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of a new pre-trained model, dataset, and recipe."
+            }
+        ]
+    },
+    {
+        "message_summary": "[src] Change n_channels to in_channels",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to changing n_channels to in_channels"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "[src] Make sample_rate positional in BaseModel (#431)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Make sample_rate positional in BaseModel"
+            }
+        ]
+    },
+    {
+        "message_summary": "Support Multichannel models",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Add n_channels to BaseModel, Load/save test for multichannel models, Add n_channels to Separatable, Multichannel in separate, Add n_channels to LambdaOverlapAdd",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Support Multichannel models",
+                "Maintenance": "Add n_channels to BaseModel, Load/save test for multichannel models, Add n_channels to Separatable, Multichannel in separate, Add n_channels to LambdaOverlapAdd"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add stft_n_filters to BaseDCUNet",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Change default parameter to match DCUNet paper",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:Change default parameter to match DCUNet paper"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Support for huggingface model hub",
+        "ptm_name": "huggingface model hub",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Support for huggingface model hub"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix complex and add tests",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Add CLI tests, Add tests for complex_nn, Deprecate `as_torch_complex`, Fix DCCRN",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix complex and add tests"
+            },
+            {
+                "Deprecation and Replacement": "Deprecate `as_torch_complex`"
+            },
+            {
+                "Maintenance": "Fix DCCRN"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "[src&jit] Fix DCCRN and DCUNet-Large (#276)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Fix the architectures. JIT-able DCCRN and DCUNet. Automatic reshaping in DCUNet",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix the architectures. JIT-able DCCRN and DCUNet. Automatic reshaping in DCUNet"
+            }
+        ]
+    },
+    {
+        "message_summary": "[src] BaseModel takes sample_rate argument (#336)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Added an optional sample_rate argument to BaseModel with a property getter and setter.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Added an optional sample_rate argument to BaseModel with a property getter and setter."
+            }
+        ]
+    },
+    {
+        "message_summary": "BC-breaking: Load models without sample_rate",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Compatibility": "Load models without sample_rate"
+            }
+        ]
+    },
+    {
+        "message_summary": "Automatic resampling in separate + CLI.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Automatic resampling in separate + CLI."
+            }
+        ]
+    },
+    {
+        "message_summary": "New complex ops + Add DCUNet and DCCRNet",
+        "ptm_name": "DCUNet, DCCRNet",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "New complex ops"
+            },
+            {
+                "Task Specificity": "Add DCUNet and DCCRNet"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Replacement of a Pre Trained Model:": "BaseTasNet -> BaseEncoderMaskerDecoder"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add DeMask: Surgical mask speech enhancement recipes",
+        "ptm_name": "DeMask",
+        "ptm_version": "",
+        "ptm_problem_addressed": "Surgical mask speech enhancement",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of a new pre-trained model: DeMask for surgical mask speech enhancement"
+            }
+        ]
+    },
+    {
+        "message_summary": "[tests] Fix wrong `separate` method in model tests (#241)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix wrong `separate` method in model tests"
+            }
+        ]
+    },
+    {
+        "message_summary": "[tests] Improve tests for new model interface",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "[src & tests] Split SuDORMRF architectures in encoder/masker/decoder (#208)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Split SuDORMRF architectures in encoder/masker/decoder"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add LSTMTasNet to serializable models",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of a new pre-trained model to the repository."
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Add SuDoRM-RF model & online mixing collate function",
+        "ptm_name": "SuDoRM-RF",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Online mixing collate function was added for SuDoRM-RF model.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of a new pre-trained model SuDoRM-RF and online mixing collate function."
+            }
+        ]
+    },
+    {
+        "message_summary": "[black] Flake8 compatibility + Black strings (#198)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Adaptation of pre-trained models to function optimally with newer systems or software versions, ensuring forward compatibility"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Update of a Pre Trained Model"
+            }
+        ]
+    },
+    {
+        "message_summary": "Importable models: ConvTasNet and DPRNNTasNet",
+        "ptm_name": "ConvTasNet, DPRNNTasNet",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Importable models: ConvTasNet and DPRNNTasNet"
+            }
+        ]
+    }
+]

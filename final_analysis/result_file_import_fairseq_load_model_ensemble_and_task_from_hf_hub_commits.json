@@ -1,0 +1,2763 @@
+[
+    {
+        "message_summary": "Keep task level checkpoint key name generic",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Task Specificity": "Keep task level checkpoint key name generic"
+            }
+        ]
+    },
+    {
+        "message_summary": "remove missing config entries when loading task from checkpoint",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "remove missing config entries when loading task from checkpoint"
+            }
+        ]
+    },
+    {
+        "message_summary": "data2vec v2.0 (#4903)",
+        "ptm_name": "data2vec",
+        "ptm_version": "2.0",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Update of a Pre Trained Model: data2vec v2.0"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Add strict option to checkpoint_utils. load_pretrained_component_from_model()",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Addition to the repository"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add loading from HuggingFace Hub",
+        "ptm_name": "HuggingFace Hub",
+        "ptm_version": "",
+        "ptm_problem_addressed": "Loading from HuggingFace Hub",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": {
+                    "name": "HuggingFace Hub",
+                    "action": "Addition of loading from HuggingFace Hub"
+                }
+            }
+        ]
+    },
+    {
+        "message_summary": "Back out \"Fairseq needs to store and load metadata from model state_dict\" (#3861)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Backout fairseq changes and fix with suggested, more optimal changes in checkpoint utils.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Deprecation and Replacement": "Backout fairseq changes and fix with suggested, more optimal changes in checkpoint utils."
+            }
+        ]
+    },
+    {
+        "message_summary": "Use PathManager to delete old checkpoints",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "--keep-best-checkpoints doesn't work for Manifold paths because the current code assumes normal paths. Lets use PathManager to properly remove them.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Use PathManager to delete old checkpoints because --keep-best-checkpoints doesn't work for Manifold paths"
+            }
+        ]
+    },
+    {
+        "message_summary": "use suffix when saving best checkpoints with metric",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "use suffix when saving best checkpoints with metric"
+            }
+        ]
+    },
+    {
+        "message_summary": "Roll back os.path.abspath change",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Roll back os.path.abspath change"
+            }
+        ]
+    },
+    {
+        "message_summary": "enable manifold checkpoints with --keep-interval-updates",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "enable manifold checkpoints with --keep-interval-updates"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix incorrect local cache for checkpoint_last.pt when training is restarted on the same host",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix incorrect local cache for checkpoint_last.pt when training is restarted on the same host"
+            }
+        ]
+    },
+    {
+        "message_summary": "fairseq checkpoint improvements",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "Refactor eval_lm to support library usage",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Refactoring done to support library usage",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Refactoring done to support library usage"
+            }
+        ]
+    },
+    {
+        "message_summary": "Support atomic saves for checkpoints",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Support atomic saves for checkpoints"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix loading of very old checkpoints",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to fixing loading of very old checkpoints."
+            }
+        ]
+    },
+    {
+        "message_summary": "fix wav2vec scripts",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "fix wav2vec scripts"
+            }
+        ]
+    },
+    {
+        "message_summary": "Rename optimization.min_lr -> optimization.stop_min_lr",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "The commit involves renaming 'optimization.min_lr' to 'optimization.stop_min_lr' in the file 'checkpoint_utils.py' for issue #1486.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "The commit involves renaming 'optimization.min_lr' to 'optimization.stop_min_lr' in the file 'checkpoint_utils.py' for issue #1486."
+            }
+        ]
+    },
+    {
+        "message_summary": "fix loading ensembles",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Fixes loading ensembles. Previous change used the state of the first model for all models in the ensemble",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fixes loading ensembles. Previous change used the state of the first model for all models in the ensemble"
+            }
+        ]
+    },
+    {
+        "message_summary": "migrate wav2vec2 model (#1409)",
+        "ptm_name": "wav2vec2",
+        "ptm_version": "unknown",
+        "ptm_problem_addressed": "model migration",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Deprecation and Replacement": "Replacement of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Deprecation and Replacement": "Replacement of a Pre Trained Model:"
+            },
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Code formatting and organization updates"
+            }
+        ]
+    },
+    {
+        "message_summary": "Improve dictionary & checkpoint reading w/ local caching",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Improve dictionary & checkpoint reading w/ local caching"
+            }
+        ]
+    },
+    {
+        "message_summary": "Misc fixes (#2448)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Misc fixes"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fixes checkpoint_path while loading a model-parallel checkpoint",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Fixes issue #2351 related to loading model-parallel checkpoints.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "Several small fixes (incl. set default --data-buffer-size=10)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Several small fixes including setting default --data-buffer-size=10"
+            }
+        ]
+    },
+    {
+        "message_summary": "Generalize moving of tensors to CPU in checkpoints",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "This is needed for TPUs",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Generalize moving of tensors to CPU in checkpoints for TPUs"
+            }
+        ]
+    },
+    {
+        "message_summary": "Update checkpoint mkdir behavior (issue #1986)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Create checkpoint directory in ```save_checkpoint()``` instead of ```load_checkpoint()```.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:Create checkpoint directory in ```save_checkpoint()``` instead of ```load_checkpoint()```."
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix epoch reporting when restoring checkpoint",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Fix epoch reporting when restoring checkpoint"
+            }
+        ]
+    },
+    {
+        "message_summary": "tts synthesis script",
+        "ptm_name": "pyspeech",
+        "ptm_version": "N/A",
+        "ptm_problem_addressed": "TTS synthesis for a particular text",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "N/A",
+                "Task Specificity": "N/A",
+                "Community and Collaboration": "N/A",
+                "Maintenance": "N/A",
+                "Compliance and Standards": "N/A",
+                "Performance Improvements": "N/A",
+                "Compatibility": "N/A",
+                "Deprecation and Replacement": "N/A",
+                "Project Evolution": "N/A",
+                "Technical Debt and Simplification": "N/A"
+            }
+        ]
+    },
+    {
+        "message_summary": "Split from PR#968. add --keep-best-checkpoints (#990)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Compatibility": "add --keep-best-checkpoints"
+            }
+        ]
+    },
+    {
+        "message_summary": "More fully deprecate --raw-text and --lazy-load (fixes #1488)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Deprecation and Replacement": "Deprecation of --raw-text and --lazy-load"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition to the repository"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "Added option to save checkpoints using Path Manager.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Added option to save checkpoints using Path Manager."
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Update --restore-file logic (partially fixes #999)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add WSC task and criterion",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Task Specificity": "Addition of a WSC task and criterion"
+            }
+        ]
+    },
+    {
+        "message_summary": "Update PyTorch Hub interface",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update PyTorch Hub interface"
+            }
+        ]
+    },
+    {
+        "message_summary": "Relicense fairseq under MIT license",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Compliance and Standards": "Commit log is related to ensuring code compliance with standards and regulations."
+            }
+        ]
+    },
+    {
+        "message_summary": "Rename _load_model_ensemble -> load_model_ensemble_and_task",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Deprecation and Replacement": "Replacement of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fixes checkpointing bug introduced in 89e077c",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fixes checkpointing bug introduced in 89e077c"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add additional options for configuring writing of checkpoints",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Add additional options for configuring writing of checkpoints"
+            }
+        ]
+    },
+    {
+        "message_summary": "Automatically fill in default values from add_args",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Automatically fill in default values from add_args"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add --reset-dataloader",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Add --reset-dataloader"
+            }
+        ]
+    },
+    {
+        "message_summary": "Small features + lint",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Small features"
+            },
+            {
+                "Maintenance": "lint"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix breakage from D33649708",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix breakage from D33649708"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add strict option to checkpoint_utils. load_pretrained_component_from_model()",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Addition of a strict option to checkpoint_utils.load_pretrained_component_from_model()"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add loading from HuggingFace Hub",
+        "ptm_name": "HuggingFace Hub",
+        "ptm_version": "",
+        "ptm_problem_addressed": "Loading from HuggingFace Hub",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": {
+                    "activity": "Addition of loading from HuggingFace Hub"
+                }
+            }
+        ]
+    },
+    {
+        "message_summary": "Back out \"Fairseq needs to store and load metadata from model state_dict\" (#3861)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Fix with suggested, more optimal changes in checkpoint utils",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Deprecation and Replacement": "Removal of a Pre Trained model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Use suffix when saving best checkpoints with metric",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "This is needed when training with FSDP + sharded state, as the checkpoints should have `-shard0.pt`",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Use suffix when saving best checkpoints with metric"
+            }
+        ]
+    },
+    {
+        "message_summary": "Roll back os.path.abspath change",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Roll back os.path.abspath change"
+            }
+        ]
+    },
+    {
+        "message_summary": "enable manifold checkpoints with --keep-interval-updates",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix incorrect local cache for checkpoint_last.pt when training is restarted on the same host",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix incorrect local cache for checkpoint_last.pt when training is restarted on the same host"
+            }
+        ]
+    },
+    {
+        "message_summary": "fairseq checkpoint improvements",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "Refactor eval_lm to support library usage",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "Support atomic saves for checkpoints",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix loading of very old checkpoints",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Fix loading of very old checkpoints"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix wav2vec scripts (#1494)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "Rename optimization.min_lr -> optimization.stop_min_lr",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "The commit involves renaming 'optimization.min_lr' to 'optimization.stop_min_lr'.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "The commit involves renaming 'optimization.min_lr' to 'optimization.stop_min_lr'."
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix loading ensembles",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Previous change used the state of the first model for all models in the ensemble",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix loading ensembles"
+            }
+        ]
+    },
+    {
+        "message_summary": "migrate wav2vec2 model (#1409)",
+        "ptm_name": "wav2vec2",
+        "ptm_version": "not specified",
+        "ptm_problem_addressed": "not specified",
+        "update_details": "Minor bug fixes included in the migration",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "Apply black+isort",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "Misc fixes (#2448)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Misc fixes"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fixes checkpoint_path while loading a model-parallel checkpoint",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Fixes checkpoint_path while loading a model-parallel checkpoint"
+            }
+        ]
+    },
+    {
+        "message_summary": "Several small fixes (incl. set default --data-buffer-size=10)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Several small fixes (incl. set default --data-buffer-size=10)"
+            }
+        ]
+    },
+    {
+        "message_summary": "Generalize moving of tensors to CPU in checkpoints",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "This is needed for TPUs",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Generalize moving of tensors to CPU in checkpoints"
+            },
+            {
+                "Compatibility": "This is needed for TPUs"
+            }
+        ]
+    },
+    {
+        "message_summary": "Update checkpoint mkdir behavior (issue #1986)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Create checkpoint directory in ```save_checkpoint()``` instead of ```load_checkpoint()```.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model: Create checkpoint directory in ```save_checkpoint()``` instead of ```load_checkpoint()```."
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix epoch reporting when restoring checkpoint",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Fix epoch reporting when restoring checkpoint"
+            }
+        ]
+    },
+    {
+        "message_summary": "tts synthesis script",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Split from PR#968. add --keep-best-checkpoints (#990)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Compatibility": "Commit log is related to updates ensuring compatibility with new systems or versions."
+            }
+        ]
+    },
+    {
+        "message_summary": "More fully deprecate --raw-text and --lazy-load (fixes #1488)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Deprecation and Replacement": "Deprecate --raw-text and --lazy-load"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition to the repository"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "Added option to save checkpoints using Path Manager.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Added option to save checkpoints using Path Manager."
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Lint"
+            }
+        ]
+    },
+    {
+        "message_summary": "Update --restore-file logic (partially fixes #999)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add WSC task and criterion",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Task Specificity": "Addition of a WSC task and criterion"
+            }
+        ]
+    },
+    {
+        "message_summary": "Update PyTorch Hub interface",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update PyTorch Hub interface"
+            }
+        ]
+    },
+    {
+        "message_summary": "Relicense fairseq under MIT license",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Compliance and Standards": "Commit log is related to ensuring code compliance with standards and regulations."
+            }
+        ]
+    },
+    {
+        "message_summary": "Rename _load_model_ensemble -> load_model_ensemble_and_task",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Deprecation and Replacement": "Replacement of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fixes checkpointing bug introduced in 89e077c",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fixes checkpointing bug introduced in 89e077c"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add additional options for configuring writing of checkpoints",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Add additional options for configuring writing of checkpoints"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Add --reset-dataloader",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Small features + lint",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Small features"
+            },
+            {
+                "Maintenance": "lint"
+            }
+        ]
+    },
+    {
+        "message_summary": "Clean up sharded train iterator",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Clean up sharded train iterator"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add missing options to TransformerDecoderLayer",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Addition of a new feature to the repository"
+            }
+        ]
+    },
+    {
+        "message_summary": "Load pretrained encoder or decoder (#705)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Functionality added in fairseq to load a pretrained encoder or decoder from another pretrained model into the current model.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Add strict option to checkpoint_utils. load_pretrained_component_from_model()",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Addition of a strict option to checkpoint_utils.load_pretrained_component_from_model()"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add loading from HuggingFace Hub",
+        "ptm_name": "HuggingFace Hub",
+        "ptm_version": "",
+        "ptm_problem_addressed": "Loading from HuggingFace Hub",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of loading from HuggingFace Hub"
+            }
+        ]
+    },
+    {
+        "message_summary": "Back out \"Fairseq needs to store and load metadata from model state_dict\" (#3861)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Fix with suggested, more optimal changes in checkpoint utils",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix with suggested, more optimal changes in checkpoint utils"
+            }
+        ]
+    },
+    {
+        "message_summary": "use pathmanager to delete old checkpoints",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "--keep-best-checkpoints doesn't work for Manifold paths because the current code assumes normal paths. Lets use PathManager to properly remove them.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "use pathmanager to delete old checkpoints"
+            }
+        ]
+    },
+    {
+        "message_summary": "use suffix when saving best checkpoints with metric",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "Roll back os.path.abspath change",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Roll back os.path.abspath change"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "fairseq checkpoint improvements",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "fairseq checkpoint improvements"
+            }
+        ]
+    },
+    {
+        "message_summary": "Refactor eval_lm to support library usage",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "Support atomic saves for checkpoints",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Support atomic saves for checkpoints"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix loading of very old checkpoints",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to fixing loading of very old checkpoints."
+            }
+        ]
+    },
+    {
+        "message_summary": "Fixes #2942, includes documentation and migration of old models",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "Rename optimization.min_lr -> optimization.stop_min_lr",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "The commit involves renaming optimization.min_lr to optimization.stop_min_lr.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "The commit involves renaming optimization.min_lr to optimization.stop_min_lr."
+            }
+        ]
+    },
+    {
+        "message_summary": "fix loading ensembles",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Fixes loading ensembles. Previous change used the state of the first model for all models in the ensemble.",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "migrate wav2vec2 model (#1409)",
+        "ptm_name": "wav2vec2",
+        "ptm_version": "not specified",
+        "ptm_problem_addressed": "not specified",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Involves integrating new pre-trained models into existing systems, focusing on seamless incorporation and initial feature enhancement for these models."
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Improve dictionary & checkpoint reading w/ local caching",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Improve dictionary & checkpoint reading w/ local caching"
+            }
+        ]
+    },
+    {
+        "message_summary": "Misc fixes",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Misc fixes"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fixes checkpoint_path while loading a model-parallel checkpoint",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to fixing a checkpoint_path issue while loading a model-parallel checkpoint."
+            }
+        ]
+    },
+    {
+        "message_summary": "Several small fixes (incl. set default --data-buffer-size=10)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Several small fixes were made, including setting the default --data-buffer-size to 10.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Several small fixes were made, including setting the default --data-buffer-size to 10."
+            }
+        ]
+    },
+    {
+        "message_summary": "Generalize moving of tensors to CPU in checkpoints",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "Update checkpoint mkdir behavior (issue #1986)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Create checkpoint directory in ```save_checkpoint()``` instead of ```load_checkpoint()```.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:Create checkpoint directory in ```save_checkpoint()``` instead of ```load_checkpoint()```."
+            },
+            {
+                "Deprecation and Replacement": "Removal of a Pre Trained model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix epoch reporting when restoring checkpoint",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Fix epoch reporting when restoring checkpoint"
+            }
+        ]
+    },
+    {
+        "message_summary": "tts synthesis script",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Split from PR#968. add --keep-best-checkpoints (#990)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Compatibility": "add --keep-best-checkpoints"
+            }
+        ]
+    },
+    {
+        "message_summary": "More fully deprecate --raw-text and --lazy-load (fixes #1488)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Deprecation and Replacement": "Deprecate --raw-text and --lazy-load"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add wrapper abstraction on top of fvcore PathManager to insulate OSS compatibility",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Add wrapper abstraction on top of fvcore PathManager to insulate OSS compatibility"
+            }
+        ]
+    },
+    {
+        "message_summary": "Apply Black auto-formatting",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Apply Black auto-formatting"
+            }
+        ]
+    },
+    {
+        "message_summary": "Added option to save checkpoints using Path Manager.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Added option to save checkpoints using Path Manager."
+            }
+        ]
+    },
+    {
+        "message_summary": "Lint",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Lint"
+            }
+        ]
+    },
+    {
+        "message_summary": "Update --restore-file logic (partially fixes #999)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add WSC task and criterion",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Task Specificity": "Add WSC task and criterion"
+            }
+        ]
+    },
+    {
+        "message_summary": "Update PyTorch Hub interface",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update PyTorch Hub interface"
+            }
+        ]
+    },
+    {
+        "message_summary": "Relicense fairseq under MIT license",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Compliance and Standards": "Commit log is related to ensuring code compliance with standards and regulations."
+            }
+        ]
+    },
+    {
+        "message_summary": "Rename _load_model_ensemble -> load_model_ensemble_and_task",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Deprecation and Replacement": "Replacement of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fixes checkpointing bug introduced in 89e077c",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fixes checkpointing bug introduced in 89e077c"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add additional options for configuring writing of checkpoints",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Add additional options for configuring writing of checkpoints"
+            }
+        ]
+    },
+    {
+        "message_summary": "Automatically fill in default values from add_args",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Automatically fill in default values from add_args"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add --reset-dataloader",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Small features + lint",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Small features"
+            },
+            {
+                "Maintenance": "lint"
+            }
+        ]
+    },
+    {
+        "message_summary": "Clean up sharded train iterator",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Clean up sharded train iterator"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add missing options to TransformerDecoderLayer",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Addition of missing options to TransformerDecoderLayer"
+            }
+        ]
+    },
+    {
+        "message_summary": "Load pretrained encoder or decoder (#705)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Functionality added to load a pretrained encoder or decoder from another pretrained model into the current model.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Copy checkpoints with hard linking",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Copy checkpoints with hard linking"
+            }
+        ]
+    },
+    {
+        "message_summary": "Initial fairseq commit using 7e758841da9e05cb21826a60d30a563a9e189d1d",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Initial fairseq commit using 7e758841da9e05cb21826a60d30a563a9e189d1d"
+            }
+        ]
+    },
+    {
+        "message_summary": "N/A",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add code for pretraining and finetuning",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition to the repository"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add strict option to checkpoint_utils. load_pretrained_component_from_model()",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Addition to the repository"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add loading from HuggingFace Hub",
+        "ptm_name": "HuggingFace Hub",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Add loading from HuggingFace Hub"
+            }
+        ]
+    },
+    {
+        "message_summary": "Back out \"Fairseq needs to store and load metadata from model state_dict\" (#3861)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Fix with suggested, more optimal changes in checkpoint utils",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix with suggested, more optimal changes in checkpoint utils"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "use suffix when saving best checkpoints with metric",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "This is needed when training with FSDP + sharded state, as the checkpoints should have `-shard0.pt`",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to code maintenance and checkpoint management."
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Roll back os.path.abspath change"
+            }
+        ]
+    },
+    {
+        "message_summary": "enable manifold checkpoints with --keep-interval-updates",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix incorrect local cache for checkpoint_last.pt when training is restarted on the same host",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix incorrect local cache for checkpoint_last.pt when training is restarted on the same host"
+            }
+        ]
+    },
+    {
+        "message_summary": "fairseq checkpoint improvements",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "fairseq checkpoint improvements"
+            }
+        ]
+    },
+    {
+        "message_summary": "Refactor eval_lm to support library usage",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "Support atomic saves for checkpoints",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix loading of very old checkpoints",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to fixing loading of very old checkpoints."
+            }
+        ]
+    },
+    {
+        "message_summary": "Fixes wav2vec scripts (#1494)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "+ docs + migration of old models",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fixes wav2vec scripts (#1494)"
+            },
+            {
+                "Maintenance": "Update of a Pre Trained Model: + docs + migration of old models"
+            }
+        ]
+    },
+    {
+        "message_summary": "Rename optimization.min_lr -> optimization.stop_min_lr",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "The commit involves renaming optimization.min_lr to optimization.stop_min_lr.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "The commit involves renaming optimization.min_lr to optimization.stop_min_lr."
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix loading ensembles",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Fixes loading ensembles. Previous change used the state of the first model for all models in the ensemble",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix loading ensembles"
+            }
+        ]
+    },
+    {
+        "message_summary": "migrate wav2vec2 model",
+        "ptm_name": "wav2vec2",
+        "ptm_version": "unknown",
+        "ptm_problem_addressed": "model migration",
+        "update_details": "Minor bug fixes",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": {
+                    "repo_url": "github.com/imatge-upc/sign-topic",
+                    "filepath": "fairseq/checkpoint_utils.py",
+                    "commit_date": "2020-11-09T23:46:00Z",
+                    "message_summary": "migrate wav2vec2 model",
+                    "ptm_addition_details": {
+                        "name": "wav2vec2",
+                        "version": "unknown",
+                        "problem_addressed": "model migration"
+                    },
+                    "update_details": "Minor bug fixes"
+                }
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Code refactoring and formatting changes"
+            }
+        ]
+    },
+    {
+        "message_summary": "Improve dictionary & checkpoint reading w/ local caching",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Improve dictionary & checkpoint reading w/ local caching"
+            }
+        ]
+    },
+    {
+        "message_summary": "Misc fixes",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "Fixes checkpoint_path while loading a model-parallel checkpoint",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Fixes https://github.com/pytorch/fairseq/issues/2351",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fixes checkpoint_path while loading a model-parallel checkpoint"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Several small fixes in the code, including setting default --data-buffer-size=10."
+            }
+        ]
+    },
+    {
+        "message_summary": "Generalize moving of tensors to CPU in checkpoints",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "This is needed for TPUs",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Generalize moving of tensors to CPU in checkpoints for TPUs"
+            }
+        ]
+    },
+    {
+        "message_summary": "Update checkpoint mkdir behavior (issue #1986)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Create checkpoint directory in ```save_checkpoint()``` instead of ```load_checkpoint()```.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:Create checkpoint directory in ```save_checkpoint()``` instead of ```load_checkpoint()```."
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix epoch reporting when restoring checkpoint",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Fix epoch reporting when restoring checkpoint"
+            }
+        ]
+    },
+    {
+        "message_summary": "tts synthesis script",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Split from PR#968. add --keep-best-checkpoints (#990)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Compatibility": "add --keep-best-checkpoints"
+            }
+        ]
+    },
+    {
+        "message_summary": "More fully deprecate --raw-text and --lazy-load (fixes #1488)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Deprecation and Replacement": "Deprecation of --raw-text and --lazy-load"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add wrapper abstraction on top of fvcore PathManager to insulate OSS compatibility",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Addition of wrapper abstraction on top of fvcore PathManager to insulate OSS compatibility"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "Added option to save checkpoints using Path Manager.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Added option to save checkpoints using Path Manager."
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Update --restore-file logic (partially fixes #999)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add WSC task and criterion",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Task Specificity": "Add WSC task and criterion"
+            }
+        ]
+    },
+    {
+        "message_summary": "Update PyTorch Hub interface",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update PyTorch Hub interface"
+            }
+        ]
+    },
+    {
+        "message_summary": "Relicense fairseq under MIT license",
+        "ptm_name": "fairseq",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compliance and Standards": "Relicense fairseq under MIT license"
+            }
+        ]
+    },
+    {
+        "message_summary": "Rename _load_model_ensemble -> load_model_ensemble_and_task",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Deprecation and Replacement": "Rename _load_model_ensemble -> load_model_ensemble_and_task"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fixes checkpointing bug introduced in 89e077c",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fixes checkpointing bug introduced in 89e077c"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add additional options for configuring writing of checkpoints",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Add additional options for configuring writing of checkpoints"
+            }
+        ]
+    },
+    {
+        "message_summary": "Automatically fill in default values from add_args",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Automatically fill in default values from add_args"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add --reset-dataloader",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Small features + lint"
+            }
+        ]
+    },
+    {
+        "message_summary": "Clean up sharded train iterator",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Clean up sharded train iterator"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add missing options to TransformerDecoderLayer",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Addition of options to TransformerDecoderLayer"
+            }
+        ]
+    },
+    {
+        "message_summary": "Load pretrained encoder or decoder (#705)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Functionality added to load a pretrained encoder or decoder from another pretrained model into the current model.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "Add --add-bos-token option to LM task and cleanup utils.py and options.py",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "cleanup utils.py and options.py"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add monkey patched fairseq package to run on python 3.11 (what is needed for our use of RVC at least)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Add monkey patched fairseq package to run on python 3.11 (what is needed for our use of RVC at least)"
+            }
+        ]
+    },
+    {
+        "message_summary": "Added Text to Music models, custom models option and auto_update (yes/no)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Added Text to Music models, custom models option and auto_update (yes/no)"
+            }
+        ]
+    },
+    {
+        "message_summary": "Change fairseq to standalone repo",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Deprecation and Replacement": "Change fairseq to standalone repo"
+            }
+        ]
+    },
+    {
+        "message_summary": "Initial submission of data2vec",
+        "ptm_name": "data2vec",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Initial submission of data2vec"
+            }
+        ]
+    },
+    {
+        "message_summary": "Initial submission for Scaling-nmt in PyTorch built-in",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    }
+]

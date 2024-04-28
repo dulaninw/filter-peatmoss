@@ -1,0 +1,927 @@
+[
+    {
+        "message_summary": "Multiple updates to Pre-Trained Models implementations.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Examples for Gemma model and Transformer Reinforcement Learning (TRL) library to train small LLMs (sLLMs) were added.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "Examples for DINO and DPT models were implemented in hugging_face_transformers_test.py.",
+        "ptm_name": "DINO, DPT",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Examples for DINO and DPT models were implemented in hugging_face_transformers_test.py."
+            }
+        ]
+    },
+    {
+        "message_summary": "Update",
+        "ptm_name": "Hugging Face TRL library",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Placeholders for examples of Hugging Face TRL library were added.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Placeholders for examples of Hugging Face TRL library were added."
+            }
+        ]
+    },
+    {
+        "message_summary": "Multiple updates related to Pre-Trained Models implementations.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Several examples for stable diffusion models of Stability AI were implemented. Information about Transformer Reinforcement Learning (TRL) library was moved from hugging_face_test.py to hugging_face_transformers_test.py.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "[Update] A test was added to fine-tune a ResNet model using Dog/Cat dataset in pytorch_transfer_learning.py.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Task Specificity": "Dedicated to developing and deploying task-specific enhancements or capabilities that exploit the unique strengths of pre-trained models."
+            }
+        ]
+    },
+    {
+        "message_summary": "Updates related to Hugging Face Transformers",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "An example of Zephyr-7B was added but not tested. Information about Transformer Reinforcement Learning (TRL) was described.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "Updates related to Hugging Face Transformers",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "An example for retrieval-augmented generation (RAG) was added in hugging_face_transformers_test.py.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "Updates related to Mistral-7B and Mixtral-8x7B models",
+        "ptm_name": "Mistral-7B, Mixtral-8x7B",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "The installation of TensorFlow 2 was updated.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Updates related to Mistral-7B and Mixtral-8x7B models and the activity of the pre trained realated activity of an addition to the respository"
+            },
+            {
+                "Maintenance": "Update of a Pre Trained Model:The installation of TensorFlow 2 was updated."
+            }
+        ]
+    },
+    {
+        "message_summary": "Multiple updates to Pre-Trained Models implementations.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Examples for ORCA-2, ViT, ViLT, BEiT, LayoutLM, and Donut models were added. Information about data preparation, training, evaluation, visualization, and model export were supplemented in paddle_ocr_usage_guide.txt.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "A customized version of ViT model was implemented and tested, which doesn't have classification token and head.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Addresses the adaptation of pre-trained models to function optimally with newer systems or software versions, ensuring forward compatibility."
+            }
+        ]
+    },
+    {
+        "message_summary": "Multiple updates to Pre-Trained Models implementations.",
+        "ptm_name": "Falcon, StarCoder, Replit",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "Update LLMs Yi-6B & Yi-34B were tested.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Multiple updates related to Pre-Trained Models implementations.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "The forecasts of transformers.TimeSeriesTransformerForPrediction were evaluated by MASE, MAPE, sMAPE. Metrics for evaluating ML models' performance in evaluate library were tested.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Performance Improvements": "The forecasts of transformers.TimeSeriesTransformerForPrediction were evaluated by MASE, MAPE, sMAPE. Metrics for evaluating ML models' performance in evaluate library were tested."
+            }
+        ]
+    },
+    {
+        "message_summary": "Updates to Pre-Trained Models implementations",
+        "ptm_name": "phi-1, phi-1.5, Kosmos-2",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Two examples for phi-1 & phi-1.5 models were initially added. A few examples for Kosmos-2 model were initially added.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Two examples for phi-1 & phi-1.5 models were initially added. A few examples for Kosmos-2 model were initially added."
+            }
+        ]
+    },
+    {
+        "message_summary": "Update",
+        "ptm_name": "Probabilistic time series transformer model",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "A few examples for Probabilistic time series transformer model were added.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "Update",
+        "ptm_name": "Perceiver IO",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Update"
+            }
+        ]
+    },
+    {
+        "message_summary": "Updates related to Code Llama model and Python script profiling",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "A simple example for Code Llama model was initially added. A few commands were explained to profile Python scripts.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Code refactoring and updates related to Code Llama model and Python script profiling"
+            }
+        ]
+    },
+    {
+        "message_summary": "[Update] A simple example for OpenLLaMA models was implemented.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Task Specificity": "Dedicated to developing and deploying task-specific enhancements or capabilities that exploit the unique strengths of pre-trained models."
+            }
+        ]
+    },
+    {
+        "message_summary": "Update: Added a simple example for trajectory transformer models in hugging_face_transformers_test.py",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Update related to Hugging Face Transformers",
+        "ptm_name": "CodeParrot",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "A test for CodeParrot model was initially implemented",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": {
+                    "PTM Name": "CodeParrot",
+                    "Details": "A test for CodeParrot model was initially implemented"
+                }
+            }
+        ]
+    },
+    {
+        "message_summary": "Updates related to measuring memory footprint and computing performance of Hugging Face transformers models and adding a test for Hugging Face datasets.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Performance Improvements": "Updates related to measuring memory footprint and computing performance of Hugging Face transformers models"
+            },
+            {
+                "Maintenance": "Adding a test for Hugging Face datasets"
+            }
+        ]
+    },
+    {
+        "message_summary": "[Update] An example for OpenFlamingo library was added.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Task Specificity": "An example for OpenFlamingo library was added."
+            }
+        ]
+    },
+    {
+        "message_summary": "Updates related to Hugging Face Transformers and Accelerate library",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "A few examples for Llama 2 model were added. Model parallelism was tested using Hugging Face Accelerate library. Information about Hugging Face Accelerate library was reinforced.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "Cross references about transformer and ViT models were reinforced.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Cross references about transformer and ViT models were reinforced.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Cross references about transformer and ViT models were reinforced."
+            }
+        ]
+    },
+    {
+        "message_summary": "vit_test.py was moved to a different directory.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "vit_test.py was moved to a different directory."
+            }
+        ]
+    },
+    {
+        "message_summary": "The installation of node.js was explained.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "The installation of node.js was explained."
+            }
+        ]
+    },
+    {
+        "message_summary": "Several examples for CodeBERT, CodeBERTa, CodeT5+, CodeGen2, & CodeGen2.5 models were added. An example of SpeechT5 model was divided into 3 examples: ASR, TTS, & speech-to-speech.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Several examples for CodeBERT, CodeBERTa, CodeT5+, CodeGen2, & CodeGen2.5 models were added."
+            },
+            {
+                "Task Specificity": "An example of SpeechT5 model was divided into 3 examples: ASR, TTS, & speech-to-speech."
+            }
+        ]
+    },
+    {
+        "message_summary": "Multiple updates to Pre-Trained Models implementations.",
+        "ptm_name": "NVIDIA Megatron-LM, ASR, TTS models",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Examples for Decision Transformer, NVIDIA Megatron-LM, ASR, TTS models, and SegFormer were added.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "Update",
+        "ptm_name": "LLaMA, MPT",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "The method, chain of thoughts (CoT) was tested on two LLMs, LLaMA & MPT.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "Update: A few examples for MPT & TVLT models were implemented in hugging_face_transformers_test.py.",
+        "ptm_name": "MPT & TVLT models",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "A few examples for MPT & TVLT models were added to the file.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "A few examples for MPT & TVLT models were implemented in hugging_face_transformers_test.py."
+            }
+        ]
+    },
+    {
+        "message_summary": "Update",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Three language models (LLaMA, Galactica, & OPT models) were tested.",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Performance Improvements": "Three language models (LLaMA, Galactica, & OPT models) were tested."
+            }
+        ]
+    },
+    {
+        "message_summary": "Update",
+        "ptm_name": "LLaMA",
+        "ptm_version": "N/A",
+        "ptm_problem_addressed": "N/A",
+        "update_details": "The example of LLaMA model was reinforced.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "The example of LLaMA model was reinforced."
+            }
+        ]
+    },
+    {
+        "message_summary": "[Update] A test for data parallelism was implemented in PyTorch library.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Update",
+        "ptm_name": "OPT, Galactica",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Update"
+            }
+        ]
+    },
+    {
+        "message_summary": "[New] A simple tutorial for MMSegmentation library was initially committed.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "New pre-trained model tutorial added for MMSegmentation library"
+            }
+        ]
+    },
+    {
+        "message_summary": "Update",
+        "ptm_name": "LLaMa model",
+        "ptm_version": "not specified",
+        "ptm_problem_addressed": "not specified",
+        "update_details": "A couple of simple examples for LLaMa model were implemented, but they were not tested due to library version issue.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Task Specificity": "A couple of simple examples for LLaMa model were implemented, but they were not tested due to library version issue."
+            }
+        ]
+    },
+    {
+        "message_summary": "Several examples for CodeT5, CodeGen, GIT, BLIP, and TaPEx models were implemented for various tasks.",
+        "ptm_name": "CodeT5, CodeGen, GIT, BLIP, TaPEx",
+        "ptm_version": "",
+        "ptm_problem_addressed": "Code generation, vision-and-language modeling, and table understanding",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "[New] A couple of examples for GPT4All models were added, but they were not correctly working.",
+        "ptm_name": "GPT4All",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "Two simple examples for PaLM and PaLM+RLHF models were implemented",
+        "ptm_name": "PaLM, PaLM+RLHF",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Two simple examples for PaLM and PaLM+RLHF models were implemented"
+            }
+        ]
+    },
+    {
+        "message_summary": "Several examples for Table Transformer, TATR, TrOCR, and SpeechT5 were initially added.",
+        "ptm_name": "Table Transformer, TATR, TrOCR, SpeechT5",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Several examples for Table Transformer, TATR, TrOCR, and SpeechT5 were initially added."
+            }
+        ]
+    },
+    {
+        "message_summary": "Several examples for speech recognition (whisper) & synthesis (tacotron2 & fastspeech2) were newly implemented.",
+        "ptm_name": "whisper, tacotron2, fastspeech2",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Several examples for speech recognition (whisper) & synthesis (tacotron2 & fastspeech2) were newly implemented."
+            }
+        ]
+    },
+    {
+        "message_summary": "New examples for ALIGN model and updates for CLIP model in hugging_face_transformers_test.py",
+        "ptm_name": "ALIGN",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "A couple of examples for CLIP model were added. Useful information about Transformer architectures was described.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "New examples for ALIGN model were added in hugging_face_transformers_test.py."
+            },
+            {
+                "Maintenance": "Updates for CLIP model were made in hugging_face_transformers_test.py. Useful information about Transformer architectures was described."
+            }
+        ]
+    },
+    {
+        "message_summary": "[Update] A simple example about dataclass in Python was added.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Task Specificity": "A simple example about dataclass in Python was added."
+            }
+        ]
+    },
+    {
+        "message_summary": "Updates related to Hugging Face Transformers and PEFT library",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "A simple example of Parameter-Efficient Fine-Tuning (PEFT) library was added. A simple test of tokenizers was added.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Update of a Pre Trained Model:A simple example of Parameter-Efficient Fine-Tuning (PEFT) library was added. A simple test of tokenizers was added."
+            }
+        ]
+    },
+    {
+        "message_summary": "Update",
+        "ptm_name": "StabilityAI, CompVis",
+        "ptm_version": "diffusion models",
+        "ptm_problem_addressed": "N/A",
+        "update_details": "A couple of examples for diffusion models of StabilityAI and CompVis were added.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "Update",
+        "ptm_name": "Flan-T5",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "A few examples for Flan-T5 model were reinforced.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Task Specificity": "A few examples for Flan-T5 model were reinforced."
+            }
+        ]
+    },
+    {
+        "message_summary": "Information about Hugging Face models was supplemented.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Information about Hugging Face models was supplemented."
+            }
+        ]
+    },
+    {
+        "message_summary": "An example for question answering using GPT-neo was added.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "An example for question answering using GPT-neo was added."
+            }
+        ]
+    },
+    {
+        "message_summary": "Update: A few examples for BLOOM and Flan-T5 models were implemented.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Task Specificity": "Dedicated to developing and deploying task-specific enhancements or capabilities that exploit the unique strengths of pre-trained models."
+            }
+        ]
+    },
+    {
+        "message_summary": "[Update] A test for KLUE BERT models was implemented.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Task Specificity": "A test for KLUE BERT models was implemented."
+            }
+        ]
+    },
+    {
+        "message_summary": "Updates related to Hugging Face Transformers",
+        "ptm_name": "T5",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "A few examples of text summarization for Korean & English were implemented, but their results were not good. A few examples for T5 model were added.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Updates related to Hugging Face Transformers"
+            }
+        ]
+    },
+    {
+        "message_summary": "Update",
+        "ptm_name": "GPT & BERT models",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "A few tests were added for GPT & BERT models.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": {
+                    "repo_url": "github.com/sangwook236/SWDT",
+                    "filepath": "sw_dev/python/rnd/test/language_processing/hugging_face_transformers_test.py",
+                    "commit_date": "2023-03-07T17:44:21Z",
+                    "message_summary": "Update",
+                    "ptm_addition_details": {
+                        "name": "GPT & BERT models"
+                    },
+                    "update_details": "A few tests were added for GPT & BERT models."
+                }
+            }
+        ]
+    },
+    {
+        "message_summary": "[New] A few guides were initially committed for Hugging Face Hub library.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "A few guides were initially committed for Hugging Face Hub library."
+            }
+        ]
+    },
+    {
+        "message_summary": "Several examples for vision, vision and language models were added in HuggingFace library.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Several examples for vision, vision and language models were added in HuggingFace library."
+            }
+        ]
+    },
+    {
+        "message_summary": "Several examples for LayoutLM & Donut models were implemented in HuggingFace library.",
+        "ptm_name": "LayoutLM & Donut",
+        "ptm_version": "not specified",
+        "ptm_problem_addressed": "not specified",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Several examples for LayoutLM & Donut models were implemented in HuggingFace library."
+            }
+        ]
+    },
+    {
+        "message_summary": "[Chore] transformers_test.py was renamed to hugging_face_transformers_test.py.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Deprecation and Replacement": "Replacement of a Pre Trained Model:"
+            }
+        ]
+    }
+]

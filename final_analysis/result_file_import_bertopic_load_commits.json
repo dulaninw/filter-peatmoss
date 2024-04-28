@@ -1,0 +1,1196 @@
+[
+    {
+        "message_summary": "Remove spurious warning about missing embedding model.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "Spurious warning about missing embedding model was removed.",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "Add optional datamapplot visualization",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Addition of a new optional datamapplot visualization feature."
+            }
+        ]
+    },
+    {
+        "message_summary": "Remove unused `cluster_df` variable",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "Updates related to Pre-Trained Models",
+        "ptm_name": "Cohere's Embed v3",
+        "ptm_version": "",
+        "ptm_problem_addressed": "Support added for Cohere's Embed v3",
+        "update_details": "Zeroshot Topic Modeling, Seed (domain-specific) words, More LLM documentation, including Zephyr example",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": {
+                    "PTM Added": {
+                        "Name": "Cohere's Embed v3",
+                        "Problem Addressed": "Support added for Cohere's Embed v3"
+                    }
+                },
+                "Task Specificity": {
+                    "Tasks": [
+                        "Topic Modeling",
+                        "LLM documentation"
+                    ],
+                    "Update Details": "Zeroshot Topic Modeling, Seed (domain-specific) words, More LLM documentation, including Zephyr example"
+                }
+            }
+        ]
+    },
+    {
+        "message_summary": "Correct TopicMapper doc example (#1637)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add `.merge_models` to merge pre-trained BERTopic models",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Add `.merge_models` to merge pre-trained BERTopic models"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix TypeError on reduce_outliers \"probabilities\" (#1501)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix TypeError on reduce_outliers \"probabilities\""
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix IndexError when all outliers are removed by reduce_outliers()",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix IndexError when all outliers are removed by reduce_outliers()"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fixed typing issue with treshold parameter in reduce_outliers.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix guided topic modeling in cuML's UMAP",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Fix guided topic modeling in cuML's UMAP"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fixed typing in hierarchical_topics",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fixed typing in hierarchical_topics"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Default saving embedding model to True",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Default saving embedding model to True"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix not saving embedding model using .push_to_hf_hub",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix not saving embedding model using .push_to_hf_hub"
+            }
+        ]
+    },
+    {
+        "message_summary": "Multimodal and Multi-Aspect Topic Modeling",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Update of a Pre Trained Model:"
+            },
+            {
+                "Deprecation and Replacement": "Replacement of a Pre Trained Model:"
+            },
+            {
+                "Deprecation and Replacement": "Removal of a Pre Trained model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Efficient, faster, and safer serialization with HuggingFace (#1205)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Performance Improvements": "Efficient, faster, and safer serialization with HuggingFace"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add cuML support for approximate_predict",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Add cuML support for approximate_predict"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix hierarchy visualization and handle any form of distance matrix",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix hierarchy visualization"
+            },
+            {
+                "Compatibility": "Handle any form of distance matrix"
+            }
+        ]
+    },
+    {
+        "message_summary": "Added 'nr_docs' and 'diversity' params to openai, cohere, and textgeneration models",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Added 'nr_docs' and 'diversity' params to openai, cohere, and textgeneration models"
+            }
+        ]
+    },
+    {
+        "message_summary": "Added options for level scaling when visualizing hierarchical documents",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Compatibility": "Added options for level scaling when visualizing hierarchical documents"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix inconsistent naming - get_topic_labels to generate_topic_labels",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix inconsistent naming - get_topic_labels to generate_topic_labels"
+            }
+        ]
+    },
+    {
+        "message_summary": "v0.14.1 - ChatGPT support and improved Prompting (#1057)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": {},
+                "Task Specificity": {},
+                "Community and Collaboration": {},
+                "Maintenance": {},
+                "Compliance and Standards": {},
+                "Performance Improvements": {},
+                "Compatibility": {},
+                "Deprecation and Replacement": {},
+                "Project Evolution": {},
+                "Technical Debt and Simplification": {}
+            }
+        ]
+    },
+    {
+        "message_summary": "Added top_n_words parameter to update_topics() function",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Task Specificity": "Added top_n_words parameter to update_topics() function"
+            }
+        ]
+    },
+    {
+        "message_summary": "Added diversity parameter to update_topics() function",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": {
+                    "description": "Added a diversity parameter to the update_topics() function to enhance task-specific capabilities."
+                },
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Add custom labels & title options to barchart",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Add custom labels & title options to barchart"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix typo in backend module path",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Changed `bertopic.backends.languages` to `bertopic.backend.languages`",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix typo in backend module path"
+            },
+            {
+                "Compatibility": "Changed `bertopic.backends.languages` to `bertopic.backend.languages`"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add optimal_ordering parameter to .visualize_hierarchy",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Add optimal_ordering parameter to .visualize_hierarchy"
+            }
+        ]
+    },
+    {
+        "message_summary": "v0.9.3 - Quickfix",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Fix #282, #285, #288",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Quickfix"
+            }
+        ]
+    },
+    {
+        "message_summary": "Updates to BERTopic implementation",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Default embedding model changed from 'paraphrase' to 'all'. Probability mapping fixed. cTFIDF topic extraction optimized. Algorithm image fixed, documentation updated, spelling corrected, etc. README updated with visualization example.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Code refactoring and general maintenance."
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Set transformers in Flair",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Compatibility": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Update SentenceTransformers model to MiniLM models",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Default sentence-transformers model was updated to the MiniLM models, known for greater general performance",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Replacement of a Pre Trained Model": "Default sentence-transformers model was updated to the MiniLM models, known for greater general performance"
+            }
+        ]
+    },
+    {
+        "message_summary": "Updates related to BERTopic",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Dynamic topic modeling, evolutionary topic modeling, self.topic_names, get_topic_info(), visualize_topics_over_time() added. Improved cTFIDF stability and performance. Binning added to topics_over_time. Fixed mapping of probabilities.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "Fixed embedding parameter not working",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fixed embedding parameter not working"
+            }
+        ]
+    },
+    {
+        "message_summary": "Prepare for v0.15 release by including changelog and many documentation updates.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Commit log is related to general maintenance, code refactoring."
+            }
+        ]
+    },
+    {
+        "message_summary": "Add pipeline_tag to model card",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Add pipeline_tag to model card"
+            }
+        ]
+    },
+    {
+        "message_summary": "Fix not saving embedding model using .push_to_hf_hub",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Fix not saving embedding model using .push_to_hf_hub"
+            }
+        ]
+    },
+    {
+        "message_summary": "Multimodal and Multi-Aspect Topic Modeling (#1232)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Update of a Pre Trained Model:"
+            },
+            {
+                "Deprecation and Replacement": "Replacement of a Pre Trained Model:"
+            },
+            {
+                "Deprecation and Replacement": "Removal of a Pre Trained model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "Efficient, faster, and safer serialization with HuggingFace (#1205)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Performance Improvements": "Efficient, faster, and safer serialization with HuggingFace"
+            }
+        ]
+    },
+    {
+        "message_summary": "Train and deploy BERTopic by extending pytorch containers or adding requirements.txt (#3819)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Train and deploy BERTopic by extending pytorch containers or adding requirements.txt"
+            }
+        ]
+    },
+    {
+        "message_summary": "Train and deploy BERTopic by extending pytorch containers or adding requirements.txt",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Integration Patterns": "Extend pytorch containers or add requirements.txt"
+            }
+        ]
+    },
+    {
+        "message_summary": "Efficient, faster, and safer serialization with HuggingFace",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Performance Improvements": "Efficient, faster, and safer serialization with HuggingFace"
+            }
+        ]
+    },
+    {
+        "message_summary": "Updates related to Pre-Trained Models",
+        "ptm_name": "Cohere's Embed v3",
+        "ptm_version": "",
+        "ptm_problem_addressed": "Support for Cohere's Embed v3",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": null,
+                "Task Specificity": null,
+                "Community and Collaboration": null,
+                "Maintenance": null,
+                "Compliance and Standards": null,
+                "Performance Improvements": null,
+                "Compatibility": null,
+                "Deprecation and Replacement": null,
+                "Project Evolution": null,
+                "Technical Debt and Simplification": null
+            }
+        ]
+    },
+    {
+        "message_summary": "Add `.merge_models` to merge pre-trained BERTopic models",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Add `.merge_models` to merge pre-trained BERTopic models"
+            }
+        ]
+    },
+    {
+        "message_summary": "Efficient, faster, and safer serialization with HuggingFace",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Performance Improvements": "Efficient, faster, and safer serialization with HuggingFace"
+            }
+        ]
+    },
+    {
+        "message_summary": "Updates related to Pre-Trained Models",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Dynamic topic modeling, evolutionary topic modeling, self.topic_names, get_topic_info(), visualize_topics_over_time(), improved cTFIDF stability and performance, binning to topics_over_time, fixed mapping of probabilities",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "No",
+                "Task Specificity": "Yes",
+                "Community and Collaboration": "No",
+                "Maintenance": "No",
+                "Compliance and Standards": "No",
+                "Performance Improvements": "Yes",
+                "Compatibility": "No",
+                "Deprecation and Replacement": "No",
+                "Project Evolution": "No",
+                "Technical Debt and Simplification": "No"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add license header to topic",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Add license header to topic"
+            }
+        ]
+    },
+    {
+        "message_summary": "None",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "None",
+                "Task Specificity": "None",
+                "Community and Collaboration": "None",
+                "Maintenance": "None",
+                "Compliance and Standards": "None",
+                "Performance Improvements": "None",
+                "Compatibility": "None",
+                "Deprecation and Replacement": "Update of a Pre Trained Model:",
+                "Project Evolution": "None",
+                "Technical Debt and Simplification": "None"
+            }
+        ]
+    },
+    {
+        "message_summary": "Adding Function: Search Topics Using a Keyword (Top2Vec)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Adding Function: Search Topics Using a Keyword (Top2Vec)"
+            }
+        ]
+    },
+    {
+        "message_summary": "Adding the --output and --api functionality.",
+        "ptm_name": "all-distilroberta-v1",
+        "ptm_version": "1",
+        "ptm_problem_addressed": "Topic Modeling",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Adding the --output and --api functionality."
+            }
+        ]
+    },
+    {
+        "message_summary": "Initial version of Topic Modeling modules (v0.1.0) added",
+        "ptm_name": "Topic Modeling modules",
+        "ptm_version": "v0.1.0",
+        "ptm_problem_addressed": "Initial implementation",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Initial version of Topic Modeling modules (v0.1.0) added"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Replacement of a Pre Trained Model:": {}
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Revert \"Gallery content restructuring\"",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Deprecation and Replacement": "Revert of a previous restructuring action"
+            }
+        ]
+    },
+    {
+        "message_summary": "feat: better control on how a topic model is build",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Update of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "feat: topics_over_time uses keyBERTInspired representation model",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "topics_over_time uses keyBERTInspired representation model"
+            }
+        ]
+    },
+    {
+        "message_summary": "feat: long list of authors are better visualized",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Visualization enhancement"
+            }
+        ]
+    },
+    {
+        "message_summary": "feat: Better control when a topic model has already been fitted. Added more info boxes",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Update of a Pre Trained Model:",
+                "Task Specificity": "Replacement of a Pre Trained Model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "feat: functions for topic info and topic visualiazations",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Task Specificity": "Dedicated to developing and deploying task-specific enhancements or capabilities that exploit the unique strengths of pre-trained models."
+            }
+        ]
+    },
+    {
+        "message_summary": "topic modelling with bertopic using pre-existing collections",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "topic modelling with bertopic using pre-existing collections"
+            }
+        ]
+    },
+    {
+        "message_summary": "fixing bug in discourse utils",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "fixing bug in discourse utils"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Adding details on accessing Guardian API",
+        "ptm_name": "Guardian API",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "Adding details on accessing Guardian API"
+            }
+        ]
+    },
+    {
+        "message_summary": "",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Refactoring of visualization code and dependencies"
+            }
+        ]
+    },
+    {
+        "message_summary": "Add visualization endpoints",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Integration Patterns": "Add visualization endpoints"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "Relative imports, visualization refactoring (#19)",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Relative imports, visualization refactoring (#19)"
+            }
+        ]
+    },
+    {
+        "message_summary": "Reduce topics",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "None",
+        "replacement_info": "None",
+        "removal_details": "None",
+        "text": [
+            {
+                "Maintenance": "Reduce topics"
+            }
+        ]
+    },
+    {
+        "message_summary": "3rd place solution bulk commit",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Update of a Pre Trained Model:"
+            },
+            {
+                "Deprecation and Replacement": "Replacement of a Pre Trained Model:"
+            },
+            {
+                "Deprecation and Replacement": "Removal of a Pre Trained model:"
+            }
+        ]
+    },
+    {
+        "message_summary": "3rd place solution bulk commit",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Bulk commit"
+            }
+        ]
+    },
+    {
+        "message_summary": "Abstract out the creation of UMAP and HDBSCAN models",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Abstract out the creation of UMAP and HDBSCAN models"
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    },
+    {
+        "message_summary": "added tests, added cuml TMT",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Integration Patterns": "added tests"
+            },
+            {
+                "Task Specificity": "added cuml TMT"
+            }
+        ]
+    },
+    {
+        "message_summary": "Update topictuner.py",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "Cleaned up code, comments and added getHDBSCAN.",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {
+                "Maintenance": "Cleaned up code, comments and added getHDBSCAN."
+            }
+        ]
+    },
+    {
+        "message_summary": "No significant Pre-Trained Models activities mentioned.",
+        "ptm_name": "",
+        "ptm_version": "",
+        "ptm_problem_addressed": "",
+        "update_details": "",
+        "replacement_info": "",
+        "removal_details": "",
+        "text": [
+            {}
+        ]
+    }
+]
