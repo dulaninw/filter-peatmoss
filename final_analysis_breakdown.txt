@@ -1,0 +1,19 @@
+Breakdown of dataset:
+Number of Datapoints: 7081
+
+Total additions: 1528
+  integration patterns: 1285
+  task specificity: 215
+  community and collaboration: 28
+
+Total updates: 4145
+  maintenance: 3309
+  compliance and standards: 39
+  performance improvements: 156
+  compatibility: 641
+
+Total removals: 501
+  deprecation and replacement: 451
+  project evolution: 18
+  technical debt and simplification: 32
+
