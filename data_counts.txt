@@ -1,0 +1,69 @@
+NOTE: Duplicate commits/PRs are counted twice.
+This is because there can be two files that are under the same commit/PR, and there two datapoints for the commit/PR, one for each file
+
+Number of files with PTM usage: 30637
+
+
+Total Number of Commits: 66838
+
+result_file_import_allennlp_from_path_commits.csv: 67
+result_file_import_asteroid_from_pretrained_commits.csv: 92
+result_file_import_bertopic_load_commits.csv: 146
+result_file_import_diffusers_from_pretrained_commits.csv: 4179
+result_file_import_espnet2_from_pretrained_commits.csv: 0
+result_file_import_fairseq_load_model_ensemble_and_task_from_hf_hub_commits.csv: 923
+result_file_import_flair_load_commits.csv: 2654
+result_file_import_huggingface_hub_from_pretrained_fastai_commits.csv: 0
+result_file_import_huggingface_hub_from_pretrained_keras_commits.csv: 0
+result_file_import_huggingface_hub_hf_hub_download_commits.csv: 1420
+result_file_import_huggingface_hub_load_commits.csv: 3461
+result_file_import_huggingface_sb3_load_from_hub_commits.csv: 35
+result_file_import_nemo_from_pretrained_commits.csv: 489
+result_file_import_open_clip_create_model_and_transforms_commits.csv: 1348
+result_file_import_open_clip_get_tokenizer_commits.csv: 525
+result_file_import_paddlenlp_from_pretrained_commits.csv: 700
+result_file_import_peft_from_pretrained_commits.csv: 7288
+result_file_import_pyannote_from_pretrained_commits.csv: 11
+result_file_import_pythae_load_from_hf_hub_commits.csv: 0
+result_file_import_sentence_transformers_SentenceTransformer_commits.csv: 373
+result_file_import_spacy_load_commits.csv: 32668
+result_file_import_span_marker_from_pretrained_commits.csv: 0
+result_file_import_speechbrain_from_hparams_commits.csv: 296
+result_file_import_stanza_download_commits.csv: 1260
+result_file_import_stanza_Pipeline_commits.csv: 2148
+result_file_import_tensorflow_tts_from_pretrained_commits.csv: 55
+result_file_import_timm_create_model_commits.csv: 6700
+
+
+
+Total Number of PR Messages/Conversations: 43024
+
+result_file_import_allennlp_from_path_prs.csv: 4
+result_file_import_asteroid_from_pretrained_prs.csv: 519
+result_file_import_bertopic_load_prs.csv: 391
+result_file_import_diffusers_from_pretrained_prs.csv: 14461
+result_file_import_espnet2_from_pretrained_prs.csv: 0
+result_file_import_fairseq_load_model_ensemble_and_task_from_hf_hub_prs.csv: 0
+result_file_import_flair_load_prs.csv: 0
+result_file_import_huggingface_hub_from_pretrained_fastai_prs.csv: 0
+result_file_import_huggingface_hub_from_pretrained_keras_prs.csv: 0
+result_file_import_huggingface_hub_hf_hub_download_prs.csv: 0
+result_file_import_huggingface_hub_load_prs.csv: 0
+result_file_import_huggingface_sb3_load_from_hub_prs.csv: 0
+result_file_import_nemo_from_pretrained_prs.csv: 0
+result_file_import_open_clip_create_model_and_transforms_prs.csv: 0
+result_file_import_open_clip_get_tokenizer_prs.csv: 0
+result_file_import_paddlenlp_from_pretrained_prs.csv: 0
+result_file_import_peft_from_pretrained_prs.csv: 0
+result_file_import_pyannote_from_pretrained_prs.csv: 0
+result_file_import_pythae_load_from_hf_hub_prs.csv: 0
+result_file_import_sentence_transformers_SentenceTransformer_prs.csv: 0
+result_file_import_spacy_load_prs.csv: 4075
+result_file_import_span_marker_from_pretrained_prs.csv: 0
+result_file_import_speechbrain_from_hparams_prs.csv: 0
+result_file_import_stanza_download_prs.csv: 0
+result_file_import_stanza_Pipeline_prs.csv: 0
+result_file_import_tensorflow_tts_from_pretrained_prs.csv: 0
+result_file_import_timm_create_model_prs.csv: 0
+result_file_import_transformers_from_pretrained_prs.csv: 23574
+result_file_import_transformers_pipeline_prs.csv: 0
